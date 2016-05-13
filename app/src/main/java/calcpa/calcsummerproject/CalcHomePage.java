@@ -19,6 +19,8 @@ public class CalcHomePage extends AppCompatActivity {
     private Button statButton;
     private Button calculusButton;
 
+
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,8 @@ public class CalcHomePage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        calculatorButton = (Button)findViewById(R.id.caluclator);
+        calculatorButton = (Button)findViewById(R.id.calculator
+        );
         algebraIButton = (Button)findViewById(R.id.algebraI);
         algebraIIButton = (Button)findViewById(R.id.algebraII);
         statButton = (Button)findViewById(R.id.statistic);

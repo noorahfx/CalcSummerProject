@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CalcSummerProject</string>
+    <string name="home_page">Home Page</string>
+    <string name="calculator">Calculator</string>
+    <string name="algebra_I">Algebra I</string>
+    <string name="algebra_II">Algebra II</string>
+    <string name="statistic">Statistic</string>
+    <string name="calc_I">Calculus I</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_basic_calculator">BasicCalculator</string>
+</resources>

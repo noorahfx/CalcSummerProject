@@ -230,7 +230,7 @@ public class BasicCalculator extends AppCompatActivity {
         squareRootButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //do nothing for now
+                //do nothing for nowd
                  Math.sqrt(num1);
                 output.setText("");
             }

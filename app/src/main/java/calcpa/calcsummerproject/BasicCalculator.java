@@ -14,10 +14,11 @@ import org.w3c.dom.Text;
 
 public class BasicCalculator extends AppCompatActivity {
 
+
     char operator = 'q';
     String str = "";
-    int num;
-    int numtemp;
+    int num1;
+    int num2;
     EditText output;
 
     private Button nZeroButton;
@@ -58,80 +59,70 @@ public class BasicCalculator extends AppCompatActivity {
             }
         });
 
-        TextView textView =(TextView)findViewById(R.id.text_view);
 
-        nZeroButton = (Button)findViewById(R.id.zero);
-        nOneButton = (Button)findViewById(R.id.one);
-        nTwoButton = (Button)findViewById(R.id.two);
-        nThreeButton = (Button)findViewById(R.id.three);
-        nFourButton = (Button)findViewById(R.id.four);
-        nFiveButton = (Button)findViewById(R.id.five);
-        nSixButton = (Button)findViewById(R.id.six);
-        nSevenButton = (Button)findViewById(R.id.seven);
-        nEightButton = (Button)findViewById(R.id.eight);
-        nNineButton =(Button)findViewById(R.id.nine);
+        nZeroButton = (Button) findViewById(R.id.zero);
+        nOneButton = (Button) findViewById(R.id.one);
+        nTwoButton = (Button) findViewById(R.id.two);
+        nThreeButton = (Button) findViewById(R.id.three);
+        nFourButton = (Button) findViewById(R.id.four);
+        nFiveButton = (Button) findViewById(R.id.five);
+        nSixButton = (Button) findViewById(R.id.six);
+        nSevenButton = (Button) findViewById(R.id.seven);
+        nEightButton = (Button) findViewById(R.id.eight);
+        nNineButton = (Button) findViewById(R.id.nine);
 
-        pointButton = (Button)findViewById(R.id.point);
-        equalButton = (Button)findViewById(R.id.equal);
-        plusButton = (Button)findViewById(R.id.plusMinus);
-        minuButton = (Button)findViewById(R.id.minus);
-        timesButton = (Button)findViewById(R.id.multiplication);
-        divideButton = (Button)findViewById(R.id.division);
-        clearButton = (Button)findViewById(R.id.clear);
-        plusMinusButton = (Button)findViewById(R.id.plusMinus);
-        powerButton = (Button)findViewById(R.id.powerTwo);
-        squareRootButton = (Button)findViewById(R.id.squareRoot);
+        pointButton = (Button) findViewById(R.id.point);
+        equalButton = (Button) findViewById(R.id.equal);
+        plusButton = (Button) findViewById(R.id.plus);
+        minuButton = (Button) findViewById(R.id.minus);
+        timesButton = (Button) findViewById(R.id.multiplication);
+        divideButton = (Button) findViewById(R.id.division);
+        clearButton = (Button) findViewById(R.id.clear);
+        plusMinusButton = (Button) findViewById(R.id.plusMinus);
+        powerButton = (Button) findViewById(R.id.powerTwo);
+        squareRootButton = (Button) findViewById(R.id.squareRoot);
 
-         output = (EditText)findViewById(R.id.text_view);
+        output = (EditText) findViewById(R.id.text_view);
 
 
-        nZeroButton.setOnClickListener(new View.OnClickListener(){
+        nZeroButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 insert(0);
             }
         });
 
-        nOneButton.setOnClickListener(new View.OnClickListener(){
+        nOneButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                //ouput 1 when 1 pressed
+            public void onClick(View view) {
                 insert(1);
             }
         });
 
-        nTwoButton.setOnClickListener(new View.OnClickListener(){
+        nTwoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // display 2 when pressed
-               // EditText output = (EditText)findViewById(R.id.text_view);
                 insert(2);
             }
         });
 
-        nThreeButton.setOnClickListener(new View.OnClickListener(){
+        nThreeButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                //display 3 when pressed
-               // EditText output = (EditText)findViewById(R.id.text_view);
+            public void onClick(View view) {
                 insert(3);
             }
         });
 
-        nFourButton.setOnClickListener(new View.OnClickListener(){
+        nFourButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //display 4 when pressed
-              //  EditText output = (EditText)findViewById(R.id.text_view);
                 insert(4);
             }
         });
 
         nFiveButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                //display 5 when pressed
-              //  EditText output = (EditText)findViewById(R.id.text_view);
+            public void onClick(View view) {
                 insert(5);
             }
         });
@@ -139,26 +130,20 @@ public class BasicCalculator extends AppCompatActivity {
         nSixButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //display six when pressed
-              //  EditText output = (EditText)findViewById(R.id.text_view);
                 insert(6);
             }
         });
 
-        nSevenButton.setOnClickListener(new View.OnClickListener(){
+        nSevenButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View view) {
-                ///display seven when pressed
-             //   EditText output = (EditText)findViewById(R.id.text_view);
+            public void onClick(View view) {
                 insert(7);
             }
         });
 
-        nEightButton.setOnClickListener(new View.OnClickListener(){
+        nEightButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //display 8 when pressed
-               // EditText output = (EditText)findViewById(R.id.text_view);
                 insert(8);
             }
         });
@@ -166,39 +151,34 @@ public class BasicCalculator extends AppCompatActivity {
         nNineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //display nine when pressed
-              //  EditText output = (EditText)findViewById(R.id.text_view);
                 insert(9);
             }
         });
 
-        pointButton.setOnClickListener(new View.OnClickListener(){
+        pointButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                output.append(".");
+                output.setText(".");
             }
         });
 
-        equalButton.setOnClickListener(new View.OnClickListener(){
+        equalButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                //do nothing for now
+            public void onClick(View view) {
                 calculate();
             }
         });
 
-        plusButton.setOnClickListener(new View.OnClickListener(){
+        plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //display + when pressed and do addition
-                //   EditText output = (EditText)findViewById(R.id.text_view);
                 output.setText("+");
                 perform();
                 operator = '+';
             }
         });
 
-        minuButton.setOnClickListener(new View.OnClickListener(){
+        minuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 output.setText("-");
@@ -207,35 +187,35 @@ public class BasicCalculator extends AppCompatActivity {
             }
         });
 
-        timesButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                output.setText("*");
-                perform();
-                operator ='*';
-            }
-        });
-
-        divideButton.setOnClickListener(new View.OnClickListener(){
+        timesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                output.setText("/");
+                output.setText("*");
                 perform();
-                operator ='/';
+                operator = '*';
+            }
+        });
+
+        divideButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                perform();
+                output.setText("/");
+                operator = '/';
 
             }
         });
 
-        clearButton.setOnClickListener(new View.OnClickListener(){
+        clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View view) {
+            public void onClick(View view) {
                 reset();
             }
         });
 
         plusMinusButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void  onClick (View view) {
+            public void onClick(View view) {
                 //do nothing for now
             }
         });
@@ -247,62 +227,71 @@ public class BasicCalculator extends AppCompatActivity {
             }
         });
 
-        squareRootButton.setOnClickListener(new View.OnClickListener(){
+        squareRootButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //do nothing for now
+                 Math.sqrt(num1);
+                output.setText("");
             }
         });
-
-
-
-
-
-
-
     }
 
-    private void insert (int k) {
+    private void insert(int k) {
         str = str + Integer.toString(k);
-        num = Integer.valueOf(str).intValue();
+        num1 = Integer.valueOf(str).intValue();
         output.setText(str);
     }
 
     private void perform() {
         str = "";
-        numtemp = num;
+        num2 = num1;
     }
 
-    private void reset(){
+    private void reset() {
         str = "";
-        operator ='q';
-        num = 0;
-        numtemp = 0;
+        operator = 'q';
+        num1 = 0;
+        num2 = 0;
         output.setText("");
     }
 
-    private void calculate () {
-        String first = String.valueOf(numtemp);
-        String second = String.valueOf(num);
+    private void calculate() {
+        String first = String.valueOf(num2);
+        String second = String.valueOf(num1);
         if (operator == '+') {
 
-            num = numtemp + num;
-        }
-        else if (operator == '-') {
-            num = numtemp - num;
-        }
-        else if (operator == '*') {
-            num = numtemp * num;
-        }
-        else if (operator == '/') {
-            num = numtemp / num;
-        }
+            num1 = num2 + num1;
+            output.setText(first + operator + second + "=" + num1);
+            str = "";
 
-        output.setText(first + operator + second + "="+num);
+        } else if (operator == '-') {
+            num1 = num2 - num1;
+            output.setText(first + operator + second + "=" + num1);
+            str = "";
 
+        } else if (operator == '*') {
+            num1 = num2 * num1;
+            output.setText(first + operator + second + "=" + num1);
+            str = "";
+
+        } else if (operator == '/') {
+            if (num1 == 0) {
+                num1 = Integer.parseInt(output.getText().toString());
+                output.setText("∞");
+            } else if (num2 != 0) {
+                num2 = 0;
+                output.setText("0");
+            } else {
+                num1 = num2 / num1;
+                output.setText(first + operator + second + "=" + num1);
+                str = "";
+
+            }
+
+
+        }
 
     }
-
-
-
 }
+//https://github.com/kexanie/MathView**/

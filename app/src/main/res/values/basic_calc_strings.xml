@@ -18,7 +18,7 @@
     <string name="clear">C</string>
     <string name="plus_minus">+/-</string>
     <string name="power">^</string>
-    <string name="square_root">#</string>
+    <string name="square_root">√</string>
     <string name="equal">=</string>
 
 </resources>

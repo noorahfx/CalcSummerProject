@@ -12,13 +12,17 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class BasicCalculator extends AppCompatActivity {
 
 
-    char operator = 'q';
+    char operator;
     String str = "";
-    int num1;
-    int num2;
+    double num1;
+    double num2;
+    double result;
     EditText output;
 
     private Button nZeroButton;
@@ -42,6 +46,8 @@ public class BasicCalculator extends AppCompatActivity {
     private Button plusMinusButton;
     private Button powerButton;
     private Button squareRootButton;
+    NumberFormat format = new DecimalFormat("0.#");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -158,7 +164,15 @@ public class BasicCalculator extends AppCompatActivity {
         pointButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                output.setText(".");
+               // if(num1 == 0){
+                   // num1 = Double.parseDouble(output.getText().toString());
+                    output.setText(num1+".");
+                output.setText(num1+".");
+              //  }
+              //  else if (num2 == 0) {
+                    //num2 = Double.parseDouble(output.getText().toString());
+                //    output.setText(num2+".");
+              //  }
             }
         });
 
@@ -172,9 +186,10 @@ public class BasicCalculator extends AppCompatActivity {
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                operator = '+';
+
                 output.setText("+");
                 perform();
-                operator = '+';
             }
         });
 
@@ -243,6 +258,7 @@ public class BasicCalculator extends AppCompatActivity {
         output.setText(str);
     }
 
+
     private void perform() {
         str = "";
         num2 = num1;
@@ -250,7 +266,7 @@ public class BasicCalculator extends AppCompatActivity {
 
     private void reset() {
         str = "";
-        operator = 'q';
+        //operator = '';
         num1 = 0;
         num2 = 0;
         output.setText("");
@@ -261,37 +277,70 @@ public class BasicCalculator extends AppCompatActivity {
         String second = String.valueOf(num1);
         if (operator == '+') {
 
-            num1 = num2 + num1;
-            output.setText(first + operator + second + "=" + num1);
+
+            result = num2 + num1;
+            output.setText(first + operator + second + "=" + result);
             str = "";
 
         } else if (operator == '-') {
-            num1 = num2 - num1;
-            output.setText(first + operator + second + "=" + num1);
+
+            result = num1 - num2;
+            output.setText(first + operator + second + "=" + result);
             str = "";
 
         } else if (operator == '*') {
-            num1 = num2 * num1;
-            output.setText(first + operator + second + "=" + num1);
+
+            result = num1 * num2;
+            output.setText(first + operator + second + "=" +result);
             str = "";
 
         } else if (operator == '/') {
-            if (num1 == 0) {
-                num1 = Integer.parseInt(output.getText().toString());
+
+
+           if (num1 == 0) {
+                num1 = Double.parseDouble(output.getText().toString());
                 output.setText("∞");
             } else if (num2 != 0) {
                 num2 = 0;
                 output.setText("0");
             } else {
-                num1 = num2 / num1;
-                output.setText(first + operator + second + "=" + num1);
+                result = num2 / num1;
+                output.setText(first + operator + second + "=" + result);
                 str = "";
-
             }
 
 
         }
+        else if (operator == '.'){
+            if (result == num1) {
+                output.setText(first + "."+second);
+                str ="";
+            }
+            else if (result == num2) {
+                output.setText(first +"." +second);
+                str = "";
+            }
+        }
 
     }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+    }
+
+    @Override
+    public void onDestroy(){
+        super.onDestroy();
+    }
 }
-//https://github.com/kexanie/MathView**/

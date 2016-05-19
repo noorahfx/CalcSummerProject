@@ -17,13 +17,10 @@ import java.text.NumberFormat;
 
 public class BasicCalculator extends AppCompatActivity {
 
-
-    char operator;
-    String str = "";
+    String operation = "";
     double num1;
     double num2;
     double result;
-    EditText output;
 
     private Button nZeroButton;
     private Button nOneButton;
@@ -39,14 +36,15 @@ public class BasicCalculator extends AppCompatActivity {
     private Button pointButton;
     private Button equalButton;
     private Button plusButton;
-    private Button minuButton;
+    private Button minusButton;
     private Button timesButton;
     private Button divideButton;
     private Button clearButton;
     private Button plusMinusButton;
-    private Button powerButton;
+    private Button squareButton;
     private Button squareRootButton;
-    NumberFormat format = new DecimalFormat("0.#");
+   // private TextView output;
+
 
 
     @Override
@@ -65,282 +63,226 @@ public class BasicCalculator extends AppCompatActivity {
             }
         });
 
+        nZeroButton = (Button)findViewById(R.id.zero);
+        nOneButton = (Button)findViewById(R.id.one);
+        nTwoButton = (Button)findViewById(R.id.two);
+        nThreeButton = (Button)findViewById(R.id.three);
+        nFourButton = (Button)findViewById(R.id.four);
+        nFiveButton = (Button)findViewById(R.id.five);
+        nSixButton = (Button)findViewById(R.id.six);
+        nSevenButton = (Button)findViewById(R.id.seven);
+        nEightButton = (Button)findViewById(R.id.eight);
+        nNineButton = (Button)findViewById(R.id.nine);
 
-        nZeroButton = (Button) findViewById(R.id.zero);
-        nOneButton = (Button) findViewById(R.id.one);
-        nTwoButton = (Button) findViewById(R.id.two);
-        nThreeButton = (Button) findViewById(R.id.three);
-        nFourButton = (Button) findViewById(R.id.four);
-        nFiveButton = (Button) findViewById(R.id.five);
-        nSixButton = (Button) findViewById(R.id.six);
-        nSevenButton = (Button) findViewById(R.id.seven);
-        nEightButton = (Button) findViewById(R.id.eight);
-        nNineButton = (Button) findViewById(R.id.nine);
+        pointButton = (Button)findViewById(R.id.point);
+        equalButton = (Button)findViewById(R.id.equal);
+        plusButton = (Button)findViewById(R.id.plus);
+        minusButton = (Button)findViewById(R.id.minus);
+        timesButton = (Button)findViewById(R.id.multiplication);
+        divideButton = (Button)findViewById(R.id.division);
+        clearButton = (Button)findViewById(R.id.clear);
+        plusMinusButton = (Button)findViewById(R.id.plusMinus);
+        squareButton = (Button)findViewById(R.id.powerTwo);
+        squareRootButton = (Button)findViewById(R.id.squareRoot);
 
-        pointButton = (Button) findViewById(R.id.point);
-        equalButton = (Button) findViewById(R.id.equal);
-        plusButton = (Button) findViewById(R.id.plus);
-        minuButton = (Button) findViewById(R.id.minus);
-        timesButton = (Button) findViewById(R.id.multiplication);
-        divideButton = (Button) findViewById(R.id.division);
-        clearButton = (Button) findViewById(R.id.clear);
-        plusMinusButton = (Button) findViewById(R.id.plusMinus);
-        powerButton = (Button) findViewById(R.id.powerTwo);
-        squareRootButton = (Button) findViewById(R.id.squareRoot);
+        final TextView textView = (TextView)findViewById(R.id.text_view);
 
-        output = (EditText) findViewById(R.id.text_view);
-
-
-        nZeroButton.setOnClickListener(new View.OnClickListener() {
+        nZeroButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(0);
+            public void onClick (View view){
+                //do nothing for now
+                textView.append("0");
             }
         });
 
-        nOneButton.setOnClickListener(new View.OnClickListener() {
+        nOneButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(1);
+            public void onClick (View view){
+                //do nothing for now
+                textView.append("1");
             }
         });
 
-        nTwoButton.setOnClickListener(new View.OnClickListener() {
+        nTwoButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(2);
+            public void onClick (View view){
+                textView.append("2");
             }
         });
 
-        nThreeButton.setOnClickListener(new View.OnClickListener() {
+        nThreeButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(3);
+            public void onClick (View view){
+                textView.append("3");
             }
         });
 
-        nFourButton.setOnClickListener(new View.OnClickListener() {
+        nFourButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(4);
+            public void onClick(View view){
+                textView.append("4");
             }
         });
 
-        nFiveButton.setOnClickListener(new View.OnClickListener() {
+        nFiveButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(5);
+            public  void onClick (View view) {
+                textView.append("5");
             }
         });
 
         nSixButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                insert(6);
+                textView.append("6");
             }
         });
 
         nSevenButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                insert(7);
+            public void onClick (View view) {
+                textView.append("7");
             }
         });
 
-        nEightButton.setOnClickListener(new View.OnClickListener() {
+        nEightButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(8);
+            public void onClick (View view) {
+                textView.append("8");
             }
         });
 
-        nNineButton.setOnClickListener(new View.OnClickListener() {
+        nNineButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                insert(9);
+            public void onClick(View view){
+                //do nothing for now
+                textView.append("9");
+
             }
         });
 
-        pointButton.setOnClickListener(new View.OnClickListener() {
+        pointButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-               // if(num1 == 0){
-                   // num1 = Double.parseDouble(output.getText().toString());
-                    output.setText(num1+".");
-                output.setText(num1+".");
-              //  }
-              //  else if (num2 == 0) {
-                    //num2 = Double.parseDouble(output.getText().toString());
-                //    output.setText(num2+".");
-              //  }
+                textView.append(".");
             }
         });
 
-        equalButton.setOnClickListener(new View.OnClickListener() {
+
+
+        plusButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                calculate();
-            }
-        });
-
-        plusButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                operator = '+';
-
+                TextView output = (TextView)findViewById(R.id.text_view);
                 output.setText("+");
-                perform();
+                operation="+";
             }
         });
 
-        minuButton.setOnClickListener(new View.OnClickListener() {
+        minusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                TextView output = (TextView)findViewById(R.id.text_view);
                 output.setText("-");
-                perform();
-                operator = '-';
+                operation = "-";
             }
         });
 
-        timesButton.setOnClickListener(new View.OnClickListener() {
+        timesButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
+            public void onClick (View view) {
+                TextView output = (TextView)findViewById(R.id.text_view);
                 output.setText("*");
-                perform();
-                operator = '*';
+                operation = "*";
             }
         });
 
-        divideButton.setOnClickListener(new View.OnClickListener() {
+        divideButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                perform();
+                TextView output = (TextView)findViewById(R.id.text_view);
                 output.setText("/");
-                operator = '/';
-
+                operation = "/";
             }
         });
 
-        clearButton.setOnClickListener(new View.OnClickListener() {
+        clearButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick (View view) {
+                textView.setText("C");
+            }
+        });
+
+        plusMinusButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                textView.setText("+/-");
+            }
+        });
+
+        squareButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                reset();
+                TextView output = (TextView)findViewById(R.id.text_view);
+                output.setText("^");
+                operation ="^";
             }
         });
 
-        plusMinusButton.setOnClickListener(new View.OnClickListener() {
+        squareRootButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                //do nothing for now
+                TextView output = (TextView)findViewById(R.id.text_view);
+                output.setText("√");
+                operation = "√";
             }
         });
 
-        powerButton.setOnClickListener(new View.OnClickListener() {
+        equalButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                //do nothing for now
-            }
-        });
-
-        squareRootButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //do nothing for nowd
-                 Math.sqrt(num1);
-                output.setText("");
-            }
-        });
-    }
-
-    private void insert(int k) {
-        str = str + Integer.toString(k);
-        num1 = Integer.valueOf(str).intValue();
-        output.setText(str);
-    }
-
-
-    private void perform() {
-        str = "";
-        num2 = num1;
-    }
-
-    private void reset() {
-        str = "";
-        //operator = '';
-        num1 = 0;
-        num2 = 0;
-        output.setText("");
-    }
-
-    private void calculate() {
-        String first = String.valueOf(num2);
-        String second = String.valueOf(num1);
-        if (operator == '+') {
-
-
-            result = num2 + num1;
-            output.setText(first + operator + second + "=" + result);
-            str = "";
-
-        } else if (operator == '-') {
-
-            result = num1 - num2;
-            output.setText(first + operator + second + "=" + result);
-            str = "";
-
-        } else if (operator == '*') {
-
-            result = num1 * num2;
-            output.setText(first + operator + second + "=" +result);
-            str = "";
-
-        } else if (operator == '/') {
-
-
-           if (num1 == 0) {
+                //  textView.append("=");
+                TextView output = (TextView)findViewById(R.id.text_view);
                 num1 = Double.parseDouble(output.getText().toString());
-                output.setText("∞");
-            } else if (num2 != 0) {
-                num2 = 0;
-                output.setText("0");
-            } else {
-                result = num2 / num1;
-                output.setText(first + operator + second + "=" + result);
-                str = "";
+                num2 = Double.parseDouble(output.getText().toString());
+                if (operation.equals("+")) {
+                    result = num1+num2;
+                    output.setText(Double.toString(result));
+                }
+                else if (operation.equals("-")) {
+                    result = num1 - num2;
+                    output.setText(Double.toString(result));
+                }
+                else if (operation.equals("*")){
+                    result = num1*num2;
+                    output.setText(Double.toString(result));
+                }
+                else if (operation.equals("/")) {
+                    if(num1 == 0){
+                        output.setText("∞");
+                    }
+                    else if (num2 != 0) {
+                        output.setText("0");
+                    } else {
+                        result = num2 / num1;
+                        output.setText(Double.toString(result));
+                    }
+                }
+                else if (operation.equals("^")){
+                    result = num1*num1;
+                    output.setText(Double.toString(result));
+                }
+                else if (operation.equals("√")) {
+                    result = num1;
+                    output.setText(Double.toString(result));
+                }
+                operation ="";
             }
-
-
-        }
-        else if (operator == '.'){
-            if (result == num1) {
-                output.setText(first + "."+second);
-                str ="";
-            }
-            else if (result == num2) {
-                output.setText(first +"." +second);
-                str = "";
-            }
-        }
+        });
 
     }
 
-    @Override
-    public void onStart(){
-        super.onStart();
+
+
     }
 
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    public void onDestroy(){
-        super.onDestroy();
-    }
-}

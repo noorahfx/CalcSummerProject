@@ -8,4 +8,5 @@
     <string name="calc_I">Calculus I</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_basic_calculator">BasicCalculator</string>
+    <string name="title_activity_tip_calculator">TipCalculator</string>
 </resources>

@@ -2,12 +2,12 @@ package calcpa.calcsummerproject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+//import android.support.design.widget.FloatingActionButton;
+//import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
+//import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
@@ -18,6 +18,7 @@ public class CalcHomePage extends AppCompatActivity {
     private Button algebraIIButton;
     private Button statButton;
     private Button calculusButton;
+    private Button tipCalculatorButton;
 
 
 
@@ -29,12 +30,12 @@ public class CalcHomePage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        calculatorButton = (Button)findViewById(R.id.calculator
-        );
+        calculatorButton = (Button)findViewById(R.id.calculator);
         algebraIButton = (Button)findViewById(R.id.algebraI);
         algebraIIButton = (Button)findViewById(R.id.algebraII);
         statButton = (Button)findViewById(R.id.statistic);
         calculusButton= (Button)findViewById(R.id.calcI);
+        tipCalculatorButton = (Button)findViewById(R.id.tipCalculator);
 
         calculatorButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -44,6 +45,14 @@ public class CalcHomePage extends AppCompatActivity {
                 startActivity(intent);
             }
 
+        });
+
+        tipCalculatorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CalcHomePage.this, TipCalculator.class);
+                startActivity(intent);
+            }
         });
 
         algebraIButton.setOnClickListener(new View.OnClickListener(){

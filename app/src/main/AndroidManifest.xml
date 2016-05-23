@@ -21,6 +21,10 @@
         <activity
             android:name=".BasicCalculator"
             android:label="@string/title_activity_basic_calculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TipCalculator"
+            android:label="@string/title_activity_tip_calculator"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

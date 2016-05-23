@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_calc_title">Calculate Tip</string>
+    <string name="bill_amount_text">Bill</string>
+    <string name="bill_amount_edit">0.0</string>
+    <string name="tip_amount_text">Tip</string>
+    <string name="tip_amount_edit">0.15</string>
+    <string name="total_bill_text">Total</string>
+    <string name="total_bill_edit">0.0</string>
+
+    <string name="change_tip_amount_text">Change Tip</string>
+</resources>

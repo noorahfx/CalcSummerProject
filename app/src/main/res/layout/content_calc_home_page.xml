@@ -25,6 +25,11 @@
         android:layout_height="wrap_content"
         android:text="@string/calculator"/>
     <Button
+        android:id="@+id/tipCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Calculator"/>
+    <Button
         android:id="@+id/algebraI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

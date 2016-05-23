@@ -18,12 +18,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/home_page"/>
-
     <Button
-        android:id="@+id/calculator"
+        android:id="@+id/basicCalcBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calculator"/>
+        android:text="Calculator"
+        />
+
     <Button
         android:id="@+id/tipCalculator"
         android:layout_width="wrap_content"

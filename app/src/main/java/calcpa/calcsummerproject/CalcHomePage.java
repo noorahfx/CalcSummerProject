@@ -13,12 +13,13 @@ import android.widget.Button;
 
 public class CalcHomePage extends AppCompatActivity {
 
-    private Button calculatorButton;
     private Button algebraIButton;
     private Button algebraIIButton;
     private Button statButton;
     private Button calculusButton;
     private Button tipCalculatorButton;
+
+    private Button workPlzButton;
 
 
 
@@ -30,22 +31,23 @@ public class CalcHomePage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        calculatorButton = (Button)findViewById(R.id.calculator);
         algebraIButton = (Button)findViewById(R.id.algebraI);
         algebraIIButton = (Button)findViewById(R.id.algebraII);
         statButton = (Button)findViewById(R.id.statistic);
         calculusButton= (Button)findViewById(R.id.calcI);
         tipCalculatorButton = (Button)findViewById(R.id.tipCalculator);
 
-        calculatorButton.setOnClickListener(new View.OnClickListener(){
+        workPlzButton =(Button)findViewById(R.id.basicCalcBtn);
+
+        workPlzButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ///do something
-                Intent intent = new Intent(CalcHomePage.this, BasicCalculator.class);
+                //do something
+                Intent intent  = new Intent(CalcHomePage.this, BasicCalc.class);
                 startActivity(intent);
             }
-
         });
+
 
         tipCalculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override

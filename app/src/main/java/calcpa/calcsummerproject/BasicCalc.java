@@ -34,7 +34,7 @@ public class BasicCalc extends AppCompatActivity {
             R.id.btnMinus,
             R.id.btnDivision,
             R.id.btnMultiplication,
-           // R.id.btnPlusMinus,
+            // R.id.btnPlusMinus,
             R.id.btnPowerTwo,
             //R.id.btnSquareRoot
     };
@@ -48,21 +48,6 @@ public class BasicCalc extends AppCompatActivity {
     private boolean stateError;
     // If true, do not allow to add another DOT
     private boolean lastPoint;
-
-
-
-
-
-
-
-    // IDs of all the numeric buttons
-  //  private int[] numericButtons = {R.id.btnZero, R.id.btnOne, R.id.btnTwo, R.id.btnThree, R.id.btnFour, R.id.btnFive, R.id.btnSix, R.id.btnSeven, R.id.btnEight, R.id.btnNine};
-    // IDs of all the operator buttons
-    //private int[] operatorButtons = {R.id.btnAdd, R.id.btnSubtract, R.id.btnMultiply, R.id.btnDivide};
-    // TextView used to display the output
-   // private TextView txtScreen;
-    // Represent whether the lastly pressed key is numeric or not
-    //private boolean lastNumeric;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,11 +74,11 @@ public class BasicCalc extends AppCompatActivity {
         });
     }
 
-    /**
-     * Find and set OnClickListener to numeric buttons.
-     */
+
+    //  Find and set OnClickListener to numeric buttons.
+
     private void setNumericOnClickListener() {
-        // Create a common OnClickListener
+        // Create a  OnClickListener
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,9 +102,8 @@ public class BasicCalc extends AppCompatActivity {
         }
     }
 
-    /**
-     * set OnClickListener to operator , equal, and decimal point buttons.
-     */
+    // set OnClickListener to operator , equal, and decimal point buttons.
+
     private void setOperatorOnClickListener() {
         // Create a common OnClickListener for operators
         View.OnClickListener listener = new View.OnClickListener() {
@@ -171,9 +155,9 @@ public class BasicCalc extends AppCompatActivity {
         });
     }
 
-    /**
-     * Logic to calculate .
-     */
+
+     // Logic to calculate .
+
     private void onEqual() {
         // If the current state is error, nothing to do.
         // If the last input is a number only, solution can be found.

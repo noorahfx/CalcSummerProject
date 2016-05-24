@@ -13,18 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="25dp"
-        android:gravity="center_vertical|right"
-        android:maxLength="16"
-        android:background="#c7c0c0"
-        android:typeface="serif"
-        android:layout_span ="4"/>
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical|right"
+            android:maxLength="16"
+            android:background="@drawable/black_button"
+            android:typeface="serif"
+            android:layout_span ="4"/>
     </TableRow>
 
 
@@ -41,6 +41,8 @@
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
             android:text="@string/power"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"
             android:layout_span="1"/>
 
         <Button
@@ -50,8 +52,9 @@
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
             android:text="@string/clear"
-            android:layout_span="3"/>
-        </TableRow>
+            android:layout_span="3"
+            android:background="@drawable/red_button"/>
+    </TableRow>
 
     <TableRow
         android:id="@+id/tableRow3"
@@ -64,28 +67,37 @@
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/seven" />
+            android:text="@string/seven"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnEight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/eight" />
+            android:text="@string/eight"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnNine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/nine"/>
+            android:text="@string/nine"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnDivision"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/divide"/>
+            android:text="@string/divide"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_button"
+            />
     </TableRow>
 
     <TableRow
@@ -98,28 +110,36 @@
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/four"/>
+            android:text="@string/four"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnFive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/five"/>
+            android:text="@string/five"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnSix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/six"/>
+            android:text="@string/six"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnMultiplication"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/multiply"/>
+            android:text="@string/multiply"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_button"/>
     </TableRow>
     <TableRow
         android:id="@+id/tableRow5"
@@ -131,28 +151,36 @@
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/one"/>
+            android:text="@string/one"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/two"/>
+            android:text="@string/two"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/three"/>
+            android:text="@string/three"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnMinus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/minus"/>
+            android:text="@string/minus"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_button"/>
     </TableRow>
 
     <TableRow
@@ -165,28 +193,36 @@
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/zero"/>
+            android:text="@string/zero"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnPoint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/dot_operator"/>
+            android:text="@string/dot_operator"
+            android:textColor="@color/darkred"
+            android:background="@drawable/black_button"/>
         <Button
             android:id="@+id/btnEqual"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/equal"/>
+            android:text="@string/equal"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_button"/>
         <Button
             android:id="@+id/btnPlus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="0dp"
             android:paddingRight="0dp"
-            android:text="@string/plus"/>
+            android:text="@string/plus"
+            android:textColor="@color/white"
+            android:background="@drawable/blue_button"/>
     </TableRow>
 </TableLayout>
 

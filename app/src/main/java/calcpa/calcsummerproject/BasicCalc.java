@@ -169,7 +169,7 @@ public class BasicCalc extends AppCompatActivity {
             try {
                 // Calculate the result and display
                 double result = expression.evaluate();
-                output.setText(Double.toString(result));
+                output.setText(Double.toString(result));//consider changing to stringformat
                 lastPoint = true; // Result contains a dot
             } catch (ArithmeticException ex) {
                 // Display an error message

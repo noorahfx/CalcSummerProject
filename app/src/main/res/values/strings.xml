@@ -12,4 +12,5 @@
 
 
     <string name="title_activity_basic_calc">BasicCalc</string>
+    <string name="title_activity_geometry">Geometry</string>
 </resources>

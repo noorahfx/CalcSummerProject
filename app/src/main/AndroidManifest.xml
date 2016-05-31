@@ -35,6 +35,10 @@
         <activity
             android:name=".BasicCalc"
             android:label="@string/title_activity_basic_calc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry"
+            android:label="@string/title_activity_geometry"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

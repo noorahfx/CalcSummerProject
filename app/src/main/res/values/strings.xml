@@ -13,4 +13,27 @@
 
     <string name="title_activity_basic_calc">BasicCalc</string>
     <string name="title_activity_geometry">Geometry</string>
+    <string name="title_activity_triangle">Triangle</string>
+    <string name="title_activity_square">Square</string>
+    <string name="title_activity_rectangle">Rectangle</string>
+    <string name="title_activity_rhombus">Rhombus</string>
+    <string name="title_activity_parallelogram">Parallelogram</string>
+    <string name="title_activity_trapezoid">Trapezoid</string>
+    <string name="title_activity_kite">Kite</string>
+    <string name="title_activity_hexagon">Hexagon</string>
+    <string name="title_activity_pentagon">Pentagon</string>
+    <string name="title_activity_octagon">Octagon</string>
+    <string name="title_activity_heptagon">Heptagon</string>
+    <string name="title_activity_nonagon">Nonagon</string>
+    <string name="title_activity_decagon">Decagon</string>
+    <string name="title_activity_circle">Circle</string>
+    <string name="title_activity_eclipse">Eclipse</string>
+    <string name="title_activity_cresent">Cresent</string>
+    <string name="title_activity_cube">Cube</string>
+    <string name="title_activity_cuboid">Cuboid</string>
+    <string name="title_activity_sphere">Sphere</string>
+    <string name="title_activity_cylinder">Cylinder</string>
+    <string name="title_activity_cone">Cone</string>
+    <string name="title_activity_quadrilatreral">Quadrilatreral</string>
+    <string name="title_activity_polygon">Polygon</string>
 </resources>

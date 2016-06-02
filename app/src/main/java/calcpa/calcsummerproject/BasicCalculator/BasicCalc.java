@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject;
+package calcpa.calcsummerproject.BasicCalculator;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import net.objecthunter.exp4j.Expression;
 import net.objecthunter.exp4j.ExpressionBuilder;
+
+import calcpa.calcsummerproject.R;
 
 
 public class BasicCalc extends AppCompatActivity {
@@ -140,7 +142,7 @@ public class BasicCalc extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 output.setText("");  // Clear the screen
-                // Reset all the states and flags
+                // Reset all the states and flags6
                 lastNume = false;
                 stateError = false;
                 lastPoint = false;

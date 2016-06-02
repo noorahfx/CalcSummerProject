@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject;
+package calcpa.calcsummerproject.HomePage;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.MenuItem;
 import android.widget.Button;
+
+import calcpa.calcsummerproject.BasicCalculator.BasicCalc;
+import calcpa.calcsummerproject.Geometry.Geometry;
+import calcpa.calcsummerproject.R;
+import calcpa.calcsummerproject.TipCalculator.TipCalculator;
 
 public class CalcHomePage extends AppCompatActivity {
 

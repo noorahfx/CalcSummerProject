@@ -1,14 +1,19 @@
-package calcpa.calcsummerproject;
+package calcpa.calcsummerproject.Geometry;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.R;
 
 
 public class Geometry extends AppCompatActivity {
+    //ListView Data (an array to get the list items where the current data
+    // can be replaced in java
+   // String[] List_items = getResources().getStringArray(R.array.shape_lists);
 
     ListView list;
     String[] shapeText = {
@@ -17,7 +22,7 @@ public class Geometry extends AppCompatActivity {
             "Pentagon","Octagon","Heptagon","Nonagon",
             "Decagon","Circle","Eclipse","Cresent",
             "Cube","Cuboid","Sphere","Cylinder",
-            "Cone","Puadrilateral","Polygon"
+            "Cone","Quadrilateral","Polygon"
     } ;
     int[] imageId = {
             R.drawable.image1,
@@ -59,7 +64,7 @@ public class Geometry extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Toast.makeText(Geometry.this, "You Clicked at "
-                                +shapeText[+ position], Toast.LENGTH_SHORT).show();
+                        +shapeText[+ position], Toast.LENGTH_SHORT).show();
 
             }
         });

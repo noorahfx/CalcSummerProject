@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject;
+package calcpa.calcsummerproject.Geometry;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import calcpa.calcsummerproject.R;
 
 /**
  * Created by Fahim NoorAhmad on 5/31/2016.

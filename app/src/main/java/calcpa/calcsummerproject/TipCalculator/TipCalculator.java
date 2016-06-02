@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject;
+package calcpa.calcsummerproject.TipCalculator;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+
+import calcpa.calcsummerproject.R;
 
 public class TipCalculator extends AppCompatActivity {
 

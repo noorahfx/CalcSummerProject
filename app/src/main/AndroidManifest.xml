@@ -45,15 +45,15 @@
             android:label="@string/title_activity_triangle"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Geometry.Square.Square"
+            android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Square.Square"
             android:label="@string/title_activity_square"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Geometry.Rectangle.Rectangle"
+            android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Rectangle.Rectangle"
             android:label="@string/title_activity_rectangle"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Geometry.Rhombus.Rhombus"
+            android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Rhombus.Rhombus"
             android:label="@string/title_activity_rhombus"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -61,11 +61,11 @@
             android:label="@string/title_activity_parallelogram"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Geometry.Trapezoid.Trapezoid"
+            android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Trapezoid.Trapezoid"
             android:label="@string/title_activity_trapezoid"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Geometry.Kite.Kite"
+            android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Kite.Kite"
             android:label="@string/title_activity_kite"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -131,6 +131,30 @@
         <activity
             android:name=".Geometry.Polygon.Polygon"
             android:label="@string/title_activity_polygon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Triangle.TypesOfTriangle.AcuteTriangle"
+            android:label="@string/title_activity_acute_triangle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Triangle.TypesOfTriangle.RightTriangle"
+            android:label="@string/title_activity_right_triangle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Triangle.TypesOfTriangle.ObtuseTriangle"
+            android:label="@string/title_activity_obtuse_triangle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Triangle.TypesOfTriangle.EquilateralTriangle"
+            android:label="@string/title_activity_equilateral_triangle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Triangle.TypesOfTriangle.IsoscelesTriangle"
+            android:label="@string/title_activity_isosceles_triangle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Triangle.TypesOfTriangle.ScaleneTriangle"
+            android:label="@string/title_activity_scalene_triangle"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

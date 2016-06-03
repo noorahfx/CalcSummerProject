@@ -36,4 +36,13 @@
     <string name="title_activity_cone">Cone</string>
     <string name="title_activity_quadrilatreral">Quadrilatreral</string>
     <string name="title_activity_polygon">Polygon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_acute_triangle">AcuteTriangle</string>
+    <string name="title_activity_right_triangle">RightTriangle</string>
+    <string name="title_activity_obtuse_triangle">ObtuseTriangle</string>
+    <string name="title_activity_equilateral_triangle">EquilateralTriangle</string>
+    <string name="title_activity_isosceles_triangle">IsoscelesTriangle</string>
+    <string name="title_activity_scalene_triangle">ScaleneTriangle</string>
 </resources>

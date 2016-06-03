@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="calcpa.calcsummerproject.Geometry.Kite.Kite"
+    tools:context=".Geometry.Quadrilateral.TypesOfQuadrilateral.Kite.Kite"
     tools:showIn="@layout/activity_kite">
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject.Geometry.Kite;
+package calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,12 +9,12 @@ import android.view.View;
 
 import calcpa.calcsummerproject.R;
 
-public class Kite extends AppCompatActivity {
+public class ScaleneTriangle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kite);
+        setContentView(R.layout.activity_scalene_triangle);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Geometry.Quadrilateral.TypesOfQuadrilateral.Square.Square">
+    tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.ObtuseTriangle">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_square" />
+    <include layout="@layout/content_obtuse_triangle" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

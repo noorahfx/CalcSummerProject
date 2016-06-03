@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="formula_str">Formulas</string>
+    <string name="def_str">Definition </string>
+    <string name="attr_str">Attribute</string>
+    <string name="properties_str">Properties</string>
+</resources>

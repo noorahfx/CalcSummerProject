@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject.Geometry.Square;
+package calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,12 +9,12 @@ import android.view.View;
 
 import calcpa.calcsummerproject.R;
 
-public class Square extends AppCompatActivity {
+public class IsoscelesTriangle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_square);
+        setContentView(R.layout.activity_isosceles_triangle);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

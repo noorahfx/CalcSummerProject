@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+                            <!-- Right TRIANGLE -->
+    <!-- Definition -->
+    <string name="right_triangle_def">A triangle that has a right angle.</string>
+
+    <!--Attribute-->
+    <string name="right_triangle_attr_1">
+        The side opposite the right angle.
+        This will always be the longest side of a right angle.
+    </string>
+    <string name="right_triangle_attr_2">
+        The two sides that are not the hypotenuse.
+        They are the two sides making up the right angle itself.
+    </string>
+
+    <!--Properties-->
+    <string name="right_triangle_property_1">
+        A right triangle can also be Isosceles if the two sides that include
+        the right angle are equal in length.</string>
+    <string name="right_triangle_property_2">
+        A right triangle can never be equilateral, since the hypotenuse
+        is always longer than either of the other two sides.
+    </string>
+
+                    <!-- Right Triangle FORMULAS-->
+    <!--Leg a -->
+    <string name="leg_a">a =2A/b
+
+</string>
+
+    <!--Leg b -->
+    <string name="leg_b">B = 2A/a</string>
+
+    <!-- Leg c/hypotenous -->
+    <string name="leg_c_hypotenous">c=(\u221aa^2+\u221ab^2)</string>
+
+    <!--Area -->
+    <string name="righ_triangle_area">A = ab/2</string>
+
+    <!-- Parameter -->
+    <string name="triangle_parameter">P = a + b + (\u221aa^2 + \u221ab^2)</string>
+
+    <string name="hypotenuse">Hypotenuse</string>
+    <string name="sides">Sides</string>
+</resources>

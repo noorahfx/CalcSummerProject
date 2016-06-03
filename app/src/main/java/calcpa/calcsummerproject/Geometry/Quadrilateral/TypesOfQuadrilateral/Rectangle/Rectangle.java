@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject.Geometry.Rectangle;
+package calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Rectangle;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -115,36 +116,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/formula_str"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:text="@string/formula_str" />
 
-            <TextView
+            <io.github.kexanie.library.MathView
+                android:id="@+id/right_triangle_paramter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:engine="KaTeX">
+            </io.github.kexanie.library.MathView>
 
-                android:layout_width="wrap_content"
+            <io.github.kexanie.library.MathView
+                android:id="@+id/right_triangle_area"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/triangle_parameter"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/righ_triangle_area"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/leg_a"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/leg_b"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/leg_c_hypotenous"/>
+                auto:engine="KaTeX">
+            </io.github.kexanie.library.MathView>
 
+            <io.github.kexanie.library.MathView
+                android:id="@+id/right_triangle_side_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:engine="KaTeX">
+            </io.github.kexanie.library.MathView>
 
+            <io.github.kexanie.library.MathView
+                android:id="@+id/right_triangle_side_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:engine="KaTeX">
+            </io.github.kexanie.library.MathView>
 
+            <io.github.kexanie.library.MathView
+                android:id="@+id/right_triangle_side_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:engine="KaTeX">
+            </io.github.kexanie.library.MathView>
         </LinearLayout>
-
-
     </ScrollView>
-
 </LinearLayout>

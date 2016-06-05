@@ -15,8 +15,17 @@ import calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.ObtuseTriangle
 import calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.RightTriangle;
 import calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.ScaleneTriangle;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Triangle extends AppCompatActivity {
+    MathView sid_a;
+    MathView sid_b;
+    MathView hypothenous_side_c;
+    MathView parameter;
+    MathView area;
+
+
+
     ListView list;
     String[] triangle_type = {
             "Right Triangle", "Acute Triangle",

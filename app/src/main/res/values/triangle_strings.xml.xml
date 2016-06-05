@@ -25,12 +25,12 @@
 
                     <!-- Right Triangle FORMULAS-->
     <!--Leg a -->
-    <string name="leg_a">a =2A/b
+    <string name="leg_a">"$$a =2\\frac{A}{b}$$"
 
 </string>
 
     <!--Leg b -->
-    <string name="leg_b">B = 2A/a</string>
+    <string name="leg_b">b = 2A/a</string>
 
     <!-- Leg c/hypotenous -->
     <string name="leg_c_hypotenous">c=(\u221aa^2+\u221ab^2)</string>

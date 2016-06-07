@@ -6,20 +6,20 @@
 
     <!--Attribute-->
     <string name="right_triangle_attr_1">
-        The side opposite the right angle.
+          Hypotenuse is the side opposite the right angle.
         This will always be the longest side of a right angle.
     </string>
     <string name="right_triangle_attr_2">
-        The two sides that are not the hypotenuse.
+          The two sides that are not the hypotenuse.
         They are the two sides making up the right angle itself.
     </string>
 
     <!--Properties-->
     <string name="right_triangle_property_1">
-        A right triangle can also be Isosceles if the two sides that include
+          A right triangle can also be Isosceles if the two sides that include
         the right angle are equal in length.</string>
     <string name="right_triangle_property_2">
-        A right triangle can never be equilateral, since the hypotenuse
+          A right triangle can never be equilateral, since the hypotenuse
         is always longer than either of the other two sides.
     </string>
 

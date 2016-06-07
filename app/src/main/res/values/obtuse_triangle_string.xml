@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- OBTUSE TRIANGLE -->
+    <!-- Definition -->
+    <string name="obtuse_triangle_def">
+        \u2022 A triangle one of whose angle measure is greater than 90º
+        and the sum of the measures of other two angles is less than 90º.
+</string>
+
+    <!--Attribute-->
+    <string name="obtuse_triangle_attr_1">
+       \u2022 An obtuse triangle hence has one obtuse angle,
+        the other two angles being the required acute angles
+    </string>
+
+    <!--Properties-->
+    <string name="obtuse_triangle_property_1">
+       \u2022 An obtuse triangle will have one and only one obtuse angle.
+      \n \u2022 The other two angles are acute angles.
+      \n \u2022 The sum of the two angles other than the obtuse angle is less than 90º.
+       \n \u2022The side opposite to the obtuse angle is the longest side of the triangle.
+    </string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Scalene TRIANGLE -->
+    <!-- Definition -->
+    <string name="scalene_triangle_def">
+        \u2022 A triangle that has 3 unequal sides. If all the angles of any triangle are different,
+        then the triangle is scalene, and all the sides are different measure.
+.</string>
+
+    <string name="scalene_triangle_str"> Types of Scales Triangle</string>
+
+
+
+
+    <!--Properties-->
+    <string name="scalene_triangle_property_1">
+         \u2022 A scalene triangle has no congruent sides.
+        \n\u2022 A scalene triangle has no equal angles.
+        \n\u2022 A scalene triangle has no line of symmetry.
+
+
+    </string>
+
+    <!-- types of Scalene triangle -->
+
+    <string name="scalene_triangle_types_list">
+
+        \u2022 Acute Scalene Triangle:
+        \n\t\t - The three angles are acute angles and the three sides are of different lengths.
+
+        \n\u2022 Obtuse Scalene Triangle:
+        \n\t\t - In One of the triangle is obtuse angle and all the sides are of different measures.
+
+       \n\u2022 Right Scalene Triangle:
+        \n\t\t - One of the angle is right angle and all the three sides are of different measures.
+
+        \n\u2022 Special Scalene Right Triangles:
+        \n\t\t - All the three angles are of (30 - 60- 90) degrees.
+
+    </string>
+</resources>

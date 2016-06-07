@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:auto="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_color"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.RightTriangle"
-    tools:showIn="@layout/activity_right_triangle"
-    android:background="@drawable/background_color">
+    tools:showIn="@layout/activity_right_triangle">
 
 
     <ScrollView
@@ -19,8 +19,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:clickable="false">
+            android:clickable="false"
+            android:orientation="vertical">
 
 
             <TextView
@@ -48,11 +48,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_horizontal"
-                android:textColor="@color/white"
-                android:textSize="24sp"
                 android:paddingBottom="2dp"
                 android:paddingTop="8dp"
-                android:text="@string/def_str" />
+                android:text="@string/def_str"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/right_triangle_define_id"
@@ -60,31 +60,21 @@
                 android:layout_height="wrap_content"
                 android:padding="2dp"
                 android:paddingBottom="8dp"
+                android:text="@string/right_triangle_def"
                 android:textColor="@color/DarkRed"
-                android:textSize="16sp"
-                android:text="@string/right_triangle_def" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/right_tr_attr_str"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_horizontal"
-                android:paddingTop="8dp"
                 android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/attr_str"
                 android:textColor="@color/white"
-                android:textSize="24sp"
-                android:text="@string/attr_str" />
+                android:textSize="24sp" />
 
-         <!--   <TextView
-                android:id="@+id/right_tr_hyp_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:textSize="20sp"
-                android:textColor="@color/Black"
-                android:text="@string/hypotenuse" /> -->
 
             <TextView
                 android:id="@+id/right_tr_att_1_id"
@@ -93,27 +83,12 @@
                 android:padding="2dp"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp"
-                android:textSize="16sp"
+                android:text="@string/right_triangle_attr_1"
                 android:textColor="@color/DarkRed"
-                android:text="@string/right_triangle_attr_1" />
+                android:textSize="16sp" />
 
-          <!--  <TextView
-                android:id="@+id/right_tr_sides_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="@string/sides" /> -->
 
-            <TextView
-                android:id="@+id/right_tr_att_2_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:textColor="@color/DarkRed"
-                android:textSize="16sp"
-                android:text="@string/right_triangle_attr_2" />
+
 
             <TextView
                 android:id="@+id/right_tr_prop_id"
@@ -123,9 +98,9 @@
                 android:padding="2dp"
                 android:paddingBottom="8dp"
                 android:paddingTop="12dp"
-                android:textSize="24sp"
+                android:text="@string/properties_str"
                 android:textColor="@color/white"
-                android:text="@string/properties_str" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/right_tr_prop_1_id"
@@ -134,20 +109,10 @@
                 android:padding="2dp"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp"
-                android:textSize="16sp"
+                android:text="@string/right_triangle_property_1"
                 android:textColor="@color/DarkRed"
-                android:text="@string/right_triangle_property_1" />
+                android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/right_tr_prop_2_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:textSize="16sp"
-                android:textColor="@color/DarkRed"
-                android:text="@string/right_triangle_property_2" />
 
             <TextView
                 android:id="@+id/right_tri_formula_id"
@@ -157,45 +122,40 @@
                 android:padding="2dp"
                 android:paddingBottom="12dp"
                 android:paddingTop="12dp"
-                android:textSize="24sp"
+                android:text="@string/formula_str"
                 android:textColor="@color/white"
-                android:text="@string/formula_str" />
+                android:textSize="24sp" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/right_triangle_paramter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill_horizontal"
-                auto:engine="KaTeX">
-            </io.github.kexanie.library.MathView>
+                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/right_triangle_area"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                auto:engine="KaTeX">
-            </io.github.kexanie.library.MathView>
+                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/right_triangle_side_c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                auto:engine="KaTeX">
-            </io.github.kexanie.library.MathView>
+                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/right_triangle_side_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                auto:engine="KaTeX">
-            </io.github.kexanie.library.MathView>
+                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/right_triangle_side_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                auto:engine="KaTeX">
-            </io.github.kexanie.library.MathView>
+                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</RelativeLayout>

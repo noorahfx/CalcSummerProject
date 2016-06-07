@@ -45,33 +45,11 @@ public class RightTriangle extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        //---------------------
-      /**  myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams_Bold.ttf");
-        myTextView = (TextView)findViewById(R.id.right_tr_sides_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams_Bold.ttf");
-        myTextView = (TextView)findViewById(R.id.right_tr_hyp_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-
-        ///------ */
-
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.right_tr_att_2_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
 
 
         myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
         myTextView = (TextView)findViewById(R.id.right_tr_prop_1_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-
-
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.right_tr_prop_2_id);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 

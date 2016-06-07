@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ACUTE TRIANGLE -->
+    <!-- Definition -->
+    <string name="acute_triangle_def">
+        \u2022 A triangle where all three internal angles are
+        acute (less than 90°)
+    </string>
+
+    <!--Attribute-->
+
+     <string name="acute_triangle_attr_1">
+           \u2022 The sum of any two angles is always greater than 90°.
+      </string>
+</resources>

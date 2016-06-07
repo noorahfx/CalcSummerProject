@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Equilateral TRIANGLE -->
+    <!-- Definition -->
+    <string name="equilateral_triangle_def">
+       \u2022 A triangle in which all the three sides are of equal length.
+        Equilateral triangles are equiangular, that is the interior angles are
+        congruent to each other and each angle will be equal to 60°
+        and doesn\'t matter how big or small the triangle is.</string>
+
+    <!--Attribute-->
+
+
+    <!--Properties-->
+    <string name="equilateral_triangle_property_1">
+        \u2022 All three angles of an equilateral triangle are always 60°
+        \n \u2022 Interior angles of a triangle add up to 180°
+        and exterior angles of a triangle add up to 360°.
+
+       \n \u2022 Equilateral triangles are bilaterally symmetrical in three different ways.
+
+       \n \u2022 Equilateral triangle have three lines of symmetry from each vertex
+        to the midpoint of the opposite side.Lines are known to be as medians,
+        perpendicular bisectors, altitudes and angle bisectors of the triangle.
+
+      \n \u2022 The point where in the three lines intersect is the centroid,
+        in center, circumcenter and the orthocenter of the triangle.
+
+        \n \u2022 All equilateral triangles are also Isosceles triangles and
+        if you stack six equilateral triangles together you will get a hexagon.
+    </string>
+</resources>

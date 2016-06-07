@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Isosceles TRIANGLE -->
+    <!-- Definition -->
+    <string name="isosceles_triangle_def">
+        \u2022 A triangle with two congruent sides and congruent base angles.</string>
+
+    <!--Properties-->
+    <string name="isosceles_triangle_property_1">
+        \u2022 Has two congruent sides.
+        \n\u2022 Has congruent base angles.
+        \n\u2022 The unequal side of an isosceles triangle
+        is usually referred to as the Base of the triangle.
+        \n\u2022 When the 3rd angle is a right angle, it is called a "Right Isosceles Triangle"
+        \n\u2022 The altitude is a perpendicular distance from the base to the topmost vertex.
+        \n\u2022 Has an altitude which:
+        \n\t\t\u2022 Meets the base at a right angle,
+        \n\t\t\u2022 Bisects the apex angle, and
+        \n\t\t\u2022 Splits the original isosceles triangle into two congruent halves
+        \n\u2022 If two triangles are congruent, then the angles opposite to them are also congruent.
+
+    </string>
+
+</resources>

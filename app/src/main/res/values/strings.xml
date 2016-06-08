@@ -45,4 +45,22 @@
     <string name="title_activity_equilateral_triangle">EquilateralTriangle</string>
     <string name="title_activity_isosceles_triangle">IsoscelesTriangle</string>
     <string name="title_activity_scalene_triangle">ScaleneTriangle</string>
+    <string name="title_activity_regular_hexagon">RegularHexagon</string>
+    <string name="title_activity_irregular_hexagon">IrregularHexagon</string>
+    <string name="title_activity_concave_hexagon">ConcaveHexagon</string>
+    <string name="title_activity_convex_hexagon">ConvexHexagon</string>
+    <string name="title_activity_regular_pentagon">RegularPentagon</string>
+    <string name="title_activity_irregular_pentagon">IrregularPentagon</string>
+    <string name="title_activity_regular_octagon">RegularOctagon</string>
+    <string name="title_activity_irregular_octagon">IrregularOctagon</string>
+    <string name="title_activity_convex_octagon">ConvexOctagon</string>
+    <string name="title_activity_regular_heptagon">RegularHeptagon</string>
+    <string name="title_activity_irregular_heptagon">IrregularHeptagon</string>
+    <string name="title_activity_regular_nonagon">RegularNonagon</string>
+    <string name="title_activity_irregular_nonagon">IrregularNonagon</string>
+    <string name="title_activity_regular_decagon">RegularDecagon</string>
+    <string name="title_activity_irregular_decagon">IrregularDecagon</string>
+    <string name="title_activity_convex_polygon">ConvexPolygon</string>
+    <string name="title_activity_concave_polygon">ConcavePolygon</string>
+    <string name="title_activity_regular_polygon">RegularPolygon</string>
 </resources>

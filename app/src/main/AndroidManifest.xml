@@ -155,6 +155,78 @@
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.ScaleneTriangle"
             android:label="@string/title_activity_scalene_triangle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Hexagon.TypesOfHexagon.RegularHexagon"
+            android:label="@string/title_activity_regular_hexagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Hexagon.TypesOfHexagon.IrregularHexagon"
+            android:label="@string/title_activity_irregular_hexagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Hexagon.TypesOfHexagon.ConcaveHexagon"
+            android:label="@string/title_activity_concave_hexagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Hexagon.TypesOfHexagon.ConvexHexagon"
+            android:label="@string/title_activity_convex_hexagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Pentagon.TypesOfPentagon.RegularPentagon"
+            android:label="@string/title_activity_regular_pentagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Pentagon.TypesOfPentagon.IrregularPentagon"
+            android:label="@string/title_activity_irregular_pentagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Octagon.TypesOfOctagon.RegularOctagon"
+            android:label="@string/title_activity_regular_octagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Octagon.TypesOfOctagon.IrregularOctagon"
+            android:label="@string/title_activity_irregular_octagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Octagon.TypesOfOctagon.ConvexOctagon"
+            android:label="@string/title_activity_convex_octagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Heptagon.TypesOfHeptagon.RegularHeptagon"
+            android:label="@string/title_activity_regular_heptagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Heptagon.TypesOfHeptagon.IrregularHeptagon"
+            android:label="@string/title_activity_irregular_heptagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Nonagon.TypesOfNonagon.RegularNonagon"
+            android:label="@string/title_activity_regular_nonagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Nonagon.TypesOfNonagon.IrregularNonagon"
+            android:label="@string/title_activity_irregular_nonagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Decagon.TypesOfDecagon.RegularDecagon"
+            android:label="@string/title_activity_regular_decagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Decagon.TypesOfDecagon.IrregularDecagon"
+            android:label="@string/title_activity_irregular_decagon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Polygon.TypesOfPolygon.ConvexPolygon"
+            android:label="@string/title_activity_convex_polygon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Polygon.TypesOfPolygon.ConcavePolygon"
+            android:label="@string/title_activity_concave_polygon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Geometry.Polygon.TypesOfPolygon.RegularPolygon"
+            android:label="@string/title_activity_regular_polygon"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

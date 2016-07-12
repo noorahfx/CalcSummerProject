@@ -20,7 +20,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:clickable="false"
             android:orientation="vertical">
 
@@ -203,6 +203,7 @@
 
 
             <TextView
+                android:id="@+id/side_c_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hypotenuse"
@@ -210,9 +211,167 @@
                 android:gravity="center"
                 android:layout_below="@+id/area_click_botton"
                 android:layout_marginTop="20dp"
-                android:textSize="30sp"/>
+                android:textSize="30sp"
+                android:layout_gravity="bottom" />
+            <ImageView
+                android:id="@+id/side_c_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image1"
+                android:layout_below="@+id/side_c_text"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/hyp_side_a_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:textSize="25sp"
+                android:layout_alignLeft="@id/area_side_a_text"
+                android:layout_alignTop="@id/side_c_img"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/hyp_side_b_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hyp_side_a_tv"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/hyp_side_a_tv"
+                android:text="b"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/hyp_side_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_alignLeft="@+id/area_base_et"
+                android:layout_alignTop="@+id/hyp_side_a_tv"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/hyp_side_a_tv"
+                android:layout_toRightOf="@+id/hyp_side_a_tv"
+                />
+            <EditText
+                android:id="@+id/hyp_side_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_alignLeft="@+id/area_base_et"
+                android:layout_alignTop="@+id/hyp_side_b_tv"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/hyp_side_b_tv"
+                android:layout_toRightOf="@+id/hyp_side_b_tv"
+                />
+            <Button
+                android:id="@+id/hyp_calculate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/hyp_side_b_tv"
+                android:layout_alignTop="@+id/hyp_side_b_tv"
+                android:layout_marginTop="40dp"
+                android:text="Calculate" />
 
-            
+            <TextView
+                android:id="@+id/hyp_answer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/hyp_calculate_button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/hyp_calculate_button"
+                android:text="555"
+                android:textSize="15sp" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/right_triangle_a_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Side A"
+
+                android:gravity="center"
+                android:layout_below="@+id/hyp_calculate_button"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:layout_gravity="bottom" />
+            <ImageView
+                android:id="@+id/right_triangle_side_a_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image1"
+                android:layout_below="@+id/right_triangle_a_tx"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/right_triangle_area_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="25sp"
+                android:layout_alignLeft="@id/area_side_a_text"
+                android:layout_alignTop="@id/right_triangle_side_a_img"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/right_triangle_side_b_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_triangle_area_tv"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/right_triangle_area_tv"
+                android:text="b"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/right_triangle__area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_alignLeft="@+id/area_base_et"
+                android:layout_alignTop="@+id/right_triangle_area_tv"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/right_triangle_area_tv"
+                android:layout_toRightOf="@+id/right_triangle_area_tv"
+                />
+            <EditText
+                android:id="@+id/right_triangle_side_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_alignLeft="@+id/area_base_et"
+                android:layout_alignTop="@+id/right_triangle_side_b_tv"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/right_triangle_side_b_tv"
+                android:layout_toRightOf="@+id/right_triangle_side_b_tv"
+                />
+            <Button
+                android:id="@+id/right_triangle_calc_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/right_triangle_side_b_tv"
+                android:layout_alignTop="@+id/right_triangle_side_b_tv"
+                android:layout_marginTop="40dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/right_triangle_answer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/right_triangle_calc_button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/right_triangle_calc_button"
+                android:text="555"
+                android:textSize="15sp" />
+
+
 
         </RelativeLayout>
 

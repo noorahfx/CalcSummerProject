@@ -31,6 +31,20 @@ public class RightTriangle extends AppCompatActivity {
     TextView hypAnswerTV;
     Button calculateHypButton;
 
+    //right triangle side A calculatro
+    EditText sideAAreaET;
+    EditText sideALegBET;
+    TextView sideAAnswerTV;
+    Button calculateSideAButton;
+
+    //right triangle side B calculator
+    EditText sideBAreaET;
+    EditText sideBLegAET;
+    TextView sideBAnswerTV;
+    Button calculateSideBButton;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,8 +130,56 @@ public class RightTriangle extends AppCompatActivity {
                 }
             }
         });
-    }
 
+         sideAAreaET =(EditText)findViewById(R.id.right_triangle__area_et);
+         sideALegBET =(EditText)findViewById(R.id.right_triangle_side_b_et);
+         sideAAnswerTV =(TextView)findViewById(R.id.right_triangle_answer_tv);
+         calculateSideAButton =(Button)findViewById(R.id.right_triangle_calc_button);
+         calculateSideAButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sideA = areaSideAET.getText().toString();
+                String sideB =areaSideBET.getText().toString();
+
+                double sideAFormula = 2*((Double.parseDouble(sideA)*
+                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideB);
+                areaAnswerTV.setText(String.format(".02f",sideAFormula));
+
+                if (TextUtils.isEmpty(sideA)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter height", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideB)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter base", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        sideBAreaET =(EditText)findViewById(R.id.right_triangle_sid_b_area_et);
+        sideBLegAET =(EditText)findViewById(R.id.right_triangle_side_a_et);
+        sideBAnswerTV =(TextView)findViewById(R.id.right_triangle_side_b_answer_tv);
+        calculateSideBButton =(Button)findViewById(R.id.right_triangle_sid_b_calc_button);
+        calculateSideBButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sideA = areaSideAET.getText().toString();
+                String sideB =areaSideBET.getText().toString();
+
+                double sideBFormula = 2*((Double.parseDouble(sideA)*
+                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideA);
+                areaAnswerTV.setText(String.format(".02f",sideBFormula));
+
+                if (TextUtils.isEmpty(sideA)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter height", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideB)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter base", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
 
     @Override
     protected void onResume() {

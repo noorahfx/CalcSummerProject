@@ -5,157 +5,218 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_color"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.RightTriangle"
     tools:showIn="@layout/activity_right_triangle">
 
-
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clickable="false"
             android:orientation="vertical">
 
-
             <TextView
-                android:id="@+id/right_triangle_title"
+                android:id="@+id/perimeter_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:gravity="center_horizontal"
-                android:text="Right Triangle"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Perimeter"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
 
             <ImageView
-
-                android:id="@+id/right_triangle_img_id"
+                android:id="@+id/rightTriangleImgID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingTop="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/perimeter_text"
+                android:src="@drawable/image2" />
+
+
+            <!--///FOrmula -->
+
+            <TextView
+                android:id="@+id/sidAText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/area_side_a_text"
+                android:layout_alignTop="@+id/rightTriangleImgID"
+                android:layout_marginTop="30dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/sideBText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/area_side_a_text"
+                android:layout_below="@+id/sidAText"
+                android:layout_marginTop="10dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/sidAEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/area_base_et"
+                android:layout_alignTop="@+id/sidAText"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/sidAText"
+                android:layout_toRightOf="@+id/sidAText"
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
+
+            <EditText
+                android:id="@+id/sidBEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/area_base_et"
+                android:layout_alignTop="@+id/sideBText"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/sideBText"
+                android:layout_toRightOf="@+id/sideBText"
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/calculateButtonID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sideBText"
+                android:layout_alignTop="@+id/sideBText"
+                android:layout_marginTop="40dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/answerEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/calculateButtonID"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/calculateButtonID"
+                android:ems="5"
+                android:text="asdf" />
+
+
+            <TextView
+                android:id="@+id/area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="226dp"
+                android:gravity="center"
+                android:text="Area"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+
+
+
+            <ImageView
+                android:id="@+id/rig_triangle_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/area_text"
                 android:src="@drawable/image1" />
 
             <TextView
-                android:id="@+id/right_tr_def_str_id"
+                android:id="@+id/area_side_a_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:paddingBottom="2dp"
-                android:paddingTop="8dp"
-                android:text="@string/def_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
+                android:layout_alignTop="@+id/rig_triangle_area_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="a"
+                android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/right_triangle_define_id"
+                android:id="@+id/area_side_b_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:text="@string/right_triangle_def"
-                android:textColor="@color/DarkRed"
-                android:textSize="16sp" />
+                android:layout_alignLeft="@+id/area_side_a_text"
+                android:layout_below="@id/area_side_a_text"
+                android:layout_marginTop="10dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/area_base_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/area_side_a_text"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/area_side_a_text"
+                android:layout_toRightOf="@+id/area_side_a_text"
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/area_height_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/area_side_b_text"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-10dp"
+                android:layout_toEndOf="@+id/area_side_b_text"
+                android:layout_toRightOf="@+id/area_side_b_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/area_click_botton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/area_side_b_text"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/area_side_b_text"
+                android:text="calculate"
+                />
 
             <TextView
-                android:id="@+id/right_tr_attr_str"
+                android:id="@+id/area_answer_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:text="@string/attr_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-
-            <TextView
-                android:id="@+id/right_tr_att_1_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:text="@string/right_triangle_attr_1"
-                android:textColor="@color/DarkRed"
-                android:textSize="16sp" />
-
-
-
-
-            <TextView
-                android:id="@+id/right_tr_prop_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:paddingTop="12dp"
-                android:text="@string/properties_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/right_tr_prop_1_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:text="@string/right_triangle_property_1"
-                android:textColor="@color/DarkRed"
-                android:textSize="16sp" />
+                android:layout_alignTop="@+id/area_click_botton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/area_click_botton"
+                android:text="555"
+                android:textSize="15sp" />
 
 
             <TextView
-                android:id="@+id/right_tri_formula_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:padding="2dp"
-                android:paddingBottom="12dp"
-                android:paddingTop="12dp"
-                android:text="@string/formula_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <io.github.kexanie.library.MathView
-                android:id="@+id/right_triangle_paramter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+                android:text="Hypotenuse"
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/right_triangle_area"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+                android:gravity="center"
+                android:layout_below="@+id/area_click_botton"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"/>
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/right_triangle_side_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+            
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/right_triangle_side_a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+        </RelativeLayout>
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/right_triangle_side_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
-        </LinearLayout>
     </ScrollView>
+
+
 </RelativeLayout>

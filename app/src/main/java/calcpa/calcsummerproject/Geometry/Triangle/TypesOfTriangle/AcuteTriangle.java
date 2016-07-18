@@ -3,28 +3,46 @@ package calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
-
 public class AcuteTriangle extends AppCompatActivity {
-    MathView acute_triangle_paramter;
-    String a_t_paramter = "$$P=a+b+c$$";
-
-    MathView acute_triangle_area;
-    String a_t_area = "$$A=\\frac{hb}{2}$$";
-
-    MathView acute_triangle_side_a;
-    String a_t_side_a = "$$a = 2 \\frac{A}{b}$$";
-
-    MathView acute_triangle_side_b;
-    String a_t_side_b = "$$b = 2 \\frac{A}{a}$$";
-
-   // MathView righ_triangle_side_c;
-   // String r_t_side_c = "$$c=\\sqrt{a^{2}+b^{2}}$$";
+    EditText sideAEditText;
+    EditText sideBEditText;
+    EditText sideCEditText;
+    TextView answerEditText;
+    Button calculateResultButton;
 
 
+    //acute triangle area
+    EditText areaSideAET;
+    EditText areaSideBET;
+    TextView areaAnswerTV;
+    Button calculateAreaButton;
+
+    //acute triangle hypotenuse
+    EditText hypSideAET;
+    EditText hypSideBET;
+    TextView hypAnswerTV;
+    Button calculateHypButton;
+
+    //acute triangle side A calculatro
+    EditText sideAAreaET;
+    EditText sideALegBET;
+    TextView sideAAnswerTV;
+    Button calculateSideAButton;
+
+    //acute triangle side B calculator
+    EditText sideBAreaET;
+    EditText sideBLegAET;
+    TextView sideBAnswerTV;
+    Button calculateSideBButton;
 
 
 
@@ -33,62 +51,145 @@ public class AcuteTriangle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acute_triangle);
 
-
-
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-        TextView myTextView = (TextView)findViewById(R.id.acute_triangle_title);
+        TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.acute_triangle_define_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+        //initialize the EditText
+        sideAEditText = (EditText) findViewById(R.id.sidAEditText);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.acute_tr_att_1_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+        sideBEditText = (EditText) findViewById(R.id.sidBEditText);
+        sideCEditText =(EditText)findViewById(R.id.side_c_perimeter_edit_text);
+        answerEditText = (TextView) findViewById(R.id.answerEditText);
+        calculateResultButton = (Button) findViewById(R.id.calculateButtonID);
+        calculateResultButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.acute_tr_def_str_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.acute_tr_attr_str);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.acute_tri_formula_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+                String sideA = sideAEditText.getText().toString();
+                String sideB = sideBEditText.getText().toString();
+                String sideC = sideAEditText.getText().toString();
 
 
+                double perimeter = Double.parseDouble(sideA) + Double.parseDouble(sideB) +
+                        Double.parseDouble(sideC);
+                answerEditText.setText(String.format("%.02f",perimeter));
 
+                if (TextUtils.isEmpty(sideA)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter height", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideB)) {
+                    Toast.makeText(getApplicationContext(), "Enter base", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideC)) {
+                    Toast.makeText(getApplicationContext(), "Enter base", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
-        acute_triangle_paramter =(MathView)findViewById(R.id.acute_triangle_paramter);
-        assert acute_triangle_paramter != null;
-        acute_triangle_paramter.setText(a_t_paramter);
+        areaSideAET = (EditText)findViewById(R.id.area_base_et);
+        areaSideBET = (EditText)findViewById(R.id.area_height_et);
+        areaAnswerTV = (TextView)findViewById(R.id.area_answer_tv);
+        calculateAreaButton = (Button)findViewById(R.id.area_click_botton);
+        calculateAreaButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v){
+                String sideA = areaSideAET.getText().toString();
+                String sideB =areaSideBET.getText().toString();
 
-        acute_triangle_area = (MathView)findViewById(R.id.acute_triangle_area);
-        assert acute_triangle_area != null;
-        acute_triangle_area.setText(a_t_area);
+                double area = (Double.parseDouble(sideA)*Double.parseDouble(sideB))/2;
+                areaAnswerTV.setText(String.format(".02f",area));
 
+                if (TextUtils.isEmpty(sideA)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter height", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideB)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter base", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
+        hypSideAET =(EditText)findViewById(R.id.hyp_side_a_et);
+        hypSideBET =(EditText)findViewById(R.id.hyp_side_b_et);
+        hypAnswerTV=(TextView)findViewById(R.id.hyp_answer_tv);
+        calculateHypButton =(Button)findViewById(R.id.hyp_calculate_button);
+        calculateHypButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sideA = areaSideAET.getText().toString();
+                String sideB =areaSideBET.getText().toString();
 
-        acute_triangle_side_a =(MathView)findViewById(R.id.acute_triangle_side_a);
-        assert acute_triangle_side_a != null;
-        acute_triangle_side_a.setText(a_t_side_a);
+                double hyp = Math.sqrt(Math.pow(Double.parseDouble(sideA),2)+
+                        Math.pow(Double.parseDouble(sideB),2));
+                areaAnswerTV.setText(String.format(".02f",hyp));
 
-        acute_triangle_side_b =(MathView)findViewById(R.id.acute_triangle_side_b);
-        assert acute_triangle_side_b != null;
-        acute_triangle_side_b.setText(a_t_side_b);
+                if (TextUtils.isEmpty(sideA)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter height", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideB)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter base", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
+        sideAAreaET =(EditText)findViewById(R.id.acute_triangle__area_et);
+        sideALegBET =(EditText)findViewById(R.id.acute_triangle_side_b_et);
+        sideAAnswerTV =(TextView)findViewById(R.id.acute_triangle_answer_tv);
+        calculateSideAButton =(Button)findViewById(R.id.acute_triangle_calc_button);
+        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sideA = areaSideAET.getText().toString();
+                String sideB =areaSideBET.getText().toString();
 
+                double sideAFormula = 2*((Double.parseDouble(sideA)*
+                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideB);
+                areaAnswerTV.setText(String.format(".02f",sideAFormula));
 
+                if (TextUtils.isEmpty(sideA)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter height", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideB)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter base", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        sideBAreaET =(EditText)findViewById(R.id.acute_triangle_sid_b_area_et);
+        sideBLegAET =(EditText)findViewById(R.id.acute_triangle_side_a_et);
+        sideBAnswerTV =(TextView)findViewById(R.id.acute_triangle_side_b_answer_tv);
+        calculateSideBButton =(Button)findViewById(R.id.acute_triangle_sid_b_calc_button);
+        calculateSideBButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sideA = areaSideAET.getText().toString();
+                String sideB =areaSideBET.getText().toString();
+
+                double sideBFormula = 2*((Double.parseDouble(sideA)*
+                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideA);
+                areaAnswerTV.setText(String.format(".02f",sideBFormula));
+
+                if (TextUtils.isEmpty(sideA)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter height", Toast.LENGTH_SHORT).show();
+                }
+                if (TextUtils.isEmpty(sideB)) {
+                    Toast.makeText(getApplicationContext(),
+                            "Enter base", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
 }

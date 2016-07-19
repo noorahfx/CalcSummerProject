@@ -214,7 +214,7 @@
                 android:layout_below="@+id/cube_special_diagonal_calc_answer_tx"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Edge"
+                android:text="Surface Area"
                 android:textSize="30sp" />
 
             <ImageView

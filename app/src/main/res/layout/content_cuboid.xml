@@ -12,4 +12,217 @@
     tools:context="calcpa.calcsummerproject.Geometry.Cuboid.Cuboid"
     tools:showIn="@layout/activity_cuboid">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cuboid_volume_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Volume"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/cuboid_volume_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_volume_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/cuboid_volume_l_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_volume_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="L"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cuboid_volume_l_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_volume_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/cuboid_volume_l_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/cuboid_volume_w_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_volume_l_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="W"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cuboid_volume_w_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_volume_l_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/cuboid_volume_l_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/cuboid_volume_h_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_volume_w_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="H"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cuboid_volume_h_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_volume_w_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/cuboid_volume_w_text"
+                android:ems="5" />
+            <Button
+                android:id="@+id/cuboid_volume_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_volume_h_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/cuboid_volume_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_volume_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/cuboid_area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_volume_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Area"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/cuboid_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_area_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/cuboid_area_l_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="L"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cuboid_area_l_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_area_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/cuboid_area_l_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/cuboid_area_w_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_l_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="W"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cuboid_area_w_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_area_l_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/cuboid_area_l_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/cuboid_area_h_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_w_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="H"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/cuboid_area_h_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_area_w_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/cuboid_area_w_text"
+                android:ems="5" />
+            <Button
+                android:id="@+id/cuboid_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_area_h_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/cuboid_area_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_area_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

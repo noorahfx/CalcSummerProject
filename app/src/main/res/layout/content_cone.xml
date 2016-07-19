@@ -119,7 +119,7 @@
                 android:src="@drawable/image1" />
 
             <TextView
-                android:id="@+id/cone_radius_r_text"
+                android:id="@+id/cone_radius_h_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cone_radius_img"
@@ -129,20 +129,20 @@
                 android:textSize="25sp" />
 
             <EditText
-                android:id="@+id/cone_radius_r_et"
+                android:id="@+id/cone_radius_h_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cone_radius_img"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/cone_radius_r_text"
+                android:layout_toRightOf="@+id/cone_radius_h_text"
                 android:ems="5" />
 
             <TextView
                 android:id="@+id/cone_radius_v_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cone_radius_r_text"
+                android:layout_below="@id/cone_radius_h_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
                 android:text="V"
@@ -152,7 +152,7 @@
                 android:id="@+id/cone_radius_v_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cone_radius_r_et"
+                android:layout_below="@+id/cone_radius_h_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cone_radius_v_text"

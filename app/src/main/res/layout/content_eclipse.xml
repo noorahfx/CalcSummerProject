@@ -12,4 +12,354 @@
     tools:context="calcpa.calcsummerproject.Geometry.Eclipse.Eclipse"
     tools:showIn="@layout/activity_eclipse">
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ellipse_area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Area"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ellipse_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_area_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/ellipse_area_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_area_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_area_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_area_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/ellipse_area_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/ellipse_area_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_area_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_area_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_area_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/ellipse_area_b_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/ellipse_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_area_b_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/ellipse_area_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_area_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/ellipse_a_xis_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_area_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="A-xis"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ellipse_a_xis_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_a_xis_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/ellipse_a_xis_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_a_xis_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_a_xis_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_a_xis_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/ellipse_a_xis_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/ellipse_a_xis_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_a_xis_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_a_xis_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_a_xis_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/ellipse_a_xis_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_a_xis_b_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/ellipse_a_xis_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_a_xis_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/ellipse_b_xis_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_a_xis_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="B-xis"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ellipse_b_xis_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_b_xis_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/ellipse_b_xis_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_b_xis_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_b_xis_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_b_xis_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/ellipse_b_xis_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/ellipse_b_xis_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_b_xis_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="A"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_b_xis_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_b_xis_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/ellipse_b_xis_area_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/ellipse_b_xis_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_b_xis_area_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/ellipse_b_xis_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_b_xis_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/ellipse_circum_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_b_xis_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Circumference"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ellipse_circum_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_circum_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/ellipse_circum_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_circum_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="h"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_circum_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_circum_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/ellipse_circum_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/ellipse_circum_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_circum_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_circum_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_circum_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/ellipse_circum_b_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/ellipse_circum_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_circum_b_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/ellipse_circum_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_circum_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    
+
+        </RelativeLayout>

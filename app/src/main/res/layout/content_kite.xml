@@ -12,4 +12,499 @@
     tools:context=".Geometry.Quadrilateral.TypesOfQuadrilateral.Kite.Kite"
     tools:showIn="@layout/activity_kite">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/kite_perimeter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Perimeter"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/kite_perimeter_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_perimeter_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/kite_perimeter_side_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_perimeter_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_perimeter_side_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_perimeter_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/kite_perimeter_side_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/kite_perimeter_side_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_perimeter_side_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_perimeter_side_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_perimeter_side_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/kite_perimeter_side_b_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/kite_perimeter_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_perimeter_side_b_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/kite_perimeter_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_perimeter_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/kite_area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_perimeter_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Area"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/kite_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_area_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/kite_area_diagonal_p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_area_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="p"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_area_diagonal_p_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_area_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/kite_area_diagonal_p_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/kite_area_diagonal_q_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_area_diagonal_p_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="q"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_area_diagonal_q_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_area_diagonal_p_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/kite_area_diagonal_q_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/kite_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_area_diagonal_q_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/kite_area_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_area_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/kite_side_a_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_area_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Side A"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/kite_side_a_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_a_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/kite_side_a_bside_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_side_a_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_side_a_bside_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_a_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/kite_side_a_bside_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/kite_side_a_perimeter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_side_a_bside_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_side_a_perimeter_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_a_bside_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/kite_side_a_perimeter_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/kite_side_a_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_a_perimeter_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/kite_side_a_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_a_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/kite_side_b_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_a_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Side B"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/kite_side_b_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_b_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/kite_side_b_aside_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_side_b_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_side_b_aside_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_b_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/kite_side_b_aside_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/kite_side_b_perimeter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_side_b_aside_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_side_b_perimeter_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_b_aside_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/kite_side_b_perimeter_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/kite_side_b_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_b_perimeter_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/kite_side_b_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_b_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/kite_p_diaognal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_side_b_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Diaognal(P)"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/kite_p_diaognal_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_p_diaognal_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/kite_p_diaognal_q_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_p_diaognal_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="q"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_p_diaognal_q_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_p_diaognal_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/kite_p_diaognal_q_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/kite_p_diaognal_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_p_diaognal_q_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="A"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_p_diaognal_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_p_diaognal_q_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/kite_p_diaognal_area_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/kite_p_diaognal_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_p_diaognal_area_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/kite_p_diaognal_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_p_diaognal_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/kite_q_diaognal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_p_diaognal_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Diaognal(Q)"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/kite_q_diaognal_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_q_diaognal_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/kite_q_diaognal_p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_q_diaognal_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="p"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_q_diaognal_p_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_q_diaognal_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/kite_q_diaognal_p_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/kite_q_diaognal_perimeter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kite_q_diaognal_p_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="P"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/kite_q_diaognal_perimeter_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_q_diaognal_p_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/kite_q_diaognal_perimeter_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/kite_q_diaognal_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_q_diaognal_perimeter_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/kite_q_diaognal_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kite_q_diaognal_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+            
+            
+            </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

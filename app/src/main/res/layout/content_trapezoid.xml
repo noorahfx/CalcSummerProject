@@ -12,4 +12,806 @@
     tools:context=".Geometry.Quadrilateral.TypesOfQuadrilateral.Trapezoid.Trapezoid"
     tools:showIn="@layout/activity_trapezoid">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/trapezoid_perimeter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Perimeter"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/trapezoid_perimeter_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/trapezoid_perimeter_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_perimeter_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_perimeter_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/trapezoid_perimeter_a_text"
+                android:ems="5" />
+
+            
+            <TextView
+                android:id="@+id/trapezoid_perimeter_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_perimeter_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_perimeter_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_perimeter_b_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_perimeter_c_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_perimeter_b_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="c"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_perimeter_c_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_b_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_perimeter_c_text"
+                android:ems="5" />
+            <TextView
+                android:id="@+id/trapezoid_perimeter_d_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_perimeter_c_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_perimeter_d_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_c_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_perimeter_d_text"
+                android:ems="5" />
+            
+            
+            <Button
+                android:id="@+id/trapezoid_perimeter_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_d_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/trapezoid_perimeter_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/trapezoid_area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_perimeter_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Area"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/trapezoid_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_area_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/trapezoid_area_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_area_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_area_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_area_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/trapezoid_area_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_area_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_area_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_area_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_area_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_area_b_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_area_h_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_area_b_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="h"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_area_h_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_area_b_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_area_h_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/trapezoid_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_area_h_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/trapezoid_area_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_area_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/trapezoid_height_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_area_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Height"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/trapezoid_height_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_height_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/trapezoid_height_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_height_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_height_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_height_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/trapezoid_height_a_text"
+                android:ems="5" />
+
+
+
+            <TextView
+                android:id="@+id/trapezoid_height_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_height_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="b"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_height_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_height_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_height_b_text"
+                android:ems="5" />
+
+
+
+            <TextView
+                android:id="@+id/trapezoid_height_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_height_b_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="A"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_height_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_height_b_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_height_area_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/trapezoid_height_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_height_area_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/trapezoid_height_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_height_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/trapezoid_baseA_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_height_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Base A"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/trapezoid_baseA_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseA_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseA_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseA_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/trapezoid_baseA_b_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseA_h_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseA_b_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseA_h_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_b_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_baseA_h_text"
+                android:ems="5" />
+            <TextView
+                android:id="@+id/trapezoid_baseA_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseA_h_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseA_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_h_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_baseA_area_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/trapezoid_baseA_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_area_et"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseA_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/trapezoid_baseB_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Base B"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/trapezoid_baseB_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseB_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseB_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseB_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/trapezoid_baseB_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseB_h_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseB_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseB_h_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_baseB_h_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseB_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseB_h_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseB_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_h_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_baseB_area_text"
+                android:ems="5" />
+            
+            
+
+            <Button
+                android:id="@+id/trapezoid_baseB_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_area_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseB_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/trapezoid_sideC_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Side C"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/trapezoid_sideC_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideC_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideC_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideC_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/trapezoid_sideC_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideC_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideC_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideC_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_sideC_b_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideC_d_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideC_b_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideC_d_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_b_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_sideC_d_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideC_p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideC_d_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideC_p_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_d_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_sideC_p_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/trapezoid_sideC_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_b_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideC_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/trapezoid_sideD_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideC_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Radius"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/trapezoid_sideD_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideD_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideD_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideD_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideD_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideD_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/trapezoid_sideD_a_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideD_b_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideD_a_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideD_b_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideD_a_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_sideD_b_text"
+                android:ems="5" />
+
+
+            <TextView
+                android:id="@+id/trapezoid_sideD_c_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideD_b_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideD_c_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideD_b_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_sideD_c_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideD_p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_sideD_c_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_sideD_p_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideD_c_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_sideD_p_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/trapezoid_sideD_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideD_p_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/trapezoid_sideD_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_sideD_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
 </RelativeLayout>

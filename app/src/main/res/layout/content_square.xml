@@ -12,4 +12,268 @@
     tools:context=".Geometry.Quadrilateral.TypesOfQuadrilateral.Square.Square"
     tools:showIn="@layout/activity_square">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/square_perimeter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Perimeter"
+                android:textSize="30sp"
+                />
+            <ImageView
+                android:id="@+id/square_perimeter_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/square_perimeter_text"
+                android:src="@drawable/image1"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/square_perimeter_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/square_perimeter_img"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="115dp"
+                android:text="a"
+                android:textSize="25sp"
+
+                />
+            <EditText
+                android:id="@+id/square_perimeter_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/square_perimeter_a_text"
+                android:layout_below="@id/square_perimeter_img"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:ems="5"
+                />
+            <Button
+                android:id="@+id/square_perimeter_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/square_perimeter_a_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate"
+                />
+            <TextView
+                android:id="@+id/square_perimeter_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_perimeter_calc_button"
+                android:text="Hello"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                />
+
+
+
+            <TextView
+                android:id="@+id/square_area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Area"
+                android:textSize="30sp"
+                android:layout_below="@+id/square_perimeter_calc_answer_tx"
+                android:layout_marginTop="20dp"
+
+                />
+            <ImageView
+                android:id="@+id/square_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/square_area_text"
+                android:src="@drawable/image1"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/square_area_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_area_img"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="115dp"
+                android:text="a"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/square_area_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/square_area_a_text"
+                android:layout_below="@id/square_area_img"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10dp"
+                android:ems="5"
+
+                />
+            <Button
+                android:id="@+id/square_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/square_area_a_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate"
+                />
+            <TextView
+                android:id="@+id/square_calc_area_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_area_calc_button"
+                android:text="Hello"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/square_side_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sides"
+                android:textSize="30sp"
+                android:layout_below="@+id/square_calc_area_answer_tx"
+                android:layout_marginTop="20dp"
+
+                />
+            <ImageView
+                android:id="@+id/square_side_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/square_side_text"
+                android:src="@drawable/image1"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/square_side_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_side_img"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="115dp"
+                android:text="a"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/square_side_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/square_side_a_text"
+                android:layout_below="@id/square_side_img"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10dp"
+                android:ems="5"
+
+                />
+            <Button
+                android:id="@+id/square_side_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/square_side_a_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate"
+                />
+            <TextView
+                android:id="@+id/square_calc_side_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_side_calc_button"
+                android:text="Hello"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                />
+
+
+
+            <TextView
+                android:id="@+id/square_diameter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Diameter"
+                android:textSize="30sp"
+                android:layout_below="@+id/square_calc_side_answer_tx"
+                android:layout_marginTop="20dp"
+
+                />
+            <ImageView
+                android:id="@+id/square_diameter_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/square_diameter_text"
+                android:src="@drawable/image1"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/square_diameter_d_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_diameter_img"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="115dp"
+                android:text="d"
+                android:textSize="25sp"
+                />
+            <EditText
+                android:id="@+id/square_diameter_d_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/square_diameter_d_text"
+                android:layout_below="@id/square_diameter_img"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10dp"
+                android:ems="5"
+
+                />
+            <Button
+                android:id="@+id/square_diameter_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/square_diameter_d_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate"
+                />
+            <TextView
+                android:id="@+id/square_calc_diamter_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square_diameter_calc_button"
+                android:text="Hello"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

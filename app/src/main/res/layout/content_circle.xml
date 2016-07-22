@@ -87,7 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Diamter"
+                android:text="Diameter"
                 android:textSize="30sp"
                 android:layout_below="@+id/circle_calc_answer_tx"
                 android:layout_marginTop="20dp"

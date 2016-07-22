@@ -12,4 +12,408 @@
     tools:context=".Geometry.Quadrilateral.TypesOfQuadrilateral.Rhombus.Rhombus"
     tools:showIn="@layout/activity_rhombus">
 
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rhombus_perimeter_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Perimeter"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rhombus_perimeter_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_perimeter_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rhombus_perimeter_a_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_perimeter_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_perimeter_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_perimeter_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rhombus_perimeter_a_text"
+                android:ems="5" />
+
+
+
+
+
+            <Button
+                android:id="@+id/rhombus_perimeter_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_perimeter_a_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rhombus_perimeter_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_perimeter_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/rhombus_area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_perimeter_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Area"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rhombus_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_area_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rhombus_area_p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_area_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="p"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_area_p_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_area_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rhombus_area_p_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/rhombus_area_q_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_area_p_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="q"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_area_q_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_area_p_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/rhombus_area_q_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/rhombus_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_area_q_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rhombus_area_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_area_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/rhombus_sides_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_area_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Sides"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rhombus_sides_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_sides_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rhombus_sides_p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_sides_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_sides_p_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_sides_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rhombus_sides_p_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/rhombus_sides_q_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_sides_p_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_sides_q_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_sides_p_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/rhombus_sides_q_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/rhombus_sides_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_sides_q_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rhombus_sides_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_sides_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/rhombus_p_diagonal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_sides_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Radius"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rhombus_p_diagonal_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_p_diagonal_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rhombus_p_diagonal_q_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_p_diagonal_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="q"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_p_diagonal_q_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_p_diagonal_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rhombus_p_diagonal_q_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/rhombus_p_diagonal_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_p_diagonal_q_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="A"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_p_diagonal_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_p_diagonal_q_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/rhombus_p_diagonal_area_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/rhombus_p_diagonal_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_p_diagonal_area_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rhombus_p_diagonal_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_p_diagonal_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/rhombus_q_diagonal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_p_diagonal_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Diagonal Q"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rhombus_q_diagonal_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_q_diagonal_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rhombus_q_diagonal_p_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_q_diagonal_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="r"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_q_diagonal_p_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_q_diagonal_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rhombus_q_diagonal_p_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/rhombus_q_diagonal_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rhombus_q_diagonal_p_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="V"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rhombus_q_diagonal_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_q_diagonal_p_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/rhombus_q_diagonal_area_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/rhombus_q_diagonal_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_q_diagonal_area_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rhombus_q_diagonal_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rhombus_q_diagonal_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Hello"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    
 </RelativeLayout>

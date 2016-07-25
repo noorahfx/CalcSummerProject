@@ -101,11 +101,11 @@ public class EquilateralTriangle extends AppCompatActivity {
         equilateral_triangle_side_a.setText(e_t_side_a);  */
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
+  /*      Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
         TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
+/**
         //initialize the EditText
         sideAEditText = (EditText) findViewById(R.id.sidAEditText);
          answerEditText = (TextView) findViewById(R.id.answerEditText);
@@ -173,7 +173,7 @@ public class EquilateralTriangle extends AppCompatActivity {
             }
         });
 
-
+*/
 
     }
 

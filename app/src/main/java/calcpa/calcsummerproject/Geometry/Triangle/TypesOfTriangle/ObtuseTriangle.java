@@ -137,7 +137,7 @@ public class ObtuseTriangle extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        //initialize the EditText
+  /**      //initialize the EditText
         sideAEditText = (EditText) findViewById(R.id.sidAEditText);
         sideBEditText = (EditText) findViewById(R.id.sidBEditText);
         answerEditText = (TextView) findViewById(R.id.answerEditText);
@@ -237,7 +237,7 @@ public class ObtuseTriangle extends AppCompatActivity {
                             "Enter base", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        }); */
     }
 
     @Override

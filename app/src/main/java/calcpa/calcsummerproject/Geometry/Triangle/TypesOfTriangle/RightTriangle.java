@@ -55,6 +55,8 @@ public class RightTriangle extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
+
+
         //initialize the EditText
         sideAEditText = (EditText) findViewById(R.id.sidAEditText);
         sideBEditText = (EditText) findViewById(R.id.sidBEditText);
@@ -155,8 +157,8 @@ public class RightTriangle extends AppCompatActivity {
                 }
             }
         });
-        sideBAreaET =(EditText)findViewById(R.id.right_triangle_sid_b_area_et);
-        sideBLegAET =(EditText)findViewById(R.id.right_triangle_side_a_et);
+       sideBAreaET =(EditText)findViewById(R.id.right_triangle_sid_b_area_et);
+      sideBLegAET =(EditText)findViewById(R.id.right_triangle_side_a_et);
         sideBAnswerTV =(TextView)findViewById(R.id.right_triangle_side_b_answer_tv);
         calculateSideBButton =(Button)findViewById(R.id.right_triangle_sid_b_calc_button);
         calculateSideBButton.setOnClickListener(new View.OnClickListener() {

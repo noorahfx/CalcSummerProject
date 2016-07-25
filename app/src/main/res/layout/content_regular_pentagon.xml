@@ -204,3 +204,94 @@
     </ScrollView>
 
 </RelativeLayout>
+
+
+<!--
+
+<TextView
+android:id="@+id/sidAText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/obtuseTriangleImgID"
+android:layout_marginLeft="115dp"
+android:layout_marginTop="40dp"
+android:text="a"
+android:textSize="25sp" />
+
+
+<TextView
+android:id="@+id/side_b_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/sidAText"
+android:layout_marginLeft="115dp"
+android:layout_marginTop="32dp"
+android:text="b"
+android:textSize="25sp" />
+
+
+
+<TextView
+android:id="@+id/side_c_perimeter_txt"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/side_b_text"
+android:layout_marginLeft="115dp"
+android:layout_marginTop="32dp"
+android:text="c"
+android:textSize="25sp" />
+
+<EditText
+android:id="@+id/sidAEditText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/obtuseTriangleImgID"
+android:layout_marginLeft="10dp"
+android:layout_marginTop="30dp"
+android:layout_toRightOf="@+id/sidAText"
+android:ems="5"
+android:inputType="numberDecimal" />
+
+<EditText
+android:id="@+id/sidBEditText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/sidAEditText"
+android:layout_marginLeft="10dp"
+android:layout_marginTop="20dp"
+android:layout_toRightOf="@+id/side_b_text"
+android:ems="5" />
+
+
+<EditText
+android:id="@+id/side_c_perimeter_edit_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/sidBEditText"
+android:layout_marginLeft="10dp"
+android:layout_marginTop="20dp"
+android:layout_toRightOf="@+id/side_c_perimeter_txt"
+android:ems="5" />
+
+
+<Button
+android:id="@+id/calculateButtonID"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/side_c_perimeter_txt"
+android:layout_marginTop="10dp"
+android:text="Calculate" />
+
+<TextView
+android:id="@+id/answerEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/calculateButtonID"
+android:layout_marginTop="10dp"
+android:gravity="center"
+android:text="Hello"
+android:textColor="@color/red"
+android:textSize="20sp" />
+
+
+-->

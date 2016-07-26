@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Cuboid extends AppCompatActivity {
@@ -51,22 +52,21 @@ public class Cuboid extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String length = cuboidVolumeLET.getText().toString();
-                String weight = cuboidVolumeWET.getText().toString();
-                String height = cuboidVolumeHET.getText().toString();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cuboidVolumeLET)) {
+                    cuboidVolumeLET.setError("Enter Length");
+                } else if (Model.isEmpty(cuboidVolumeWET)) {
+                    cuboidVolumeWET.setError("Enter Width");
+                }else if (Model.isEmpty(cuboidVolumeHET)) {
+                    cuboidVolumeHET.setError("Enter Height");
+                }else {
+                    double length, width,height,cuboidVolume;
+                    length = Double.parseDouble(cuboidVolumeLET.getText().toString());
+                    width= Double.parseDouble(cuboidVolumeWET.getText().toString());
+                    height = Double.parseDouble(cuboidVolumeHET.getText().toString());
 
-
-
-                double volume = 6 * Double.parseDouble(height);
-                cuboidVolumeAnswerTV.setText(String.format("%.02f", volume));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                    cuboidVolume = length*width*height;
+                    cuboidVolumeAnswerTV.setText(String.format("%.02f", cuboidVolume));
                 }
             }
         });
@@ -74,31 +74,30 @@ public class Cuboid extends AppCompatActivity {
         //Area
 
         cuboidAreaLET = (EditText) findViewById(R.id.cuboid_area_l_et);
-        cuboidAreaWET = (EditText) findViewById(R.id.cuboid_area_l_et);
-        cuboidAreaHET = (EditText) findViewById(R.id.cuboid_area_l_et);
+        cuboidAreaWET = (EditText) findViewById(R.id.cuboid_area_w_et);
+        cuboidAreaHET = (EditText) findViewById(R.id.cuboid_area_h_et);
         cuboidAreaAnswerTV = (TextView) findViewById(R.id.cuboid_area_calc_answer_tx);
         cuboidAreaCalcButton = (Button) findViewById(R.id.cuboid_area_calc_button);
         cuboidAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(cuboidAreaLET)) {
+                    cuboidAreaLET.setError("Enter Radius");
+                } else if (Model.isEmpty(cuboidAreaWET)) {
+                    cuboidAreaWET.setError("Enter Height");
+                }else if (Model.isEmpty(cuboidAreaHET)) {
+                    cuboidAreaHET.setError("Enter Radius");
+                }else {
+                    double length, width,height,cuboidArea;
+                    length = Double.parseDouble(cuboidAreaLET.getText().toString());
+                    width= Double.parseDouble(cuboidAreaWET.getText().toString());
+                    height = Double.parseDouble(cuboidAreaHET.getText().toString());
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String length = cuboidAreaLET.getText().toString();
-                String weight = cuboidAreaWET.getText().toString();
-                String height = cuboidAreaHET.getText().toString();
-
-
-
-                double area = 6 * Double.parseDouble(height);
-                cuboidAreaAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                    cuboidArea = 2*((length*width)+(width*height)+(height*length));
+                    cuboidAreaAnswerTV.setText(String.format("%.02f", cuboidArea));
                 }
+
             }
         });
 

@@ -98,6 +98,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cuboid_volume_w_text"
                 android:ems="5" />
+
             <Button
                 android:id="@+id/cuboid_volume_calc_button"
                 android:layout_width="match_parent"
@@ -113,10 +114,8 @@
                 android:layout_below="@+id/cuboid_volume_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
 
             <TextView
@@ -137,9 +136,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
-
-
-
 
 
             <TextView
@@ -201,6 +197,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cuboid_area_w_text"
                 android:ems="5" />
+
             <Button
                 android:id="@+id/cuboid_area_calc_button"
                 android:layout_width="match_parent"
@@ -216,10 +213,8 @@
                 android:layout_below="@+id/cuboid_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
 
         </RelativeLayout>

@@ -12,23 +12,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class RegularHeptagon extends AppCompatActivity {
     //perimeter
-    EditText sideAEditText;
-    TextView answerTextView;
-    Button calculatePerimeterButton;
+    EditText hepPerimeterSideAET;
+    TextView hepPerimeterAnswerTV;
+    Button hepPerimeterCalcButton;
 
     //area
-    EditText areaSideET;
-    TextView areaAnswerTV;
-    Button calculateAreaButton;
+    EditText hepAreaSideAET;
+    TextView hepAreaAnswerTV;
+    Button hepAreaCalcButton;
 
     //side A
-    EditText sideAPerimeterET;
-    TextView sideAAnswerTV;
-    Button calculateSideAButton;
+    EditText hepSideAET;
+    TextView hepSideAAnswerTV;
+    Button hepSideACalcButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,69 +39,60 @@ public class RegularHeptagon extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        sideAEditText =(EditText)findViewById(R.id.hep_perimeter_side_a_et);
-        answerTextView =(TextView)findViewById(R.id.hep_calc_answer_tx);
-        calculatePerimeterButton=(Button)findViewById(R.id.hep_perimeter_calc_button);
-        calculatePerimeterButton.setOnClickListener(new View.OnClickListener() {
+        hepPerimeterSideAET = (EditText) findViewById(R.id.hep_perimeter_side_a_et);
+        hepPerimeterAnswerTV = (TextView) findViewById(R.id.hep_calc_answer_tx);
+        hepPerimeterCalcButton = (Button) findViewById(R.id.hep_perimeter_calc_button);
+        hepPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hepPerimeterSideAET)) {
+                    hepPerimeterSideAET.setError("Enter Value");
+                } else {
+                    double aSide, heptagonPerimeter;
+                    aSide = Double.parseDouble(hepPerimeterSideAET.getText().toString());
+                    heptagonPerimeter = 7 * aSide;
+                    hepPerimeterAnswerTV.setText(String.format("%.02f", heptagonPerimeter));
+                }
+            }
+        });
+//Area
+        hepAreaSideAET = (EditText) findViewById(R.id.hep_area_side_a_et);
+        hepAreaAnswerTV = (TextView) findViewById(R.id.hep_calc_area_answer_tx);
+        hepAreaCalcButton = (Button) findViewById(R.id.hep_area_calc_button);
+        hepAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hepAreaSideAET)) {
+                    hepAreaSideAET.setError("Enter Value");
 
-                String sideA = sideAEditText.getText().toString();
-
-
-                double perimeter = 6 * Double.parseDouble(sideA);
-                answerTextView.setText(String.format("%.02f", perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                } else {
+                    double aSide, heptagonArea;
+                    aSide = Double.parseDouble(hepAreaSideAET.getText().toString());
+                    heptagonArea = (1.75) * Math.pow(aSide, 2) * (1 / Math.tan(Math.toRadians(180) / 7));
+                    hepAreaAnswerTV.setText(String.format("%.02f", heptagonArea));
                 }
             }
         });
 
-        areaSideET =(EditText)findViewById(R.id.hep_area_side_a_et);
-        areaAnswerTV =(TextView)findViewById(R.id.hep_calc_area_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.hep_area_calc_button);
-        calculateAreaButton.setOnClickListener(new View.OnClickListener() {
+        hepSideAET = (EditText) findViewById(R.id.hep_side_et);
+        hepSideAAnswerTV = (TextView) findViewById(R.id.hep_calc_side_answer_tx);
+        hepSideACalcButton = (Button) findViewById(R.id.hep_side_calc_button);
+        hepSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-///change formula its incorrect
-                //do it later
-                String sideA = areaAnswerTV.getText().toString();
+                //check to make sure field is not empty
+                if (Model.isEmpty(hepSideAET)) {
+                    hepSideAET.setError("Enter Value");
 
-
-                double perimeter = 5*Double.parseDouble(sideA);
-                areaAnswerTV.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                } else {
+                    double perimeter, hepSideA;
+                    perimeter = Double.parseDouble(hepSideAET.getText().toString());
+                    hepSideA = perimeter / 7;
+                    hepSideAAnswerTV.setText(String.format("%.02f", hepSideA));
                 }
             }
         });
-
-
-        sideAPerimeterET =(EditText)findViewById(R.id.hep_side_et);
-        sideAAnswerTV =(TextView)findViewById(R.id.hep_calc_side_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.hep_side_calc_button);
-        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String sideA = sideAAnswerTV.getText().toString();
-
-//REcheck
-                double area = Double.parseDouble(sideA)/6;
-                sideAAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-
     }
-
 }

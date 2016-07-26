@@ -124,7 +124,6 @@
                 android:layout_toRightOf="@+id/circle_diameter_d_text"
                 android:ems="5"
                 android:inputType="numberDecimal"
-
                 />
 
             <Button

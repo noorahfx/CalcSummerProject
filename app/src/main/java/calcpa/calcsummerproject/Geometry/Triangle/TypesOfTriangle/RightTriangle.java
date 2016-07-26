@@ -43,6 +43,9 @@ public class RightTriangle extends AppCompatActivity {
     TextView sideBAnswerTV;
     Button calculateSideBButton;
 
+    public static boolean isNullOrEmpty(String input) {
+        return input == null || input.isEmpty();
+    }
 
 
     @Override
@@ -56,7 +59,6 @@ public class RightTriangle extends AppCompatActivity {
         myTextView.setTypeface(myTypeFace);
 
 
-
         //initialize the EditText
         sideAEditText = (EditText) findViewById(R.id.sidAEditText);
         sideBEditText = (EditText) findViewById(R.id.sidBEditText);
@@ -65,22 +67,24 @@ public class RightTriangle extends AppCompatActivity {
         calculateResultButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String sideA = sideAEditText.getText().toString();
-                String sideB = sideBEditText.getText().toString();
+
+                 String sideB = sideBEditText.getText().toString();
+
+                boolean answer = isNullOrEmpty(sideA);
+
+
+
+                //   if (sideA.length()==0)
+               //     sideAEditText.setError("Enter Value for SIde A");
+           //     if (sideA.length()==0)
+             //       sideAEditText.setError("Enter Value for SIde A");
 
                 double perimeter = Double.parseDouble(sideA) + Double.parseDouble(sideB) +
                         Math.sqrt(Math.pow(Double.parseDouble(sideA), 2) +
                                 Math.pow(Double.parseDouble(sideB), 2));
-                answerEditText.setText(String.format("%.02f",perimeter));
+                answerEditText.setText(String.format("%.02f", perimeter));
 
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(), "Enter base", Toast.LENGTH_SHORT).show();
-                }
             }
         });
 

@@ -14,23 +14,20 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Circle extends AppCompatActivity {
 
     //area
-
     EditText circleAreaET;
     TextView circleAnswerTV;
     Button circleAreaCalculateButton;
-
-
 
     //diameter
     EditText circleDiameterET;
     TextView circleDiameterTV;
     Button circleDiameterCalculateButton;
-
 
 
     //circumference
@@ -46,75 +43,65 @@ public class Circle extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
         //area
-        circleAreaET = (EditText)findViewById(R.id.circle_area_a_et);
-        circleAnswerTV = (TextView)findViewById(R.id.circle_calc_answer_tx);
-        circleAreaCalculateButton = (Button)findViewById(R.id.circle_area_calc_button);
+        circleAreaET = (EditText) findViewById(R.id.circle_area_a_et);
+        circleAnswerTV = (TextView) findViewById(R.id.circle_calc_answer_tx);
+        circleAreaCalculateButton = (Button) findViewById(R.id.circle_area_calc_button);
         circleAreaCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //fix the formula
-                String sideA = circleAreaET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sideA);
-                circleAreaET.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(circleAreaET)) {
+                    circleAreaET.setError("Enter Radius");
+                } else {
+                    double radius;
+                    radius = Double.parseDouble(circleAreaET.getText().toString());
+                    double answer = Math.PI * (radius * radius);
+                    circleAnswerTV.setText(String.format("%.02f", answer));
                 }
+
             }
         });
 
-
         //diameter
-        circleDiameterET = (EditText)findViewById(R.id.circle_diameter_d_et);
-        circleDiameterTV = (TextView)findViewById(R.id.circle_calc_diamter_answer_tx);
-        circleDiameterCalculateButton =(Button)findViewById(R.id.circle_diameter_calc_button);
+        circleDiameterET = (EditText) findViewById(R.id.circle_diameter_d_et);
+        circleDiameterTV = (TextView) findViewById(R.id.circle_calc_diamter_answer_tx);
+        circleDiameterCalculateButton = (Button) findViewById(R.id.circle_diameter_calc_button);
         circleDiameterCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //fix the formula
-                String sideA = circleDiameterET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sideA);
-                circleDiameterET.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(circleDiameterET)) {
+                    circleDiameterET.setError("Enter Radius");
+                } else {
+                    double radius;
+                    radius = Double.parseDouble(circleDiameterET.getText().toString());
+                    double answer = 2 * radius;
+                    circleDiameterTV.setText(String.format("%.02f", answer));
                 }
             }
         });
 
         //circumference
-        circleCircumET =(EditText)findViewById(R.id.circle_circum_c_et);
-        circleCircumTV = (TextView)findViewById(R.id.circle_circum_calc_answer_tx);
-        circlCircumCalculateButton = (Button)findViewById(R.id.circle_circum_calc_button);
+        circleCircumET = (EditText) findViewById(R.id.circle_circum_c_et);
+        circleCircumTV = (TextView) findViewById(R.id.circle_circum_calc_answer_tx);
+        circlCircumCalculateButton = (Button) findViewById(R.id.circle_circum_calc_button);
         circlCircumCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //fix the formula
-                String sideA = circleCircumET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sideA);
-                circleCircumET.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(circleCircumET)) {
+                    circleCircumET.setError("Enter Radius");
+                } else {
+                    double radius;
+                    radius = Double.parseDouble(circleCircumET.getText().toString());
+                    double answer = 2 * Math.PI * radius;
+                    circleCircumTV.setText(String.format("%.02f", answer));
                 }
             }
         });
-
-
-
     }
-
 }

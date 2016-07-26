@@ -12,23 +12,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class RegularOctagon extends AppCompatActivity {
     //perimeter
-    EditText sideAEditText;
-    TextView answerTextView;
-    Button calculatePerimeterButton;
+    EditText octPerimeterSideAET;
+    TextView octPerimeterAnswerTV;
+    Button octPerimeterCalcButton;
 
     //area
-    EditText areaSideET;
-    TextView areaAnswerTV;
-    Button calculateAreaButton;
+    EditText octAreaSideAET;
+    TextView octAreaAnswerTV;
+    Button octAreaCalcButton;
 
     //side A
-    EditText sideAPerimeterET;
-    TextView sideAAnswerTV;
-    Button calculateSideAButton;
+    EditText octSideAET;
+    TextView octSideAAnswerTV;
+    Button octSideACalcButton;
 
 
     @Override
@@ -38,69 +39,60 @@ public class RegularOctagon extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        sideAEditText =(EditText)findViewById(R.id.octa_perimeter_side_a_et);
-        answerTextView =(TextView)findViewById(R.id.octa_calc_answer_tx);
-        calculatePerimeterButton=(Button)findViewById(R.id.octa_perimeter_calc_button);
-        calculatePerimeterButton.setOnClickListener(new View.OnClickListener() {
+        octPerimeterSideAET = (EditText) findViewById(R.id.oct_perimeter_side_a_et);
+        octPerimeterAnswerTV = (TextView) findViewById(R.id.oct_calc_answer_tx);
+        octPerimeterCalcButton = (Button) findViewById(R.id.oct_perimeter_calc_button);
+        octPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(octPerimeterSideAET)) {
+                    octPerimeterSideAET.setError("Enter Value");
+                } else {
+                    double aSide, octtagonPerimeter;
+                    aSide = Double.parseDouble(octPerimeterSideAET.getText().toString());
+                    octtagonPerimeter = 8 * aSide;
+                    octPerimeterAnswerTV.setText(String.format("%.02f", octtagonPerimeter));
+                }
+            }
+        });
+//Area
+        octAreaSideAET = (EditText) findViewById(R.id.oct_area_side_a_et);
+        octAreaAnswerTV = (TextView) findViewById(R.id.oct_calc_area_answer_tx);
+        octAreaCalcButton = (Button) findViewById(R.id.oct_area_calc_button);
+        octAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(octAreaSideAET)) {
+                    octAreaSideAET.setError("Enter Value");
 
-                String sideA = sideAEditText.getText().toString();
-
-
-                double perimeter = 6 * Double.parseDouble(sideA);
-                answerTextView.setText(String.format("%.02f", perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                } else {
+                    double aSide, octtagonArea;
+                    aSide = Double.parseDouble(octAreaSideAET.getText().toString());
+                    octtagonArea = 2*(1+Math.sqrt(2))*Math.pow(aSide,2);
+                    octAreaAnswerTV.setText(String.format("%.02f", octtagonArea));
                 }
             }
         });
 
-        areaSideET =(EditText)findViewById(R.id.octa_area_side_a_et);
-        areaAnswerTV =(TextView)findViewById(R.id.octa_calc_area_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.octa_area_calc_button);
-        calculateAreaButton.setOnClickListener(new View.OnClickListener() {
+        octSideAET = (EditText) findViewById(R.id.oct_side_et);
+        octSideAAnswerTV = (TextView) findViewById(R.id.oct_calc_side_answer_tx);
+        octSideACalcButton = (Button) findViewById(R.id.oct_side_calc_button);
+        octSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-///change formula its incorrect
-                //do it later
-                String sideA = areaAnswerTV.getText().toString();
+                //check to make sure field is not empty
+                if (Model.isEmpty(octSideAET)) {
+                    octSideAET.setError("Enter Value");
 
-
-                double perimeter = 5*Double.parseDouble(sideA);
-                areaAnswerTV.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                } else {
+                    double perimeter, octSideA;
+                    perimeter = Double.parseDouble(octSideAET.getText().toString());
+                    octSideA = perimeter / 8;
+                    octSideAAnswerTV.setText(String.format("%.02f", octSideA));
                 }
             }
         });
-
-
-        sideAPerimeterET =(EditText)findViewById(R.id.octa_side_et);
-        sideAAnswerTV =(TextView)findViewById(R.id.octa_calc_side_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.octa_side_calc_button);
-        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String sideA = sideAAnswerTV.getText().toString();
-
-//REcheck
-                double area = Double.parseDouble(sideA)/6;
-                sideAAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-
     }
-
 }

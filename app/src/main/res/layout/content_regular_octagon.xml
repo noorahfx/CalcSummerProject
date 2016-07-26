@@ -23,7 +23,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/octa_perimeter_text"
+                android:id="@+id/oct_perimeter_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -31,171 +31,185 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Perimeter"
-                android:textColor="@color/white"
                 android:textSize="30sp" />
 
+
             <ImageView
-                android:id="@+id/octa_perimeter_img"
+                android:id="@+id/oct_perimeter_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/oct_perimeter_text"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@+id/octa_perimeter_text"
-                android:src="@drawable/image1"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+
+            <TextView
+                android:id="@+id/oct_perimeter_side_a_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oct_perimeter_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp"
 
                 />
-            <TextView
-                android:id="@+id/octa_perimeter_side_a_tx"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/octa_perimeter_img"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="115dp"
-                android:text="a"
-                android:textSize="25sp"/>
+
 
             <EditText
-                android:id="@+id/octa_perimeter_side_a_et"
+                android:id="@+id/oct_perimeter_side_a_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/octa_perimeter_side_a_tx"
-                android:layout_below="@id/octa_perimeter_img"
-                android:layout_marginTop="30dp"
+                android:layout_below="@id/oct_perimeter_img"
                 android:layout_marginLeft="10dp"
-                android:ems="5"/>
-            <Button
-                android:id="@+id/octa_perimeter_calc_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/octa_perimeter_side_a_tx"
-                android:layout_marginTop="10dp"
-                android:text="calculate"/>
-            <TextView
-                android:id="@+id/octa_calc_answer_tx"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/octa_perimeter_side_a_et"
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="99dp"
-                android:layout_toRightOf="@+id/octa_perimeter_calc_button"
-                android:text="octa_answer"
-                android:textSize="20sp"/>
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/oct_perimeter_side_a_tx"
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
-            <TextView
-                android:id="@+id/octa_area_text"
+
+            <Button
+                android:id="@+id/oct_perimeter_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Area"
-                android:layout_below="@+id/octa_perimeter_calc_button"
-                android:textColor="@color/white"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/octa_area_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-
-                android:layout_below="@+id/octa_area_text"
-                android:src="@drawable/image1"
-                android:layout_marginTop="4dp"
-                />
-
-            <TextView
-                android:id="@+id/octa_area_side_a_tx"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/octa_area_img"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="115dp"
-                android:text="a"
-                android:textSize="25sp"/>
-
-            <EditText
-                android:id="@+id/octa_area_side_a_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/octa_area_side_a_tx"
-                android:layout_below="@id/octa_area_img"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="10dp"
-                android:ems="5"/>
-            <Button
-                android:id="@+id/octa_area_calc_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/octa_area_side_a_tx"
+                android:layout_below="@id/oct_perimeter_side_a_tx"
                 android:layout_marginTop="10dp"
-                android:text="calculate"/>
-            <TextView
-                android:id="@+id/octa_calc_area_answer_tx"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/octa_area_side_a_et"
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="99dp"
-                android:layout_toRightOf="@+id/octa_area_calc_button"
-                android:text="octa_answer"
-                android:textSize="20sp"/>
+                android:text="Calculate" />
+
 
             <TextView
-                android:id="@+id/octa_side_text"
+                android:id="@+id/oct_calc_answer_tx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/oct_perimeter_calc_button"
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/oct_area_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oct_calc_answer_tx"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="Area"
-                android:layout_below="@+id/octa_area_calc_button"
-                android:textColor="@color/white"
+                android:textSize="30sp"
+
+                />
+
+
+
+            <ImageView
+                android:id="@+id/oct_area_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oct_area_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/oct_area_side_a_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oct_area_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="a"
+                android:textSize="25sp" />
+
+
+            <EditText
+                android:id="@+id/oct_area_side_a_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oct_area_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20sp"
+                android:layout_toRightOf="@+id/oct_area_side_a_tx"
+                android:ems="5"
+                android:inputType="numberDecimal"
+                />
+
+            <Button
+                android:id="@+id/oct_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oct_area_side_a_tx"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/oct_calc_area_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oct_area_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/oct_side_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oct_calc_area_answer_tx"
+                android:gravity="center"
+                android:text="Side A"
                 android:textSize="30sp" />
 
             <ImageView
-                android:id="@+id/octa_side_img"
+                android:id="@+id/oct_side_img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/oct_side_text"
                 android:layout_centerHorizontal="true"
-
-                android:layout_below="@+id/octa_side_text"
-                android:src="@drawable/image1"
                 android:layout_marginTop="4dp"
-                />
+                android:src="@drawable/image1" />
 
             <TextView
-                android:id="@+id/octa_side_tx"
+                android:id="@+id/oct_side_tx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/octa_side_img"
-                android:layout_marginTop="40dp"
+                android:layout_below="@id/oct_side_img"
                 android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
                 android:text="a"
-                android:textSize="25sp"/>
+                android:textSize="25sp" />
 
             <EditText
-                android:id="@+id/octa_side_et"
+                android:id="@+id/oct_side_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/octa_side_tx"
-                android:layout_below="@id/octa_side_img"
-                android:layout_marginTop="30dp"
+                android:layout_below="@id/oct_side_img"
                 android:layout_marginLeft="10dp"
-                android:ems="5"/>
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/oct_side_tx"
+                android:ems="5" />
+
+
             <Button
-                android:id="@+id/octa_side_calc_button"
-                android:layout_width="wrap_content"
+                android:id="@+id/oct_side_calc_button"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/octa_side_tx"
+                android:layout_below="@id/oct_side_tx"
                 android:layout_marginTop="10dp"
-                android:text="calculate"/>
+                android:text="Calculate" />
+
             <TextView
-                android:id="@+id/octa_calc_side_answer_tx"
-                android:layout_width="wrap_content"
+                android:id="@+id/oct_calc_side_answer_tx"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/octa_side_et"
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="99dp"
-                android:layout_toRightOf="@+id/octa_side_calc_button"
-                android:text="octa_answer"
-                android:textSize="20sp"/>
+                android:layout_below="@+id/oct_side_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
 
         </RelativeLayout>
 

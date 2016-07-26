@@ -91,7 +91,7 @@ public class RegularHexagon extends AppCompatActivity {
 
 
         hexSideAET =(EditText)findViewById(R.id.hex_side_et);
-        hexSideAAnswerTV =(TextView)findViewById(R.id.hex_side_et);
+        hexSideAAnswerTV =(TextView)findViewById(R.id.hex_calc_side_answer_tx);
         hexSideACalcButton=(Button)findViewById(R.id.hex_side_calc_button);
         hexSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override

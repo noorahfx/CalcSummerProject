@@ -12,23 +12,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class RegularNonagon extends AppCompatActivity {
     //perimeter
-    EditText sideAEditText;
-    TextView answerTextView;
-    Button calculatePerimeterButton;
+    EditText nonPerimeterSideAET;
+    TextView nonPerimeterAnswerTV;
+    Button nonPerimeterCalcButton;
 
     //area
-    EditText areaSideET;
-    TextView areaAnswerTV;
-    Button calculateAreaButton;
+    EditText nonAreaSideAET;
+    TextView nonAreaAnswerTV;
+    Button nonAreaCalcButton;
 
     //side A
-    EditText sideAPerimeterET;
-    TextView sideAAnswerTV;
-    Button calculateSideAButton;
+    EditText nonSideAET;
+    TextView nonSideAAnswerTV;
+    Button nonSideACalcButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,70 +37,61 @@ public class RegularNonagon extends AppCompatActivity {
         setContentView(R.layout.activity_regular_nonagon);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-        sideAEditText =(EditText)findViewById(R.id.non_perimeter_side_a_et);
-        answerTextView =(TextView)findViewById(R.id.non_calc_answer_tx);
-        calculatePerimeterButton=(Button)findViewById(R.id.non_perimeter_calc_button);
-        calculatePerimeterButton.setOnClickListener(new View.OnClickListener() {
+        nonPerimeterSideAET = (EditText) findViewById(R.id.non_perimeter_side_a_et);
+        nonPerimeterAnswerTV = (TextView) findViewById(R.id.non_calc_answer_tx);
+        nonPerimeterCalcButton = (Button) findViewById(R.id.non_perimeter_calc_button);
+        nonPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(nonPerimeterSideAET)) {
+                    nonPerimeterSideAET.setError("Enter Value");
+                } else {
+                    double aSide, nontagonPerimeter;
+                    aSide = Double.parseDouble(nonPerimeterSideAET.getText().toString());
+                    nontagonPerimeter = 9 * aSide;
+                    nonPerimeterAnswerTV.setText(String.format("%.02f", nontagonPerimeter));
+                }
+            }
+        });
+//Area
+        nonAreaSideAET = (EditText) findViewById(R.id.non_area_side_a_et);
+        nonAreaAnswerTV = (TextView) findViewById(R.id.non_calc_area_answer_tx);
+        nonAreaCalcButton = (Button) findViewById(R.id.non_area_calc_button);
+        nonAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(nonAreaSideAET)) {
+                    nonAreaSideAET.setError("Enter Value");
 
-                String sideA = sideAEditText.getText().toString();
-
-
-                double perimeter = 6 * Double.parseDouble(sideA);
-                answerTextView.setText(String.format("%.02f", perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                } else {
+                    double aSide, nontagonArea;
+                    aSide = Double.parseDouble(nonAreaSideAET.getText().toString());
+                    nontagonArea = (2.25) * Math.pow(aSide, 2) * (1 / Math.tan(Math.toRadians(180) / 9));
+                    nonAreaAnswerTV.setText(String.format("%.02f", nontagonArea));
                 }
             }
         });
 
-        areaSideET =(EditText)findViewById(R.id.non_area_side_a_et);
-        areaAnswerTV =(TextView)findViewById(R.id.non_calc_area_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.non_area_calc_button);
-        calculateAreaButton.setOnClickListener(new View.OnClickListener() {
+        nonSideAET = (EditText) findViewById(R.id.non_side_et);
+        nonSideAAnswerTV = (TextView) findViewById(R.id.non_calc_side_answer_tx);
+        nonSideACalcButton = (Button) findViewById(R.id.non_side_calc_button);
+        nonSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-///change formula its incorrect
-                //do it later
-                String sideA = areaAnswerTV.getText().toString();
+                //check to make sure field is not empty
+                if (Model.isEmpty(nonSideAET)) {
+                    nonSideAET.setError("Enter Value");
 
-
-                double perimeter = 5*Double.parseDouble(sideA);
-                areaAnswerTV.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                } else {
+                    double perimeter, nonSideA;
+                    perimeter = Double.parseDouble(nonSideAET.getText().toString());
+                    nonSideA = perimeter / 9;
+                    nonSideAAnswerTV.setText(String.format("%.02f", nonSideA));
                 }
             }
         });
-
-
-        sideAPerimeterET =(EditText)findViewById(R.id.non_side_et);
-        sideAAnswerTV =(TextView)findViewById(R.id.non_calc_side_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.non_side_calc_button);
-        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String sideA = sideAAnswerTV.getText().toString();
-
-//REcheck
-                double area = Double.parseDouble(sideA)/6;
-                sideAAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
     }
-
 }
+

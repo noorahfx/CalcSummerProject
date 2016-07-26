@@ -94,8 +94,7 @@
                 android:layout_below="@+id/ellipse_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -176,8 +175,7 @@
                 android:layout_below="@+id/ellipse_a_xis_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -261,8 +259,7 @@
                 android:layout_below="@+id/ellipse_b_xis_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -345,8 +342,7 @@
                 android:layout_below="@+id/ellipse_circum_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 

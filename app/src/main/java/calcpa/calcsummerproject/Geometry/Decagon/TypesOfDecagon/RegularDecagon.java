@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class RegularDecagon extends AppCompatActivity {
@@ -51,19 +52,14 @@ public class RegularDecagon extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String sides = decagonareaET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sides);
-                decagonareaTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sides)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(decagonareaET)) {
+                    decagonareaET.setError("Enter Value");
+                }else {
+                    double sideA,decagonArea;
+                    sideA = Double.parseDouble(decagonareaET.getText().toString());
+                    decagonArea = (2.5)*(Math.pow(sideA,2))*(Math.sqrt(5+2*Math.sqrt(5)));
+                    decagonareaTV.setText(String.format("%.02f", decagonArea));
                 }
             }
         });
@@ -77,19 +73,14 @@ public class RegularDecagon extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String area = decagonPerimeterET.getText().toString();
-
-
-                double perimeter = 6 * Double.parseDouble(area);
-                decagonPerimeterTV.setText(String.format("%.02f", perimeter));
-
-                if (TextUtils.isEmpty(area)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(decagonPerimeterET)) {
+                    decagonPerimeterET.setError("Enter Value");
+                }else {
+                    double sideA,decagonPerimeter;
+                    sideA = Double.parseDouble(decagonPerimeterET.getText().toString());
+                    decagonPerimeter=10*sideA;
+                    decagonPerimeterTV.setText(String.format("%.02f", decagonPerimeter));
                 }
             }
         });
@@ -105,20 +96,19 @@ public class RegularDecagon extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String area = decagonSideET.getText().toString();
 
-
-                double diagonal = 6 * Double.parseDouble(area);
-                decagonSideTV.setText(String.format("%.02f", diagonal));
-
-                if (TextUtils.isEmpty(area)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(decagonSideET)) {
+                    decagonSideET.setError("Enter Value");
+                }else {
+                    double perimeter,decagonPerimeter;
+                    perimeter = Double.parseDouble(decagonSideET.getText().toString());
+                    decagonPerimeter=perimeter/10;
+                    decagonSideTV.setText(String.format("%.02f", decagonPerimeter));
                 }
+
+
+
             }
         });
 

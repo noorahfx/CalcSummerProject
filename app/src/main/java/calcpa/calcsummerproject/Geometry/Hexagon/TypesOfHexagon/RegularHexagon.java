@@ -21,24 +21,27 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class RegularHexagon extends AppCompatActivity {
 
+
+
     //perimeter
-    EditText sideAEditText;
-    TextView answerTextView;
-    Button calculatePerimeterButton;
+    EditText hexPerimeterSideAET;
+    TextView hexPerimeterAnswerTV;
+    Button hexPerimeterCalcButton;
 
     //area
-    EditText areaSideET;
-    TextView areaAnswerTV;
-    Button calculateAreaButton;
+    EditText hexAreaSideAET;
+    TextView hexAreaAnswerTV;
+    Button hexAreaCalcButton;
 
     //side A
-    EditText sideAPerimeterET;
-    TextView sideAAnswerTV;
-    Button calculateSideAButton;
+    EditText hexSideAET;
+    TextView hexSideAAnswerTV;
+    Button hexSideACalcButton;
 
 
 
@@ -47,67 +50,70 @@ public class RegularHexagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_regular_hexagon);
 
-        sideAEditText =(EditText)findViewById(R.id.hex_perimeter_side_a_et);
-        answerTextView =(TextView)findViewById(R.id.hex_calc_answer_tx);
-        calculatePerimeterButton=(Button)findViewById(R.id.hex_perimeter_calc_button);
-        calculatePerimeterButton.setOnClickListener(new View.OnClickListener() {
+        hexPerimeterSideAET =(EditText)findViewById(R.id.hex_perimeter_side_a_et);
+        hexPerimeterAnswerTV =(TextView)findViewById(R.id.hex_perimeter_calc_answer_tx);
+        hexPerimeterCalcButton=(Button)findViewById(R.id.hex_perimeter_calc_button);
+        hexPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String sideA = sideAEditText.getText().toString();
-
-
-                double perimeter = 6 * Double.parseDouble(sideA);
-                answerTextView.setText(String.format("%.02f", perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(hexPerimeterSideAET)) {
+                    hexPerimeterSideAET.setError("Enter Value");
+                } else {
+                    double aSide, hexASide;
+                    aSide = Double.parseDouble(hexPerimeterSideAET.getText().toString());
+                     hexASide = 6*aSide;
+                    hexPerimeterAnswerTV.setText(String.format("%.02f", hexASide));
                 }
+
             }
         });
 
-        areaSideET =(EditText)findViewById(R.id.hex_area_side_a_et);
-        areaAnswerTV =(TextView)findViewById(R.id.hex_calc_area_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.hex_area_calc_button);
-        calculateAreaButton.setOnClickListener(new View.OnClickListener() {
+        hexAreaSideAET =(EditText)findViewById(R.id.hex_area_side_a_et);
+        hexAreaAnswerTV =(TextView)findViewById(R.id.hex_calc_area_answer_tx);
+        hexAreaCalcButton=(Button)findViewById(R.id.hex_area_calc_button);
+        hexAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-///change formula its incorrect
-                //do it later
-                String sideA = areaAnswerTV.getText().toString();
-
-
-                double perimeter = 6*Double.parseDouble(sideA);
-                areaAnswerTV.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(hexAreaSideAET)) {
+                    hexAreaSideAET.setError("Enter Value");
+                } else {
+                    double aSide, hexArea;
+                    aSide = Double.parseDouble(hexAreaSideAET.getText().toString());
+                    hexArea = ((3*Math.sqrt(3))/2)*(Math.pow(aSide,2));
+                    hexAreaAnswerTV.setText(String.format("%.02f", hexArea));
                 }
+
+
             }
         });
 
 
-        sideAPerimeterET =(EditText)findViewById(R.id.hex_side_et);
-        sideAAnswerTV =(TextView)findViewById(R.id.hex_calc_side_answer_tx);
-        calculateAreaButton=(Button)findViewById(R.id.hex_side_calc_button);
-        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
+        hexSideAET =(EditText)findViewById(R.id.hex_side_et);
+        hexSideAAnswerTV =(TextView)findViewById(R.id.hex_side_et);
+        hexSideACalcButton=(Button)findViewById(R.id.hex_side_calc_button);
+        hexSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String sideA = sideAAnswerTV.getText().toString();
-
-//REcheck
-                double perimeter = Double.parseDouble(sideA)/6;
-                sideAAnswerTV.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(hexSideAET)) {
+                    hexSideAET.setError("Enter Value");
+                } else {
+                    double aSide, hexASide;
+                    aSide = Double.parseDouble(hexSideAET.getText().toString());
+                    hexASide = aSide/6;
+                    hexSideAAnswerTV.setText(String.format("%.02f", hexASide));
                 }
+
+
             }
         });
+
+
+
+
+
 
     }
 

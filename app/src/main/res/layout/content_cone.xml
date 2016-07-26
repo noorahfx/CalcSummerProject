@@ -95,7 +95,6 @@
                 android:layout_below="@+id/cone_volume_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -125,7 +124,7 @@
                 android:layout_below="@id/cone_radius_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="h"
                 android:textSize="25sp" />
 
             <EditText
@@ -173,10 +172,8 @@
                 android:layout_below="@+id/cone_radius_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
             <TextView
                 android:id="@+id/cone_height_text"
@@ -252,7 +249,6 @@
                 android:layout_below="@+id/cone_height_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -299,10 +295,6 @@
                 android:ems="5" />
 
 
-
-
-
-
             <TextView
                 android:id="@+id/cone_slant_height_h_text"
                 android:layout_width="wrap_content"
@@ -312,10 +304,6 @@
                 android:layout_marginTop="32dp"
                 android:text="h"
                 android:textSize="25sp" />
-
-
-
-
 
 
             <EditText
@@ -343,7 +331,6 @@
                 android:layout_below="@+id/cone_slant_height_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -424,7 +411,6 @@
                 android:layout_below="@+id/cone_surface_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -485,11 +471,8 @@
                 android:layout_below="@+id/cone_base_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
 
 
             <TextView
@@ -568,10 +551,8 @@
                 android:layout_below="@+id/cone_lateral_surface_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
         </RelativeLayout>
 

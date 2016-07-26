@@ -121,32 +121,12 @@
                 android:src="@drawable/image1" />
 
             <TextView
-                android:id="@+id/ellipse_a_xis_a_text"
+                android:id="@+id/ellipse_a_xis_b_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_a_xis_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="a"
-                android:textSize="25sp" />
-
-            <EditText
-                android:id="@+id/ellipse_a_xis_a_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_a_xis_img"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/ellipse_a_xis_a_text"
-                android:ems="5" />
-
-            <TextView
-                android:id="@+id/ellipse_a_xis_b_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/ellipse_a_xis_a_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
                 android:text="b"
                 android:textSize="25sp" />
 
@@ -154,7 +134,27 @@
                 android:id="@+id/ellipse_a_xis_b_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_a_xis_a_et"
+                android:layout_below="@+id/ellipse_a_xis_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/ellipse_a_xis_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_a_xis_b_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="A"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/ellipse_a_xis_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ellipse_a_xis_b_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
@@ -164,7 +164,7 @@
                 android:id="@+id/ellipse_a_xis_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_a_xis_b_text"
+                android:layout_below="@+id/ellipse_a_xis_area_text"
                 android:layout_marginTop="10dp"
                 android:text="Calculate" />
 

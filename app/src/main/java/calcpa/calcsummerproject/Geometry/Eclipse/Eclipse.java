@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Eclipse extends AppCompatActivity {
@@ -64,22 +65,20 @@ public class Eclipse extends AppCompatActivity {
         ellipseAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String aXis = ellipseAreaAET.getText().toString();
-                String bXis = ellipseAreaBET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(aXis);
-                ellipseAreaAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(aXis)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(ellipseAreaAET)) {
+                    ellipseAreaAET.setError("Enter Value");
+                } else if (Model.isEmpty(ellipseAreaBET)) {
+                    ellipseAreaBET.setError("Enter Value");
+                } else {
+                    double aXis, bXis, ellipseArea;
+                    aXis = Double.parseDouble(ellipseAreaAET.getText().toString());
+                    bXis = Double.parseDouble(ellipseAreaBET.getText().toString());
+                    ellipseArea = Math.PI * aXis * bXis;
+                    ellipseAreaAnswerTV.setText(String.format("%.02f", ellipseArea));
                 }
+
+
             }
         });
 
@@ -93,51 +92,46 @@ public class Eclipse extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String height = ellipseCircumAET.getText().toString();
-                String volume = ellipseCircumBET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(height);
-                ellipseCircumAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(ellipseCircumAET)) {
+                    ellipseCircumAET.setError("Enter Height");
+                } else if (Model.isEmpty(ellipseCircumBET)) {
+                    ellipseCircumBET.setError("Enter Volume");
+                } else {
+                    double aXis, bXis, ellipseCircumference;
+                    aXis = Double.parseDouble(ellipseCircumAET.getText().toString());
+                    bXis = Double.parseDouble(ellipseCircumBET.getText().toString());
+                    ellipseCircumference = 2 * 3.14 * Math.sqrt((Math.pow(aXis, 2) + Math.pow(bXis, 2)) / 2);
+                    ellipseCircumAnswerTV.setText(String.format("%.02f", ellipseCircumference));
                 }
+
             }
         });
 
 
         //A-xis
-
-
-        ellipseAXisAET = (EditText) findViewById(R.id.ellipse_a_xis_a_et);
-        ellipseAXisBET = (EditText) findViewById(R.id.ellipse_a_xis_b_et);
+        ellipseAXisAET = (EditText) findViewById(R.id.ellipse_a_xis_b_et);
+        ellipseAXisBET = (EditText) findViewById(R.id.ellipse_a_xis_area_et);
         ellipseAXisAnswerTV = (TextView) findViewById(R.id.ellipse_a_xis_calc_answer_tx);
         ellipseAXisCalcButton = (Button) findViewById(R.id.ellipse_a_xis_calc_button);
         ellipseAXisCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String aXis = ellipseAXisAET.getText().toString();
-                String bXis = ellipseAXisBET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(aXis);
-                ellipseAXisAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(aXis)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(ellipseAXisAET)) {
+                    ellipseAXisAET.setError("Enter Value");
+                } else if (Model.isEmpty(ellipseAXisBET)) {
+                    ellipseAXisBET.setError("Enter Value");
+                } else {
+                    double bXis, area, ellipseAXis;
+                    bXis = Double.parseDouble(ellipseAXisAET.getText().toString());
+                    area = Double.parseDouble(ellipseAXisBET.getText().toString());
+                    ellipseAXis = area / (Math.PI * bXis);
+                    ellipseAXisAnswerTV.setText(String.format("%.02f", ellipseAXis));
                 }
+
+
             }
         });
 
@@ -150,22 +144,20 @@ public class Eclipse extends AppCompatActivity {
         ellipseBXisCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String aXis = ellipseBXisAET.getText().toString();
-                String bXis = ellipseBXisBET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(aXis);
-                ellipseBXisAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(aXis)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(ellipseBXisAET)) {
+                    ellipseBXisAET.setError("Enter Value");
+                } else if (Model.isEmpty(ellipseBXisBET)) {
+                    ellipseBXisBET.setError("Enter Value");
+                } else {
+                    double aXis, area, ellipseBXis;
+                    aXis = Double.parseDouble(ellipseBXisAET.getText().toString());
+                    area = Double.parseDouble(ellipseBXisBET.getText().toString());
+                    ellipseBXis = area / (Math.PI * aXis);
+                    ellipseBXisAnswerTV.setText(String.format("%.02f", ellipseBXis));
                 }
+
+
             }
         });
 

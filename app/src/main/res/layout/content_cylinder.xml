@@ -94,8 +94,7 @@
                 android:layout_below="@+id/cylinder_volume_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -184,8 +183,7 @@
                 android:layout_below="@+id/cylinder_radius_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -265,8 +263,7 @@
                 android:layout_below="@+id/cylinder_height_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -346,8 +343,7 @@
                 android:layout_below="@+id/cylinder_surface_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -407,8 +403,7 @@
                 android:layout_below="@+id/cylinder_base_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -495,7 +490,6 @@
                 android:layout_below="@+id/cylinder_lateral_surface_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
             

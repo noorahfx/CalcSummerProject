@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Cylinder extends AppCompatActivity {
@@ -70,23 +71,20 @@ public class Cylinder extends AppCompatActivity {
         cylinderVolumeCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String height = cylinderVolumeRET.getText().toString();
-                String volume = cylinderVolumeRET.getText().toString();
-
-
-
-                double area = 6 * Double.parseDouble(height);
-                cylinderVolumeAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cylinderVolumeRET)) {
+                    cylinderVolumeRET.setError("Enter Radius");
+                } else if (Model.isEmpty(cylinderVolumeHET)) {
+                    cylinderVolumeHET.setError("Enter Height");
+                }else {
+                    double radius,height,cylinderVolume;
+                    radius = Double.parseDouble(cylinderVolumeRET.getText().toString());
+                    height= Double.parseDouble(cylinderVolumeHET.getText().toString());
+                    cylinderVolume = Math.PI*(Math.pow(radius, 2)*height);
+                    cylinderVolumeAnswerTV.setText(String.format("%.02f", cylinderVolume));
                 }
+
+
             }
         });
 
@@ -99,21 +97,17 @@ public class Cylinder extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String height = cylinderRadiusHET.getText().toString();
-                String volume = cylinderRadiusVET.getText().toString();
-
-
-
-                double area = 6 * Double.parseDouble(height);
-                cylinderRadiusAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cylinderRadiusHET)) {
+                    cylinderRadiusHET.setError("Enter Height");
+                } else if (Model.isEmpty(cylinderRadiusVET)) {
+                    cylinderRadiusVET.setError("Enter Volume");
+                }else {
+                    double height,volume,cylinderRadius;
+                    height = Double.parseDouble(cylinderRadiusHET.getText().toString());
+                    volume = Double.parseDouble(cylinderRadiusVET.getText().toString());
+                    cylinderRadius = Math.sqrt(volume/(Math.PI*height));
+                    cylinderRadiusAnswerTV.setText(String.format("%.02f", cylinderRadius));
                 }
             }
         });
@@ -129,21 +123,17 @@ public class Cylinder extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String height = cylinderHeightRET.getText().toString();
-                String volume = cylinderHeightVET.getText().toString();
-
-
-
-                double area = 6 * Double.parseDouble(height);
-                cylinderHeightAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cylinderHeightRET)) {
+                    cylinderHeightRET.setError("Enter Radius");
+                } else if (Model.isEmpty(cylinderHeightVET)) {
+                    cylinderHeightVET.setError("Enter Volume");
+                }else {
+                    double radius,volume,cylinderHeight;
+                    radius = Double.parseDouble(cylinderHeightRET.getText().toString());
+                    volume = Double.parseDouble(cylinderHeightVET.getText().toString());
+                    cylinderHeight = volume/(Math.PI*(Math.pow(radius,2)));
+                    cylinderHeightAnswerTV.setText(String.format("%.02f", cylinderHeight));
                 }
             }
         });
@@ -159,21 +149,17 @@ public class Cylinder extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String height = cylinderSurfaceAreatRET.getText().toString();
-                String volume = cylinderSurfaceAreaHET.getText().toString();
-
-
-
-                double area = 6 * Double.parseDouble(height);
-                cylinderSurfaceAreaAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cylinderSurfaceAreatRET)) {
+                    cylinderSurfaceAreatRET.setError("Enter Radius");
+                } else if (Model.isEmpty(cylinderSurfaceAreaHET)) {
+                    cylinderSurfaceAreaHET.setError("Enter Height");
+                }else {
+                    double radius,height,cylinderSurfaceArea;
+                    radius = Double.parseDouble(cylinderSurfaceAreatRET.getText().toString());
+                    height = Double.parseDouble(cylinderSurfaceAreaHET.getText().toString());
+                    cylinderSurfaceArea=(2*Math.PI*radius*height+2*Math.PI*(Math.pow(radius,2)));
+                    cylinderSurfaceAreaAnswerTV.setText(String.format("%.02f", cylinderSurfaceArea));
                 }
             }
         });
@@ -188,20 +174,14 @@ public class Cylinder extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String height = cylinderBaseAreaRET.getText().toString();
-
-
-
-                double area = 6 * Double.parseDouble(height);
-                cylinderBaseAreaAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cylinderBaseAreaRET)) {
+                    cylinderBaseAreaRET.setError("Enter Radius");
+                }else {
+                    double radius,cylinderBaseArea;
+                    radius = Double.parseDouble(cylinderBaseAreaRET.getText().toString());
+                    cylinderBaseArea=Math.PI*Math.pow(radius,2);
+                    cylinderBaseAreaAnswerTV.setText(String.format("%.02f", cylinderBaseArea));
                 }
             }
         });
@@ -212,27 +192,26 @@ public class Cylinder extends AppCompatActivity {
         //Lateral Surface
         cylinderLateralSurfaceRET= (EditText)findViewById(R.id.cylinder_lateral_surface_r_et);
         cylinderLateralSurfaceHET = (EditText)findViewById(R.id.cylinder_lateral_surface_h_et);
-        cylinderLateralSurfaceAnswerTV = (TextView)findViewById(R.id.cylinder_lateral_surface_calc_answer_tx);
-        cylinderLateralSurfaceCalcButton =(Button)findViewById(R.id.cylinder_lateral_surface_calc_button);
+        cylinderLateralSurfaceAnswerTV = (TextView)findViewById
+                (R.id.cylinder_lateral_surface_calc_answer_tx);
+        cylinderLateralSurfaceCalcButton =(Button)findViewById
+                (R.id.cylinder_lateral_surface_calc_button);
         cylinderLateralSurfaceCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String height = cylinderLateralSurfaceRET.getText().toString();
-                String volume = cylinderLateralSurfaceHET.getText().toString();
-
-
-
-                double area = 6 * Double.parseDouble(height);
-                cylinderLateralSurfaceAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cylinderLateralSurfaceRET)) {
+                    cylinderLateralSurfaceRET.setError("Enter Radius");
+                } else if (Model.isEmpty(cylinderLateralSurfaceHET)) {
+                    cylinderLateralSurfaceHET.setError("Enter Height");
+                }else {
+                    double radius,height,cylinderLateralSurfaceArea;
+                    radius = Double.parseDouble(cylinderLateralSurfaceRET.getText().toString());
+                    height = Double.parseDouble(cylinderLateralSurfaceHET.getText().toString());
+                    cylinderLateralSurfaceArea=2*Math.PI*radius*height;
+                    cylinderLateralSurfaceAnswerTV.setText(String.format
+                            ("%.02f", cylinderLateralSurfaceArea));
                 }
             }
         });

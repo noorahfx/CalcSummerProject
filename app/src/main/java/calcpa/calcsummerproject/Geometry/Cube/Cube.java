@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Cube extends AppCompatActivity {
@@ -54,19 +55,14 @@ public class Cube extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String area = cubeVolumeET.getText().toString();
-
-
-                double volume = 6 * Double.parseDouble(area);
-                cubeVolumeTV.setText(String.format("%.02f", volume));
-
-                if (TextUtils.isEmpty(area)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cubeVolumeET)) {
+                    cubeVolumeET.setError("Enter value");
+                } else {
+                    double edge, volume;
+                    edge = Double.parseDouble(cubeVolumeET.getText().toString());
+                    volume = Math.pow(edge,3);
+                    cubeVolumeTV.setText(String.format("%.02f", volume));
                 }
             }
         });
@@ -79,25 +75,17 @@ public class Cube extends AppCompatActivity {
         cubeEdgeCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String area = cubeEdgeET.getText().toString();
-
-
-                double edge = 6 * Double.parseDouble(area);
-                cubeEdgeTV.setText(String.format("%.02f", edge));
-
-                if (TextUtils.isEmpty(area)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cubeEdgeET)) {
+                    cubeEdgeET.setError("Enter value");
+                } else {
+                    double exp, edge;
+                    exp = Double.parseDouble(cubeEdgeET.getText().toString());
+                    edge = Math.pow(exp,0.333333333);
+                    cubeEdgeTV.setText(String.format("%.02f", edge));
                 }
             }
         });
-
-
 
         //Special Diagonal
 
@@ -107,21 +95,16 @@ public class Cube extends AppCompatActivity {
         cubeSpecialDiagonalCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String area = cubeSpecialDiagonalET.getText().toString();
-
-
-                double diagonal = 6 * Double.parseDouble(area);
-                cubeSpecialDiagonalTV.setText(String.format("%.02f", diagonal));
-
-                if (TextUtils.isEmpty(area)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cubeSpecialDiagonalET)) {
+                    cubeSpecialDiagonalET.setError("Enter Volume");
+                } else {
+                    double edge, specialDiagonal;
+                    edge = Double.parseDouble(cubeSpecialDiagonalET.getText().toString());
+                    specialDiagonal = Math.sqrt(3) * edge;
+                    cubeSpecialDiagonalTV.setText(String.format("%.02f", specialDiagonal));
                 }
+
             }
         });
 
@@ -133,20 +116,16 @@ public class Cube extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                String area = cubeSurfaceAreaET.getText().toString();
-
-
-                double surfaceArea = 6 * Double.parseDouble(area);
-                cubeSurfaceAreaTV.setText(String.format("%.02f", surfaceArea));
-
-                if (TextUtils.isEmpty(area)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(cubeSurfaceAreaET)) {
+                    cubeSurfaceAreaET.setError("Enter Value");
+                } else {
+                    double edge, surfaceArea;
+                    edge = Double.parseDouble(cubeSurfaceAreaET.getText().toString());
+                    surfaceArea = 6 * Math.pow(edge, 2);
+                    cubeSurfaceAreaTV.setText(String.format("%.02f", surfaceArea));
                 }
+
             }
         });
 

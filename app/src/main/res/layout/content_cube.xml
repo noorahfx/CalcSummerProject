@@ -73,8 +73,7 @@
                 android:layout_below="@+id/cube_volume_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
             <TextView
@@ -131,10 +130,8 @@
                 android:layout_below="@+id/cube_edge_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
 
 
@@ -148,7 +145,7 @@
                 android:layout_below="@+id/cube_edge_calc_answer_tx"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Edge"
+                android:text="Special Diagonal"
                 android:textSize="30sp" />
 
             <ImageView
@@ -195,8 +192,7 @@
                 android:layout_below="@+id/cube_special_diagonal_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -261,8 +257,7 @@
                 android:layout_below="@+id/cube_surface_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 

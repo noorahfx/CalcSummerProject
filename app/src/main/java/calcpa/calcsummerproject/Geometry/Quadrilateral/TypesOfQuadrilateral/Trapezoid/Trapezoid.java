@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Trapezoid extends AppCompatActivity {
@@ -41,16 +42,18 @@ public class Trapezoid extends AppCompatActivity {
 
     //Base A
     EditText trapezoidABaseBET;
-    EditText trapezoidABaseHET;
-    EditText trapezoidABaseAreaET;
+    EditText trapezoidABaseCET;
+    EditText trapezoidABaseDET;
+    EditText trapezoidABasePerimeterET;
     TextView trapezoidABaseAnswerTV;
     Button trapezoidABaseCalcButton;
 
 
     //Base B
     EditText trapezoidBBaseAET;
-    EditText trapezoidBBaseHET;
-    EditText trapezoidBBaseAreaET;
+    EditText trapezoidBBaseCET;
+    EditText trapezoidBBaseDET;
+    EditText trapezoidBBasePerimeterET;
     TextView trapezoidBBaseAnswerTV;
     Button trapezoidBBaseCalcButton;
 
@@ -72,7 +75,6 @@ public class Trapezoid extends AppCompatActivity {
     Button trapezoidDSideCalcButton;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,215 +84,343 @@ public class Trapezoid extends AppCompatActivity {
 
 
         //Perimeter
-          trapezoidPerimeterAET =(EditText)findViewById(R.id.trapezoid_perimeter_a_et);
-          trapezoidPerimeterBET =(EditText)findViewById(R.id.trapezoid_perimeter_b_et);
-          trapezoidPerimeterCET=(EditText)findViewById(R.id.trapezoid_perimeter_c_et);
-          trapezoidPerimeterDET=(EditText)findViewById(R.id.trapezoid_perimeter_d_et);
-          trapezoidPerimeterAnswerTV=(TextView)findViewById(R.id.trapezoid_perimeter_calc_answer_tx);
-          trapezoidPerimeterCalcButton=(Button)findViewById(R.id.trapezoid_perimeter_calc_button);
+        trapezoidPerimeterAET = (EditText) findViewById(R.id.trapezoid_perimeter_a_et);
+        trapezoidPerimeterBET = (EditText) findViewById(R.id.trapezoid_perimeter_b_et);
+        trapezoidPerimeterCET = (EditText) findViewById(R.id.trapezoid_perimeter_c_et);
+        trapezoidPerimeterDET = (EditText) findViewById(R.id.trapezoid_perimeter_d_et);
+        trapezoidPerimeterAnswerTV = (TextView) findViewById(R.id.trapezoid_perimeter_calc_answer_tx);
+        trapezoidPerimeterCalcButton = (Button) findViewById(R.id.trapezoid_perimeter_calc_button);
         trapezoidPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-              //  String height = coneVolumeRET.getText().toString();
-               // String volume = coneVolumeRET.getText().toString();
-
-
-
-                //double area = 6 * Double.parseDouble(height);
-//                coneVolumeAnswerTV.setText(String.format("%.02f", area));
-
-          //      if (TextUtils.isEmpty(height)) {
-            //        Toast.makeText(getApplicationContext(),
-              //              "Enter height", Toast.LENGTH_SHORT).show();
-                //}
+                //check to make sure field is not empty
+                if (Model.isEmpty(trapezoidPerimeterAET)) {
+                    trapezoidPerimeterAET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidPerimeterBET)) {
+                    trapezoidPerimeterBET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidPerimeterCET)) {
+                    trapezoidPerimeterCET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidPerimeterDET)) {
+                    trapezoidPerimeterDET.setError("Enter Value");
+                } else {
+                    double baseA, baseB, sideC, sideD, trapezoidPerimeter;
+                    baseA = Double.parseDouble(trapezoidPerimeterAET.getText().toString());
+                    baseB = Double.parseDouble(trapezoidPerimeterBET.getText().toString());
+                    sideC = Double.parseDouble(trapezoidPerimeterCET.getText().toString());
+                    sideD = Double.parseDouble(trapezoidPerimeterDET.getText().toString());
+                    if (baseA <= 0) {
+                        trapezoidPerimeterAnswerTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        trapezoidPerimeterAnswerTV.setText("The variable b should be positive");
+                    } else if (sideC <= 0) {
+                        trapezoidPerimeterAnswerTV.setText("The variable c should be positive");
+                    } else if (sideD <= 0) {
+                        trapezoidPerimeterAnswerTV.setText("The variable d should be positive");
+                    } else {
+                        trapezoidPerimeter = (baseA + baseB + sideC + sideD);
+                        trapezoidPerimeterAnswerTV.setText(String.format("%.02f", trapezoidPerimeter));
+                    }
+                }
             }
         });
 
+
         //Area
-          trapezoidAreaAET =(EditText)findViewById(R.id.trapezoid_area_a_et);
-          trapezoidAreaBET=(EditText)findViewById(R.id.trapezoid_area_b_et);
-          trapezoidAreahET=(EditText)findViewById(R.id.trapezoid_area_h_et);
-          trapezoidAreaAnswerTV =(TextView)findViewById(R.id.trapezoid_area_calc_answer_tx);
-          trapezoidAreaCalcButton = (Button)findViewById(R.id.trapezoid_area_calc_button);
+        trapezoidAreaAET = (EditText) findViewById(R.id.trapezoid_area_a_et);
+        trapezoidAreaBET = (EditText) findViewById(R.id.trapezoid_area_b_et);
+        trapezoidAreahET = (EditText) findViewById(R.id.trapezoid_area_h_et);
+        trapezoidAreaAnswerTV = (TextView) findViewById(R.id.trapezoid_area_calc_answer_tx);
+        trapezoidAreaCalcButton = (Button) findViewById(R.id.trapezoid_area_calc_button);
         trapezoidAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                //  String height = coneVolumeRET.getText().toString();
-                // String volume = coneVolumeRET.getText().toString();
-
-
-
-                //double area = 6 * Double.parseDouble(height);
-//                coneVolumeAnswerTV.setText(String.format("%.02f", area));
-
-                //      if (TextUtils.isEmpty(height)) {
-                //        Toast.makeText(getApplicationContext(),
-                //              "Enter height", Toast.LENGTH_SHORT).show();
-                //}
+                //check to make sure field is not empty
+                if (Model.isEmpty(trapezoidAreaAET)) {
+                    trapezoidAreaAET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidAreaBET)) {
+                    trapezoidAreaBET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidAreahET)) {
+                    trapezoidAreahET.setError("Enter Value");
+                } else {
+                    double baseA, baseB, height, trapezoidArea;
+                    baseA = Double.parseDouble(trapezoidAreaAET.getText().toString());
+                    baseB = Double.parseDouble(trapezoidAreaBET.getText().toString());
+                    height = Double.parseDouble(trapezoidAreahET.getText().toString());
+                    if (baseA <= 0) {
+                        trapezoidAreaAnswerTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        trapezoidAreaAnswerTV.setText("The variable b should be positive");
+                    } else if (height <= 0) {
+                        trapezoidAreaAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        trapezoidArea = (baseA + baseB) / 2 * (height);
+                        trapezoidAreaAnswerTV.setText(String.format("%.02f", trapezoidArea));
+                    }
+                }
             }
         });
 
+
         //Height
-          trapezoidHeightAET=(EditText)findViewById(R.id.trapezoid_height_a_et);
-          trapezoidHeightBET=(EditText)findViewById(R.id.trapezoid_height_b_et);
-          trapezoidHeightAreaET=(EditText)findViewById(R.id.trapezoid_height_area_et);
-          trapezoidHeightAnswerTV=(TextView)findViewById(R.id.trapezoid_height_calc_answer_tx);
-          trapezoidHeightCalcButton=(Button)findViewById(R.id.trapezoid_height_calc_button);
+        trapezoidHeightAET = (EditText) findViewById(R.id.trapezoid_height_a_et);
+        trapezoidHeightBET = (EditText) findViewById(R.id.trapezoid_height_b_et);
+        trapezoidHeightAreaET = (EditText) findViewById(R.id.trapezoid_height_area_et);
+        trapezoidHeightAnswerTV = (TextView) findViewById(R.id.trapezoid_height_calc_answer_tx);
+        trapezoidHeightCalcButton = (Button) findViewById(R.id.trapezoid_height_calc_button);
         trapezoidHeightCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                //  String height = coneVolumeRET.getText().toString();
-                // String volume = coneVolumeRET.getText().toString();
-
-
-
-                //double area = 6 * Double.parseDouble(height);
-//                coneVolumeAnswerTV.setText(String.format("%.02f", area));
-
-                //      if (TextUtils.isEmpty(height)) {
-                //        Toast.makeText(getApplicationContext(),
-                //              "Enter height", Toast.LENGTH_SHORT).show();
-                //}
+                //check to make sure field is not empty
+                if (Model.isEmpty(trapezoidHeightAET)) {
+                    trapezoidHeightAET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidHeightBET)) {
+                    trapezoidHeightBET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidHeightAreaET)) {
+                    trapezoidHeightAreaET.setError("Enter Value");
+                } else {
+                    double baseA, baseB, area, trapezoidHeight;
+                    baseA = Double.parseDouble(trapezoidHeightAET.getText().toString());
+                    baseB = Double.parseDouble(trapezoidHeightBET.getText().toString());
+                    area = Double.parseDouble(trapezoidHeightAreaET.getText().toString());
+                    if (baseA <= 0) {
+                        trapezoidHeightAnswerTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        trapezoidHeightAnswerTV.setText("The variable b should be positive");
+                    } else if (area <= 0) {
+                        trapezoidHeightAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        trapezoidHeight = 2 * (area / (baseA + baseB));
+                        trapezoidHeightAnswerTV.setText(String.format("%.02f", trapezoidHeight));
+                    }
+                }
             }
         });
 
+
         //Base A
-          trapezoidABaseBET=(EditText)findViewById(R.id.trapezoid_baseA_b_et);
-          trapezoidABaseHET=(EditText)findViewById(R.id.trapezoid_baseA_h_et);
-          trapezoidABaseAreaET=(EditText)findViewById(R.id.trapezoid_baseA_area_et);
-          trapezoidABaseAnswerTV=(TextView)findViewById(R.id.trapezoid_baseA_calc_answer_tx);
-          trapezoidABaseCalcButton=(Button)findViewById(R.id.trapezoid_baseA_calc_button);
+        trapezoidABaseBET = (EditText) findViewById(R.id.trapezoid_baseA_b_et);
+        trapezoidABaseCET = (EditText) findViewById(R.id.trapezoid_baseA_sideC_et);
+        trapezoidABaseDET = (EditText) findViewById(R.id.trapezoid_baseA_sideD_et);
+        trapezoidABasePerimeterET = (EditText) findViewById(R.id.trapezoid_baseA_perimeter_et);
+        trapezoidABaseAnswerTV = (TextView) findViewById(R.id.trapezoid_baseA_calc_answer_tx);
+        trapezoidABaseCalcButton = (Button) findViewById(R.id.trapezoid_baseA_calc_button);
         trapezoidABaseCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                //  String height = coneVolumeRET.getText().toString();
-                // String volume = coneVolumeRET.getText().toString();
-
-
-
-                //double area = 6 * Double.parseDouble(height);
-//                coneVolumeAnswerTV.setText(String.format("%.02f", area));
-
-                //      if (TextUtils.isEmpty(height)) {
-                //        Toast.makeText(getApplicationContext(),
-                //              "Enter height", Toast.LENGTH_SHORT).show();
-                //}
+                //check to make sure field is not empty
+                if (Model.isEmpty(trapezoidABaseBET)) {
+                    trapezoidABaseBET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidABaseCET)) {
+                    trapezoidABaseCET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidABaseDET)) {
+                    trapezoidABaseDET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidABasePerimeterET)) {
+                    trapezoidABasePerimeterET.setError("Enter Value");
+                } else {
+                    double baseB, sideC, sideD, perimeter, trapezoidABase;
+                    baseB = Double.parseDouble(trapezoidABaseBET.getText().toString());
+                    sideC = Double.parseDouble(trapezoidABaseCET.getText().toString());
+                    sideD = Double.parseDouble(trapezoidABaseDET.getText().toString());
+                    perimeter = Double.parseDouble(trapezoidABasePerimeterET.getText().toString());
+                    if (baseB <= 0) {
+                        trapezoidABaseAnswerTV.setText("The variable b should be positive");
+                    } else if (sideC <= 0) {
+                        trapezoidABaseAnswerTV.setText("The variable c should be positive");
+                    } else if (sideD <= 0) {
+                        trapezoidABaseAnswerTV.setText("The variable d should be positive");
+                    } else if (perimeter <= 0) {
+                        trapezoidABaseAnswerTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (baseB + sideC + sideD)) {
+                        trapezoidABaseAnswerTV.setText("Invalid input: make sure P>b+c+d");
+                    } else if (perimeter <= (sideC + sideD)) {
+                        trapezoidABaseAnswerTV.setText("Invalid input: make sure P>c+d");
+                    } else if (perimeter <= (sideC + baseB)) {
+                        trapezoidABaseAnswerTV.setText("Invalid input: make sure P>c+b");
+                    } else if (perimeter <= (sideD + baseB)) {
+                        trapezoidABaseAnswerTV.setText("Invalid input: make sure P>d+b");
+                    } else if (perimeter <= (2 * baseB)) {
+                        trapezoidABaseAnswerTV.setText("Invalid input: make sure P>2*b");
+                    } else if (perimeter >= (2 * (baseB + sideC + sideD))) {
+                        trapezoidABaseAnswerTV.setText("Invalid input: make sure P< 2*(b+c+d");
+                    } else {
+                        trapezoidABase = perimeter - baseB - sideC - sideD;
+                        trapezoidABaseAnswerTV.setText(String.format("%.02f", trapezoidABase));
+                    }
+                }
             }
         });
 
-
-
         //Base B
-          trapezoidBBaseAET=(EditText)findViewById(R.id.trapezoid_baseB_a_et);
-          trapezoidBBaseHET=(EditText)findViewById(R.id.trapezoid_baseB_h_et);
-          trapezoidBBaseAreaET=(EditText)findViewById(R.id.trapezoid_baseB_area_et);
-          trapezoidBBaseAnswerTV=(TextView)findViewById(R.id.trapezoid_baseB_calc_answer_tx);
-          trapezoidBBaseCalcButton=(Button)findViewById(R.id.trapezoid_baseB_calc_button);
+        trapezoidBBaseAET = (EditText) findViewById(R.id.trapezoid_baseB_a_et);
+        trapezoidBBaseCET = (EditText) findViewById(R.id.trapezoid_baseB_sideC_et);
+        trapezoidBBaseDET = (EditText) findViewById(R.id.trapezoid_baseB_sideD_et);
+        trapezoidBBasePerimeterET = (EditText) findViewById(R.id.trapezoid_baseB_perimeter_et);
+        trapezoidBBaseAnswerTV = (TextView) findViewById(R.id.trapezoid_baseB_calc_answer_tx);
+        trapezoidBBaseCalcButton = (Button) findViewById(R.id.trapezoid_baseB_calc_button);
         trapezoidBBaseCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                //  String height = coneVolumeRET.getText().toString();
-                // String volume = coneVolumeRET.getText().toString();
-
-
-
-                //double area = 6 * Double.parseDouble(height);
-//                coneVolumeAnswerTV.setText(String.format("%.02f", area));
-
-                //      if (TextUtils.isEmpty(height)) {
-                //        Toast.makeText(getApplicationContext(),
-                //              "Enter height", Toast.LENGTH_SHORT).show();
-                //}
+            public void onClick(View v) {//check to make sure field is not empty
+                if (Model.isEmpty(trapezoidBBaseAET)) {
+                    trapezoidBBaseAET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidBBaseCET)) {
+                    trapezoidBBaseCET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidBBaseDET)) {
+                    trapezoidBBaseDET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidBBasePerimeterET)) {
+                    trapezoidBBasePerimeterET.setError("Enter Value");
+                } else {
+                    double baseA, sideC, sideD, perimeter, trapezoidBBase;
+                    baseA = Double.parseDouble(trapezoidBBaseAET.getText().toString());
+                    sideC = Double.parseDouble(trapezoidBBaseCET.getText().toString());
+                    sideD = Double.parseDouble(trapezoidBBaseDET.getText().toString());
+                    perimeter = Double.parseDouble(trapezoidBBasePerimeterET.getText().toString());
+                    if (baseA <= 0) {
+                        trapezoidBBaseAnswerTV.setText("The variable a should be positive");
+                    } else if (sideC <= 0) {
+                        trapezoidBBaseAnswerTV.setText("The variable c should be positive");
+                    } else if (sideD <= 0) {
+                        trapezoidBBaseAnswerTV.setText("The variable d should be positive");
+                    } else if (perimeter <= 0) {
+                        trapezoidBBaseAnswerTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (baseA + sideC + sideD)) {
+                        trapezoidBBaseAnswerTV.setText("Invalid input: make sure P>a+c+d");
+                    } else if (perimeter <= (sideC + sideD)) {
+                        trapezoidBBaseAnswerTV.setText("Invalid input: make sure P>c+d");
+                    } else if (perimeter <= (sideC + baseA)) {
+                        trapezoidBBaseAnswerTV.setText("Invalid input: make sure P>c+a");
+                    } else if (perimeter <= (sideD + baseA)) {
+                        trapezoidBBaseAnswerTV.setText("Invalid input: make sure P>d+a");
+                    } else if (perimeter <= (2 * baseA)) {
+                        trapezoidBBaseAnswerTV.setText("Invalid input: make sure P>2*a");
+                    } else if (perimeter >= (2 * (baseA + sideC + sideD))) {
+                        trapezoidBBaseAnswerTV.setText("Invalid input: make sure P< 2*(a+c+d)");
+                    } else {
+                        trapezoidBBase = perimeter - baseA - sideC - sideD;
+                        trapezoidBBaseAnswerTV.setText(String.format("%.02f", trapezoidBBase));
+                    }
+                }
             }
         });
 
 
         //Side C
-          trapezoidCSideAET=(EditText)findViewById(R.id.trapezoid_sideC_a_et);
-          trapezoidCSideBET=(EditText)findViewById(R.id.trapezoid_sideC_b_et);
-          trapezoidCSideDET=(EditText)findViewById(R.id.trapezoid_sideC_d_et);
-          trapezoidCSidePET=(EditText)findViewById(R.id.trapezoid_sideC_p_et);
-          trapezoidCSideAnswerTV=(TextView)findViewById(R.id.trapezoid_sideC_calc_answer_tx);
-          trapezoidCSideCalcButton=(Button)findViewById(R.id.trapezoid_sideC_calc_button);
+        trapezoidCSideAET = (EditText) findViewById(R.id.trapezoid_sideC_a_et);
+        trapezoidCSideBET = (EditText) findViewById(R.id.trapezoid_sideC_b_et);
+        trapezoidCSideDET = (EditText) findViewById(R.id.trapezoid_sideC_d_et);
+        trapezoidCSidePET = (EditText) findViewById(R.id.trapezoid_sideC_p_et);
+        trapezoidCSideAnswerTV = (TextView) findViewById(R.id.trapezoid_sideC_calc_answer_tx);
+        trapezoidCSideCalcButton = (Button) findViewById(R.id.trapezoid_sideC_calc_button);
         trapezoidCSideCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                //  String height = coneVolumeRET.getText().toString();
-                // String volume = coneVolumeRET.getText().toString();
-
-
-
-                //double area = 6 * Double.parseDouble(height);
-//                coneVolumeAnswerTV.setText(String.format("%.02f", area));
-
-                //      if (TextUtils.isEmpty(height)) {
-                //        Toast.makeText(getApplicationContext(),
-                //              "Enter height", Toast.LENGTH_SHORT).show();
-                //}
+                //check to make sure field is not empty
+                if (Model.isEmpty(trapezoidCSideAET)) {
+                    trapezoidCSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidCSideBET)) {
+                    trapezoidCSideBET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidCSideDET)) {
+                    trapezoidCSideDET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidCSidePET)) {
+                    trapezoidCSidePET.setError("Enter Value");
+                } else {
+                    double baseA, baseB, sideD, perimeter, trapezoidSideC;
+                    baseA = Double.parseDouble(trapezoidCSideAET.getText().toString());
+                    baseB = Double.parseDouble(trapezoidCSideBET.getText().toString());
+                    sideD = Double.parseDouble(trapezoidCSideDET.getText().toString());
+                    perimeter = Double.parseDouble(trapezoidCSidePET.getText().toString());
+                    if (baseA <= 0) {
+                        trapezoidCSideAnswerTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        trapezoidCSideAnswerTV.setText("The variable b should be positive");
+                    } else if (sideD <= 0) {
+                        trapezoidCSideAnswerTV.setText("The variable d should be positive");
+                    } else if (perimeter <= 0) {
+                        trapezoidCSideAnswerTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (baseA + baseB + sideD)) {
+                        trapezoidCSideAnswerTV.setText("Invalid input: make sure P>a+b+d");
+                    } else if (perimeter <= (baseA + baseB)) {
+                        trapezoidCSideAnswerTV.setText("Invalid input: make sure P>a+b");
+                    } else if (perimeter <= (sideD + baseA)) {
+                        trapezoidCSideAnswerTV.setText("Invalid input: make sure P>d+a");
+                    } else if (perimeter <= (sideD + baseB)) {
+                        trapezoidCSideAnswerTV.setText("Invalid input: make sure P>b+d");
+                    } else if (perimeter <= (2 * baseA)) {
+                        trapezoidCSideAnswerTV.setText("Invalid input: make sure P>2*a");
+                    } else if (perimeter <= (2 * baseB)) {
+                        trapezoidCSideAnswerTV.setText("Invalid input: make sure P>2*b");
+                    } else if (perimeter <= (2 * (baseA + baseB + sideD))) {
+                        trapezoidCSideAnswerTV.setText("Invalid input: make sure P< 2*(a+b+d)");
+                    } else {
+                        trapezoidSideC = (baseA + baseB + perimeter + sideD);
+                        trapezoidCSideAnswerTV.setText(String.format("%.02f", trapezoidSideC));
+                    }
+                }
             }
+
         });
 
         //Side D
-          trapezoidDSideAET=(EditText)findViewById(R.id.trapezoid_sideD_a_et);
-          trapezoidDSideBET=(EditText)findViewById(R.id.trapezoid_sideD_b_et);
-          trapezoidDSideCET=(EditText)findViewById(R.id.trapezoid_sideD_c_et);
-          trapezoidDSidePET=(EditText)findViewById(R.id.trapezoid_sideD_p_et);
-          trapezoidDSideAnswerTV=(TextView)findViewById(R.id.trapezoid_sideD_calc_answer_tx);
-          trapezoidDSideCalcButton=(Button)findViewById(R.id.trapezoid_sideD_calc_button);
-        trapezoidDSideCalcButton.setOnClickListener(new View.OnClickListener() {
+        trapezoidDSideAET = (EditText) findViewById(R.id.trapezoid_sideD_a_et);
+        trapezoidDSideBET = (EditText) findViewById(R.id.trapezoid_sideD_b_et);
+        trapezoidDSideCET = (EditText) findViewById(R.id.trapezoid_sideD_c_et);
+        trapezoidDSidePET = (EditText) findViewById(R.id.trapezoid_sideD_p_et);
+        trapezoidDSideAnswerTV = (TextView) findViewById(R.id.trapezoid_sideD_calc_answer_tx);
+        trapezoidDSideCalcButton = (Button) findViewById(R.id.trapezoid_sideD_calc_button);
+        trapezoidDSideCalcButton.setOnClickListener(new View.OnClickListener()
+
+        {
             @Override
             public void onClick(View v) {
 
-                /**
-                 * work on functionality
-                 * formula is not integrated yet
-                 */
-                //  String height = coneVolumeRET.getText().toString();
-                // String volume = coneVolumeRET.getText().toString();
 
-
-
-                //double area = 6 * Double.parseDouble(height);
-//                coneVolumeAnswerTV.setText(String.format("%.02f", area));
-
-                //      if (TextUtils.isEmpty(height)) {
-                //        Toast.makeText(getApplicationContext(),
-                //              "Enter height", Toast.LENGTH_SHORT).show();
-                //}
+                //check to make sure field is not empty
+                if (Model.isEmpty(trapezoidDSideAET)) {
+                    trapezoidDSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidDSideBET)) {
+                    trapezoidDSideBET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidDSideCET)) {
+                    trapezoidDSideCET.setError("Enter Value");
+                } else if (Model.isEmpty(trapezoidDSidePET)) {
+                    trapezoidDSidePET.setError("Enter Value");
+                } else {
+                    double baseA, baseB, sideC, perimeter, trapezoidSideD;
+                    baseA = Double.parseDouble(trapezoidDSideAET.getText().toString());
+                    baseB = Double.parseDouble(trapezoidDSideBET.getText().toString());
+                    sideC = Double.parseDouble(trapezoidDSideCET.getText().toString());
+                    perimeter = Double.parseDouble(trapezoidDSidePET.getText().toString());
+                    if (baseA <= 0) {
+                        trapezoidDSideAnswerTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        trapezoidDSideAnswerTV.setText("The variable b should be positive");
+                    } else if (sideC <= 0) {
+                        trapezoidDSideAnswerTV.setText("The variable d should be positive");
+                    } else if (perimeter <= 0) {
+                        trapezoidDSideAnswerTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (baseA + baseB + sideC)) {
+                        trapezoidDSideAnswerTV.setText("Invalid input: make sure P>a+b+d");
+                    } else if (perimeter <= (baseA + baseB)) {
+                        trapezoidDSideAnswerTV.setText("Invalid input: make sure P>a+b");
+                    } else if (perimeter <= (sideC + baseA)) {
+                        trapezoidDSideAnswerTV.setText("Invalid input: make sure P>d+a");
+                    } else if (perimeter <= (sideC + baseB)) {
+                        trapezoidDSideAnswerTV.setText("Invalid input: make sure P>b+d");
+                    } else if (perimeter <= (2 * baseA)) {
+                        trapezoidDSideAnswerTV.setText("Invalid input: make sure P>2*a");
+                    } else if (perimeter <= (2 * baseB)) {
+                        trapezoidDSideAnswerTV.setText("Invalid input: make sure P>2*b");
+                    } else if (perimeter <= (2 * (baseA + baseB + sideC))) {
+                        trapezoidDSideAnswerTV.setText("Invalid input: make sure P< 2*(a+b+c)");
+                    } else {
+                        trapezoidSideD = (baseA + baseB + perimeter + sideC);
+                        trapezoidDSideAnswerTV.setText(String.format("%.02f", trapezoidSideD));
+                    }
+                }
             }
+
         });
-
-
 
     }
 

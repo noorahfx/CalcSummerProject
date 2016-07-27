@@ -106,7 +106,7 @@
                 android:layout_below="@id/trapezoid_perimeter_c_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="b"
+                android:text="d"
                 android:textSize="25sp" />
 
             <EditText
@@ -135,7 +135,6 @@
                 android:layout_below="@+id/trapezoid_perimeter_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -235,7 +234,6 @@
                 android:layout_below="@+id/trapezoid_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -338,8 +336,7 @@
                 android:layout_below="@+id/trapezoid_height_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -374,7 +371,7 @@
                 android:layout_below="@id/trapezoid_baseA_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="b"
                 android:textSize="25sp" />
 
             <EditText
@@ -386,51 +383,70 @@
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/trapezoid_baseA_b_text"
                 android:ems="5" />
-
             <TextView
-                android:id="@+id/trapezoid_baseA_h_text"
+                android:id="@+id/trapezoid_baseA_sideC_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/trapezoid_baseA_b_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="c"
                 android:textSize="25sp" />
 
             <EditText
-                android:id="@+id/trapezoid_baseA_h_et"
+                android:id="@+id/trapezoid_baseA_sideC_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/trapezoid_baseA_b_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/trapezoid_baseA_h_text"
+                android:layout_toRightOf="@+id/trapezoid_baseA_sideC_text"
                 android:ems="5" />
+
             <TextView
-                android:id="@+id/trapezoid_baseA_area_text"
+                android:id="@+id/trapezoid_baseA_sideD_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/trapezoid_baseA_h_text"
+                android:layout_below="@id/trapezoid_baseA_sideC_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="d"
                 android:textSize="25sp" />
 
             <EditText
-                android:id="@+id/trapezoid_baseA_area_et"
+                android:id="@+id/trapezoid_baseA_sideD_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/trapezoid_baseA_h_et"
+                android:layout_below="@+id/trapezoid_baseA_sideC_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/trapezoid_baseA_area_text"
+                android:layout_toRightOf="@+id/trapezoid_baseA_sideD_text"
+                android:ems="5" />
+            <TextView
+                android:id="@+id/trapezoid_baseA_perimeter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseA_sideD_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="P"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseA_perimeter_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseA_sideD_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_baseA_perimeter_text"
                 android:ems="5" />
 
             <Button
                 android:id="@+id/trapezoid_baseA_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/trapezoid_baseA_area_et"
+                android:layout_below="@+id/trapezoid_baseA_perimeter_et"
                 android:layout_marginTop="10dp"
                 android:text="Calculate" />
 
@@ -441,8 +457,7 @@
                 android:layout_below="@+id/trapezoid_baseA_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -473,7 +488,7 @@
                 android:layout_below="@id/trapezoid_baseB_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="a"
                 android:textSize="25sp" />
 
             <EditText
@@ -487,43 +502,63 @@
                 android:ems="5" />
 
             <TextView
-                android:id="@+id/trapezoid_baseB_h_text"
+                android:id="@+id/trapezoid_baseB_sideC_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/trapezoid_baseB_a_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="c"
                 android:textSize="25sp" />
 
             <EditText
-                android:id="@+id/trapezoid_baseB_h_et"
+                android:id="@+id/trapezoid_baseB_sideC_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/trapezoid_baseB_a_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/trapezoid_baseB_h_text"
+                android:layout_toRightOf="@+id/trapezoid_baseB_sideC_text"
                 android:ems="5" />
 
             <TextView
-                android:id="@+id/trapezoid_baseB_area_text"
+                android:id="@+id/trapezoid_baseB_sideD_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/trapezoid_baseB_h_text"
+                android:layout_below="@id/trapezoid_baseB_sideC_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="d"
                 android:textSize="25sp" />
 
             <EditText
-                android:id="@+id/trapezoid_baseB_area_et"
+                android:id="@+id/trapezoid_baseB_sideD_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/trapezoid_baseB_h_et"
+                android:layout_below="@+id/trapezoid_baseB_sideC_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/trapezoid_baseB_area_text"
+                android:layout_toRightOf="@+id/trapezoid_baseB_sideD_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/trapezoid_baseB_perimeter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trapezoid_baseB_sideD_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="P"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/trapezoid_baseB_perimeter_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trapezoid_baseB_sideD_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/trapezoid_baseB_perimeter_text"
                 android:ems="5" />
             
             
@@ -532,7 +567,7 @@
                 android:id="@+id/trapezoid_baseB_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/trapezoid_baseB_area_text"
+                android:layout_below="@+id/trapezoid_baseB_perimeter_text"
                 android:layout_marginTop="10dp"
                 android:text="Calculate" />
 
@@ -543,8 +578,7 @@
                 android:layout_below="@+id/trapezoid_baseB_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -576,7 +610,7 @@
                 android:layout_below="@id/trapezoid_sideC_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="a"
                 android:textSize="25sp" />
 
             <EditText
@@ -596,7 +630,7 @@
                 android:layout_below="@id/trapezoid_sideC_a_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="b"
                 android:textSize="25sp" />
 
             <EditText
@@ -616,7 +650,7 @@
                 android:layout_below="@id/trapezoid_sideC_b_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="d"
                 android:textSize="25sp" />
 
             <EditText
@@ -636,7 +670,7 @@
                 android:layout_below="@id/trapezoid_sideC_d_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="p"
                 android:textSize="25sp" />
 
             <EditText
@@ -653,7 +687,7 @@
                 android:id="@+id/trapezoid_sideC_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/trapezoid_sideC_b_text"
+                android:layout_below="@+id/trapezoid_sideC_p_text"
                 android:layout_marginTop="10dp"
                 android:text="Calculate" />
 
@@ -664,8 +698,7 @@
                 android:layout_below="@+id/trapezoid_sideC_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -679,7 +712,7 @@
                 android:layout_below="@+id/trapezoid_sideC_calc_answer_tx"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Radius"
+                android:text="Side D"
                 android:textSize="30sp" />
 
             <ImageView
@@ -698,7 +731,7 @@
                 android:layout_below="@id/trapezoid_sideD_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="a"
                 android:textSize="25sp" />
 
             <EditText
@@ -718,7 +751,7 @@
                 android:layout_below="@id/trapezoid_sideD_a_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="b"
                 android:textSize="25sp" />
 
             <EditText
@@ -739,7 +772,7 @@
                 android:layout_below="@id/trapezoid_sideD_b_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="c"
                 android:textSize="25sp" />
 
             <EditText
@@ -759,7 +792,7 @@
                 android:layout_below="@id/trapezoid_sideD_c_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="P"
                 android:textSize="25sp" />
 
             <EditText
@@ -787,8 +820,7 @@
                 android:layout_below="@+id/trapezoid_sideD_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 

@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Square extends AppCompatActivity {
@@ -21,23 +22,20 @@ public class Square extends AppCompatActivity {
     TextView squarePerimeterAnswerTV;
     Button squarePerimeterCalculateButton;
 
-
     //Area
     EditText squareAreaET;
     TextView squareAreaTV;
     Button squareAreaCalculateButton;
-
 
     //Sides
     EditText squareSideET;
     TextView squareSideTV;
     Button squareSideCalculateButton;
 
-    //Sides
+    //Diagonal
     EditText squareDiagonalET;
     TextView squareDiagonalTV;
     Button squareDiagonalCalculateButton;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,102 +44,100 @@ public class Square extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         //Perimeter
-        squarePerimeterET = (EditText)findViewById(R.id.square_perimeter_a_et);
-        squarePerimeterAnswerTV =(TextView)findViewById(R.id.square_perimeter_calc_answer_tx);
-        squarePerimeterCalculateButton =(Button)findViewById(R.id.square_perimeter_calc_button);
+        squarePerimeterET = (EditText) findViewById(R.id.square_perimeter_a_et);
+        squarePerimeterAnswerTV = (TextView) findViewById(R.id.square_perimeter_calc_answer_tx);
+        squarePerimeterCalculateButton = (Button) findViewById(R.id.square_perimeter_calc_button);
         squarePerimeterCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //fix the formula
-                String sideA = squarePerimeterET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sideA);
-                squarePerimeterAnswerTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(squarePerimeterET)) {
+                    squarePerimeterET.setError("Enter Value");
+                } else {
+                    double aSide, squarePerimeter;
+                    aSide = Double.parseDouble(squarePerimeterET.getText().toString());
+                    if (aSide <= 0) {
+                        squarePerimeterAnswerTV.setText("The variable a should be positive");
+                    } else {
+                        squarePerimeter = 4 * aSide;
+                        squarePerimeterAnswerTV.setText(String.format("%.02f", squarePerimeter));
+                    }
                 }
             }
         });
 
-
-
         //Area
-        squareAreaET= (EditText)findViewById(R.id.square_area_a_et);
-        squareAreaTV  =(TextView)findViewById(R.id.square_calc_area_answer_tx);
-        squareAreaCalculateButton =(Button)findViewById(R.id.square_area_calc_button);
+        squareAreaET = (EditText) findViewById(R.id.square_area_a_et);
+        squareAreaTV = (TextView) findViewById(R.id.square_calc_area_answer_tx);
+        squareAreaCalculateButton = (Button) findViewById(R.id.square_area_calc_button);
         squareAreaCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //fix the formula
-                String sideA = squareAreaET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sideA);
-                squareAreaTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(squareAreaET)) {
+                    squareAreaET.setError("Enter Value");
+                } else {
+                    double aSide, squareArea;
+                    aSide = Double.parseDouble(squareAreaET.getText().toString());
+                    if (aSide <= 0) {
+                        squareAreaTV.setText("The variable a should be positive");
+                    } else {
+                        squareArea = Math.pow(aSide, 2);
+                        squareAreaTV.setText(String.format("%.02f", squareArea));
+                    }
                 }
             }
         });
 
-
-
         //Sides
-        squareSideET = (EditText)findViewById(R.id.square_side_a_et);
-        squareSideTV  =(TextView)findViewById(R.id.square_calc_area_answer_tx);
-        squareSideCalculateButton =(Button)findViewById(R.id.square_side_calc_button);
+        squareSideET = (EditText) findViewById(R.id.square_side_a_et);
+        squareSideTV = (TextView) findViewById(R.id.square_calc_side_answer_tx);
+        squareSideCalculateButton = (Button) findViewById(R.id.square_side_calc_button);
         squareSideCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //fix the formula
-                String sideA = squareSideET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sideA);
-                squareSideTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(squareSideET)) {
+                    squareSideET.setError("Enter Value");
+                } else {
+                    double perimeter, squareASide;
+                    perimeter = Double.parseDouble(squareSideET.getText().toString());
+                    if (perimeter <= 0) {
+                        squareSideTV.setText("The variable a should be positive");
+                    } else {
+                        squareASide = perimeter / 4;
+                        squareSideTV.setText(String.format("%.02f", squareASide));
+                    }
                 }
             }
         });
 
-
-        //diameter
-        squareDiagonalET = (EditText)findViewById(R.id.square_diameter_d_et);
-        squareDiagonalTV  =(TextView)findViewById(R.id.square_calc_diamter_answer_tx);
-        squareDiagonalCalculateButton =(Button)findViewById(R.id.square_diameter_calc_button);
+        //diagonal
+        squareDiagonalET = (EditText) findViewById(R.id.square_diagonal_d_et);
+        squareDiagonalTV = (TextView) findViewById(R.id.square_calc_diagonal_answer_tx);
+        squareDiagonalCalculateButton = (Button) findViewById(R.id.square_diagonal_calc_button);
         squareDiagonalCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //fix the formula
-                String sideA = squareDiagonalET.getText().toString();
-
-
-                double area = 6 * Double.parseDouble(sideA);
-                squareDiagonalTV.setText(String.format("%.02f", area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(squareDiagonalET)) {
+                    squareDiagonalET.setError("Enter Value");
+                } else {
+                    double aSide, squareDiagonal;
+                    aSide = Double.parseDouble(squareDiagonalET.getText().toString());
+                    if (aSide <= 0) {
+                        squareDiagonalTV.setText("The variable a should be positive");
+                    } else {
+                        squareDiagonal = Math.sqrt(2) * aSide;
+                        squareDiagonalTV.setText(String.format("%.02f", squareDiagonal));
+                    }
                 }
             }
         });
-
-
-
     }
-
 }

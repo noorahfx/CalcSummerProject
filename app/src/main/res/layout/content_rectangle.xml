@@ -28,7 +28,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:text="Area"
+                android:text="Perimeter"
                 android:textSize="30sp" />
 
             <ImageView
@@ -95,12 +95,8 @@
                 android:layout_below="@+id/rectangle_perimeter_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
 
 
             <TextView
@@ -177,18 +173,247 @@
                 android:layout_below="@+id/rectangle_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
+            <TextView
+                android:id="@+id/rectangle_length_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_area_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Length"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rectangle_length_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_length_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rectangle_length_width_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_length_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="W"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rectangle_length_width_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_length_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rectangle_length_width_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/rectangle_length_perimeter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_length_width_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="P"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rectangle_length_perimeter_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_length_width_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/rectangle_length_perimeter_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/rectangle_length_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_length_perimeter_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rectangle_length_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_length_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
 
 
+            <TextView
+                android:id="@+id/rectangle_width_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_length_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Width"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rectangle_width_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_width_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rectangle_width_length_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_width_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="l"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rectangle_width_length_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_width_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rectangle_width_length_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/rectangle_width_perimeter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_width_length_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="P"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rectangle_width_perimeter_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_width_length_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/rectangle_width_perimeter_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/rectangle_width_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_width_perimeter_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rectangle_width_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_width_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
 
 
-            </RelativeLayout>
+            <TextView
+                android:id="@+id/rectangle_diagonal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_width_calc_answer_tx"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Diagonal"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/rectangle_diagonal_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_diagonal_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/rectangle_diagonal_length_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_diagonal_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="l"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rectangle_diagonal_length_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_diagonal_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/rectangle_diagonal_length_text"
+                android:ems="5" />
+
+            <TextView
+                android:id="@+id/rectangle_diagonal_width_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rectangle_diagonal_length_text"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="w"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/rectangle_diagonal_width_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_diagonal_length_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/rectangle_diagonal_width_text"
+                android:ems="5" />
+
+            <Button
+                android:id="@+id/rectangle_diagonal_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_diagonal_width_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/rectangle_diagonal_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rectangle_diagonal_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
     </ScrollView>
-    
+
 
 </RelativeLayout>
 

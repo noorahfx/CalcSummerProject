@@ -58,7 +58,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rhombus_perimeter_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <Button
@@ -118,7 +119,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rhombus_area_p_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rhombus_area_q_text"
@@ -138,7 +140,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rhombus_area_q_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rhombus_area_calc_button"
@@ -196,7 +199,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rhombus_sides_perimeter_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <Button
@@ -255,7 +259,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rhombus_p_diagonal_q_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rhombus_p_diagonal_area_text"
@@ -275,7 +280,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rhombus_p_diagonal_area_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rhombus_p_diagonal_calc_button"
@@ -333,7 +339,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rhombus_q_diagonal_p_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rhombus_q_diagonal_area_text"
@@ -353,7 +360,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rhombus_q_diagonal_area_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rhombus_q_diagonal_calc_button"

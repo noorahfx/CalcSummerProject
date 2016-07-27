@@ -57,7 +57,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/parallelogram_perimeter_base_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/parallelogram_perimeter_area_text"
@@ -77,7 +78,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/parallelogram_perimeter_area_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/parallelogram_perimeter_calc_button"
@@ -94,7 +96,7 @@
                 android:layout_below="@+id/parallelogram_perimeter_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -135,7 +137,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/parallelogram_area_base_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/parallelogram_area_height_text"
@@ -155,7 +158,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/parallelogram_area_height_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/parallelogram_area_calc_button"
@@ -172,7 +176,7 @@
                 android:layout_below="@+id/parallelogram_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -213,7 +217,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/parallelogram_base_side_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/parallelogram_base_perimeter_text"
@@ -233,7 +238,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/parallelogram_base_perimeter_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/parallelogram_base_calc_button"
@@ -250,7 +256,7 @@
                 android:layout_below="@+id/parallelogram_base_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -291,7 +297,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/parallelogram_height_base_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/parallelogram_height_area_text"
@@ -311,7 +318,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/parallelogram_height_area_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/parallelogram_height_calc_button"
@@ -370,7 +378,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/parallelogram_side_base_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/parallelogram_side_perimeter_text"
@@ -390,7 +399,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/parallelogram_side_perimeter_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/parallelogram_side_calc_button"
@@ -407,7 +417,7 @@
                 android:layout_below="@+id/parallelogram_side_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
         </RelativeLayout>

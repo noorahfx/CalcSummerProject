@@ -57,7 +57,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cylinder_volume_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cylinder_volume_h_text"
@@ -77,7 +80,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cylinder_volume_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cylinder_volume_calc_button"
@@ -94,19 +100,8 @@
                 android:layout_below="@+id/cylinder_volume_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
-
-
-
-
-
-
 
 
             <TextView
@@ -146,7 +141,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cylinder_radius_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cylinder_radius_v_text"
@@ -166,7 +164,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cylinder_radius_v_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Volume"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cylinder_radius_calc_button"
@@ -183,12 +184,9 @@
                 android:layout_below="@+id/cylinder_radius_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
-
-
-            
 
             <TextView
                 android:id="@+id/cylinder_height_text"
@@ -218,6 +216,7 @@
                 android:layout_marginTop="40dp"
                 android:text="r"
                 android:textSize="25sp" />
+
             <EditText
                 android:id="@+id/cylinder_height_r_et"
                 android:layout_width="wrap_content"
@@ -226,7 +225,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cylinder_height_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cylinder_height_v_text"
@@ -246,7 +248,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cylinder_height_v_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Volume"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cylinder_height_calc_button"
@@ -263,10 +268,8 @@
                 android:layout_below="@+id/cylinder_height_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
 
 
             <TextView
@@ -306,7 +309,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cylinder_surface_area_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cylinder_surface_area_h_text"
@@ -326,7 +332,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cylinder_surface_area_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cylinder_surface_area_calc_button"
@@ -343,7 +352,7 @@
                 android:layout_below="@+id/cylinder_surface_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -364,9 +373,7 @@
                 android:layout_below="@+id/cylinder_base_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1"
-
-                />
+                android:src="@drawable/image1" />
 
             <TextView
                 android:id="@+id/cylinder_base_area_r_text"
@@ -386,7 +393,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cylinder_base_area_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cylinder_base_area_calc_button"
@@ -403,15 +413,8 @@
                 android:layout_below="@+id/cylinder_base_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
-
-
 
 
             <TextView
@@ -453,7 +456,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cylinder_lateral_surface_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cylinder_lateral_surface_h_text"
@@ -473,7 +479,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cylinder_lateral_surface_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cylinder_lateral_surface_calc_button"
@@ -492,10 +501,9 @@
                 android:gravity="center"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-            
 
-            
-            </RelativeLayout>
+
+        </RelativeLayout>
     </ScrollView>
- 
+
 </RelativeLayout>

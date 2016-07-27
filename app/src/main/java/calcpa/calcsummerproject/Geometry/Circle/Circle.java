@@ -35,6 +35,11 @@ public class Circle extends AppCompatActivity {
     TextView circleCircumTV;
     Button circlCircumCalculateButton;
 
+    //circumference
+    EditText circleRadiusAreaET;
+    TextView circleRadiusTV;
+    Button circlRadiusCalculateButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +106,28 @@ public class Circle extends AppCompatActivity {
                     double answer = 2 * Math.PI * radius;
                     circleCircumTV.setText(String.format("%.02f", answer));
                 }
+            }
+        });
+
+
+        //area
+        circleRadiusAreaET = (EditText) findViewById(R.id.circle_radius_c_et);
+        circleRadiusTV = (TextView) findViewById(R.id.circle_radius_calc_answer_tx);
+        circlRadiusCalculateButton = (Button) findViewById(R.id.circle_radius_calc_button);
+        circlRadiusCalculateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //check to make sure field is not empty
+                if (Model.isEmpty(circleRadiusAreaET)) {
+                    circleRadiusAreaET.setError("Enter Radius");
+                } else {
+                    double area;
+                    area = Double.parseDouble(circleRadiusAreaET.getText().toString());
+                    double answer = Math.sqrt((area)/Math.PI);
+                    circleRadiusTV.setText(String.format("%.02f", answer));
+                }
+
             }
         });
     }

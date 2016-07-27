@@ -57,7 +57,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/ellipse_area_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Axis"/>
 
             <TextView
                 android:id="@+id/ellipse_area_b_text"
@@ -77,7 +80,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/ellipse_area_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Bxis"/>
 
             <Button
                 android:id="@+id/ellipse_area_calc_button"
@@ -94,11 +100,8 @@
                 android:layout_below="@+id/ellipse_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
 
 
             <TextView
@@ -138,7 +141,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Bxis"/>
 
             <TextView
                 android:id="@+id/ellipse_a_xis_area_text"
@@ -158,7 +164,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Area"/>
 
             <Button
                 android:id="@+id/ellipse_a_xis_calc_button"
@@ -175,14 +184,8 @@
                 android:layout_below="@+id/ellipse_a_xis_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
-
 
 
             <TextView
@@ -222,7 +225,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/ellipse_b_xis_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Axis"/>
 
             <TextView
                 android:id="@+id/ellipse_b_xis_area_text"
@@ -242,7 +248,11 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/ellipse_b_xis_area_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Area"
+                />
 
             <Button
                 android:id="@+id/ellipse_b_xis_calc_button"
@@ -259,13 +269,8 @@
                 android:layout_below="@+id/ellipse_b_xis_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
 
 
             <TextView
@@ -305,7 +310,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/ellipse_circum_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Axis"/>
 
             <TextView
                 android:id="@+id/ellipse_circum_b_text"
@@ -325,7 +333,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/ellipse_circum_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Bxis"/>
 
             <Button
                 android:id="@+id/ellipse_circum_calc_button"
@@ -342,20 +353,12 @@
                 android:layout_below="@+id/ellipse_circum_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
-
-
-
 
 
         </RelativeLayout>
     </ScrollView>
-    
 
-        </RelativeLayout>
+
+</RelativeLayout>

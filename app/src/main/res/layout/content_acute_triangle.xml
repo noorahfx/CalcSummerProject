@@ -470,7 +470,6 @@
                 android:layout_below="@+id/acute_triangle_sid_b_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 

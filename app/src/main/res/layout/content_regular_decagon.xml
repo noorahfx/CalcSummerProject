@@ -11,6 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Decagon.TypesOfDecagon.RegularDecagon"
     tools:showIn="@layout/activity_regular_decagon">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -27,8 +28,8 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Area"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
+
             <ImageView
                 android:id="@+id/decagon_area_img"
                 android:layout_width="wrap_content"
@@ -37,6 +38,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
+
             <TextView
                 android:id="@+id/decagon_area_a_text"
                 android:layout_width="wrap_content"
@@ -55,7 +57,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/decagon_area_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/decagon_area_calc_button"
@@ -72,7 +75,7 @@
                 android:layout_below="@+id/decagon_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -113,7 +116,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/decagon_perimeter_v_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/decagon_perimeter_calc_button"
@@ -130,10 +134,8 @@
                 android:layout_below="@+id/decagon_perimeter_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
 
 
             <TextView
@@ -173,7 +175,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/decagon_sides_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/decagon_sides_calc_button"
@@ -190,14 +193,11 @@
                 android:layout_below="@+id/decagon_sides_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-            
-            
-            
-            
-            
-            </RelativeLayout>
+
+
+        </RelativeLayout>
     </ScrollView>
 
 </RelativeLayout>

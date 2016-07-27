@@ -57,7 +57,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cuboid_volume_l_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Length"/>
 
             <TextView
                 android:id="@+id/cuboid_volume_w_text"
@@ -77,7 +80,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cuboid_volume_l_text"
-                android:ems="5" />
+                android:ems="5"
+                android:maxLines="1"
+                android:hint="Width"/>
 
             <TextView
                 android:id="@+id/cuboid_volume_h_text"
@@ -97,7 +102,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cuboid_volume_w_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Height"/>
 
             <Button
                 android:id="@+id/cuboid_volume_calc_button"
@@ -156,7 +164,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cuboid_area_l_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Length"/>
 
             <TextView
                 android:id="@+id/cuboid_area_w_text"
@@ -176,7 +187,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cuboid_area_l_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Width"/>
 
             <TextView
                 android:id="@+id/cuboid_area_h_text"
@@ -186,7 +200,8 @@
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
                 android:text="H"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                />
 
             <EditText
                 android:id="@+id/cuboid_area_h_et"
@@ -196,7 +211,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cuboid_area_w_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Height"/>
 
             <Button
                 android:id="@+id/cuboid_area_calc_button"

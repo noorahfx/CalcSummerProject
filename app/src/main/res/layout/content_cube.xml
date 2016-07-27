@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Cube.Cube"
     tools:showIn="@layout/activity_cube">
-    
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,7 +19,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            
+
             <TextView
                 android:id="@+id/cube_volume_text"
                 android:layout_width="match_parent"
@@ -28,8 +28,8 @@
                 android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Volume"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
+
             <ImageView
                 android:id="@+id/cube_volume_img"
                 android:layout_width="wrap_content"
@@ -38,6 +38,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
+
             <TextView
                 android:id="@+id/cube_volume_a_text"
                 android:layout_width="wrap_content"
@@ -56,7 +57,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cube_volume_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Edge"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cube_volume_calc_button"
@@ -73,7 +77,7 @@
                 android:layout_below="@+id/cube_volume_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
             <TextView
@@ -113,7 +117,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cube_edge_v_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Volume"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cube_edge_calc_button"
@@ -130,12 +137,8 @@
                 android:layout_below="@+id/cube_edge_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
 
 
             <TextView
@@ -175,7 +178,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cube_special_diagonal_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Edge"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cube_special_diagonal_calc_button"
@@ -192,15 +198,8 @@
                 android:layout_below="@+id/cube_special_diagonal_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
-
-
 
 
             <TextView
@@ -240,7 +239,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cube_surface_area_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Edge"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cube_surface_area_calc_button"
@@ -257,7 +259,7 @@
                 android:layout_below="@+id/cube_surface_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
 
 

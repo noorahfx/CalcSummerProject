@@ -61,7 +61,9 @@
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/circle_area_a_text"
                 android:ems="5"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="radius"/>
 
             <Button
                 android:id="@+id/circle_area_calc_button"
@@ -111,7 +113,7 @@
                 android:layout_below="@+id/circle_diameter_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="d"
+                android:text="r"
                 android:textSize="25sp" />
 
             <EditText
@@ -124,6 +126,8 @@
                 android:layout_toRightOf="@+id/circle_diameter_d_text"
                 android:ems="5"
                 android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="radius"
                 />
 
             <Button
@@ -170,7 +174,7 @@
                 android:layout_below="@id/circle_circum_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="c"
+                android:text="r"
                 android:textSize="25sp" />
 
             <EditText
@@ -181,7 +185,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/circle_circum_c_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="radius"/>
 
             <Button
                 android:id="@+id/circle_circum_calc_button"
@@ -201,6 +208,67 @@
                  android:textColor="@color/red"
                 android:textSize="20sp" />
 
+
+
+
+            <TextView
+                android:id="@+id/circle_radius_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circle_circum_calc_answer_tx"
+                android:gravity="center"
+                android:text="Radius"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/circle_radius_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/circle_radius_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/circle_radius_c_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/circle_radius_img"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="40dp"
+                android:text="A"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/circle_radius_c_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/circle_radius_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/circle_radius_c_text"
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:hint="Area"/>
+
+            <Button
+                android:id="@+id/circle_radius_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/circle_radius_c_text"
+                android:layout_marginTop="10dp"
+                android:text="Calculate" />
+
+            <TextView
+                android:id="@+id/circle_radius_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circle_radius_calc_button"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
         </RelativeLayout>
     </ScrollView>
 

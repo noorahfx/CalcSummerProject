@@ -67,25 +67,6 @@ public class AcuteTriangle extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String sideA = sideAEditText.getText().toString();
-                String sideB = sideBEditText.getText().toString();
-                String sideC = sideAEditText.getText().toString();
-
-
-                double perimeter = Double.parseDouble(sideA) + Double.parseDouble(sideB) +
-                        Double.parseDouble(sideC);
-                answerEditText.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(), "Enter base", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideC)) {
-                    Toast.makeText(getApplicationContext(), "Enter base", Toast.LENGTH_SHORT).show();
-                }
             }
         });
 
@@ -96,20 +77,7 @@ public class AcuteTriangle extends AppCompatActivity {
         calculateAreaButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v){
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
 
-                double area = (Double.parseDouble(sideA)*Double.parseDouble(sideB))/2;
-                areaAnswerTV.setText(String.format(".02f",area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
             }
         });
 
@@ -120,21 +88,7 @@ public class AcuteTriangle extends AppCompatActivity {
         calculateHypButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
 
-                double hyp = Math.sqrt(Math.pow(Double.parseDouble(sideA),2)+
-                        Math.pow(Double.parseDouble(sideB),2));
-                areaAnswerTV.setText(String.format(".02f",hyp));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
             }
         });
 
@@ -145,21 +99,7 @@ public class AcuteTriangle extends AppCompatActivity {
         calculateSideAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
 
-                double sideAFormula = 2*((Double.parseDouble(sideA)*
-                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideB);
-                areaAnswerTV.setText(String.format(".02f",sideAFormula));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
             }
         });
         sideBAreaET =(EditText)findViewById(R.id.acute_triangle_sid_b_area_et);
@@ -169,21 +109,7 @@ public class AcuteTriangle extends AppCompatActivity {
         calculateSideBButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
 
-                double sideBFormula = 2*((Double.parseDouble(sideA)*
-                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideA);
-                areaAnswerTV.setText(String.format(".02f",sideBFormula));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
             }
         });
     }

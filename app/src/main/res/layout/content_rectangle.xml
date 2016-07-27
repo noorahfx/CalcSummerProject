@@ -58,7 +58,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rectangle_perimeter_length_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rectangle_perimeter_width_text"
@@ -78,7 +79,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rectangle_perimeter_width_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rectangle_perimeter_calc_button"
@@ -136,7 +138,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rectangle_area_length_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rectangle_area_width_text"
@@ -156,7 +159,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rectangle_area_width_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rectangle_area_calc_button"
@@ -214,7 +218,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rectangle_length_width_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rectangle_length_perimeter_text"
@@ -234,7 +239,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rectangle_length_perimeter_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rectangle_length_calc_button"
@@ -292,7 +298,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rectangle_width_length_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rectangle_width_perimeter_text"
@@ -312,7 +319,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rectangle_width_perimeter_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rectangle_width_calc_button"
@@ -370,7 +378,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rectangle_diagonal_length_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/rectangle_diagonal_width_text"
@@ -390,7 +399,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/rectangle_diagonal_width_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/rectangle_diagonal_calc_button"

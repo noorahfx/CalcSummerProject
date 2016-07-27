@@ -74,7 +74,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/sidAText"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <EditText
@@ -85,7 +86,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/sideBText"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/calculateButtonID"
@@ -108,8 +110,6 @@
                 android:textSize="20sp" />
 
 
-
-
             <TextView
                 android:id="@+id/area_text"
                 android:layout_width="match_parent"
@@ -129,7 +129,7 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
-           <TextView
+            <TextView
                 android:id="@+id/area_side_a_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,6 +148,7 @@
                 android:layout_marginTop="32dp"
                 android:text="b"
                 android:textSize="25sp" />
+
             <EditText
                 android:id="@+id/area_base_et"
                 android:layout_width="wrap_content"
@@ -156,7 +157,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/area_side_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <EditText
                 android:id="@+id/area_height_et"
@@ -166,7 +168,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/area_side_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/area_click_botton"
@@ -186,9 +189,6 @@
                 android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
 
 
             <TextView
@@ -239,7 +239,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/hyp_side_a_tv"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <EditText
@@ -250,7 +251,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/hyp_side_b_tv"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <Button
@@ -274,14 +276,6 @@
                 android:textSize="20sp" />
 
 
-
-
-
-
-
-
-
-
             <TextView
                 android:id="@+id/right_triangle_a_tx"
                 android:layout_width="match_parent"
@@ -300,7 +294,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
-
 
 
             <TextView
@@ -333,7 +326,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/right_triangle_area_tv"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <EditText
@@ -344,7 +338,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/right_triangle_side_b_tv"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/right_triangle_calc_button"
@@ -365,8 +360,6 @@
                 android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
 
 
             <TextView
@@ -418,8 +411,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/right_triangle_sid_b_area_tv"
-                android:ems="5" />
-
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <EditText
@@ -430,7 +423,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/right_triangle_side_a_tv"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <Button
@@ -452,7 +446,6 @@
                 android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
 
         </RelativeLayout>

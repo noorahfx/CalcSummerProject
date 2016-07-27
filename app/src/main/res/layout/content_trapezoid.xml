@@ -57,9 +57,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/trapezoid_perimeter_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
-            
+
             <TextView
                 android:id="@+id/trapezoid_perimeter_b_text"
                 android:layout_width="wrap_content"
@@ -78,7 +79,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_perimeter_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/trapezoid_perimeter_c_text"
@@ -98,7 +100,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_perimeter_c_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
             <TextView
                 android:id="@+id/trapezoid_perimeter_d_text"
                 android:layout_width="wrap_content"
@@ -117,9 +121,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_perimeter_d_text"
-                android:ems="5" />
-            
-            
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
+
             <Button
                 android:id="@+id/trapezoid_perimeter_calc_button"
                 android:layout_width="match_parent"
@@ -137,7 +142,6 @@
                 android:gravity="center"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
 
             <TextView
@@ -177,7 +181,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/trapezoid_area_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/trapezoid_area_b_text"
@@ -197,7 +202,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_area_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/trapezoid_area_h_text"
@@ -217,7 +223,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_area_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/trapezoid_area_calc_button"
@@ -275,8 +282,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/trapezoid_height_a_text"
-                android:ems="5" />
-
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <TextView
@@ -297,8 +304,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_height_b_text"
-                android:ems="5" />
-
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
 
             <TextView
@@ -319,7 +326,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_height_area_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/trapezoid_height_calc_button"
@@ -336,13 +344,8 @@
                 android:layout_below="@+id/trapezoid_height_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
 
 
             <TextView
@@ -382,7 +385,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/trapezoid_baseA_b_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
             <TextView
                 android:id="@+id/trapezoid_baseA_sideC_text"
                 android:layout_width="wrap_content"
@@ -401,7 +406,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_baseA_sideC_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/trapezoid_baseA_sideD_text"
@@ -421,7 +427,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_baseA_sideD_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
             <TextView
                 android:id="@+id/trapezoid_baseA_perimeter_text"
                 android:layout_width="wrap_content"
@@ -440,7 +448,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_baseA_perimeter_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <Button
                 android:id="@+id/trapezoid_baseA_calc_button"
@@ -457,9 +466,8 @@
                 android:layout_below="@+id/trapezoid_baseA_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
 
             <TextView
@@ -499,7 +507,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/trapezoid_baseB_a_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/trapezoid_baseB_sideC_text"
@@ -519,7 +528,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_baseB_sideC_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/trapezoid_baseB_sideD_text"
@@ -539,7 +549,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_baseB_sideD_text"
-                android:ems="5" />
+                android:ems="5"
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/trapezoid_baseB_perimeter_text"
@@ -559,9 +570,9 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/trapezoid_baseB_perimeter_text"
-                android:ems="5" />
-            
-            
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
 
             <Button
                 android:id="@+id/trapezoid_baseB_calc_button"
@@ -578,10 +589,8 @@
                 android:layout_below="@+id/trapezoid_baseB_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
 
 
             <TextView
@@ -698,11 +707,8 @@
                 android:layout_below="@+id/trapezoid_sideC_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
 
 
             <TextView
@@ -820,26 +826,8 @@
                 android:layout_below="@+id/trapezoid_sideD_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                 android:textColor="@color/red"
+                android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </RelativeLayout>

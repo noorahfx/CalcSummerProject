@@ -58,7 +58,11 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cone_volume_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
 
             <TextView
                 android:id="@+id/cone_volume_h_text"
@@ -78,7 +82,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cone_volume_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cone_volume_calc_button"
@@ -135,7 +142,11 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cone_radius_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
 
             <TextView
                 android:id="@+id/cone_radius_v_text"
@@ -155,7 +166,11 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cone_radius_v_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Volume"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
 
             <Button
                 android:id="@+id/cone_radius_calc_button"
@@ -212,7 +227,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cone_height_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cone_height_v_text"
@@ -232,7 +250,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cone_height_v_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Volume"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cone_height_calc_button"
@@ -292,7 +313,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cone_slant_height_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
 
             <TextView
@@ -314,7 +338,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cone_slant_height_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cone_slant_height_calc_button"
@@ -374,7 +401,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cone_surface_area_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cone_surface_area_h_text"
@@ -394,7 +424,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cone_surface_area_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cone_surface_area_calc_button"
@@ -454,7 +487,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cone_base_area_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cone_base_area_calc_button"
@@ -514,7 +550,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/cone_lateral_surface_r_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Radius"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <TextView
                 android:id="@+id/cone_lateral_surface_h_text"
@@ -534,7 +573,10 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/cone_lateral_surface_h_text"
-                android:ems="5" />
+                android:ems="5"
+                android:hint="Height"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
 
             <Button
                 android:id="@+id/cone_lateral_surface_calc_button"

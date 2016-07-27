@@ -94,8 +94,7 @@
                 android:layout_below="@+id/kite_perimeter_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -176,8 +175,7 @@
                 android:layout_below="@+id/kite_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -207,7 +205,7 @@
                 android:layout_below="@id/kite_side_a_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="b"
                 android:textSize="25sp" />
 
             <EditText
@@ -227,7 +225,7 @@
                 android:layout_below="@id/kite_side_a_bside_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="P"
                 android:textSize="25sp" />
 
             <EditText
@@ -255,8 +253,7 @@
                 android:layout_below="@+id/kite_side_a_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -310,7 +307,7 @@
                 android:layout_below="@id/kite_side_b_aside_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="P"
                 android:textSize="25sp" />
 
             <EditText
@@ -338,8 +335,7 @@
                 android:layout_below="@+id/kite_side_b_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -421,8 +417,7 @@
                 android:layout_below="@+id/kite_p_diaognal_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
             <TextView
@@ -471,7 +466,7 @@
                 android:layout_below="@id/kite_q_diaognal_p_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="P"
+                android:text="A"
                 android:textSize="25sp" />
 
             <EditText
@@ -499,8 +494,7 @@
                 android:layout_below="@+id/kite_q_diaognal_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
             
             

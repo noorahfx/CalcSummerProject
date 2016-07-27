@@ -13,8 +13,6 @@
     tools:showIn="@layout/activity_rhombus">
 
 
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -49,7 +47,7 @@
                 android:layout_below="@id/rhombus_perimeter_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="a"
                 android:textSize="25sp" />
 
             <EditText
@@ -61,9 +59,6 @@
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@+id/rhombus_perimeter_a_text"
                 android:ems="5" />
-
-
-
 
 
             <Button
@@ -81,7 +76,7 @@
                 android:layout_below="@+id/rhombus_perimeter_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
+
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -160,12 +155,8 @@
                 android:layout_below="@+id/rhombus_area_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
 
 
             <TextView
@@ -188,50 +179,31 @@
                 android:src="@drawable/image1" />
 
             <TextView
-                android:id="@+id/rhombus_sides_p_text"
+                android:id="@+id/rhombus_sides_perimeter_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rhombus_sides_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="P"
                 android:textSize="25sp" />
 
             <EditText
-                android:id="@+id/rhombus_sides_p_et"
+                android:id="@+id/rhombus_sides_perimeter_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rhombus_sides_img"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/rhombus_sides_p_text"
+                android:layout_toRightOf="@+id/rhombus_sides_perimeter_text"
                 android:ems="5" />
 
-            <TextView
-                android:id="@+id/rhombus_sides_q_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/rhombus_sides_p_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
-                android:text="V"
-                android:textSize="25sp" />
-
-            <EditText
-                android:id="@+id/rhombus_sides_q_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rhombus_sides_p_et"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/rhombus_sides_q_text"
-                android:ems="5" />
 
             <Button
                 android:id="@+id/rhombus_sides_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rhombus_sides_q_text"
+                android:layout_below="@+id/rhombus_sides_perimeter_text"
                 android:layout_marginTop="10dp"
                 android:text="Calculate" />
 
@@ -242,13 +214,8 @@
                 android:layout_below="@+id/rhombus_sides_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
-
-
-
 
 
             <TextView
@@ -258,7 +225,7 @@
                 android:layout_below="@+id/rhombus_sides_calc_answer_tx"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Radius"
+                android:text="Diagonal P"
                 android:textSize="30sp" />
 
             <ImageView
@@ -325,10 +292,8 @@
                 android:layout_below="@+id/rhombus_p_diagonal_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
 
 
             <TextView
@@ -357,7 +322,7 @@
                 android:layout_below="@id/rhombus_q_diagonal_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="r"
+                android:text="p"
                 android:textSize="25sp" />
 
             <EditText
@@ -377,7 +342,7 @@
                 android:layout_below="@id/rhombus_q_diagonal_p_text"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="V"
+                android:text="A"
                 android:textSize="25sp" />
 
             <EditText
@@ -405,15 +370,11 @@
                 android:layout_below="@+id/rhombus_q_diagonal_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
-
-
-
         </RelativeLayout>
     </ScrollView>
-    
+
 </RelativeLayout>

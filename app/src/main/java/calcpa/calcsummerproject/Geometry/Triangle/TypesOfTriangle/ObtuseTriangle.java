@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
@@ -31,37 +32,187 @@ public class ObtuseTriangle extends AppCompatActivity {
 
    */
 
+//perimeter
+  EditText obtuseTriPerimeterSideAET;
+    EditText obtuseTriPerimeterBaseET;
+    EditText obtuseTriPerimeterSideCET;
+    TextView obtuseTriPerimeterAnsTV;
+    Button obtuseTriPerimeterCalcButton;
 
-    EditText sideAEditText;
-    EditText sideBEditText;
-    EditText sideCPerimeterEditText;
-    TextView answerEditText;
-    Button calculateResultButton;
+
+    //acute triangle area
+    EditText obtuseTriAreaBaseET;
+    EditText obtuseTriAreaHeightET;
+    TextView obtuseTriAreaAnsTV;
+    Button obtuseTriAreaCalcButton;
+
+  
+
+    //acute triangle side A calculatro
+    EditText obtuseTriSideABaseET;
+    EditText obtuseTriSideASideCET;
+    EditText obtuseTriSideAPerimeterET;
+    TextView obtuseTriSideAAnsTV;
+    Button obtuseTriSideACalcButton;
 
 
-
-    //obtuse triangle area
-    EditText areaSideAET;
-    EditText areaSideBET;
-    TextView areaAnswerTV;
-    Button calculateAreaButton;
-
-    //obtuse triangle side A calculatro
-    EditText sideAAreaET;
-    EditText sideALegBET;
-    TextView sideAAnswerTV;
-    Button calculateSideAButton;
-
-    //obtuse triangle side B calculator
-    EditText sideBAreaET;
-    EditText sideBLegAET;
-    TextView sideBAnswerTV;
-    Button calculateSideBButton;
+    //acute triangle side B calculator
+    EditText obtuseTriBaseSideAET;
+    EditText obtuseTriBaseSideCET;
+    EditText obtuseTriBasePerimeterET;
+    TextView obtuseTriBaseAnsTV;
+    Button obtuseTriBaseCalcButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obtuse_triangle);
+
+
+        //initialize the EditText
+        obtuseTriPerimeterSideAET = (EditText) findViewById(R.id.obtuse_tri_perimeter_sideA_et);
+        obtuseTriPerimeterBaseET = (EditText) findViewById(R.id.obtuse_tri_perimeter_sideB_et);
+        obtuseTriPerimeterSideCET = (EditText) findViewById(R.id.obtuse_tri_perimeter_sideC_et);
+        obtuseTriPerimeterAnsTV = (TextView) findViewById(R.id.obtuse_tri_perimeter_ans_tv);
+        obtuseTriPerimeterCalcButton = (Button) findViewById(R.id.obtuse_tri_perimeter_calc_button);
+        obtuseTriPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(obtuseTriPerimeterSideAET)) {
+                    obtuseTriPerimeterSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(obtuseTriPerimeterBaseET)) {
+                    obtuseTriPerimeterBaseET.setError("Enter Value");
+                } else if (Model.isEmpty(obtuseTriPerimeterSideCET)) {
+                    obtuseTriPerimeterSideCET.setError("Enter Value");
+                } else {
+                    double sideA, baseB, sideC, obtuseTriPerimeter;
+                    sideA = Double.parseDouble(obtuseTriPerimeterSideAET.getText().toString());
+                    baseB = Double.parseDouble(obtuseTriPerimeterBaseET.getText().toString());
+                    sideC = Double.parseDouble(obtuseTriPerimeterSideCET.getText().toString());
+                    if (sideA <= 0) {
+                        obtuseTriPerimeterAnsTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        obtuseTriPerimeterAnsTV.setText("The variable b should be positive");
+                    } else if (sideC <= 0) {
+                        obtuseTriPerimeterAnsTV.setText("The variable c should be positive");
+                    } else if (sideA >= (baseB + sideC)) {
+                        obtuseTriPerimeterAnsTV.setText("Invalid input: make sure b+c>a");
+                    } else {
+                        obtuseTriPerimeter = sideA + baseB + sideC;
+                        obtuseTriPerimeterAnsTV.setText(String.format("%.02f", obtuseTriPerimeter));
+                    }
+                }
+            }
+        });
+
+
+        //acute triangle area
+
+        obtuseTriAreaBaseET = (EditText) findViewById(R.id.obtuse_tri_area_base_et);
+        obtuseTriAreaHeightET = (EditText) findViewById(R.id.obtuse_tri_area_height_et);
+        obtuseTriAreaAnsTV = (TextView) findViewById(R.id.obtuse_tri_area_ans_tv);
+        obtuseTriAreaCalcButton = (Button) findViewById(R.id.obtuse_tri_area_calc_button);
+        obtuseTriAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(obtuseTriAreaBaseET)) {
+                    obtuseTriAreaBaseET.setError("Enter Value");
+                } else if (Model.isEmpty(obtuseTriAreaHeightET)) {
+                    obtuseTriAreaHeightET.setError("Enter Value");
+                } else {
+                    double baseB, height, obtuseTriArea;
+                    baseB = Double.parseDouble(obtuseTriAreaBaseET.getText().toString());
+                    height = Double.parseDouble(obtuseTriAreaHeightET.getText().toString());
+                    if (baseB <= 0) {
+                        obtuseTriAreaAnsTV.setText("The variable b should be positive");
+                    } else if (height <= 0) {
+                        obtuseTriAreaAnsTV.setText("The variable h should be positive");
+                    } else {
+                        obtuseTriArea = (height * baseB) / 2;
+                        obtuseTriAreaAnsTV.setText(String.format("%.02f", obtuseTriArea));
+                    }
+                }
+            }
+        });
+
+
+        //acute triangle side A calculatro
+
+        obtuseTriSideABaseET = (EditText) findViewById(R.id.obtuse_tri_sideA_base_et);
+        obtuseTriSideASideCET = (EditText) findViewById(R.id.obtuse_tri_sideA_sideC_et);
+        obtuseTriSideAPerimeterET = (EditText) findViewById(R.id.obtuse_tri_sideA_perimeter_et);
+        obtuseTriSideAAnsTV = (TextView) findViewById(R.id.obtuse_tri_sideA_ans_tv);
+        obtuseTriSideACalcButton = (Button) findViewById(R.id.obtuse_tri_sideA_calc_button);
+        obtuseTriSideACalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(obtuseTriSideABaseET)) {
+                    obtuseTriSideABaseET.setError("Enter Value");
+                } else if (Model.isEmpty(obtuseTriSideASideCET)) {
+                    obtuseTriSideASideCET.setError("Enter Value");
+                } else if (Model.isEmpty(obtuseTriSideAPerimeterET)) {
+                    obtuseTriSideAPerimeterET.setError("Enter Value");
+                } else {
+                    double sideC, baseB, perimeter, obtuseTriSideA;
+                    sideC = Double.parseDouble(obtuseTriSideABaseET.getText().toString());
+                    baseB = Double.parseDouble(obtuseTriSideASideCET.getText().toString());
+                    perimeter = Double.parseDouble(obtuseTriSideAPerimeterET.getText().toString());
+                    if (sideC <= 0) {
+                        obtuseTriSideAAnsTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        obtuseTriSideAAnsTV.setText("The variable b should be positive");
+                    } else if (perimeter <= 0) {
+                        obtuseTriSideAAnsTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (baseB + sideC)) {
+                        obtuseTriSideAAnsTV.setText("Invalid input: make sure P>b+c");
+                    } else {
+                        obtuseTriSideA = perimeter - baseB - sideC;
+                        obtuseTriSideAAnsTV.setText(String.format("%.02f", obtuseTriSideA));
+                    }
+                }
+            }
+        });
+
+        //acute triangle side B calculator
+
+        obtuseTriBaseSideAET = (EditText) findViewById(R.id.obtuse_tri_base_sideA_et);
+        obtuseTriBaseSideCET = (EditText) findViewById(R.id.obtuse_tri_base_sideC_et);
+        obtuseTriBasePerimeterET = (EditText) findViewById(R.id.obtuse_tri_base_perimeter_et);
+        obtuseTriBaseAnsTV = (TextView) findViewById(R.id.obtuse_tri_base_ans_tv);
+        obtuseTriBaseCalcButton = (Button) findViewById(R.id.obtuse_tri_base_calc_button);
+        obtuseTriBaseCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(obtuseTriBaseSideAET)) {
+                    obtuseTriBaseSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(obtuseTriBaseSideCET)) {
+                    obtuseTriBaseSideCET.setError("Enter Value");
+                } else if (Model.isEmpty(obtuseTriBasePerimeterET)) {
+                    obtuseTriBasePerimeterET.setError("Enter Value");
+                } else {
+                    double sideA, sideC, perimeter, obtuseTrisideB;
+                    sideA = Double.parseDouble(obtuseTriBaseSideAET.getText().toString());
+                    sideC = Double.parseDouble(obtuseTriBaseSideCET.getText().toString());
+                    perimeter = Double.parseDouble(obtuseTriBasePerimeterET.getText().toString());
+                    if (sideA <= 0) {
+                        obtuseTriBaseAnsTV.setText("The variable a should be positive");
+                    } else if (sideC <= 0) {
+                        obtuseTriBaseAnsTV.setText("The variable b should be positive");
+                    } else if (perimeter <= 0) {
+                        obtuseTriBaseAnsTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (sideA + sideC)) {
+                        obtuseTriBaseAnsTV.setText("Invalid input: make sure P>b+c");
+                    } else {
+                        obtuseTrisideB = perimeter - sideA - sideC;
+                        obtuseTriBaseAnsTV.setText(String.format("%.02f", obtuseTrisideB));
+                    }
+                }
+            }
+        });
 
 
 
@@ -130,114 +281,14 @@ public class ObtuseTriangle extends AppCompatActivity {
 
     }
 
-} */
+} 
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
         TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-  /**      //initialize the EditText
-        sideAEditText = (EditText) findViewById(R.id.sidAEditText);
-        sideBEditText = (EditText) findViewById(R.id.sidBEditText);
-        answerEditText = (TextView) findViewById(R.id.answerEditText);
-        sideCPerimeterEditText = (EditText)findViewById(R.id.side_c_perimeter_edit_text);
-        calculateResultButton = (Button) findViewById(R.id.calculateButtonID);
-        calculateResultButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                String sideA = sideAEditText.getText().toString();
-                String sideB = sideBEditText.getText().toString();
-                String sideC = sideCPerimeterEditText.getText().toString();
-
-                double perimeter = Double.parseDouble(sideA) + Double.parseDouble(sideB) +
-                        Double.parseDouble(sideC);
-                answerEditText.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(), "Enter base", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        areaSideAET = (EditText)findViewById(R.id.area_base_et);
-        areaSideBET = (EditText)findViewById(R.id.area_height_et);
-        areaAnswerTV = (TextView)findViewById(R.id.area_answer_tv);
-        calculateAreaButton = (Button)findViewById(R.id.area_click_botton);
-        calculateAreaButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick (View v){
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double area = (Double.parseDouble(sideA)*Double.parseDouble(sideB))/2;
-                areaAnswerTV.setText(String.format(".02f",area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-
-        sideAAreaET =(EditText)findViewById(R.id.obtuse_triangle__area_et);
-        sideALegBET =(EditText)findViewById(R.id.obtuse_triangle_side_b_et);
-        sideAAnswerTV =(TextView)findViewById(R.id.obtuse_triangle_answer_tv);
-        calculateSideAButton =(Button)findViewById(R.id.obtuse_triangle_calc_button);
-        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String height = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double sideAFormula = 2*(Double.parseDouble(height)/
-                        Double.parseDouble(sideB));
-                areaAnswerTV.setText(String.format(".02f",sideAFormula));
-
-                if (TextUtils.isEmpty(height)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-        sideBAreaET =(EditText)findViewById(R.id.obtuse_triangle_sid_b_area_et);
-        sideBLegAET =(EditText)findViewById(R.id.obtuse_triangle_side_a_et);
-        sideBAnswerTV =(TextView)findViewById(R.id.obtuse_triangle_side_b_answer_tv);
-        calculateSideBButton =(Button)findViewById(R.id.obtuse_triangle_sid_b_calc_button);
-        calculateSideBButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double sideBFormula = 2*(Double.parseDouble(sideA)/
-                        Double.parseDouble(sideB));
-                areaAnswerTV.setText(String.format(".02f",sideBFormula));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
-            }
-        }); */
+  */      
     }
 
     @Override

@@ -51,6 +51,9 @@ public class RegularOctagon extends AppCompatActivity {
                 } else {
                     double aSide, octtagonPerimeter;
                     aSide = Double.parseDouble(octPerimeterSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        octPerimeterAnswerTV.setText("The variable a should be positive");
+                    }
                     octtagonPerimeter = 8 * aSide;
                     octPerimeterAnswerTV.setText(String.format("%.02f", octtagonPerimeter));
                 }
@@ -70,6 +73,9 @@ public class RegularOctagon extends AppCompatActivity {
                 } else {
                     double aSide, octtagonArea;
                     aSide = Double.parseDouble(octAreaSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        octAreaAnswerTV.setText("The variable a should be positive");
+                    }
                     octtagonArea = 2*(1+Math.sqrt(2))*Math.pow(aSide,2);
                     octAreaAnswerTV.setText(String.format("%.02f", octtagonArea));
                 }
@@ -89,6 +95,9 @@ public class RegularOctagon extends AppCompatActivity {
                 } else {
                     double perimeter, octSideA;
                     perimeter = Double.parseDouble(octSideAET.getText().toString());
+                    if (perimeter <= 0) {
+                        octSideAAnswerTV.setText("The variable a should be positive");
+                    }
                     octSideA = perimeter / 8;
                     octSideAAnswerTV.setText(String.format("%.02f", octSideA));
                 }

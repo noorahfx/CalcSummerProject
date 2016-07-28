@@ -51,6 +51,9 @@ public class RegularHeptagon extends AppCompatActivity {
                 } else {
                     double aSide, heptagonPerimeter;
                     aSide = Double.parseDouble(hepPerimeterSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hepPerimeterAnswerTV.setText("The variable a should be positive");
+                    }
                     heptagonPerimeter = 7 * aSide;
                     hepPerimeterAnswerTV.setText(String.format("%.02f", heptagonPerimeter));
                 }
@@ -70,6 +73,9 @@ public class RegularHeptagon extends AppCompatActivity {
                 } else {
                     double aSide, heptagonArea;
                     aSide = Double.parseDouble(hepAreaSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hepAreaAnswerTV.setText("The variable a should be positive");
+                    }
                     heptagonArea = (1.75) * Math.pow(aSide, 2) * (1 / Math.tan(Math.toRadians(180) / 7));
                     hepAreaAnswerTV.setText(String.format("%.02f", heptagonArea));
                 }
@@ -89,6 +95,9 @@ public class RegularHeptagon extends AppCompatActivity {
                 } else {
                     double perimeter, hepSideA;
                     perimeter = Double.parseDouble(hepSideAET.getText().toString());
+                    if (perimeter <= 0) {
+                        hepSideAAnswerTV.setText("The variable p should be positive");
+                    }
                     hepSideA = perimeter / 7;
                     hepSideAAnswerTV.setText(String.format("%.02f", hepSideA));
                 }

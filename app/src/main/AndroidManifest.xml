@@ -39,94 +39,117 @@
         <activity
             android:name=".Geometry.Geometry"
             android:label="@string/title_activity_geometry"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Triangle.Triangle"
             android:label="@string/title_activity_triangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Square.Square"
             android:label="@string/title_activity_square"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Rectangle.Rectangle"
             android:label="@string/title_activity_rectangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Rhombus.Rhombus"
             android:label="@string/title_activity_rhombus"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Parallelogram.Parallelogram"
             android:label="@string/title_activity_parallelogram"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Trapezoid.Trapezoid"
             android:label="@string/title_activity_trapezoid"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Kite.Kite"
             android:label="@string/title_activity_kite"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Hexagon.Hexagon"
             android:label="@string/title_activity_hexagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Pentagon.Pentagon"
             android:label="@string/title_activity_pentagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Octagon.Octagon"
             android:label="@string/title_activity_octagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Heptagon.Heptagon"
             android:label="@string/title_activity_heptagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Nonagon.Nonagon"
             android:label="@string/title_activity_nonagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Decagon.Decagon"
             android:label="@string/title_activity_decagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Circle.Circle"
             android:label="@string/title_activity_circle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Eclipse.Eclipse"
             android:label="@string/title_activity_eclipse"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Cresent.Cresent"
             android:label="@string/title_activity_cresent"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Cube.Cube"
             android:label="@string/title_activity_cube"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Cuboid.Cuboid"
             android:label="@string/title_activity_cuboid"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Sphere.Sphere"
             android:label="@string/title_activity_sphere"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Cylinder.Cylinder"
             android:label="@string/title_activity_cylinder"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Cone.Cone"
             android:label="@string/title_activity_cone"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Quadrilateral.Quadrilatreral"
             android:label="@string/title_activity_quadrilatreral"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Polygon.Polygon"
@@ -135,26 +158,32 @@
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.AcuteTriangle"
             android:label="@string/title_activity_acute_triangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.RightTriangle"
             android:label="@string/title_activity_right_triangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.ObtuseTriangle"
             android:label="@string/title_activity_obtuse_triangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.EquilateralTriangle"
             android:label="@string/title_activity_equilateral_triangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.IsoscelesTriangle"
             android:label="@string/title_activity_isosceles_triangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.ScaleneTriangle"
             android:label="@string/title_activity_scalene_triangle"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Hexagon.TypesOfHexagon.RegularHexagon"
@@ -163,70 +192,87 @@
         <activity
             android:name=".Geometry.Hexagon.TypesOfHexagon.IrregularHexagon"
             android:label="@string/title_activity_irregular_hexagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Hexagon.TypesOfHexagon.ConcaveHexagon"
             android:label="@string/title_activity_concave_hexagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Hexagon.TypesOfHexagon.ConvexHexagon"
             android:label="@string/title_activity_convex_hexagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Pentagon.TypesOfPentagon.RegularPentagon"
             android:label="@string/title_activity_regular_pentagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Pentagon.TypesOfPentagon.IrregularPentagon"
             android:label="@string/title_activity_irregular_pentagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Octagon.TypesOfOctagon.RegularOctagon"
             android:label="@string/title_activity_regular_octagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Octagon.TypesOfOctagon.IrregularOctagon"
             android:label="@string/title_activity_irregular_octagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Octagon.TypesOfOctagon.ConvexOctagon"
             android:label="@string/title_activity_convex_octagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Heptagon.TypesOfHeptagon.RegularHeptagon"
             android:label="@string/title_activity_regular_heptagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Heptagon.TypesOfHeptagon.IrregularHeptagon"
             android:label="@string/title_activity_irregular_heptagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Nonagon.TypesOfNonagon.RegularNonagon"
             android:label="@string/title_activity_regular_nonagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Nonagon.TypesOfNonagon.IrregularNonagon"
             android:label="@string/title_activity_irregular_nonagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Decagon.TypesOfDecagon.RegularDecagon"
             android:label="@string/title_activity_regular_decagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Decagon.TypesOfDecagon.IrregularDecagon"
             android:label="@string/title_activity_irregular_decagon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Polygon.TypesOfPolygon.ConvexPolygon"
             android:label="@string/title_activity_convex_polygon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Polygon.TypesOfPolygon.ConcavePolygon"
             android:label="@string/title_activity_concave_polygon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Polygon.TypesOfPolygon.RegularPolygon"
             android:label="@string/title_activity_regular_polygon"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

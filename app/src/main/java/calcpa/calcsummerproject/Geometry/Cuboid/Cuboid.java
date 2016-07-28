@@ -57,16 +57,23 @@ public class Cuboid extends AppCompatActivity {
                     cuboidVolumeLET.setError("Enter Length");
                 } else if (Model.isEmpty(cuboidVolumeWET)) {
                     cuboidVolumeWET.setError("Enter Width");
-                }else if (Model.isEmpty(cuboidVolumeHET)) {
+                } else if (Model.isEmpty(cuboidVolumeHET)) {
                     cuboidVolumeHET.setError("Enter Height");
-                }else {
-                    double length, width,height,cuboidVolume;
+                } else {
+                    double length, width, height, cuboidVolume;
                     length = Double.parseDouble(cuboidVolumeLET.getText().toString());
-                    width= Double.parseDouble(cuboidVolumeWET.getText().toString());
+                    width = Double.parseDouble(cuboidVolumeWET.getText().toString());
                     height = Double.parseDouble(cuboidVolumeHET.getText().toString());
-
-                    cuboidVolume = length*width*height;
-                    cuboidVolumeAnswerTV.setText(String.format("%.02f", cuboidVolume));
+                    if (length <= 0) {
+                        cuboidVolumeAnswerTV.setText("The variable l should be positive");
+                    } else if (width <= 0) {
+                        cuboidVolumeAnswerTV.setText("The variable w should be positive");
+                    } else if (height <= 0) {
+                        cuboidVolumeAnswerTV.setText("The variable w should be positive");
+                    } else {
+                        cuboidVolume = length * width * height;
+                        cuboidVolumeAnswerTV.setText(String.format("%.02f", cuboidVolume));
+                    }
                 }
             }
         });
@@ -86,18 +93,24 @@ public class Cuboid extends AppCompatActivity {
                     cuboidAreaLET.setError("Enter Radius");
                 } else if (Model.isEmpty(cuboidAreaWET)) {
                     cuboidAreaWET.setError("Enter Height");
-                }else if (Model.isEmpty(cuboidAreaHET)) {
+                } else if (Model.isEmpty(cuboidAreaHET)) {
                     cuboidAreaHET.setError("Enter Radius");
-                }else {
-                    double length, width,height,cuboidArea;
+                } else {
+                    double length, width, height, cuboidArea;
                     length = Double.parseDouble(cuboidAreaLET.getText().toString());
-                    width= Double.parseDouble(cuboidAreaWET.getText().toString());
+                    width = Double.parseDouble(cuboidAreaWET.getText().toString());
                     height = Double.parseDouble(cuboidAreaHET.getText().toString());
-
-                    cuboidArea = 2*((length*width)+(width*height)+(height*length));
-                    cuboidAreaAnswerTV.setText(String.format("%.02f", cuboidArea));
+                    if (length <= 0) {
+                        cuboidAreaAnswerTV.setText("The variable l should be positive");
+                    } else if (width <= 0) {
+                        cuboidAreaAnswerTV.setText("The variable w should be positive");
+                    } else if (height <= 0) {
+                        cuboidAreaAnswerTV.setText("The variable w should be positive");
+                    } else {
+                        cuboidArea = 2 * ((length * width) + (width * height) + (height * length));
+                        cuboidAreaAnswerTV.setText(String.format("%.02f", cuboidArea));
+                    }
                 }
-
             }
         });
 

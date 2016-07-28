@@ -35,7 +35,6 @@ public class Cylinder extends AppCompatActivity {
     Button cylinderHeightCalcButton;
 
 
-
     //Surface Area
     EditText cylinderSurfaceAreatRET;
     EditText cylinderSurfaceAreaHET;
@@ -62,12 +61,11 @@ public class Cylinder extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
         //Volume
-        cylinderVolumeRET = (EditText)findViewById(R.id.cylinder_volume_r_et);
-        cylinderVolumeHET = (EditText)findViewById(R.id.cylinder_volume_h_et);
-        cylinderVolumeAnswerTV = (TextView)findViewById(R.id.cylinder_volume_calc_answer_tx);
-        cylinderVolumeCalcButton =(Button)findViewById(R.id.cylinder_volume_calc_button);
+        cylinderVolumeRET = (EditText) findViewById(R.id.cylinder_volume_r_et);
+        cylinderVolumeHET = (EditText) findViewById(R.id.cylinder_volume_h_et);
+        cylinderVolumeAnswerTV = (TextView) findViewById(R.id.cylinder_volume_calc_answer_tx);
+        cylinderVolumeCalcButton = (Button) findViewById(R.id.cylinder_volume_calc_button);
         cylinderVolumeCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,23 +74,27 @@ public class Cylinder extends AppCompatActivity {
                     cylinderVolumeRET.setError("Enter Radius");
                 } else if (Model.isEmpty(cylinderVolumeHET)) {
                     cylinderVolumeHET.setError("Enter Height");
-                }else {
-                    double radius,height,cylinderVolume;
+                } else {
+                    double radius, height, cylinderVolume;
                     radius = Double.parseDouble(cylinderVolumeRET.getText().toString());
-                    height= Double.parseDouble(cylinderVolumeHET.getText().toString());
-                    cylinderVolume = Math.PI*(Math.pow(radius, 2)*height);
-                    cylinderVolumeAnswerTV.setText(String.format("%.02f", cylinderVolume));
+                    height = Double.parseDouble(cylinderVolumeHET.getText().toString());
+                    if (radius <= 0) {
+                        cylinderVolumeAnswerTV.setText("The variable r should be positive");
+                    } else if (height <= 0) {
+                        cylinderVolumeAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        cylinderVolume = Math.PI * (Math.pow(radius, 2) * height);
+                        cylinderVolumeAnswerTV.setText(String.format("%.02f", cylinderVolume));
+                    }
                 }
-
-
             }
         });
 
         //Radius
-        cylinderRadiusHET = (EditText)findViewById(R.id.cylinder_radius_h_et);
-        cylinderRadiusVET = (EditText)findViewById(R.id.cylinder_radius_v_et);
-        cylinderRadiusAnswerTV = (TextView)findViewById(R.id.cylinder_radius_calc_answer_tx);
-        cylinderRadiusCalcButton =(Button)findViewById(R.id.cylinder_radius_calc_button);
+        cylinderRadiusHET = (EditText) findViewById(R.id.cylinder_radius_h_et);
+        cylinderRadiusVET = (EditText) findViewById(R.id.cylinder_radius_v_et);
+        cylinderRadiusAnswerTV = (TextView) findViewById(R.id.cylinder_radius_calc_answer_tx);
+        cylinderRadiusCalcButton = (Button) findViewById(R.id.cylinder_radius_calc_button);
         cylinderRadiusCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,23 +104,28 @@ public class Cylinder extends AppCompatActivity {
                     cylinderRadiusHET.setError("Enter Height");
                 } else if (Model.isEmpty(cylinderRadiusVET)) {
                     cylinderRadiusVET.setError("Enter Volume");
-                }else {
-                    double height,volume,cylinderRadius;
+                } else {
+                    double height, volume, cylinderRadius;
                     height = Double.parseDouble(cylinderRadiusHET.getText().toString());
                     volume = Double.parseDouble(cylinderRadiusVET.getText().toString());
-                    cylinderRadius = Math.sqrt(volume/(Math.PI*height));
-                    cylinderRadiusAnswerTV.setText(String.format("%.02f", cylinderRadius));
+                    if (height <= 0) {
+                        cylinderRadiusAnswerTV.setText("The variable h should be positive");
+                    } else if (volume <= 0) {
+                        cylinderRadiusAnswerTV.setText("The variable v should be positive");
+                    } else {
+                        cylinderRadius = Math.sqrt(volume / (Math.PI * height));
+                        cylinderRadiusAnswerTV.setText(String.format("%.02f", cylinderRadius));
+                    }
                 }
             }
         });
 
 
-
         //Height
-        cylinderHeightRET = (EditText)findViewById(R.id.cylinder_height_r_et);
-        cylinderHeightVET = (EditText)findViewById(R.id.cylinder_height_v_et);
-        cylinderHeightAnswerTV = (TextView)findViewById(R.id.cylinder_height_calc_answer_tx);
-        cylinderHeightCalcButton =(Button)findViewById(R.id.cylinder_height_calc_button);
+        cylinderHeightRET = (EditText) findViewById(R.id.cylinder_height_r_et);
+        cylinderHeightVET = (EditText) findViewById(R.id.cylinder_height_v_et);
+        cylinderHeightAnswerTV = (TextView) findViewById(R.id.cylinder_height_calc_answer_tx);
+        cylinderHeightCalcButton = (Button) findViewById(R.id.cylinder_height_calc_button);
         cylinderHeightCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -128,23 +135,28 @@ public class Cylinder extends AppCompatActivity {
                     cylinderHeightRET.setError("Enter Radius");
                 } else if (Model.isEmpty(cylinderHeightVET)) {
                     cylinderHeightVET.setError("Enter Volume");
-                }else {
-                    double radius,volume,cylinderHeight;
+                } else {
+                    double radius, volume, cylinderHeight;
                     radius = Double.parseDouble(cylinderHeightRET.getText().toString());
                     volume = Double.parseDouble(cylinderHeightVET.getText().toString());
-                    cylinderHeight = volume/(Math.PI*(Math.pow(radius,2)));
-                    cylinderHeightAnswerTV.setText(String.format("%.02f", cylinderHeight));
+                    if (radius <= 0) {
+                        cylinderHeightAnswerTV.setText("The variable r should be positive");
+                    } else if (volume <= 0) {
+                        cylinderHeightAnswerTV.setText("The variable v should be positive");
+                    } else {
+                        cylinderHeight = volume / (Math.PI * (Math.pow(radius, 2)));
+                        cylinderHeightAnswerTV.setText(String.format("%.02f", cylinderHeight));
+                    }
                 }
             }
         });
 
 
-
         //Surface Area
-        cylinderSurfaceAreatRET = (EditText)findViewById(R.id.cylinder_surface_area_r_et);
-        cylinderSurfaceAreaHET = (EditText)findViewById(R.id.cylinder_surface_area_h_et);
-        cylinderSurfaceAreaAnswerTV = (TextView)findViewById(R.id.cylinder_surface_area_calc_answer_tx);
-        cylinderSurfaceAreaCalcButton =(Button)findViewById(R.id.cylinder_surface_area_calc_button);
+        cylinderSurfaceAreatRET = (EditText) findViewById(R.id.cylinder_surface_area_r_et);
+        cylinderSurfaceAreaHET = (EditText) findViewById(R.id.cylinder_surface_area_h_et);
+        cylinderSurfaceAreaAnswerTV = (TextView) findViewById(R.id.cylinder_surface_area_calc_answer_tx);
+        cylinderSurfaceAreaCalcButton = (Button) findViewById(R.id.cylinder_surface_area_calc_button);
         cylinderSurfaceAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -154,22 +166,29 @@ public class Cylinder extends AppCompatActivity {
                     cylinderSurfaceAreatRET.setError("Enter Radius");
                 } else if (Model.isEmpty(cylinderSurfaceAreaHET)) {
                     cylinderSurfaceAreaHET.setError("Enter Height");
-                }else {
-                    double radius,height,cylinderSurfaceArea;
+                } else {
+                    double radius, height, cylinderSurfaceArea;
                     radius = Double.parseDouble(cylinderSurfaceAreatRET.getText().toString());
                     height = Double.parseDouble(cylinderSurfaceAreaHET.getText().toString());
-                    cylinderSurfaceArea=(2*Math.PI*radius*height+2*Math.PI*(Math.pow(radius,2)));
-                    cylinderSurfaceAreaAnswerTV.setText(String.format("%.02f", cylinderSurfaceArea));
+                    if (radius <= 0) {
+                        cylinderSurfaceAreaAnswerTV.setText("The variable r should be positive");
+                    } else if (height <= 0) {
+                        cylinderSurfaceAreaAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        cylinderSurfaceArea = (2 * Math.PI * radius * height + 2 *
+                                Math.PI * (Math.pow(radius, 2)));
+                        cylinderSurfaceAreaAnswerTV.setText
+                                (String.format("%.02f", cylinderSurfaceArea));
+                    }
                 }
             }
         });
 
 
-
         //Base Area
-        cylinderBaseAreaRET = (EditText)findViewById(R.id.cylinder_base_area_r_et);
-        cylinderBaseAreaAnswerTV = (TextView)findViewById(R.id.cylinder_base_area_calc_answer_tx);
-        cylinderBaseAreaCalcButton =(Button)findViewById(R.id.cylinder_base_area_calc_button);
+        cylinderBaseAreaRET = (EditText) findViewById(R.id.cylinder_base_area_r_et);
+        cylinderBaseAreaAnswerTV = (TextView) findViewById(R.id.cylinder_base_area_calc_answer_tx);
+        cylinderBaseAreaCalcButton = (Button) findViewById(R.id.cylinder_base_area_calc_button);
         cylinderBaseAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -177,24 +196,25 @@ public class Cylinder extends AppCompatActivity {
                 //check to make sure field is not empty
                 if (Model.isEmpty(cylinderBaseAreaRET)) {
                     cylinderBaseAreaRET.setError("Enter Radius");
-                }else {
-                    double radius,cylinderBaseArea;
+                } else {
+                    double radius, cylinderBaseArea;
                     radius = Double.parseDouble(cylinderBaseAreaRET.getText().toString());
-                    cylinderBaseArea=Math.PI*Math.pow(radius,2);
+                    cylinderBaseArea = Math.PI * Math.pow(radius, 2);
+                    if (radius <= 0) {
+                        cylinderBaseAreaAnswerTV.setText("The variable r should be positive");
+                    }
                     cylinderBaseAreaAnswerTV.setText(String.format("%.02f", cylinderBaseArea));
                 }
             }
         });
 
 
-
-
         //Lateral Surface
-        cylinderLateralSurfaceRET= (EditText)findViewById(R.id.cylinder_lateral_surface_r_et);
-        cylinderLateralSurfaceHET = (EditText)findViewById(R.id.cylinder_lateral_surface_h_et);
-        cylinderLateralSurfaceAnswerTV = (TextView)findViewById
+        cylinderLateralSurfaceRET = (EditText) findViewById(R.id.cylinder_lateral_surface_r_et);
+        cylinderLateralSurfaceHET = (EditText) findViewById(R.id.cylinder_lateral_surface_h_et);
+        cylinderLateralSurfaceAnswerTV = (TextView) findViewById
                 (R.id.cylinder_lateral_surface_calc_answer_tx);
-        cylinderLateralSurfaceCalcButton =(Button)findViewById
+        cylinderLateralSurfaceCalcButton = (Button) findViewById
                 (R.id.cylinder_lateral_surface_calc_button);
         cylinderLateralSurfaceCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -205,13 +225,19 @@ public class Cylinder extends AppCompatActivity {
                     cylinderLateralSurfaceRET.setError("Enter Radius");
                 } else if (Model.isEmpty(cylinderLateralSurfaceHET)) {
                     cylinderLateralSurfaceHET.setError("Enter Height");
-                }else {
-                    double radius,height,cylinderLateralSurfaceArea;
+                } else {
+                    double radius, height, cylinderLateralSurfaceArea;
                     radius = Double.parseDouble(cylinderLateralSurfaceRET.getText().toString());
                     height = Double.parseDouble(cylinderLateralSurfaceHET.getText().toString());
-                    cylinderLateralSurfaceArea=2*Math.PI*radius*height;
-                    cylinderLateralSurfaceAnswerTV.setText(String.format
-                            ("%.02f", cylinderLateralSurfaceArea));
+                    if (radius <= 0) {
+                        cylinderSurfaceAreaAnswerTV.setText("The variable r should be positive");
+                    } else if (height <= 0) {
+                        cylinderSurfaceAreaAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        cylinderLateralSurfaceArea = 2 * Math.PI * radius * height;
+                        cylinderLateralSurfaceAnswerTV.setText(String.format
+                                ("%.02f", cylinderLateralSurfaceArea));
+                    }
                 }
             }
         });

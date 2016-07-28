@@ -62,6 +62,9 @@ public class RegularHexagon extends AppCompatActivity {
                 } else {
                     double aSide, hexASide;
                     aSide = Double.parseDouble(hexPerimeterSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hexPerimeterAnswerTV.setText("The variable a should be positive");
+                    }
                      hexASide = 6*aSide;
                     hexPerimeterAnswerTV.setText(String.format("%.02f", hexASide));
                 }
@@ -81,6 +84,9 @@ public class RegularHexagon extends AppCompatActivity {
                 } else {
                     double aSide, hexArea;
                     aSide = Double.parseDouble(hexAreaSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hexAreaAnswerTV.setText("The variable a should be positive");
+                    }
                     hexArea = ((3*Math.sqrt(3))/2)*(Math.pow(aSide,2));
                     hexAreaAnswerTV.setText(String.format("%.02f", hexArea));
                 }
@@ -102,6 +108,9 @@ public class RegularHexagon extends AppCompatActivity {
                 } else {
                     double aSide, hexASide;
                     aSide = Double.parseDouble(hexSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hexSideAAnswerTV.setText("The variable a should be positive");
+                    }
                     hexASide = aSide/6;
                     hexSideAAnswerTV.setText(String.format("%.02f", hexASide));
                 }

@@ -35,7 +35,6 @@ public class RegularDecagon extends AppCompatActivity {
     Button decagonSideCalcButton;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,10 +54,13 @@ public class RegularDecagon extends AppCompatActivity {
                 //check to make sure field is not empty
                 if (Model.isEmpty(decagonareaET)) {
                     decagonareaET.setError("Enter Value");
-                }else {
-                    double sideA,decagonArea;
+                } else {
+                    double sideA, decagonArea;
                     sideA = Double.parseDouble(decagonareaET.getText().toString());
-                    decagonArea = (2.5)*(Math.pow(sideA,2))*(Math.sqrt(5+2*Math.sqrt(5)));
+                    if (sideA <= 0) {
+                        decagonareaTV.setText("The variable a should be positive");
+                    }
+                    decagonArea = (2.5) * (Math.pow(sideA, 2)) * (Math.sqrt(5 + 2 * Math.sqrt(5)));
                     decagonareaTV.setText(String.format("%.02f", decagonArea));
                 }
             }
@@ -76,15 +78,17 @@ public class RegularDecagon extends AppCompatActivity {
                 //check to make sure field is not empty
                 if (Model.isEmpty(decagonPerimeterET)) {
                     decagonPerimeterET.setError("Enter Value");
-                }else {
-                    double sideA,decagonPerimeter;
+                } else {
+                    double sideA, decagonPerimeter;
                     sideA = Double.parseDouble(decagonPerimeterET.getText().toString());
-                    decagonPerimeter=10*sideA;
+                    if (sideA <= 0) {
+                        decagonPerimeterTV.setText("The variable a should be positive");
+                    }
+                    decagonPerimeter = 10 * sideA;
                     decagonPerimeterTV.setText(String.format("%.02f", decagonPerimeter));
                 }
             }
         });
-
 
 
         //sides
@@ -100,13 +104,16 @@ public class RegularDecagon extends AppCompatActivity {
                 //check to make sure field is not empty
                 if (Model.isEmpty(decagonSideET)) {
                     decagonSideET.setError("Enter Value");
-                }else {
-                    double perimeter,decagonPerimeter;
+                } else {
+                    double perimeter, decagonPerimeter;
                     perimeter = Double.parseDouble(decagonSideET.getText().toString());
-                    decagonPerimeter=perimeter/10;
+
+                    if (perimeter <= 0) {
+                        decagonSideTV.setText("The variable a should be positive");
+                    }
+                    decagonPerimeter = perimeter / 10;
                     decagonSideTV.setText(String.format("%.02f", decagonPerimeter));
                 }
-
 
 
             }

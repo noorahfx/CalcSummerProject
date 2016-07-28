@@ -13,51 +13,41 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
 public class ScaleneTriangle extends AppCompatActivity {
- /**   MathView scalene_triangle_paramter;
-    String s_t_paramter = "$$P =2a+b$$";
-
-    MathView scalene_triangle_area;
-    String s_t_area = "$$A =\\frac{bh_{b}}{2}$$";
-
-    MathView scalene_triangle_side_a;
-    String s_t_side_a = "$$a =\\frac{p}{2}-\\frac{b}{2}$$";
-
-    MathView scalene_triangle_height;
-    String s_t_height = "$$h_{b} = \\sqrt{a^{2}-\\frac{b_{2}}{4}}$$";
-*/
-    EditText sideAEditText;
-    EditText sideBEditText;
-    TextView answerEditText;
-    Button calculateResultButton;
+    //perimeter
+    EditText scaleneTriPerimeterSideAET;
+    EditText scaleneTriPerimeterBaseET;
+    EditText scaleneTriPerimeterSideCET;
+    TextView scaleneTriPerimeterAnsTV;
+    Button scaleneTriPerimeterCalcButton;
 
 
-    //scalene triangle area
-    EditText areaSideAET;
-    EditText areaSideBET;
-    TextView areaAnswerTV;
-    Button calculateAreaButton;
+    //    area
+    EditText scaleneTriAreaBaseET;
+    EditText scaleneTriAreaHeightET;
+    TextView scaleneTriAreaAnsTV;
+    Button scaleneTriAreaCalcButton;
 
-    //scalene triangle hypotenuse
-    EditText hypSideAET;
-    EditText hypSideBET;
-    TextView hypAnswerTV;
-    Button calculateHypButton;
 
-    //scalene triangle side A calculatro
-    EditText sideAAreaET;
-    EditText sideALegBET;
-    TextView sideAAnswerTV;
-    Button calculateSideAButton;
 
-    //scalene triangle side B calculator
-    EditText sideBAreaET;
-    EditText sideBLegAET;
-    TextView sideBAnswerTV;
-    Button calculateSideBButton;
+    //    side A
+    EditText scaleneTriSideABaseET;
+    EditText scaleneTriSideASideCET;
+    EditText scaleneTriSideAPerimeterET;
+    TextView scaleneTriSideAAnsTV;
+    Button scaleneTriSideACalcButton;
+
+
+    //    side B
+    EditText scaleneTriBaseSideAET;
+    EditText scaleneTriBaseSideCET;
+    EditText scaleneTriBasePerimeterET;
+    TextView scaleneTriBaseAnsTV;
+    Button scaleneTriBaseCalcButton;
 
 
     @Override
@@ -127,134 +117,153 @@ public class ScaleneTriangle extends AppCompatActivity {
     }
 
 }
-**/
+
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
         TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
+*/
         //initialize the EditText
-        sideAEditText = (EditText) findViewById(R.id.sidAEditText);
-        sideBEditText = (EditText) findViewById(R.id.sidBEditText);
-        answerEditText = (TextView) findViewById(R.id.answerEditText);
-        calculateResultButton = (Button) findViewById(R.id.calculateButtonID);
-        calculateResultButton.setOnClickListener(new View.OnClickListener() {
+        scaleneTriPerimeterSideAET = (EditText) findViewById(R.id.scalene_tri_perimeter_sideA_et);
+        scaleneTriPerimeterBaseET = (EditText) findViewById(R.id.scalene_tri_perimeter_sideB_et);
+        scaleneTriPerimeterSideCET = (EditText) findViewById(R.id.scalene_tri_perimeter_sideC_et);
+        scaleneTriPerimeterAnsTV = (TextView) findViewById(R.id.scalene_tri_perimeter_ans_tv);
+        scaleneTriPerimeterCalcButton = (Button) findViewById(R.id.scalene_tri_perimeter_calc_button);
+        scaleneTriPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                String sideA = sideAEditText.getText().toString();
-                String sideB = sideBEditText.getText().toString();
-
-                double perimeter = Double.parseDouble(sideA) + Double.parseDouble(sideB) +
-                        Math.sqrt(Math.pow(Double.parseDouble(sideA), 2) +
-                                Math.pow(Double.parseDouble(sideB), 2));
-                answerEditText.setText(String.format("%.02f",perimeter));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(), "Enter base", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(scaleneTriPerimeterSideAET)) {
+                    scaleneTriPerimeterSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(scaleneTriPerimeterBaseET)) {
+                    scaleneTriPerimeterBaseET.setError("Enter Value");
+                } else if (Model.isEmpty(scaleneTriPerimeterSideCET)) {
+                    scaleneTriPerimeterSideCET.setError("Enter Value");
+                } else {
+                    double sideA, baseB, sideC, scaleneTriPerimeter;
+                    sideA = Double.parseDouble(scaleneTriPerimeterSideAET.getText().toString());
+                    baseB = Double.parseDouble(scaleneTriPerimeterBaseET.getText().toString());
+                    sideC = Double.parseDouble(scaleneTriPerimeterSideCET.getText().toString());
+                    if (sideA <= 0) {
+                        scaleneTriPerimeterAnsTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        scaleneTriPerimeterAnsTV.setText("The variable b should be positive");
+                    } else if (sideC <= 0) {
+                        scaleneTriPerimeterAnsTV.setText("The variable c should be positive");
+                    } else if (sideA >= (baseB + sideC)) {
+                        scaleneTriPerimeterAnsTV.setText("Invalid input: make sure b+c>a");
+                    } else {
+                        scaleneTriPerimeter = sideA + baseB + sideC;
+                        scaleneTriPerimeterAnsTV.setText(String.format("%.02f", scaleneTriPerimeter));
+                    }
                 }
             }
         });
 
-        areaSideAET = (EditText)findViewById(R.id.area_base_et);
-        areaSideBET = (EditText)findViewById(R.id.area_height_et);
-        areaAnswerTV = (TextView)findViewById(R.id.area_answer_tv);
-        calculateAreaButton = (Button)findViewById(R.id.area_click_botton);
-        calculateAreaButton.setOnClickListener(new View.OnClickListener(){
+
+        //acute triangle area
+
+        scaleneTriAreaBaseET = (EditText) findViewById(R.id.scalene_tri_area_base_et);
+        scaleneTriAreaHeightET = (EditText) findViewById(R.id.scalene_tri_area_height_et);
+        scaleneTriAreaAnsTV = (TextView) findViewById(R.id.scalene_tri_area_ans_tv);
+        scaleneTriAreaCalcButton = (Button) findViewById(R.id.scalene_tri_area_calc_button);
+        scaleneTriAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View v){
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double area = (Double.parseDouble(sideA)*Double.parseDouble(sideB))/2;
-                areaAnswerTV.setText(String.format(".02f",area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(scaleneTriAreaBaseET)) {
+                    scaleneTriAreaBaseET.setError("Enter Value");
+                } else if (Model.isEmpty(scaleneTriAreaHeightET)) {
+                    scaleneTriAreaHeightET.setError("Enter Value");
+                } else {
+                    double baseB, height, scaleneTriArea;
+                    baseB = Double.parseDouble(scaleneTriAreaBaseET.getText().toString());
+                    height = Double.parseDouble(scaleneTriAreaHeightET.getText().toString());
+                    if (baseB <= 0) {
+                        scaleneTriAreaAnsTV.setText("The variable b should be positive");
+                    } else if (height <= 0) {
+                        scaleneTriAreaAnsTV.setText("The variable h should be positive");
+                    } else {
+                        scaleneTriArea = (height * baseB) / 2;
+                        scaleneTriAreaAnsTV.setText(String.format("%.02f", scaleneTriArea));
+                    }
                 }
             }
         });
 
-        hypSideAET =(EditText)findViewById(R.id.hyp_side_a_et);
-        hypSideBET =(EditText)findViewById(R.id.hyp_side_b_et);
-        hypAnswerTV=(TextView)findViewById(R.id.hyp_answer_tv);
-        calculateHypButton =(Button)findViewById(R.id.hyp_calculate_button);
-        calculateHypButton.setOnClickListener(new View.OnClickListener() {
+        //acute triangle side A calculatro
+
+        scaleneTriSideABaseET = (EditText) findViewById(R.id.scalene_tri_sideA_base_et);
+        scaleneTriSideASideCET = (EditText) findViewById(R.id.scalene_tri_sideA_sideC_et);
+        scaleneTriSideAPerimeterET = (EditText) findViewById(R.id.scalene_tri_sideA_perimeter_et);
+        scaleneTriSideAAnsTV = (TextView) findViewById(R.id.scalene_tri_sideA_ans_tv);
+        scaleneTriSideACalcButton = (Button) findViewById(R.id.scalene_tri_sideA_calc_button);
+        scaleneTriSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double hyp = Math.sqrt(Math.pow(Double.parseDouble(sideA),2)+
-                        Math.pow(Double.parseDouble(sideB),2));
-                areaAnswerTV.setText(String.format(".02f",hyp));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(scaleneTriSideABaseET)) {
+                    scaleneTriSideABaseET.setError("Enter Value");
+                } else if (Model.isEmpty(scaleneTriSideASideCET)) {
+                    scaleneTriSideASideCET.setError("Enter Value");
+                } else if (Model.isEmpty(scaleneTriSideAPerimeterET)) {
+                    scaleneTriSideAPerimeterET.setError("Enter Value");
+                } else {
+                    double sideC, baseB, perimeter, scaleneTriSideA;
+                    sideC = Double.parseDouble(scaleneTriSideABaseET.getText().toString());
+                    baseB = Double.parseDouble(scaleneTriSideASideCET.getText().toString());
+                    perimeter = Double.parseDouble(scaleneTriSideAPerimeterET.getText().toString());
+                    if (sideC <= 0) {
+                        scaleneTriSideAAnsTV.setText("The variable a should be positive");
+                    } else if (baseB <= 0) {
+                        scaleneTriSideAAnsTV.setText("The variable b should be positive");
+                    } else if (perimeter <= 0) {
+                        scaleneTriSideAAnsTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (baseB + sideC)) {
+                        scaleneTriSideAAnsTV.setText("Invalid input: make sure P>b+c");
+                    } else {
+                        scaleneTriSideA = perimeter - baseB - sideC;
+                        scaleneTriSideAAnsTV.setText(String.format("%.02f", scaleneTriSideA));
+                    }
                 }
             }
         });
 
-        sideAAreaET =(EditText)findViewById(R.id.scalene_triangle__area_et);
-        sideALegBET =(EditText)findViewById(R.id.scalene_triangle_side_b_et);
-        sideAAnswerTV =(TextView)findViewById(R.id.scalene_triangle_answer_tv);
-        calculateSideAButton =(Button)findViewById(R.id.scalene_triangle_calc_button);
-        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
+        //acute triangle side B calculator
+
+        scaleneTriBaseSideAET = (EditText) findViewById(R.id.scalene_tri_base_sideA_et);
+        scaleneTriBaseSideCET = (EditText) findViewById(R.id.scalene_tri_base_sideC_et);
+        scaleneTriBasePerimeterET = (EditText) findViewById(R.id.scalene_tri_base_perimeter_et);
+        scaleneTriBaseAnsTV = (TextView) findViewById(R.id.scalene_tri_base_ans_tv);
+        scaleneTriBaseCalcButton = (Button) findViewById(R.id.scalene_tri_base_calc_button);
+        scaleneTriBaseCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double sideAFormula = 2*((Double.parseDouble(sideA)*
-                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideB);
-                areaAnswerTV.setText(String.format(".02f",sideAFormula));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-        sideBAreaET =(EditText)findViewById(R.id.scalene_triangle_sid_b_area_et);
-        sideBLegAET =(EditText)findViewById(R.id.scalene_triangle_side_a_et);
-        sideBAnswerTV =(TextView)findViewById(R.id.scalene_triangle_side_b_answer_tv);
-        calculateSideBButton =(Button)findViewById(R.id.scalene_triangle_sid_b_calc_button);
-        calculateSideBButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double sideBFormula = 2*((Double.parseDouble(sideA)*
-                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideA);
-                areaAnswerTV.setText(String.format(".02f",sideBFormula));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(scaleneTriBaseSideAET)) {
+                    scaleneTriBaseSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(scaleneTriBaseSideCET)) {
+                    scaleneTriBaseSideCET.setError("Enter Value");
+                } else if (Model.isEmpty(scaleneTriBasePerimeterET)) {
+                    scaleneTriBasePerimeterET.setError("Enter Value");
+                } else {
+                    double sideA, sideC, perimeter, scaleneTrisideB;
+                    sideA = Double.parseDouble(scaleneTriBaseSideAET.getText().toString());
+                    sideC = Double.parseDouble(scaleneTriBaseSideCET.getText().toString());
+                    perimeter = Double.parseDouble(scaleneTriBasePerimeterET.getText().toString());
+                    if (sideA <= 0) {
+                        scaleneTriBaseAnsTV.setText("The variable a should be positive");
+                    } else if (sideC <= 0) {
+                        scaleneTriBaseAnsTV.setText("The variable b should be positive");
+                    } else if (perimeter <= 0) {
+                        scaleneTriBaseAnsTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (sideA + sideC)) {
+                        scaleneTriBaseAnsTV.setText("Invalid input: make sure P>b+c");
+                    } else {
+                        scaleneTrisideB = perimeter - sideA - sideC;
+                        scaleneTriBaseAnsTV.setText(String.format("%.02f", scaleneTrisideB));
+                    }
                 }
             }
         });

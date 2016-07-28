@@ -74,11 +74,16 @@ public class Eclipse extends AppCompatActivity {
                     double aXis, bXis, ellipseArea;
                     aXis = Double.parseDouble(ellipseAreaAET.getText().toString());
                     bXis = Double.parseDouble(ellipseAreaBET.getText().toString());
-                    ellipseArea = Math.PI * aXis * bXis;
-                    ellipseAreaAnswerTV.setText(String.format("%.02f", ellipseArea));
+                    if (aXis <= 0) {
+                        ellipseAreaAnswerTV.setText("The variable a should be positive");
+                    } else if (bXis <= 0) {
+                        ellipseAreaAnswerTV.setText("The variable b should be positive");
+                    } else {
+                        ellipseArea = Math.PI * aXis * bXis;
+                        ellipseAreaAnswerTV.setText(String.format("%.02f", ellipseArea));
+                    }
+
                 }
-
-
             }
         });
 
@@ -94,15 +99,21 @@ public class Eclipse extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(ellipseCircumAET)) {
-                    ellipseCircumAET.setError("Enter Height");
+                    ellipseCircumAET.setError("Enter Value");
                 } else if (Model.isEmpty(ellipseCircumBET)) {
-                    ellipseCircumBET.setError("Enter Volume");
+                    ellipseCircumBET.setError("Enter Value");
                 } else {
                     double aXis, bXis, ellipseCircumference;
                     aXis = Double.parseDouble(ellipseCircumAET.getText().toString());
                     bXis = Double.parseDouble(ellipseCircumBET.getText().toString());
-                    ellipseCircumference = 2 * 3.14 * Math.sqrt((Math.pow(aXis, 2) + Math.pow(bXis, 2)) / 2);
-                    ellipseCircumAnswerTV.setText(String.format("%.02f", ellipseCircumference));
+                    if (aXis <= 0) {
+                        ellipseCircumAnswerTV.setText("The variable a should be positive");
+                    } else if (bXis <= 0) {
+                        ellipseCircumAnswerTV.setText("The variable b should be positive");
+                    } else {
+                        ellipseCircumference = 2 * 3.14 * Math.sqrt((Math.pow(aXis, 2) + Math.pow(bXis, 2)) / 2);
+                        ellipseCircumAnswerTV.setText(String.format("%.02f", ellipseCircumference));
+                    }
                 }
 
             }
@@ -127,10 +138,15 @@ public class Eclipse extends AppCompatActivity {
                     double bXis, area, ellipseAXis;
                     bXis = Double.parseDouble(ellipseAXisAET.getText().toString());
                     area = Double.parseDouble(ellipseAXisBET.getText().toString());
-                    ellipseAXis = area / (Math.PI * bXis);
-                    ellipseAXisAnswerTV.setText(String.format("%.02f", ellipseAXis));
+                    if (bXis <= 0) {
+                        ellipseCircumAnswerTV.setText("The variable b should be positive");
+                    } else if (area <= 0) {
+                        ellipseCircumAnswerTV.setText("The variable A should be positive");
+                    } else {
+                        ellipseAXis = area / (Math.PI * bXis);
+                        ellipseAXisAnswerTV.setText(String.format("%.02f", ellipseAXis));
+                    }
                 }
-
 
             }
         });
@@ -153,10 +169,15 @@ public class Eclipse extends AppCompatActivity {
                     double aXis, area, ellipseBXis;
                     aXis = Double.parseDouble(ellipseBXisAET.getText().toString());
                     area = Double.parseDouble(ellipseBXisBET.getText().toString());
-                    ellipseBXis = area / (Math.PI * aXis);
-                    ellipseBXisAnswerTV.setText(String.format("%.02f", ellipseBXis));
+                    if (aXis <= 0) {
+                        ellipseCircumAnswerTV.setText("The variable a should be positive");
+                    } else if (area <= 0) {
+                        ellipseCircumAnswerTV.setText("The variable A should be positive");
+                    } else {
+                        ellipseBXis = area / (Math.PI * aXis);
+                        ellipseBXisAnswerTV.setText(String.format("%.02f", ellipseBXis));
+                    }
                 }
-
 
             }
         });

@@ -61,7 +61,10 @@ public class Cube extends AppCompatActivity {
                 } else {
                     double edge, volume;
                     edge = Double.parseDouble(cubeVolumeET.getText().toString());
-                    volume = Math.pow(edge,3);
+                    if (edge <= 0) {
+                        cubeVolumeTV.setText("The variable a should be positive");
+                    }
+                    volume = Math.pow(edge, 3);
                     cubeVolumeTV.setText(String.format("%.02f", volume));
                 }
             }
@@ -81,7 +84,10 @@ public class Cube extends AppCompatActivity {
                 } else {
                     double exp, edge;
                     exp = Double.parseDouble(cubeEdgeET.getText().toString());
-                    edge = Math.pow(exp,0.333333333);
+                    if (exp <= 0) {
+                        cubeEdgeTV.setText("The variable a should be positive");
+                    }
+                    edge = Math.pow(exp, 0.333333333);
                     cubeEdgeTV.setText(String.format("%.02f", edge));
                 }
             }
@@ -101,6 +107,9 @@ public class Cube extends AppCompatActivity {
                 } else {
                     double edge, specialDiagonal;
                     edge = Double.parseDouble(cubeSpecialDiagonalET.getText().toString());
+                    if (edge <= 0) {
+                        cubeSpecialDiagonalTV.setText("The variable a should be positive");
+                    }
                     specialDiagonal = Math.sqrt(3) * edge;
                     cubeSpecialDiagonalTV.setText(String.format("%.02f", specialDiagonal));
                 }
@@ -122,6 +131,9 @@ public class Cube extends AppCompatActivity {
                 } else {
                     double edge, surfaceArea;
                     edge = Double.parseDouble(cubeSurfaceAreaET.getText().toString());
+                    if (edge <= 0) {
+                        cubeSurfaceAreaTV.setText("The variable a should be positive");
+                    }
                     surfaceArea = 6 * Math.pow(edge, 2);
                     cubeSurfaceAreaTV.setText(String.format("%.02f", surfaceArea));
                 }

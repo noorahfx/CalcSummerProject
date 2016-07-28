@@ -50,6 +50,9 @@ public class RegularPentagon extends AppCompatActivity {
                 } else {
                     double aSide, pentagonPerimeter;
                     aSide = Double.parseDouble(penPerimeterSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        penPerimeterAnswerTV.setText("The variable a should be positive");
+                    }
                     pentagonPerimeter = 5 * aSide;
                     penPerimeterAnswerTV.setText(String.format("%.02f", pentagonPerimeter));
                 }
@@ -69,6 +72,9 @@ public class RegularPentagon extends AppCompatActivity {
                 } else {
                     double aSide, pentagonArea;
                     aSide = Double.parseDouble(penAreaSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        penAreaAnswerTV.setText("The variable a should be positive");
+                    }
                     pentagonArea = (.25) * Math.sqrt(5*(5+2*Math.sqrt(5)))*Math.pow(aSide,2);
                     penAreaAnswerTV.setText(String.format("%.02f", pentagonArea));
                 }
@@ -88,6 +94,9 @@ public class RegularPentagon extends AppCompatActivity {
                 } else {
                     double perimeter, penSideA;
                     perimeter = Double.parseDouble(penSideAET.getText().toString());
+                    if (perimeter <= 0) {
+                        penSideAAnswerTV.setText("The variable P should be positive");
+                    }
                     penSideA = perimeter / 5;
                     penSideAAnswerTV.setText(String.format("%.02f", penSideA));
                 }

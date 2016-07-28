@@ -69,15 +69,20 @@ public class Parallelogram extends AppCompatActivity {
                     parallelogramPerimeterBaseET.setError("Enter Value");
                 } else if (Model.isEmpty(parallelogramPerimeterAreaET)) {
                     parallelogramPerimeterAreaET.setError("Enter Value");
-                }else {
-                    double base,aSide,paralPerim;
+                } else {
+                    double base, aSide, paralPerim;
                     base = Double.parseDouble(parallelogramPerimeterBaseET.getText().toString());
                     aSide = Double.parseDouble(parallelogramPerimeterAreaET.getText().toString());
-                    paralPerim = 2*(aSide+base);
-                    parallelogramPerimeterAreaET.setText(String.format("%.02f", paralPerim));
+                    if (base <= 0) {
+                        parallelogramPerimeterAreaET.setText("The variable b should be positive");
+                    } else if (aSide <= 0) {
+                        parallelogramPerimeterAreaET.setText("The variable A should be positive");
+                    } else {
+                        paralPerim = 2 * (aSide + base);
+                        parallelogramPerimeterAreaET.setText(String.format("%.02f", paralPerim));
+                    }
+
                 }
-
-
             }
         });
 
@@ -96,13 +101,18 @@ public class Parallelogram extends AppCompatActivity {
                 } else if (Model.isEmpty(parallelogramAreaHeightET)) {
                     parallelogramAreaHeightET.setError("Enter Value");
                 }else {
-                    double base,height,paralArea;
+                    double base, height, paralArea;
                     base = Double.parseDouble(parallelogramAreaBaseET.getText().toString());
                     height = Double.parseDouble(parallelogramAreaHeightET.getText().toString());
-                    paralArea = base*height;
-                    parallelogramAreaAnswerTV.setText(String.format("%.02f", paralArea));
+                    if (base <= 0) {
+                        parallelogramAreaAnswerTV.setText("The variable b should be positive");
+                    } else if (height <= 0) {
+                        parallelogramAreaAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        paralArea = base * height;
+                        parallelogramAreaAnswerTV.setText(String.format("%.02f", paralArea));
+                    }
                 }
-
 
             }
         });
@@ -122,14 +132,19 @@ public class Parallelogram extends AppCompatActivity {
                 } else if (Model.isEmpty(parallelogramBasePerimeterET)) {
                     parallelogramBasePerimeterET.setError("Enter Value");
                 }else {
-                    double area,height,paralBase;
+                    double area, height, paralBase;
                     height = Double.parseDouble(parallelogramBaseSideET.getText().toString());
                     area = Double.parseDouble(parallelogramBasePerimeterET.getText().toString());
-                    paralBase = area/height;
-                    parallelogramBaseAnswerTV.setText(String.format("%.02f", paralBase));
+                    if (area <= 0) {
+                        parallelogramBaseAnswerTV.setText("The variable A should be positive");
+                    } else if (height <= 0) {
+                        parallelogramBaseAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        paralBase = area / height;
+                        parallelogramBaseAnswerTV.setText(String.format("%.02f", paralBase));
+                    }
+
                 }
-
-
 
             }
         });
@@ -148,13 +163,18 @@ public class Parallelogram extends AppCompatActivity {
                 } else if (Model.isEmpty(parallelogramHeightAreaET)) {
                     parallelogramHeightAreaET.setError("Enter Value");
                 }else {
-                    double area,base,paralHeight;
+                    double area, base, paralHeight;
                     base = Double.parseDouble(parallelogramHeightBaseET.getText().toString());
                     area = Double.parseDouble(parallelogramHeightAreaET.getText().toString());
-                    paralHeight = area/base;
-                    parallelogramHeightAnswerTV.setText(String.format("%.02f", paralHeight));
+                    if (area <= 0) {
+                        parallelogramHeightAnswerTV.setText("The variable A should be positive");
+                    } else if (base <= 0) {
+                        parallelogramHeightAnswerTV.setText("The variable b should be positive");
+                    } else {
+                        paralHeight = area / base;
+                        parallelogramHeightAnswerTV.setText(String.format("%.02f", paralHeight));
+                    }
                 }
-
 
             }
         });
@@ -174,13 +194,20 @@ public class Parallelogram extends AppCompatActivity {
                 } else if (Model.isEmpty(parallelogramSidePerimeterET)) {
                     parallelogramSidePerimeterET.setError("Enter Value");
                 }else {
-                    double base,perimeter,paralSides;
+                    double base, perimeter, paralSides;
                     base = Double.parseDouble(parallelogramSideBaseET.getText().toString());
                     perimeter = Double.parseDouble(parallelogramSidePerimeterET.getText().toString());
-                    paralSides = (perimeter/2)-base;
-                    parallelogramSideAnswerTV.setText(String.format("%.02f", paralSides));
+                    if (base <= 0) {
+                        parallelogramSideAnswerTV.setText("The variable b should be positive");
+                    } else if (perimeter <= 0) {
+                        parallelogramSideAnswerTV.setText("The variable P should be positive");
+                    } else if (perimeter <= (2 * base)) {
+                        parallelogramSideAnswerTV.setText("Invalid input: Make sure P>2*b");
+                    } else {
+                        paralSides = (perimeter / 2) - base;
+                        parallelogramSideAnswerTV.setText(String.format("%.02f", paralSides));
+                    }
                 }
-
 
             }
         });

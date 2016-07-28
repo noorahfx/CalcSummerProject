@@ -49,6 +49,9 @@ public class RegularNonagon extends AppCompatActivity {
                 } else {
                     double aSide, nontagonPerimeter;
                     aSide = Double.parseDouble(nonPerimeterSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        nonPerimeterAnswerTV.setText("The variable a should be positive");
+                    }
                     nontagonPerimeter = 9 * aSide;
                     nonPerimeterAnswerTV.setText(String.format("%.02f", nontagonPerimeter));
                 }
@@ -68,7 +71,11 @@ public class RegularNonagon extends AppCompatActivity {
                 } else {
                     double aSide, nontagonArea;
                     aSide = Double.parseDouble(nonAreaSideAET.getText().toString());
-                    nontagonArea = (2.25) * Math.pow(aSide, 2) * (1 / Math.tan(Math.toRadians(180) / 9));
+                    if (aSide <= 0) {
+                        nonAreaAnswerTV.setText("The variable a should be positive");
+                    }
+                    nontagonArea = (2.25) * Math.pow(aSide, 2) *
+                            (1 / Math.tan(Math.toRadians(180) / 9));
                     nonAreaAnswerTV.setText(String.format("%.02f", nontagonArea));
                 }
             }
@@ -87,6 +94,9 @@ public class RegularNonagon extends AppCompatActivity {
                 } else {
                     double perimeter, nonSideA;
                     perimeter = Double.parseDouble(nonSideAET.getText().toString());
+                    if (perimeter <= 0) {
+                        nonAreaAnswerTV.setText("The variable p should be positive");
+                    }
                     nonSideA = perimeter / 9;
                     nonSideAAnswerTV.setText(String.format("%.02f", nonSideA));
                 }

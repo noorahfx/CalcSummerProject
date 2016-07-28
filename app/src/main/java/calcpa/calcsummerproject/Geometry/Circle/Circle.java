@@ -56,17 +56,18 @@ public class Circle extends AppCompatActivity {
         circleAreaCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 //check to make sure field is not empty
                 if (Model.isEmpty(circleAreaET)) {
                     circleAreaET.setError("Enter Radius");
                 } else {
                     double radius;
                     radius = Double.parseDouble(circleAreaET.getText().toString());
+                    if (radius <= 0) {
+                        circleAnswerTV.setText("The variable r should be positive");
+                    }
                     double answer = Math.PI * (radius * radius);
                     circleAnswerTV.setText(String.format("%.02f", answer));
                 }
-
             }
         });
 
@@ -84,6 +85,9 @@ public class Circle extends AppCompatActivity {
                 } else {
                     double radius;
                     radius = Double.parseDouble(circleDiameterET.getText().toString());
+                    if (radius <= 0) {
+                        circleDiameterTV.setText("The variable r should be positive");
+                    }
                     double answer = 2 * radius;
                     circleDiameterTV.setText(String.format("%.02f", answer));
                 }
@@ -103,6 +107,9 @@ public class Circle extends AppCompatActivity {
                 } else {
                     double radius;
                     radius = Double.parseDouble(circleCircumET.getText().toString());
+                    if (radius <= 0) {
+                        circleCircumTV.setText("The variable r should be positive");
+                    }
                     double answer = 2 * Math.PI * radius;
                     circleCircumTV.setText(String.format("%.02f", answer));
                 }
@@ -124,7 +131,10 @@ public class Circle extends AppCompatActivity {
                 } else {
                     double area;
                     area = Double.parseDouble(circleRadiusAreaET.getText().toString());
-                    double answer = Math.sqrt((area)/Math.PI);
+                    if (area <= 0) {
+                        circleRadiusTV.setText("The variable r should be positive");
+                    }
+                    double answer = Math.sqrt((area) / Math.PI);
                     circleRadiusTV.setText(String.format("%.02f", answer));
                 }
 

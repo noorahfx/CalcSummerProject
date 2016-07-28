@@ -86,10 +86,16 @@ public class Cone extends AppCompatActivity {
                     double radius, height, answer;
                     radius = Double.parseDouble(coneVolumeRET.getText().toString());
                     height = Double.parseDouble(coneVolumeHET.getText().toString());
-                    answer = Math.PI * (radius * radius) * (height / 3);
-                    coneVolumeAnswerTV.setText(String.format("%.02f", answer));
-                }
+                    if (radius <= 0) {
+                        coneVolumeAnswerTV.setText("The variable r should be positive");
+                    } else if (height <= 0) {
+                        coneVolumeAnswerTV.setText("The variable h should be positive");
+                    } else {
 
+                        answer = Math.PI * (radius * radius) * (height / 3);
+                        coneVolumeAnswerTV.setText(String.format("%.02f", answer));
+                    }
+                }
             }
         });
 
@@ -112,10 +118,15 @@ public class Cone extends AppCompatActivity {
                     double height, volume, answer;
                     height = Double.parseDouble(coneRadiusHET.getText().toString());
                     volume = Double.parseDouble(coneRadiusVET.getText().toString());
-                    answer = Math.sqrt(3 * (volume / (Math.PI * height)));
-                    coneRadiusAnswerTV.setText(String.format("%.02f", answer));
+                    if (height <= 0) {
+                        coneRadiusAnswerTV.setText("The variable h should be positive");
+                    } else if (volume <= 0) {
+                        coneRadiusAnswerTV.setText("The variable v should be positive");
+                    } else {
+                        answer = Math.sqrt(3 * (volume / (Math.PI * height)));
+                        coneRadiusAnswerTV.setText(String.format("%.02f", answer));
+                    }
                 }
-
             }
         });
 
@@ -139,8 +150,14 @@ public class Cone extends AppCompatActivity {
                     double radius, volume, answer;
                     radius = Double.parseDouble(coneHeightRET.getText().toString());
                     volume = Double.parseDouble(coneHeightVET.getText().toString());
-                    answer = (3 * (volume / (Math.PI * (radius * radius))));
-                    coneHeightAnswerTV.setText(String.format("%.02f", answer));
+                    if (radius <= 0) {
+                        coneHeightAnswerTV.setText("The variable r should be positive");
+                    } else if (volume <= 0) {
+                        coneHeightAnswerTV.setText("The variable v should be positive");
+                    } else {
+                        answer = (3 * (volume / (Math.PI * (radius * radius))));
+                        coneHeightAnswerTV.setText(String.format("%.02f", answer));
+                    }
                 }
             }
         });
@@ -164,8 +181,14 @@ public class Cone extends AppCompatActivity {
                     double radius, height, answer;
                     radius = Double.parseDouble(coneSlantHeightRET.getText().toString());
                     height = Double.parseDouble(coneSLantHeightHET.getText().toString());
-                    answer = Math.sqrt((radius * radius) + (height * height));
-                    coneSlantHeightAnswerTV.setText(String.format("%.02f", answer));
+                    if (radius <= 0) {
+                        coneSlantHeightAnswerTV.setText("The variable r should be positive");
+                    } else if (height <= 0) {
+                        coneSlantHeightAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        answer = Math.sqrt((radius * radius) + (height * height));
+                        coneSlantHeightAnswerTV.setText(String.format("%.02f", answer));
+                    }
                 }
             }
         });
@@ -189,11 +212,16 @@ public class Cone extends AppCompatActivity {
                     double radius, height, answer;
                     radius = Double.parseDouble(coneSurfaceAreatRET.getText().toString());
                     height = Double.parseDouble(coneSurfaceAreaHET.getText().toString());
-                    answer = (Math.PI * radius * (radius + Math.sqrt((height * height) + (radius * radius))));
-                    coneSurfaceAreaAnswerTV.setText(String.format("%.02f", answer));
+                    if (radius <= 0) {
+                        coneSurfaceAreaAnswerTV.setText("The variable r should be positive");
+                    } else if (height <= 0) {
+                        coneSurfaceAreaAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        answer = (Math.PI * radius * (radius + Math.sqrt((height * height)
+                                + (radius * radius))));
+                        coneSurfaceAreaAnswerTV.setText(String.format("%.02f", answer));
+                    }
                 }
-
-
             }
         });
 
@@ -212,6 +240,9 @@ public class Cone extends AppCompatActivity {
 
                     double radius, answer;
                     radius = Double.parseDouble(coneBaseAreaRET.getText().toString());
+                    if (radius <= 0) {
+                        coneBaseAreaAnswerTV.setText("The variable r should be positive");
+                    }
                     answer = Math.PI * (radius * radius);
                     coneBaseAreaAnswerTV.setText(String.format("%.02f", answer));
                 }
@@ -239,14 +270,20 @@ public class Cone extends AppCompatActivity {
                     double radius, height, answer;
                     radius = Double.parseDouble(coneLateralSurfaceRET.getText().toString());
                     height = Double.parseDouble(coneLateralSurfaceHET.getText().toString());
-                    answer = Math.PI * radius * (Math.sqrt((height * height) + (radius * radius)));
-                    coneLateralSurfaceAnswerTV.setText(String.format("%.02f", answer));
-                }
 
+                    if (radius <= 0) {
+                        coneLateralSurfaceAnswerTV.setText("The variable r should be positive");
+                    } else if (height <= 0) {
+                        coneLateralSurfaceAnswerTV.setText("The variable h should be positive");
+                    } else {
+                        answer = Math.PI * radius *
+                                (Math.sqrt((height * height) + (radius * radius)));
+                        coneLateralSurfaceAnswerTV.setText(String.format("%.02f", answer));
+                    }
+                }
 
             }
         });
-
 
     }
 

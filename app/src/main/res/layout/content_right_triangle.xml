@@ -105,8 +105,7 @@
                 android:layout_below="@+id/calculateButtonID"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -186,8 +185,7 @@
                 android:layout_below="@+id/area_click_botton"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -271,8 +269,7 @@
                 android:layout_below="@+id/hyp_calculate_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 
@@ -297,47 +294,47 @@
 
 
             <TextView
-                android:id="@+id/right_triangle_area_tv"
+                android:id="@+id/right_triangle_side_b_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_triangle_side_a_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="A"
-                android:textSize="25sp" />
-
-
-            <TextView
-                android:id="@+id/right_triangle_side_b_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/right_triangle_area_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
                 android:text="b"
                 android:textSize="25sp" />
 
 
-            <EditText
-                android:id="@+id/right_triangle__area_et"
+            <TextView
+                android:id="@+id/right_triangle_area_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_a_img"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/right_triangle_area_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:layout_below="@id/right_triangle_side_b_tv"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="32dp"
+                android:text="A"
+                android:textSize="25sp" />
 
 
             <EditText
                 android:id="@+id/right_triangle_side_b_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle__area_et"
+                android:layout_below="@+id/right_triangle_side_a_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/right_triangle_side_b_tv"
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
+
+            <EditText
+                android:id="@+id/right_triangle__area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/right_triangle_side_b_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/right_triangle_side_b_tv"
+                android:layout_toRightOf="@+id/right_triangle_area_tv"
                 android:ems="5"
                 android:inputType="numberDecimal" />
 
@@ -345,7 +342,7 @@
                 android:id="@+id/right_triangle_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_b_tv"
+                android:layout_below="@+id/right_triangle__area_et"
                 android:layout_marginTop="10dp"
                 android:text="Calculate" />
 
@@ -357,7 +354,6 @@
                 android:layout_below="@+id/right_triangle_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
@@ -384,45 +380,45 @@
 
 
             <TextView
-                android:id="@+id/right_triangle_sid_b_area_tv"
+                android:id="@+id/right_triangle_side_a_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_triangle_side_b_img"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
-                android:text="A"
+                android:text="a"
                 android:textSize="25sp" />
 
             <TextView
-                android:id="@+id/right_triangle_side_a_tv"
+                android:id="@+id/right_triangle_sid_b_area_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_triangle_sid_b_area_tv"
                 android:layout_marginLeft="115dp"
                 android:layout_marginTop="32dp"
-                android:text="a"
+                android:text="A"
                 android:textSize="25sp" />
-
-            <EditText
-                android:id="@+id/right_triangle_sid_b_area_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_b_img"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_toRightOf="@+id/right_triangle_sid_b_area_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
-
 
             <EditText
                 android:id="@+id/right_triangle_side_a_et"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_sid_b_area_et"
+                android:layout_below="@+id/right_triangle_side_b_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/right_triangle_side_a_tv"
+                android:ems="5"
+                android:inputType="numberDecimal" />
+
+
+            <EditText
+                android:id="@+id/right_triangle_sid_b_area_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/right_triangle_side_a_et"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/right_triangle_side_a_tv"
+                android:layout_toRightOf="@+id/right_triangle_sid_b_area_tv"
                 android:ems="5"
                 android:inputType="numberDecimal" />
 
@@ -431,7 +427,7 @@
                 android:id="@+id/right_triangle_sid_b_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_a_tv"
+                android:layout_below="@+id/right_triangle_sid_b_area_et"
                 android:layout_marginTop="10dp"
                 android:text="Calculate" />
 
@@ -443,8 +439,7 @@
                 android:layout_below="@+id/right_triangle_sid_b_calc_button"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Hello"
-                android:textColor="@color/red"
+                 android:textColor="@color/red"
                 android:textSize="20sp" />
 
 

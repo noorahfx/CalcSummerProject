@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class RightTriangle extends AppCompatActivity {
@@ -53,8 +55,8 @@ public class RightTriangle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right_triangle);
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-        TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "Take cover.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.perimeter_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
@@ -67,121 +69,140 @@ public class RightTriangle extends AppCompatActivity {
         calculateResultButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = sideAEditText.getText().toString();
-
-                 String sideB = sideBEditText.getText().toString();
-
-                boolean answer = isNullOrEmpty(sideA);
-
-
-
-                //   if (sideA.length()==0)
-               //     sideAEditText.setError("Enter Value for SIde A");
-           //     if (sideA.length()==0)
-             //       sideAEditText.setError("Enter Value for SIde A");
-
-                double perimeter = Double.parseDouble(sideA) + Double.parseDouble(sideB) +
-                        Math.sqrt(Math.pow(Double.parseDouble(sideA), 2) +
-                                Math.pow(Double.parseDouble(sideB), 2));
-                answerEditText.setText(String.format("%.02f", perimeter));
-
+                //check to make sure field is not empty
+                if (Model.isEmpty(sideAEditText)) {
+                    sideAEditText.setError("Enter Value");
+                } else if (Model.isEmpty(sideBEditText)) {
+                    sideBEditText.setError("Enter Value");
+                } else {
+                    double legA, legB, rightTrianglePerimeter;
+                    legA = Double.parseDouble(sideAEditText.getText().toString());
+                    legB = Double.parseDouble(sideBEditText.getText().toString());
+                    if (legA <= 0) {
+                        answerEditText.setText("The variable a should be positive");
+                    } else if (legB <= 0) {
+                        answerEditText.setText("The variable b should be positive");
+                    } else {
+                        rightTrianglePerimeter = legA + +legB +
+                                (Math.sqrt((Math.pow(legA, 2) + (Math.pow(legB, 2)))));
+                        answerEditText.setText(String.format("%.02f", rightTrianglePerimeter));
+                    }
+                }
             }
         });
 
-        areaSideAET = (EditText)findViewById(R.id.area_base_et);
-        areaSideBET = (EditText)findViewById(R.id.area_height_et);
-        areaAnswerTV = (TextView)findViewById(R.id.area_answer_tv);
-        calculateAreaButton = (Button)findViewById(R.id.area_click_botton);
-        calculateAreaButton.setOnClickListener(new View.OnClickListener(){
+        areaSideAET = (EditText) findViewById(R.id.area_base_et);
+        areaSideBET = (EditText) findViewById(R.id.area_height_et);
+        areaAnswerTV = (TextView) findViewById(R.id.area_answer_tv);
+        calculateAreaButton = (Button) findViewById(R.id.area_click_botton);
+        calculateAreaButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View v){
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double area = (Double.parseDouble(sideA)*Double.parseDouble(sideB))/2;
-                areaAnswerTV.setText(String.format(".02f",area));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(areaSideAET)) {
+                    areaSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(areaSideBET)) {
+                    areaSideBET.setError("Enter Value");
+                } else {
+                    double legA, legB, rightTriangleArea;
+                    legA = Double.parseDouble(areaSideAET.getText().toString());
+                    legB = Double.parseDouble(areaSideBET.getText().toString());
+                    if (legA <= 0) {
+                        areaAnswerTV.setText("The variable a should be positive");
+                    } else if (legB <= 0) {
+                        areaAnswerTV.setText("The variable b should be positive");
+                    } else {
+                        rightTriangleArea = (legA * legB) / 2;
+                        areaAnswerTV.setText(String.format("%.02f", rightTriangleArea));
+                    }
                 }
             }
         });
 
-        hypSideAET =(EditText)findViewById(R.id.hyp_side_a_et);
-        hypSideBET =(EditText)findViewById(R.id.hyp_side_b_et);
-        hypAnswerTV=(TextView)findViewById(R.id.hyp_answer_tv);
-        calculateHypButton =(Button)findViewById(R.id.hyp_calculate_button);
+
+        hypSideAET = (EditText) findViewById(R.id.hyp_side_a_et);
+        hypSideBET = (EditText) findViewById(R.id.hyp_side_b_et);
+        hypAnswerTV = (TextView) findViewById(R.id.hyp_answer_tv);
+        calculateHypButton = (Button) findViewById(R.id.hyp_calculate_button);
         calculateHypButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double hyp = Math.sqrt(Math.pow(Double.parseDouble(sideA),2)+
-                        Math.pow(Double.parseDouble(sideB),2));
-                areaAnswerTV.setText(String.format(".02f",hyp));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(hypSideAET)) {
+                    hypSideAET.setError("Enter Value");
+                } else if (Model.isEmpty(hypSideBET)) {
+                    hypSideBET.setError("Enter Value");
+                } else {
+                    double legA, legB, rightTriangleHyp;
+                    legA = Double.parseDouble(hypSideAET.getText().toString());
+                    legB = Double.parseDouble(hypSideBET.getText().toString());
+                    if (legA <= 0) {
+                        hypAnswerTV.setText("The variable a should be positive");
+                    } else if (legB <= 0) {
+                        hypAnswerTV.setText("The variable b should be positive");
+                    } else {
+                        rightTriangleHyp = Math.sqrt((Math.pow(legA, 2) + (Math.pow(legB, 2))));
+                        hypAnswerTV.setText(String.format("%.02f", rightTriangleHyp));
+                    }
                 }
             }
         });
 
-         sideAAreaET =(EditText)findViewById(R.id.right_triangle__area_et);
-         sideALegBET =(EditText)findViewById(R.id.right_triangle_side_b_et);
-         sideAAnswerTV =(TextView)findViewById(R.id.right_triangle_answer_tv);
-         calculateSideAButton =(Button)findViewById(R.id.right_triangle_calc_button);
-         calculateSideAButton.setOnClickListener(new View.OnClickListener() {
+//Leg A
+        sideALegBET = (EditText) findViewById(R.id.right_triangle_side_b_et);
+        sideAAreaET = (EditText) findViewById(R.id.right_triangle__area_et);
+        sideAAnswerTV = (TextView) findViewById(R.id.right_triangle_answer_tv);
+        calculateSideAButton = (Button) findViewById(R.id.right_triangle_calc_button);
+        calculateSideAButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
 
-                double sideAFormula = 2*((Double.parseDouble(sideA)*
-                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideB);
-                areaAnswerTV.setText(String.format(".02f",sideAFormula));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(sideALegBET)) {
+                    sideALegBET.setError("Enter Value");
+                } else if (Model.isEmpty(sideAAreaET)) {
+                    sideAAreaET.setError("Enter Value");
+                } else {
+                    double legB, area, rightTriangleLegA;
+                    legB = Double.parseDouble(sideALegBET.getText().toString());
+                    area = Double.parseDouble(sideAAreaET.getText().toString());
+                    if (legB <= 0) {
+                        sideAAnswerTV.setText("The variable b should be positive");
+                    } else if (area <= 0) {
+                        sideAAnswerTV.setText("The variable A should be positive");
+                    } else {
+                        rightTriangleLegA = 2*(area/legB);
+                        sideAAnswerTV.setText(String.format("%.02f", rightTriangleLegA));
+                    }
                 }
             }
         });
-       sideBAreaET =(EditText)findViewById(R.id.right_triangle_sid_b_area_et);
-      sideBLegAET =(EditText)findViewById(R.id.right_triangle_side_a_et);
-        sideBAnswerTV =(TextView)findViewById(R.id.right_triangle_side_b_answer_tv);
-        calculateSideBButton =(Button)findViewById(R.id.right_triangle_sid_b_calc_button);
+
+
+         sideBLegAET = (EditText) findViewById(R.id.right_triangle_side_a_et);
+        sideBAreaET = (EditText) findViewById(R.id.right_triangle_sid_b_area_et);
+        sideBAnswerTV = (TextView) findViewById(R.id.right_triangle_side_b_answer_tv);
+        calculateSideBButton = (Button) findViewById(R.id.right_triangle_sid_b_calc_button);
         calculateSideBButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String sideA = areaSideAET.getText().toString();
-                String sideB =areaSideBET.getText().toString();
-
-                double sideBFormula = 2*((Double.parseDouble(sideA)*
-                        Double.parseDouble(sideB))/2)/Double.parseDouble(sideA);
-                areaAnswerTV.setText(String.format(".02f",sideBFormula));
-
-                if (TextUtils.isEmpty(sideA)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter height", Toast.LENGTH_SHORT).show();
-                }
-                if (TextUtils.isEmpty(sideB)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Enter base", Toast.LENGTH_SHORT).show();
+                //check to make sure field is not empty
+                if (Model.isEmpty(sideBLegAET)) {
+                    sideBLegAET.setError("Enter Value");
+                } else if (Model.isEmpty(sideBAreaET)) {
+                    sideBAreaET.setError("Enter Value");
+                } else {
+                    double legA, area, rightTriangleLegB;
+                    legA = Double.parseDouble(sideBLegAET.getText().toString());
+                    area = Double.parseDouble(sideBAreaET.getText().toString());
+                    if (legA <= 0) {
+                        sideBAnswerTV.setText("The variable b should be positive");
+                    } else if (area <= 0) {
+                        sideBAnswerTV.setText("The variable A should be positive");
+                    } else {
+                        rightTriangleLegB = 2*(area/legA);
+                        sideBAnswerTV.setText(String.format("%.02f", rightTriangleLegB));
+                    }
                 }
             }
         });

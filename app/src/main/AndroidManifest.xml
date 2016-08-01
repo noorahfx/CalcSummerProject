@@ -123,8 +123,8 @@
             android:name=".Geometry.Circle.Circle"
             android:label="@string/title_activity_circle"
             android:windowSoftInputMode="stateHidden"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation|screenSize"/>
+             android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".Geometry.Eclipse.Eclipse"
             android:label="@string/title_activity_eclipse"

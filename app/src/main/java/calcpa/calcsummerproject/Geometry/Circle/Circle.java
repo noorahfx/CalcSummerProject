@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Circle;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -24,7 +26,12 @@ public class Circle extends AppCompatActivity {
     EditText circleAreaET;
     TextView circleAnswerTV;
     Button circleAreaCalculateButton;
-    String circleAreaString;
+
+    //clear button
+    Button circleAreaClearButton;
+    Button circleDiameterClearButton;
+    Button circleCircumCLeranButton;
+    Button circleRadiusClearButton;
 
     //diameter
     EditText circleDiameterET;
@@ -49,6 +56,68 @@ public class Circle extends AppCompatActivity {
         setContentView(R.layout.activity_circle);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        // Area Clear button
+        circleAreaClearButton =(Button)findViewById(R.id.circle_area_clear_button);
+        circleAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circleAreaET.setText("");
+                circleAnswerTV.setText("");
+            }
+        });
+
+        // Diameter Clear button
+        circleDiameterClearButton =(Button)findViewById(R.id.circle_diameter_clear_button);
+        circleDiameterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circleDiameterET.setText("");
+                circleDiameterTV.setText("");
+            }
+        });
+
+        // Circum Clear button
+        circleCircumCLeranButton =(Button)findViewById(R.id.circle_circum_clear_button);
+        circleCircumCLeranButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circleCircumET.setText("");
+                circleCircumTV.setText("");
+            }
+        });
+
+        // Radius Clear button
+        circleRadiusClearButton =(Button)findViewById(R.id.circle_radius_clear_button);
+        circleRadiusClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circleRadiusAreaET.setText("");
+                circleRadiusTV.setText("");
+            }
+        });
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.circle_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
+        myTextView = (TextView) findViewById(R.id.circle_diameter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
+        myTextView = (TextView) findViewById(R.id.circle_circum_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
+        myTextView = (TextView) findViewById(R.id.circle_radius_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
 
 
         //area
@@ -169,4 +238,6 @@ public class Circle extends AppCompatActivity {
 
         }
     }
+
+
 }

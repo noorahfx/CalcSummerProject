@@ -99,30 +99,14 @@ public class Circle extends AppCompatActivity {
         });
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
-        TextView myTextView = (TextView) findViewById(R.id.circle_area_text);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
-        myTextView = (TextView) findViewById(R.id.circle_diameter_text);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
-        myTextView = (TextView) findViewById(R.id.circle_circum_text);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(), "RioGrande.ttf");
-        myTextView = (TextView) findViewById(R.id.circle_radius_text);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
 
 
         //area
         circleAreaET = (EditText) findViewById(R.id.circle_area_a_et);
-         circleAnswerTV = (TextView) findViewById(R.id.circle_calc_answer_tx);
+        circleAnswerTV = (TextView) findViewById(R.id.circle_calc_answer_tx);
         circleAreaCalculateButton = (Button) findViewById(R.id.circle_area_calc_button);
         circleAreaCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -212,6 +196,59 @@ public class Circle extends AppCompatActivity {
 
             }
         });
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "DOMISC__.TTF");
+        TextView myTextView = (TextView) findViewById(R.id.circle_area_text);
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.circle_diameter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.circle_circum_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+         myTextView = (TextView) findViewById(R.id.circle_radius_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.circle_area_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.circle_diameter_d_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.circle_circum_c_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.circle_radius_c_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        circleAreaET.setTypeface(myTypeFace);
+        circleAnswerTV.setTypeface(myTypeFace);
+        circleAreaCalculateButton.setTypeface(myTypeFace);
+        circleDiameterET.setTypeface(myTypeFace);
+        circleDiameterTV.setTypeface(myTypeFace);
+        circleDiameterCalculateButton.setTypeface(myTypeFace);
+        circleCircumET.setTypeface(myTypeFace);
+        circleCircumTV.setTypeface(myTypeFace);
+        circlCircumCalculateButton.setTypeface(myTypeFace);
+        circleRadiusAreaET.setTypeface(myTypeFace);
+        circleRadiusTV.setTypeface(myTypeFace);
+        circlRadiusCalculateButton.setTypeface(myTypeFace);
+        circleAreaClearButton.setTypeface(myTypeFace);
+        circleDiameterClearButton.setTypeface(myTypeFace);
+        circleCircumCLeranButton.setTypeface(myTypeFace);
+        circleRadiusClearButton.setTypeface(myTypeFace);
+
     }
 
 

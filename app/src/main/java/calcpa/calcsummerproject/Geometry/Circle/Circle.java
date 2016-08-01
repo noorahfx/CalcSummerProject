@@ -1,5 +1,6 @@
 package calcpa.calcsummerproject.Geometry.Circle;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,6 +24,7 @@ public class Circle extends AppCompatActivity {
     EditText circleAreaET;
     TextView circleAnswerTV;
     Button circleAreaCalculateButton;
+    String circleAreaString;
 
     //diameter
     EditText circleDiameterET;
@@ -51,7 +53,7 @@ public class Circle extends AppCompatActivity {
 
         //area
         circleAreaET = (EditText) findViewById(R.id.circle_area_a_et);
-        circleAnswerTV = (TextView) findViewById(R.id.circle_calc_answer_tx);
+         circleAnswerTV = (TextView) findViewById(R.id.circle_calc_answer_tx);
         circleAreaCalculateButton = (Button) findViewById(R.id.circle_area_calc_button);
         circleAreaCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +75,7 @@ public class Circle extends AppCompatActivity {
 
         //diameter
         circleDiameterET = (EditText) findViewById(R.id.circle_diameter_d_et);
-        circleDiameterTV = (TextView) findViewById(R.id.circle_calc_diamter_answer_tx);
+         circleDiameterTV = (TextView) findViewById(R.id.circle_calc_diamter_answer_tx);
         circleDiameterCalculateButton = (Button) findViewById(R.id.circle_diameter_calc_button);
         circleDiameterCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,7 +98,7 @@ public class Circle extends AppCompatActivity {
 
         //circumference
         circleCircumET = (EditText) findViewById(R.id.circle_circum_c_et);
-        circleCircumTV = (TextView) findViewById(R.id.circle_circum_calc_answer_tx);
+         circleCircumTV = (TextView) findViewById(R.id.circle_circum_calc_answer_tx);
         circlCircumCalculateButton = (Button) findViewById(R.id.circle_circum_calc_button);
         circlCircumCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,9 +119,10 @@ public class Circle extends AppCompatActivity {
         });
 
 
+
         //area
         circleRadiusAreaET = (EditText) findViewById(R.id.circle_radius_c_et);
-        circleRadiusTV = (TextView) findViewById(R.id.circle_radius_calc_answer_tx);
+         circleRadiusTV = (TextView) findViewById(R.id.circle_radius_calc_answer_tx);
         circlRadiusCalculateButton = (Button) findViewById(R.id.circle_radius_calc_button);
         circlRadiusCalculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,5 +143,30 @@ public class Circle extends AppCompatActivity {
 
             }
         });
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+   //     circleAreaString = circleAreaET.getText().toString();
+     //   outState.putString("edittext",circleAreaString);
+     }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+   //     circleAreaET.setText(savedInstanceState.getString("edittext"));
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+
+        }else if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+
+        }
     }
 }

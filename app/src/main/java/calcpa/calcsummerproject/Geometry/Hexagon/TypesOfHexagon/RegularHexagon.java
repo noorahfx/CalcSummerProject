@@ -74,7 +74,7 @@ public class RegularHexagon extends AppCompatActivity {
         });
 
         hexAreaSideAET =(EditText)findViewById(R.id.hex_area_side_a_et);
-        hexAreaAnswerTV =(TextView)findViewById(R.id.hex_calc_area_answer_tx);
+        hexAreaAnswerTV =(TextView)findViewById(R.id.hex_area_calc_answer_tx);
         hexAreaCalcButton=(Button)findViewById(R.id.hex_area_calc_button);
         hexAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,7 +98,7 @@ public class RegularHexagon extends AppCompatActivity {
 
 
         hexSideAET =(EditText)findViewById(R.id.hex_side_et);
-        hexSideAAnswerTV =(TextView)findViewById(R.id.hex_calc_side_answer_tx);
+        hexSideAAnswerTV =(TextView)findViewById(R.id.hex_side_calc_answer_tx);
         hexSideACalcButton=(Button)findViewById(R.id.hex_side_calc_button);
         hexSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override

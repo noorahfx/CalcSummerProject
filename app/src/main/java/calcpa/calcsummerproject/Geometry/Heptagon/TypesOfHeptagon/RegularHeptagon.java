@@ -41,7 +41,7 @@ public class RegularHeptagon extends AppCompatActivity {
 
 
         hepPerimeterSideAET = (EditText) findViewById(R.id.hep_perimeter_side_a_et);
-        hepPerimeterAnswerTV = (TextView) findViewById(R.id.hep_calc_answer_tx);
+        hepPerimeterAnswerTV = (TextView) findViewById(R.id.hep_perimeter_calc_answer_tx);
         hepPerimeterCalcButton = (Button) findViewById(R.id.hep_perimeter_calc_button);
         hepPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +62,7 @@ public class RegularHeptagon extends AppCompatActivity {
         });
 //Area
         hepAreaSideAET = (EditText) findViewById(R.id.hep_area_side_a_et);
-        hepAreaAnswerTV = (TextView) findViewById(R.id.hep_calc_area_answer_tx);
+        hepAreaAnswerTV = (TextView) findViewById(R.id.hep_area_calc_answer_tx);
         hepAreaCalcButton = (Button) findViewById(R.id.hep_area_calc_button);
         hepAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +84,7 @@ public class RegularHeptagon extends AppCompatActivity {
         });
 
         hepSideAET = (EditText) findViewById(R.id.hep_side_et);
-        hepSideAAnswerTV = (TextView) findViewById(R.id.hep_calc_side_answer_tx);
+        hepSideAAnswerTV = (TextView) findViewById(R.id.hep_side_calc_answer_tx);
         hepSideACalcButton = (Button) findViewById(R.id.hep_side_calc_button);
         hepSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override

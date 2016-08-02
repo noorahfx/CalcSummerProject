@@ -39,7 +39,6 @@
                 android:src="@drawable/image1" />
 
 
-
             <TextView
                 android:id="@+id/cylinder_volume_r_text"
                 android:layout_width="wrap_content"
@@ -122,8 +121,6 @@
                 android:textSize="18sp" />
 
 
-
-
             <Button
                 android:id="@+id/cylinder_volume_clear_button"
                 android:layout_width="match_parent"
@@ -146,7 +143,6 @@
                 android:textColor="@color/White" />
 
 
-
             <TextView
                 android:id="@+id/cylinder_radius_text"
                 android:layout_width="match_parent"
@@ -158,11 +154,6 @@
                 android:textSize="30sp" />
 
 
-
-
-
-
-
             <ImageView
                 android:id="@+id/cylinder_radius_img"
                 android:layout_width="wrap_content"
@@ -171,7 +162,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
-
 
 
             <TextView
@@ -256,8 +246,6 @@
                 android:textSize="18sp" />
 
 
-
-
             <Button
                 android:id="@+id/cylinder_radius_clear_button"
                 android:layout_width="match_parent"
@@ -280,14 +268,6 @@
                 android:textColor="@color/White" />
 
 
-
-
-
-
-
-
-
-
             <TextView
                 android:id="@+id/cylinder_height_text"
                 android:layout_width="match_parent"
@@ -300,8 +280,6 @@
                 android:textSize="30sp" />
 
 
-
-
             <ImageView
                 android:id="@+id/cylinder_height_img"
                 android:layout_width="wrap_content"
@@ -310,7 +288,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
-
 
 
             <TextView
@@ -417,7 +394,6 @@
                 android:textColor="@color/White" />
 
 
-
             <TextView
                 android:id="@+id/cylinder_surface_area_text"
                 android:layout_width="match_parent"
@@ -438,7 +414,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
-
 
 
             <TextView
@@ -523,8 +498,6 @@
                 android:textSize="18sp" />
 
 
-
-
             <Button
                 android:id="@+id/cylinder_surface_area_clear_button"
                 android:layout_width="match_parent"
@@ -547,7 +520,6 @@
                 android:textColor="@color/White" />
 
 
-
             <TextView
                 android:id="@+id/cylinder_base_area_text"
                 android:layout_width="match_parent"
@@ -567,7 +539,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
-
 
 
             <TextView
@@ -624,8 +595,6 @@
                 android:textSize="18sp" />
 
 
-
-
             <Button
                 android:id="@+id/cylinder_base_area_clear_button"
                 android:layout_width="match_parent"
@@ -660,10 +629,6 @@
                 android:textSize="30sp" />
 
 
-
-
-
-
             <ImageView
                 android:id="@+id/cylinder_lateral_surface_img"
                 android:layout_width="wrap_content"
@@ -672,7 +637,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
-
 
 
             <TextView
@@ -757,8 +721,6 @@
                 android:textSize="18sp" />
 
 
-
-
             <Button
                 android:id="@+id/cylinder_lateral_surface_clear_button"
                 android:layout_width="match_parent"
@@ -780,7 +742,21 @@
                 android:layout_marginTop="10dp"
                 android:textColor="@color/White" />
 
-          </RelativeLayout>
-      </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
 
-  </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

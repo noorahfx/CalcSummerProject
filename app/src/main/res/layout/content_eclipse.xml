@@ -24,10 +24,9 @@
                 android:id="@+id/ellipse_area_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:text="Area"
+                android:text="Volume"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
             <ImageView
@@ -39,59 +38,78 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
+
             <TextView
                 android:id="@+id/ellipse_area_a_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_area_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <EditText
                 android:id="@+id/ellipse_area_a_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_area_img"
+                android:layout_below="@id/ellipse_area_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/ellipse_area_a_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Axis"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
 
             <TextView
                 android:id="@+id/ellipse_area_b_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_area_a_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
 
             <EditText
                 android:id="@+id/ellipse_area_b_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_area_a_et"
+                android:layout_below="@id/ellipse_area_a_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/ellipse_area_b_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Bxis"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
 
             <Button
                 android:id="@+id/ellipse_area_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_area_b_text"
+                android:layout_below="@id/ellipse_area_b_text"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/ellipse_area_calc_answer_tx"
@@ -99,20 +117,46 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ellipse_area_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/ellipse_area_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_area_calc_answer_tx"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_1"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_area_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
+
 
 
             <TextView
                 android:id="@+id/ellipse_a_xis_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_area_calc_answer_tx"
+                android:layout_below="@+id/hline_1"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="A-xis"
                 android:textSize="30sp" />
+
 
             <ImageView
                 android:id="@+id/ellipse_a_xis_img"
@@ -123,59 +167,74 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
+
             <TextView
                 android:id="@+id/ellipse_a_xis_b_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_a_xis_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/ellipse_a_xis_b_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_a_xis_img"
+                android:layout_below="@id/ellipse_a_xis_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Bxis"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <TextView
                 android:id="@+id/ellipse_a_xis_area_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_a_xis_b_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="A"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <EditText
                 android:id="@+id/ellipse_a_xis_area_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_a_xis_b_et"
+                android:layout_below="@id/ellipse_a_xis_b_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
-                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/ellipse_a_xis_area_text"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Area"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <Button
                 android:id="@+id/ellipse_a_xis_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_a_xis_area_text"
+                android:layout_below="@id/ellipse_a_xis_area_text"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/ellipse_a_xis_calc_answer_tx"
@@ -183,20 +242,48 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ellipse_a_xis_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:id="@+id/ellipse_a_xis_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_a_xis_calc_answer_tx"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_2"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_a_xis_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
             <TextView
                 android:id="@+id/ellipse_b_xis_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_a_xis_calc_answer_tx"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_2"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="B-xis"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
+
 
             <ImageView
                 android:id="@+id/ellipse_b_xis_img"
@@ -207,60 +294,74 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
+
             <TextView
                 android:id="@+id/ellipse_b_xis_a_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_b_xis_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/ellipse_b_xis_a_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_b_xis_img"
+                android:layout_below="@id/ellipse_b_xis_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/ellipse_b_xis_a_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Axis"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <TextView
                 android:id="@+id/ellipse_b_xis_area_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_b_xis_a_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="A"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <EditText
                 android:id="@+id/ellipse_b_xis_area_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_b_xis_a_et"
+                android:layout_below="@id/ellipse_b_xis_a_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/ellipse_b_xis_area_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Area"
-                />
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <Button
                 android:id="@+id/ellipse_b_xis_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_b_xis_area_text"
+                android:layout_below="@id/ellipse_b_xis_area_text"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/ellipse_b_xis_calc_answer_tx"
@@ -268,20 +369,46 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ellipse_b_xis_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/ellipse_b_xis_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_b_xis_calc_answer_tx"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_3"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_b_xis_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
             <TextView
                 android:id="@+id/ellipse_circum_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_b_xis_calc_answer_tx"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_3"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Circumference"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
+
 
             <ImageView
                 android:id="@+id/ellipse_circum_img"
@@ -297,54 +424,67 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_circum_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/ellipse_circum_a_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_circum_img"
+                android:layout_below="@id/ellipse_circum_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/ellipse_circum_a_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Axis"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <TextView
                 android:id="@+id/ellipse_circum_b_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ellipse_circum_a_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/ellipse_circum_b_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_circum_a_et"
+                android:layout_below="@id/ellipse_circum_a_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/ellipse_circum_b_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Bxis"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <Button
                 android:id="@+id/ellipse_circum_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ellipse_circum_b_text"
+                android:layout_below="@id/ellipse_circum_b_text"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/ellipse_circum_calc_answer_tx"
@@ -352,9 +492,34 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ellipse_circum_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/ellipse_circum_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_circum_calc_answer_tx"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_4"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ellipse_circum_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
+
 
 
         </RelativeLayout>

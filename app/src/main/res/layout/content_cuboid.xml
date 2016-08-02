@@ -24,11 +24,12 @@
                 android:id="@+id/cuboid_volume_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Volume"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textColor="@color/Black" />
+
+
 
             <ImageView
                 android:id="@+id/cuboid_volume_img"
@@ -44,76 +45,97 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cuboid_volume_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
                 android:text="L"
-                android:textSize="25sp" />
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/cuboid_volume_l_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cuboid_volume_img"
+                android:layout_below="@id/cuboid_volume_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/cuboid_volume_l_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Length"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey"/>
 
             <TextView
                 android:id="@+id/cuboid_volume_w_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cuboid_volume_l_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
                 android:text="W"
-                android:textSize="25sp" />
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <EditText
                 android:id="@+id/cuboid_volume_w_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cuboid_volume_l_et"
+                android:layout_below="@id/cuboid_volume_l_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_toRightOf="@+id/cuboid_volume_l_text"
-                android:ems="5"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/cuboid_volume_w_text"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Width"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey"/>
 
             <TextView
                 android:id="@+id/cuboid_volume_h_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/cuboid_volume_w_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
                 android:text="H"
-                android:textSize="25sp" />
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/cuboid_volume_h_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cuboid_volume_w_et"
+                android:layout_below="@id/cuboid_volume_w_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cuboid_volume_w_text"
-                android:ems="5"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:hint="Height"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey"/>
 
             <Button
                 android:id="@+id/cuboid_volume_calc_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cuboid_volume_h_text"
+                android:layout_below="@id/cuboid_volume_h_text"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
 
             <TextView
                 android:id="@+id/cuboid_volume_calc_answer_tx"
@@ -121,20 +143,47 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cuboid_volume_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cuboid_volume_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_volume_calc_answer_tx"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:id="@+id/hline_1"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/cuboid_volume_clear_button"/>
 
 
             <TextView
                 android:id="@+id/cuboid_area_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cuboid_volume_calc_answer_tx"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_1"
                 android:gravity="center"
                 android:text="Area"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/Black"/>
+
+
 
             <ImageView
                 android:id="@+id/cuboid_area_img"
@@ -142,10 +191,141 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cuboid_area_text"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="4dp"
                 android:src="@drawable/image1" />
 
+            <TextView
+                android:id="@+id/cuboid_area_l_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_img"
+                android:layout_marginTop="40dp"
+                android:text="L"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
+            <EditText
+                android:id="@+id/cuboid_area_l_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/cuboid_area_l_text"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey"/>
+
+            <TextView
+                android:id="@+id/cuboid_area_w_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_l_text"
+                android:layout_marginTop="10dp"
+                android:text="W"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/cuboid_area_w_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_l_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/cuboid_area_w_text"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey"/>
+
+            <TextView
+                android:id="@+id/cuboid_area_h_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_w_text"
+                android:layout_marginTop="10dp"
+                android:text="H"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cuboid_area_h_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_w_et"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/cuboid_area_w_text"
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey"/>
+
+            <Button
+                android:id="@+id/cuboid_area_calc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_h_text"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/cuboid_area_calc_answer_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuboid_area_calc_button"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cuboid_area_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cuboid_area_calc_answer_tx"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+
+            <TextView
+                android:id="@+id/hline_2"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/cuboid_area_clear_button"/>
+
+<!--
             <TextView
                 android:id="@+id/cuboid_area_l_text"
                 android:layout_width="wrap_content"
@@ -233,7 +413,7 @@
                 android:gravity="center"
                 android:textColor="@color/red"
                 android:textSize="20sp" />
-
+-->
 
         </RelativeLayout>
     </ScrollView>

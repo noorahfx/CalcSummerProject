@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_orange_xxxhdpi"
+    android:background="@drawable/background_purple_xxxhdpi"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -28,12 +28,10 @@
                 android:id="@+id/circle_area_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:gravity="center"
                 android:text="Area"
                 android:textSize="30sp"
-                android:textColor="@color/Black"
-                />
+                android:textColor="@color/Black" />
 
             <ImageView
                 android:id="@+id/circle_area_img"
@@ -50,14 +48,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_area_img"
                 android:layout_marginTop="40dp"
-
+                android:text="r"
                 android:background="@drawable/red_button"
                 android:maxLines="1"
-                android:text="r"
                 android:textColor="@color/white"
-                android:textSize="18sp"
-
-                />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/circle_area_a_et"
@@ -67,15 +62,13 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/circle_area_a_text"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="Enter value"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
-                android:textColorHint="@color/LightGrey"
-
-                />
+                android:textColorHint="@color/LightGrey"/>
 
 
             <Button
@@ -84,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_area_a_text"
                  android:layout_marginTop="10dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:text="Calculate"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -97,8 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/circle_area_calc_button"
                 android:layout_marginTop="10dp"
-
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:gravity="center"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -109,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_calc_answer_tx"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:text="CLEAR"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -119,9 +111,9 @@
             <TextView
                 android:id="@+id/hline_1"
                 style="?android:listSeparatorTextViewStyle"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/DarkRed"
+                android:textColor="@color/White"
                  android:layout_marginTop="10dp"
                 android:layout_below="@id/circle_area_clear_button"/>
 
@@ -136,9 +128,7 @@
                 android:gravity="center"
                 android:text="Diameter"
                 android:textSize="30sp"
-                android:textColor="@color/Black"
-
-                />
+                android:textColor="@color/Black" />
 
             <ImageView
                 android:id="@+id/circle_diameter_img"
@@ -155,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/circle_diameter_img"
                  android:layout_marginTop="40dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:text="r"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
@@ -168,7 +158,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="40sp"
                 android:layout_toRightOf="@+id/circle_diameter_d_text"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:ems="6"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
@@ -176,9 +166,7 @@
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
-                android:textColorHint="@color/LightGrey"
-
-                />
+                android:textColorHint="@color/LightGrey"/>
 
             <Button
                 android:id="@+id/circle_diameter_calc_button"
@@ -186,11 +174,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_diameter_d_text"
                  android:layout_marginTop="10dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:text="Calculate"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
-
 
 
             <TextView
@@ -199,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/circle_diameter_calc_button"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:gravity="center"
                 android:textColor="@color/red"
                 android:textSize="18sp" />
@@ -210,7 +197,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_calc_diamter_answer_tx"
                  android:layout_marginTop="10dp"
-                 android:background="@drawable/red_button"
+                 android:background="@drawable/black_button"
                 android:text="CLEAR"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -252,7 +239,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_circum_img"
                  android:layout_marginTop="40dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:text="r"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
@@ -265,7 +252,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/circle_circum_c_text"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:ems="6"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
@@ -281,7 +268,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_circum_c_text"
                 android:layout_marginTop="10dp"
-                 android:background="@drawable/red_button"
+                 android:background="@drawable/black_button"
                 android:text="Calculate"
                 android:textSize="15sp"
                 android:textColor="@color/white" />
@@ -295,7 +282,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/circle_circum_calc_button"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:gravity="center"
                 android:textColor="@color/red"
                 android:textSize="18sp" />
@@ -309,7 +296,7 @@
                  android:text="CLEAR"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:background="@drawable/red_button"/>
+                android:background="@drawable/black_button"/>
 
             <TextView
                 android:id="@+id/hline_3"
@@ -346,7 +333,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_radius_img"
                  android:layout_marginTop="40dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:text="A"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
@@ -359,7 +346,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/circle_radius_c_text"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:ems="6"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
@@ -375,7 +362,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/circle_radius_c_text"
                 android:layout_marginTop="10dp"
-                 android:background="@drawable/red_button"
+                 android:background="@drawable/black_button"
                 android:text="Calculate"
                 android:textSize="15sp"
                 android:textColor="@color/white" />
@@ -387,7 +374,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/circle_radius_calc_button"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/red_button"
+                android:background="@drawable/black_button"
                 android:gravity="center"
                 android:textColor="@color/red"
                 android:textSize="18sp" />
@@ -401,7 +388,7 @@
                  android:text="CLEAR"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:background="@drawable/red_button"/>
+                android:background="@drawable/black_button"/>
 
             <TextView
                 android:id="@+id/hline_4"
@@ -415,3 +402,28 @@
     </ScrollView>
 
 </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

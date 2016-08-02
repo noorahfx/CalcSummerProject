@@ -68,7 +68,7 @@
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Geometry.Parallelogram.Parallelogram"
+            android:name=".Geometry.Quadrilateral.TypesOfQuadrilateral.Parallelogram.Parallelogram"
             android:label="@string/title_activity_parallelogram"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar"

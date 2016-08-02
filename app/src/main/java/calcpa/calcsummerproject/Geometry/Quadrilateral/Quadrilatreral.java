@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import calcpa.calcsummerproject.Geometry.CustomList;
 import calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Kite.Kite;
+import calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Parallelogram.Parallelogram;
 import calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Rectangle.Rectangle;
 import calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Rhombus.Rhombus;
 import calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Square.Square;
@@ -49,7 +50,7 @@ public class Quadrilatreral extends AppCompatActivity {
                 //Open new activity when clicked using (switch statement);
                 switch (position) {
                     case 0:
-                        Intent intent = new Intent(Quadrilatreral.this, Kite.class);
+                        Intent intent = new Intent(Quadrilatreral.this, Parallelogram.class);
                         startActivity(intent);
                         break;
                     case 1:
@@ -66,6 +67,10 @@ public class Quadrilatreral extends AppCompatActivity {
                         break;
                     case 4:
                         intent = new Intent(Quadrilatreral.this, Trapezoid.class);
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent = new Intent(Quadrilatreral.this, Kite.class);
                         startActivity(intent);
                         break;
                 }

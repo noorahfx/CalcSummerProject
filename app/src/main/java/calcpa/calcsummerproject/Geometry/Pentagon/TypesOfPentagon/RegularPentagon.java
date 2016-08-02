@@ -40,7 +40,7 @@ public class RegularPentagon extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         penPerimeterSideAET = (EditText) findViewById(R.id.pen_perimeter_side_a_et);
-        penPerimeterAnswerTV = (TextView) findViewById(R.id.pen_calc_answer_tx);
+        penPerimeterAnswerTV = (TextView) findViewById(R.id.pen_perimeter_calc_answer_tx);
         penPerimeterCalcButton = (Button) findViewById(R.id.pen_perimeter_calc_button);
         penPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +61,7 @@ public class RegularPentagon extends AppCompatActivity {
         });
 //Area
         penAreaSideAET = (EditText) findViewById(R.id.pen_area_side_a_et);
-        penAreaAnswerTV = (TextView) findViewById(R.id.pen_calc_area_answer_tx);
+        penAreaAnswerTV = (TextView) findViewById(R.id.pen_area_calc_answer_tx);
         penAreaCalcButton = (Button) findViewById(R.id.pen_area_calc_button);
         penAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +83,7 @@ public class RegularPentagon extends AppCompatActivity {
         });
 
         penSideAET = (EditText) findViewById(R.id.pen_side_et);
-        penSideAAnswerTV = (TextView) findViewById(R.id.pen_calc_side_answer_tx);
+        penSideAAnswerTV = (TextView) findViewById(R.id.pen_side_calc_answer_tx);
         penSideACalcButton = (Button) findViewById(R.id.pen_side_calc_button);
         penSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -39,7 +39,7 @@ public class RegularNonagon extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         nonPerimeterSideAET = (EditText) findViewById(R.id.non_perimeter_side_a_et);
-        nonPerimeterAnswerTV = (TextView) findViewById(R.id.non_calc_answer_tx);
+        nonPerimeterAnswerTV = (TextView) findViewById(R.id.non_perimeter_calc_answer_tx);
         nonPerimeterCalcButton = (Button) findViewById(R.id.non_perimeter_calc_button);
         nonPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +60,7 @@ public class RegularNonagon extends AppCompatActivity {
         });
 //Area
         nonAreaSideAET = (EditText) findViewById(R.id.non_area_side_a_et);
-        nonAreaAnswerTV = (TextView) findViewById(R.id.non_calc_area_answer_tx);
+        nonAreaAnswerTV = (TextView) findViewById(R.id.non_area_calc_answer_tx);
         nonAreaCalcButton = (Button) findViewById(R.id.non_area_calc_button);
         nonAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +83,7 @@ public class RegularNonagon extends AppCompatActivity {
         });
 
         nonSideAET = (EditText) findViewById(R.id.non_side_et);
-        nonSideAAnswerTV = (TextView) findViewById(R.id.non_calc_side_answer_tx);
+        nonSideAAnswerTV = (TextView) findViewById(R.id.non_side_calc_answer_tx);
         nonSideACalcButton = (Button) findViewById(R.id.non_side_calc_button);
         nonSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override

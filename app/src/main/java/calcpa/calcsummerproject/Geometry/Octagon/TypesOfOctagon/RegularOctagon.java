@@ -41,7 +41,7 @@ public class RegularOctagon extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         octPerimeterSideAET = (EditText) findViewById(R.id.oct_perimeter_side_a_et);
-        octPerimeterAnswerTV = (TextView) findViewById(R.id.oct_calc_answer_tx);
+        octPerimeterAnswerTV = (TextView) findViewById(R.id.oct_perimeter_calc_answer_tx);
         octPerimeterCalcButton = (Button) findViewById(R.id.oct_perimeter_calc_button);
         octPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +62,7 @@ public class RegularOctagon extends AppCompatActivity {
         });
 //Area
         octAreaSideAET = (EditText) findViewById(R.id.oct_area_side_a_et);
-        octAreaAnswerTV = (TextView) findViewById(R.id.oct_calc_area_answer_tx);
+        octAreaAnswerTV = (TextView) findViewById(R.id.oct_area_calc_answer_tx);
         octAreaCalcButton = (Button) findViewById(R.id.oct_area_calc_button);
         octAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +84,7 @@ public class RegularOctagon extends AppCompatActivity {
         });
 
         octSideAET = (EditText) findViewById(R.id.oct_side_et);
-        octSideAAnswerTV = (TextView) findViewById(R.id.oct_calc_side_answer_tx);
+        octSideAAnswerTV = (TextView) findViewById(R.id.oct_side_calc_answer_tx);
         octSideACalcButton = (Button) findViewById(R.id.oct_side_calc_button);
         octSideACalcButton.setOnClickListener(new View.OnClickListener() {
             @Override

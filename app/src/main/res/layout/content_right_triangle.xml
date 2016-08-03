@@ -5,7 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.RightTriangle"
     tools:showIn="@layout/activity_right_triangle">
@@ -28,11 +31,11 @@
                 android:id="@+id/perimeter_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Perimeter"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
 
             <ImageView
                 android:id="@+id/rightTriangleImgID"
@@ -50,44 +53,58 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rightTriangleImgID"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
-
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/sideBText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/sidAText"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/sidAEditText"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rightTriangleImgID"
+                android:layout_below="@id/rightTriangleImgID"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/sidAText"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/sidBEditText"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/sidAEditText"
+                android:layout_below="@id/sidAEditText"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/sideBText"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
 
             <Button
                 android:id="@+id/calculateButtonID"
@@ -95,7 +112,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/sideBText"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
             <TextView
@@ -104,20 +124,44 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/calculateButtonID"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                 android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
+            <Button
+                android:id="@+id/right_tri_perimeter_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answerEditText"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_1"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_tri_perimeter_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
             <TextView
                 android:id="@+id/area_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/answerEditText"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_1"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Area"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
 
             <ImageView
                 android:id="@+id/rig_triangle_area_img"
@@ -133,42 +177,58 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rig_triangle_area_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <TextView
                 android:id="@+id/area_side_b_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/area_side_a_text"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/area_base_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/rig_triangle_area_img"
+                android:layout_below="@id/rig_triangle_area_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/area_side_a_text"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <EditText
                 android:id="@+id/area_height_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/area_base_et"
+                android:layout_below="@id/area_base_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/area_side_b_text"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
 
             <Button
                 android:id="@+id/area_click_botton"
@@ -176,7 +236,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/area_side_b_text"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/area_answer_tv"
@@ -184,20 +247,44 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/area_click_botton"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                 android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
+            <Button
+                android:id="@+id/right_triangle_area_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/area_answer_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_2"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_triangle_area_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
             <TextView
                 android:id="@+id/side_c_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/area_answer_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_2"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
-                android:text="Hypotenuse"
+                android:text="Hypotenuse "
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
 
             <ImageView
                 android:id="@+id/side_c_img"
@@ -213,44 +300,57 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/side_c_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
-
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/hyp_side_b_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/hyp_side_a_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <EditText
                 android:id="@+id/hyp_side_a_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/side_c_img"
+                android:layout_below="@id/side_c_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/hyp_side_a_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
-
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <EditText
                 android:id="@+id/hyp_side_b_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/hyp_side_a_et"
+                android:layout_below="@id/hyp_side_a_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/hyp_side_b_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <Button
@@ -259,7 +359,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/hyp_side_b_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
             <TextView
@@ -268,20 +371,45 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/hyp_calculate_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                 android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/right_triangle_hyp_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hyp_answer_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_3"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_triangle_hyp_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
             <TextView
                 android:id="@+id/right_triangle_a_tx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/hyp_answer_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_3"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Side A"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
 
             <ImageView
                 android:id="@+id/right_triangle_side_a_img"
@@ -292,51 +420,63 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
-
             <TextView
                 android:id="@+id/right_triangle_side_b_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_triangle_side_a_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
-
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/right_triangle_area_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_triangle_side_b_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="A"
-                android:textSize="25sp" />
-
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/right_triangle_side_b_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_a_img"
+                android:layout_below="@id/right_triangle_side_a_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/right_triangle_side_b_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/right_triangle__area_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_b_et"
+                android:layout_below="@id/right_triangle_side_b_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/right_triangle_area_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
 
             <Button
                 android:id="@+id/right_triangle_calc_button"
@@ -344,7 +484,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/right_triangle__area_et"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
             <TextView
@@ -353,19 +496,42 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/right_triangle_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
+            <Button
+                android:id="@+id/right_triangle_sideA_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_triangle_answer_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_4"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_triangle_sideA_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
             <TextView
                 android:id="@+id/right_triangle_b_tx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_answer_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_4"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Side B"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
 
@@ -378,49 +544,63 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
-
             <TextView
                 android:id="@+id/right_triangle_side_a_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_triangle_side_b_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <TextView
                 android:id="@+id/right_triangle_sid_b_area_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/right_triangle_sid_b_area_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_below="@id/right_triangle_side_a_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="A"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/right_triangle_side_a_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_b_img"
+                android:layout_below="@id/right_triangle_side_b_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/right_triangle_side_a_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/right_triangle_sid_b_area_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/right_triangle_side_a_et"
+                android:layout_below="@id/right_triangle_side_a_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/right_triangle_sid_b_area_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <Button
@@ -429,8 +609,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/right_triangle_sid_b_area_et"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
-
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/right_triangle_side_b_answer_tv"
@@ -438,9 +620,32 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/right_triangle_sid_b_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                 android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/right_triangle_sideB_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_triangle_side_b_answer_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_5"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_triangle_sideB_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
         </RelativeLayout>

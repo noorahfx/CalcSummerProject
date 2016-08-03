@@ -401,7 +401,7 @@
 
 
             <Button
-                android:id="@+id/iso_triangle_perimeter_clear_button"
+                android:id="@+id/iso_triangle_area_clear_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_area_ans_tv"
@@ -417,7 +417,7 @@
                 style="?android:listSeparatorTextViewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/iso_triangle_perimeter_clear_button"
+                android:layout_below="@id/iso_triangle_area_clear_button"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/White" />
 

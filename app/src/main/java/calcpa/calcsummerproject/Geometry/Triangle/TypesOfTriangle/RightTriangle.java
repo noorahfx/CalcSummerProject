@@ -55,7 +55,7 @@ public class RightTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right_triangle);
-
+/**
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "Take cover.ttf");
         TextView myTextView = (TextView) findViewById(R.id.perimeter_text);
         assert myTextView != null;
@@ -206,7 +206,7 @@ public class RightTriangle extends AppCompatActivity {
                     }
                 }
             }
-        });
+        });  */
     }
 
     @Override

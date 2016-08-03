@@ -11,6 +11,5 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Nonagon.TypesOfNonagon.IrregularNonagon"
     tools:showIn="@layout/activity_irregular_nonagon">
-
-</RelativeLayout>
+  </RelativeLayout>
 

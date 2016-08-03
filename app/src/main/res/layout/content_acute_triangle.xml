@@ -5,7 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.AcuteTriangle"
     tools:showIn="@layout/activity_acute_triangle">
@@ -25,15 +28,16 @@
             android:clickable="false"
             android:orientation="vertical">
 
+
             <TextView
                 android:id="@+id/acute_tri_perimeter_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Perimeter"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
 
 
             <ImageView
@@ -48,26 +52,31 @@
 
             <!--///FOrmula -->
 
+
             <TextView
                 android:id="@+id/acute_tri_perimeter_sideA_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_perimeter_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
-
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/acute_tri_perimeter_sideB_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_perimeter_sideA_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
 
             <TextView
@@ -75,43 +84,68 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_perimeter_sideB_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
-                android:text="c"
-                android:textSize="25sp" />
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:text="x"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
-            <EditText
+
+
+             <EditText
                 android:id="@+id/acute_tri_perimeter_sideA_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_perimeter_img"
+                android:layout_below="@id/acute_tri_perimeter_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/acute_tri_perimeter_sideA_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/acute_tri_perimeter_sideB_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_perimeter_sideA_et"
+                android:layout_below="@id/acute_tri_perimeter_sideA_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_perimeter_sideB_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
 
 
             <EditText
                 android:id="@+id/acute_tri_perimeter_sideC_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_perimeter_sideB_tv"
+                android:layout_below="@id/acute_tri_perimeter_sideB_tv"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_perimeter_sideC_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
+
+
 
 
             <Button
@@ -120,7 +154,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_perimeter_sideC_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/acute_tri_perimeter_ans_tv"
@@ -128,20 +165,45 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_perimeter_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
+            <Button
+                android:id="@+id/acute_tri_perimeter_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_perimeter_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_1"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_perimeter_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
             <TextView
                 android:id="@+id/acute_tri_area_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_perimeter_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_1"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Area"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
+
 
 
             <ImageView
@@ -153,16 +215,17 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
-
             <TextView
                 android:id="@+id/acute_tri_area_base_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_area_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
             <TextView
@@ -170,32 +233,51 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_area_base_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="h"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
-            <EditText
+
+
+             <EditText
                 android:id="@+id/acute_tri_area_base_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_area_img"
+                android:layout_below="@id/acute_tri_area_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/acute_tri_area_base_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
-
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <EditText
                 android:id="@+id/acute_tri_area_height_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_area_base_et"
+                android:layout_below="@id/acute_tri_area_base_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_area_height_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
+
+
+
+
 
 
             <Button
@@ -204,7 +286,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_area_height_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
             <TextView
@@ -213,19 +298,43 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_area_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/acute_tri_area_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_area_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_2"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_area_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
             <TextView
                 android:id="@+id/acute_tri_hyp_tx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_area_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_2"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Hypotenuse"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
 
@@ -238,16 +347,17 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/image1" />
 
-
             <TextView
                 android:id="@+id/acute_tri_hyp_sideA_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_hyp_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
             <TextView
@@ -255,31 +365,49 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_hyp_sideA_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
 
             <EditText
                 android:id="@+id/acute_tri_hyp_sideA_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_hyp_img"
+                android:layout_below="@id/acute_tri_hyp_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/acute_tri_hyp_sideA_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/acute_tri_hyp_sideB_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_hyp_sideA_et"
+                android:layout_below="@id/acute_tri_hyp_sideA_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_hyp_sideB_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
+
 
 
             <Button
@@ -288,7 +416,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_hyp_sideB_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/acute_tri_hyp_ans_tv"
@@ -296,20 +427,46 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_hyp_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/acute_tri_hyp_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_hyp_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_3"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_hyp_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
             <TextView
                 android:id="@+id/acute_tri_sideA_tx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_hyp_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_3"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Side A"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
 
 
             <ImageView
@@ -327,62 +484,88 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_sideA_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/acute_tri_sideA_sideC_tx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_sideA_base_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="c"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/acute_tri_sideA_perimeter_tx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_sideA_sideC_tx"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="P"
-                android:textSize="25sp" />
-
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/acute_tri_sideA_base_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_sideA_img"
+                android:layout_below="@id/acute_tri_sideA_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/acute_tri_sideA_base_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/acute_tri_sideA_sideC_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_sideA_base_et"
+                android:layout_below="@id/acute_tri_sideA_base_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_sideA_sideC_tx"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <EditText
                 android:id="@+id/acute_tri_sideA_perimeter_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_sideA_sideC_et"
+                android:layout_below="@id/acute_tri_sideA_sideC_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_sideA_perimeter_tx"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
+
+
 
 
             <Button
@@ -391,8 +574,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_sideA_perimeter_tx"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
-
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/acute_tri_sideA_ans_tv"
@@ -400,10 +585,32 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_sideA_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                 android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
+            <Button
+                android:id="@+id/acute_tri_sideA_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_sideA_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_4"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_sideA_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
 
@@ -411,11 +618,13 @@
                 android:id="@+id/acute_tri_base_tx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_sideA_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_4"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Base"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
+
 
 
             <ImageView
@@ -433,62 +642,90 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_base_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/acute_tri_base_sideC_tx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_base_sideA_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="c"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <TextView
                 android:id="@+id/acute_tri_base_perimeter_tx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/acute_tri_base_sideC_tx"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="P"
-                android:textSize="25sp" />
-
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/acute_tri_base_sideA_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_base_img"
+                android:layout_below="@id/acute_tri_base_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/acute_tri_base_sideA_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
+
 
 
             <EditText
                 android:id="@+id/acute_tri_base_sideC_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/acute_tri_base_sideA_et"
+                android:layout_below="@id/acute_tri_base_sideA_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_base_sideC_tx"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <EditText
                 android:id="@+id/acute_tri_base_perimeter_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_base_sideC_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/acute_tri_base_perimeter_tx"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
+
 
 
             <Button
@@ -497,8 +734,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_base_perimeter_tx"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
-
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/acute_tri_base_ans_tv"
@@ -506,9 +745,32 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/acute_tri_base_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/acute_tri_base_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_base_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_5"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acute_tri_base_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
 

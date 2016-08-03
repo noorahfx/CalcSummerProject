@@ -5,151 +5,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_color"
-    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.IsoscelesTriangle"
     tools:showIn="@layout/activity_isosceles_triangle">
-<!--
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+    <!--
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clickable="false"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
-
-            <TextView
-                android:id="@+id/isosceles_triangle_title"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:gravity="center_horizontal"
-                android:text="isosceles Triangle"
-                android:textColor="@color/white"
-                android:textSize="30sp" />
-
-            <ImageView
-
-                android:id="@+id/isosceles_triangle_img_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingTop="22dp"
-                android:src="@drawable/image1" />
-
-            <TextView
-                android:id="@+id/isosceles_tr_def_str_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:paddingBottom="2dp"
-                android:paddingTop="8dp"
-                android:text="@string/def_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/isosceles_triangle_define_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:text="@string/isosceles_triangle_def"
-                android:textColor="@color/DarkRed"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/isosceles_tr_attr_str"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:text="@string/attr_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/isosceles_tr_prop_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:paddingTop="12dp"
-                android:text="@string/properties_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/isosceles_tr_prop_1_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:text="@string/isosceles_triangle_property_1"
-                android:textColor="@color/DarkRed"
-                android:textSize="16sp" />
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/isosceles_tri_formula_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                android:padding="2dp"
-                android:paddingBottom="12dp"
-                android:paddingTop="12dp"
-                android:text="@string/formula_str"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/isosceles_triangle_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="isosceles Triangle"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/isosceles_triangle_paramter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill_horizontal"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+                <ImageView
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/isosceles_triangle_area"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+                    android:id="@+id/isosceles_triangle_img_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="22dp"
+                    android:src="@drawable/image1" />
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/isosceles_triangle_side_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+                <TextView
+                    android:id="@+id/isosceles_tr_def_str_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/def_str"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/isosceles_triangle_side_a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+                <TextView
+                    android:id="@+id/isosceles_triangle_define_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/isosceles_triangle_def"
+                    android:textColor="@color/DarkRed"
+                    android:textSize="16sp" />
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/isosceles_triangle_height"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+                <TextView
+                    android:id="@+id/isosceles_tr_attr_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/attr_str"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
 
-            <io.github.kexanie.library.MathView
-                android:id="@+id/isosceles_triangle_side_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
-        </LinearLayout>
-    </ScrollView>
+                <TextView
+                    android:id="@+id/isosceles_tr_prop_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:padding="2dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/properties_str"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
 
-</RelativeLayout>  -->
+                <TextView
+                    android:id="@+id/isosceles_tr_prop_1_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/isosceles_triangle_property_1"
+                    android:textColor="@color/DarkRed"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/isosceles_tri_formula_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:padding="2dp"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/formula_str"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/isosceles_triangle_paramter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/isosceles_triangle_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/isosceles_triangle_side_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/isosceles_triangle_side_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/isosceles_triangle_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/isosceles_triangle_side_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>  -->
 
 
     <ScrollView
@@ -171,10 +173,9 @@
                 android:id="@+id/iso_triangle_perimeter_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="5dp"
                 android:gravity="center"
                 android:text="Perimeter"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
 
@@ -190,16 +191,17 @@
 
             <!--///FOrmula -->
 
-
             <TextView
                 android:id="@+id/iso_triangle_perimeter_sideA_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_perimeter_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
             <TextView
@@ -207,33 +209,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_perimeter_sideA_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/iso_triangle_perimeter_sideA_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_perimeter_img"
+                android:layout_below="@id/iso_triangle_perimeter_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/iso_triangle_perimeter_sideA_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
+
 
             <EditText
                 android:id="@+id/iso_triangle_perimeter_base_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_perimeter_sideA_et"
+                android:layout_below="@id/iso_triangle_perimeter_sideA_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/iso_triangle_perimeter_base_tv"
-                android:ems="5" />
-
-
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <Button
                 android:id="@+id/iso_triangle_perimeter_calc_button"
@@ -241,7 +255,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_perimeter_base_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/iso_triangle_perimeter_ans_tv"
@@ -249,25 +266,44 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_perimeter_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                 android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
+            <Button
+                android:id="@+id/iso_tri_perimeter_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_perimeter_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
-
-
+            <TextView
+                android:id="@+id/hline_1"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_tri_perimeter_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
             <TextView
                 android:id="@+id/iso_triangle_area_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_perimeter_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_1"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Area"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
 
@@ -281,17 +317,17 @@
                 android:src="@drawable/image1" />
 
 
-
-
             <TextView
                 android:id="@+id/iso_triangle_area_base_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_area_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
             <TextView
@@ -299,32 +335,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_area_base_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
-                android:text="b"
-                android:textSize="25sp" />
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
+                android:text="h"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/iso_triangle_area_base_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_area_img"
+                android:layout_below="@id/iso_triangle_area_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/iso_triangle_area_base_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/iso_triangle_area_height_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_area_base_et"
+                android:layout_below="@id/iso_triangle_area_base_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/iso_triangle_area_height_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <Button
@@ -333,8 +382,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_area_height_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
-
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/iso_triangle_area_ans_tv"
@@ -342,23 +393,43 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_area_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                 android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
+            <Button
+                android:id="@+id/iso_triangle_perimeter_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_area_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
-
+            <TextView
+                android:id="@+id/hline_2"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_perimeter_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
             <TextView
                 android:id="@+id/iso_triangle_side_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_area_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_2"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
-                android:text="Side"
+                android:text="Side "
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
 
@@ -372,17 +443,17 @@
                 android:src="@drawable/image1" />
 
 
-
-
             <TextView
                 android:id="@+id/iso_triangle_side_base_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_side_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
             <TextView
@@ -390,32 +461,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_side_base_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="P"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
 
             <EditText
                 android:id="@+id/iso_triangle_side_base_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_side_img"
+                android:layout_below="@id/iso_triangle_side_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/iso_triangle_side_base_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
-
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <EditText
                 android:id="@+id/iso_triangle_side_perimeter_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_side_base_et"
+                android:layout_below="@id/iso_triangle_side_base_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/iso_triangle_side_perimeter_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <Button
@@ -424,7 +508,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_side_perimeter_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
             <TextView
@@ -433,17 +520,42 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_side_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/iso_triangle_side_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_side_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/hline_3"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_side_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
+
             <TextView
                 android:id="@+id/iso_triangle_base_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_side_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_3"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Base"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
 
@@ -457,17 +569,17 @@
                 android:src="@drawable/image1" />
 
 
-
-
             <TextView
                 android:id="@+id/iso_triangle_base_side_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_base_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="a"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
             <TextView
@@ -475,32 +587,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_base_side_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="P"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/iso_triangle_base_side_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_base_img"
+                android:layout_below="@id/iso_triangle_base_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/iso_triangle_base_side_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <EditText
                 android:id="@+id/iso_triangle_base_perimeter_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_base_side_tv"
+                android:layout_below="@id/iso_triangle_base_side_tv"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/iso_triangle_base_perimeter_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <Button
@@ -509,7 +634,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_base_perimeter_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
             <TextView
@@ -518,22 +646,43 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_base_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/iso_triangle_base_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_base_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
-
+            <TextView
+                android:id="@+id/hline_4"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_base_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
             <TextView
                 android:id="@+id/iso_triangle_height_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_base_ans_tv"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/hline_4"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Height"
+                android:textColor="@color/Black"
                 android:textSize="30sp" />
 
 
@@ -547,17 +696,17 @@
                 android:src="@drawable/image1" />
 
 
-
-
             <TextView
                 android:id="@+id/iso_triangle_height_base_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_height_img"
-                android:layout_marginLeft="115dp"
                 android:layout_marginTop="40dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="b"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
             <TextView
@@ -565,32 +714,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/iso_triangle_height_base_tv"
-                android:layout_marginLeft="115dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:maxLines="1"
                 android:text="A"
-                android:textSize="25sp" />
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/iso_triangle_height_base_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_height_img"
+                android:layout_below="@id/iso_triangle_height_img"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:layout_toRightOf="@+id/iso_triangle_height_base_tv"
-                android:ems="5"
-                android:inputType="numberDecimal" />
-
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
             <EditText
                 android:id="@+id/iso_triangle_height_area_et"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/iso_triangle_height_base_et"
+                android:layout_below="@id/iso_triangle_height_base_et"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/iso_triangle_height_area_tv"
-                android:ems="5" />
+                android:background="@drawable/black_button"
+                android:ems="6"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/LightGrey" />
 
 
             <Button
@@ -599,7 +760,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_height_area_tv"
                 android:layout_marginTop="10dp"
-                android:text="Calculate" />
+                android:background="@drawable/black_button"
+                android:text="Calculate"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
             <TextView
@@ -608,13 +772,33 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/iso_triangle_height_calc_button"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp" />
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
 
+            <Button
+                android:id="@+id/iso_triangle_height_clear_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_height_ans_tv"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_button"
+                android:text="CLEAR"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
+            <TextView
+                android:id="@+id/hline_5"
+                style="?android:listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iso_triangle_height_clear_button"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/White" />
 
 
         </RelativeLayout>

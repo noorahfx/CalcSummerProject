@@ -20,6 +20,7 @@ import calcpa.calcsummerproject.R;
 
 public class Rhombus extends AppCompatActivity {
 
+
     //Perimeter
     EditText rhombusPerimeterAET;
     TextView rhombusPerimeterAnswerTV;

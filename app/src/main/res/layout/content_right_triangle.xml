@@ -460,7 +460,6 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/LightGrey" />
 
-
             <EditText
                 android:id="@+id/right_triangle__area_et"
                 android:layout_width="match_parent"
@@ -476,6 +475,8 @@
                 android:maxLines="1"
                 android:textColor="@color/white"
                 android:textColorHint="@color/LightGrey" />
+
+
 
 
             <Button

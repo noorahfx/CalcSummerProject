@@ -289,19 +289,7 @@
             android:label="@string/title_activity_irregular_nonagon"
             android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Geometry.Decagon.TypesOfDecagon.RegularDecagon"
-            android:label="@string/title_activity_regular_decagon"
-            android:windowSoftInputMode="stateHidden"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation|screenSize"/>
-        <activity
-            android:name=".Geometry.Decagon.TypesOfDecagon.IrregularDecagon"
-            android:label="@string/title_activity_irregular_decagon"
-            android:windowSoftInputMode="stateHidden"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:configChanges="orientation|screenSize"/>
-        <activity
+         <activity
             android:name=".Geometry.Polygon.TypesOfPolygon.ConvexPolygon"
             android:label="@string/title_activity_convex_polygon"
             android:windowSoftInputMode="stateHidden"

@@ -25,6 +25,7 @@ public class ScaleneTriangle extends AppCompatActivity {
     EditText scaleneTriPerimeterSideCET;
     TextView scaleneTriPerimeterAnsTV;
     Button scaleneTriPerimeterCalcButton;
+    Button scaleneTriPerimeterClearButton;
 
 
     //    area
@@ -32,6 +33,7 @@ public class ScaleneTriangle extends AppCompatActivity {
     EditText scaleneTriAreaHeightET;
     TextView scaleneTriAreaAnsTV;
     Button scaleneTriAreaCalcButton;
+    Button scaleneTriArearClearButton;
 
 
 
@@ -41,6 +43,8 @@ public class ScaleneTriangle extends AppCompatActivity {
     EditText scaleneTriSideAPerimeterET;
     TextView scaleneTriSideAAnsTV;
     Button scaleneTriSideACalcButton;
+    Button scaleneTriSideAClearButton;
+
 
 
     //    side B
@@ -49,6 +53,8 @@ public class ScaleneTriangle extends AppCompatActivity {
     EditText scaleneTriBasePerimeterET;
     TextView scaleneTriBaseAnsTV;
     Button scaleneTriBaseCalcButton;
+    Button scaleneTriSideBClearButton;
+
 
 
     @Override
@@ -57,74 +63,136 @@ public class ScaleneTriangle extends AppCompatActivity {
         setContentView(R.layout.activity_scalene_triangle);
 
 
-     /**   Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-        TextView myTextView = (TextView)findViewById(R.id.scalene_triangle_title);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+        // Perimeter Clear button
+        scaleneTriPerimeterClearButton = (Button)
+                findViewById(R.id.scalene_tri_perimeter_clear_button);
+        scaleneTriPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.scalene_triangle_define_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+                scaleneTriPerimeterSideAET.setText("");
+                scaleneTriPerimeterBaseET.setText("");
+                scaleneTriPerimeterSideCET.setText("");
+                scaleneTriPerimeterAnsTV.setText("");
 
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.scalene_tr_def_str_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.scalene_tr_type_str);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-
-        myTypeFace=Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView=(TextView)findViewById(R.id.scalene_tr_type_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+            }
+        });
 
 
+        // Area Clear button
+        scaleneTriArearClearButton = (Button)
+                findViewById(R.id.scalene_triangle_area_clear_button);
+        scaleneTriArearClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.scalene_tri_formula_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+                scaleneTriAreaBaseET.setText("");
+                scaleneTriAreaHeightET.setText("");
+                scaleneTriAreaAnsTV.setText("");
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView = (TextView)findViewById(R.id.scalene_tr_prop_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+            }
+        });
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.scalene_tr_prop_1_id);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
+        // Side Clear button
+        scaleneTriSideAClearButton = (Button)
+                findViewById(R.id.scalene_tri_side_clear_button);
+        scaleneTriSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        scalene_triangle_paramter =(MathView)findViewById(R.id.scalene_triangle_paramter);
-        assert scalene_triangle_paramter != null;
-        scalene_triangle_paramter.setText(s_t_paramter);
+                scaleneTriSideABaseET.setText("");
+                scaleneTriSideASideCET.setText("");
+                scaleneTriSideAPerimeterET.setText("");
+                scaleneTriSideAAnsTV.setText("");
 
-        scalene_triangle_area = (MathView)findViewById(R.id.scalene_triangle_area);
-        assert scalene_triangle_area != null;
-        scalene_triangle_area.setText(s_t_area);
+            }
+        });
 
-        scalene_triangle_side_a =(MathView)findViewById(R.id.scalene_triangle_side_a);
-        assert scalene_triangle_side_a != null;
-        scalene_triangle_side_a.setText(s_t_side_a);
+        // Base Clear button
+        scaleneTriSideBClearButton = (Button)
+                findViewById(R.id.scalene_tri_base_clear_button);
+        scaleneTriSideBClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        scalene_triangle_height =(MathView)findViewById(R.id.scalene_triangle_height);
-        assert scalene_triangle_height != null;
-        scalene_triangle_height.setText(s_t_height);
+                scaleneTriBaseSideAET.setText("");
+                scaleneTriBaseSideCET.setText("");
+                scaleneTriBasePerimeterET.setText("");
+                scaleneTriBaseAnsTV.setText("");
 
-    }
+            }
+        });
 
-}
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-        TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-*/
+        /**   Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
+           TextView myTextView = (TextView)findViewById(R.id.scalene_triangle_title);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+           myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
+           myTextView = (TextView)findViewById(R.id.scalene_triangle_define_id);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+           myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+           myTextView=(TextView)findViewById(R.id.scalene_tr_def_str_id);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+           myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+           myTextView=(TextView)findViewById(R.id.scalene_tr_type_str);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+           myTypeFace=Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
+           myTextView=(TextView)findViewById(R.id.scalene_tr_type_id);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+
+
+           myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+           myTextView=(TextView)findViewById(R.id.scalene_tri_formula_id);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+           myTypeFace = Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+           myTextView = (TextView)findViewById(R.id.scalene_tr_prop_id);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+           myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
+           myTextView = (TextView)findViewById(R.id.scalene_tr_prop_1_id);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+
+           scalene_triangle_paramter =(MathView)findViewById(R.id.scalene_triangle_paramter);
+           assert scalene_triangle_paramter != null;
+           scalene_triangle_paramter.setText(s_t_paramter);
+
+           scalene_triangle_area = (MathView)findViewById(R.id.scalene_triangle_area);
+           assert scalene_triangle_area != null;
+           scalene_triangle_area.setText(s_t_area);
+
+           scalene_triangle_side_a =(MathView)findViewById(R.id.scalene_triangle_side_a);
+           assert scalene_triangle_side_a != null;
+           scalene_triangle_side_a.setText(s_t_side_a);
+
+           scalene_triangle_height =(MathView)findViewById(R.id.scalene_triangle_height);
+           assert scalene_triangle_height != null;
+           scalene_triangle_height.setText(s_t_height);
+
+       }
+
+   }
+
+
+           Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
+           TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
+           assert myTextView != null;
+           myTextView.setTypeface(myTypeFace);
+   */
         //initialize the EditText
         scaleneTriPerimeterSideAET = (EditText) findViewById(R.id.scalene_tri_perimeter_sideA_et);
         scaleneTriPerimeterBaseET = (EditText) findViewById(R.id.scalene_tri_perimeter_sideB_et);

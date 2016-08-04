@@ -19,24 +19,31 @@ public class Rectangle extends AppCompatActivity {
     EditText rectanglePerimeterWET;
     TextView rectanglePerimeterAnswerTV;
     Button rectanglePerimeterCalcButton;
+    Button rectanglePerimClearButton;
 
     //Area
     EditText rectangleAreaLET;
     EditText rectangleAreaWET;
     TextView rectangleAreaAnswerTV;
     Button rectangleAreaCalcButton;
+    Button rectangleAreaClearButton;
+
 
     //Length
     EditText rectangleLengthWET;
     EditText rectangleLengthPET;
     TextView rectangleLengthAnswerTV;
     Button rectangleLengthCalcButton;
+    Button rectangleLengthClearButton;
+
 
     //Width
     EditText rectangleWidthLET;
     EditText rectangleWidthPET;
     TextView rectangleWidthAnswerTV;
     Button rectangleWidthCalcButton;
+    Button rectangleWidthClearButton;
+
 
 
     //Diagonal P
@@ -44,6 +51,8 @@ public class Rectangle extends AppCompatActivity {
     EditText rectanglePDiagonalWET;
     TextView rectanglePDiagonalAnswerTV;
     Button rectanglePDiagonalCalcButton;
+    Button rectanglepDiagonalClearButton;
+
 
 
 
@@ -53,6 +62,64 @@ public class Rectangle extends AppCompatActivity {
         setContentView(R.layout.activity_rectangle);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        // Perimeter Clear button
+        rectanglePerimClearButton = (Button) findViewById(R.id.rectangle_perimeter_clear_button);
+        rectanglePerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rectanglePerimeterLET.setText("");
+                rectanglePerimeterWET.setText("");
+                rectanglePerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        rectangleAreaClearButton = (Button) findViewById(R.id.rectangle_area_clear_button);
+        rectangleAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rectangleAreaLET.setText("");
+                rectangleAreaWET.setText("");
+                rectangleAreaAnswerTV.setText("");
+            }
+        });
+
+        // Length Clear button
+        rectangleLengthClearButton = (Button) findViewById(R.id.rectangle_length_clear_button);
+        rectangleLengthClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rectangleLengthWET.setText("");
+                rectangleLengthPET.setText("");
+                rectangleLengthAnswerTV.setText("");
+            }
+        });
+
+        // Width Clear button
+        rectangleWidthClearButton = (Button) findViewById(R.id.rectangle_width_clear_button);
+        rectangleWidthClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rectangleWidthLET.setText("");
+                rectangleWidthPET.setText("");
+                rectangleWidthClearButton.setText("");
+            }
+        });
+
+
+        // Width Clear button
+        rectanglepDiagonalClearButton = (Button) findViewById(R.id.rectangle_diagonal_clear_button);
+        rectanglepDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rectanglePDiagonalLET.setText("");
+                rectanglePDiagonalWET.setText("");
+                rectanglePDiagonalAnswerTV.setText("");
+            }
+        });
+
 
 
         //Perimeter

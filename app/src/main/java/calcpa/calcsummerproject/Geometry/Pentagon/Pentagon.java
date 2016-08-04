@@ -21,21 +21,59 @@ public class Pentagon extends AppCompatActivity {
     EditText penPerimeterSideAET;
     TextView penPerimeterAnswerTV;
     Button penPerimeterCalcButton;
+    Button penPerimeterClearButton;
 
     //area
     EditText penAreaSideAET;
     TextView penAreaAnswerTV;
     Button penAreaCalcButton;
+    Button penAreaClearButton;
 
     //side A
     EditText penSideAET;
     TextView penSideAAnswerTV;
     Button penSideACalcButton;
+    Button penSideAClearButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pentagon);
+
+
+        // Perimeter Clear button
+        penPerimeterClearButton = (Button) findViewById(R.id.pen_perimeter_clear_button);
+        penPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                penPerimeterSideAET.setText("");
+                penPerimeterAnswerTV.setText("");
+            }
+        });
+
+
+        // Area Clear button
+        penAreaClearButton = (Button) findViewById(R.id.pen_area_clear_button);
+        penAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                penAreaSideAET.setText("");
+                penAreaAnswerTV.setText("");
+            }
+        });
+
+
+        // Side A Clear button
+        penSideAClearButton = (Button) findViewById(R.id.pen_side_clear_button);
+        penSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                penSideAET.setText("");
+                penSideAAnswerTV.setText("");
+            }
+        });
+
+
         penPerimeterSideAET = (EditText) findViewById(R.id.pen_perimeter_side_a_et);
         penPerimeterAnswerTV = (TextView) findViewById(R.id.pen_perimeter_calc_answer_tx);
         penPerimeterCalcButton = (Button) findViewById(R.id.pen_perimeter_calc_button);

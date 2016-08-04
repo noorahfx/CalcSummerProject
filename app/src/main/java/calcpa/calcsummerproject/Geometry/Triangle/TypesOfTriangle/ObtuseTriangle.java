@@ -33,41 +33,94 @@ public class ObtuseTriangle extends AppCompatActivity {
 
    */
 
-//perimeter
-  EditText obtuseTriPerimeterSideAET;
+  //perimeter
+    EditText obtuseTriPerimeterSideAET;
     EditText obtuseTriPerimeterBaseET;
     EditText obtuseTriPerimeterSideCET;
     TextView obtuseTriPerimeterAnsTV;
     Button obtuseTriPerimeterCalcButton;
+    Button obtuseTriPerimClearButton;
 
 
-    //acute triangle area
+    // area
     EditText obtuseTriAreaBaseET;
     EditText obtuseTriAreaHeightET;
     TextView obtuseTriAreaAnsTV;
     Button obtuseTriAreaCalcButton;
+    Button obtuseTriAreaClearButton;
 
-  
 
-    //acute triangle side A calculatro
+
+
+    //side A calculatro
     EditText obtuseTriSideABaseET;
     EditText obtuseTriSideASideCET;
     EditText obtuseTriSideAPerimeterET;
     TextView obtuseTriSideAAnsTV;
     Button obtuseTriSideACalcButton;
+    Button obtuseTriSideAClearButton;
 
-
-    //acute triangle side B calculator
+    //side B calculator
     EditText obtuseTriBaseSideAET;
     EditText obtuseTriBaseSideCET;
     EditText obtuseTriBasePerimeterET;
     TextView obtuseTriBaseAnsTV;
     Button obtuseTriBaseCalcButton;
+    Button obtuseTriBaseClearButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obtuse_triangle);
+
+        // Perimeter Clear button
+        obtuseTriPerimClearButton = (Button) findViewById(R.id.iso_tri_perimeter_clear_button);
+        obtuseTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriPerimeterSideAET.setText("");
+                obtuseTriPerimeterBaseET.setText("");
+                obtuseTriPerimeterSideCET.setText("");
+                obtuseTriPerimeterAnsTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        obtuseTriAreaClearButton = (Button) findViewById(R.id.iso_triangle_area_clear_button);
+        obtuseTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriAreaBaseET.setText("");
+                obtuseTriAreaHeightET.setText("");
+                obtuseTriAreaAnsTV.setText("");
+            }
+        });
+
+        // Side A Clear button
+        obtuseTriSideAClearButton = (Button) findViewById(R.id.iso_triangle_side_clear_button);
+        obtuseTriSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriSideABaseET.setText("");
+                obtuseTriSideASideCET.setText("");
+                obtuseTriSideAPerimeterET.setText("");
+                obtuseTriSideAAnsTV.setText("");
+            }
+        });
+
+        // Side B Clear button
+        obtuseTriBaseClearButton = (Button) findViewById(R.id.iso_triangle_base_clear_button);
+        obtuseTriBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriBaseSideAET.setText("");
+                obtuseTriBaseSideCET.setText("");
+                obtuseTriBasePerimeterET.setText("");
+                obtuseTriBaseAnsTV.setText("");
+            }
+        });
+
 
 
         //initialize the EditText

@@ -22,24 +22,59 @@ public class Decagon extends AppCompatActivity {
     EditText decagonareaET;
     TextView decagonareaTV;
     Button decagonareaCalcButton;
+    Button decagonAreaClearButton;
 
 
     //perimeter
     EditText decagonPerimeterET;
     TextView decagonPerimeterTV;
     Button decagonPerimeterCalcButton;
-
+    Button decagonPerimeterClearButton;
 
     //Sides
 
     EditText decagonSideET;
     TextView decagonSideTV;
     Button decagonSideCalcButton;
+    Button decagonSidesClearButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_decagon);
+
+        // Area Clear button
+        decagonAreaClearButton = (Button) findViewById(R.id.decagon_area_clear_button);
+        decagonAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decagonareaET.setText("");
+                decagonareaET.setText("");
+
+            }
+        });
+
+        // Perimeter Clear button
+        decagonPerimeterClearButton = (Button) findViewById(R.id.decagon_perimeter_clear_button);
+        decagonPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decagonPerimeterET.setText("");
+                decagonPerimeterTV.setText("");
+
+            }
+        });
+
+        // Sides Clear button
+        decagonSidesClearButton = (Button) findViewById(R.id.decagon_sides_clear_button);
+        decagonSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decagonSideET.setText("");
+                decagonSideTV.setText("");
+
+            }
+        });
 
         decagonareaET = (EditText) findViewById(R.id.decagon_area_a_et);
         decagonareaTV = (TextView) findViewById(R.id.decagon_area_calc_answer_tx);
@@ -115,7 +150,6 @@ public class Decagon extends AppCompatActivity {
 
             }
         });
-
 
 
     }

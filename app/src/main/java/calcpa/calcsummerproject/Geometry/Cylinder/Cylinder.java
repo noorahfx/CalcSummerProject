@@ -22,18 +22,23 @@ public class Cylinder extends AppCompatActivity {
     EditText cylinderVolumeHET;
     TextView cylinderVolumeAnswerTV;
     Button cylinderVolumeCalcButton;
+    Button cylinderVolumeClearButton;
+
 
     //Radius
     EditText cylinderRadiusHET;
     EditText cylinderRadiusVET;
     TextView cylinderRadiusAnswerTV;
     Button cylinderRadiusCalcButton;
+    Button cylinderRadiusClearButton;
+
 
     //Height
     EditText cylinderHeightRET;
     EditText cylinderHeightVET;
     TextView cylinderHeightAnswerTV;
     Button cylinderHeightCalcButton;
+    Button cylinderHeightClearButton;
 
 
     //Surface Area
@@ -41,11 +46,14 @@ public class Cylinder extends AppCompatActivity {
     EditText cylinderSurfaceAreaHET;
     TextView cylinderSurfaceAreaAnswerTV;
     Button cylinderSurfaceAreaCalcButton;
+    Button cylinderSurfaceAreaClearButton;
+
 
     //Base
     EditText cylinderBaseAreaRET;
     TextView cylinderBaseAreaAnswerTV;
     Button cylinderBaseAreaCalcButton;
+    Button cylinderBaseClearButton;
 
 
     //Lateral Surface
@@ -53,6 +61,8 @@ public class Cylinder extends AppCompatActivity {
     EditText cylinderLateralSurfaceHET;
     TextView cylinderLateralSurfaceAnswerTV;
     Button cylinderLateralSurfaceCalcButton;
+    Button cylinderLateralSurfaceClearButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +70,80 @@ public class Cylinder extends AppCompatActivity {
         setContentView(R.layout.activity_cylinder);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        // Volume Clear button
+        cylinderVolumeClearButton = (Button) findViewById(R.id.cylinder_volume_clear_button);
+        cylinderVolumeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderVolumeRET.setText("");
+                cylinderVolumeHET.setText("");
+                cylinderVolumeAnswerTV.setText("");
+
+            }
+        });
+
+        // Radius clear button
+        cylinderRadiusClearButton = (Button) findViewById(R.id.cylinder_radius_clear_button);
+        cylinderRadiusClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderRadiusHET.setText("");
+                cylinderRadiusVET.setText("");
+                cylinderRadiusAnswerTV.setText("");
+
+            }
+        });
+
+        // Height Clear button
+        cylinderHeightClearButton = (Button)
+                findViewById(R.id.cylinder_height_clear_button);
+        cylinderHeightClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderHeightRET.setText("");
+                cylinderHeightVET.setText("");
+                cylinderHeightAnswerTV.setText("");
+
+            }
+        });
+
+        // Surface Area Clear button
+        cylinderSurfaceAreaClearButton = (Button)
+                findViewById(R.id.cylinder_surface_area_clear_button);
+        cylinderSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderSurfaceAreatRET.setText("");
+                cylinderSurfaceAreaHET.setText("");
+                cylinderSurfaceAreaAnswerTV.setText("");
+
+            }
+        });
+
+        // Base Clear button
+        cylinderBaseClearButton = (Button) findViewById(R.id.cylinder_base_area_clear_button);
+        cylinderBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderBaseAreaRET.setText("");
+                cylinderBaseAreaAnswerTV.setText("");
+
+            }
+        });
+        // Lateral Surface Clear button
+        cylinderLateralSurfaceClearButton = (Button)
+                findViewById(R.id.cylinder_lateral_surface_clear_button);
+        cylinderLateralSurfaceClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderLateralSurfaceRET.setText("");
+                cylinderLateralSurfaceHET.setText("");
+                cylinderLateralSurfaceAnswerTV.setText("");
+
+            }
+        });
 
 
         //Volume
@@ -244,6 +328,7 @@ public class Cylinder extends AppCompatActivity {
         });
 
     }
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);

@@ -17,25 +17,62 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Nonagon extends AppCompatActivity {
+
     //perimeter
     EditText nonPerimeterSideAET;
     TextView nonPerimeterAnswerTV;
     Button nonPerimeterCalcButton;
+    Button nonPerimeterClearButton;
 
     //area
     EditText nonAreaSideAET;
     TextView nonAreaAnswerTV;
     Button nonAreaCalcButton;
+    Button nonAreaClearButton;
 
     //side A
     EditText nonSideAET;
     TextView nonSideAAnswerTV;
     Button nonSideACalcButton;
+    Button nonSideAClearButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nonagon);
+
+
+
+        // Perimeter Clear button
+        nonPerimeterClearButton = (Button) findViewById(R.id.non_perimeter_clear_button);
+        nonPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nonPerimeterSideAET.setText("");
+                nonPerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        nonAreaClearButton = (Button) findViewById(R.id.non_area_clear_button);
+        nonAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nonAreaSideAET.setText("");
+                nonAreaAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        nonSideAClearButton = (Button) findViewById(R.id.non_side_clear_button);
+        nonSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nonSideAET.setText("");
+                nonSideAAnswerTV.setText("");
+            }
+        });
+
         nonPerimeterSideAET = (EditText) findViewById(R.id.non_perimeter_side_a_et);
         nonPerimeterAnswerTV = (TextView) findViewById(R.id.non_perimeter_calc_answer_tx);
         nonPerimeterCalcButton = (Button) findViewById(R.id.non_perimeter_calc_button);

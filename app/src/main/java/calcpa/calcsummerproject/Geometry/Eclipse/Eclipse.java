@@ -26,6 +26,7 @@ public class Eclipse extends AppCompatActivity {
     EditText ellipseAreaBET;
     TextView ellipseAreaAnswerTV;
     Button ellipseAreaCalcButton;
+    Button ellipseAreaClearButton;
 
 
     //Circumference
@@ -33,6 +34,7 @@ public class Eclipse extends AppCompatActivity {
     EditText ellipseCircumBET;
     TextView ellipseCircumAnswerTV;
     Button ellipseCircumCalcButton;
+    Button ellipseCircumClearButton;
 
 
     //Axis
@@ -40,6 +42,7 @@ public class Eclipse extends AppCompatActivity {
     EditText ellipseAXisBET;
     TextView ellipseAXisAnswerTV;
     Button ellipseAXisCalcButton;
+    Button ellipseAXisClearButton;
 
 
     //Bxis
@@ -47,6 +50,7 @@ public class Eclipse extends AppCompatActivity {
     EditText ellipseBXisBET;
     TextView ellipseBXisAnswerTV;
     Button ellipseBXisCalcButton;
+    Button ellipseBXisClearButton;
 
 
     @Override
@@ -56,9 +60,53 @@ public class Eclipse extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //   Area Clear button
+        ellipseAreaClearButton = (Button) findViewById(R.id.ellipse_area_clear_button);
+        ellipseAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseAreaAET.setText("");
+                ellipseAreaBET.setText("");
+                ellipseAreaAnswerTV.setText("");
+
+            }
+        });
+
+        //   Circum Clear button
+        ellipseCircumClearButton = (Button) findViewById(R.id.ellipse_circum_clear_button);
+        ellipseCircumClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseCircumAET.setText("");
+                ellipseCircumBET.setText("");
+                ellipseCircumAnswerTV.setText("");
+
+            }
+        });
+
+        //   A xis Clear button
+        ellipseAXisClearButton = (Button) findViewById(R.id.ellipse_a_xis_clear_button);
+        ellipseAXisClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseAXisAET.setText("");
+                ellipseAXisBET.setText("");
+                ellipseAXisAnswerTV.setText("");
+            }
+        });
+
+        //   B-xis Clear button
+        ellipseBXisClearButton = (Button) findViewById(R.id.ellipse_b_xis_clear_button);
+        ellipseBXisClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseBXisAET.setText("");
+                ellipseBXisBET.setText("");
+                ellipseBXisAnswerTV.setText("");
+            }
+        });
 
         //Area
-
         ellipseAreaAET = (EditText) findViewById(R.id.ellipse_area_a_et);
         ellipseAreaBET = (EditText) findViewById(R.id.ellipse_area_b_et);
         ellipseAreaAnswerTV = (TextView) findViewById(R.id.ellipse_area_calc_answer_tx);

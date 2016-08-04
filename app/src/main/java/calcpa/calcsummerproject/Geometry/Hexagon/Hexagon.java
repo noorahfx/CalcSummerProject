@@ -32,16 +32,19 @@ public class Hexagon extends AppCompatActivity {
     EditText hexPerimeterSideAET;
     TextView hexPerimeterAnswerTV;
     Button hexPerimeterCalcButton;
+    Button hexPerimeterClearButton;
 
     //area
     EditText hexAreaSideAET;
     TextView hexAreaAnswerTV;
     Button hexAreaCalcButton;
+    Button hexAreaClearButton;
 
     //side A
     EditText hexSideAET;
     TextView hexSideAAnswerTV;
     Button hexSideACalcButton;
+    Button hexSideAClearButton;
 
 
 
@@ -49,6 +52,39 @@ public class Hexagon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hexagon);
+
+        // Perimeter Clear button
+        hexPerimeterClearButton = (Button) findViewById(R.id.hex_perimeter_clear_button);
+        hexPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hexPerimeterSideAET.setText("");
+                hexPerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        hexAreaClearButton = (Button) findViewById(R.id.hex_area_clear_button);
+        hexAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hexAreaSideAET.setText("");
+                hexAreaAnswerTV.setText("");
+            }
+        });
+
+        // Side A Clear button
+        hexSideAClearButton = (Button) findViewById(R.id.hex_side_clear_button);
+        hexSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hexSideAET.setText("");
+                hexSideAAnswerTV.setText("");
+            }
+        });
+
+
+
         hexPerimeterSideAET =(EditText)findViewById(R.id.hex_perimeter_side_a_et);
         hexPerimeterAnswerTV =(TextView)findViewById(R.id.hex_perimeter_calc_answer_tx);
         hexPerimeterCalcButton=(Button)findViewById(R.id.hex_perimeter_calc_button);

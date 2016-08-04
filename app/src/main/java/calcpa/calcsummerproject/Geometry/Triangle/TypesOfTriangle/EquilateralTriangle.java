@@ -33,24 +33,60 @@ public class EquilateralTriangle extends AppCompatActivity {
     EditText sideAEditText;
     TextView answerEditText;
     Button calculateResultButton;
+    Button calculateClearButton;
 
 
-    //right triangle area
+    // area
     EditText areaSideAET;
     TextView areaAnswerTV;
     Button calculateAreaButton;
+    Button calculateAreaClearButton;
 
 
-    //right triangle side A calculatro
+    // side A calculator
     EditText sideAAreaET;
     TextView sideAAnswerTV;
     Button calculateSideAButton;
+    Button calculateSideClearButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equilateral_triangle);
+
+        // Perimeter Clear button
+        calculateClearButton = (Button) findViewById(R.id.equi_triangle_perimeter_clear_button);
+        calculateClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sideAEditText.setText("");
+                answerEditText.setText("");
+            }
+        });
+
+        // Area Clear button
+        calculateAreaClearButton = (Button) findViewById(R.id.equi_tri_area_clear_button);
+        calculateAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                areaSideAET.setText("");
+                areaAnswerTV.setText("");
+            }
+        });
+
+
+        // Side A Clear button
+        calculateSideClearButton = (Button) findViewById(R.id.equi_tri_hyp_clear_button);
+        calculateSideClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sideAAreaET.setText("");
+                sideAAnswerTV.setText("");
+            }
+        });
+
+
 
         /**    Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
          TextView myTextView = (TextView)findViewById(R.id.equilateral_triangle_title);

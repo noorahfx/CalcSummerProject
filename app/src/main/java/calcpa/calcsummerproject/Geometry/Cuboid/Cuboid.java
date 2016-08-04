@@ -25,6 +25,8 @@ public class Cuboid extends AppCompatActivity {
     EditText cuboidVolumeHET;
     TextView cuboidVolumeAnswerTV;
     Button cuboidVolumeCalcButton;
+    Button cuboidVolumeClearButton;
+
 
 
     //Area
@@ -34,6 +36,7 @@ public class Cuboid extends AppCompatActivity {
     EditText cuboidAreaHET;
     TextView cuboidAreaAnswerTV;
     Button cuboidAreaCalcButton;
+    Button CuboidAreaCalcButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,30 @@ public class Cuboid extends AppCompatActivity {
         setContentView(R.layout.activity_cuboid);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Volume Clear button
+        cuboidVolumeClearButton = (Button) findViewById(R.id.cuboid_volume_clear_button);
+        cuboidVolumeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cuboidVolumeLET.setText("");
+                cuboidVolumeWET.setText("");
+                cuboidVolumeHET.setText("");
+                cuboidVolumeAnswerTV.setText("");
+            }
+        });
+        // Area Clear button
+        CuboidAreaCalcButton = (Button) findViewById(R.id.cuboid_area_clear_button);
+        CuboidAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cuboidAreaLET.setText("");
+                cuboidAreaWET.setText("");
+                cuboidAreaHET.setText("");
+                cuboidAreaAnswerTV.setText("");
+            }
+        });
+
 
 
         //Volume

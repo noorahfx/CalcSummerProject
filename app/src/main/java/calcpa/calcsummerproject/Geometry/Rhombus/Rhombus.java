@@ -19,23 +19,27 @@ public class Rhombus extends AppCompatActivity {
     EditText rhombusPerimeterAET;
     TextView rhombusPerimeterAnswerTV;
     Button rhombusPerimeterCalcButton;
+    Button rhombusPerimeterClearButton;
 
     //Area
     EditText rhombusAreaPET;
     EditText rhombusAreaQET;
     TextView rhombusAreaAnswerTV;
     Button rhombusAreaCalcButton;
+    Button rhombusAreaClearButton;
 
     //Sides
     EditText rhombusSidesPET;
     TextView rhombusSidesAnswerTV;
     Button rhombusSidesCalcButton;
+    Button rhombusSidesClearButton;
 
     //Diagonal P
     EditText rhombusPDiaognalQET;
     EditText rhombusPDiaognalAreaET;
     TextView rhombusPDiaognalAnswerTV;
     Button rhombusPDiaognalCalcButton;
+    Button rhombusPDiaognalClearButton;
 
 
     //Diagonal Q
@@ -43,6 +47,7 @@ public class Rhombus extends AppCompatActivity {
     EditText rhombusQDiagonalAreaET;
     TextView rhombusQDiagonalAnswerTV;
     Button rhombusQDiagonalCalcButton;
+    Button rhombusQDiagonalClearButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +55,60 @@ public class Rhombus extends AppCompatActivity {
         setContentView(R.layout.activity_rhombus);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Perimeter Clear button
+        rhombusPerimeterClearButton = (Button) findViewById(R.id.rhombus_perimeter_clear_button);
+        rhombusPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusPerimeterAET.setText("");
+                rhombusPerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        rhombusAreaClearButton = (Button) findViewById(R.id.rhombus_area_clear_button);
+        rhombusAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusAreaPET.setText("");
+                rhombusAreaQET.setText("");
+                rhombusAreaAnswerTV.setText("");
+            }
+        });
+
+        // Sides Clear button
+        rhombusSidesClearButton = (Button) findViewById(R.id.rhombus_sides_clear_button);
+        rhombusSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusSidesPET.setText("");
+                rhombusSidesAnswerTV.setText("");
+            }
+        });
+
+        // P Diagonal Clear button
+        rhombusPDiaognalClearButton = (Button) findViewById(R.id.rhombus_p_diagonal_clear_button);
+        rhombusPDiaognalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusPDiaognalQET.setText("");
+                rhombusPDiaognalAreaET.setText("");
+                rhombusPDiaognalAnswerTV.setText("");
+            }
+        });
+
+
+        // Q Diagonal Clear button
+        rhombusQDiagonalClearButton = (Button) findViewById(R.id.rhombus_q_diagonal_clear_button);
+        rhombusQDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusQDiagonalPET.setText("");
+                rhombusQDiagonalAreaET.setText("");
+                rhombusQDiagonalAnswerTV.setText("");
+            }
+        });
 
         //Perimeter
         rhombusPerimeterAET = (EditText) findViewById(R.id.rhombus_perimeter_a_et);

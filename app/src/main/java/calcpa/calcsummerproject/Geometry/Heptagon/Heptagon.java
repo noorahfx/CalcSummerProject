@@ -21,22 +21,58 @@ public class Heptagon extends AppCompatActivity {
     EditText hepPerimeterSideAET;
     TextView hepPerimeterAnswerTV;
     Button hepPerimeterCalcButton;
+    Button hepPerimeterClearButton;
 
     //area
     EditText hepAreaSideAET;
     TextView hepAreaAnswerTV;
     Button hepAreaCalcButton;
+    Button hepAreaClearButton;
 
     //side A
     EditText hepSideAET;
     TextView hepSideAAnswerTV;
     Button hepSideACalcButton;
+    Button hepSideAClearButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heptagon);
+
+
+        // Perimeter Clear button
+        hepPerimeterClearButton = (Button) findViewById(R.id.hep_perimeter_clear_button);
+        hepPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hepPerimeterSideAET.setText("");
+                hepPerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        hepAreaClearButton = (Button) findViewById(R.id.hep_area_clear_button);
+        hepAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hepAreaSideAET.setText("");
+                hepAreaAnswerTV.setText("");
+            }
+        });
+
+        // Side A button
+        hepSideAClearButton = (Button) findViewById(R.id.hep_side_clear_button);
+        hepSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hepSideAET.setText("");
+                hepSideAAnswerTV.setText("");
+
+            }
+        });
+
 
         hepPerimeterSideAET = (EditText) findViewById(R.id.hep_perimeter_side_a_et);
         hepPerimeterAnswerTV = (TextView) findViewById(R.id.hep_perimeter_calc_answer_tx);

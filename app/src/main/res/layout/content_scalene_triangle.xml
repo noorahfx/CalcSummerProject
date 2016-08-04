@@ -317,7 +317,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/right_tri_perimeter_clear_button"
+                android:id="@+id/scalene_tri_perimeter_clear_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/scalene_tri_perimeter_ans_tv"
@@ -333,7 +333,7 @@
                 style="?android:listSeparatorTextViewStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/right_tri_perimeter_clear_button"
+                android:layout_below="@id/scalene_tri_perimeter_clear_button"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/White" />
 

@@ -20,42 +20,106 @@ public class RightTriangle extends AppCompatActivity {
     EditText sideBEditText;
     TextView answerEditText;
     Button calculateResultButton;
+    Button rightTriPerimClearButton;
 
 
-    //right triangle area
+    // area
     EditText areaSideAET;
     EditText areaSideBET;
     TextView areaAnswerTV;
     Button calculateAreaButton;
+    Button rightTriAreaClearButton;
 
-    //right triangle hypotenuse
+
+    // hypotenuse
     EditText hypSideAET;
     EditText hypSideBET;
     TextView hypAnswerTV;
     Button calculateHypButton;
+    Button rightTriHypClearButton;
 
-    //right triangle side A calculatro
+
+    //side A
     EditText sideAAreaET;
     EditText sideALegBET;
     TextView sideAAnswerTV;
     Button calculateSideAButton;
+    Button rightTriSideAClearButton;
 
-    //right triangle side B calculator
+
+    //side B
     EditText sideBAreaET;
     EditText sideBLegAET;
     TextView sideBAnswerTV;
     Button calculateSideBButton;
+    Button rightTriSideBClearButton;
 
-    public static boolean isNullOrEmpty(String input) {
-        return input == null || input.isEmpty();
-    }
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right_triangle);
-/**
+
+
+        // Perimeter Clear button
+        rightTriPerimClearButton = (Button) findViewById(R.id.right_tri_perimeter_clear_button);
+        rightTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sideAEditText.setText("");
+                sideBEditText.setText("");
+                answerEditText.setText("");
+            }
+        });
+
+        // Area Clear button
+        rightTriAreaClearButton = (Button) findViewById(R.id.right_triangle_area_clear_button);
+        rightTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                areaSideAET.setText("");
+                areaSideBET.setText("");
+                areaAnswerTV.setText("");
+            }
+        });
+
+        // Hypotenuse Clear button
+        rightTriHypClearButton = (Button) findViewById(R.id.right_triangle_hyp_clear_button);
+        rightTriHypClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hypSideAET.setText("");
+                hypSideBET.setText("");
+                hypAnswerTV.setText("");
+            }
+        });
+
+        // Side A Clear button
+        rightTriSideAClearButton = (Button) findViewById(R.id.right_triangle_sideA_clear_button);
+        rightTriSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sideAAreaET.setText("");
+                sideALegBET.setText("");
+                sideAAnswerTV.setText("");
+            }
+        });
+
+
+        // Side B Clear button
+        rightTriSideBClearButton = (Button) findViewById(R.id.right_triangle_sideB_clear_button);
+        rightTriSideBClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sideBAreaET.setText("");
+                sideBLegAET.setText("");
+                sideBAnswerTV.setText("");
+            }
+        });
+
+
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "Take cover.ttf");
         TextView myTextView = (TextView) findViewById(R.id.perimeter_text);
         assert myTextView != null;
@@ -206,7 +270,7 @@ public class RightTriangle extends AppCompatActivity {
                     }
                 }
             }
-        });  */
+        });
     }
 
     @Override

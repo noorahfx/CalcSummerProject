@@ -18,21 +18,27 @@ public class Square extends AppCompatActivity {
     EditText squarePerimeterET;
     TextView squarePerimeterAnswerTV;
     Button squarePerimeterCalculateButton;
+    Button squarePerimClearButton;
 
     //Area
     EditText squareAreaET;
     TextView squareAreaTV;
     Button squareAreaCalculateButton;
+    Button squareAreaClearButton;
 
     //Sides
     EditText squareSideET;
     TextView squareSideTV;
     Button squareSideCalculateButton;
+    Button squareSidesClearButton;
+
 
     //Diagonal
     EditText squareDiagonalET;
     TextView squareDiagonalTV;
     Button squareDiagonalCalculateButton;
+    Button squareDiagonalClearButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +46,46 @@ public class Square extends AppCompatActivity {
         setContentView(R.layout.activity_square);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Perimeter Clear button
+        squarePerimClearButton = (Button) findViewById(R.id.square_perimeter_clear_button);
+        squarePerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squarePerimeterET.setText("");
+                squarePerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        squareAreaClearButton = (Button) findViewById(R.id.square_area_clear_button);
+        squareAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squareAreaET.setText("");
+                squareAreaTV.setText("");
+            }
+        });
+
+        // Sides Clear button
+        squareSidesClearButton = (Button) findViewById(R.id.square_side_clear_button);
+        squareSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squareSideET.setText("");
+                squareSideTV.setText("");
+            }
+        });
+
+        // Diagonal Clear button
+        squareDiagonalClearButton = (Button) findViewById(R.id.square_diagonal_clear_button);
+        squareDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squareDiagonalET.setText("");
+                squareDiagonalTV.setText("");
+            }
+        });
 
         //Perimeter
         squarePerimeterET = (EditText) findViewById(R.id.square_perimeter_a_et);

@@ -25,6 +25,7 @@ public class Trapezoid extends AppCompatActivity {
     EditText trapezoidPerimeterDET;
     TextView trapezoidPerimeterAnswerTV;
     Button trapezoidPerimeterCalcButton;
+    Button trapezoidPerimClearButton;
 
 
     //Area
@@ -33,6 +34,8 @@ public class Trapezoid extends AppCompatActivity {
     EditText trapezoidAreahET;
     TextView trapezoidAreaAnswerTV;
     Button trapezoidAreaCalcButton;
+    Button trapezoidAreaClearButton;
+
 
     //Height
     EditText trapezoidHeightAET;
@@ -40,6 +43,8 @@ public class Trapezoid extends AppCompatActivity {
     EditText trapezoidHeightAreaET;
     TextView trapezoidHeightAnswerTV;
     Button trapezoidHeightCalcButton;
+    Button trapezoidHeightClearButton;
+
 
     //Base A
     EditText trapezoidABaseBET;
@@ -48,6 +53,7 @@ public class Trapezoid extends AppCompatActivity {
     EditText trapezoidABasePerimeterET;
     TextView trapezoidABaseAnswerTV;
     Button trapezoidABaseCalcButton;
+    Button trapezoidBaseAClearButton;
 
 
     //Base B
@@ -57,6 +63,7 @@ public class Trapezoid extends AppCompatActivity {
     EditText trapezoidBBasePerimeterET;
     TextView trapezoidBBaseAnswerTV;
     Button trapezoidBBaseCalcButton;
+    Button trapezoidBaseBClearButton;
 
 
     //Side C
@@ -66,6 +73,8 @@ public class Trapezoid extends AppCompatActivity {
     EditText trapezoidCSidePET;
     TextView trapezoidCSideAnswerTV;
     Button trapezoidCSideCalcButton;
+    Button trapezoidSideCClearButton;
+
 
     //Side D
     EditText trapezoidDSideAET;
@@ -74,6 +83,7 @@ public class Trapezoid extends AppCompatActivity {
     EditText trapezoidDSidePET;
     TextView trapezoidDSideAnswerTV;
     Button trapezoidDSideCalcButton;
+    Button trapezoidSideDClearButton;
 
 
     @Override
@@ -83,6 +93,94 @@ public class Trapezoid extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Perimeter Clear button
+        trapezoidPerimClearButton = (Button) findViewById(R.id.trapezoid_perimeter_clear_button);
+        trapezoidPerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trapezoidPerimeterAET.setText("");
+                trapezoidPerimeterBET.setText("");
+                trapezoidPerimeterCET.setText("");
+                trapezoidPerimeterDET.setText("");
+                trapezoidPerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        trapezoidAreaClearButton = (Button) findViewById(R.id.trapezoid_area_clear_button);
+        trapezoidAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trapezoidAreaAET.setText("");
+                trapezoidAreaBET.setText("");
+                trapezoidAreahET.setText("");
+                trapezoidAreaAnswerTV.setText("");
+            }
+        });
+
+        // Height Clear button
+        trapezoidHeightClearButton = (Button) findViewById(R.id.trapezoid_height_clear_button);
+        trapezoidHeightClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trapezoidHeightAET.setText("");
+                trapezoidHeightBET.setText("");
+                trapezoidHeightAreaET.setText("");
+                trapezoidHeightAnswerTV.setText("");
+            }
+        });
+
+        // Base A Clear button
+        trapezoidBaseAClearButton = (Button) findViewById(R.id.trapezoid_baseA_clear_button);
+        trapezoidBaseAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trapezoidABaseBET.setText("");
+                trapezoidABaseCET.setText("");
+                trapezoidABaseDET.setText("");
+                trapezoidABasePerimeterET.setText("");
+                trapezoidABaseAnswerTV.setText("");
+            }
+        });
+
+        // Base B Clear button
+        trapezoidBaseBClearButton = (Button) findViewById(R.id.trapezoid_baseB_clear_button);
+        trapezoidBaseBClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trapezoidBBaseAET.setText("");
+                trapezoidBBaseCET.setText("");
+                trapezoidBBaseDET.setText("");
+                trapezoidBBasePerimeterET.setText("");
+                trapezoidBBaseAnswerTV.setText("");
+            }
+        });
+
+        // Side C Clear button
+        trapezoidSideCClearButton = (Button) findViewById(R.id.trapezoid_sideC_clear_button);
+        trapezoidSideCClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trapezoidCSideAET.setText("");
+                trapezoidCSideBET.setText("");
+                trapezoidCSideDET.setText("");
+                trapezoidCSidePET.setText("");
+                trapezoidCSideAnswerTV.setText("");
+            }
+        });
+
+        // Side D Clear button
+        trapezoidSideDClearButton = (Button) findViewById(R.id.trapezoid_sideD_clear_button);
+        trapezoidSideDClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                trapezoidDSideAET.setText("");
+                trapezoidDSideBET.setText("");
+                trapezoidDSideCET.setText("");
+                trapezoidDSidePET.setText("");
+                trapezoidDSideAnswerTV.setText("");
+            }
+        });
 
         //Perimeter
         trapezoidPerimeterAET = (EditText) findViewById(R.id.trapezoid_perimeter_a_et);

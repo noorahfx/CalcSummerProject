@@ -22,12 +22,15 @@ public class Cube extends AppCompatActivity {
     EditText cubeVolumeET;
     TextView cubeVolumeTV;
     Button cubeVolumeCalcButton;
+    Button cubeVolumeClearButton;
 
 
     //Edge
     EditText cubeEdgeET;
     TextView cubeEdgeTV;
     Button cubeEdgeCalcButton;
+    Button cubeEdgeClearButton;
+
 
 
     //Special Diagonal
@@ -35,11 +38,15 @@ public class Cube extends AppCompatActivity {
     EditText cubeSpecialDiagonalET;
     TextView cubeSpecialDiagonalTV;
     Button cubeSpecialDiagonalCalcButton;
+    Button cubeSpecialDiagonalClearButton;
+
 
     //Surface Area
     EditText cubeSurfaceAreaET;
     TextView cubeSurfaceAreaTV;
     Button cubeSurfaceAreaCalcButton;
+    Button cubeSurfaceAreaClearButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +54,50 @@ public class Cube extends AppCompatActivity {
         setContentView(R.layout.activity_cube);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        // Volume Clear button
+        cubeVolumeClearButton = (Button) findViewById(R.id.cube_volume_clear_button);
+        cubeVolumeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeVolumeET.setText("");
+                cubeVolumeTV.setText("");
+            }
+        });
+
+        // Edge Clear button
+        cubeEdgeClearButton = (Button) findViewById(R.id.cube_edge_clear_button);
+        cubeEdgeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeEdgeET.setText("");
+                cubeEdgeTV.setText("");
+            }
+        });
+
+
+        // Special Diagonal Clear button
+        cubeSpecialDiagonalClearButton = (Button)
+                findViewById(R.id.cube_special_diagonal_clear_button);
+        cubeSpecialDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeSpecialDiagonalET.setText("");
+                cubeSpecialDiagonalTV.setText("");
+            }
+        });
+
+
+        // Surface Area button
+        cubeSurfaceAreaClearButton = (Button) findViewById(R.id.cube_surface_area_clear_button);
+        cubeSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeSurfaceAreaET.setText("");
+                cubeSurfaceAreaTV.setText("");
+            }
+        });
+
 
         //Volume
         cubeVolumeET = (EditText) findViewById(R.id.cube_volume_a_et);

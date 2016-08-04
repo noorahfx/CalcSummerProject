@@ -23,6 +23,7 @@ public class AcuteTriangle extends AppCompatActivity {
     EditText acuteTriPerimeterSideCET;
     TextView acuteTriPerimeterAnsTV;
     Button acuteTriPerimeterCalcButton;
+    Button acuteTriPerimClearButton;
 
 
     //acute triangle area
@@ -30,12 +31,16 @@ public class AcuteTriangle extends AppCompatActivity {
     EditText acuteTriAreaHeightET;
     TextView acuteTriAreaAnsTV;
     Button acuteTriAreaCalcButton;
+    Button acuteTriAreaClearButton;
+
 
     //acute triangle hypotenuse
     EditText acuteTriHypSideAET;
     EditText acuteTriHypBaseET;
     TextView acuteTriHypAnsTV;
     Button acuteTriHypCalcButton;
+    Button acuteTriHypClearButton;
+
 
     //acute triangle side A calculatro
     EditText acuteTriSideABaseET;
@@ -43,6 +48,8 @@ public class AcuteTriangle extends AppCompatActivity {
     EditText acuteTriSideAPerimeterET;
     TextView acuteTriSideAAnsTV;
     Button acuteTriSideACalcButton;
+    Button acuteTriSideAClearButton;
+
 
 
     //acute triangle side B calculator
@@ -51,11 +58,78 @@ public class AcuteTriangle extends AppCompatActivity {
     EditText acuteTriBasePerimeterET;
     TextView acuteTriBaseAnsTV;
     Button acuteTriBaseCalcButton;
+    Button acuteTriBasesClearButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acute_triangle);
+
+        // Perimeter Clear button
+        acuteTriPerimClearButton = (Button) findViewById(R.id.acute_tri_perimeter_clear_button);
+        acuteTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                acuteTriPerimeterSideAET.setText("");
+                acuteTriPerimeterBaseET.setText("");
+                acuteTriPerimeterSideCET.setText("");
+                acuteTriPerimeterAnsTV.setText("");
+
+            }
+        });
+
+        // Area Clear button
+        acuteTriAreaClearButton = (Button) findViewById(R.id.acute_tri_area_clear_button);
+        acuteTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                acuteTriAreaBaseET.setText("");
+                acuteTriAreaHeightET.setText("");
+                acuteTriAreaAnsTV.setText("");
+            }
+        });
+
+
+        // Hyp Clear button
+        acuteTriHypClearButton = (Button) findViewById(R.id.acute_tri_hyp_clear_button);
+        acuteTriHypClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                acuteTriHypSideAET.setText("");
+                acuteTriHypBaseET.setText("");
+                acuteTriHypAnsTV.setText("");
+            }
+        });
+
+
+        // Side A Clear button
+        acuteTriSideAClearButton = (Button) findViewById(R.id.acute_tri_sideA_clear_button);
+        acuteTriSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                acuteTriSideABaseET.setText("");
+                acuteTriSideASideCET.setText("");
+                acuteTriSideAPerimeterET.setText("");
+                acuteTriSideAAnsTV.setText("");
+            }
+        });
+
+
+
+        // Side B Clear button
+        acuteTriBasesClearButton = (Button) findViewById(R.id.acute_tri_base_clear_button);
+        acuteTriBasesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                acuteTriBaseSideAET.setText("");
+                acuteTriBaseSideCET.setText("");
+                acuteTriBasePerimeterET.setText("");
+                acuteTriBaseAnsTV.setText("");
+            }
+        });
+
+
 /**
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "Take cover.ttf");
         TextView myTextView = (TextView) findViewById(R.id.perimeter_text);

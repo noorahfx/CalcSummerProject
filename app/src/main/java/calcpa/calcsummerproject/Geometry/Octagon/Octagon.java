@@ -20,22 +20,59 @@ public class Octagon extends AppCompatActivity {
     EditText octPerimeterSideAET;
     TextView octPerimeterAnswerTV;
     Button octPerimeterCalcButton;
+    Button octPerimeterClearButton;
 
     //area
     EditText octAreaSideAET;
     TextView octAreaAnswerTV;
     Button octAreaCalcButton;
+    Button octAreaClearButton;
 
     //side A
     EditText octSideAET;
     TextView octSideAAnswerTV;
     Button octSideACalcButton;
+    Button octSideAClearButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_octagon);
+
+
+
+
+        // Perimeter Clear button
+        octPerimeterClearButton = (Button) findViewById(R.id.oct_perimeter_clear_button);
+        octPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                octPerimeterSideAET.setText("");
+                octPerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        octAreaClearButton = (Button) findViewById(R.id.oct_area_clear_button);
+        octAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                octAreaSideAET.setText("");
+                octAreaAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        octSideAClearButton = (Button) findViewById(R.id.oct_side_clear_button);
+        octSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                octSideAET.setText("");
+                octSideAAnswerTV.setText("");
+            }
+        });
+
         octPerimeterSideAET = (EditText) findViewById(R.id.oct_perimeter_side_a_et);
         octPerimeterAnswerTV = (TextView) findViewById(R.id.oct_perimeter_calc_answer_tx);
         octPerimeterCalcButton = (Button) findViewById(R.id.oct_perimeter_calc_button);

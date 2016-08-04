@@ -19,24 +19,28 @@ public class Kite extends AppCompatActivity {
     EditText kitePerimeterBET;
     TextView kitePerimeterAnswerTV;
     Button kitePerimeterCalcButton;
+    Button kitePerimeterClearButton;
 
     //Area
     EditText kiteAreaPET;
     EditText kiteAreaQET;
     TextView kiteAreaAnswerTV;
     Button kiteAreaCalcButton;
+    Button kiteAreaClearButton;
 
     //Side A
     EditText kiteASideBET;
     EditText kiteASidePerimterET;
     TextView kiteASideAnswerTV;
     Button kiteASideCalcButton;
+    Button kiteASideClearButton;
 
     //Side B
     EditText kiteBSideAET;
     EditText kiteBSidePerimeterET;
     TextView kiteBSideAnswerTV;
     Button kiteBSideCalcButton;
+    Button kiteBSideClearButton;
 
 
     //Diagonal P
@@ -44,6 +48,7 @@ public class Kite extends AppCompatActivity {
     EditText kitePDiagonalQET;
     TextView kitePDiagonalAnswerTV;
     Button kitePDiagonalCalcButton;
+    Button kitePDiagonalClearButton;
 
 
     //Diagonal Q
@@ -51,6 +56,7 @@ public class Kite extends AppCompatActivity {
     EditText kiteQDiagonalPET;
     TextView kiteQDiagonalAnswerTV;
     Button kiteQDiagonalCalcButton;
+    Button kiteQDiagonalClearButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,73 @@ public class Kite extends AppCompatActivity {
         setContentView(R.layout.activity_kite);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        // Perimeter Clear button
+        kitePerimeterClearButton = (Button) findViewById(R.id.kite_perimeter_clear_button);
+        kitePerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kitePerimeterAET.setText("");
+                kitePerimeterBET.setText("");
+                kitePerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        kiteAreaClearButton = (Button) findViewById(R.id.kite_area_clear_button);
+        kiteAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kiteAreaPET.setText("");
+                kiteAreaQET.setText("");
+                kiteAreaAnswerTV.setText("");
+            }
+        });
+
+        // Side A Clear button
+        kiteASideClearButton = (Button) findViewById(R.id.kite_side_a_clear_button);
+        kiteASideClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kiteASideBET.setText("");
+                kiteASidePerimterET.setText("");
+                kiteASideAnswerTV.setText("");
+            }
+        });
+
+        // Side B Clear button
+        kiteBSideClearButton = (Button) findViewById(R.id.kite_side_b_clear_button);
+        kiteBSideClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kiteBSideAET.setText("");
+                kiteBSidePerimeterET.setText("");
+                kiteBSideAnswerTV.setText("");
+            }
+        });
+
+        // Diagonal P Clear button
+        kitePDiagonalClearButton = (Button) findViewById(R.id.kite_p_diaognal_clear_button);
+        kitePDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kitePDiagonalAreaET.setText("");
+                kitePDiagonalQET.setText("");
+                kitePDiagonalAnswerTV.setText("");
+            }
+        });
+
+        // Diagonal Q Clear button
+        kiteQDiagonalClearButton = (Button) findViewById(R.id.kite_q_diaognal_clear_button);
+        kiteQDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kiteQDiagonalAreaET.setText("");
+                kiteQDiagonalPET.setText("");
+                kiteQDiagonalAnswerTV.setText("");
+            }
+        });
 
         //Perimeter
         kitePerimeterAET = (EditText) findViewById(R.id.kite_perimeter_side_a_et);

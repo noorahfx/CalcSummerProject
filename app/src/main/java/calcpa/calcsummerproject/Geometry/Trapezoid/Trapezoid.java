@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Trapezoid;
+package calcpa.calcsummerproject.Geometry.Trapezoid;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

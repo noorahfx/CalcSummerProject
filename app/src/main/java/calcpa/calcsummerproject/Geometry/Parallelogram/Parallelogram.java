@@ -1,4 +1,4 @@
-package calcpa.calcsummerproject.Geometry.Quadrilateral.TypesOfQuadrilateral.Parallelogram;
+package calcpa.calcsummerproject.Geometry.Parallelogram;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

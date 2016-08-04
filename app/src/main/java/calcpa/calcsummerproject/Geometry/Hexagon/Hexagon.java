@@ -1,72 +1,152 @@
 package calcpa.calcsummerproject.Geometry.Hexagon;
 
-import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutCompat;
-import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
-import calcpa.calcsummerproject.Geometry.CustomList;
-import calcpa.calcsummerproject.Geometry.Geometry;
-import calcpa.calcsummerproject.Geometry.Hexagon.TypesOfHexagon.ConcaveHexagon;
-import calcpa.calcsummerproject.Geometry.Hexagon.TypesOfHexagon.ConvexHexagon;
-import calcpa.calcsummerproject.Geometry.Hexagon.TypesOfHexagon.IrregularHexagon;
-import calcpa.calcsummerproject.Geometry.Hexagon.TypesOfHexagon.RegularHexagon;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ExpandableListView;
+import android.widget.ExpandableListView.OnChildClickListener;
+import android.widget.ExpandableListView.OnGroupClickListener;
+import android.widget.ExpandableListView.OnGroupCollapseListener;
+import android.widget.ExpandableListView.OnGroupExpandListener;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
+
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
-public class Hexagon extends AppCompatActivity {
-    ListView list;
-    String [] hexagonTypeText = {
-            "Regular Hexagon",
-            "Irregular Hexagon",
-            "Concave Hexagon",
-            "Convex Hexagon" };
 
-    int [] imageID =  {
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3,
-            R.drawable.image4 };
+public class Hexagon extends AppCompatActivity {
+
+    //perimeter
+    EditText hexPerimeterSideAET;
+    TextView hexPerimeterAnswerTV;
+    Button hexPerimeterCalcButton;
+
+    //area
+    EditText hexAreaSideAET;
+    TextView hexAreaAnswerTV;
+    Button hexAreaCalcButton;
+
+    //side A
+    EditText hexSideAET;
+    TextView hexSideAAnswerTV;
+    Button hexSideACalcButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hexagon);
-
-        CustomList adapter = new CustomList(Hexagon.this, hexagonTypeText, imageID);
-        list = (ListView) findViewById(R.id.hex_list);
-        assert list != null;
-        list.setAdapter(adapter);
-
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        hexPerimeterSideAET =(EditText)findViewById(R.id.hex_perimeter_side_a_et);
+        hexPerimeterAnswerTV =(TextView)findViewById(R.id.hex_perimeter_calc_answer_tx);
+        hexPerimeterCalcButton=(Button)findViewById(R.id.hex_perimeter_calc_button);
+        hexPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?>parent, View view,
-                                    int position, long id) {
-                //open new activity when clicked
-                switch(position) {
-                    case 0:
-                        Intent intent = new Intent(Hexagon.this, RegularHexagon.class);
-                        startActivity(intent);
-                        break;
-                    case 1:
-                        intent = new Intent(Hexagon.this, IrregularHexagon.class);
-                        startActivity(intent);
-                        break;
-                    case 2:
-                        intent = new Intent(Hexagon.this, ConcaveHexagon.class);
-                        startActivity(intent);
-                        break;
-                    case 3:
-                        intent = new Intent(Hexagon.this, ConvexHexagon.class);
-                        startActivity(intent);
-                        break;
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hexPerimeterSideAET)) {
+                    hexPerimeterSideAET.setError("Enter Value");
+                } else {
+                    double aSide, hexASide;
+                    aSide = Double.parseDouble(hexPerimeterSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hexPerimeterAnswerTV.setText("The variable a should be positive");
+                    }
+                    hexASide = 6*aSide;
+                    hexPerimeterAnswerTV.setText(String.format("%.02f", hexASide));
                 }
+
             }
         });
+
+        hexAreaSideAET =(EditText)findViewById(R.id.hex_area_side_a_et);
+        hexAreaAnswerTV =(TextView)findViewById(R.id.hex_area_calc_answer_tx);
+        hexAreaCalcButton=(Button)findViewById(R.id.hex_area_calc_button);
+        hexAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hexAreaSideAET)) {
+                    hexAreaSideAET.setError("Enter Value");
+                } else {
+                    double aSide, hexArea;
+                    aSide = Double.parseDouble(hexAreaSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hexAreaAnswerTV.setText("The variable a should be positive");
+                    }
+                    hexArea = ((3*Math.sqrt(3))/2)*(Math.pow(aSide,2));
+                    hexAreaAnswerTV.setText(String.format("%.02f", hexArea));
+                }
+
+
+            }
+        });
+
+
+        hexSideAET =(EditText)findViewById(R.id.hex_side_et);
+        hexSideAAnswerTV =(TextView)findViewById(R.id.hex_side_calc_answer_tx);
+        hexSideACalcButton=(Button)findViewById(R.id.hex_side_calc_button);
+        hexSideACalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hexSideAET)) {
+                    hexSideAET.setError("Enter Value");
+                } else {
+                    double aSide, hexASide;
+                    aSide = Double.parseDouble(hexSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hexSideAAnswerTV.setText("The variable a should be positive");
+                    }
+                    hexASide = aSide/6;
+                    hexSideAAnswerTV.setText(String.format("%.02f", hexASide));
+                }
+
+
+            }
+        });
+
+
+
+
+
+
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+
+        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+
+        }
+
+    }
+
 }
+

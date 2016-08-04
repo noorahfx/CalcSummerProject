@@ -1,62 +1,129 @@
 package calcpa.calcsummerproject.Geometry.Heptagon;
 
-import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.AdapterView;
-import android.widget.ListView;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
-import calcpa.calcsummerproject.Geometry.CustomList;
-import calcpa.calcsummerproject.Geometry.Heptagon.TypesOfHeptagon.IrregularHeptagon;
-import calcpa.calcsummerproject.Geometry.Heptagon.TypesOfHeptagon.RegularHeptagon;
-import calcpa.calcsummerproject.Geometry.Hexagon.TypesOfHexagon.IrregularHexagon;
-import calcpa.calcsummerproject.Geometry.Octagon.TypesOfOctagon.IrregularOctagon;
+import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Heptagon extends AppCompatActivity {
-    ListView list;
-    String[] heptagonTextList  ={
-            "Regular Heptagon",
-            "Irregular Heptagon"
-    };
-    int [] imageID = {
-            R.drawable.image1,
-            R.drawable.image2
-    };
+    //perimeter
+    EditText hepPerimeterSideAET;
+    TextView hepPerimeterAnswerTV;
+    Button hepPerimeterCalcButton;
+
+    //area
+    EditText hepAreaSideAET;
+    TextView hepAreaAnswerTV;
+    Button hepAreaCalcButton;
+
+    //side A
+    EditText hepSideAET;
+    TextView hepSideAAnswerTV;
+    Button hepSideACalcButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heptagon);
 
-        CustomList adapter = new CustomList(Heptagon.this, heptagonTextList, imageID);
-        list= (ListView)findViewById(R.id.heptagon_list);
-        list.setAdapter(adapter);
-
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        hepPerimeterSideAET = (EditText) findViewById(R.id.hep_perimeter_side_a_et);
+        hepPerimeterAnswerTV = (TextView) findViewById(R.id.hep_perimeter_calc_answer_tx);
+        hepPerimeterCalcButton = (Button) findViewById(R.id.hep_perimeter_calc_button);
+        hepPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id){
-                //open new activity when clicked
-                switch (position){
-                    case 0:
-                        Intent intent = new Intent(Heptagon.this, RegularHeptagon.class);
-                        startActivity(intent);
-                        break;
-                    case 1:
-                        intent = new Intent(Heptagon.this, IrregularHeptagon.class);
-                        startActivity(intent);
-                        break;
-                    
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hepPerimeterSideAET)) {
+                    hepPerimeterSideAET.setError("Enter Value");
+                } else {
+                    double aSide, heptagonPerimeter;
+                    aSide = Double.parseDouble(hepPerimeterSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hepPerimeterAnswerTV.setText("The variable a should be positive");
+                    }
+                    heptagonPerimeter = 7 * aSide;
+                    hepPerimeterAnswerTV.setText(String.format("%.02f", heptagonPerimeter));
+                }
+            }
+        });
+//Area
+        hepAreaSideAET = (EditText) findViewById(R.id.hep_area_side_a_et);
+        hepAreaAnswerTV = (TextView) findViewById(R.id.hep_area_calc_answer_tx);
+        hepAreaCalcButton = (Button) findViewById(R.id.hep_area_calc_button);
+        hepAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hepAreaSideAET)) {
+                    hepAreaSideAET.setError("Enter Value");
+
+                } else {
+                    double aSide, heptagonArea;
+                    aSide = Double.parseDouble(hepAreaSideAET.getText().toString());
+                    if (aSide <= 0) {
+                        hepAreaAnswerTV.setText("The variable a should be positive");
+                    }
+                    heptagonArea = (1.75) * Math.pow(aSide, 2) * (1 / Math.tan(Math.toRadians(180) / 7));
+                    hepAreaAnswerTV.setText(String.format("%.02f", heptagonArea));
                 }
             }
         });
 
+        hepSideAET = (EditText) findViewById(R.id.hep_side_et);
+        hepSideAAnswerTV = (TextView) findViewById(R.id.hep_side_calc_answer_tx);
+        hepSideACalcButton = (Button) findViewById(R.id.hep_side_calc_button);
+        hepSideACalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //check to make sure field is not empty
+                if (Model.isEmpty(hepSideAET)) {
+                    hepSideAET.setError("Enter Value");
+
+                } else {
+                    double perimeter, hepSideA;
+                    perimeter = Double.parseDouble(hepSideAET.getText().toString());
+                    if (perimeter <= 0) {
+                        hepSideAAnswerTV.setText("The variable p should be positive");
+                    }
+                    hepSideA = perimeter / 7;
+                    hepSideAAnswerTV.setText(String.format("%.02f", hepSideA));
+                }
+            }
+        });
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+
+        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+
+        }
+
+    }
 }

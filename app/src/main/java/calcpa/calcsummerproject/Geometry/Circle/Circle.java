@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Circle;
 
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -16,11 +17,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
+import io.github.kexanie.library.MathView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Circle extends AppCompatActivity {
+
+    MathView circleAreaFormula;
+String areaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView circleDiameterFormula;
+    String diameterFormula ="$$d =2r$$";
+
+    MathView circleCircumFormula;
+    String circumFormula ="$$C =2\\pi r$$";
+
+    MathView circleRadiusFormula;
+    String radiusFormula="$$r =\\sqrt{\\frac{A}{\\pi}}$$";
+
+
 
     //area
     EditText circleAreaET;
@@ -56,6 +72,26 @@ public class Circle extends AppCompatActivity {
         setContentView(R.layout.activity_circle);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+        circleAreaFormula =(MathView)findViewById(R.id.areaFormula);
+        assert circleAreaFormula != null;
+        circleAreaFormula.setText(areaFormula);
+
+        circleDiameterFormula =(MathView)findViewById(R.id.circle_diameter_formula);
+        assert circleDiameterFormula != null;
+        circleDiameterFormula.setText(diameterFormula);
+
+
+        circleCircumFormula =(MathView)findViewById(R.id.circle_circum_formula);
+        assert circleCircumFormula != null;
+        circleCircumFormula.setText(circumFormula);
+
+
+        circleRadiusFormula =(MathView)findViewById(R.id.circle_radius_formula);
+        assert circleRadiusFormula != null;
+        circleRadiusFormula.setText(radiusFormula);
 
 
         // Area Clear button
@@ -113,7 +149,7 @@ public class Circle extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(circleAreaET)) {
-                    circleAreaET.setError("Enter Radius");
+                    circleAreaET.setError("Enter Value");
                 } else {
                     double radius;
                     radius = Double.parseDouble(circleAreaET.getText().toString());
@@ -121,7 +157,7 @@ public class Circle extends AppCompatActivity {
                         circleAnswerTV.setText("The variable r should be positive");
                     }
                     double answer = Math.PI * (radius * radius);
-                    circleAnswerTV.setText(String.format("%.02f", answer));
+                     circleAnswerTV.setText(String.format("%.02f",answer));
                 }
             }
         });
@@ -136,7 +172,7 @@ public class Circle extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(circleDiameterET)) {
-                    circleDiameterET.setError("Enter Radius");
+                    circleDiameterET.setError("Enter Value");
                 } else {
                     double radius;
                     radius = Double.parseDouble(circleDiameterET.getText().toString());
@@ -158,7 +194,7 @@ public class Circle extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(circleCircumET)) {
-                    circleCircumET.setError("Enter Radius");
+                    circleCircumET.setError("Enter Value");
                 } else {
                     double radius;
                     radius = Double.parseDouble(circleCircumET.getText().toString());
@@ -183,7 +219,7 @@ public class Circle extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(circleRadiusAreaET)) {
-                    circleRadiusAreaET.setError("Enter Radius");
+                    circleRadiusAreaET.setError("Enter Value");
                 } else {
                     double area;
                     area = Double.parseDouble(circleRadiusAreaET.getText().toString());
@@ -197,11 +233,13 @@ public class Circle extends AppCompatActivity {
             }
         });
 
+//        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "DOMISC__.TTF");
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "DOMISC__.TTF");
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.circle_area_text);
         myTextView.setTypeface(myTypeFace);
+
 
 
         myTextView = (TextView) findViewById(R.id.circle_diameter_text);
@@ -232,7 +270,9 @@ public class Circle extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        circleAreaET.setTypeface(myTypeFace);
+
+
+         circleAreaET.setTypeface(myTypeFace);
         circleAnswerTV.setTypeface(myTypeFace);
         circleAreaCalculateButton.setTypeface(myTypeFace);
         circleDiameterET.setTypeface(myTypeFace);

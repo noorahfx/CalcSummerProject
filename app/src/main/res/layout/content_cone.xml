@@ -27,7 +27,8 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Volume"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:textColor="@color/Black"/>
 
         <ImageView
             android:id="@+id/cone_volume_img"

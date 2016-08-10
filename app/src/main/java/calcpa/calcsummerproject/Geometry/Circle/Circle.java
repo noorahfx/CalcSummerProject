@@ -8,6 +8,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
@@ -149,8 +150,8 @@ String areaFormula ="$$A=\\pi r^{2}$$";
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(circleAreaET)) {
-                    circleAreaET.setError("Enter Value");
-                } else {
+                    circleAreaET.setError(Html.fromHtml("<font color='red'>Enter value</font>"));
+                 } else {
                     double radius;
                     radius = Double.parseDouble(circleAreaET.getText().toString());
                     if (radius <= 0) {
@@ -158,7 +159,7 @@ String areaFormula ="$$A=\\pi r^{2}$$";
                     }
                     double answer = Math.PI * (radius * radius);
                      circleAnswerTV.setText(String.format("%.02f",answer));
-                }
+              }
             }
         });
 

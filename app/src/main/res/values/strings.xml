@@ -66,17 +66,11 @@
     <string name="title_activity_regular_polygon">RegularPolygon</string>
 
 
-
-
-
-
-
-
+    <string name="area_text">Area</string>
 
 
     <string name="superscript"><html><i>a</i><sup>2</sup>+<i>y</i><sup>2</sup></html></string>
     <string name="subscript"><html>f(x)<sub>1+x</sub></html></string>
-
 
 
 </resources>

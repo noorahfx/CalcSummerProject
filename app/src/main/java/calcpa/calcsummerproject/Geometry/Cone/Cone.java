@@ -11,10 +11,36 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import io.github.kexanie.library.MathView;
+
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Cone extends AppCompatActivity {
+    MathView coneVolumeFormula;
+    String volumeFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView coneRadiusFormula;
+    String radiusFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView coneHeightFormula;
+    String heightFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView coneSlantHeightFormula;
+    String slantHeightFormula ="$$A=\\pi r^{2}$$";
+
+    MathView coneSurfaceAreaFormula;
+    String surfaceAreaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView coneBaseAreaFormula;
+    String baseAreaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView coneLateralAreaFormula;
+    String lateralAreaFormula ="$$A=\\pi r^{2}$$";
+
 
     //Volume
     EditText coneVolumeRET;
@@ -75,6 +101,46 @@ public class Cone extends AppCompatActivity {
         setContentView(R.layout.activity_cone);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        coneVolumeFormula =(MathView)findViewById(R.id.cone_volume_formula);
+        assert coneVolumeFormula != null;
+        coneVolumeFormula.setText(volumeFormula);
+
+        coneRadiusFormula =(MathView)findViewById(R.id.cone_radius_formula);
+        assert coneRadiusFormula != null;
+        coneRadiusFormula.setText(radiusFormula);
+
+
+
+        coneHeightFormula =(MathView)findViewById(R.id.cone_height_formula);
+        assert coneHeightFormula != null;
+        coneHeightFormula.setText(heightFormula);
+
+
+
+        coneSlantHeightFormula =(MathView)findViewById(R.id.cone_slant_height_formula);
+        assert coneSlantHeightFormula != null;
+        coneSlantHeightFormula.setText(slantHeightFormula);
+
+
+        coneSurfaceAreaFormula =(MathView)findViewById(R.id.cone_surface_area_formula);
+        assert coneSurfaceAreaFormula != null;
+        coneSurfaceAreaFormula.setText(surfaceAreaFormula);
+
+
+        coneBaseAreaFormula =(MathView)findViewById(R.id.cone_base_area_formula);
+        assert coneBaseAreaFormula != null;
+        coneBaseAreaFormula.setText(baseAreaFormula);
+
+
+        coneLateralAreaFormula =(MathView)findViewById(R.id.cone_lateral_surface_formula);
+        assert coneLateralAreaFormula != null;
+        coneLateralAreaFormula.setText(lateralAreaFormula);
+
+
+
+
 
 
         // Area Clear button

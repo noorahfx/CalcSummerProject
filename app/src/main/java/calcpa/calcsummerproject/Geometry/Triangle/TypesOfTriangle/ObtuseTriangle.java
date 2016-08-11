@@ -73,7 +73,7 @@ public class ObtuseTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obtuse_triangle);
-
+/**
         // Perimeter Clear button
         obtuseTriPerimClearButton = (Button) findViewById(R.id.iso_tri_perimeter_clear_button);
         obtuseTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
@@ -268,7 +268,7 @@ public class ObtuseTriangle extends AppCompatActivity {
             }
         });
 
-
+*/
 
       /**  Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
         TextView myTextView = (TextView)findViewById(R.id.obtuse_triangle_title);
@@ -344,7 +344,7 @@ public class ObtuseTriangle extends AppCompatActivity {
 
   */      
     }
-    @Override
+  /**  @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
@@ -365,6 +365,6 @@ public class ObtuseTriangle extends AppCompatActivity {
 
         }
 
-    }
+    } */
 }
 

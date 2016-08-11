@@ -27,8 +27,8 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Volume"
-            android:textSize="30sp"
-            android:textColor="@color/Black"/>
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/cone_volume_img"
@@ -162,8 +162,8 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Radius"
-            android:textSize="30sp"
-            android:textColor="@color/Black"/>
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
 
 
         <ImageView
@@ -300,8 +300,8 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Height"
-            android:textSize="30sp"
-            android:textColor="@color/Black"/>
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/cone_height_img"
@@ -438,8 +438,8 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Slant Height"
-            android:textSize="30sp"
-            android:textColor="@color/Black"/>
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/cone_slant_height_img"

@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="fill_horizontal"
                     android:paddingBottom="2dp"
-                    android:paddingTop="8dp"
+                    android:paddingTop="7dp"
                     android:text="@string/def_str"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
@@ -61,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:paddingBottom="8dp"
+                    android:paddingBottom="7dp"
                     android:text="@string/isosceles_triangle_def"
                     android:textColor="@color/DarkRed"
                     android:textSize="16sp" />
@@ -71,8 +71,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="fill_horizontal"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
                     android:text="@string/attr_str"
                     android:textColor="@color/white"
                     android:textSize="24sp" />
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="fill_horizontal"
                     android:padding="2dp"
-                    android:paddingBottom="8dp"
+                    android:paddingBottom="7dp"
                     android:paddingTop="12dp"
                     android:text="@string/properties_str"
                     android:textColor="@color/white"
@@ -94,8 +94,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
                     android:text="@string/isosceles_triangle_property_1"
                     android:textColor="@color/DarkRed"
                     android:textSize="16sp" />
@@ -196,7 +196,7 @@
         <TextView
             android:id="@+id/iso_triangle_perimeter_sideA_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_perimeter_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -209,7 +209,7 @@
         <EditText
             android:id="@+id/iso_triangle_perimeter_sideA_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_perimeter_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -226,9 +226,9 @@
         <TextView
             android:id="@+id/iso_triangle_perimeter_base_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_perimeter_sideA_tv"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -239,7 +239,7 @@
         <EditText
             android:id="@+id/iso_triangle_perimeter_base_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_perimeter_sideA_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -256,7 +256,7 @@
         <Button
             android:id="@+id/iso_triangle_perimeter_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_perimeter_base_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -268,7 +268,7 @@
         <TextView
             android:id="@+id/iso_triangle_perimeter_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_perimeter_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -280,7 +280,7 @@
         <Button
             android:id="@+id/iso_tri_perimeter_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/iso_triangle_perimeter_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -332,7 +332,7 @@
         <TextView
             android:id="@+id/iso_triangle_area_base_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_area_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -345,7 +345,7 @@
         <EditText
             android:id="@+id/iso_triangle_area_base_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_area_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -362,7 +362,7 @@
         <TextView
             android:id="@+id/iso_triangle_area_height_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_area_base_tv"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -375,7 +375,7 @@
         <EditText
             android:id="@+id/iso_triangle_area_height_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_area_base_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -392,7 +392,7 @@
         <Button
             android:id="@+id/iso_triangle_area_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_area_height_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -405,7 +405,7 @@
         <TextView
             android:id="@+id/iso_triangle_area_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_area_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -417,7 +417,7 @@
         <Button
             android:id="@+id/iso_triangle_area_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/iso_triangle_area_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -470,7 +470,7 @@
         <TextView
             android:id="@+id/iso_triangle_side_base_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_side_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -484,7 +484,7 @@
         <EditText
             android:id="@+id/iso_triangle_side_base_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_side_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -502,9 +502,9 @@
         <TextView
             android:id="@+id/iso_triangle_side_perimeter_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_side_base_tv"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -516,7 +516,7 @@
         <EditText
             android:id="@+id/iso_triangle_side_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_side_base_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -533,7 +533,7 @@
         <Button
             android:id="@+id/iso_triangle_side_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_side_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -546,7 +546,7 @@
         <TextView
             android:id="@+id/iso_triangle_side_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_side_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -558,7 +558,7 @@
         <Button
             android:id="@+id/iso_triangle_side_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/iso_triangle_side_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -609,7 +609,7 @@
         <TextView
             android:id="@+id/iso_triangle_base_side_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_base_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -623,7 +623,7 @@
         <EditText
             android:id="@+id/iso_triangle_base_side_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_base_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -641,9 +641,9 @@
         <TextView
             android:id="@+id/iso_triangle_base_perimeter_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_base_side_tv"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -654,7 +654,7 @@
         <EditText
             android:id="@+id/iso_triangle_base_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_base_side_tv"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -672,7 +672,7 @@
         <Button
             android:id="@+id/iso_triangle_base_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_base_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -686,7 +686,7 @@
         <TextView
             android:id="@+id/iso_triangle_base_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_base_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -697,7 +697,7 @@
         <Button
             android:id="@+id/iso_triangle_base_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/iso_triangle_base_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -749,7 +749,7 @@
         <TextView
             android:id="@+id/iso_triangle_height_base_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_height_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -763,7 +763,7 @@
         <EditText
             android:id="@+id/iso_triangle_height_base_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_height_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -781,9 +781,9 @@
         <TextView
             android:id="@+id/iso_triangle_height_area_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/iso_triangle_height_base_tv"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -794,7 +794,7 @@
         <EditText
             android:id="@+id/iso_triangle_height_area_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_height_base_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -812,7 +812,7 @@
         <Button
             android:id="@+id/iso_triangle_height_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_height_area_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -826,7 +826,7 @@
         <TextView
             android:id="@+id/iso_triangle_height_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/iso_triangle_height_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -839,7 +839,7 @@
         <Button
             android:id="@+id/iso_triangle_height_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/iso_triangle_height_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"

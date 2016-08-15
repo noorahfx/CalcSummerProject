@@ -53,7 +53,7 @@
             <TextView
                 android:id="@+id/square_perimeter_a_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/square_perimeter_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -65,7 +65,7 @@
             <EditText
                 android:id="@+id/square_perimeter_a_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_perimeter_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
@@ -85,7 +85,7 @@
             <Button
                 android:id="@+id/square_perimeter_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_perimeter_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -98,7 +98,7 @@
             <TextView
                 android:id="@+id/square_perimeter_calc_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_perimeter_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -110,7 +110,7 @@
             <Button
                 android:id="@+id/square_perimeter_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_perimeter_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -163,7 +163,7 @@
             <TextView
                 android:id="@+id/square_area_a_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/square_area_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -176,7 +176,7 @@
             <EditText
                 android:id="@+id/square_area_a_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_area_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
@@ -197,7 +197,7 @@
             <Button
                 android:id="@+id/square_area_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_area_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -210,7 +210,7 @@
             <TextView
                 android:id="@+id/square_calc_area_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_area_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -222,7 +222,7 @@
             <Button
                 android:id="@+id/square_area_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_calc_area_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -276,7 +276,7 @@
             <TextView
                 android:id="@+id/square_side_a_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/square_side_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -290,7 +290,7 @@
             <EditText
                 android:id="@+id/square_side_a_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_side_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
@@ -310,7 +310,7 @@
             <Button
                 android:id="@+id/square_side_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_side_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -322,7 +322,7 @@
             <TextView
                 android:id="@+id/square_calc_side_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_side_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -335,7 +335,7 @@
             <Button
                 android:id="@+id/square_side_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_calc_side_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -390,7 +390,7 @@
             <TextView
                 android:id="@+id/square_diagonal_d_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/square_diagonal_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -404,7 +404,7 @@
             <EditText
                 android:id="@+id/square_diagonal_d_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_diagonal_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
@@ -426,7 +426,7 @@
             <Button
                 android:id="@+id/square_diagonal_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_diagonal_d_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -439,7 +439,7 @@
             <TextView
                 android:id="@+id/square_calc_diagonal_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/square_diagonal_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -451,7 +451,7 @@
             <Button
                 android:id="@+id/square_diagonal_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/square_calc_diagonal_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"

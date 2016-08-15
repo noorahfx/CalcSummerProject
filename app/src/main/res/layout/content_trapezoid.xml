@@ -56,7 +56,7 @@
         <TextView
             android:id="@+id/trapezoid_perimeter_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_perimeter_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -69,7 +69,7 @@
         <EditText
             android:id="@+id/trapezoid_perimeter_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_perimeter_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -85,9 +85,9 @@
         <TextView
             android:id="@+id/trapezoid_perimeter_b_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_perimeter_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -98,7 +98,7 @@
         <EditText
             android:id="@+id/trapezoid_perimeter_b_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_perimeter_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -115,9 +115,9 @@
         <TextView
             android:id="@+id/trapezoid_perimeter_c_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_perimeter_b_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -129,7 +129,7 @@
         <EditText
             android:id="@+id/trapezoid_perimeter_c_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_perimeter_b_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -145,9 +145,9 @@
         <TextView
             android:id="@+id/trapezoid_perimeter_d_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_perimeter_c_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -158,7 +158,7 @@
         <EditText
             android:id="@+id/trapezoid_perimeter_d_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_perimeter_c_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -176,7 +176,7 @@
         <Button
             android:id="@+id/trapezoid_perimeter_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_perimeter_d_et"
              android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -187,7 +187,7 @@
         <TextView
             android:id="@+id/trapezoid_perimeter_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_perimeter_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -198,7 +198,7 @@
         <Button
             android:id="@+id/trapezoid_perimeter_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/trapezoid_perimeter_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -250,7 +250,7 @@
         <TextView
             android:id="@+id/trapezoid_area_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_area_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -263,7 +263,7 @@
         <EditText
             android:id="@+id/trapezoid_area_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_area_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -279,9 +279,9 @@
         <TextView
             android:id="@+id/trapezoid_area_b_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_area_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -292,7 +292,7 @@
         <EditText
             android:id="@+id/trapezoid_area_b_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_area_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -309,9 +309,9 @@
         <TextView
             android:id="@+id/trapezoid_area_h_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_area_b_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -322,7 +322,7 @@
         <EditText
             android:id="@+id/trapezoid_area_h_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_area_b_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -341,7 +341,7 @@
         <Button
             android:id="@+id/trapezoid_area_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_area_h_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -353,7 +353,7 @@
         <TextView
             android:id="@+id/trapezoid_area_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_area_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -366,7 +366,7 @@
         <Button
             android:id="@+id/trapezoid_area_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/trapezoid_area_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -418,7 +418,7 @@
         <TextView
             android:id="@+id/trapezoid_height_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_height_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -431,7 +431,7 @@
         <EditText
             android:id="@+id/trapezoid_height_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_height_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -447,9 +447,9 @@
         <TextView
             android:id="@+id/trapezoid_height_b_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_height_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -460,7 +460,7 @@
         <EditText
             android:id="@+id/trapezoid_height_b_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_height_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -478,9 +478,9 @@
         <TextView
             android:id="@+id/trapezoid_height_area_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_height_b_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -491,7 +491,7 @@
         <EditText
             android:id="@+id/trapezoid_height_area_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_height_b_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -509,7 +509,7 @@
         <Button
             android:id="@+id/trapezoid_height_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_height_area_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -521,7 +521,7 @@
         <TextView
             android:id="@+id/trapezoid_height_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_height_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -533,7 +533,7 @@
         <Button
             android:id="@+id/trapezoid_height_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/trapezoid_height_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -585,7 +585,7 @@
         <TextView
             android:id="@+id/trapezoid_baseA_b_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseA_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -598,7 +598,7 @@
         <EditText
             android:id="@+id/trapezoid_baseA_b_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseA_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -614,9 +614,9 @@
         <TextView
             android:id="@+id/trapezoid_baseA_sideC_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseA_b_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -628,7 +628,7 @@
         <EditText
             android:id="@+id/trapezoid_baseA_sideC_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseA_b_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -645,9 +645,9 @@
         <TextView
             android:id="@+id/trapezoid_baseA_sideD_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseA_sideC_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -660,7 +660,7 @@
         <EditText
             android:id="@+id/trapezoid_baseA_sideD_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseA_sideC_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -677,9 +677,9 @@
         <TextView
             android:id="@+id/trapezoid_baseA_perimeter_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseA_sideD_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -690,7 +690,7 @@
         <EditText
             android:id="@+id/trapezoid_baseA_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseA_sideD_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -709,7 +709,7 @@
         <Button
             android:id="@+id/trapezoid_baseA_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseA_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -721,7 +721,7 @@
         <TextView
             android:id="@+id/trapezoid_baseA_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseA_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -734,7 +734,7 @@
         <Button
             android:id="@+id/trapezoid_baseA_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/trapezoid_baseA_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -787,7 +787,7 @@
         <TextView
             android:id="@+id/trapezoid_baseB_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseB_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -800,7 +800,7 @@
         <EditText
             android:id="@+id/trapezoid_baseB_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseB_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -816,9 +816,9 @@
         <TextView
             android:id="@+id/trapezoid_baseB_sideC_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseB_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -830,7 +830,7 @@
         <EditText
             android:id="@+id/trapezoid_baseB_sideC_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseB_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -846,9 +846,9 @@
         <TextView
             android:id="@+id/trapezoid_baseB_sideD_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseB_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -859,7 +859,7 @@
         <EditText
             android:id="@+id/trapezoid_baseB_sideD_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseB_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -875,9 +875,9 @@
         <TextView
             android:id="@+id/trapezoid_baseB_perimeter_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_baseB_sideD_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -889,7 +889,7 @@
         <EditText
             android:id="@+id/trapezoid_baseB_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseB_sideD_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -907,7 +907,7 @@
         <Button
             android:id="@+id/trapezoid_baseB_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseB_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -919,7 +919,7 @@
         <TextView
             android:id="@+id/trapezoid_baseB_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_baseB_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -931,7 +931,7 @@
         <Button
             android:id="@+id/trapezoid_baseB_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/trapezoid_baseB_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -983,7 +983,7 @@
         <TextView
             android:id="@+id/trapezoid_sideC_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideC_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -998,7 +998,7 @@
         <EditText
             android:id="@+id/trapezoid_sideC_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideC_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -1014,9 +1014,9 @@
         <TextView
             android:id="@+id/trapezoid_sideC_b_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideC_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -1028,7 +1028,7 @@
         <EditText
             android:id="@+id/trapezoid_sideC_b_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideC_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -1044,9 +1044,9 @@
         <TextView
             android:id="@+id/trapezoid_sideC_d_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideC_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -1058,7 +1058,7 @@
         <EditText
             android:id="@+id/trapezoid_sideC_d_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideC_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -1075,9 +1075,9 @@
         <TextView
             android:id="@+id/trapezoid_sideC_p_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideC_d_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -1088,7 +1088,7 @@
         <EditText
             android:id="@+id/trapezoid_sideC_p_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideC_d_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -1106,7 +1106,7 @@
         <Button
             android:id="@+id/trapezoid_sideC_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideC_p_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -1118,7 +1118,7 @@
         <TextView
             android:id="@+id/trapezoid_sideC_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideC_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -1129,7 +1129,7 @@
         <Button
             android:id="@+id/trapezoid_sideC_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/trapezoid_sideC_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -1181,7 +1181,7 @@
         <TextView
             android:id="@+id/trapezoid_sideD_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideD_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -1195,7 +1195,7 @@
         <EditText
             android:id="@+id/trapezoid_sideD_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideD_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -1211,9 +1211,9 @@
         <TextView
             android:id="@+id/trapezoid_sideD_b_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideD_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -1224,7 +1224,7 @@
         <EditText
             android:id="@+id/trapezoid_sideD_b_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideD_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -1241,9 +1241,9 @@
         <TextView
             android:id="@+id/trapezoid_sideD_c_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideD_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -1254,7 +1254,7 @@
         <EditText
             android:id="@+id/trapezoid_sideD_c_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideD_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -1270,9 +1270,9 @@
         <TextView
             android:id="@+id/trapezoid_sideD_p_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/trapezoid_sideD_c_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -1284,7 +1284,7 @@
         <EditText
             android:id="@+id/trapezoid_sideD_p_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideD_c_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -1302,7 +1302,7 @@
         <Button
             android:id="@+id/trapezoid_sideD_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideD_p_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -1314,7 +1314,7 @@
         <TextView
             android:id="@+id/trapezoid_sideD_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/trapezoid_sideD_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -1326,7 +1326,7 @@
         <Button
             android:id="@+id/trapezoid_sideD_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/trapezoid_sideD_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"

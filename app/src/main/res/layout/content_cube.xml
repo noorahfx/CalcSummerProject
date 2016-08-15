@@ -54,7 +54,7 @@
             <TextView
                 android:id="@+id/cube_volume_a_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/cube_volume_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -67,7 +67,7 @@
             <EditText
                 android:id="@+id/cube_volume_a_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/cube_volume_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
@@ -85,7 +85,7 @@
             <Button
                 android:id="@+id/cube_volume_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_volume_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -98,7 +98,7 @@
             <TextView
                 android:id="@+id/cube_volume_calc_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/cube_volume_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -111,7 +111,7 @@
             <Button
                 android:id="@+id/cube_volume_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_volume_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -165,7 +165,7 @@
              <TextView
                 android:id="@+id/cube_edge_v_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/cube_edge_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -177,7 +177,7 @@
             <EditText
                 android:id="@+id/cube_edge_v_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_edge_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10sp"
@@ -195,7 +195,7 @@
             <Button
                 android:id="@+id/cube_edge_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_edge_v_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -206,7 +206,7 @@
             <TextView
                 android:id="@+id/cube_edge_calc_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/cube_edge_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -217,7 +217,7 @@
             <Button
                 android:id="@+id/cube_edge_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_edge_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -270,7 +270,7 @@
             <TextView
                 android:id="@+id/cube_special_diagonal_a_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/cube_special_diagonal_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -283,7 +283,7 @@
             <EditText
                 android:id="@+id/cube_special_diagonal_a_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/cube_special_diagonal_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
@@ -303,7 +303,7 @@
             <Button
                 android:id="@+id/cube_special_diagonal_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_special_diagonal_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -314,7 +314,7 @@
             <TextView
                 android:id="@+id/cube_special_diagonal_calc_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/cube_special_diagonal_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -325,7 +325,7 @@
             <Button
                 android:id="@+id/cube_special_diagonal_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_special_diagonal_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -379,7 +379,7 @@
             <TextView
                 android:id="@+id/cube_surface_area_a_text"
                 android:layout_width="40dp"
-                android:layout_height="42dp"
+                android:layout_height="40dp"
                 android:layout_below="@id/cube_surface_area_formula"
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
@@ -392,7 +392,7 @@
             <EditText
                 android:id="@+id/cube_surface_area_a_et"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_surface_area_formula"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
@@ -413,7 +413,7 @@
             <Button
                 android:id="@+id/cube_surface_area_calc_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_surface_area_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -424,7 +424,7 @@
             <TextView
                 android:id="@+id/cube_surface_area_calc_answer_tx"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@+id/cube_surface_area_calc_button"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
@@ -435,7 +435,7 @@
             <Button
                 android:id="@+id/cube_surface_area_clear_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="42dp"
                 android:layout_below="@id/cube_surface_area_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"

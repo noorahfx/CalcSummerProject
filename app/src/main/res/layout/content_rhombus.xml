@@ -54,7 +54,7 @@
         <TextView
             android:id="@+id/rhombus_perimeter_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_perimeter_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -65,7 +65,7 @@
         <EditText
             android:id="@+id/rhombus_perimeter_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_perimeter_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -84,7 +84,7 @@
         <Button
             android:id="@+id/rhombus_perimeter_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_perimeter_a_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -97,7 +97,7 @@
         <TextView
             android:id="@+id/rhombus_perimeter_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_perimeter_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -108,7 +108,7 @@
         <Button
             android:id="@+id/rhombus_perimeter_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_perimeter_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -161,7 +161,7 @@
         <TextView
             android:id="@+id/rhombus_area_p_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_area_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -174,7 +174,7 @@
         <EditText
             android:id="@+id/rhombus_area_p_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_area_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -191,9 +191,9 @@
         <TextView
             android:id="@+id/rhombus_area_q_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_area_p_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -207,7 +207,7 @@
         <EditText
             android:id="@+id/rhombus_area_q_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_area_p_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -226,7 +226,7 @@
         <Button
             android:id="@+id/rhombus_area_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_area_q_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -239,7 +239,7 @@
         <TextView
             android:id="@+id/rhombus_area_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_area_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -252,7 +252,7 @@
         <Button
             android:id="@+id/rhombus_area_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_area_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -306,7 +306,7 @@
         <TextView
             android:id="@+id/rhombus_sides_perimeter_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_sides_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -319,7 +319,7 @@
         <EditText
             android:id="@+id/rhombus_sides_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_sides_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -337,7 +337,7 @@
         <Button
             android:id="@+id/rhombus_sides_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_sides_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -350,7 +350,7 @@
         <TextView
             android:id="@+id/rhombus_sides_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_sides_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -363,7 +363,7 @@
         <Button
             android:id="@+id/rhombus_sides_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_sides_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -416,7 +416,7 @@
         <TextView
             android:id="@+id/rhombus_p_diagonal_q_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_p_diagonal_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -429,7 +429,7 @@
         <EditText
             android:id="@+id/rhombus_p_diagonal_q_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_p_diagonal_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -445,9 +445,9 @@
         <TextView
             android:id="@+id/rhombus_p_diagonal_area_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_p_diagonal_q_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -459,7 +459,7 @@
         <EditText
             android:id="@+id/rhombus_p_diagonal_area_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_p_diagonal_q_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -478,7 +478,7 @@
         <Button
             android:id="@+id/rhombus_p_diagonal_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_p_diagonal_area_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -491,7 +491,7 @@
         <TextView
             android:id="@+id/rhombus_p_diagonal_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_p_diagonal_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -504,7 +504,7 @@
         <Button
             android:id="@+id/rhombus_p_diagonal_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_p_diagonal_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -558,7 +558,7 @@
         <TextView
             android:id="@+id/rhombus_q_diagonal_p_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_q_diagonal_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -571,7 +571,7 @@
         <EditText
             android:id="@+id/rhombus_q_diagonal_p_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_q_diagonal_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -588,9 +588,9 @@
         <TextView
             android:id="@+id/rhombus_q_diagonal_area_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/rhombus_q_diagonal_p_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -602,7 +602,7 @@
         <EditText
             android:id="@+id/rhombus_q_diagonal_area_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_q_diagonal_p_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -620,7 +620,7 @@
         <Button
             android:id="@+id/rhombus_q_diagonal_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_q_diagonal_area_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -634,7 +634,7 @@
         <TextView
             android:id="@+id/rhombus_q_diagonal_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/rhombus_q_diagonal_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -648,7 +648,7 @@
         <Button
             android:id="@+id/rhombus_q_diagonal_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/rhombus_q_diagonal_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"

@@ -53,7 +53,7 @@
         <TextView
             android:id="@+id/kite_perimeter_side_a_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_perimeter_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -66,7 +66,7 @@
         <EditText
             android:id="@+id/kite_perimeter_side_a_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_perimeter_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -83,9 +83,9 @@
         <TextView
             android:id="@+id/kite_perimeter_side_b_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_perimeter_side_a_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -97,7 +97,7 @@
         <EditText
             android:id="@+id/kite_perimeter_side_b_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_perimeter_side_a_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -114,7 +114,7 @@
         <Button
             android:id="@+id/kite_perimeter_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_perimeter_side_b_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -127,7 +127,7 @@
         <TextView
             android:id="@+id/kite_perimeter_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_perimeter_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -139,7 +139,7 @@
         <Button
             android:id="@+id/kite_perimeter_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_perimeter_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -190,7 +190,7 @@
         <TextView
             android:id="@+id/kite_area_diagonal_p_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_area_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -204,7 +204,7 @@
         <EditText
             android:id="@+id/kite_area_diagonal_p_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_area_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -221,9 +221,9 @@
         <TextView
             android:id="@+id/kite_area_diagonal_q_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_area_diagonal_p_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -235,7 +235,7 @@
         <EditText
             android:id="@+id/kite_area_diagonal_q_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_area_diagonal_p_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -252,7 +252,7 @@
         <Button
             android:id="@+id/kite_area_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_area_diagonal_q_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -265,7 +265,7 @@
         <TextView
             android:id="@+id/kite_area_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_area_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -278,7 +278,7 @@
         <Button
             android:id="@+id/kite_area_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_area_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -331,7 +331,7 @@
         <TextView
             android:id="@+id/kite_side_a_bside_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_side_a_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -344,7 +344,7 @@
         <EditText
             android:id="@+id/kite_side_a_bside_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_side_a_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -361,9 +361,9 @@
         <TextView
             android:id="@+id/kite_side_a_perimeter_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_side_a_bside_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -374,7 +374,7 @@
         <EditText
             android:id="@+id/kite_side_a_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_side_a_bside_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -391,7 +391,7 @@
         <Button
             android:id="@+id/kite_side_a_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_side_a_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -404,7 +404,7 @@
         <TextView
             android:id="@+id/kite_side_a_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_side_a_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -417,7 +417,7 @@
         <Button
             android:id="@+id/kite_side_a_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_side_a_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -470,7 +470,7 @@
         <TextView
             android:id="@+id/kite_side_b_aside_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_side_b_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -483,7 +483,7 @@
         <EditText
             android:id="@+id/kite_side_b_aside_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_side_b_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -500,9 +500,9 @@
         <TextView
             android:id="@+id/kite_side_b_perimeter_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_side_b_aside_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -513,7 +513,7 @@
         <EditText
             android:id="@+id/kite_side_b_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_side_b_aside_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -530,7 +530,7 @@
         <Button
             android:id="@+id/kite_side_b_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_side_b_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -543,7 +543,7 @@
         <TextView
             android:id="@+id/kite_side_b_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_side_b_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -555,7 +555,7 @@
         <Button
             android:id="@+id/kite_side_b_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_side_b_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -609,7 +609,7 @@
         <TextView
             android:id="@+id/kite_p_diaognal_q_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_p_diagonal_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -622,7 +622,7 @@
         <EditText
             android:id="@+id/kite_p_diaognal_q_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_p_diagonal_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -639,9 +639,9 @@
         <TextView
             android:id="@+id/kite_p_diaognal_area_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_p_diaognal_q_text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -652,7 +652,7 @@
         <EditText
             android:id="@+id/kite_p_diaognal_area_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_p_diaognal_q_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
@@ -669,7 +669,7 @@
         <Button
             android:id="@+id/kite_p_diaognal_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_p_diaognal_area_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -682,7 +682,7 @@
         <TextView
             android:id="@+id/kite_p_diaognal_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_p_diaognal_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -695,7 +695,7 @@
         <Button
             android:id="@+id/kite_p_diaognal_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_p_diaognal_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -749,7 +749,7 @@
         <TextView
             android:id="@+id/kite_q_diaognal_p_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_q_diagonal_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -762,7 +762,7 @@
         <EditText
             android:id="@+id/kite_q_diaognal_p_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_q_diagonal_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -779,7 +779,7 @@
         <TextView
             android:id="@+id/kite_q_diaognal_perimeter_text"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/kite_q_diaognal_p_text"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -793,7 +793,7 @@
         <EditText
             android:id="@+id/kite_q_diaognal_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_q_diaognal_p_et"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -810,7 +810,7 @@
         <Button
             android:id="@+id/kite_q_diaognal_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_q_diaognal_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -822,7 +822,7 @@
         <TextView
             android:id="@+id/kite_q_diaognal_calc_answer_tx"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/kite_q_diaognal_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -834,7 +834,7 @@
         <Button
             android:id="@+id/kite_q_diaognal_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/kite_q_diaognal_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"

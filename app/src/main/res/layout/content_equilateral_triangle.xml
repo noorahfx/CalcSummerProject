@@ -183,7 +183,7 @@
          <TextView
             android:id="@+id/equi_triangle_perimeter_sideA_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/equi_triangle_perimeter_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -196,7 +196,7 @@
         <EditText
             android:id="@+id/equi_triangle_perimeter_sideA_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_perimeter_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -214,7 +214,7 @@
         <Button
             android:id="@+id/equi_triangle_perimeter_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_perimeter_sideA_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -226,7 +226,7 @@
         <TextView
             android:id="@+id/equi_triangle_perimeter_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_perimeter_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -238,7 +238,7 @@
         <Button
             android:id="@+id/equi_triangle_perimeter_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/equi_triangle_perimeter_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -292,7 +292,7 @@
         <TextView
             android:id="@+id/equi_triangle_area_sideA_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/equi_triangle_area_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -305,7 +305,7 @@
         <EditText
             android:id="@+id/equi_triangle_area_sideA_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_area_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -323,7 +323,7 @@
         <Button
             android:id="@+id/equi_triangle_area_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_area_sideA_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -336,7 +336,7 @@
         <TextView
             android:id="@+id/equi_triangle_area_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_area_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -348,7 +348,7 @@
         <Button
             android:id="@+id/equi_tri_area_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/equi_triangle_area_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -401,7 +401,7 @@
         <TextView
             android:id="@+id/equi_triangle_side_perimeter_tv"
             android:layout_width="40dp"
-            android:layout_height="42dp"
+            android:layout_height="40dp"
             android:layout_below="@id/equi_triangle_side_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
@@ -417,7 +417,7 @@
         <EditText
             android:id="@+id/equi_triangle_side_perimeter_et"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_side_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
@@ -435,7 +435,7 @@
         <Button
             android:id="@+id/equi_triangle_side_calc_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_side_perimeter_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -447,7 +447,7 @@
         <TextView
             android:id="@+id/equi_triangle_side_ans_tv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@+id/equi_triangle_side_calc_button"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
@@ -459,7 +459,7 @@
         <Button
             android:id="@+id/equi_tri_hyp_clear_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:layout_below="@id/equi_triangle_side_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"

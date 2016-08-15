@@ -2,6 +2,7 @@ package calcpa.calcsummerproject.Geometry.Decagon;
 
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,8 +17,23 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Decagon extends AppCompatActivity {
+
+    MathView deacgonAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView deacagonPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView deacagonSidesFormula;
+    String sidesFormula ="$$A=\\pi r^{2}$$";
+
+
+
     //area
     EditText decagonareaET;
     TextView decagonareaTV;
@@ -42,6 +58,21 @@ public class Decagon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_decagon);
+
+
+        deacgonAreaFormula =(MathView)findViewById(R.id.decagon_area_formula);
+        assert deacgonAreaFormula != null;
+        deacgonAreaFormula.setText(areaFormula);
+
+        deacagonPerimeterFormula =(MathView)findViewById(R.id.decagon_perimeter_formula);
+        assert deacagonPerimeterFormula != null;
+        deacagonPerimeterFormula.setText(perimeterFormula);
+
+
+
+        deacagonSidesFormula =(MathView)findViewById(R.id.decagon_sides_formula);
+        assert deacagonSidesFormula != null;
+        deacagonSidesFormula.setText(sidesFormula);
 
         // Area Clear button
         decagonAreaClearButton = (Button) findViewById(R.id.decagon_area_clear_button);
@@ -150,6 +181,49 @@ public class Decagon extends AppCompatActivity {
 
             }
         });
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.decagon_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.decagon_area_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.decagon_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.decagon_perimeter_v_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.decagon_sides_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.decagon_sides_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        decagonareaET.setTypeface(myTypeFace);
+        decagonareaTV.setTypeface(myTypeFace);
+        decagonareaCalcButton.setTypeface(myTypeFace);
+        decagonAreaClearButton.setTypeface(myTypeFace);
+
+        decagonPerimeterET.setTypeface(myTypeFace);
+        decagonPerimeterTV.setTypeface(myTypeFace);
+        decagonPerimeterCalcButton.setTypeface(myTypeFace);
+        decagonPerimeterClearButton.setTypeface(myTypeFace);
+
+        decagonSideET.setTypeface(myTypeFace);
+        decagonSideTV.setTypeface(myTypeFace);
+        decagonSideCalcButton.setTypeface(myTypeFace);
+        decagonSidesClearButton.setTypeface(myTypeFace);
 
 
     }

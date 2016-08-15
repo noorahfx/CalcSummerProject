@@ -457,7 +457,7 @@
             android:src="@drawable/image1" />
 
         <io.github.kexanie.library.MathView
-            android:id="@+id/kite_ide_b_formula"
+            android:id="@+id/kite_side_b_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/kite_side_b_img"
@@ -471,7 +471,7 @@
             android:id="@+id/kite_side_b_aside_text"
             android:layout_width="40dp"
             android:layout_height="42dp"
-            android:layout_below="@id/kite_ide_b_formula"
+            android:layout_below="@id/kite_side_b_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
             android:gravity="center"
@@ -484,7 +484,7 @@
             android:id="@+id/kite_side_b_aside_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/kite_ide_b_formula"
+            android:layout_below="@+id/kite_side_b_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/kite_side_b_aside_text"

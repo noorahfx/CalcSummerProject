@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Cone;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -439,6 +440,156 @@ public class Cone extends AppCompatActivity {
 
             }
         });
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.cone_volume_text);
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_volume_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cone_volume_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cone_radius_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cone_radius_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cone_radius_v_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cone_height_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cone_height_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.cone_height_v_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_slant_height_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.cone_slant_height_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_slant_height_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_surface_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.cone_surface_area_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_surface_area_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_base_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.cone_base_area_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_lateral_surface_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_lateral_surface_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cone_lateral_surface_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        coneVolumeRET.setTypeface(myTypeFace);
+        coneVolumeHET.setTypeface(myTypeFace);
+        coneVolumeCalcButton.setTypeface(myTypeFace);
+        coneVolumeAnswerTV.setTypeface(myTypeFace);
+        coneVOlumeClearButton.setTypeface(myTypeFace);
+
+        coneRadiusHET.setTypeface(myTypeFace);
+        coneRadiusVET.setTypeface(myTypeFace);
+        coneRadiusCalcButton.setTypeface(myTypeFace);
+        coneRadiusClearButton.setTypeface(myTypeFace);
+        coneRadiusAnswerTV.setTypeface(myTypeFace);
+
+        coneHeightVET.setTypeface(myTypeFace);
+        coneHeightRET.setTypeface(myTypeFace);
+        coneHeightCalcButton.setTypeface(myTypeFace);
+        coneHeightClearButton.setTypeface(myTypeFace);
+        coneHeightAnswerTV.setTypeface(myTypeFace);
+
+        coneSLantHeightHET.setTypeface(myTypeFace);
+        coneSlantHeightRET.setTypeface(myTypeFace);
+        coneSlantHeightCalcButton.setTypeface(myTypeFace);
+        coneSlantHeightClearButton.setTypeface(myTypeFace);
+        coneSlantHeightAnswerTV.setTypeface(myTypeFace);
+
+
+        coneSurfaceAreaHET.setTypeface(myTypeFace);
+        coneSurfaceAreatRET.setTypeface(myTypeFace);
+        coneSurfaceAreaCalcButton.setTypeface(myTypeFace);
+        coneSurfaceAreaClearButton.setTypeface(myTypeFace);
+        coneSurfaceAreaAnswerTV.setTypeface(myTypeFace);
+
+        coneBaseAreaRET.setTypeface(myTypeFace);
+        coneBaseAreaCalcButton.setTypeface(myTypeFace);
+        coneBaseAreaAnswerTV.setTypeface(myTypeFace);
+        coneBaseClearButton.setTypeface(myTypeFace);
+
+
+        coneLateralSurfaceRET.setTypeface(myTypeFace);
+        coneLateralSurfaceHET.setTypeface(myTypeFace);
+        coneLateralSurfaceCalcButton.setTypeface(myTypeFace);
+        coneLateralSurfaceAnswerTV.setTypeface(myTypeFace);
+        coneLateralSurfaceClearButton.setTypeface(myTypeFace);
 
 
     }

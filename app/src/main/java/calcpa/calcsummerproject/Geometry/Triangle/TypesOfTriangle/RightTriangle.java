@@ -13,8 +13,28 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class RightTriangle extends AppCompatActivity {
+
+
+
+    MathView rightTriPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+    MathView rightTriAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView rightTriHypFormula;
+    String hypFormula ="$$A=\\pi r^{2}$$";
+
+    MathView rightTrisideAFormula;
+    String sideAFormula ="$$A=\\pi r^{2}$$";
+
+    MathView rightTriSideBFormula;
+    String sideBFormula ="$$A=\\pi r^{2}$$";
+
+
 
     EditText sideAEditText;
     EditText sideBEditText;
@@ -61,6 +81,31 @@ public class RightTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right_triangle);
+
+
+        rightTriPerimeterFormula =(MathView)findViewById(R.id.right_triangle_formula);
+        assert rightTriPerimeterFormula != null;
+        rightTriPerimeterFormula.setText(perimeterFormula);
+
+        rightTriAreaFormula =(MathView)findViewById(R.id.rig_triangle_area_formula);
+        assert rightTriAreaFormula != null;
+        rightTriAreaFormula.setText(areaFormula);
+
+
+        rightTriHypFormula =(MathView)findViewById(R.id.side_c_formula);
+        assert rightTriHypFormula != null;
+        rightTriHypFormula.setText(hypFormula);
+
+
+
+        rightTrisideAFormula =(MathView)findViewById(R.id.right_triangle_side_a_formula);
+        assert rightTrisideAFormula != null;
+        rightTrisideAFormula.setText(sideAFormula);
+
+        rightTriSideBFormula =(MathView)findViewById(R.id.right_triangle_side_b_formula);
+        assert rightTriSideBFormula != null;
+        rightTriSideBFormula.setText(sideBFormula);
+
 
 
         // Perimeter Clear button
@@ -118,13 +163,6 @@ public class RightTriangle extends AppCompatActivity {
                 sideBAnswerTV.setText("");
             }
         });
-
-
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "Take cover.ttf");
-        TextView myTextView = (TextView) findViewById(R.id.perimeter_text);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-
 
         //initialize the EditText
         sideAEditText = (EditText) findViewById(R.id.sidAEditText);
@@ -271,6 +309,99 @@ public class RightTriangle extends AppCompatActivity {
                 }
             }
         });
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.sidAText);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.sideBText);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.area_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.area_side_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.side_c_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hyp_side_a_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hyp_side_b_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.right_triangle_a_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.right_triangle_side_b_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.right_triangle_area_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.right_triangle_b_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.right_triangle_side_a_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.right_triangle_sid_b_area_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        sideAEditText.setTypeface(myTypeFace);
+        sideBEditText.setTypeface(myTypeFace);
+        answerEditText.setTypeface(myTypeFace);
+        calculateResultButton.setTypeface(myTypeFace);
+        rightTriPerimClearButton.setTypeface(myTypeFace);
+
+        areaSideAET.setTypeface(myTypeFace);
+        areaSideBET.setTypeface(myTypeFace);
+        areaAnswerTV.setTypeface(myTypeFace);
+        calculateAreaButton.setTypeface(myTypeFace);
+        rightTriAreaClearButton.setTypeface(myTypeFace);
+
+        hypSideAET.setTypeface(myTypeFace);
+        hypSideBET.setTypeface(myTypeFace);
+        hypAnswerTV.setTypeface(myTypeFace);
+        calculateHypButton.setTypeface(myTypeFace);
+        rightTriHypClearButton.setTypeface(myTypeFace);
+
+        sideAAreaET.setTypeface(myTypeFace);
+        sideALegBET.setTypeface(myTypeFace);
+        sideAAnswerTV.setTypeface(myTypeFace);
+        calculateSideAButton.setTypeface(myTypeFace);
+        rightTriSideAClearButton.setTypeface(myTypeFace);
+
+        sideBAreaET.setTypeface(myTypeFace);
+        sideBLegAET.setTypeface(myTypeFace);
+        sideBAnswerTV.setTypeface(myTypeFace);
+        calculateSideBButton.setTypeface(myTypeFace);
+        rightTriSideBClearButton.setTypeface(myTypeFace);
+
     }
 
     @Override

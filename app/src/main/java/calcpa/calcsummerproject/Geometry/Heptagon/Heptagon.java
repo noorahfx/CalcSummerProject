@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Heptagon;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +16,20 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Heptagon extends AppCompatActivity {
+
+    MathView hepPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+    MathView hepAreaFormula;
+    String areaFormula ="$$d =2r$$";
+
+    MathView hepSideFormula;
+    String sideFormula ="$$C =2\\pi r$$";
+
+    
     //perimeter
     EditText hepPerimeterSideAET;
     TextView hepPerimeterAnswerTV;
@@ -41,7 +54,21 @@ public class Heptagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heptagon);
 
+        hepPerimeterFormula =(MathView)findViewById(R.id.hep_perimeter_formula);
+        assert hepPerimeterFormula != null;
+        hepPerimeterFormula.setText(perimeterFormula);
 
+        hepAreaFormula =(MathView)findViewById(R.id.hep_area_formula);
+        assert hepAreaFormula != null;
+        hepAreaFormula.setText(areaFormula);
+
+
+        hepSideFormula =(MathView)findViewById(R.id.hep_side_formula);
+        assert hepSideFormula != null;
+        hepSideFormula.setText(sideFormula);
+
+
+        
         // Perimeter Clear button
         hepPerimeterClearButton = (Button) findViewById(R.id.hep_perimeter_clear_button);
         hepPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
@@ -138,6 +165,50 @@ public class Heptagon extends AppCompatActivity {
                 }
             }
         });
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.hep_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hep_perimeter_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hep_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hep_area_side_a_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hep_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hep_side_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        hepPerimeterSideAET.setTypeface(myTypeFace);
+        hepPerimeterAnswerTV.setTypeface(myTypeFace);
+        hepPerimeterCalcButton.setTypeface(myTypeFace);
+        hepPerimeterClearButton.setTypeface(myTypeFace);
+
+        hepAreaSideAET.setTypeface(myTypeFace);
+        hepAreaAnswerTV.setTypeface(myTypeFace);
+        hepAreaCalcButton.setTypeface(myTypeFace);
+        hepAreaClearButton.setTypeface(myTypeFace);
+
+        hepSideAET.setTypeface(myTypeFace);
+        hepSideAAnswerTV.setTypeface(myTypeFace);
+        hepSideACalcButton.setTypeface(myTypeFace);
+        hepSideAClearButton.setTypeface(myTypeFace);
+
+
     }
 
     @Override

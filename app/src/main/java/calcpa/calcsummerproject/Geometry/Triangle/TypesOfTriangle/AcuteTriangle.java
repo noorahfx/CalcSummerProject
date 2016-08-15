@@ -17,6 +17,27 @@ import io.github.kexanie.library.MathView;
 
 public class AcuteTriangle extends AppCompatActivity {
 
+
+    MathView acuteTriPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView acuteTriAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView acuteTriHypFormula;
+    String hypFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView acuteTriSideAFormula;
+    String sideAFormula ="$$A=\\pi r^{2}$$";
+
+
+
+    MathView acuteTriSideBFormula;
+    String sideBFormula ="$$A=\\pi r^{2}$$";
+
+
     //perimeter
     EditText acuteTriPerimeterSideAET;
     EditText acuteTriPerimeterBaseET;
@@ -65,6 +86,34 @@ public class AcuteTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acute_triangle);
+
+
+
+
+
+        acuteTriPerimeterFormula =(MathView)findViewById(R.id.acute_tri_perimeter_formula);
+        assert acuteTriPerimeterFormula != null;
+        acuteTriPerimeterFormula.setText(perimeterFormula);
+
+        acuteTriAreaFormula =(MathView)findViewById(R.id.acute_tri_area_formula);
+        assert acuteTriAreaFormula != null;
+        acuteTriAreaFormula.setText(areaFormula);
+
+
+        acuteTriHypFormula =(MathView)findViewById(R.id.acute_tri_hyp_formula);
+        assert acuteTriHypFormula != null;
+        acuteTriHypFormula.setText(hypFormula);
+
+
+
+        acuteTriSideAFormula =(MathView)findViewById(R.id.acute_tri_sideA_formula);
+        assert acuteTriSideAFormula != null;
+        acuteTriSideAFormula.setText(sideAFormula);
+
+        acuteTriSideBFormula =(MathView)findViewById(R.id.acute_tri_base_formula);
+        assert acuteTriSideBFormula != null;
+        acuteTriSideBFormula.setText(sideBFormula);
+
 
         // Perimeter Clear button
         acuteTriPerimClearButton = (Button) findViewById(R.id.acute_tri_perimeter_clear_button);
@@ -308,6 +357,114 @@ public class AcuteTriangle extends AppCompatActivity {
                 }
             }
         });
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.acute_tri_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_perimeter_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_perimeter_sideB_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_perimeter_sideC_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_area_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_area_height_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_hyp_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_hyp_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_hyp_sideB_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_sideA_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_sideA_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_sideA_sideC_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_sideA_perimeter_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_base_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_base_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_base_sideC_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.acute_tri_base_perimeter_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        acuteTriPerimeterSideAET.setTypeface(myTypeFace);
+        acuteTriPerimeterBaseET.setTypeface(myTypeFace);
+        acuteTriPerimeterSideCET.setTypeface(myTypeFace);
+        acuteTriPerimeterAnsTV.setTypeface(myTypeFace);
+        acuteTriPerimeterCalcButton.setTypeface(myTypeFace);
+        acuteTriPerimClearButton.setTypeface(myTypeFace);
+
+        acuteTriAreaBaseET.setTypeface(myTypeFace);
+        acuteTriAreaHeightET.setTypeface(myTypeFace);
+        acuteTriAreaAnsTV.setTypeface(myTypeFace);
+        acuteTriAreaCalcButton.setTypeface(myTypeFace);
+        acuteTriAreaClearButton.setTypeface(myTypeFace);
+
+        acuteTriHypSideAET.setTypeface(myTypeFace);
+        acuteTriHypBaseET.setTypeface(myTypeFace);
+        acuteTriHypAnsTV.setTypeface(myTypeFace);
+        acuteTriHypCalcButton.setTypeface(myTypeFace);
+        acuteTriHypClearButton.setTypeface(myTypeFace);
+
+        acuteTriSideABaseET.setTypeface(myTypeFace);
+        acuteTriSideASideCET.setTypeface(myTypeFace);
+        acuteTriSideAPerimeterET.setTypeface(myTypeFace);
+        acuteTriSideAAnsTV.setTypeface(myTypeFace);
+        acuteTriSideACalcButton.setTypeface(myTypeFace);
+        acuteTriSideAClearButton.setTypeface(myTypeFace);
+
+        acuteTriBaseSideAET.setTypeface(myTypeFace);
+        acuteTriBaseSideCET.setTypeface(myTypeFace);
+        acuteTriBasePerimeterET.setTypeface(myTypeFace);
+        acuteTriBaseAnsTV.setTypeface(myTypeFace);
+        acuteTriBaseCalcButton.setTypeface(myTypeFace);
+        acuteTriBasesClearButton.setTypeface(myTypeFace);
+
     }
     @Override
     protected void onSaveInstanceState(Bundle outState) {

@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Cylinder;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +16,31 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Cylinder extends AppCompatActivity {
+
+    MathView cylinderVolumeFormula;
+    String volumeFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView cylinderRadius;
+    String radiusFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView cylinderHeightFormula;
+    String heightFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView cylinderSurfaceAreaFormula;
+    String surfaceAreaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView cylinderBaseAreaFormula;
+    String baseAreaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView cylinderLaterarSurfaceFormula;
+    String lateralSurfaceFormula ="$$A=\\pi r^{2}$$";
+ 
     //Volume
     EditText cylinderVolumeRET;
     EditText cylinderVolumeHET;
@@ -70,6 +94,41 @@ public class Cylinder extends AppCompatActivity {
         setContentView(R.layout.activity_cylinder);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+        cylinderVolumeFormula =(MathView)findViewById(R.id.cylinder_volume_formula);
+        assert cylinderVolumeFormula != null;
+        cylinderVolumeFormula.setText(volumeFormula);
+
+        cylinderRadius =(MathView)findViewById(R.id.cylinder_radius_formula);
+        assert cylinderRadius != null;
+        cylinderRadius.setText(radiusFormula);
+
+
+
+        cylinderHeightFormula =(MathView)findViewById(R.id.cylinder_height_formula);
+        assert cylinderHeightFormula != null;
+        cylinderHeightFormula.setText(heightFormula);
+
+
+
+        cylinderSurfaceAreaFormula =(MathView)findViewById(R.id.cylinder_surface_area_formula);
+        assert cylinderSurfaceAreaFormula != null;
+        cylinderSurfaceAreaFormula.setText(surfaceAreaFormula);
+
+
+        cylinderBaseAreaFormula =(MathView)findViewById(R.id.cylinder_base_area_formula);
+        assert cylinderBaseAreaFormula != null;
+        cylinderBaseAreaFormula.setText(baseAreaFormula);
+
+
+        cylinderLaterarSurfaceFormula =(MathView)findViewById(R.id.cylinder_lateral_surface_formula);
+        assert cylinderLaterarSurfaceFormula != null;
+        cylinderLaterarSurfaceFormula.setText(lateralSurfaceFormula);
+
+
+
 
 
         // Volume Clear button
@@ -326,6 +385,117 @@ public class Cylinder extends AppCompatActivity {
                 }
             }
         });
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.cylinder_volume_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_volume_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_volume_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_radius_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_radius_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_radius_v_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_height_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_height_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_height_v_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cylinder_surface_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_surface_area_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_surface_area_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_base_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_base_area_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_lateral_surface_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_lateral_surface_r_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cylinder_lateral_surface_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        cylinderVolumeRET.setTypeface(myTypeFace);
+        cylinderVolumeHET.setTypeface(myTypeFace);
+        cylinderVolumeAnswerTV.setTypeface(myTypeFace);
+        cylinderVolumeCalcButton.setTypeface(myTypeFace);
+        cylinderVolumeClearButton.setTypeface(myTypeFace);
+
+        cylinderRadiusHET.setTypeface(myTypeFace);
+        cylinderRadiusVET.setTypeface(myTypeFace);
+        cylinderRadiusAnswerTV.setTypeface(myTypeFace);
+        cylinderRadiusCalcButton.setTypeface(myTypeFace);
+        cylinderRadiusClearButton.setTypeface(myTypeFace);
+
+        cylinderHeightRET.setTypeface(myTypeFace);
+        cylinderHeightVET.setTypeface(myTypeFace);
+        cylinderHeightAnswerTV.setTypeface(myTypeFace);
+        cylinderHeightCalcButton.setTypeface(myTypeFace);
+        cylinderHeightClearButton.setTypeface(myTypeFace);
+
+        cylinderSurfaceAreatRET.setTypeface(myTypeFace);
+        cylinderSurfaceAreaHET.setTypeface(myTypeFace);
+        cylinderSurfaceAreaAnswerTV.setTypeface(myTypeFace);
+        cylinderSurfaceAreaCalcButton.setTypeface(myTypeFace);
+        cylinderSurfaceAreaClearButton.setTypeface(myTypeFace);
+
+        cylinderBaseAreaRET.setTypeface(myTypeFace);
+        cylinderBaseAreaAnswerTV.setTypeface(myTypeFace);
+        cylinderBaseAreaCalcButton.setTypeface(myTypeFace);
+        cylinderBaseClearButton.setTypeface(myTypeFace);
+
+        cylinderLateralSurfaceRET.setTypeface(myTypeFace);
+        cylinderLateralSurfaceHET.setTypeface(myTypeFace);
+        cylinderLateralSurfaceAnswerTV.setTypeface(myTypeFace);
+        cylinderLateralSurfaceCalcButton.setTypeface(myTypeFace);
+        cylinderLateralSurfaceClearButton.setTypeface(myTypeFace);
+
+
 
     }
 

@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Octagon;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,7 +16,21 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
+
 public class Octagon extends AppCompatActivity {
+
+
+    MathView octPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+    MathView octAreaFormula;
+    String areaFormula ="$$d =2r$$";
+
+    MathView octSideFormula;
+    String sideFormula ="$$C =2\\pi r$$";
+
+    
     //perimeter
     EditText octPerimeterSideAET;
     TextView octPerimeterAnswerTV;
@@ -40,6 +55,19 @@ public class Octagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_octagon);
 
+
+        octPerimeterFormula =(MathView)findViewById(R.id.oct_perimeter_formula);
+        assert octPerimeterFormula != null;
+        octPerimeterFormula.setText(perimeterFormula);
+
+        octAreaFormula =(MathView)findViewById(R.id.oct_area_formula);
+        assert octAreaFormula != null;
+        octAreaFormula.setText(areaFormula);
+
+
+        octSideFormula =(MathView)findViewById(R.id.oct_side_formula);
+        assert octSideFormula != null;
+        octSideFormula.setText(sideFormula);
 
 
 
@@ -137,6 +165,51 @@ public class Octagon extends AppCompatActivity {
                 }
             }
         });
+
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.oct_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.oct_perimeter_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.oct_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.oct_area_side_a_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.oct_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.oct_side_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        octPerimeterSideAET.setTypeface(myTypeFace);
+        octPerimeterAnswerTV.setTypeface(myTypeFace);
+        octPerimeterCalcButton.setTypeface(myTypeFace);
+        octPerimeterClearButton.setTypeface(myTypeFace);
+
+        octAreaSideAET.setTypeface(myTypeFace);
+        octAreaAnswerTV.setTypeface(myTypeFace);
+        octAreaCalcButton.setTypeface(myTypeFace);
+        octAreaClearButton.setTypeface(myTypeFace);
+
+        octSideAET.setTypeface(myTypeFace);
+        octSideAAnswerTV.setTypeface(myTypeFace);
+        octSideACalcButton.setTypeface(myTypeFace);
+        octSideAClearButton.setTypeface(myTypeFace);
+
     }
 
     @Override

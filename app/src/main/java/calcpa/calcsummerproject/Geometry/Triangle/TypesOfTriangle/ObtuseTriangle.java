@@ -33,7 +33,25 @@ public class ObtuseTriangle extends AppCompatActivity {
 
    */
 
-  //perimeter
+
+  MathView obtuseTriPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView obtuseTriAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView obtuseTriSideAFormula;
+    String sideAFormula ="$$A=\\pi r^{2}$$";
+
+
+
+    MathView obtuseTriSideBFormula;
+    String sideBFormula ="$$A=\\pi r^{2}$$";
+
+
+    //perimeter
     EditText obtuseTriPerimeterSideAET;
     EditText obtuseTriPerimeterBaseET;
     EditText obtuseTriPerimeterSideCET;
@@ -73,7 +91,27 @@ public class ObtuseTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obtuse_triangle);
-/**
+
+        obtuseTriPerimeterFormula =(MathView)findViewById(R.id.obtuse_tri_perimeter_formula);
+        assert obtuseTriPerimeterFormula != null;
+        obtuseTriPerimeterFormula.setText(perimeterFormula);
+
+        obtuseTriAreaFormula =(MathView)findViewById(R.id.obtuse_tri_area_formula);
+        assert obtuseTriAreaFormula != null;
+        obtuseTriAreaFormula.setText(areaFormula);
+
+ 
+
+        obtuseTriSideAFormula =(MathView)findViewById(R.id.obtuse_tri_sideA_formula);
+        assert obtuseTriSideAFormula != null;
+        obtuseTriSideAFormula.setText(sideAFormula);
+
+        obtuseTriSideBFormula =(MathView)findViewById(R.id.obtuse_tri_base_formula);
+        assert obtuseTriSideBFormula != null;
+        obtuseTriSideBFormula.setText(sideBFormula);
+
+
+
         // Perimeter Clear button
         obtuseTriPerimClearButton = (Button) findViewById(R.id.iso_tri_perimeter_clear_button);
         obtuseTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
@@ -268,81 +306,170 @@ public class ObtuseTriangle extends AppCompatActivity {
             }
         });
 
-*/
 
-      /**  Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-        TextView myTextView = (TextView)findViewById(R.id.obtuse_triangle_title);
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.obtuse_tri_perimeter_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.obtuse_triangle_define_id);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_perimeter_sideA_tv);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.obtuse_tr_att_1_id);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_perimeter_sideB_tv);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.obtuse_tr_def_str_id);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_perimeter_sideC_tv);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.obtuse_tr_attr_str);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_area_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView=(TextView)findViewById(R.id.obtuse_tri_formula_id);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_area_base_tv);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-        myTextView = (TextView)findViewById(R.id.obtuse_tr_prop_id);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_area_height_tv);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-        myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-        myTextView = (TextView)findViewById(R.id.obtuse_tr_prop_1_id);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_sideA_tx);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
-
-        obtuse_triangle_paramter =(MathView)findViewById(R.id.obtuse_triangle_paramter);
-        assert obtuse_triangle_paramter != null;
-        obtuse_triangle_paramter.setText(o_t_paramter);
-
-        obtuse_triangle_area = (MathView)findViewById(R.id.obtuse_triangle_area);
-        assert obtuse_triangle_area != null;
-        obtuse_triangle_area.setText(o_t_area);
-
-
-
-        obtuse_triangle_side_a =(MathView)findViewById(R.id.obtuse_triangle_side_a);
-        assert obtuse_triangle_side_a != null;
-        obtuse_triangle_side_a.setText(o_t_side_a);
-
-        obtuse_triangle_side_b =(MathView)findViewById(R.id.obtuse_triangle_side_b);
-        assert obtuse_triangle_side_b != null;
-        obtuse_triangle_side_b.setText(o_t_side_b);
-
-
-
-    }
-
-} 
-
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-        TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_sideA_base_tv);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-  */      
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_sideA_sideC_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_sideA_perimeter_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_base_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_base_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_base_sideC_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.obtuse_tri_base_perimeter_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        obtuseTriPerimeterSideAET.setTypeface(myTypeFace);
+        obtuseTriPerimeterBaseET.setTypeface(myTypeFace);
+        obtuseTriPerimeterSideCET.setTypeface(myTypeFace);
+        obtuseTriPerimeterAnsTV.setTypeface(myTypeFace);
+        obtuseTriPerimeterCalcButton.setTypeface(myTypeFace);
+        obtuseTriPerimClearButton.setTypeface(myTypeFace);
+
+        obtuseTriAreaBaseET.setTypeface(myTypeFace);
+        obtuseTriAreaHeightET.setTypeface(myTypeFace);
+        obtuseTriAreaAnsTV.setTypeface(myTypeFace);
+        obtuseTriAreaCalcButton.setTypeface(myTypeFace);
+        obtuseTriAreaClearButton.setTypeface(myTypeFace);
+
+        obtuseTriSideABaseET.setTypeface(myTypeFace);
+        obtuseTriSideASideCET.setTypeface(myTypeFace);
+        obtuseTriSideAPerimeterET.setTypeface(myTypeFace);
+        obtuseTriSideAAnsTV.setTypeface(myTypeFace);
+        obtuseTriSideACalcButton.setTypeface(myTypeFace);
+        obtuseTriSideAClearButton.setTypeface(myTypeFace);
+
+        obtuseTriBaseSideAET.setTypeface(myTypeFace);
+        obtuseTriBaseSideCET.setTypeface(myTypeFace);
+        obtuseTriBasePerimeterET.setTypeface(myTypeFace);
+        obtuseTriBaseAnsTV.setTypeface(myTypeFace);
+        obtuseTriBaseCalcButton.setTypeface(myTypeFace);
+        obtuseTriBaseClearButton.setTypeface(myTypeFace);
+
+
+        /**  Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
+          TextView myTextView = (TextView)findViewById(R.id.obtuse_triangle_title);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+          myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
+          myTextView = (TextView)findViewById(R.id.obtuse_triangle_define_id);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+          myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
+          myTextView = (TextView)findViewById(R.id.obtuse_tr_att_1_id);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+
+          myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+          myTextView=(TextView)findViewById(R.id.obtuse_tr_def_str_id);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+          myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+          myTextView=(TextView)findViewById(R.id.obtuse_tr_attr_str);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+          myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+          myTextView=(TextView)findViewById(R.id.obtuse_tri_formula_id);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+          myTypeFace = Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
+          myTextView = (TextView)findViewById(R.id.obtuse_tr_prop_id);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+          myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
+          myTextView = (TextView)findViewById(R.id.obtuse_tr_prop_1_id);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+
+
+          obtuse_triangle_paramter =(MathView)findViewById(R.id.obtuse_triangle_paramter);
+          assert obtuse_triangle_paramter != null;
+          obtuse_triangle_paramter.setText(o_t_paramter);
+
+          obtuse_triangle_area = (MathView)findViewById(R.id.obtuse_triangle_area);
+          assert obtuse_triangle_area != null;
+          obtuse_triangle_area.setText(o_t_area);
+
+
+
+          obtuse_triangle_side_a =(MathView)findViewById(R.id.obtuse_triangle_side_a);
+          assert obtuse_triangle_side_a != null;
+          obtuse_triangle_side_a.setText(o_t_side_a);
+
+          obtuse_triangle_side_b =(MathView)findViewById(R.id.obtuse_triangle_side_b);
+          assert obtuse_triangle_side_b != null;
+          obtuse_triangle_side_b.setText(o_t_side_b);
+
+
+
+      }
+
+  }
+
+          Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
+          TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
+          assert myTextView != null;
+          myTextView.setTypeface(myTypeFace);
+
+    */
     }
   /**  @Override
     protected void onSaveInstanceState(Bundle outState) {

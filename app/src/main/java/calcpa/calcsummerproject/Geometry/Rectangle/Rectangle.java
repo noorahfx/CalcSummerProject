@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Rectangle;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,8 +12,27 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Rectangle extends AppCompatActivity {
+
+    MathView rectanglePerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView rectangleAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView rectangleLengthFormula;
+    String lengthFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView rectangleWidthFormula;
+    String widthFormula ="$$A=\\pi r^{2}$$";
+
+    MathView rectanglePDiagonalFormula;
+    String PDiagonalFormula ="$$A=\\pi r^{2}$$";
 
     //Perimeter
     EditText rectanglePerimeterLET;
@@ -62,6 +82,37 @@ public class Rectangle extends AppCompatActivity {
         setContentView(R.layout.activity_rectangle);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+        rectanglePerimeterFormula =(MathView)findViewById(R.id.rectangle_perimeter_formula);
+        assert rectanglePerimeterFormula != null;
+        rectanglePerimeterFormula.setText(perimeterFormula);
+
+        rectangleAreaFormula =(MathView)findViewById(R.id.rectangle_area_formula);
+        assert rectangleAreaFormula != null;
+        rectangleAreaFormula.setText(areaFormula);
+
+
+
+        rectangleLengthFormula =(MathView)findViewById(R.id.rectangle_length_formula);
+        assert rectangleLengthFormula != null;
+        rectangleLengthFormula.setText(lengthFormula);
+
+
+
+        rectangleWidthFormula =(MathView)findViewById(R.id.rectangle_width_formula);
+        assert rectangleWidthFormula != null;
+        rectangleWidthFormula.setText(widthFormula);
+
+
+        rectanglePDiagonalFormula =(MathView)findViewById(R.id.rectangle_diagonal_formula);
+        assert rectanglePDiagonalFormula != null;
+        rectanglePDiagonalFormula.setText(PDiagonalFormula);
+
+
+
+
 
 
         // Perimeter Clear button
@@ -277,6 +328,98 @@ public class Rectangle extends AppCompatActivity {
             }
         });
 
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.rectangle_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_perimeter_length_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_perimeter_width_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_area_length_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_area_width_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_length_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_length_width_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_length_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_width_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_width_length_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_width_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_diagonal_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_diagonal_length_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rectangle_diagonal_width_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        rectanglePerimeterLET.setTypeface(myTypeFace);
+        rectanglePerimeterWET.setTypeface(myTypeFace);
+        rectanglePerimeterAnswerTV.setTypeface(myTypeFace);
+        rectanglePerimeterCalcButton.setTypeface(myTypeFace);
+        rectanglePerimClearButton.setTypeface(myTypeFace);
+
+        rectangleAreaLET.setTypeface(myTypeFace);
+        rectangleAreaWET.setTypeface(myTypeFace);
+        rectangleAreaAnswerTV.setTypeface(myTypeFace);
+        rectangleAreaCalcButton.setTypeface(myTypeFace);
+        rectangleAreaClearButton.setTypeface(myTypeFace);
+
+        rectangleLengthWET.setTypeface(myTypeFace);
+        rectangleLengthPET.setTypeface(myTypeFace);
+        rectangleLengthAnswerTV.setTypeface(myTypeFace);
+        rectangleLengthCalcButton.setTypeface(myTypeFace);
+        rectangleLengthClearButton.setTypeface(myTypeFace);
+
+        rectangleWidthLET.setTypeface(myTypeFace);
+        rectangleWidthPET.setTypeface(myTypeFace);
+        rectangleWidthAnswerTV.setTypeface(myTypeFace);
+        rectangleWidthCalcButton.setTypeface(myTypeFace);
+        rectangleWidthClearButton.setTypeface(myTypeFace);
+
+        rectanglePDiagonalLET.setTypeface(myTypeFace);
+        rectanglePDiagonalWET.setTypeface(myTypeFace);
+        rectanglePDiagonalAnswerTV.setTypeface(myTypeFace);
+        rectanglePDiagonalCalcButton.setTypeface(myTypeFace);
+        rectanglepDiagonalClearButton.setTypeface(myTypeFace);
 
     }
 

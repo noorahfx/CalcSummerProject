@@ -28,7 +28,23 @@ public class EquilateralTriangle extends AppCompatActivity {
      * <p/>
      * MathView equilateral_triangle_side_a;
      * String e_t_side_a = "$$a=\\frac{P}{3}$$";
+     * 
+     * 
+     * 
      */
+
+
+
+    MathView equiTriPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView equiTriAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView equiTriSideFormula;
+    String sideFormula ="$$A=\\pi r^{2}$$";
+
 
     EditText sideAEditText;
     TextView answerEditText;
@@ -54,6 +70,27 @@ public class EquilateralTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_equilateral_triangle);
+
+
+
+
+
+
+        equiTriPerimeterFormula =(MathView)findViewById(R.id.equi_triangle_perimeter_formula);
+        assert equiTriPerimeterFormula != null;
+        equiTriPerimeterFormula.setText(perimeterFormula);
+
+        equiTriAreaFormula =(MathView)findViewById(R.id.equi_triangle_area_formula);
+        assert equiTriAreaFormula != null;
+        equiTriAreaFormula.setText(areaFormula);
+
+
+        equiTriSideFormula =(MathView)findViewById(R.id.equi_triangle_side_formula);
+        assert equiTriSideFormula != null;
+        equiTriSideFormula.setText(sideFormula);
+
+
+
 
         // Perimeter Clear button
         calculateClearButton = (Button) findViewById(R.id.equi_triangle_perimeter_clear_button);
@@ -210,6 +247,47 @@ public class EquilateralTriangle extends AppCompatActivity {
             }
         });
 
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.equi_triangle_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.equi_triangle_perimeter_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.equi_triangle_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.equi_triangle_area_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.equi_triangle_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.equi_triangle_side_perimeter_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        sideAEditText.setTypeface(myTypeFace);
+        answerEditText.setTypeface(myTypeFace);
+        calculateResultButton.setTypeface(myTypeFace);
+        calculateClearButton.setTypeface(myTypeFace);
+
+        areaSideAET.setTypeface(myTypeFace);
+        areaAnswerTV.setTypeface(myTypeFace);
+        calculateAreaButton.setTypeface(myTypeFace);
+        calculateAreaClearButton.setTypeface(myTypeFace);
+
+        sideAAreaET.setTypeface(myTypeFace);
+        sideAAnswerTV.setTypeface(myTypeFace);
+        calculateSideAButton.setTypeface(myTypeFace);
+        calculateSideClearButton.setTypeface(myTypeFace);
 
     }
     @Override

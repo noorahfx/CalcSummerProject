@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Cuboid;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +16,14 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Cuboid extends AppCompatActivity {
+    MathView cuboidVolumeFormula;
+    String volumeFormula ="$$A=\\pi r^{2}$$";
+
+    MathView cuboidAreaFormula;
+    String areaFormula ="$$d =2r$$";
 
 
     //Volume
@@ -44,6 +51,16 @@ public class Cuboid extends AppCompatActivity {
         setContentView(R.layout.activity_cuboid);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        cuboidVolumeFormula =(MathView)findViewById(R.id.cuboid_volume_formula);
+        assert cuboidVolumeFormula != null;
+        cuboidVolumeFormula.setText(volumeFormula);
+
+        cuboidAreaFormula =(MathView)findViewById(R.id.cuboid_area_formula);
+        assert cuboidAreaFormula != null;
+        cuboidAreaFormula.setText(areaFormula);
+
+
 
         // Volume Clear button
         cuboidVolumeClearButton = (Button) findViewById(R.id.cuboid_volume_clear_button);
@@ -141,6 +158,60 @@ public class Cuboid extends AppCompatActivity {
                 }
             }
         });
+
+
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.cuboid_volume_text);
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cuboid_volume_l_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cuboid_volume_w_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cuboid_volume_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cuboid_area_l_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cuboid_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cuboid_area_w_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cuboid_area_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        cuboidVolumeLET.setTypeface(myTypeFace);
+        cuboidVolumeWET.setTypeface(myTypeFace);
+        cuboidVolumeHET.setTypeface(myTypeFace);
+        cuboidVolumeAnswerTV.setTypeface(myTypeFace);
+        cuboidVolumeCalcButton.setTypeface(myTypeFace);
+        cuboidVolumeClearButton.setTypeface(myTypeFace);
+
+        cuboidAreaLET.setTypeface(myTypeFace);
+        cuboidAreaWET.setTypeface(myTypeFace);
+        cuboidAreaHET.setTypeface(myTypeFace);
+        cuboidAreaAnswerTV.setTypeface(myTypeFace);
+        cuboidAreaCalcButton.setTypeface(myTypeFace);
+        CuboidAreaCalcButton.setTypeface(myTypeFace);
+
 
     }
 

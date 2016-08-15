@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Hexagon;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -24,10 +25,21 @@ import org.w3c.dom.Text;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 
 public class Hexagon extends AppCompatActivity {
 
+
+    MathView hexPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+    MathView hexAreaFormula;
+    String areaFormula ="$$d =2r$$";
+
+    MathView hexSideFormula;
+    String sideFormula ="$$C =2\\pi r$$";
+    
     //perimeter
     EditText hexPerimeterSideAET;
     TextView hexPerimeterAnswerTV;
@@ -53,6 +65,21 @@ public class Hexagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hexagon);
 
+
+
+        hexPerimeterFormula =(MathView)findViewById(R.id.hex_perimeter_formula);
+        assert hexPerimeterFormula != null;
+        hexPerimeterFormula.setText(perimeterFormula);
+
+        hexAreaFormula =(MathView)findViewById(R.id.hex_area_formula);
+        assert hexAreaFormula != null;
+        hexAreaFormula.setText(areaFormula);
+
+
+        hexSideFormula =(MathView)findViewById(R.id.hex_side_formula);
+        assert hexSideFormula != null;
+        hexSideFormula.setText(sideFormula);
+        
         // Perimeter Clear button
         hexPerimeterClearButton = (Button) findViewById(R.id.hex_perimeter_clear_button);
         hexPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
@@ -156,6 +183,47 @@ public class Hexagon extends AppCompatActivity {
 
 
 
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.hex_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hex_perimeter_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hex_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hex_area_side_a_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hex_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.hex_side_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        hexPerimeterSideAET.setTypeface(myTypeFace);
+        hexPerimeterAnswerTV.setTypeface(myTypeFace);
+        hexPerimeterCalcButton.setTypeface(myTypeFace);
+        hexPerimeterClearButton.setTypeface(myTypeFace);
+
+        hexAreaSideAET.setTypeface(myTypeFace);
+        hexAreaAnswerTV.setTypeface(myTypeFace);
+        hexAreaCalcButton.setTypeface(myTypeFace);
+        hexAreaClearButton.setTypeface(myTypeFace);
+
+        hexSideAET.setTypeface(myTypeFace);
+        hexSideAAnswerTV.setTypeface(myTypeFace);
+        hexSideACalcButton.setTypeface(myTypeFace);
+        hexSideAClearButton.setTypeface(myTypeFace);
 
 
 

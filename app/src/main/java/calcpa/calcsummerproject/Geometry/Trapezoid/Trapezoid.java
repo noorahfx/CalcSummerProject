@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Trapezoid;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +16,42 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Trapezoid extends AppCompatActivity {
+
+
+
+    MathView trapezoidPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView trapezoidAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+
+
+    MathView trapezoidHeightFormula;
+    String heightFormula ="$$A=\\pi r^{2}$$";
+
+    MathView trapezoidBaseAFormula;
+    String baseAFormula ="$$A=\\pi r^{2}$$";
+
+
+
+    MathView trapezoidBaseBFormula;
+    String baseBFormula ="$$A=\\pi r^{2}$$";
+
+
+
+    MathView trapezoidSideCFormula;
+    String sideCFormula ="$$A=\\pi r^{2}$$";
+
+
+
+    MathView trapezoidSideDtFormula;
+    String sideDFormula ="$$A=\\pi r^{2}$$";
+
 
     //Perimeter
     EditText trapezoidPerimeterAET;
@@ -92,6 +127,45 @@ public class Trapezoid extends AppCompatActivity {
         setContentView(R.layout.activity_trapezoid);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        trapezoidPerimeterFormula =(MathView)findViewById(R.id.trapezoid_perimeter_formula);
+        assert trapezoidPerimeterFormula != null;
+        trapezoidPerimeterFormula.setText(perimeterFormula);
+
+
+        trapezoidAreaFormula =(MathView)findViewById(R.id.trapezoid_area_formula);
+        assert trapezoidAreaFormula != null;
+        trapezoidAreaFormula.setText(areaFormula);
+
+
+        trapezoidHeightFormula =(MathView)findViewById(R.id.trapezoid_height_formula);
+        assert trapezoidHeightFormula != null;
+        trapezoidHeightFormula.setText(heightFormula);
+
+
+
+        trapezoidBaseAFormula =(MathView)findViewById(R.id.trapezoid_baseA_formula);
+        assert trapezoidBaseAFormula != null;
+        trapezoidBaseAFormula.setText(baseAFormula);
+
+
+
+        trapezoidBaseBFormula =(MathView)findViewById(R.id.trapezoid_baseB_formula);
+        assert trapezoidBaseBFormula != null;
+        trapezoidBaseBFormula.setText(baseBFormula);
+
+
+
+        trapezoidSideCFormula =(MathView)findViewById(R.id.trapezoid_sideC_formula);
+        assert trapezoidSideCFormula != null;
+        trapezoidSideCFormula.setText(sideCFormula);
+
+
+
+        trapezoidSideDtFormula =(MathView)findViewById(R.id.trapezoid_sideD_formula);
+        assert trapezoidSideDtFormula != null;
+        trapezoidSideDtFormula.setText(sideDFormula);
+
 
         // Perimeter Clear button
         trapezoidPerimClearButton = (Button) findViewById(R.id.trapezoid_perimeter_clear_button);
@@ -520,6 +594,187 @@ public class Trapezoid extends AppCompatActivity {
             }
 
         });
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.trapezoid_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_perimeter_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_perimeter_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_perimeter_c_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_perimeter_d_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_area_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_area_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_area_h_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_height_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_height_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_height_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_height_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseA_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseA_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseA_sideC_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseA_sideD_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseA_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseB_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseB_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseB_sideC_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseB_sideD_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_baseB_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideC_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideC_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideC_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideC_d_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideC_p_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideD_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideD_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideD_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideD_c_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.trapezoid_sideD_p_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        trapezoidPerimeterAET.setTypeface(myTypeFace);
+        trapezoidPerimeterBET.setTypeface(myTypeFace);
+        trapezoidPerimeterCET.setTypeface(myTypeFace);
+        trapezoidPerimeterDET.setTypeface(myTypeFace);
+        trapezoidPerimeterAnswerTV.setTypeface(myTypeFace);
+        trapezoidPerimeterCalcButton.setTypeface(myTypeFace);
+        trapezoidPerimClearButton.setTypeface(myTypeFace);
+
+        trapezoidAreaAET.setTypeface(myTypeFace);
+        trapezoidAreaBET.setTypeface(myTypeFace);
+        trapezoidAreahET.setTypeface(myTypeFace);
+        trapezoidAreaAnswerTV.setTypeface(myTypeFace);
+        trapezoidAreaCalcButton.setTypeface(myTypeFace);
+        trapezoidAreaClearButton.setTypeface(myTypeFace);
+
+        trapezoidHeightAET.setTypeface(myTypeFace);
+        trapezoidHeightBET.setTypeface(myTypeFace);
+        trapezoidHeightAreaET.setTypeface(myTypeFace);
+        trapezoidHeightAnswerTV.setTypeface(myTypeFace);
+        trapezoidHeightCalcButton.setTypeface(myTypeFace);
+        trapezoidHeightClearButton.setTypeface(myTypeFace);
+
+        trapezoidABaseBET.setTypeface(myTypeFace);
+        trapezoidABaseCET.setTypeface(myTypeFace);
+        trapezoidABaseDET.setTypeface(myTypeFace);
+        trapezoidABasePerimeterET.setTypeface(myTypeFace);
+        trapezoidABaseAnswerTV.setTypeface(myTypeFace);
+        trapezoidABaseCalcButton.setTypeface(myTypeFace);
+        trapezoidBaseAClearButton.setTypeface(myTypeFace);
+
+        trapezoidBBaseAET.setTypeface(myTypeFace);
+        trapezoidBBaseCET.setTypeface(myTypeFace);
+        trapezoidBBaseDET.setTypeface(myTypeFace);
+        trapezoidBBasePerimeterET.setTypeface(myTypeFace);
+        trapezoidBBaseAnswerTV.setTypeface(myTypeFace);
+        trapezoidBBaseCalcButton.setTypeface(myTypeFace);
+        trapezoidBaseBClearButton.setTypeface(myTypeFace);
+
+        trapezoidCSideAET.setTypeface(myTypeFace);
+        trapezoidCSideBET.setTypeface(myTypeFace);
+        trapezoidCSideDET.setTypeface(myTypeFace);
+        trapezoidCSidePET.setTypeface(myTypeFace);
+        trapezoidCSideAnswerTV.setTypeface(myTypeFace);
+        trapezoidCSideCalcButton.setTypeface(myTypeFace);
+        trapezoidSideCClearButton.setTypeface(myTypeFace);
+
 
 
     }

@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Square;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,8 +12,25 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Square extends AppCompatActivity {
+
+
+
+    MathView squarePerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView squareAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView rhombusSidesFormula;
+    String sidesFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView squareDiagonalFormula;
+    String diagonalFormula ="$$A=\\pi r^{2}$$";
 
     //Perimeter
     EditText squarePerimeterET;
@@ -46,6 +64,34 @@ public class Square extends AppCompatActivity {
         setContentView(R.layout.activity_square);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+
+        squarePerimeterFormula =(MathView)findViewById(R.id.square_perimeter_formula);
+        assert squarePerimeterFormula != null;
+        squarePerimeterFormula.setText(perimeterFormula);
+
+        squareAreaFormula =(MathView)findViewById(R.id.square_area_formula);
+        assert squareAreaFormula != null;
+        squareAreaFormula.setText(areaFormula);
+
+
+        rhombusSidesFormula =(MathView)findViewById(R.id.square_side_formula);
+        assert rhombusSidesFormula != null;
+        rhombusSidesFormula.setText(sidesFormula);
+
+
+
+
+
+        squareDiagonalFormula =(MathView)findViewById(R.id.square_diagonal_formula);
+        assert squareDiagonalFormula != null;
+        squareDiagonalFormula.setText(diagonalFormula);
+
+
+        
+        
 
         // Perimeter Clear button
         squarePerimClearButton = (Button) findViewById(R.id.square_perimeter_clear_button);
@@ -182,6 +228,65 @@ public class Square extends AppCompatActivity {
                 }
             }
         });
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.square_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.square_perimeter_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.square_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.square_area_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.square_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.square_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.square_diagonal_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.square_diagonal_d_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        squarePerimeterET.setTypeface(myTypeFace);
+        squarePerimeterAnswerTV.setTypeface(myTypeFace);
+        squarePerimeterCalculateButton.setTypeface(myTypeFace);
+        squarePerimClearButton.setTypeface(myTypeFace);
+
+        squareAreaET.setTypeface(myTypeFace);
+        squareAreaTV.setTypeface(myTypeFace);
+        squareAreaCalculateButton.setTypeface(myTypeFace);
+        squareAreaClearButton.setTypeface(myTypeFace);
+
+        squareSideET.setTypeface(myTypeFace);
+        squareSideTV.setTypeface(myTypeFace);
+        squareSideCalculateButton.setTypeface(myTypeFace);
+        squareSidesClearButton.setTypeface(myTypeFace);
+
+        squareDiagonalET.setTypeface(myTypeFace);
+        squareDiagonalTV.setTypeface(myTypeFace);
+        squareDiagonalCalculateButton.setTypeface(myTypeFace);
+        squareDiagonalClearButton.setTypeface(myTypeFace);
+
     }
 
 

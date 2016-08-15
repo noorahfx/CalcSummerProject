@@ -21,6 +21,22 @@ import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
 public class IsoscelesTriangle extends AppCompatActivity {
+
+
+    MathView isoTriPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+    MathView isoTriAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+    MathView isoTriSideFormula;
+    String sideFormula ="$$A=\\pi r^{2}$$";
+
+    MathView isoTriBaseFormula;
+    String baseFormula ="$$A=\\pi r^{2}$$";
+
+    MathView isoTriHeightFormula;
+    String heightFormula ="$$A=\\pi r^{2}$$";
     /**
      * MathView isosceles_triangle_paramter;
      * String i_t_paramter = "$$P =2a+b$$";
@@ -77,6 +93,29 @@ public class IsoscelesTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isosceles_triangle);
+
+        isoTriPerimeterFormula =(MathView)findViewById(R.id.iso_triangle_perimeter_formula);
+        assert isoTriPerimeterFormula != null;
+        isoTriPerimeterFormula.setText(perimeterFormula);
+
+        isoTriAreaFormula =(MathView)findViewById(R.id.iso_triangle_area_formula);
+        assert isoTriAreaFormula != null;
+        isoTriAreaFormula.setText(areaFormula);
+
+
+        isoTriSideFormula =(MathView)findViewById(R.id.iso_triangle_side_formula);
+        assert isoTriSideFormula != null;
+        isoTriSideFormula.setText(sideFormula);
+
+
+
+        isoTriBaseFormula =(MathView)findViewById(R.id.iso_triangle_base_formula);
+        assert isoTriBaseFormula != null;
+        isoTriBaseFormula.setText(baseFormula);
+
+        isoTriHeightFormula =(MathView)findViewById(R.id.iso_triangle_height_formula);
+        assert isoTriHeightFormula != null;
+        isoTriHeightFormula.setText(heightFormula);
 
 
 
@@ -354,6 +393,98 @@ public class IsoscelesTriangle extends AppCompatActivity {
                 }
             }
         });
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.iso_triangle_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_perimeter_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_perimeter_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_area_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_area_height_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_side_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_side_perimeter_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_base_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_base_side_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_base_perimeter_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_height_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_height_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.iso_triangle_height_area_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        isoTriPerimeterSideET.setTypeface(myTypeFace);
+        isoTriPerimeterBaseET.setTypeface(myTypeFace);
+        isoTriPerimeterAnswerTV.setTypeface(myTypeFace);
+        isoTriPerimeterCalcButton.setTypeface(myTypeFace);
+        isoTriPerimClearButton.setTypeface(myTypeFace);
+
+        isoTriAreaBaseET.setTypeface(myTypeFace);
+        isoTriAreaHeightET.setTypeface(myTypeFace);
+        isoTriAreaAnswerTV.setTypeface(myTypeFace);
+        isoTriAreaCalcButton.setTypeface(myTypeFace);
+        isoTriAreaClearButton.setTypeface(myTypeFace);
+
+        isoTriSideBaseET.setTypeface(myTypeFace);
+        isoTriSidePerimeterET.setTypeface(myTypeFace);
+        isoTriSideAnswerTV.setTypeface(myTypeFace);
+        isoTriSideCalcButton.setTypeface(myTypeFace);
+        isoTriSideClearButton.setTypeface(myTypeFace);
+
+        isoTriBaseSideET.setTypeface(myTypeFace);
+        isoTriBasePerimeterET.setTypeface(myTypeFace);
+        isoTriBaseAnswerTV.setTypeface(myTypeFace);
+        isoTriBaseCalcButton.setTypeface(myTypeFace);
+        isoTriBaseClearButton.setTypeface(myTypeFace);
+
+        isoTriHeightBaseET.setTypeface(myTypeFace);
+        isoTriHeightPerimeterET.setTypeface(myTypeFace);
+        isoTriHeightAnswerTV.setTypeface(myTypeFace);
+        isoTriHeightCalcButton.setTypeface(myTypeFace);
+        isoTriHeightClearButton.setTypeface(myTypeFace);
 
     }
     @Override

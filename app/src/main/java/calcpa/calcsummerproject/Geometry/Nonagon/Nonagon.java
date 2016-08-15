@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Nonagon;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +16,21 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Nonagon extends AppCompatActivity {
+
+
+    MathView nonPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+    MathView nonAreaFormula;
+    String areaFormula ="$$d =2r$$";
+
+    MathView nonSideFormula;
+    String sideFormula ="$$C =2\\pi r$$";
+
+
 
     //perimeter
     EditText nonPerimeterSideAET;
@@ -40,6 +54,20 @@ public class Nonagon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nonagon);
+
+
+        nonPerimeterFormula =(MathView)findViewById(R.id.non_perimeter_formula);
+        assert nonPerimeterFormula != null;
+        nonPerimeterFormula.setText(perimeterFormula);
+
+        nonAreaFormula =(MathView)findViewById(R.id.non_area_formula);
+        assert nonAreaFormula != null;
+        nonAreaFormula.setText(areaFormula);
+
+
+        nonSideFormula =(MathView)findViewById(R.id.non_side_formula);
+        assert nonSideFormula != null;
+        nonSideFormula.setText(sideFormula);
 
 
 
@@ -138,6 +166,51 @@ public class Nonagon extends AppCompatActivity {
                 }
             }
         });
+
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.non_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.non_perimeter_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.non_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.non_area_side_a_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.non_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.non_side_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        nonPerimeterSideAET.setTypeface(myTypeFace);
+        nonPerimeterAnswerTV.setTypeface(myTypeFace);
+        nonPerimeterCalcButton.setTypeface(myTypeFace);
+        nonPerimeterClearButton.setTypeface(myTypeFace);
+
+        nonAreaSideAET.setTypeface(myTypeFace);
+        nonAreaAnswerTV.setTypeface(myTypeFace);
+        nonAreaCalcButton.setTypeface(myTypeFace);
+        nonAreaClearButton.setTypeface(myTypeFace);
+
+        nonSideAET.setTypeface(myTypeFace);
+        nonSideAAnswerTV.setTypeface(myTypeFace);
+        nonSideACalcButton.setTypeface(myTypeFace);
+        nonSideAClearButton.setTypeface(myTypeFace);
+
     }
 
     @Override

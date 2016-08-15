@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Cube;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +16,24 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Cube extends AppCompatActivity {
+
+
+    MathView cubeVolumeFormula;
+    String volumeFormula ="$$A=\\pi r^{2}$$";
+
+    MathView cubeEdgeFormula;
+    String edgeFormula ="$$d =2r$$";
+
+    MathView cubeSpecialDiagonalFormula;
+    String specialDiagonalFormula ="$$C =2\\pi r$$";
+
+    MathView cubeSurfaceAreaFormula;
+    String surfaceAreaFormula="$$r =\\sqrt{\\frac{A}{\\pi}}$$";
+
+
 
     //Volume
     EditText cubeVolumeET;
@@ -54,6 +71,27 @@ public class Cube extends AppCompatActivity {
         setContentView(R.layout.activity_cube);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+        cubeVolumeFormula =(MathView)findViewById(R.id.cube_volume_formula);
+        assert cubeVolumeFormula != null;
+        cubeVolumeFormula.setText(volumeFormula);
+
+        cubeEdgeFormula =(MathView)findViewById(R.id.cube_edge_formula);
+        assert cubeEdgeFormula != null;
+        cubeEdgeFormula.setText(edgeFormula);
+
+
+        cubeSpecialDiagonalFormula =(MathView)findViewById(R.id.cube_special_diagonal_formula);
+        assert cubeSpecialDiagonalFormula != null;
+        cubeSpecialDiagonalFormula.setText(specialDiagonalFormula);
+
+
+        cubeSurfaceAreaFormula =(MathView)findViewById(R.id.cube_surface_area_formula);
+        assert cubeSurfaceAreaFormula != null;
+        cubeSurfaceAreaFormula.setText(surfaceAreaFormula);
+
 
         // Volume Clear button
         cubeVolumeClearButton = (Button) findViewById(R.id.cube_volume_clear_button);
@@ -193,6 +231,63 @@ public class Cube extends AppCompatActivity {
             }
         });
 
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.cube_volume_text);
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.cube_volume_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cube_edge_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cube_edge_v_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cube_special_diagonal_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cube_special_diagonal_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cube_surface_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.cube_surface_area_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        cubeVolumeET.setTypeface(myTypeFace);
+        cubeVolumeCalcButton.setTypeface(myTypeFace);
+        cubeVolumeClearButton.setTypeface(myTypeFace);
+        cubeVolumeTV.setTypeface(myTypeFace);
+
+        cubeEdgeET.setTypeface(myTypeFace);
+        cubeEdgeCalcButton.setTypeface(myTypeFace);
+        cubeEdgeClearButton.setTypeface(myTypeFace);
+        cubeEdgeTV.setTypeface(myTypeFace);
+
+        cubeSpecialDiagonalET.setTypeface(myTypeFace);
+        cubeSpecialDiagonalTV.setTypeface(myTypeFace);
+        cubeSpecialDiagonalCalcButton.setTypeface(myTypeFace);
+        cubeSpecialDiagonalClearButton.setTypeface(myTypeFace);
+
+        cubeSurfaceAreaET.setTypeface(myTypeFace);
+        cubeSurfaceAreaTV.setTypeface(myTypeFace);
+        cubeSurfaceAreaCalcButton.setTypeface(myTypeFace);
+        cubeSurfaceAreaClearButton.setTypeface(myTypeFace);
 
     }
 

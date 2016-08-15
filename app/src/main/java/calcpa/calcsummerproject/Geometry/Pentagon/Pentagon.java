@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Pentagon;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,8 +16,20 @@ import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Pentagon extends AppCompatActivity {
+
+
+    MathView penPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+    MathView penAreaFormula;
+    String areaFormula ="$$d =2r$$";
+
+    MathView penSideFormula;
+    String sideFormula ="$$C =2\\pi r$$";
+
     //perimeter
     EditText penPerimeterSideAET;
     TextView penPerimeterAnswerTV;
@@ -41,6 +54,20 @@ public class Pentagon extends AppCompatActivity {
         setContentView(R.layout.activity_pentagon);
 
 
+        penPerimeterFormula =(MathView)findViewById(R.id.pen_perimeter_formula);
+        assert penPerimeterFormula != null;
+        penPerimeterFormula.setText(perimeterFormula);
+
+        penAreaFormula =(MathView)findViewById(R.id.pen_area_formula);
+        assert penAreaFormula != null;
+        penAreaFormula.setText(areaFormula);
+
+
+        penSideFormula =(MathView)findViewById(R.id.pen_side_formula);
+        assert penSideFormula != null;
+        penSideFormula.setText(sideFormula);
+
+        
         // Perimeter Clear button
         penPerimeterClearButton = (Button) findViewById(R.id.pen_perimeter_clear_button);
         penPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
@@ -138,6 +165,50 @@ public class Pentagon extends AppCompatActivity {
                 }
             }
         });
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.pen_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.pen_perimeter_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.pen_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.pen_area_side_a_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.pen_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.pen_side_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        penPerimeterSideAET.setTypeface(myTypeFace);
+        penPerimeterAnswerTV.setTypeface(myTypeFace);
+        penPerimeterCalcButton.setTypeface(myTypeFace);
+        penPerimeterClearButton.setTypeface(myTypeFace);
+
+        penAreaSideAET.setTypeface(myTypeFace);
+        penAreaAnswerTV.setTypeface(myTypeFace);
+        penAreaCalcButton.setTypeface(myTypeFace);
+        penAreaClearButton.setTypeface(myTypeFace);
+
+        penSideAET.setTypeface(myTypeFace);
+        penSideAAnswerTV.setTypeface(myTypeFace);
+        penSideACalcButton.setTypeface(myTypeFace);
+        penSideAClearButton.setTypeface(myTypeFace);
+
     }
 
     @Override

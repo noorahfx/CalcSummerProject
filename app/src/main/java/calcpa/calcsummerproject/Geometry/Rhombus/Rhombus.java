@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Rhombus;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,8 +12,27 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Rhombus extends AppCompatActivity {
+
+
+    MathView rhombusPerimeterFormula;
+    String perimeterFormula = "$$A=\\pi r^{2}$$";
+
+
+    MathView rhombusAreaFormula;
+    String areaFormula = "$$A=\\pi r^{2}$$";
+
+    MathView rhombusSidesFormula;
+    String sidesFormula = "$$A=\\pi r^{2}$$";
+
+
+    MathView rhombusPDiaognalFormula;
+    String pDiaognalFormula = "$$A=\\pi r^{2}$$";
+
+    MathView rhombusQDiagonalFormula;
+    String qDiagonalFormula = "$$A=\\pi r^{2}$$";
 
 
     //Perimeter
@@ -55,6 +75,31 @@ public class Rhombus extends AppCompatActivity {
         setContentView(R.layout.activity_rhombus);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        rhombusPerimeterFormula = (MathView) findViewById(R.id.rhombus_perimeter_formula);
+        assert rhombusPerimeterFormula != null;
+        rhombusPerimeterFormula.setText(perimeterFormula);
+
+        rhombusAreaFormula = (MathView) findViewById(R.id.rhombus_area_formula);
+        assert rhombusAreaFormula != null;
+        rhombusAreaFormula.setText(areaFormula);
+
+
+        rhombusSidesFormula = (MathView) findViewById(R.id.rhombus_sides_formula);
+        assert rhombusSidesFormula != null;
+        rhombusSidesFormula.setText(sidesFormula);
+
+
+        rhombusPDiaognalFormula = (MathView) findViewById(R.id.rhombus_p_diagonal_formula);
+        assert rhombusPDiaognalFormula != null;
+        rhombusPDiaognalFormula.setText(pDiaognalFormula);
+
+
+        rhombusQDiagonalFormula = (MathView) findViewById(R.id.rhombus_q_diagonal_formula);
+        assert rhombusQDiagonalFormula != null;
+        rhombusQDiagonalFormula.setText(qDiagonalFormula);
+
 
         // Perimeter Clear button
         rhombusPerimeterClearButton = (Button) findViewById(R.id.rhombus_perimeter_clear_button);
@@ -249,6 +294,93 @@ public class Rhombus extends AppCompatActivity {
             }
         });
 
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.rhombus_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_perimeter_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_area_p_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_area_q_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_sides_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_sides_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_sides_calc_answer_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_p_diagonal_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_p_diagonal_q_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_p_diagonal_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_q_diagonal_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_q_diagonal_p_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.rhombus_q_diagonal_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        rhombusPerimeterAET.setTypeface(myTypeFace);
+        rhombusPerimeterAnswerTV.setTypeface(myTypeFace);
+        rhombusPerimeterCalcButton.setTypeface(myTypeFace);
+        rhombusPerimeterClearButton.setTypeface(myTypeFace);
+
+        rhombusAreaPET.setTypeface(myTypeFace);
+        rhombusAreaQET.setTypeface(myTypeFace);
+        rhombusAreaAnswerTV.setTypeface(myTypeFace);
+        rhombusAreaCalcButton.setTypeface(myTypeFace);
+        rhombusAreaClearButton.setTypeface(myTypeFace);
+
+        rhombusSidesPET.setTypeface(myTypeFace);
+        rhombusSidesAnswerTV.setTypeface(myTypeFace);
+        rhombusSidesCalcButton.setTypeface(myTypeFace);
+        rhombusSidesClearButton.setTypeface(myTypeFace);
+
+        rhombusPDiaognalQET.setTypeface(myTypeFace);
+        rhombusPDiaognalAreaET.setTypeface(myTypeFace);
+        rhombusPDiaognalAnswerTV.setTypeface(myTypeFace);
+        rhombusPDiaognalCalcButton.setTypeface(myTypeFace);
+        rhombusPDiaognalClearButton.setTypeface(myTypeFace);
+
+        rhombusQDiagonalPET.setTypeface(myTypeFace);
+        rhombusQDiagonalAreaET.setTypeface(myTypeFace);
+        rhombusQDiagonalAnswerTV.setTypeface(myTypeFace);
+        rhombusQDiagonalCalcButton.setTypeface(myTypeFace);
+        rhombusQDiagonalClearButton.setTypeface(myTypeFace);
 
     }
 

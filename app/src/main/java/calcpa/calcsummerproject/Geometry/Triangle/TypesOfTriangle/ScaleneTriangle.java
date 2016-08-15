@@ -19,6 +19,24 @@ import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
 public class ScaleneTriangle extends AppCompatActivity {
+
+
+    MathView scaleneTriPerimeterFormula;
+    String perimeterFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView scaleneTriAreaFormula;
+    String areaFormula ="$$A=\\pi r^{2}$$";
+
+
+    MathView scaleneTriSideAFormula;
+    String sideAFormula ="$$A=\\pi r^{2}$$";
+
+
+
+    MathView scaleneTriSideBFormula;
+    String sideBFormula ="$$A=\\pi r^{2}$$";
+
     //perimeter
     EditText scaleneTriPerimeterSideAET;
     EditText scaleneTriPerimeterBaseET;
@@ -61,6 +79,28 @@ public class ScaleneTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scalene_triangle);
+
+
+        scaleneTriPerimeterFormula =(MathView)findViewById(R.id.scalene_tri_perimeter_formula);
+        assert scaleneTriPerimeterFormula != null;
+        scaleneTriPerimeterFormula.setText(perimeterFormula);
+
+        scaleneTriAreaFormula =(MathView)findViewById(R.id.scalene_tri_area_formula);
+        assert scaleneTriAreaFormula != null;
+        scaleneTriAreaFormula.setText(areaFormula);
+
+
+
+        scaleneTriSideAFormula =(MathView)findViewById(R.id.scalene_tri_sideA_formula);
+        assert scaleneTriSideAFormula != null;
+        scaleneTriSideAFormula.setText(sideAFormula);
+
+        scaleneTriSideBFormula =(MathView)findViewById(R.id.scalene_tri_base_formula);
+        assert scaleneTriSideBFormula != null;
+        scaleneTriSideBFormula.setText(sideBFormula);
+
+
+
 
 
         // Perimeter Clear button
@@ -336,6 +376,99 @@ public class ScaleneTriangle extends AppCompatActivity {
                 }
             }
         });
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.scalene_tri_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_perimeter_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_perimeter_sideB_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_perimeter_sideC_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_area_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_area_height_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_sideA_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_sideA_base_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_sideA_sideC_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_sideA_perimeter_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_base_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_base_sideA_tv);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_base_sideC_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.scalene_tri_base_perimeter_tx);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        scaleneTriPerimeterSideAET.setTypeface(myTypeFace);
+        scaleneTriPerimeterBaseET.setTypeface(myTypeFace);
+        scaleneTriPerimeterSideCET.setTypeface(myTypeFace);
+        scaleneTriPerimeterAnsTV.setTypeface(myTypeFace);
+        scaleneTriPerimeterCalcButton.setTypeface(myTypeFace);
+        scaleneTriPerimeterClearButton.setTypeface(myTypeFace);
+
+
+
+        scaleneTriAreaBaseET.setTypeface(myTypeFace);
+        scaleneTriAreaHeightET.setTypeface(myTypeFace);
+        scaleneTriAreaAnsTV.setTypeface(myTypeFace);
+        scaleneTriAreaCalcButton.setTypeface(myTypeFace);
+        scaleneTriArearClearButton.setTypeface(myTypeFace);
+
+
+        scaleneTriSideABaseET.setTypeface(myTypeFace);
+        scaleneTriSideASideCET.setTypeface(myTypeFace);
+        scaleneTriSideAPerimeterET.setTypeface(myTypeFace);
+        scaleneTriSideAAnsTV.setTypeface(myTypeFace);
+        scaleneTriSideACalcButton.setTypeface(myTypeFace);
+        scaleneTriSideAClearButton.setTypeface(myTypeFace);
+
+        scaleneTriBaseSideAET.setTypeface(myTypeFace);
+        scaleneTriBaseSideCET.setTypeface(myTypeFace);
+        scaleneTriBasePerimeterET.setTypeface(myTypeFace);
+        scaleneTriBaseAnsTV.setTypeface(myTypeFace);
+        scaleneTriBaseCalcButton.setTypeface(myTypeFace);
+        scaleneTriSideBClearButton.setTypeface(myTypeFace);
+
     }
 
     @Override

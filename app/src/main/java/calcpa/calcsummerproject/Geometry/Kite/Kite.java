@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Kite;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,8 +12,31 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
+import io.github.kexanie.library.MathView;
 
 public class Kite extends AppCompatActivity {
+
+    MathView kitePerimeterFormula;
+    String perimeterFormula = "$$A=\\pi r^{2}$$";
+
+
+    MathView kiteAreaFormula;
+    String areaFormula = "$$A=\\pi r^{2}$$";
+
+
+    MathView kiteASideFormula;
+    String aSideFormula = "$$A=\\pi r^{2}$$";
+
+
+    MathView kiteBSideFormula;
+    String bSideFormula = "$$A=\\pi r^{2}$$";
+
+    MathView kitePDiaogonalFormula;
+    String pDiaognalFormula = "$$A=\\pi r^{2}$$";
+
+    MathView kiteQDiaogonalFormula;
+    String qDiagonalFormula = "$$A=\\pi r^{2}$$";
+
 
     //Perimeter
     EditText kitePerimeterAET;
@@ -64,6 +88,35 @@ public class Kite extends AppCompatActivity {
         setContentView(R.layout.activity_kite);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        kitePerimeterFormula = (MathView) findViewById(R.id.kite_perimeter_formula);
+        assert kitePerimeterFormula != null;
+        kitePerimeterFormula.setText(perimeterFormula);
+
+        kiteAreaFormula = (MathView) findViewById(R.id.kite_area_formula);
+        assert kiteAreaFormula != null;
+        kiteAreaFormula.setText(areaFormula);
+
+
+        kiteASideFormula = (MathView) findViewById(R.id.kite_side_a_formula);
+        assert kiteASideFormula != null;
+        kiteASideFormula.setText(aSideFormula);
+
+
+        kiteBSideFormula = (MathView) findViewById(R.id.kite_side_b_formula);
+        assert kiteBSideFormula != null;
+        kiteBSideFormula.setText(bSideFormula);
+
+
+        kitePDiaogonalFormula = (MathView) findViewById(R.id.kite_p_diagonal_formula);
+        assert kitePDiaogonalFormula != null;
+        kitePDiaogonalFormula.setText(pDiaognalFormula);
+
+
+        kiteQDiaogonalFormula = (MathView) findViewById(R.id.kite_q_diagonal_formula);
+        assert kiteQDiaogonalFormula != null;
+        kiteQDiaogonalFormula.setText(qDiagonalFormula);
 
 
         // Perimeter Clear button
@@ -328,6 +381,117 @@ public class Kite extends AppCompatActivity {
                 }
             }
         });
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+
+        TextView myTextView = (TextView) findViewById(R.id.kite_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_perimeter_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_perimeter_side_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_area_diagonal_p_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_area_diagonal_q_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_side_a_bside_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_side_a_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_side_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_side_b_aside_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_side_b_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_p_diaognal_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_p_diaognal_q_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_p_diaognal_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_q_diaognal_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_q_diaognal_p_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.kite_q_diaognal_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        kitePerimeterAET.setTypeface(myTypeFace);
+        kitePerimeterBET.setTypeface(myTypeFace);
+        kitePerimeterAnswerTV.setTypeface(myTypeFace);
+        kitePerimeterCalcButton.setTypeface(myTypeFace);
+        kitePerimeterClearButton.setTypeface(myTypeFace);
+
+        kiteAreaPET.setTypeface(myTypeFace);
+        kiteAreaQET.setTypeface(myTypeFace);
+        kiteAreaAnswerTV.setTypeface(myTypeFace);
+        kiteAreaCalcButton.setTypeface(myTypeFace);
+        kiteAreaClearButton.setTypeface(myTypeFace);
+
+        kiteASideBET.setTypeface(myTypeFace);
+        kiteASidePerimterET.setTypeface(myTypeFace);
+        kiteASideAnswerTV.setTypeface(myTypeFace);
+        kiteASideCalcButton.setTypeface(myTypeFace);
+        kiteASideClearButton.setTypeface(myTypeFace);
+
+        kiteBSideAET.setTypeface(myTypeFace);
+        kiteBSidePerimeterET.setTypeface(myTypeFace);
+        kiteBSideAnswerTV.setTypeface(myTypeFace);
+        kiteBSideCalcButton.setTypeface(myTypeFace);
+        kiteBSideClearButton.setTypeface(myTypeFace);
+
+        kitePDiagonalAreaET.setTypeface(myTypeFace);
+        kitePDiagonalQET.setTypeface(myTypeFace);
+        kitePDiagonalAnswerTV.setTypeface(myTypeFace);
+        kitePDiagonalCalcButton.setTypeface(myTypeFace);
+        kitePDiagonalClearButton.setTypeface(myTypeFace);
+
+        kiteQDiagonalAreaET.setTypeface(myTypeFace);
+        kiteQDiagonalPET.setTypeface(myTypeFace);
+        kiteQDiagonalAnswerTV.setTypeface(myTypeFace);
+        kiteQDiagonalCalcButton.setTypeface(myTypeFace);
+        kiteQDiagonalClearButton.setTypeface(myTypeFace);
 
     }
 

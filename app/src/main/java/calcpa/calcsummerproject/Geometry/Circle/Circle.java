@@ -26,7 +26,7 @@ import calcpa.calcsummerproject.R;
 public class Circle extends AppCompatActivity {
 
     MathView circleAreaFormula;
-String areaFormula ="$$A=\\pi r^{2}$$";
+    String areaFormula ="$$A=\\pi r^{2}$$";
 
     MathView circleDiameterFormula;
     String diameterFormula ="$$d =2r$$";

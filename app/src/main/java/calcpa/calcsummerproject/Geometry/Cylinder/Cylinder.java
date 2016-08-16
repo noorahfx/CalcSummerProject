@@ -21,11 +21,11 @@ import io.github.kexanie.library.MathView;
 public class Cylinder extends AppCompatActivity {
 
     MathView cylinderVolumeFormula;
-    String volumeFormula ="$$A=\\pi r^{2}$$";
+    String volumeFormula ="$$V = \\pi r^2h$$";
 
 
     MathView cylinderRadius;
-    String radiusFormula ="$$A=\\pi r^{2}$$";
+    String radiusFormula ="$$r=\\sqrt{\\frac{V}{\\Pi h}}$$";
 
 
     MathView cylinderHeightFormula;

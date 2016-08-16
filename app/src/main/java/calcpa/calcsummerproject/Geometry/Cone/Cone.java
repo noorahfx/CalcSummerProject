@@ -19,28 +19,28 @@ import calcpa.calcsummerproject.R;
 
 public class Cone extends AppCompatActivity {
     MathView coneVolumeFormula;
-    String volumeFormula ="$$A=\\pi r^{2}$$";
+    String volumeFormula ="$$V= \\Pi r^{2}\\frac{h}{3}$$";
 
 
     MathView coneRadiusFormula;
-    String radiusFormula ="$$A=\\pi r^{2}$$";
+    String radiusFormula ="$$r=\\sqrt{3\\frac{V}{\\Pi h}}$$";
 
 
     MathView coneHeightFormula;
-    String heightFormula ="$$A=\\pi r^{2}$$";
+    String heightFormula ="$$h = {3\\frac{V}{\\Pi r^{2}}}$$";
 
 
     MathView coneSlantHeightFormula;
-    String slantHeightFormula ="$$A=\\pi r^{2}$$";
+    String slantHeightFormula ="$$l=\\sqrt{r^{2}+h^{2}}$$";
 
     MathView coneSurfaceAreaFormula;
-    String surfaceAreaFormula ="$$A=\\pi r^{2}$$";
+    String surfaceAreaFormula ="$$A=\\pi r (r+\\sqrt{h^{2}+r^{2}}) $$";
 
     MathView coneBaseAreaFormula;
-    String baseAreaFormula ="$$A=\\pi r^{2}$$";
+    String baseAreaFormula ="$$A_{B} =\\pi r^{2}$$";
 
     MathView coneLateralAreaFormula;
-    String lateralAreaFormula ="$$A=\\pi r^{2}$$";
+    String lateralAreaFormula ="$$A_{L} =\\pi r \\sqrt{h^{2}+ r^{2}}$$";
 
 
     //Volume

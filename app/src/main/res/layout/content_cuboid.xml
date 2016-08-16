@@ -39,7 +39,7 @@
                 android:layout_below="@+id/cuboid_volume_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cuboid_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cuboid_volume_formula"
@@ -208,7 +208,7 @@
                 android:layout_below="@+id/cuboid_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cuboid_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cuboid_area_formula"

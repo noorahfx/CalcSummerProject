@@ -37,7 +37,7 @@
             android:layout_below="@+id/cone_volume_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/cone_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/cone_volume_formula"
@@ -173,7 +173,7 @@
             android:layout_below="@+id/cone_radius_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/cone_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/cone_radius_formula"
@@ -310,7 +310,7 @@
             android:layout_below="@+id/cone_height_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/cone_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/cone_height_formula"
@@ -448,7 +448,7 @@
             android:layout_below="@+id/cone_slant_height_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/cone_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/cone_slant_height_formula"
@@ -584,7 +584,7 @@
             android:layout_below="@+id/cone_surface_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1"
+            android:src="@drawable/cone_xxxhdpi"
 
             />
 
@@ -724,7 +724,7 @@
             android:layout_below="@+id/cone_base_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1"
+            android:src="@drawable/cone_xxxhdpi"
 
             />
 
@@ -833,7 +833,7 @@
             android:layout_below="@+id/cone_lateral_surface_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1"
+            android:src="@drawable/cone_xxxhdpi"
 
             />
 

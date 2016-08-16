@@ -38,7 +38,7 @@
                 android:layout_below="@id/cube_volume_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cube_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cube_volume_formula"
@@ -147,7 +147,7 @@
                 android:layout_below="@id/cube_edge_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cube_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cube_edge_formula"
@@ -253,7 +253,7 @@
                 android:layout_below="@id/cube_special_diagonal_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cube_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cube_special_diagonal_formula"
@@ -362,7 +362,7 @@
                 android:layout_below="@id/cube_surface_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cube_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cube_surface_area_formula"

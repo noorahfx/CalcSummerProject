@@ -37,7 +37,7 @@
             android:layout_below="@id/circle_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/circle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/areaFormula"
@@ -149,7 +149,7 @@
             android:layout_below="@id/circle_diameter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/circle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/circle_diameter_formula"
@@ -254,7 +254,7 @@
             android:layout_below="@id/circle_circum_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/circle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/circle_circum_formula"
@@ -361,7 +361,7 @@
             android:layout_below="@id/circle_radius_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/circle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/circle_radius_formula"

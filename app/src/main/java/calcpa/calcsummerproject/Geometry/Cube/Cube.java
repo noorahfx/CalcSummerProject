@@ -22,16 +22,16 @@ public class Cube extends AppCompatActivity {
 
 
     MathView cubeVolumeFormula;
-    String volumeFormula ="$$A=\\pi r^{2}$$";
+    String volumeFormula ="$$V= a^{2}$$";
 
     MathView cubeEdgeFormula;
-    String edgeFormula ="$$d =2r$$";
+    String edgeFormula ="$$a =V^{1/3}$$";
 
     MathView cubeSpecialDiagonalFormula;
-    String specialDiagonalFormula ="$$C =2\\pi r$$";
+    String specialDiagonalFormula ="$$d = \\sqrt{3}a $$";
 
     MathView cubeSurfaceAreaFormula;
-    String surfaceAreaFormula="$$r =\\sqrt{\\frac{A}{\\pi}}$$";
+    String surfaceAreaFormula="$$A = 6a^{2}$$";
 
 
 

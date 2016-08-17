@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:paddingTop="22dp"
-                    android:src="@drawable/image1" />
+                    android:src="@drawable/equilateral_triangle_xxxhdpi" />
 
                 <TextView
                     android:id="@+id/equilateral_tr_def_str_id"
@@ -166,7 +166,7 @@
             android:layout_below="@+id/equi_triangle_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/equilateral_triangle_xxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -276,7 +276,7 @@
             android:layout_below="@+id/equi_triangle_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/equilateral_triangle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/equi_triangle_area_formula"
@@ -383,7 +383,7 @@
             android:layout_below="@+id/equi_triangle_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/equilateral_triangle_xxxhdpi" />
 
 
 

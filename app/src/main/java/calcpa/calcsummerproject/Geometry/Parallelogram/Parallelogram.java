@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Parallelogram;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,6 +20,7 @@ public class Parallelogram extends AppCompatActivity {
     EditText parallelogramPerimeterAreaET;
     TextView parallelogramPerimeterAnswerTV;
     Button parallelogramPerimeterCalcButton;
+    Button parallPreimeterClearButton;
 
 
     //Area
@@ -26,6 +28,7 @@ public class Parallelogram extends AppCompatActivity {
     EditText parallelogramAreaHeightET;
     TextView parallelogramAreaAnswerTV;
     Button parallelogramAreaCalcButton;
+    Button parallAreaClearButton;
 
 
     //Base
@@ -33,18 +36,23 @@ public class Parallelogram extends AppCompatActivity {
     EditText parallelogramBasePerimeterET;
     TextView parallelogramBaseAnswerTV;
     Button parallelogramBaseCalcButton;
+    Button parallBaseClearButton;
 
     //height
     EditText parallelogramHeightBaseET;
     EditText parallelogramHeightAreaET;
     TextView parallelogramHeightAnswerTV;
     Button parallelogramHeightCalcButton;
+    Button parallHeightrClearButton;
+
 
     //Sides
     EditText parallelogramSideBaseET;
     EditText parallelogramSidePerimeterET;
     TextView parallelogramSideAnswerTV;
     Button parallelogramSideCalcButton;
+    Button parallSidesClearButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +60,69 @@ public class Parallelogram extends AppCompatActivity {
         setContentView(R.layout.activity_parallelogram);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
+
+        // Perimeter Clear button
+        parallPreimeterClearButton = (Button) findViewById(R.id.parallelogram_perimeter_clear_button);
+        parallPreimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramPerimeterBaseET.setText("");
+                parallelogramPerimeterAreaET.setText("");
+                parallelogramPerimeterAnswerTV.setText("");
+            }
+        });
+
+        // Area Clear button
+        parallAreaClearButton = (Button) findViewById(R.id.parallelogram_area_clear_button);
+        parallAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramAreaBaseET.setText("");
+                parallelogramAreaHeightET.setText("");
+                parallelogramAreaAnswerTV.setText("");
+            }
+        });
+
+
+        // Base Clear button
+        parallBaseClearButton = (Button) findViewById(R.id.parallelogram_base_clear_button);
+        parallBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramBaseSideET.setText("");
+                parallelogramBasePerimeterET.setText("");
+                parallelogramBaseAnswerTV.setText("");
+            }
+        });
+
+
+
+        //  height Clear button
+        parallHeightrClearButton = (Button) findViewById(R.id.parallelogram_height_clear_button);
+        parallHeightrClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramHeightBaseET.setText("");
+                parallelogramHeightAreaET.setText("");
+                parallelogramHeightAnswerTV.setText("");
+
+            }
+        });
+
+        // Sides Clear button
+        parallSidesClearButton = (Button) findViewById(R.id.parallelogram_side_clear_button);
+        parallSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramSideBaseET.setText("");
+                parallelogramSidePerimeterET.setText("");
+                parallelogramSideAnswerTV.setText("");
+
+            }
+        });
 
 
 
@@ -210,6 +281,122 @@ public class Parallelogram extends AppCompatActivity {
 
             }
         });
+
+
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.parallelogram_perimeter_text);
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_perimeter_base_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_perimeter_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_area_base_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_area_height_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_base_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_base_side_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_base_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_height_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_height_base_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_height_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_side_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_side_base_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        myTextView = (TextView) findViewById(R.id.parallelogram_side_perimeter_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+
+        parallelogramPerimeterBaseET.setTypeface(myTypeFace);
+        parallelogramPerimeterAreaET.setTypeface(myTypeFace);
+        parallelogramPerimeterAnswerTV.setTypeface(myTypeFace);
+        parallelogramPerimeterCalcButton.setTypeface(myTypeFace);
+        parallPreimeterClearButton.setTypeface(myTypeFace);
+
+
+        parallelogramAreaBaseET.setTypeface(myTypeFace);
+        parallelogramAreaHeightET.setTypeface(myTypeFace);
+        parallelogramAreaAnswerTV.setTypeface(myTypeFace);
+        parallelogramAreaCalcButton.setTypeface(myTypeFace);
+        parallAreaClearButton.setTypeface(myTypeFace);
+
+
+        parallelogramBaseSideET.setTypeface(myTypeFace);
+        parallelogramBasePerimeterET.setTypeface(myTypeFace);
+        parallelogramBaseAnswerTV.setTypeface(myTypeFace);
+        parallelogramBaseCalcButton.setTypeface(myTypeFace);
+        parallBaseClearButton.setTypeface(myTypeFace);
+
+
+
+        parallelogramHeightBaseET.setTypeface(myTypeFace);
+        parallelogramHeightAreaET.setTypeface(myTypeFace);
+        parallelogramHeightAnswerTV.setTypeface(myTypeFace);
+        parallelogramHeightCalcButton.setTypeface(myTypeFace);
+        parallHeightrClearButton.setTypeface(myTypeFace);
+
+        parallelogramSideBaseET.setTypeface(myTypeFace);
+        parallelogramSidePerimeterET.setTypeface(myTypeFace);
+        parallelogramSideAnswerTV.setTypeface(myTypeFace);
+        parallelogramSideCalcButton.setTypeface(myTypeFace);
+        parallSidesClearButton.setTypeface(myTypeFace);
+
+
+
     }
 
     @Override

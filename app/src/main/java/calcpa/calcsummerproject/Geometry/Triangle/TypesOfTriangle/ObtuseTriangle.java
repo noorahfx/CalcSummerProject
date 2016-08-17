@@ -19,36 +19,21 @@ import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
 public class ObtuseTriangle extends AppCompatActivity {
-  /**  MathView obtuse_triangle_paramter;
-    String o_t_paramter = "$$P=a+b+c$$";
-    
-    MathView obtuse_triangle_area;
-    String o_t_area = "$$A=\\frac{hb}{2}$$";
 
-    MathView obtuse_triangle_side_a;
-    String o_t_side_a = "$$a = 2 \\frac{A}{b}$$";
-
-    MathView obtuse_triangle_side_b;
-    String o_t_side_b = "$$b = 2 \\frac{A}{a}$$";
-
-   */
-
-
-  MathView obtuseTriPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
+    MathView obtuseTriPerimeterFormula;
+    String perimeterFormula = "$$A=\\pi r^{2}$$";
 
 
     MathView obtuseTriAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
+    String areaFormula = "$$A=\\pi r^{2}$$";
 
 
     MathView obtuseTriSideAFormula;
-    String sideAFormula ="$$A=\\pi r^{2}$$";
-
+    String sideAFormula = "$$A=\\pi r^{2}$$";
 
 
     MathView obtuseTriSideBFormula;
-    String sideBFormula ="$$A=\\pi r^{2}$$";
+    String sideBFormula = "$$A=\\pi r^{2}$$";
 
 
     //perimeter
@@ -66,8 +51,6 @@ public class ObtuseTriangle extends AppCompatActivity {
     TextView obtuseTriAreaAnsTV;
     Button obtuseTriAreaCalcButton;
     Button obtuseTriAreaClearButton;
-
-
 
 
     //side A calculatro
@@ -92,28 +75,26 @@ public class ObtuseTriangle extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obtuse_triangle);
 
-        obtuseTriPerimeterFormula =(MathView)findViewById(R.id.obtuse_tri_perimeter_formula);
+        obtuseTriPerimeterFormula = (MathView) findViewById(R.id.obtuse_tri_perimeter_formula);
         assert obtuseTriPerimeterFormula != null;
         obtuseTriPerimeterFormula.setText(perimeterFormula);
 
-        obtuseTriAreaFormula =(MathView)findViewById(R.id.obtuse_tri_area_formula);
+        obtuseTriAreaFormula = (MathView) findViewById(R.id.obtuse_tri_area_formula);
         assert obtuseTriAreaFormula != null;
         obtuseTriAreaFormula.setText(areaFormula);
 
- 
 
-        obtuseTriSideAFormula =(MathView)findViewById(R.id.obtuse_tri_sideA_formula);
+        obtuseTriSideAFormula = (MathView) findViewById(R.id.obtuse_tri_sideA_formula);
         assert obtuseTriSideAFormula != null;
         obtuseTriSideAFormula.setText(sideAFormula);
 
-        obtuseTriSideBFormula =(MathView)findViewById(R.id.obtuse_tri_base_formula);
+        obtuseTriSideBFormula = (MathView) findViewById(R.id.obtuse_tri_base_formula);
         assert obtuseTriSideBFormula != null;
         obtuseTriSideBFormula.setText(sideBFormula);
 
 
-
-        // Perimeter Clear button
-        obtuseTriPerimClearButton = (Button) findViewById(R.id.iso_tri_perimeter_clear_button);
+       // Perimeter Clear button
+        obtuseTriPerimClearButton = (Button) findViewById(R.id.obtuse_tri_perimeter_clear_button);
         obtuseTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,7 +106,7 @@ public class ObtuseTriangle extends AppCompatActivity {
         });
 
         // Area Clear button
-        obtuseTriAreaClearButton = (Button) findViewById(R.id.iso_triangle_area_clear_button);
+        obtuseTriAreaClearButton = (Button) findViewById(R.id.obtuse_tri_area_clear_button);
         obtuseTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,7 +117,7 @@ public class ObtuseTriangle extends AppCompatActivity {
         });
 
         // Side A Clear button
-        obtuseTriSideAClearButton = (Button) findViewById(R.id.iso_triangle_side_clear_button);
+        obtuseTriSideAClearButton = (Button) findViewById(R.id.obtuse_tri_sideA_clear_button);
         obtuseTriSideAClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -148,7 +129,7 @@ public class ObtuseTriangle extends AppCompatActivity {
         });
 
         // Side B Clear button
-        obtuseTriBaseClearButton = (Button) findViewById(R.id.iso_triangle_base_clear_button);
+        obtuseTriBaseClearButton = (Button) findViewById(R.id.obtuse_tri_base_clear_button);
         obtuseTriBaseClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -158,7 +139,6 @@ public class ObtuseTriangle extends AppCompatActivity {
                 obtuseTriBaseAnsTV.setText("");
             }
         });
-
 
 
         //initialize the EditText
@@ -396,82 +376,9 @@ public class ObtuseTriangle extends AppCompatActivity {
         obtuseTriBaseCalcButton.setTypeface(myTypeFace);
         obtuseTriBaseClearButton.setTypeface(myTypeFace);
 
-
-        /**  Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-          TextView myTextView = (TextView)findViewById(R.id.obtuse_triangle_title);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-          myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-          myTextView = (TextView)findViewById(R.id.obtuse_triangle_define_id);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-          myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-          myTextView = (TextView)findViewById(R.id.obtuse_tr_att_1_id);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-
-          myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-          myTextView=(TextView)findViewById(R.id.obtuse_tr_def_str_id);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-          myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-          myTextView=(TextView)findViewById(R.id.obtuse_tr_attr_str);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-          myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-          myTextView=(TextView)findViewById(R.id.obtuse_tri_formula_id);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-          myTypeFace = Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-          myTextView = (TextView)findViewById(R.id.obtuse_tr_prop_id);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-          myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-          myTextView = (TextView)findViewById(R.id.obtuse_tr_prop_1_id);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-
-
-          obtuse_triangle_paramter =(MathView)findViewById(R.id.obtuse_triangle_paramter);
-          assert obtuse_triangle_paramter != null;
-          obtuse_triangle_paramter.setText(o_t_paramter);
-
-          obtuse_triangle_area = (MathView)findViewById(R.id.obtuse_triangle_area);
-          assert obtuse_triangle_area != null;
-          obtuse_triangle_area.setText(o_t_area);
-
-
-
-          obtuse_triangle_side_a =(MathView)findViewById(R.id.obtuse_triangle_side_a);
-          assert obtuse_triangle_side_a != null;
-          obtuse_triangle_side_a.setText(o_t_side_a);
-
-          obtuse_triangle_side_b =(MathView)findViewById(R.id.obtuse_triangle_side_b);
-          assert obtuse_triangle_side_b != null;
-          obtuse_triangle_side_b.setText(o_t_side_b);
-
-
-
-      }
-
-  }
-
-          Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-          TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
-          assert myTextView != null;
-          myTextView.setTypeface(myTypeFace);
-
-    */
     }
-  /**  @Override
+
+    @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
@@ -492,6 +399,7 @@ public class ObtuseTriangle extends AppCompatActivity {
 
         }
 
-    } */
+    }
+
 }
 

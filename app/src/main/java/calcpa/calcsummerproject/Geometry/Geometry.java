@@ -1,12 +1,14 @@
 package calcpa.calcsummerproject.Geometry;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import calcpa.calcsummerproject.Geometry.Circle.Circle;
 import calcpa.calcsummerproject.Geometry.Cone.Cone;
@@ -69,6 +71,12 @@ public class Geometry extends AppCompatActivity {
         list = (ListView) findViewById(R.id.list);
         assert list != null;
         list.setAdapter(adapter);
+
+      //  Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+       //  shapeText.setTypeface(myTypeFace);
+
+
+
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 

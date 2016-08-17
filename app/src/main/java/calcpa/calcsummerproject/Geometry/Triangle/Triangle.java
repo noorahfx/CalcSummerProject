@@ -34,12 +34,12 @@ public class Triangle extends AppCompatActivity {
             "Isosceles Triangle", "Scalene Triangle"};
 
     int[] imageID = {
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1,
-            R.drawable.image1};
+            R.drawable.right_triangle_logoxxxhdpi,
+            R.drawable.acute_trianglexxxhdpi,
+            R.drawable.obtuse_trianglexxxhdpi,
+            R.drawable.equilateral_trianglexxxhdpi,
+            R.drawable.isosceles_trianglexxhdpi,
+            R.drawable.scalene_triangle_xxxhdpi};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

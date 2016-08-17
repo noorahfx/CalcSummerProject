@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Black"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.Triangle"
     tools:showIn="@layout/activity_triangle">
@@ -12,9 +13,8 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="@color/White"
-        android:dividerHeight="11dp"
-
+        android:divider="@color/red"
+        android:dividerHeight="2dp"
         android:listSelector="@drawable/list_selector" />
 
 

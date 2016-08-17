@@ -37,7 +37,7 @@
                 android:layout_below="@+id/cylinder_volume_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cylinder_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cylinder_volume_formula"
@@ -178,7 +178,7 @@
                 android:layout_below="@+id/cylinder_radius_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cylinder_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cylinder_radius_formula"
@@ -322,7 +322,7 @@
                 android:layout_below="@+id/cylinder_height_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cylinder_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cylinder_height_formula"
@@ -463,7 +463,7 @@
                 android:layout_below="@+id/cylinder_surface_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cylinder_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cylinder_surface_area_formula"
@@ -605,7 +605,7 @@
                 android:layout_below="@+id/cylinder_base_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cylinder_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cylinder_base_area_formula"
@@ -719,7 +719,7 @@
                 android:layout_below="@+id/cylinder_lateral_surface_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/cylinder_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/cylinder_lateral_surface_formula"

@@ -37,7 +37,7 @@
             android:layout_below="@+id/hex_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/hexagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/hex_perimeter_formula"
@@ -144,7 +144,7 @@
             android:layout_below="@+id/hex_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/hexagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/hex_area_formula"
@@ -251,7 +251,7 @@
             android:layout_below="@+id/hex_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/hexagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/hex_side_formula"

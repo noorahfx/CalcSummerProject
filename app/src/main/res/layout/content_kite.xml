@@ -37,7 +37,7 @@
             android:layout_below="@+id/kite_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/kite_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/kite_perimeter_formula"
@@ -174,7 +174,7 @@
             android:layout_below="@+id/kite_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/kite_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/kite_area_formula"
@@ -315,7 +315,7 @@
             android:layout_below="@+id/kite_side_a_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/kite_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/kite_side_a_formula"
@@ -454,7 +454,7 @@
             android:layout_below="@+id/kite_side_b_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/kite_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/kite_side_b_formula"
@@ -592,7 +592,7 @@
             android:layout_below="@+id/kite_p_diaognal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/kite_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/kite_p_diagonal_formula"
@@ -732,7 +732,7 @@
             android:layout_below="@+id/kite_q_diaognal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/kite_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/kite_q_diagonal_formula"

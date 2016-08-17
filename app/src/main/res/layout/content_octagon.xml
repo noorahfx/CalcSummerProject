@@ -36,7 +36,7 @@
             android:layout_below="@+id/oct_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/octagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/oct_perimeter_formula"
@@ -143,7 +143,7 @@
             android:layout_below="@+id/oct_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/octagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/oct_area_formula"
@@ -250,7 +250,7 @@
             android:layout_below="@+id/oct_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/octagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/oct_side_formula"

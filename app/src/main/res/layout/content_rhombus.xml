@@ -38,7 +38,7 @@
             android:layout_below="@+id/rhombus_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/rhombus_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/rhombus_perimeter_formula"
@@ -144,7 +144,7 @@
             android:layout_below="@+id/rhombus_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/rhombus_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/rhombus_area_formula"
@@ -288,7 +288,7 @@
             android:layout_below="@+id/rhombus_sides_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/rhombus_xxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -398,7 +398,7 @@
             android:layout_below="@+id/rhombus_p_diagonal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/rhombus_xxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -540,7 +540,7 @@
             android:layout_below="@+id/rhombus_q_diagonal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/rhombus_xxxhdpi" />
 
 
         <io.github.kexanie.library.MathView

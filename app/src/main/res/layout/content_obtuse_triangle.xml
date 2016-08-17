@@ -210,7 +210,7 @@
             android:layout_below="@+id/obtuse_tri_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/obtuse_triangle_xxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -386,7 +386,7 @@
             android:layout_below="@+id/obtuse_tri_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/obtuse_triangle_xxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -531,7 +531,7 @@
             android:layout_below="@+id/obtuse_tri_sideA_tx"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/obtuse_triangle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/obtuse_tri_sideA_formula"
@@ -703,7 +703,7 @@
             android:layout_below="@+id/obtuse_tri_base_tx"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/obtuse_triangle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/obtuse_tri_base_formula"

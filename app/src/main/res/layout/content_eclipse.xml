@@ -39,7 +39,7 @@
                 android:layout_below="@+id/ellipse_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/ellipse_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/ellipse_area_formula"
@@ -183,7 +183,7 @@
                 android:layout_below="@+id/ellipse_a_xis_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/ellipse_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/ellipse_a_xis_formula"
@@ -326,7 +326,7 @@
                 android:layout_below="@+id/ellipse_b_xis_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/ellipse_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/ellipse_b_xis_formula"
@@ -465,7 +465,7 @@
                 android:layout_below="@+id/ellipse_circum_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/ellipse_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/ellipse_circum_formula"

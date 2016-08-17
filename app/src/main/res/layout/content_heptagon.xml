@@ -37,7 +37,7 @@
             android:layout_below="@+id/hep_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/heptagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/hep_perimeter_formula"
@@ -144,7 +144,7 @@
             android:layout_below="@+id/hep_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/heptagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/hep_area_formula"
@@ -252,7 +252,7 @@
             android:layout_below="@+id/hep_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/heptagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/hep_side_formula"

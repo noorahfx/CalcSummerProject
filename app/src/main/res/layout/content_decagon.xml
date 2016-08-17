@@ -36,7 +36,7 @@
             android:layout_below="@+id/decagon_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/decagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/decagon_area_formula"
@@ -144,7 +144,7 @@
             android:layout_below="@+id/decagon_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/decagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/decagon_perimeter_formula"
@@ -251,7 +251,7 @@
             android:layout_below="@+id/decagon_sides_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/decagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/decagon_sides_formula"

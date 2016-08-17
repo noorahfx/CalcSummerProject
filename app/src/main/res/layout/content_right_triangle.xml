@@ -38,7 +38,7 @@
             android:layout_below="@+id/perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/right_triangle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/right_triangle_formula"
@@ -175,7 +175,7 @@
             android:layout_below="@+id/area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/right_triangle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/rig_triangle_area_formula"
@@ -312,7 +312,7 @@
             android:layout_below="@+id/side_c_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/right_triangle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/side_c_formula"
@@ -450,7 +450,7 @@
             android:layout_below="@+id/right_triangle_a_tx"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/right_triangle_xxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -589,7 +589,7 @@
             android:layout_below="@+id/right_triangle_b_tx"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/right_triangle_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/right_triangle_side_b_formula"

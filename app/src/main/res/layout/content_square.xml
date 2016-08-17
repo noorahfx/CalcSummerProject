@@ -37,7 +37,7 @@
                 android:layout_below="@id/square_perimeter_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/square_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/square_perimeter_formula"
@@ -147,7 +147,7 @@
                 android:layout_below="@id/square_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/square_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/square_area_formula"
@@ -259,7 +259,7 @@
                 android:layout_below="@id/square_side_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/square_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/square_side_formula"
@@ -372,7 +372,7 @@
                 android:layout_below="@id/square_diagonal_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/image1" />
+                android:src="@drawable/square_xxxhdpi" />
 
             <io.github.kexanie.library.MathView
                 android:id="@+id/square_diagonal_formula"

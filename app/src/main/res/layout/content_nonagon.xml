@@ -35,7 +35,7 @@
             android:layout_below="@+id/non_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/nonagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/non_perimeter_formula"
@@ -142,7 +142,7 @@
             android:layout_below="@+id/non_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/nonagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/non_area_formula"
@@ -249,7 +249,7 @@
             android:layout_below="@+id/non_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/nonagon_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/non_side_formula"

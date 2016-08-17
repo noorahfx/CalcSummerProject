@@ -179,7 +179,7 @@
             android:layout_below="@+id/iso_triangle_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/isosceles_trianglexxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -316,7 +316,7 @@
             android:layout_below="@+id/iso_triangle_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/isosceles_trianglexxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/iso_triangle_area_formula"
@@ -454,7 +454,7 @@
             android:layout_below="@+id/iso_triangle_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/isosceles_trianglexxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/iso_triangle_side_formula"
@@ -593,7 +593,7 @@
             android:layout_below="@+id/iso_triangle_base_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/isosceles_trianglexxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/iso_triangle_base_formula"
@@ -733,7 +733,7 @@
             android:layout_below="@+id/iso_triangle_height_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/isosceles_trianglexxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/iso_triangle_height_formula"

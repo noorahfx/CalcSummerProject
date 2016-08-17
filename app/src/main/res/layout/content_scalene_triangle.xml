@@ -191,7 +191,7 @@
             android:layout_below="@+id/scalene_tri_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/scalene_trianglexxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -360,7 +360,7 @@
             android:layout_below="@+id/scalene_tri_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/scalene_trianglexxxhdpi" />
 
 
         <io.github.kexanie.library.MathView
@@ -501,7 +501,7 @@
             android:layout_below="@+id/scalene_tri_sideA_tx"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/scalene_trianglexxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/scalene_tri_sideA_formula"
@@ -666,7 +666,7 @@
             android:layout_below="@+id/scalene_tri_base_tx"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/scalene_trianglexxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/scalene_tri_base_formula"

@@ -39,7 +39,7 @@
             android:layout_below="@+id/trapezoid_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/trapezoid_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/trapezoid_perimeter_formula"
@@ -234,7 +234,7 @@
             android:layout_below="@+id/trapezoid_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/trapezoid_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/trapezoid_area_formula"
@@ -401,7 +401,7 @@
             android:layout_below="@+id/trapezoid_height_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/trapezoid_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/trapezoid_height_formula"
@@ -569,7 +569,7 @@
             android:layout_below="@+id/trapezoid_baseA_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/trapezoid_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/trapezoid_baseA_formula"
@@ -771,7 +771,7 @@
             android:layout_below="@+id/trapezoid_baseB_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/trapezoid_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/trapezoid_baseB_formula"
@@ -966,7 +966,7 @@
             android:layout_below="@+id/trapezoid_sideC_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/trapezoid_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/trapezoid_sideC_formula"
@@ -1165,7 +1165,7 @@
             android:layout_below="@+id/trapezoid_sideD_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/image1" />
+            android:src="@drawable/trapezoid_xxxhdpi" />
 
         <io.github.kexanie.library.MathView
             android:id="@+id/trapezoid_sideD_formula"

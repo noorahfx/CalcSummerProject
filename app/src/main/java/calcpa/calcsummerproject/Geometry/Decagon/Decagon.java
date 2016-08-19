@@ -21,18 +21,6 @@ import io.github.kexanie.library.MathView;
 
 public class Decagon extends AppCompatActivity {
 
-    MathView deacgonAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView deacagonPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView deacagonSidesFormula;
-    String sidesFormula ="$$A=\\pi r^{2}$$";
-
-
 
     //area
     EditText decagonareaET;
@@ -58,21 +46,6 @@ public class Decagon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_decagon);
-
-
-        deacgonAreaFormula =(MathView)findViewById(R.id.decagon_area_formula);
-        assert deacgonAreaFormula != null;
-        deacgonAreaFormula.setText(areaFormula);
-
-        deacagonPerimeterFormula =(MathView)findViewById(R.id.decagon_perimeter_formula);
-        assert deacagonPerimeterFormula != null;
-        deacagonPerimeterFormula.setText(perimeterFormula);
-
-
-
-        deacagonSidesFormula =(MathView)findViewById(R.id.decagon_sides_formula);
-        assert deacagonSidesFormula != null;
-        deacagonSidesFormula.setText(sidesFormula);
 
         // Area Clear button
         decagonAreaClearButton = (Button) findViewById(R.id.decagon_area_clear_button);

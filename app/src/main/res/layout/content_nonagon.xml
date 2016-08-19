@@ -37,16 +37,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/nonagon_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/non_perimeter_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/non_perimeter_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/nonagon_perimeterxxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -144,17 +144,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/nonagon_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/non_area_formula"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/non_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/nonagon_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -251,17 +250,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/nonagon_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/non_side_formula"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/non_side_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/nonagon_sides_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/non_side_tx"

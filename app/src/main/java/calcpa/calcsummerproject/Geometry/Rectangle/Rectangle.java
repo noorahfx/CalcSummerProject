@@ -16,24 +16,6 @@ import io.github.kexanie.library.MathView;
 
 public class Rectangle extends AppCompatActivity {
 
-    MathView rectanglePerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView rectangleAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView rectangleLengthFormula;
-    String lengthFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView rectangleWidthFormula;
-    String widthFormula ="$$A=\\pi r^{2}$$";
-
-    MathView rectanglePDiagonalFormula;
-    String PDiagonalFormula ="$$A=\\pi r^{2}$$";
-
     //Perimeter
     EditText rectanglePerimeterLET;
     EditText rectanglePerimeterWET;
@@ -82,38 +64,6 @@ public class Rectangle extends AppCompatActivity {
         setContentView(R.layout.activity_rectangle);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-        rectanglePerimeterFormula =(MathView)findViewById(R.id.rectangle_perimeter_formula);
-        assert rectanglePerimeterFormula != null;
-        rectanglePerimeterFormula.setText(perimeterFormula);
-
-        rectangleAreaFormula =(MathView)findViewById(R.id.rectangle_area_formula);
-        assert rectangleAreaFormula != null;
-        rectangleAreaFormula.setText(areaFormula);
-
-
-
-        rectangleLengthFormula =(MathView)findViewById(R.id.rectangle_length_formula);
-        assert rectangleLengthFormula != null;
-        rectangleLengthFormula.setText(lengthFormula);
-
-
-
-        rectangleWidthFormula =(MathView)findViewById(R.id.rectangle_width_formula);
-        assert rectangleWidthFormula != null;
-        rectangleWidthFormula.setText(widthFormula);
-
-
-        rectanglePDiagonalFormula =(MathView)findViewById(R.id.rectangle_diagonal_formula);
-        assert rectanglePDiagonalFormula != null;
-        rectanglePDiagonalFormula.setText(PDiagonalFormula);
-
-
-
-
-
 
         // Perimeter Clear button
         rectanglePerimClearButton = (Button) findViewById(R.id.rectangle_perimeter_clear_button);

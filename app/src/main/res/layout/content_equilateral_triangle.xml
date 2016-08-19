@@ -169,16 +169,15 @@
             android:src="@drawable/equilateral_triangle_xxxhdpi" />
 
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/equi_triangle_perimeter_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/equi_triangle_perimeter_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
 
          <TextView
             android:id="@+id/equi_triangle_perimeter_sideA_tv"
@@ -278,16 +277,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/equilateral_triangle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/equi_triangle_area_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/equi_triangle_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/equi_triangle_area_sideA_tv"
@@ -385,18 +384,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/equilateral_triangle_xxxhdpi" />
 
-
-
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/equi_triangle_side_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/equi_triangle_side_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/equi_triangle_side_perimeter_tv"

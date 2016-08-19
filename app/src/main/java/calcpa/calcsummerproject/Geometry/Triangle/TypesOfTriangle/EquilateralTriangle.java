@@ -35,16 +35,6 @@ public class EquilateralTriangle extends AppCompatActivity {
 
 
 
-    MathView equiTriPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView equiTriAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView equiTriSideFormula;
-    String sideFormula ="$$A=\\pi r^{2}$$";
-
 
     EditText sideAEditText;
     TextView answerEditText;
@@ -73,21 +63,6 @@ public class EquilateralTriangle extends AppCompatActivity {
 
 
 
-
-
-
-        equiTriPerimeterFormula =(MathView)findViewById(R.id.equi_triangle_perimeter_formula);
-        assert equiTriPerimeterFormula != null;
-        equiTriPerimeterFormula.setText(perimeterFormula);
-
-        equiTriAreaFormula =(MathView)findViewById(R.id.equi_triangle_area_formula);
-        assert equiTriAreaFormula != null;
-        equiTriAreaFormula.setText(areaFormula);
-
-
-        equiTriSideFormula =(MathView)findViewById(R.id.equi_triangle_side_formula);
-        assert equiTriSideFormula != null;
-        equiTriSideFormula.setText(sideFormula);
 
 
 

@@ -38,16 +38,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/octagon_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/oct_perimeter_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/oct_perimeter_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/octagon_perimeterxxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -145,17 +145,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/octagon_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/oct_area_formula"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/oct_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/octagon_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -252,17 +251,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/octagon_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/oct_side_formula"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/oct_side_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/octagon_sides_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/oct_side_tx"

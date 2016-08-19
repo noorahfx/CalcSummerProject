@@ -39,16 +39,17 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/cone_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/cone_volume_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cone_volume_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/cone_volume_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cone_volume_xxxhdpi" />_
 
-        </io.github.kexanie.library.MathView>
+
+
 
         <TextView
             android:id="@+id/cone_volume_r_text"
@@ -175,16 +176,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/cone_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/cone_radius_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cone_radius_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/cone_radius_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cone_radius_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -312,16 +313,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/cone_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/cone_height_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cone_height_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/cone_height_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cone_height_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -450,16 +451,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/cone_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/cone_slant_height_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cone_slant_height_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/cone_slant_height_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cone_slant_height_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/cone_slant_height_r_text"
@@ -587,17 +588,15 @@
             android:src="@drawable/cone_xxxhdpi"
 
             />
-
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/cone_surface_area_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cone_surface_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/cone_surface_area_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cone_surface_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
 
 
         <TextView
@@ -728,16 +727,16 @@
 
             />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/cone_base_area_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cone_base_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/cone_base_area_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cone_base_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -837,17 +836,16 @@
 
             />
 
-
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/cone_lateral_surface_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cone_lateral_surface_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/cone_lateral_surface_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cone_lateral_surface_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView

@@ -20,21 +20,6 @@ import io.github.kexanie.library.MathView;
 
 public class ObtuseTriangle extends AppCompatActivity {
 
-    MathView obtuseTriPerimeterFormula;
-    String perimeterFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView obtuseTriAreaFormula;
-    String areaFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView obtuseTriSideAFormula;
-    String sideAFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView obtuseTriSideBFormula;
-    String sideBFormula = "$$A=\\pi r^{2}$$";
-
 
     //perimeter
     EditText obtuseTriPerimeterSideAET;
@@ -74,23 +59,6 @@ public class ObtuseTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_obtuse_triangle);
-
-        obtuseTriPerimeterFormula = (MathView) findViewById(R.id.obtuse_tri_perimeter_formula);
-        assert obtuseTriPerimeterFormula != null;
-        obtuseTriPerimeterFormula.setText(perimeterFormula);
-
-        obtuseTriAreaFormula = (MathView) findViewById(R.id.obtuse_tri_area_formula);
-        assert obtuseTriAreaFormula != null;
-        obtuseTriAreaFormula.setText(areaFormula);
-
-
-        obtuseTriSideAFormula = (MathView) findViewById(R.id.obtuse_tri_sideA_formula);
-        assert obtuseTriSideAFormula != null;
-        obtuseTriSideAFormula.setText(sideAFormula);
-
-        obtuseTriSideBFormula = (MathView) findViewById(R.id.obtuse_tri_base_formula);
-        assert obtuseTriSideBFormula != null;
-        obtuseTriSideBFormula.setText(sideBFormula);
 
 
        // Perimeter Clear button

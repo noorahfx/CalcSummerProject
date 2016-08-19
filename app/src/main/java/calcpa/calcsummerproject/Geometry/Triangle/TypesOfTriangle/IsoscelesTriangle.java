@@ -23,20 +23,6 @@ import io.github.kexanie.library.MathView;
 public class IsoscelesTriangle extends AppCompatActivity {
 
 
-    MathView isoTriPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-    MathView isoTriAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView isoTriSideFormula;
-    String sideFormula ="$$A=\\pi r^{2}$$";
-
-    MathView isoTriBaseFormula;
-    String baseFormula ="$$A=\\pi r^{2}$$";
-
-    MathView isoTriHeightFormula;
-    String heightFormula ="$$A=\\pi r^{2}$$";
     /**
      * MathView isosceles_triangle_paramter;
      * String i_t_paramter = "$$P =2a+b$$";
@@ -93,29 +79,6 @@ public class IsoscelesTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isosceles_triangle);
-
-        isoTriPerimeterFormula =(MathView)findViewById(R.id.iso_triangle_perimeter_formula);
-        assert isoTriPerimeterFormula != null;
-        isoTriPerimeterFormula.setText(perimeterFormula);
-
-        isoTriAreaFormula =(MathView)findViewById(R.id.iso_triangle_area_formula);
-        assert isoTriAreaFormula != null;
-        isoTriAreaFormula.setText(areaFormula);
-
-
-        isoTriSideFormula =(MathView)findViewById(R.id.iso_triangle_side_formula);
-        assert isoTriSideFormula != null;
-        isoTriSideFormula.setText(sideFormula);
-
-
-
-        isoTriBaseFormula =(MathView)findViewById(R.id.iso_triangle_base_formula);
-        assert isoTriBaseFormula != null;
-        isoTriBaseFormula.setText(baseFormula);
-
-        isoTriHeightFormula =(MathView)findViewById(R.id.iso_triangle_height_formula);
-        assert isoTriHeightFormula != null;
-        isoTriHeightFormula.setText(heightFormula);
 
 
 

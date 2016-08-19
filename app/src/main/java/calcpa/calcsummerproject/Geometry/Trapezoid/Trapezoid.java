@@ -21,38 +21,6 @@ import io.github.kexanie.library.MathView;
 public class Trapezoid extends AppCompatActivity {
 
 
-
-    MathView trapezoidPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView trapezoidAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-
-
-    MathView trapezoidHeightFormula;
-    String heightFormula ="$$A=\\pi r^{2}$$";
-
-    MathView trapezoidBaseAFormula;
-    String baseAFormula ="$$A=\\pi r^{2}$$";
-
-
-
-    MathView trapezoidBaseBFormula;
-    String baseBFormula ="$$A=\\pi r^{2}$$";
-
-
-
-    MathView trapezoidSideCFormula;
-    String sideCFormula ="$$A=\\pi r^{2}$$";
-
-
-
-    MathView trapezoidSideDtFormula;
-    String sideDFormula ="$$A=\\pi r^{2}$$";
-
-
     //Perimeter
     EditText trapezoidPerimeterAET;
     EditText trapezoidPerimeterBET;
@@ -127,44 +95,6 @@ public class Trapezoid extends AppCompatActivity {
         setContentView(R.layout.activity_trapezoid);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        trapezoidPerimeterFormula =(MathView)findViewById(R.id.trapezoid_perimeter_formula);
-        assert trapezoidPerimeterFormula != null;
-        trapezoidPerimeterFormula.setText(perimeterFormula);
-
-
-        trapezoidAreaFormula =(MathView)findViewById(R.id.trapezoid_area_formula);
-        assert trapezoidAreaFormula != null;
-        trapezoidAreaFormula.setText(areaFormula);
-
-
-        trapezoidHeightFormula =(MathView)findViewById(R.id.trapezoid_height_formula);
-        assert trapezoidHeightFormula != null;
-        trapezoidHeightFormula.setText(heightFormula);
-
-
-
-        trapezoidBaseAFormula =(MathView)findViewById(R.id.trapezoid_baseA_formula);
-        assert trapezoidBaseAFormula != null;
-        trapezoidBaseAFormula.setText(baseAFormula);
-
-
-
-        trapezoidBaseBFormula =(MathView)findViewById(R.id.trapezoid_baseB_formula);
-        assert trapezoidBaseBFormula != null;
-        trapezoidBaseBFormula.setText(baseBFormula);
-
-
-
-        trapezoidSideCFormula =(MathView)findViewById(R.id.trapezoid_sideC_formula);
-        assert trapezoidSideCFormula != null;
-        trapezoidSideCFormula.setText(sideCFormula);
-
-
-
-        trapezoidSideDtFormula =(MathView)findViewById(R.id.trapezoid_sideD_formula);
-        assert trapezoidSideDtFormula != null;
-        trapezoidSideDtFormula.setText(sideDFormula);
 
 
         // Perimeter Clear button

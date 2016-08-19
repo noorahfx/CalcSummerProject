@@ -18,7 +18,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Cone extends AppCompatActivity {
-    MathView coneVolumeFormula;
+  /**  MathView coneVolumeFormula;
     String volumeFormula ="$$V= \\Pi r^{2}\\frac{h}{3}$$";
 
 
@@ -42,7 +42,7 @@ public class Cone extends AppCompatActivity {
     MathView coneLateralAreaFormula;
     String lateralAreaFormula ="$$A_{L} =\\pi r \\sqrt{h^{2}+ r^{2}}$$";
 
-
+*/
     //Volume
     EditText coneVolumeRET;
     EditText coneVolumeHET;
@@ -103,7 +103,7 @@ public class Cone extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+/**
         coneVolumeFormula =(MathView)findViewById(R.id.cone_volume_formula);
         assert coneVolumeFormula != null;
         coneVolumeFormula.setText(volumeFormula);
@@ -140,7 +140,7 @@ public class Cone extends AppCompatActivity {
         coneLateralAreaFormula.setText(lateralAreaFormula);
 
 
-
+*/
 
 
 

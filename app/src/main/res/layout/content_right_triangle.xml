@@ -40,16 +40,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/right_triangle_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rightTriangleImgID"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -177,16 +177,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/rig_triangle_area_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rig_triangle_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/area_side_a_text"
@@ -314,16 +314,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/side_c_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/side_c_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -452,17 +452,17 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_xxxhdpi" />
 
-
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/right_triangle_side_a_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/right_triangle_side_a_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
+
 
         <TextView
             android:id="@+id/right_triangle_side_b_tv"
@@ -583,24 +583,14 @@
 
 
         <ImageView
-            android:id="@+id/right_triangle_side_b_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/right_triangle_b_tx"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/right_triangle_xxxhdpi" />
-
-        <io.github.kexanie.library.MathView
             android:id="@+id/right_triangle_side_b_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/right_triangle_side_b_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/right_triangle_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
 
         <TextView
             android:id="@+id/right_triangle_side_a_tv"

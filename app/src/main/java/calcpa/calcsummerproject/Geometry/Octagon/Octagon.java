@@ -21,15 +21,6 @@ import io.github.kexanie.library.MathView;
 public class Octagon extends AppCompatActivity {
 
 
-    MathView octPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-    MathView octAreaFormula;
-    String areaFormula ="$$d =2r$$";
-
-    MathView octSideFormula;
-    String sideFormula ="$$C =2\\pi r$$";
-
     
     //perimeter
     EditText octPerimeterSideAET;
@@ -54,21 +45,6 @@ public class Octagon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_octagon);
-
-
-        octPerimeterFormula =(MathView)findViewById(R.id.oct_perimeter_formula);
-        assert octPerimeterFormula != null;
-        octPerimeterFormula.setText(perimeterFormula);
-
-        octAreaFormula =(MathView)findViewById(R.id.oct_area_formula);
-        assert octAreaFormula != null;
-        octAreaFormula.setText(areaFormula);
-
-
-        octSideFormula =(MathView)findViewById(R.id.oct_side_formula);
-        assert octSideFormula != null;
-        octSideFormula.setText(sideFormula);
-
 
 
         // Perimeter Clear button

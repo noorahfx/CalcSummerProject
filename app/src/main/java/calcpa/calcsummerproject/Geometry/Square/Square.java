@@ -17,21 +17,6 @@ import io.github.kexanie.library.MathView;
 public class Square extends AppCompatActivity {
 
 
-
-    MathView squarePerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView squareAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView rhombusSidesFormula;
-    String sidesFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView squareDiagonalFormula;
-    String diagonalFormula ="$$A=\\pi r^{2}$$";
-
     //Perimeter
     EditText squarePerimeterET;
     TextView squarePerimeterAnswerTV;
@@ -64,30 +49,6 @@ public class Square extends AppCompatActivity {
         setContentView(R.layout.activity_square);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-
-        squarePerimeterFormula =(MathView)findViewById(R.id.square_perimeter_formula);
-        assert squarePerimeterFormula != null;
-        squarePerimeterFormula.setText(perimeterFormula);
-
-        squareAreaFormula =(MathView)findViewById(R.id.square_area_formula);
-        assert squareAreaFormula != null;
-        squareAreaFormula.setText(areaFormula);
-
-
-        rhombusSidesFormula =(MathView)findViewById(R.id.square_side_formula);
-        assert rhombusSidesFormula != null;
-        rhombusSidesFormula.setText(sidesFormula);
-
-
-
-
-
-        squareDiagonalFormula =(MathView)findViewById(R.id.square_diagonal_formula);
-        assert squareDiagonalFormula != null;
-        squareDiagonalFormula.setText(diagonalFormula);
 
 
         

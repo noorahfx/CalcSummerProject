@@ -18,25 +18,6 @@ import io.github.kexanie.library.MathView;
 public class AcuteTriangle extends AppCompatActivity {
 
 
-    MathView acuteTriPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView acuteTriAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView acuteTriHypFormula;
-    String hypFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView acuteTriSideAFormula;
-    String sideAFormula ="$$A=\\pi r^{2}$$";
-
-
-
-    MathView acuteTriSideBFormula;
-    String sideBFormula ="$$A=\\pi r^{2}$$";
-
 
     //perimeter
     EditText acuteTriPerimeterSideAET;
@@ -90,29 +71,6 @@ public class AcuteTriangle extends AppCompatActivity {
 
 
 
-
-        acuteTriPerimeterFormula =(MathView)findViewById(R.id.acute_tri_perimeter_formula);
-        assert acuteTriPerimeterFormula != null;
-        acuteTriPerimeterFormula.setText(perimeterFormula);
-
-        acuteTriAreaFormula =(MathView)findViewById(R.id.acute_tri_area_formula);
-        assert acuteTriAreaFormula != null;
-        acuteTriAreaFormula.setText(areaFormula);
-
-
-        acuteTriHypFormula =(MathView)findViewById(R.id.acute_tri_hyp_formula);
-        assert acuteTriHypFormula != null;
-        acuteTriHypFormula.setText(hypFormula);
-
-
-
-        acuteTriSideAFormula =(MathView)findViewById(R.id.acute_tri_sideA_formula);
-        assert acuteTriSideAFormula != null;
-        acuteTriSideAFormula.setText(sideAFormula);
-
-        acuteTriSideBFormula =(MathView)findViewById(R.id.acute_tri_base_formula);
-        assert acuteTriSideBFormula != null;
-        acuteTriSideBFormula.setText(sideBFormula);
 
 
         // Perimeter Clear button

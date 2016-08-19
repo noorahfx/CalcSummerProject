@@ -20,21 +20,6 @@ import io.github.kexanie.library.MathView;
 
 public class Cube extends AppCompatActivity {
 
-
-    MathView cubeVolumeFormula;
-    String volumeFormula ="$$V= a^{2}$$";
-
-    MathView cubeEdgeFormula;
-    String edgeFormula ="$$a =V^{1/3}$$";
-
-    MathView cubeSpecialDiagonalFormula;
-    String specialDiagonalFormula ="$$d = \\sqrt{3}a $$";
-
-    MathView cubeSurfaceAreaFormula;
-    String surfaceAreaFormula="$$A = 6a^{2}$$";
-
-
-
     //Volume
     EditText cubeVolumeET;
     TextView cubeVolumeTV;
@@ -71,26 +56,6 @@ public class Cube extends AppCompatActivity {
         setContentView(R.layout.activity_cube);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-        cubeVolumeFormula =(MathView)findViewById(R.id.cube_volume_formula);
-        assert cubeVolumeFormula != null;
-        cubeVolumeFormula.setText(volumeFormula);
-
-        cubeEdgeFormula =(MathView)findViewById(R.id.cube_edge_formula);
-        assert cubeEdgeFormula != null;
-        cubeEdgeFormula.setText(edgeFormula);
-
-
-        cubeSpecialDiagonalFormula =(MathView)findViewById(R.id.cube_special_diagonal_formula);
-        assert cubeSpecialDiagonalFormula != null;
-        cubeSpecialDiagonalFormula.setText(specialDiagonalFormula);
-
-
-        cubeSurfaceAreaFormula =(MathView)findViewById(R.id.cube_surface_area_formula);
-        assert cubeSurfaceAreaFormula != null;
-        cubeSurfaceAreaFormula.setText(surfaceAreaFormula);
 
 
         // Volume Clear button

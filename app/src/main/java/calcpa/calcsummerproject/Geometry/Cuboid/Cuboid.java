@@ -19,12 +19,6 @@ import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
 public class Cuboid extends AppCompatActivity {
-    MathView cuboidVolumeFormula;
-    String volumeFormula ="$$A=\\pi r^{2}$$";
-
-    MathView cuboidAreaFormula;
-    String areaFormula ="$$d =2r$$";
-
 
     //Volume
     EditText cuboidVolumeLET;
@@ -51,15 +45,6 @@ public class Cuboid extends AppCompatActivity {
         setContentView(R.layout.activity_cuboid);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        cuboidVolumeFormula =(MathView)findViewById(R.id.cuboid_volume_formula);
-        assert cuboidVolumeFormula != null;
-        cuboidVolumeFormula.setText(volumeFormula);
-
-        cuboidAreaFormula =(MathView)findViewById(R.id.cuboid_area_formula);
-        assert cuboidAreaFormula != null;
-        cuboidAreaFormula.setText(areaFormula);
-
 
 
         // Volume Clear button

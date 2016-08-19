@@ -30,16 +30,6 @@ import io.github.kexanie.library.MathView;
 
 public class Hexagon extends AppCompatActivity {
 
-
-    MathView hexPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-    MathView hexAreaFormula;
-    String areaFormula ="$$d =2r$$";
-
-    MathView hexSideFormula;
-    String sideFormula ="$$C =2\\pi r$$";
-    
     //perimeter
     EditText hexPerimeterSideAET;
     TextView hexPerimeterAnswerTV;
@@ -66,20 +56,6 @@ public class Hexagon extends AppCompatActivity {
         setContentView(R.layout.activity_hexagon);
 
 
-
-        hexPerimeterFormula =(MathView)findViewById(R.id.hex_perimeter_formula);
-        assert hexPerimeterFormula != null;
-        hexPerimeterFormula.setText(perimeterFormula);
-
-        hexAreaFormula =(MathView)findViewById(R.id.hex_area_formula);
-        assert hexAreaFormula != null;
-        hexAreaFormula.setText(areaFormula);
-
-
-        hexSideFormula =(MathView)findViewById(R.id.hex_side_formula);
-        assert hexSideFormula != null;
-        hexSideFormula.setText(sideFormula);
-        
         // Perimeter Clear button
         hexPerimeterClearButton = (Button) findViewById(R.id.hex_perimeter_clear_button);
         hexPerimeterClearButton.setOnClickListener(new View.OnClickListener() {

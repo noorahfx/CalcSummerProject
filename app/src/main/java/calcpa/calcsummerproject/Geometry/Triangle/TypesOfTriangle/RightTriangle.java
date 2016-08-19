@@ -19,23 +19,6 @@ public class RightTriangle extends AppCompatActivity {
 
 
 
-    MathView rightTriPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-    MathView rightTriAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView rightTriHypFormula;
-    String hypFormula ="$$A=\\pi r^{2}$$";
-
-    MathView rightTrisideAFormula;
-    String sideAFormula ="$$A=\\pi r^{2}$$";
-
-    MathView rightTriSideBFormula;
-    String sideBFormula ="$$A=\\pi r^{2}$$";
-
-
-
     EditText sideAEditText;
     EditText sideBEditText;
     TextView answerEditText;
@@ -81,30 +64,6 @@ public class RightTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_right_triangle);
-
-
-        rightTriPerimeterFormula =(MathView)findViewById(R.id.right_triangle_formula);
-        assert rightTriPerimeterFormula != null;
-        rightTriPerimeterFormula.setText(perimeterFormula);
-
-        rightTriAreaFormula =(MathView)findViewById(R.id.rig_triangle_area_formula);
-        assert rightTriAreaFormula != null;
-        rightTriAreaFormula.setText(areaFormula);
-
-
-        rightTriHypFormula =(MathView)findViewById(R.id.side_c_formula);
-        assert rightTriHypFormula != null;
-        rightTriHypFormula.setText(hypFormula);
-
-
-
-        rightTrisideAFormula =(MathView)findViewById(R.id.right_triangle_side_a_formula);
-        assert rightTrisideAFormula != null;
-        rightTrisideAFormula.setText(sideAFormula);
-
-        rightTriSideBFormula =(MathView)findViewById(R.id.right_triangle_side_b_formula);
-        assert rightTriSideBFormula != null;
-        rightTriSideBFormula.setText(sideBFormula);
 
 
 

@@ -39,17 +39,16 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cube_xxxhdpi" />
-
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cube_volume_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cube_volume_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cube_volume_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cube_volume_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cube_volume_a_text"
@@ -148,18 +147,16 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cube_xxxhdpi" />
-
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cube_edge_formula"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cube_edge_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cube_edge_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cube_edge_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
 
              <TextView
@@ -255,17 +252,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cube_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cube_special_diagonal_formula"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cube_special_diagonal_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cube_special_diagonal_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cube_special_diaognal_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cube_special_diagonal_a_text"
@@ -364,17 +360,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cube_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cube_surface_area_formula"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cube_surface_area_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cube_surface_area_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cube_surface_area_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cube_surface_area_a_text"

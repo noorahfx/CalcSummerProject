@@ -39,6 +39,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/circle_xxxhdpi" />
 
+        <ImageView
+            android:id="@+id/circle_area_formula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circle_area_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
+
+     <!--
         <io.github.kexanie.library.MathView
             android:id="@+id/areaFormula"
             android:layout_width="wrap_content"
@@ -50,12 +60,12 @@
             
         </io.github.kexanie.library.MathView>
 
- 
+ -->
         <TextView
             android:id="@+id/circle_area_a_text"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_below="@id/areaFormula"
+            android:layout_below="@id/circle_area_formula"
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
             android:maxLines="1"
@@ -69,7 +79,7 @@
             android:id="@+id/circle_area_a_et"
             android:layout_width="match_parent"
             android:layout_height="42dp"
-            android:layout_below="@+id/areaFormula"
+            android:layout_below="@+id/circle_area_formula"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/circle_area_a_text"
@@ -151,17 +161,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/circle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/circle_diameter_formula"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/circle_diameter_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/circle_diameter_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_diameter_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
          <TextView
             android:id="@+id/circle_diameter_d_text"
@@ -256,17 +265,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/circle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/circle_circum_formula"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/circle_circum_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/circle_circum_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_circum_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -363,17 +371,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/circle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/circle_radius_formula"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/circle_radius_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_below="@id/circle_radius_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_radius_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
 

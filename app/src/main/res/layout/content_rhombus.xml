@@ -40,16 +40,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/rhombus_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/rhombus_perimeter_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rhombus_perimeter_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/rhombus_perimeter_a_text"
@@ -146,16 +146,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/rhombus_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/rhombus_area_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rhombus_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView
@@ -291,16 +291,17 @@
             android:src="@drawable/rhombus_xxxhdpi" />
 
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/rhombus_sides_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rhombus_sides_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
+
 
 
         <TextView
@@ -401,16 +402,17 @@
             android:src="@drawable/rhombus_xxxhdpi" />
 
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/rhombus_p_diagonal_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/rhombus_p_diagonal_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
+
 
 
         <TextView
@@ -534,13 +536,16 @@
             android:textSize="30sp" />
 
         <ImageView
-            android:id="@+id/rhombus_q_diagonal_img"
+            android:id="@+id/rectangle_perimeter_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rhombus_q_diagonal_text"
+            android:layout_below="@+id/rectangle_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/rhombus_xxxhdpi" />
+
+
+
 
 
         <io.github.kexanie.library.MathView

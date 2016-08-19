@@ -17,24 +17,6 @@ import io.github.kexanie.library.MathView;
 public class Rhombus extends AppCompatActivity {
 
 
-    MathView rhombusPerimeterFormula;
-    String perimeterFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView rhombusAreaFormula;
-    String areaFormula = "$$A=\\pi r^{2}$$";
-
-    MathView rhombusSidesFormula;
-    String sidesFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView rhombusPDiaognalFormula;
-    String pDiaognalFormula = "$$A=\\pi r^{2}$$";
-
-    MathView rhombusQDiagonalFormula;
-    String qDiagonalFormula = "$$A=\\pi r^{2}$$";
-
-
     //Perimeter
     EditText rhombusPerimeterAET;
     TextView rhombusPerimeterAnswerTV;
@@ -75,30 +57,6 @@ public class Rhombus extends AppCompatActivity {
         setContentView(R.layout.activity_rhombus);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-        rhombusPerimeterFormula = (MathView) findViewById(R.id.rhombus_perimeter_formula);
-        assert rhombusPerimeterFormula != null;
-        rhombusPerimeterFormula.setText(perimeterFormula);
-
-        rhombusAreaFormula = (MathView) findViewById(R.id.rhombus_area_formula);
-        assert rhombusAreaFormula != null;
-        rhombusAreaFormula.setText(areaFormula);
-
-
-        rhombusSidesFormula = (MathView) findViewById(R.id.rhombus_sides_formula);
-        assert rhombusSidesFormula != null;
-        rhombusSidesFormula.setText(sidesFormula);
-
-
-        rhombusPDiaognalFormula = (MathView) findViewById(R.id.rhombus_p_diagonal_formula);
-        assert rhombusPDiaognalFormula != null;
-        rhombusPDiaognalFormula.setText(pDiaognalFormula);
-
-
-        rhombusQDiagonalFormula = (MathView) findViewById(R.id.rhombus_q_diagonal_formula);
-        assert rhombusQDiagonalFormula != null;
-        rhombusQDiagonalFormula.setText(qDiagonalFormula);
 
 
         // Perimeter Clear button

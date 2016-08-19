@@ -39,16 +39,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cylinder_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cylinder_volume_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cylinder_volume_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cylinder_volume_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cylinder_volume_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cylinder_volume_r_text"
@@ -180,16 +180,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cylinder_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cylinder_radius_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cylinder_radius_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cylinder_radius_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cylinder_radius_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cylinder_radius_h_text"
@@ -324,16 +324,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cylinder_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cylinder_height_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cylinder_height_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cylinder_height_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cylinder_height_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cylinder_height_r_text"
@@ -464,17 +464,16 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cylinder_xxxhdpi" />
-
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cylinder_surface_area_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cylinder_surface_area_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cylinder_surface_area_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cylinder_surface_area_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cylinder_surface_area_r_text"
@@ -607,16 +606,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cylinder_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cylinder_base_area_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cylinder_base_area_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cylinder_base_area_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cylinder_base_area_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/cylinder_base_area_r_text"
@@ -721,16 +720,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/cylinder_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/cylinder_lateral_surface_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cylinder_lateral_surface_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_below="@id/cylinder_lateral_surface_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cylinder_lateral_surface_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
 
             <TextView

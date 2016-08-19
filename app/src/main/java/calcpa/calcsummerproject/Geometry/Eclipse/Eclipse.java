@@ -21,21 +21,6 @@ import io.github.kexanie.library.MathView;
 
 public class Eclipse extends AppCompatActivity {
 
-    MathView ellipseAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView ellipseCircumFormula;
-    String circumFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView ellipseAXisFormula;
-    String AXis="$$A=\\pi r^{2}$$";
-
-
-    MathView ellipseBXisFormula;
-    String BXisFormula ="$$A=\\pi r^{2}$$";
-
 
     //Area
     EditText ellipseAreaAET;
@@ -75,28 +60,6 @@ public class Eclipse extends AppCompatActivity {
         setContentView(R.layout.activity_eclipse);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-        ellipseAreaFormula =(MathView)findViewById(R.id.ellipse_area_formula);
-        assert ellipseAreaFormula != null;
-        ellipseAreaFormula.setText(areaFormula);
-
-        ellipseCircumFormula =(MathView)findViewById(R.id.ellipse_circum_formula);
-        assert ellipseCircumFormula != null;
-        ellipseCircumFormula.setText(circumFormula);
-
-
-
-        ellipseAXisFormula =(MathView)findViewById(R.id.ellipse_a_xis_formula);
-        assert ellipseAXisFormula != null;
-        ellipseAXisFormula.setText(AXis);
-
-
-
-        ellipseBXisFormula =(MathView)findViewById(R.id.ellipse_b_xis_formula);
-        assert ellipseBXisFormula != null;
-        ellipseBXisFormula.setText(BXisFormula);
 
         //   Area Clear button
         ellipseAreaClearButton = (Button) findViewById(R.id.ellipse_area_clear_button);

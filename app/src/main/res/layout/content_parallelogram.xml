@@ -40,16 +40,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/parallelogram_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/parallelogram_perimeter_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/parallelogram_perimeter_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle_area_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/parallelogram_perimeter_base_text"
@@ -167,24 +167,14 @@
 
 
             <ImageView
-                android:id="@+id/parallelogram_area_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/parallelogram_area_text"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/parallelogram_xxxhdpi" />
-
-            <io.github.kexanie.library.MathView
                 android:id="@+id/parallelogram_area_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/parallelogram_area_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/parallelogram_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
 
             <TextView
                 android:id="@+id/parallelogram_area_base_text"
@@ -314,16 +304,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/parallelogram_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/parallelogram_base_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/parallelogram_base_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle_area_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/parallelogram_base_side_a_text"
@@ -443,24 +433,14 @@
 
 
             <ImageView
-                android:id="@+id/parallelogram_height_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/parallelogram_height_text"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/parallelogram_xxxhdpi" />
-
-            <io.github.kexanie.library.MathView
                 android:id="@+id/parallelogram_height_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/parallelogram_height_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/parallelogram_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
 
             <TextView
                 android:id="@+id/parallelogram_height_base_text"
@@ -586,16 +566,16 @@
                 android:layout_marginTop="5dp"
                 android:src="@drawable/parallelogram_xxxhdpi" />
 
-            <io.github.kexanie.library.MathView
+            <ImageView
                 android:id="@+id/parallelogram_side_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/parallelogram_side_img"
-                android:layout_gravity="fill_horizontal"
-                android:layout_marginTop="10dp"
-                auto:engine="KaTeX">
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle_area_xxxhdpi" />
 
-            </io.github.kexanie.library.MathView>
+
 
             <TextView
                 android:id="@+id/parallelogram_side_base_text"

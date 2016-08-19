@@ -21,22 +21,6 @@ import io.github.kexanie.library.MathView;
 public class ScaleneTriangle extends AppCompatActivity {
 
 
-    MathView scaleneTriPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView scaleneTriAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView scaleneTriSideAFormula;
-    String sideAFormula ="$$A=\\pi r^{2}$$";
-
-
-
-    MathView scaleneTriSideBFormula;
-    String sideBFormula ="$$A=\\pi r^{2}$$";
-
     //perimeter
     EditText scaleneTriPerimeterSideAET;
     EditText scaleneTriPerimeterBaseET;
@@ -79,25 +63,6 @@ public class ScaleneTriangle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scalene_triangle);
-
-
-        scaleneTriPerimeterFormula =(MathView)findViewById(R.id.scalene_tri_perimeter_formula);
-        assert scaleneTriPerimeterFormula != null;
-        scaleneTriPerimeterFormula.setText(perimeterFormula);
-
-        scaleneTriAreaFormula =(MathView)findViewById(R.id.scalene_tri_area_formula);
-        assert scaleneTriAreaFormula != null;
-        scaleneTriAreaFormula.setText(areaFormula);
-
-
-
-        scaleneTriSideAFormula =(MathView)findViewById(R.id.scalene_tri_sideA_formula);
-        assert scaleneTriSideAFormula != null;
-        scaleneTriSideAFormula.setText(sideAFormula);
-
-        scaleneTriSideBFormula =(MathView)findViewById(R.id.scalene_tri_base_formula);
-        assert scaleneTriSideBFormula != null;
-        scaleneTriSideBFormula.setText(sideBFormula);
 
 
 

@@ -20,16 +20,6 @@ import io.github.kexanie.library.MathView;
 
 public class Pentagon extends AppCompatActivity {
 
-
-    MathView penPerimeterFormula;
-    String perimeterFormula ="$$A=\\pi r^{2}$$";
-
-    MathView penAreaFormula;
-    String areaFormula ="$$d =2r$$";
-
-    MathView penSideFormula;
-    String sideFormula ="$$C =2\\pi r$$";
-
     //perimeter
     EditText penPerimeterSideAET;
     TextView penPerimeterAnswerTV;
@@ -52,20 +42,6 @@ public class Pentagon extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pentagon);
-
-
-        penPerimeterFormula =(MathView)findViewById(R.id.pen_perimeter_formula);
-        assert penPerimeterFormula != null;
-        penPerimeterFormula.setText(perimeterFormula);
-
-        penAreaFormula =(MathView)findViewById(R.id.pen_area_formula);
-        assert penAreaFormula != null;
-        penAreaFormula.setText(areaFormula);
-
-
-        penSideFormula =(MathView)findViewById(R.id.pen_side_formula);
-        assert penSideFormula != null;
-        penSideFormula.setText(sideFormula);
 
         
         // Perimeter Clear button

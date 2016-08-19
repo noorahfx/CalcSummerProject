@@ -20,27 +20,6 @@ import io.github.kexanie.library.MathView;
 
 public class Cylinder extends AppCompatActivity {
 
-    MathView cylinderVolumeFormula;
-    String volumeFormula ="$$V = \\pi r^2h$$";
-
-
-    MathView cylinderRadius;
-    String radiusFormula ="$$r=\\sqrt{\\frac{V}{\\Pi h}}$$";
-
-
-    MathView cylinderHeightFormula;
-    String heightFormula ="$$A=\\pi r^{2}$$";
-
-
-    MathView cylinderSurfaceAreaFormula;
-    String surfaceAreaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView cylinderBaseAreaFormula;
-    String baseAreaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView cylinderLaterarSurfaceFormula;
-    String lateralSurfaceFormula ="$$A=\\pi r^{2}$$";
- 
     //Volume
     EditText cylinderVolumeRET;
     EditText cylinderVolumeHET;
@@ -94,39 +73,6 @@ public class Cylinder extends AppCompatActivity {
         setContentView(R.layout.activity_cylinder);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-        cylinderVolumeFormula =(MathView)findViewById(R.id.cylinder_volume_formula);
-        assert cylinderVolumeFormula != null;
-        cylinderVolumeFormula.setText(volumeFormula);
-
-        cylinderRadius =(MathView)findViewById(R.id.cylinder_radius_formula);
-        assert cylinderRadius != null;
-        cylinderRadius.setText(radiusFormula);
-
-
-
-        cylinderHeightFormula =(MathView)findViewById(R.id.cylinder_height_formula);
-        assert cylinderHeightFormula != null;
-        cylinderHeightFormula.setText(heightFormula);
-
-
-
-        cylinderSurfaceAreaFormula =(MathView)findViewById(R.id.cylinder_surface_area_formula);
-        assert cylinderSurfaceAreaFormula != null;
-        cylinderSurfaceAreaFormula.setText(surfaceAreaFormula);
-
-
-        cylinderBaseAreaFormula =(MathView)findViewById(R.id.cylinder_base_area_formula);
-        assert cylinderBaseAreaFormula != null;
-        cylinderBaseAreaFormula.setText(baseAreaFormula);
-
-
-        cylinderLaterarSurfaceFormula =(MathView)findViewById(R.id.cylinder_lateral_surface_formula);
-        assert cylinderLaterarSurfaceFormula != null;
-        cylinderLaterarSurfaceFormula.setText(lateralSurfaceFormula);
-
 
 
 

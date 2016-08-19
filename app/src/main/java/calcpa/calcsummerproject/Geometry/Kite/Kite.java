@@ -16,28 +16,6 @@ import io.github.kexanie.library.MathView;
 
 public class Kite extends AppCompatActivity {
 
-    MathView kitePerimeterFormula;
-    String perimeterFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView kiteAreaFormula;
-    String areaFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView kiteASideFormula;
-    String aSideFormula = "$$A=\\pi r^{2}$$";
-
-
-    MathView kiteBSideFormula;
-    String bSideFormula = "$$A=\\pi r^{2}$$";
-
-    MathView kitePDiaogonalFormula;
-    String pDiaognalFormula = "$$A=\\pi r^{2}$$";
-
-    MathView kiteQDiaogonalFormula;
-    String qDiagonalFormula = "$$A=\\pi r^{2}$$";
-
-
     //Perimeter
     EditText kitePerimeterAET;
     EditText kitePerimeterBET;
@@ -88,36 +66,6 @@ public class Kite extends AppCompatActivity {
         setContentView(R.layout.activity_kite);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-        kitePerimeterFormula = (MathView) findViewById(R.id.kite_perimeter_formula);
-        assert kitePerimeterFormula != null;
-        kitePerimeterFormula.setText(perimeterFormula);
-
-        kiteAreaFormula = (MathView) findViewById(R.id.kite_area_formula);
-        assert kiteAreaFormula != null;
-        kiteAreaFormula.setText(areaFormula);
-
-
-        kiteASideFormula = (MathView) findViewById(R.id.kite_side_a_formula);
-        assert kiteASideFormula != null;
-        kiteASideFormula.setText(aSideFormula);
-
-
-        kiteBSideFormula = (MathView) findViewById(R.id.kite_side_b_formula);
-        assert kiteBSideFormula != null;
-        kiteBSideFormula.setText(bSideFormula);
-
-
-        kitePDiaogonalFormula = (MathView) findViewById(R.id.kite_p_diagonal_formula);
-        assert kitePDiaogonalFormula != null;
-        kitePDiaogonalFormula.setText(pDiaognalFormula);
-
-
-        kiteQDiaogonalFormula = (MathView) findViewById(R.id.kite_q_diagonal_formula);
-        assert kiteQDiaogonalFormula != null;
-        kiteQDiaogonalFormula.setText(qDiagonalFormula);
-
 
         // Perimeter Clear button
         kitePerimeterClearButton = (Button) findViewById(R.id.kite_perimeter_clear_button);

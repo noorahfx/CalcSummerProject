@@ -181,17 +181,17 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/isosceles_trianglexxxhdpi" />
 
-
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/iso_triangle_perimeter_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/iso_triangle_perimeter_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
+
 
         <TextView
             android:id="@+id/iso_triangle_perimeter_sideA_tv"
@@ -318,16 +318,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/isosceles_trianglexxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/iso_triangle_area_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/iso_triangle_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/iso_triangle_area_base_tv"
@@ -456,16 +456,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/isosceles_trianglexxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/iso_triangle_side_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/iso_triangle_side_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/iso_triangle_side_base_tv"
@@ -595,16 +595,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/isosceles_trianglexxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/iso_triangle_base_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/iso_triangle_base_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/iso_triangle_base_side_tv"
@@ -735,16 +735,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/isosceles_trianglexxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/iso_triangle_height_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/iso_triangle_height_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/circle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/iso_triangle_height_base_tv"

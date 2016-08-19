@@ -25,8 +25,8 @@ import calcpa.calcsummerproject.R;
 
 public class Circle extends AppCompatActivity {
 
-    MathView circleAreaFormula;
-    String areaFormula ="$$A=\\pi r^{2}$$";
+ /**   MathView circleAreaFormula;
+   // String areaFormula ="$$A=\\pi r^{2}$$";
 
     MathView circleDiameterFormula;
     String diameterFormula ="$$d =2r$$";
@@ -36,7 +36,7 @@ public class Circle extends AppCompatActivity {
 
     MathView circleRadiusFormula;
     String radiusFormula="$$r =\\sqrt{\\frac{A}{\\pi}}$$";
-
+*/
 
 
     //area
@@ -75,8 +75,7 @@ public class Circle extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-
-        circleAreaFormula =(MathView)findViewById(R.id.areaFormula);
+        /**     circleAreaFormula =(MathView)findViewById(R.id.areaFormula);
         assert circleAreaFormula != null;
         circleAreaFormula.setText(areaFormula);
 
@@ -94,7 +93,7 @@ public class Circle extends AppCompatActivity {
         assert circleRadiusFormula != null;
         circleRadiusFormula.setText(radiusFormula);
 
-
+*/
         // Area Clear button
         circleAreaClearButton =(Button)findViewById(R.id.circle_area_clear_button);
         circleAreaClearButton.setOnClickListener(new View.OnClickListener() {

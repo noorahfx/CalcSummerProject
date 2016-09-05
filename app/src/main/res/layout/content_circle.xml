@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="@string/area_text"
+            android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -69,7 +69,7 @@
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
             android:maxLines="1"
-            android:text="r"
+            android:text="@string/letter_r"
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="15sp" />
@@ -85,7 +85,7 @@
             android:layout_toRightOf="@+id/circle_area_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Radius"
+            android:hint="@string/radius"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -102,7 +102,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -127,7 +127,7 @@
             android:layout_below="@id/circle_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -149,7 +149,7 @@
             android:layout_marginTop="10dp"
             android:textColor="@color/Black"
             android:gravity="center"
-            android:text="Diameter"
+            android:text="@string/diameter"
              android:textSize="30sp" />
 
         <ImageView
@@ -180,7 +180,7 @@
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
             android:maxLines="1"
-            android:text="r"
+            android:text="@string/letter_r"
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="15sp" />
@@ -196,7 +196,7 @@
             android:layout_toRightOf="@+id/circle_diameter_d_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Radius"
+            android:hint="@string/radius"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -209,7 +209,7 @@
             android:layout_below="@id/circle_diameter_d_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -232,7 +232,7 @@
             android:layout_below="@id/circle_calc_diamter_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -253,7 +253,7 @@
             android:layout_marginTop="10dp"
             android:textColor="@color/Black"
             android:gravity="center"
-            android:text="Circumference"
+            android:text="@string/circum"
              android:textSize="30sp" />
 
         <ImageView
@@ -285,7 +285,7 @@
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
             android:maxLines="1"
-            android:text="r"
+            android:text="@string/letter_r"
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="15sp" />
@@ -303,7 +303,7 @@
             android:ems="6"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:hint="Enter Radius"
+            android:hint="@string/letter_r"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -316,7 +316,7 @@
             android:layout_below="@id/circle_circum_c_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -339,7 +339,7 @@
             android:layout_below="@id/circle_circum_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -359,7 +359,7 @@
             android:layout_marginTop="10dp"
             android:textColor="@color/Black"
             android:gravity="center"
-            android:text="Radius"
+            android:text="@string/radius"
              android:textSize="30sp" />
 
         <ImageView
@@ -392,7 +392,7 @@
             android:layout_marginTop="11dp"
             android:background="@drawable/red_button"
             android:maxLines="1"
-            android:text="A"
+            android:text="@string/letter_a"
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="15sp" />
@@ -410,7 +410,7 @@
             android:ems="6"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:hint="Enter Area"
+            android:hint="@string/area"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -423,7 +423,7 @@
             android:layout_below="@id/circle_radius_c_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -446,7 +446,7 @@
             android:layout_below="@id/circle_radius_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 

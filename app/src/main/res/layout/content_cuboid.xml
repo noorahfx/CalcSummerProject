@@ -48,7 +48,7 @@
                 android:layout_below="@id/cuboid_volume_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/circle_area_xxxhdpi" />
+                android:src="@drawable/cuboid_volume_xxxhdpi" />
 
 
 
@@ -105,7 +105,7 @@
                 android:layout_toRightOf="@+id/cuboid_volume_w_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Value"
+                android:hint="Enter Width"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -214,10 +214,10 @@
                 android:id="@+id/cuboid_area_formula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cuboid_volume_img"
+                android:layout_below="@id/cuboid_area_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/circle_area_xxxhdpi" />
+                android:src="@drawable/cuboid_area_xxxhdpi" />
 
 
 
@@ -275,7 +275,7 @@
                 android:layout_toRightOf="@+id/cuboid_area_w_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter  sd"
+                android:hint="Enter  Width"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"

@@ -28,7 +28,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Volume"
+                android:text="@string/volume"
                 android:textSize="30sp" />
 
             <ImageView
@@ -58,7 +58,7 @@
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
                 android:maxLines="1"
-                android:text="a"
+                android:text="@string/letter_a"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -73,7 +73,7 @@
                 android:layout_toRightOf="@+id/cube_volume_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Edge"
+                android:hint="@string/edge"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -89,7 +89,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -114,7 +114,7 @@
                 android:layout_below="@id/cube_volume_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -135,7 +135,7 @@
                 android:layout_below="@+id/hline_1"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Edge"
+                android:text="@string/edge"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -167,7 +167,7 @@
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
                 android:maxLines="1"
-                android:text="V"
+                android:text="@string/letter_v"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -181,7 +181,7 @@
                 android:layout_toRightOf="@+id/cube_edge_v_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Radius"
+                android:hint="@string/volume"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -196,7 +196,7 @@
                 android:layout_below="@id/cube_edge_v_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -218,7 +218,7 @@
                 android:layout_below="@id/cube_edge_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -239,7 +239,7 @@
                 android:layout_below="@+id/hline_2"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Special Diagonal"
+                android:text="@string/special_diagonal"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -271,7 +271,7 @@
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
                 android:maxLines="1"
-                android:text="a"
+                android:text="@string/letter_a"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -286,7 +286,7 @@
                 android:layout_toRightOf="@+id/cube_special_diagonal_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Edge"
+                android:hint="@string/edge"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -303,7 +303,7 @@
                 android:layout_below="@id/cube_special_diagonal_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -325,7 +325,7 @@
                 android:layout_below="@id/cube_special_diagonal_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -347,7 +347,7 @@
                 android:layout_below="@+id/hline_3"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Surface Area"
+                android:text="@string/surface_area"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -379,7 +379,7 @@
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
                 android:maxLines="1"
-                android:text="a"
+                android:text="@string/letter_a"
                 android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
@@ -396,7 +396,7 @@
                 android:ems="6"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:hint="Enter Edge"
+                android:hint="@string/edge"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -412,7 +412,7 @@
                 android:layout_below="@id/cube_surface_area_a_et"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -434,7 +434,7 @@
                 android:layout_below="@id/cube_surface_area_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 

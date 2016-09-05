@@ -66,7 +66,38 @@
     <string name="title_activity_regular_polygon">RegularPolygon</string>
 
 
-    <string name="area_text">Area</string>
+    <string name="area">Area</string>
+
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+
+
+
+    <string name="perimeter">Perimeter</string>
+    <string name="length">Length</string>
+    <string name="diagonal">Diagonal</string>
+    <string name="width">Width</string>
+    <string name="radius">Radius</string>
+    <string name="diameter">Diameter</string>
+    <string name="circum">Circumference</string>
+    <string name="volume">Volume</string>
+    <string name="height">Height</string>
+    <string name="slant_height">Slant Height</string>
+    <string name="surface_area">Surface Area</string>
+    <string name="base_area">Base Area</string>
+    <string name="lateral_surface">Lateral Surface</string>
+    <string name="edge">Edge</string>
+    <string name="special_diagonal">Speical Diagonal</string>
+
+
+    <string name="letter_l">L</string>
+    <string name="letter_w">W</string>
+    <string name="letter_p">P</string>
+    <string name="letter_r">r</string>
+    <string name="letter_a">A</string>
+    <string name="letter_v">V</string>
+    <string name="letter_h">h</string>
+
 
 
     <string name="superscript"><html><i>a</i><sup>2</sup>+<i>y</i><sup>2</sup></html></string>

@@ -48,7 +48,7 @@
             android:layout_below="@+id/rectangle_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/rectangle_perimeter_xxxhdpi" />
 
 
 
@@ -184,7 +184,7 @@
             android:layout_below="@+id/rectangle_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/rectangle_area_xxxhdpi" />
 
 
 
@@ -323,7 +323,7 @@
             android:layout_below="@+id/rectangle_length_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/rectangle_length_xxxhdpi" />
 
 
 
@@ -460,7 +460,7 @@
             android:layout_below="@+id/rectangle_width_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/rectangle_width_xxxhdpi" />
 
 
 
@@ -600,7 +600,7 @@
             android:layout_below="@+id/rectangle_diagonal_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/rectangle_diagonal_xxxhdpi" />
 
 
 

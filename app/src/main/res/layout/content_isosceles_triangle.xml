@@ -188,7 +188,7 @@
             android:layout_below="@+id/iso_triangle_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/isosceles_triangle_perimeter_xxxhdpi" />
 
 
 
@@ -325,7 +325,7 @@
             android:layout_below="@+id/iso_triangle_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/isosceles_triangle_area_xxxhdpi" />
 
 
 
@@ -463,7 +463,7 @@
             android:layout_below="@+id/iso_triangle_side_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/isosceles_tirangle_side_a_xxxhdpi" />
 
 
 
@@ -602,7 +602,7 @@
             android:layout_below="@+id/iso_triangle_base_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/isosceles_triangle_base_xxxhdpi" />
 
 
 
@@ -742,7 +742,7 @@
             android:layout_below="@+id/iso_triangle_height_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/isosceles_triangle_height_xxxhdpi" />
 
 
 

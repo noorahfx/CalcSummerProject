@@ -44,7 +44,7 @@
             android:layout_below="@+id/pen_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/pentagon_perimeter_xxxhdpi" />
 
 
 
@@ -150,7 +150,7 @@
             android:layout_below="@+id/pen_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/pentagon_area_xxxhdpi" />
 
 
 
@@ -254,7 +254,7 @@
             android:layout_below="@+id/pen_side_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/pentagon_sides_xxxhdpi" />
 
 
         <TextView

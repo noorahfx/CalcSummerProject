@@ -219,7 +219,7 @@
             android:layout_below="@+id/obtuse_tri_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/obtuse_triangle_perimeter_xxxhdpi" />
 
 
         <TextView
@@ -393,7 +393,7 @@
             android:layout_below="@+id/obtuse_tri_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/obtuse_triangle_area_xxxhdpi" />
 
 
 
@@ -538,7 +538,7 @@
             android:layout_below="@+id/obtuse_tri_sideA_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/acute_triangle_side_a_xxxhdpi" />
 
 
 
@@ -710,7 +710,7 @@
             android:layout_below="@+id/obtuse_tri_base_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/circle_area_xxxhdpi" />
+            android:src="@drawable/acute_triangle_base_xxxhdpi" />
 
 
 

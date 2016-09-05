@@ -42,16 +42,16 @@
             android:src="@drawable/acute_triangle_xxxhdpi" />
 
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/acute_tri_perimeter_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/acute_tri_perimeter_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/acute_triangle_perimeter_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/acute_tri_perimeter_sideA_tv"
@@ -215,17 +215,17 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_xxxhdpi" />
 
-
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/acute_tri_area_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/acute_tri_area_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/acute_triangle_area_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
+
 
 
         <TextView
@@ -356,16 +356,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/acute_tri_hyp_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/acute_tri_hyp_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/acute_triangle_hyp_xxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/acute_tri_hyp_sideA_tv"
@@ -494,16 +494,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/acute_tri_sideA_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/acute_tri_sideA_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/acute_triangle_side_a_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
         <TextView
             android:id="@+id/acute_tri_sideA_base_tv"
@@ -660,16 +660,16 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_xxxhdpi" />
 
-        <io.github.kexanie.library.MathView
+        <ImageView
             android:id="@+id/acute_tri_base_formula"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/acute_tri_base_img"
-            android:layout_gravity="fill_horizontal"
-            android:layout_marginTop="10dp"
-            auto:engine="KaTeX">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/acute_triangle_base_xxxhdpi" />
 
-        </io.github.kexanie.library.MathView>
+
 
 
         <TextView

@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Perimeter"
+            android:text="@string/perimeter"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -59,7 +59,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -73,7 +73,7 @@
             android:layout_toRightOf="@+id/oct_perimeter_side_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -87,7 +87,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -111,7 +111,7 @@
             android:layout_below="@id/oct_perimeter_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -131,7 +131,7 @@
             android:layout_below="@+id/hline_1"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Area"
+            android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -166,7 +166,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -180,7 +180,7 @@
             android:layout_toRightOf="@+id/oct_area_side_a_tx"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -193,7 +193,7 @@
             android:layout_below="@id/oct_area_side_a_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -216,7 +216,7 @@
             android:layout_below="@id/oct_area_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -237,7 +237,7 @@
             android:layout_below="@+id/hline_2"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Side A"
+            android:text="@string/side_a"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -271,7 +271,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -286,7 +286,7 @@
             android:layout_toRightOf="@+id/oct_side_tx"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -300,7 +300,7 @@
             android:layout_below="@id/oct_side_et"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -324,7 +324,7 @@
             android:layout_below="@id/oct_side_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 

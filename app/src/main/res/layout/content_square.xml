@@ -26,7 +26,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Perimeter"
+                android:text="@string/perimeter"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -58,7 +58,7 @@
                 android:layout_marginTop="11dp"
                 android:background="@drawable/red_button"
                 android:maxLines="1"
-                android:text="a"
+                android:text="@string/letter_a"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -72,7 +72,7 @@
                 android:layout_toRightOf="@+id/square_perimeter_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Side"
+                android:hint="@string/side"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -90,7 +90,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -114,7 +114,7 @@
                 android:layout_below="@id/square_perimeter_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -134,7 +134,7 @@
                 android:layout_below="@+id/hline_1"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Area"
+                android:text="@string/area"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -169,7 +169,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="a"
+                android:text="@string/letter_a"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -183,7 +183,7 @@
                 android:layout_toRightOf="@+id/square_area_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Side"
+                android:hint="@string/side"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -202,7 +202,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -226,7 +226,7 @@
                 android:layout_below="@id/square_calc_area_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -248,7 +248,7 @@
                 android:layout_below="@+id/hline_2"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Sides"
+                android:text="@string/side"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -282,7 +282,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="P"
+                android:text="@string/letter_p"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -297,7 +297,7 @@
                 android:layout_toRightOf="@+id/square_side_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Perimeter"
+                android:hint="@string/perimeter"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -315,7 +315,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -339,7 +339,7 @@
                 android:layout_below="@id/square_calc_side_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -360,7 +360,7 @@
                 android:layout_below="@+id/hline_3"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Diagonal"
+                android:text="@string/diagonal"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -396,7 +396,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="a"
+                android:text="@string/letter_a"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -411,7 +411,7 @@
                 android:layout_toRightOf="@+id/square_diagonal_d_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Side"
+                android:hint="@string/side"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -431,7 +431,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -455,7 +455,7 @@
                 android:layout_below="@id/square_calc_diagonal_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 

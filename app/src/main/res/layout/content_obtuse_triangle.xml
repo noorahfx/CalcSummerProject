@@ -198,7 +198,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Perimeter"
+            android:text="@string/perimeter"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -231,7 +231,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -245,7 +245,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_perimeter_sideA_tv"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -260,7 +260,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -275,7 +275,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_perimeter_sideB_tv"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -293,7 +293,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="c"
+            android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -308,7 +308,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_perimeter_sideC_tv"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -325,7 +325,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -349,7 +349,7 @@
             android:layout_below="@id/obtuse_tri_perimeter_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -372,7 +372,7 @@
             android:layout_below="@+id/hline_1"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Area"
+            android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -409,7 +409,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -423,7 +423,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_area_base_tv"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -440,7 +440,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="h"
+            android:text="@string/letter_h"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -455,7 +455,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_area_height_tv"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Height"
+            android:hint="@string/height"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -471,7 +471,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -496,7 +496,7 @@
             android:layout_below="@id/obtuse_tri_area_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -517,7 +517,7 @@
             android:layout_below="@+id/hline_2"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Side A"
+            android:text="@string/side_a"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -551,7 +551,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -565,7 +565,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_sideA_base_tv"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -580,7 +580,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="c"
+            android:text="letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -594,7 +594,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_sideA_sideC_tx"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -611,7 +611,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -625,7 +625,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_sideA_perimeter_tx"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Perimeter"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -642,7 +642,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -665,7 +665,7 @@
             android:layout_below="@id/obtuse_tri_sideA_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -689,7 +689,7 @@
             android:layout_below="@+id/hline_3"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Base"
+            android:text="@string/base"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -724,7 +724,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -738,7 +738,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_base_sideA_tv"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -755,7 +755,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="c"
+            android:text="letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -770,7 +770,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_base_sideC_tx"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -787,7 +787,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -801,7 +801,7 @@
             android:layout_toRightOf="@+id/obtuse_tri_base_perimeter_tx"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Perimeter"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -818,7 +818,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -842,7 +842,7 @@
             android:layout_below="@id/obtuse_tri_base_ans_tv"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 

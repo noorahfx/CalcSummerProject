@@ -26,7 +26,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Perimeter"
+            android:text="@string/perimeter"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -59,7 +59,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -73,7 +73,7 @@
             android:layout_toRightOf="@+id/parallelogram_perimeter_base_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -88,7 +88,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -102,7 +102,7 @@
             android:layout_toRightOf="@+id/parallelogram_perimeter_area_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -116,7 +116,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -140,7 +140,7 @@
             android:layout_below="@id/parallelogram_perimeter_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -159,7 +159,7 @@
             android:layout_below="@+id/hline_1"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Area"
+            android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -192,7 +192,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -206,7 +206,7 @@
             android:layout_toRightOf="@+id/parallelogram_area_base_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -222,7 +222,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="h"
+            android:text="letter_h"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -236,7 +236,7 @@
             android:layout_toRightOf="@+id/parallelogram_area_height_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Height"
+            android:hint="@string/height"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -250,7 +250,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -275,7 +275,7 @@
             android:layout_below="@id/parallelogram_area_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -295,7 +295,7 @@
             android:layout_below="@+id/hline_2"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Base"
+            android:text="@string/base"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -329,7 +329,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -343,7 +343,7 @@
             android:layout_toRightOf="@+id/parallelogram_base_side_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -358,7 +358,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -373,7 +373,7 @@
             android:layout_toRightOf="@+id/parallelogram_base_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Perimeter"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -387,7 +387,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -411,7 +411,7 @@
             android:layout_below="@id/parallelogram_base_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -432,7 +432,7 @@
             android:layout_below="@+id/hline_3"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Height"
+            android:text="@string/height"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -464,7 +464,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -478,7 +478,7 @@
             android:layout_toRightOf="@+id/parallelogram_height_base_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -493,7 +493,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="A"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -507,7 +507,7 @@
             android:layout_toRightOf="@+id/parallelogram_height_area_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Area"
+            android:hint="@string/area"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -521,7 +521,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -545,7 +545,7 @@
             android:layout_below="@id/parallelogram_height_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -566,7 +566,7 @@
             android:layout_below="@+id/hline_4"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Sides"
+            android:text="@string/side"
             android:textSize="30sp" />
 
 
@@ -598,7 +598,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -612,7 +612,7 @@
             android:layout_toRightOf="@+id/parallelogram_side_base_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -627,7 +627,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -641,7 +641,7 @@
             android:layout_toRightOf="@+id/parallelogram_side_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Perimeter"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -656,7 +656,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -680,7 +680,7 @@
             android:layout_below="@id/parallelogram_side_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 

@@ -26,7 +26,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Perimeter"
+            android:text="@string/perimeter"
             android:textSize="30sp"
             android:textColor="@color/Black"/>
 
@@ -62,7 +62,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -76,7 +76,7 @@
             android:layout_toRightOf="@+id/trapezoid_perimeter_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -91,7 +91,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -105,7 +105,7 @@
             android:layout_toRightOf="@+id/trapezoid_perimeter_b_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -121,7 +121,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="c"
+            android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -136,7 +136,7 @@
             android:layout_toRightOf="@+id/trapezoid_perimeter_c_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -151,7 +151,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="d"
+            android:text="@string/letter_d"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -165,7 +165,7 @@
             android:layout_toRightOf="@+id/trapezoid_perimeter_d_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -181,7 +181,7 @@
              android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
         <TextView
@@ -202,7 +202,7 @@
             android:layout_below="@id/trapezoid_perimeter_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -223,7 +223,7 @@
             android:layout_below="@+id/hline_1"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Area"
+            android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -256,7 +256,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -270,7 +270,7 @@
             android:layout_toRightOf="@+id/trapezoid_area_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -285,7 +285,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -299,7 +299,7 @@
             android:layout_toRightOf="@+id/trapezoid_area_b_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -315,7 +315,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="h"
+            android:text="@string/letter_h"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -329,7 +329,7 @@
             android:layout_toRightOf="@+id/trapezoid_area_h_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Height"
+            android:hint="@string/height"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -346,7 +346,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -370,7 +370,7 @@
             android:layout_below="@id/trapezoid_area_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -390,7 +390,7 @@
             android:layout_below="@+id/hline_2"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Height"
+            android:text="@string/height"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -424,7 +424,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -438,7 +438,7 @@
             android:layout_toRightOf="@+id/trapezoid_height_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -453,7 +453,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -467,7 +467,7 @@
             android:layout_toRightOf="@+id/trapezoid_height_b_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -484,7 +484,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="A"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -498,7 +498,7 @@
             android:layout_toRightOf="@+id/trapezoid_height_area_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Area"
+            android:hint="@string/area"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -514,7 +514,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -537,7 +537,7 @@
             android:layout_below="@id/trapezoid_height_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -557,7 +557,7 @@
             android:layout_below="@+id/hline_3"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Base A"
+            android:text="@string/base_a"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -591,7 +591,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -605,7 +605,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseA_b_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Base"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -620,7 +620,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="c"
+            android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -635,7 +635,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseA_sideC_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -651,7 +651,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="d"
+            android:text="@string/letter_d"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -667,7 +667,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseA_sideD_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Side"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -683,7 +683,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -697,7 +697,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseA_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Perimeter"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -714,7 +714,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -738,7 +738,7 @@
             android:layout_below="@id/trapezoid_baseA_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -759,7 +759,7 @@
             android:layout_below="@+id/hline_4"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Base B"
+            android:text="@string/base_b"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -793,7 +793,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -807,7 +807,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseB_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/base"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -822,7 +822,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="c"
+            android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -837,7 +837,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseB_sideC_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -852,7 +852,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="d"
+            android:text="@string/letter_d"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -866,7 +866,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseB_sideD_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -881,7 +881,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -896,7 +896,7 @@
             android:layout_toRightOf="@+id/trapezoid_baseB_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -912,7 +912,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -935,7 +935,7 @@
             android:layout_below="@id/trapezoid_baseB_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -954,7 +954,7 @@
             android:layout_below="@+id/hline_5"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Side C"
+            android:text="@string/side_c"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -989,7 +989,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1005,7 +1005,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideC_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1020,7 +1020,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1035,7 +1035,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideC_b_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1050,7 +1050,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="d"
+            android:text="@string/letter_d"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1065,7 +1065,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideC_d_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1081,7 +1081,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1095,7 +1095,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideC_p_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1111,7 +1111,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -1133,7 +1133,7 @@
             android:layout_below="@id/trapezoid_sideC_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -1153,7 +1153,7 @@
             android:layout_below="@+id/hline_6"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Side D"
+            android:text="@string/side_d"
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
@@ -1185,7 +1185,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="a"
+            android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1200,7 +1200,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideD_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1215,7 +1215,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="b"
+            android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1229,7 +1229,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideD_b_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1245,7 +1245,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="c"
+            android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1259,7 +1259,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideD_c_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/side"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1274,7 +1274,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="P"
+            android:text="@string/letter_p"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -1289,7 +1289,7 @@
             android:layout_toRightOf="@+id/trapezoid_sideD_p_text"
             android:background="@drawable/black_button"
             android:ems="6"
-            android:hint="Enter Value"
+            android:hint="@string/perimeter"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -1305,7 +1305,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:text="Calculate"
+            android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
 
@@ -1328,7 +1328,7 @@
             android:layout_below="@id/trapezoid_sideD_calc_answer_tx"
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
-            android:text="CLEAR"
+            android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
 

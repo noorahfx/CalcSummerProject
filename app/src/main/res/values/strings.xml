@@ -91,6 +91,16 @@
     <string name="axis">Axis</string>
     <string name="a_xis_text">A-xis</string>
     <string name="b_xis_text">B-xis</string>
+    <string name="side_a">Side A</string>
+    <string name="side_b">Side B</string>
+    <string name="diagonal_p">Diagonal (P)</string>
+    <string name="diagonal_q">Diagonal (Q)</string>
+    <string name="base">Base</string>
+    <string name="hyp">Hypotenuse</string>
+    <string name="base_a">Base A</string>
+    <string name="base_b">Base B</string>
+    <string name="side_c">Side C</string>
+    <string name="side_d">Side D</string>
 
 
     <string name="letter_l">L</string>
@@ -101,6 +111,9 @@
     <string name="letter_v">V</string>
     <string name="letter_h">h</string>
     <string name="letter_b">b</string>
+    <string name="letter_q">q</string>
+    <string name="letter_c">c</string>
+    <string name="letter_d">d</string>
 
 
 

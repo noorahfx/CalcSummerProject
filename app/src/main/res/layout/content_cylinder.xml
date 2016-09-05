@@ -26,7 +26,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Volume"
+                android:text="@string/volume"
                 android:textSize="30sp" />
 
 
@@ -59,7 +59,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="r"
+                android:text="@string/letter_r"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -73,7 +73,7 @@
                 android:layout_toRightOf="@+id/cylinder_volume_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Radius"
+                android:hint="@string/radius"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -88,7 +88,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="h"
+                android:text="@string/letter_h"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -102,7 +102,7 @@
                 android:layout_toRightOf="@+id/cylinder_volume_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Height"
+                android:hint="@string/height"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -119,7 +119,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -144,7 +144,7 @@
                 android:layout_below="@id/cylinder_volume_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -167,7 +167,7 @@
                 android:layout_below="@+id/hline_1"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Radius"
+                android:text="@string/radius"
                 android:textSize="30sp" />
 
 
@@ -200,7 +200,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="h"
+                android:text="@string/letter_h"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -216,7 +216,7 @@
                 android:layout_toRightOf="@+id/cylinder_radius_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Height"
+                android:hint="@string/height"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -231,7 +231,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="v"
+                android:text="@string/letter_v"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -246,7 +246,7 @@
                 android:layout_toRightOf="@+id/cylinder_radius_v_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Volume"
+                android:hint="@string/volume"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -263,7 +263,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -288,7 +288,7 @@
                 android:layout_below="@id/cylinder_radius_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -310,7 +310,7 @@
                 android:layout_below="@+id/hline_2"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Height"
+                android:text="@string/height"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -344,7 +344,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="r"
+                android:text="@string/letter_r"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -358,7 +358,7 @@
                 android:layout_toRightOf="@+id/cylinder_height_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Radius"
+                android:hint="@string/radius"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -375,7 +375,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="v"
+                android:text="@string/letter_v"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -389,7 +389,7 @@
                 android:layout_toRightOf="@+id/cylinder_height_v_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Volume"
+                android:hint="@string/volume"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -405,7 +405,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -429,7 +429,7 @@
                 android:layout_below="@id/cylinder_height_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -451,7 +451,7 @@
                 android:layout_below="@+id/hline_3"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Surface Area"
+                android:text="@string/surface_area"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -484,7 +484,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="r"
+                android:text="@string/letter_r"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -498,7 +498,7 @@
                 android:layout_toRightOf="@+id/cylinder_surface_area_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Radius"
+                android:hint="@string/radius"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -516,7 +516,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="h"
+                android:text="@string/letter_h"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -530,7 +530,7 @@
                 android:layout_toRightOf="@+id/cylinder_surface_area_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Height"
+                android:hint="@string/height"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -546,7 +546,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -571,7 +571,7 @@
                 android:layout_below="@id/cylinder_surface_area_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -593,7 +593,7 @@
                 android:layout_below="@+id/hline_4"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Base Area"
+                android:text="@string/base_area"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -626,7 +626,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="r"
+                android:text="@string/letter_r"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -640,7 +640,7 @@
                 android:layout_toRightOf="@+id/cylinder_base_area_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Radius"
+                android:hint="@string/radius"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -658,7 +658,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -683,7 +683,7 @@
                 android:layout_below="@id/cylinder_base_area_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -706,7 +706,7 @@
                 android:layout_below="@+id/hline_5"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="Lateral Surface"
+                android:text="@string/lateral_surface"
                 android:textColor="@color/Black"
                 android:textSize="30sp" />
 
@@ -741,7 +741,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="r"
+                android:text="@string/letter_r"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -755,7 +755,7 @@
                 android:layout_toRightOf="@+id/cylinder_lateral_surface_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Radius"
+                android:hint="@string/radius"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -772,7 +772,7 @@
                 android:background="@drawable/red_button"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="h"
+                android:text="@string/letter_h"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
@@ -786,7 +786,7 @@
                 android:layout_toRightOf="@+id/cylinder_lateral_surface_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
-                android:hint="Enter Height"
+                android:hint="@string/height"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
                 android:textColor="@color/white"
@@ -802,7 +802,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
@@ -827,7 +827,7 @@
                 android:layout_below="@id/cylinder_lateral_surface_calc_answer_tx"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
-                android:text="CLEAR"
+                android:text="@string/clear"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 

@@ -69,7 +69,6 @@
     <string name="area">Area</string>
 
     <string name="calculate">Calculate</string>
-    <string name="clear">Clear</string>
 
 
 
@@ -88,6 +87,10 @@
     <string name="lateral_surface">Lateral Surface</string>
     <string name="edge">Edge</string>
     <string name="special_diagonal">Speical Diagonal</string>
+    <string name="side">Side</string>
+    <string name="axis">Axis</string>
+    <string name="a_xis_text">A-xis</string>
+    <string name="b_xis_text">B-xis</string>
 
 
     <string name="letter_l">L</string>
@@ -97,6 +100,7 @@
     <string name="letter_a">A</string>
     <string name="letter_v">V</string>
     <string name="letter_h">h</string>
+    <string name="letter_b">b</string>
 
 
 

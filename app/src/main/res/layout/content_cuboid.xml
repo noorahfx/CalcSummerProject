@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -39,7 +38,8 @@
                 android:layout_below="@+id/cuboid_volume_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cuboid_xxxhdpi" />
+                android:src="@drawable/cuboid_xxxhdpi"
+                android:contentDescription="@string/cuboid_image"/>
 
             <ImageView
                 android:id="@+id/cuboid_volume_formula"
@@ -48,7 +48,8 @@
                 android:layout_below="@id/cuboid_volume_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cuboid_volume_xxxhdpi" />
+                android:src="@drawable/cuboid_volume_xxxhdpi"
+                android:contentDescription="@string/cuboid_volume_formula"/>
 
 
 
@@ -71,8 +72,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cuboid_volume_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cuboid_volume_l_text"
+                android:layout_toEndOf="@+id/cuboid_volume_l_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/length"
@@ -101,8 +104,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cuboid_volume_l_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cuboid_volume_w_text"
+                android:layout_toEndOf="@+id/cuboid_volume_w_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/width"
@@ -131,8 +136,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cuboid_volume_w_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cuboid_volume_w_text"
+                android:layout_toEndOf="@+id/cuboid_volume_w_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/height"
@@ -208,7 +215,8 @@
                 android:layout_below="@+id/cuboid_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cuboid_xxxhdpi" />
+                android:src="@drawable/cuboid_xxxhdpi"
+                android:contentDescription="@string/cuboid_image"/>
 
             <ImageView
                 android:id="@+id/cuboid_area_formula"
@@ -217,7 +225,8 @@
                 android:layout_below="@id/cuboid_area_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cuboid_area_xxxhdpi" />
+                android:src="@drawable/cuboid_area_xxxhdpi"
+                android:contentDescription="@string/cuboid_area_formula"/>
 
 
 
@@ -241,8 +250,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cuboid_area_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cuboid_area_l_text"
+                android:layout_toEndOf="@+id/cuboid_area_l_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/length"
@@ -271,8 +282,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cuboid_area_l_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cuboid_area_w_text"
+                android:layout_toEndOf="@+id/cuboid_area_w_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/width"
@@ -300,8 +313,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cuboid_area_w_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cuboid_area_w_text"
+                android:layout_toEndOf="@+id/cuboid_area_w_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/height"

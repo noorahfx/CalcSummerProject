@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -39,7 +38,8 @@
             android:layout_below="@+id/rectangle_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi" />
+            android:src="@drawable/rectangle_xxxhdpi"
+            android:contentDescription="@string/rectangle_image"/>
 
         <ImageView
             android:id="@+id/rectangle_perimeter_formula"
@@ -48,7 +48,8 @@
             android:layout_below="@+id/rectangle_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_perimeter_xxxhdpi" />
+            android:src="@drawable/rectangle_perimeter_xxxhdpi"
+            android:contentDescription="@string/rectangle_perimeter_formula"/>
 
 
 
@@ -71,8 +72,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_perimeter_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rectangle_perimeter_length_text"
+            android:layout_toEndOf="@+id/rectangle_perimeter_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -101,8 +104,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_perimeter_length_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/rectangle_perimeter_width_text"
+            android:layout_toEndOf="@+id/rectangle_perimeter_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"
@@ -175,7 +180,8 @@
             android:layout_below="@+id/rectangle_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi" />
+            android:src="@drawable/rectangle_xxxhdpi"
+            android:contentDescription="@string/rectangle_image"/>
 
         <ImageView
             android:id="@+id/rectangle_area_formula"
@@ -184,7 +190,8 @@
             android:layout_below="@+id/rectangle_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_area_xxxhdpi" />
+            android:src="@drawable/rectangle_area_xxxhdpi"
+            android:contentDescription="@string/rectangle_area_formula"/>
 
 
 
@@ -207,8 +214,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_area_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rectangle_area_length_text"
+            android:layout_toEndOf="@+id/rectangle_area_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -237,8 +246,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_area_length_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/rectangle_area_width_text"
+            android:layout_toEndOf="@+id/rectangle_area_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"
@@ -314,7 +325,8 @@
             android:layout_below="@+id/rectangle_length_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi" />
+            android:src="@drawable/rectangle_xxxhdpi"
+            android:contentDescription="@string/rectangle_image"/>
 
         <ImageView
             android:id="@+id/rectangle_length_formula"
@@ -323,7 +335,8 @@
             android:layout_below="@+id/rectangle_length_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_length_xxxhdpi" />
+            android:src="@drawable/rectangle_length_xxxhdpi"
+            android:contentDescription="@string/rectangle_length_formula"/>
 
 
 
@@ -346,8 +359,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_length_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rectangle_length_width_text"
+            android:layout_toEndOf="@+id/rectangle_length_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"
@@ -376,8 +391,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_length_width_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rectangle_length_perimeter_text"
+            android:layout_toEndOf="@+id/rectangle_length_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/perimeter"
@@ -451,7 +468,8 @@
             android:layout_below="@+id/rectangle_width_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi" />
+            android:src="@drawable/rectangle_xxxhdpi"
+            android:contentDescription="@string/rectangle_image"/>
 
         <ImageView
             android:id="@+id/rectangle_width_formula"
@@ -460,7 +478,8 @@
             android:layout_below="@+id/rectangle_width_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_width_xxxhdpi" />
+            android:src="@drawable/rectangle_width_xxxhdpi"
+            android:contentDescription="@string/rectangle_width_formula"/>
 
 
 
@@ -485,8 +504,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_width_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rectangle_width_length_text"
+            android:layout_toEndOf="@+id/rectangle_width_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -514,8 +535,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_width_length_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/rectangle_width_perimeter_text"
+            android:layout_toEndOf="@+id/rectangle_width_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/perimeter"
@@ -590,7 +613,8 @@
             android:layout_below="@+id/rectangle_diagonal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi" />
+            android:src="@drawable/rectangle_xxxhdpi"
+            android:contentDescription="@string/rectangle_image"/>
 
 
         <ImageView
@@ -600,7 +624,8 @@
             android:layout_below="@+id/rectangle_diagonal_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_diagonal_xxxhdpi" />
+            android:src="@drawable/rectangle_diagonal_xxxhdpi"
+            android:contentDescription="@string/rectangle_diagonal_formula"/>
 
 
 
@@ -626,8 +651,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_diagonal_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rectangle_diagonal_length_text"
+            android:layout_toEndOf="@+id/rectangle_diagonal_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -655,8 +682,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rectangle_diagonal_length_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/rectangle_diagonal_width_text"
+            android:layout_toEndOf="@+id/rectangle_diagonal_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"

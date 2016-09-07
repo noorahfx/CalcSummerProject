@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -39,7 +38,8 @@
                 android:layout_below="@+id/ellipse_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_xxxhdpi" />
+                android:src="@drawable/ellipse_xxxhdpi"
+                android:contentDescription="@string/ellipse_image"/>
 
             <ImageView
                 android:id="@+id/ellipse_area_formula"
@@ -48,7 +48,8 @@
                 android:layout_below="@+id/ellipse_area_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_area_xxxhdpi" />
+                android:src="@drawable/ellipse_area_xxxhdpi"
+                android:contentDescription="@string/ellipse_volume_formula"/>
 
 
 
@@ -74,8 +75,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/ellipse_area_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/ellipse_area_a_text"
+                android:layout_toEndOf="@+id/ellipse_area_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/axis"
@@ -105,8 +108,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/ellipse_area_a_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/ellipse_area_b_text"
+                android:layout_toEndOf="@+id/ellipse_area_b_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/axis"
@@ -184,7 +189,8 @@
                 android:layout_below="@+id/ellipse_a_xis_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_xxxhdpi" />
+                android:src="@drawable/ellipse_xxxhdpi"
+                android:contentDescription="@string/ellipse_image"/>
 
             <ImageView
                 android:id="@+id/ellipse_a_xis_formula"
@@ -193,7 +199,8 @@
                 android:layout_below="@+id/ellipse_a_xis_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_a_xis_xxxhdpi" />
+                android:src="@drawable/ellipse_a_xis_xxxhdpi"
+                android:contentDescription="@string/ellipse_axis_formula"/>
 
 
 
@@ -216,8 +223,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/ellipse_a_xis_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/ellipse_a_xis_b_text"
+                android:layout_toEndOf="@+id/ellipse_a_xis_b_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/axis"
@@ -246,8 +255,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/ellipse_a_xis_b_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/ellipse_a_xis_area_text"
+                android:layout_toEndOf="@+id/ellipse_a_xis_area_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/area"
@@ -327,7 +338,8 @@
                 android:layout_below="@+id/ellipse_b_xis_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_xxxhdpi" />
+                android:src="@drawable/ellipse_xxxhdpi"
+                android:contentDescription="@string/ellipse_image"/>
 
             <ImageView
                 android:id="@+id/ellipse_b_xis_formula"
@@ -336,7 +348,8 @@
                 android:layout_below="@+id/ellipse_b_xis_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_b_xis_xxxhdpi" />
+                android:src="@drawable/ellipse_b_xis_xxxhdpi"
+                android:contentDescription="@string/ellipse_bxis_formula"/>
 
 
 
@@ -359,8 +372,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/ellipse_b_xis_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/ellipse_b_xis_a_text"
+                android:layout_toEndOf="@+id/ellipse_b_xis_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/axis"
@@ -388,8 +403,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/ellipse_b_xis_a_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/ellipse_b_xis_area_text"
+                android:layout_toEndOf="@+id/ellipse_b_xis_area_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/area"
@@ -466,7 +483,8 @@
                 android:layout_below="@+id/ellipse_circum_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_xxxhdpi" />
+                android:src="@drawable/ellipse_xxxhdpi"
+                android:contentDescription="@string/ellipse_image"/>
 
             <ImageView
                 android:id="@+id/ellipse_circum_formula"
@@ -475,7 +493,8 @@
                 android:layout_below="@+id/ellipse_circum_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/ellipse_circum_xxxhdpi" />
+                android:src="@drawable/ellipse_circum_xxxhdpi"
+                android:contentDescription="@string/ellipse_circum_formula"/>
 
 
 
@@ -498,8 +517,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@id/ellipse_circum_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/ellipse_circum_a_text"
+                android:layout_toEndOf="@+id/ellipse_circum_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/axis"
@@ -526,8 +547,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@id/ellipse_circum_a_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/ellipse_circum_b_text"
+                android:layout_toEndOf="@+id/ellipse_circum_b_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/axis"

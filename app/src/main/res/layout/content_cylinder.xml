@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -37,7 +36,8 @@
                 android:layout_below="@+id/cylinder_volume_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_xxxhdpi" />
+                android:src="@drawable/cylinder_xxxhdpi"
+                android:contentDescription="@string/cylinder_image"/>
 
             <ImageView
                 android:id="@+id/cylinder_volume_formula"
@@ -46,7 +46,8 @@
                 android:layout_below="@id/cylinder_volume_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_volume_xxxhdpi" />
+                android:src="@drawable/cylinder_volume_xxxhdpi"
+                android:contentDescription="@string/cylinder_volume_formula"/>
 
 
 
@@ -69,8 +70,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_volume_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cylinder_volume_r_text"
+                android:layout_toEndOf="@+id/cylinder_volume_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/radius"
@@ -98,8 +101,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_volume_r_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cylinder_volume_h_text"
+                android:layout_toEndOf="@+id/cylinder_volume_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/height"
@@ -178,7 +183,8 @@
                 android:layout_below="@+id/cylinder_radius_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_xxxhdpi" />
+                android:src="@drawable/cylinder_xxxhdpi"
+                android:contentDescription="@string/cylinder_image"/>
 
             <ImageView
                 android:id="@+id/cylinder_radius_formula"
@@ -187,7 +193,8 @@
                 android:layout_below="@id/cylinder_radius_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_radius_xxxhdpi" />
+                android:src="@drawable/cylinder_radius_xxxhdpi"
+                android:contentDescription="@string/cylinder_radius_formula"/>
 
 
 
@@ -212,8 +219,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_radius_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cylinder_radius_h_text"
+                android:layout_toEndOf="@+id/cylinder_radius_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/height"
@@ -242,8 +251,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_radius_h_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cylinder_radius_v_text"
+                android:layout_toEndOf="@+id/cylinder_radius_v_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/volume"
@@ -322,7 +333,8 @@
                 android:layout_below="@+id/cylinder_height_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_xxxhdpi" />
+                android:src="@drawable/cylinder_xxxhdpi"
+                android:contentDescription="@string/cylinder_image"/>
 
             <ImageView
                 android:id="@+id/cylinder_height_formula"
@@ -331,7 +343,8 @@
                 android:layout_below="@id/cylinder_height_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_height_xxxhdpi" />
+                android:src="@drawable/cylinder_height_xxxhdpi"
+                android:contentDescription="@string/cylinder_height_formula"/>
 
 
 
@@ -354,8 +367,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_height_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cylinder_height_r_text"
+                android:layout_toEndOf="@+id/cylinder_height_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/radius"
@@ -385,8 +400,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_height_r_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cylinder_height_v_text"
+                android:layout_toEndOf="@+id/cylinder_height_v_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/volume"
@@ -463,7 +480,8 @@
                 android:layout_below="@+id/cylinder_surface_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_xxxhdpi" />
+                android:src="@drawable/cylinder_xxxhdpi"
+                android:contentDescription="@string/cylinder_image"/>
             <ImageView
                 android:id="@+id/cylinder_surface_area_formula"
                 android:layout_width="wrap_content"
@@ -471,7 +489,8 @@
                 android:layout_below="@id/cylinder_surface_area_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_surface_area_xxxhdpi" />
+                android:src="@drawable/cylinder_surface_area_xxxhdpi"
+                android:contentDescription="@string/cylinder_surface_area_formula"/>
 
 
 
@@ -494,8 +513,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_surface_area_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cylinder_surface_area_r_text"
+                android:layout_toEndOf="@+id/cylinder_surface_area_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/radius"
@@ -526,8 +547,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_surface_area_r_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cylinder_surface_area_h_text"
+                android:layout_toEndOf="@+id/cylinder_surface_area_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/height"
@@ -604,7 +627,8 @@
                 android:layout_below="@+id/cylinder_base_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_xxxhdpi" />
+                android:src="@drawable/cylinder_xxxhdpi"
+                android:contentDescription="@string/cylinder_image"/>
 
             <ImageView
                 android:id="@+id/cylinder_base_area_formula"
@@ -613,7 +637,8 @@
                 android:layout_below="@id/cylinder_base_area_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_base_area_xxxhdpi" />
+                android:src="@drawable/cylinder_base_area_xxxhdpi"
+                android:contentDescription="@string/cylinder_base_area_formula"/>
 
 
 
@@ -636,8 +661,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_base_area_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cylinder_base_area_r_text"
+                android:layout_toEndOf="@+id/cylinder_base_area_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/radius"
@@ -718,7 +745,8 @@
                 android:layout_below="@+id/cylinder_lateral_surface_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_xxxhdpi" />
+                android:src="@drawable/cylinder_xxxhdpi"
+                android:contentDescription="@string/cylinder_image"/>
 
             <ImageView
                 android:id="@+id/cylinder_lateral_surface_formula"
@@ -727,7 +755,8 @@
                 android:layout_below="@id/cylinder_lateral_surface_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cylinder_lateral_surface_xxxhdpi" />
+                android:src="@drawable/cylinder_lateral_surface_xxxhdpi"
+                android:contentDescription="@string/cylinder_lateral_surface_formula"/>
 
 
 
@@ -751,8 +780,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_lateral_surface_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cylinder_lateral_surface_r_text"
+                android:layout_toEndOf="@+id/cylinder_lateral_surface_r_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/radius"
@@ -782,8 +813,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cylinder_lateral_surface_r_et"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_toRightOf="@+id/cylinder_lateral_surface_h_text"
+                android:layout_toEndOf="@+id/cylinder_lateral_surface_h_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/height"

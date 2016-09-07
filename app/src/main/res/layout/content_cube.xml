@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -38,7 +37,8 @@
                 android:layout_below="@id/cube_volume_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_xxxhdpi" />
+                android:src="@drawable/cube_xxxhdpi"
+                android:contentDescription="@string/cube_image"/>
             <ImageView
                 android:id="@+id/cube_volume_formula"
                 android:layout_width="wrap_content"
@@ -46,7 +46,8 @@
                 android:layout_below="@id/cube_volume_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_volume_xxxhdpi" />
+                android:src="@drawable/cube_volume_xxxhdpi"
+                android:contentDescription="@string/cube_volume_formula"/>
 
 
 
@@ -69,8 +70,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cube_volume_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cube_volume_a_text"
+                android:layout_toEndOf="@+id/cube_volume_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/edge"
@@ -146,7 +149,8 @@
                 android:layout_below="@id/cube_edge_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_xxxhdpi" />
+                android:src="@drawable/cube_xxxhdpi"
+                android:contentDescription="@string/cube_image"/>
             <ImageView
                 android:id="@+id/cube_edge_formula"
                 android:layout_width="wrap_content"
@@ -154,7 +158,8 @@
                 android:layout_below="@id/cube_edge_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_edge_xxxhdpi" />
+                android:src="@drawable/cube_edge_xxxhdpi"
+                android:contentDescription="@string/cube_edge_formula"/>
 
 
 
@@ -177,8 +182,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@id/cube_edge_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10sp"
                 android:layout_toRightOf="@+id/cube_edge_v_text"
+                android:layout_toEndOf="@+id/cube_edge_v_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/volume"
@@ -250,7 +257,8 @@
                 android:layout_below="@id/cube_special_diagonal_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_xxxhdpi" />
+                android:src="@drawable/cube_xxxhdpi"
+                android:contentDescription="@string/cube_image"/>
 
             <ImageView
                 android:id="@+id/cube_special_diagonal_formula"
@@ -259,7 +267,8 @@
                 android:layout_below="@id/cube_special_diagonal_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_special_diaognal_xxxhdpi" />
+                android:src="@drawable/cube_special_diaognal_xxxhdpi"
+                android:contentDescription="@string/cube_special_diagonal_formula"/>
 
 
 
@@ -282,8 +291,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@+id/cube_special_diagonal_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cube_special_diagonal_a_text"
+                android:layout_toEndOf="@+id/cube_special_diagonal_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:hint="@string/edge"
@@ -358,7 +369,8 @@
                 android:layout_below="@id/cube_surface_area_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_xxxhdpi" />
+                android:src="@drawable/cube_xxxhdpi"
+                android:contentDescription="@string/cube_image"/>
 
             <ImageView
                 android:id="@+id/cube_surface_area_formula"
@@ -367,7 +379,8 @@
                 android:layout_below="@id/cube_surface_area_img"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/cube_surface_area_xxxhdpi" />
+                android:src="@drawable/cube_surface_area_xxxhdpi"
+                android:contentDescription="@string/cube_surface_area_formula"/>
 
 
 
@@ -390,8 +403,10 @@
                 android:layout_height="42dp"
                 android:layout_below="@id/cube_surface_area_formula"
                 android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@+id/cube_surface_area_a_text"
+                android:layout_toEndOf="@+id/cube_surface_area_a_text"
                 android:background="@drawable/black_button"
                 android:ems="6"
                 android:focusable="true"

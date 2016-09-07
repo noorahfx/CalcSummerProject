@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -38,7 +37,8 @@
             android:layout_below="@+id/rhombus_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_xxxhdpi" />
+            android:src="@drawable/rhombus_xxxhdpi"
+            android:contentDescription="@string/rhombus_image"/>
 
         <ImageView
             android:id="@+id/rhombus_perimeter_formula"
@@ -47,7 +47,8 @@
             android:layout_below="@+id/rhombus_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_perimeter_xxxhdpi" />
+            android:src="@drawable/rhombus_perimeter_xxxhdpi"
+            android:contentDescription="@string/rhombus_perimeter_formula"/>
 
 
 
@@ -68,8 +69,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_perimeter_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rhombus_perimeter_a_text"
+            android:layout_toEndOf="@+id/rhombus_perimeter_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -144,7 +147,8 @@
             android:layout_below="@+id/rhombus_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_xxxhdpi" />
+            android:src="@drawable/rhombus_xxxhdpi"
+            android:contentDescription="@string/rhombus_image"/>
 
         <ImageView
             android:id="@+id/rhombus_area_formula"
@@ -153,7 +157,8 @@
             android:layout_below="@+id/rhombus_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_area_xxhdpi" />
+            android:src="@drawable/rhombus_area_xxhdpi"
+            android:contentDescription="@string/rhombus_area_formula"/>
 
 
 
@@ -177,8 +182,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_area_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rhombus_area_p_text"
+            android:layout_toEndOf="@+id/rhombus_area_p_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -210,8 +217,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_area_p_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/rhombus_area_q_text"
+            android:layout_toEndOf="@+id/rhombus_area_q_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -288,7 +297,8 @@
             android:layout_below="@+id/rhombus_sides_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_xxxhdpi" />
+            android:src="@drawable/rhombus_xxxhdpi"
+            android:contentDescription="@string/rhombus_image"/>
 
 
         <ImageView
@@ -298,7 +308,8 @@
             android:layout_below="@+id/rhombus_sides_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_sides_xxxhdpi" />
+            android:src="@drawable/rhombus_sides_xxxhdpi"
+            android:contentDescription="@string/rhombus_side_formula"/>
 
 
 
@@ -323,8 +334,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_sides_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rhombus_sides_perimeter_text"
+            android:layout_toEndOf="@+id/rhombus_sides_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/perimeter"
@@ -399,7 +412,8 @@
             android:layout_below="@+id/rhombus_p_diagonal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_xxxhdpi" />
+            android:src="@drawable/rhombus_xxxhdpi"
+            android:contentDescription="@string/rhombus_image"/>
 
 
         <ImageView
@@ -409,7 +423,8 @@
             android:layout_below="@+id/rhombus_p_diagonal_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_p_diagonal_xxxhdpi" />
+            android:src="@drawable/rhombus_p_diagonal_xxxhdpi"
+            android:contentDescription="@string/rhombus_diagonal_p_formula"/>
 
 
 
@@ -434,8 +449,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_p_diagonal_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rhombus_p_diagonal_q_text"
+            android:layout_toEndOf="@+id/rhombus_p_diagonal_q_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -464,8 +481,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_p_diagonal_q_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/rhombus_p_diagonal_area_text"
+            android:layout_toEndOf="@+id/rhombus_p_diagonal_area_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/area"
@@ -542,7 +561,8 @@
             android:layout_below="@+id/rhombus_q_diagonal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_xxxhdpi" />
+            android:src="@drawable/rhombus_xxxhdpi"
+            android:contentDescription="@string/rhombus_image"/>
 
 
         <ImageView
@@ -552,7 +572,9 @@
             android:layout_below="@+id/rectangle_perimeter_formula"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rhombus_q_diagonal_xxxhdpi" />
+            android:src="@drawable/rhombus_q_diagonal_xxxhdpi"
+
+             android:contentDescription="@string/rhombus_diagonal_q_formula"/>
 
 
 
@@ -577,8 +599,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_q_diagonal_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/rhombus_q_diagonal_p_text"
+            android:layout_toEndOf="@+id/rhombus_q_diagonal_p_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -608,8 +632,10 @@
             android:layout_height="42dp"
             android:layout_below="@+id/rhombus_q_diagonal_p_et"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/rhombus_q_diagonal_area_text"
+            android:layout_toEndOf="@+id/rhombus_q_diagonal_area_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/area"

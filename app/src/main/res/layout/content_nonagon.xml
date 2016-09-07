@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -35,7 +34,8 @@
             android:layout_below="@+id/non_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/nonagon_xxxhdpi" />
+            android:src="@drawable/nonagon_xxxhdpi"
+            android:contentDescription="@string/nonagon_image"/>
 
         <ImageView
             android:id="@+id/non_perimeter_formula"
@@ -44,7 +44,8 @@
             android:layout_below="@+id/non_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/nonagon_perimeterxxxhdpi" />
+            android:src="@drawable/nonagon_perimeterxxxhdpi"
+            android:contentDescription="@string/nonagon_perimeter_formula"/>
 
 
 
@@ -68,8 +69,10 @@
             android:layout_height="42dp"
             android:layout_below="@id/non_perimeter_formula"
             android:layout_marginLeft="5dp"
+             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/non_perimeter_side_a_text"
+            android:layout_toEndOf="@+id/non_perimeter_side_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -142,7 +145,8 @@
             android:layout_below="@+id/non_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/nonagon_xxxhdpi" />
+            android:src="@drawable/nonagon_xxxhdpi"
+            android:contentDescription="@string/nonagon_image"/>
 
         <ImageView
             android:id="@+id/non_area_formula"
@@ -151,7 +155,8 @@
             android:layout_below="@+id/non_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/nonagon_area_xxxhdpi" />
+            android:src="@drawable/nonagon_area_xxxhdpi"
+            android:contentDescription="@string/nonagon_area_formula"/>
 
 
 
@@ -175,8 +180,10 @@
             android:layout_height="42dp"
             android:layout_below="@id/non_area_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10sp"
             android:layout_toRightOf="@+id/non_area_side_a_tx"
+            android:layout_toEndOf="@+id/non_area_side_a_tx"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -248,7 +255,8 @@
             android:layout_below="@+id/non_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/nonagon_xxxhdpi" />
+            android:src="@drawable/nonagon_xxxhdpi"
+            android:contentDescription="@string/nonagon_image"/>
 
         <ImageView
             android:id="@+id/non_side_formula"
@@ -257,7 +265,8 @@
             android:layout_below="@+id/non_side_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/nonagon_sides_xxxhdpi" />
+            android:src="@drawable/nonagon_sides_xxxhdpi"
+            android:contentDescription="@string/nonagon_side_a_formula"/>
 
 
 
@@ -281,8 +290,10 @@
             android:layout_height="42dp"
             android:layout_below="@id/non_side_formula"
             android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@+id/non_side_tx"
+            android:layout_toEndOf="@+id/non_side_tx"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"

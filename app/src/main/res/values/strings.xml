@@ -70,6 +70,158 @@
 
     <string name="calculate">Calculate</string>
 
+    <!-- ContentDescription string values -->
+    <string name="circle_image">Circle Image</string>
+    <string name="circle_area_formula">Area Formula</string>
+    <string name="circle_diameter_formula">Diameter Formula</string>
+    <string name="circle_circum_formula">Circumference Formula</string>
+    <string name="circle_radius_formula">Radius Formula</string>
+
+    <string name="cone_image">Cone Image</string>
+    <string name="cone_volume_formula">Volume Formula</string>
+    <string name="cone_radius_formula">Radius Formula</string>
+    <string name="cone_height_formula">Height Formula</string>
+    <string name="cone_slant_height_formula">Slant Height Formula</string>
+    <string name="cone_surface_area_formula">Surface Area Formula</string>
+    <string name="cone_base_area_formula">Base Area Formula</string>
+    <string name="cone_lateral_surface_formula">Lateral Surface Formula</string>
+
+    <string name="cube_image">Cube Image</string>
+    <string name="cube_volume_formula">Volume Formula</string>
+    <string name="cube_edge_formula">Edge Formula</string>
+    <string name="cube_special_diagonal_formula">Special Diagonal Formula</string>
+    <string name="cube_surface_area_formula">Surface Area Formula</string>
+
+
+    <string name="cuboid_image">Cuboid Image</string>
+    <string name="cuboid_volume_formula">Volume Formula</string>
+    <string name="cuboid_area_formula">Area Formula</string>
+
+
+    <string name="cylinder_image">Cylinder Image</string>
+    <string name="cylinder_volume_formula">Volume Formula</string>
+    <string name="cylinder_radius_formula">Radius Formula</string>
+    <string name="cylinder_height_formula">Height Formula</string>
+    <string name="cylinder_surface_area_formula">Surface Area Formula</string>
+    <string name="cylinder_base_area_formula">Base Area Formula</string>
+    <string name="cylinder_lateral_surface_formula">Lateral Surface Formula</string>
+
+    <string name="decagon_image">Decagon Image</string>
+    <string name="decagon_area_formula">Area Formula</string>
+    <string name="decagon_perimeter_formula">Perimeter Formula</string>
+    <string name="decagon_side_formula">Side Formula</string>
+
+
+
+    <string name="ellipse_image">Ellipse Image</string>
+    <string name="ellipse_volume_formula">Volume Formula</string>
+    <string name="ellipse_axis_formula">A-xis Formula</string>
+    <string name="ellipse_bxis_formula">B-xis Formula</string>
+    <string name="ellipse_circum_formula">Circumference Formula</string>
+
+    <string name="heptagon_image">Heptagon Image</string>
+    <string name="heptagon_perimeter_formula">Perimeter Formula</string>
+    <string name="heptagon_area_formula">Area Formula</string>
+    <string name="heptagon_side_a_formula">Side A Formula</string>
+
+
+
+    <string name="hexagon_image">Heptagon Image</string>
+    <string name="hexagon_perimeter_formula">Perimeter Formula</string>
+    <string name="hexagon_area_formula">Area Formula</string>
+    <string name="hexagon_side_a_formula">Side A Formula</string>
+
+
+    <string name="kite_image">Kite Image</string>
+    <string name="kite_perimeter_formula">Perimeter Formula</string>
+    <string name="kite_area_formula">Area Formula</string>
+    <string name="kite_side_a_formula">Side A Formula</string>
+    <string name="kite_side_b_formula">Side B Formula</string>
+    <string name="kite_diagonal_p_formula">Diagonal P Formula</string>
+    <string name="kite_diagonal_q_formula">Diagonal Q Formula</string>
+
+
+
+    <string name="nonagon_image">Nonagon Image</string>
+    <string name="nonagon_perimeter_formula">Perimeter Formula</string>
+    <string name="nonagon_area_formula">Area Formula</string>
+    <string name="nonagon_side_a_formula">Side A Formula</string>
+
+
+    <string name="octagon_image">Octagon Image</string>
+    <string name="octagon_perimeter_formula">Perimeter Formula</string>
+    <string name="octagon_area_formula">Area Formula</string>
+    <string name="octagon_side_a_formula">Side A Formula</string>
+
+
+    <string name="parallelogram_image">Parallelogram Image</string>
+    <string name="parallelogram_perimeter_formula">Perimeter Formula</string>
+    <string name="parallelogram_area_formula">Area Formula</string>
+    <string name="parallelogram_base_formula">Base Formula</string>
+    <string name="parallelogram_height_formula">Height Formula</string>
+    <string name="parallelogram_side_formula">Side Formula</string>
+
+
+
+    <string name="pentagon_image">Pentagon Image</string>
+    <string name="pentagon_perimeter_formula">Perimeter Formula</string>
+    <string name="pentagon_area_formula">Area Formula</string>
+    <string name="pentagon_side_a_formula">Side A Formula</string>
+
+
+
+
+    <string name="rectangle_image">Rectangle Image</string>
+    <string name="rectangle_perimeter_formula">Perimeter Formula</string>
+    <string name="rectangle_area_formula">Area Formula</string>
+    <string name="rectangle_length_formula">Length Formula</string>
+    <string name="rectangle_width_formula">Width Formula</string>
+    <string name="rectangle_diagonal_formula">Diagonal Formula</string>
+
+
+    <string name="rhombus_image">Rhombus Image</string>
+    <string name="rhombus_perimeter_formula">Perimeter Formula</string>
+    <string name="rhombus_area_formula">Area Formula</string>
+    <string name="rhombus_side_formula">Side Formula</string>
+    <string name="rhombus_diagonal_q_formula">Diagonal (Q) Formula</string>
+    <string name="rhombus_diagonal_p_formula">Diagonal (P) Formula</string>
+
+
+
+
+
+    <string name="square_image">Square Image</string>
+    <string name="square_perimeter_formula">Perimeter Formula</string>
+    <string name="square_area_formula">Area Formula</string>
+    <string name="square_side_formula">Side Formula</string>
+    <string name="square_diagonal_formula">Diagonal (Q) Formula</string>
+
+
+
+
+
+
+
+    <string name="trapezoid_image">Trapezoid Image</string>
+    <string name="trapezoid_perimeter_formula">Perimeter Formula</string>
+    <string name="trapezoid_area_formula">Area Formula</string>
+    <string name="trapezoid_height_formula">Height Formula</string>
+    <string name="trapezoid_base_a_formula">Base A Formula</string>
+    <string name="trapezoid_base_b_formula">Base B Formula</string>
+    <string name="trapezoid_side_c_formula">Side C Formula</string>
+    <string name="trapezoid_side_d_formula">Side D Formula</string>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <string name="perimeter">Perimeter</string>

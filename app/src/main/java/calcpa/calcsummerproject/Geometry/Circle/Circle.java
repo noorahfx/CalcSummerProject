@@ -25,18 +25,6 @@ import calcpa.calcsummerproject.R;
 
 public class Circle extends AppCompatActivity {
 
- /**   MathView circleAreaFormula;
-   // String areaFormula ="$$A=\\pi r^{2}$$";
-
-    MathView circleDiameterFormula;
-    String diameterFormula ="$$d =2r$$";
-
-    MathView circleCircumFormula;
-    String circumFormula ="$$C =2\\pi r$$";
-
-    MathView circleRadiusFormula;
-    String radiusFormula="$$r =\\sqrt{\\frac{A}{\\pi}}$$";
-*/
 
 
     //area
@@ -71,29 +59,8 @@ public class Circle extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circle);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
 
-        /**     circleAreaFormula =(MathView)findViewById(R.id.areaFormula);
-        assert circleAreaFormula != null;
-        circleAreaFormula.setText(areaFormula);
-
-        circleDiameterFormula =(MathView)findViewById(R.id.circle_diameter_formula);
-        assert circleDiameterFormula != null;
-        circleDiameterFormula.setText(diameterFormula);
-
-
-        circleCircumFormula =(MathView)findViewById(R.id.circle_circum_formula);
-        assert circleCircumFormula != null;
-        circleCircumFormula.setText(circumFormula);
-
-
-        circleRadiusFormula =(MathView)findViewById(R.id.circle_radius_formula);
-        assert circleRadiusFormula != null;
-        circleRadiusFormula.setText(radiusFormula);
-
-*/
         // Area Clear button
         circleAreaClearButton =(Button)findViewById(R.id.circle_area_clear_button);
         circleAreaClearButton.setOnClickListener(new View.OnClickListener() {
@@ -133,11 +100,6 @@ public class Circle extends AppCompatActivity {
                 circleRadiusTV.setText("");
             }
         });
-
-
-
-
-
 
 
         //area
@@ -233,7 +195,6 @@ public class Circle extends AppCompatActivity {
             }
         });
 
-//        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "DOMISC__.TTF");
 
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
@@ -289,6 +250,36 @@ public class Circle extends AppCompatActivity {
         circleCircumCLeranButton.setTypeface(myTypeFace);
         circleRadiusClearButton.setTypeface(myTypeFace);
 
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
     }
 
 

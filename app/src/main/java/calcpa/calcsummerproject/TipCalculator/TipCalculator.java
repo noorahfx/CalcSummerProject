@@ -1,5 +1,6 @@
 package calcpa.calcsummerproject.TipCalculator;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -7,6 +8,7 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
 
 import calcpa.calcsummerproject.R;
 
@@ -57,6 +59,23 @@ public class TipCalculator extends AppCompatActivity {
 
         // Add change listener for when the bill before tip is changed
         billWilthoutTipET.addTextChangedListener(billWithoutTipListener);
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.tip_calc_title);
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.billTextView);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.tipTextView);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.finalBillTextView);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
     }
 
     // Called when the bill before tip amount is changed

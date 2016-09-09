@@ -5,44 +5,16 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import io.github.kexanie.library.MathView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Cone extends AppCompatActivity {
-  /**  MathView coneVolumeFormula;
-    String volumeFormula ="$$V= \\Pi r^{2}\\frac{h}{3}$$";
 
-
-    MathView coneRadiusFormula;
-    String radiusFormula ="$$r=\\sqrt{3\\frac{V}{\\Pi h}}$$";
-
-
-    MathView coneHeightFormula;
-    String heightFormula ="$$h = {3\\frac{V}{\\Pi r^{2}}}$$";
-
-
-    MathView coneSlantHeightFormula;
-    String slantHeightFormula ="$$l=\\sqrt{r^{2}+h^{2}}$$";
-
-    MathView coneSurfaceAreaFormula;
-    String surfaceAreaFormula ="$$A=\\pi r (r+\\sqrt{h^{2}+r^{2}}) $$";
-
-    MathView coneBaseAreaFormula;
-    String baseAreaFormula ="$$A_{B} =\\pi r^{2}$$";
-
-    MathView coneLateralAreaFormula;
-    String lateralAreaFormula ="$$A_{L} =\\pi r \\sqrt{h^{2}+ r^{2}}$$";
-
-*/
     //Volume
     EditText coneVolumeRET;
     EditText coneVolumeHET;
@@ -103,126 +75,103 @@ public class Cone extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-/**
-        coneVolumeFormula =(MathView)findViewById(R.id.cone_volume_formula);
-        assert coneVolumeFormula != null;
-        coneVolumeFormula.setText(volumeFormula);
+        volumeResource();
+        radiusResource();
+        heightResource();
+        slantHeighResource();
+        surfaceAreaResource();
+        baseAreaResource();
+        lateralSurfaceResource();
+        fontResource();
 
-        coneRadiusFormula =(MathView)findViewById(R.id.cone_radius_formula);
-        assert coneRadiusFormula != null;
-        coneRadiusFormula.setText(radiusFormula);
+    }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+        outState.putString("volume_et1", coneVolumeRET.getText().toString());
+        outState.putString("volume_et2", coneVolumeHET.getText().toString());
+        outState.putString("volume_tv", coneVolumeAnswerTV.getText().toString());
+        outState.putString("radius_et1", coneRadiusHET.getText().toString());
+        outState.putString("radius_et2", coneRadiusVET.getText().toString());
+        outState.putString("radius_tv", coneRadiusAnswerTV.getText().toString());
+        outState.putString("height_et1", coneHeightRET.getText().toString());
+        outState.putString("height_et2", coneHeightVET.getText().toString());
+        outState.putString("height_tv", coneHeightAnswerTV.getText().toString());
+        outState.putString("slant_height_et1", coneSlantHeightRET.getText().toString());
+        outState.putString("slant_height_et2", coneSLantHeightHET.getText().toString());
+        outState.putString("slant_height_tv", coneSlantHeightAnswerTV.getText().toString());
+        outState.putString("surface_area_et1", coneSurfaceAreatRET.getText().toString());
+        outState.putString("surface_area_et2", coneSurfaceAreaHET.getText().toString());
+        outState.putString("surface_area_tv", coneSurfaceAreaAnswerTV.getText().toString());
+        outState.putString("base_area_et1", coneBaseAreaRET.getText().toString());
+        outState.putString("base_tv", coneBaseAreaAnswerTV.getText().toString());
+        outState.putString("lateral_surface_et1", coneLateralSurfaceRET.getText().toString());
+        outState.putString("lateral_surface_et2", coneLateralSurfaceHET.getText().toString());
+        outState.putString("lateral_surface_tv", coneLateralSurfaceAnswerTV.getText().toString());
 
-        coneHeightFormula =(MathView)findViewById(R.id.cone_height_formula);
-        assert coneHeightFormula != null;
-        coneHeightFormula.setText(heightFormula);
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
 
+        coneVolumeRET.setText(savedInstanceState.getString("volume_et1"));
+        coneVolumeHET.setText(savedInstanceState.getString("volume_et2"));
+        coneVolumeAnswerTV.setText(savedInstanceState.getString("volume_tv"));
+        coneRadiusHET.setText(savedInstanceState.getString("radius_et1"));
+        coneRadiusVET.setText(savedInstanceState.getString("radius_et2"));
+        coneRadiusAnswerTV.setText(savedInstanceState.getString("radius_tv"));
+        coneHeightRET.setText(savedInstanceState.getString("height_et1"));
+        coneHeightVET.setText(savedInstanceState.getString("height_et2"));
+        coneHeightAnswerTV.setText(savedInstanceState.getString("height_tv"));
+        coneSlantHeightRET.setText(savedInstanceState.getString("slant_height_et1"));
+        coneSLantHeightHET.setText(savedInstanceState.getString("slant_height_et2"));
+        coneSlantHeightAnswerTV.setText(savedInstanceState.getString("slant_height_tv"));
+        coneSurfaceAreatRET.setText(savedInstanceState.getString("surface_area_et1"));
+        coneSurfaceAreaHET.setText(savedInstanceState.getString("surface_area_et2"));
+        coneSurfaceAreaAnswerTV.setText(savedInstanceState.getString("surface_area_tv"));
+        coneBaseAreaRET.setText(savedInstanceState.getString("base_area_et1"));
+        coneBaseAreaAnswerTV.setText(savedInstanceState.getString("base_tv"));
+        coneLateralSurfaceRET.setText(savedInstanceState.getString("lateral_surface_et1"));
+        coneLateralSurfaceHET.setText(savedInstanceState.getString("lateral_surface_et2"));
+        coneLateralSurfaceAnswerTV.setText(savedInstanceState.getString("lateral_surface_tv"));
 
-        coneSlantHeightFormula =(MathView)findViewById(R.id.cone_slant_height_formula);
-        assert coneSlantHeightFormula != null;
-        coneSlantHeightFormula.setText(slantHeightFormula);
-
-
-        coneSurfaceAreaFormula =(MathView)findViewById(R.id.cone_surface_area_formula);
-        assert coneSurfaceAreaFormula != null;
-        coneSurfaceAreaFormula.setText(surfaceAreaFormula);
-
-
-        coneBaseAreaFormula =(MathView)findViewById(R.id.cone_base_area_formula);
-        assert coneBaseAreaFormula != null;
-        coneBaseAreaFormula.setText(baseAreaFormula);
-
-
-        coneLateralAreaFormula =(MathView)findViewById(R.id.cone_lateral_surface_formula);
-        assert coneLateralAreaFormula != null;
-        coneLateralAreaFormula.setText(lateralAreaFormula);
-
-
-*/
-
-
-
-        // Area Clear button
-        coneVOlumeClearButton = (Button) findViewById(R.id.cone_volume_clear_button);
-        coneVOlumeClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                coneVolumeRET.setText("");
-                coneVolumeHET.setText("");
-                coneVolumeAnswerTV.setText("");
-            }
-        });
-
-        // Radius Clear button
-        coneRadiusClearButton = (Button) findViewById(R.id.cone_radius_clear_button);
-        coneRadiusClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                coneRadiusHET.setText("");
-                coneRadiusVET.setText("");
-                coneRadiusAnswerTV.setText("");
-            }
-        });
-
-        // Height Clear button
-        coneHeightClearButton = (Button) findViewById(R.id.cone_height_clear_button);
-        coneHeightClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                coneHeightRET.setText("");
-                coneHeightVET.setText("");
-                coneHeightAnswerTV.setText("");
-            }
-        });
-
-        // Slant height Clear button
-        coneSlantHeightClearButton = (Button) findViewById(R.id.cone_slant_height_clear_button);
-        coneSlantHeightClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                coneSlantHeightRET.setText("");
-                coneSLantHeightHET.setText("");
-                coneSlantHeightAnswerTV.setText("");
-
-            }
-        });
-            // Surface Area Clear button
-            coneSurfaceAreaClearButton = (Button) findViewById(R.id.cone_surface_area_clear_button);
-            coneSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    coneSurfaceAreatRET.setText("");
-                    coneSurfaceAreaHET.setText("");
-                    coneSurfaceAreaAnswerTV.setText("");
-
-                }
-            });
+    }
 
 
-        // Base Area Clear button
-        coneBaseClearButton = (Button) findViewById(R.id.cone_base_area_clear_button);
-        coneBaseClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                coneBaseAreaRET.setText("");
-                coneBaseAreaAnswerTV.setText("");
-            }
-        });
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
 
-        // Lateral Surface Clear button
-        coneLateralSurfaceClearButton = (Button) findViewById(R.id.cone_lateral_surface_clear_button);
-        coneLateralSurfaceClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                coneLateralSurfaceRET.setText("");
-                coneLateralSurfaceHET.setText("");
-                coneLateralSurfaceAnswerTV.setText("");
-            }
-        });
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    private void volumeResource() {
         //Volume
         coneVolumeRET = (EditText) findViewById(R.id.cone_volume_r_et);
         coneVolumeHET = (EditText) findViewById(R.id.cone_volume_h_et);
@@ -231,14 +180,12 @@ public class Cone extends AppCompatActivity {
         coneVolumeCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneVolumeRET)) {
                     coneVolumeRET.setError("Enter Radius");
                 } else if (Model.isEmpty(coneVolumeHET)) {
                     coneVolumeHET.setError("Enter Height");
                 } else {
-
                     double radius, height, answer;
                     radius = Double.parseDouble(coneVolumeRET.getText().toString());
                     height = Double.parseDouble(coneVolumeHET.getText().toString());
@@ -255,6 +202,19 @@ public class Cone extends AppCompatActivity {
             }
         });
 
+        //Clear button
+        coneVOlumeClearButton = (Button) findViewById(R.id.cone_volume_clear_button);
+        coneVOlumeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coneVolumeRET.setText("");
+                coneVolumeHET.setText("");
+                coneVolumeAnswerTV.setText("");
+            }
+        });
+    }
+
+    private void radiusResource() {
         //Radius
         coneRadiusHET = (EditText) findViewById(R.id.cone_radius_h_et);
         coneRadiusVET = (EditText) findViewById(R.id.cone_radius_v_et);
@@ -285,8 +245,19 @@ public class Cone extends AppCompatActivity {
                 }
             }
         });
+        //  Clear button
+        coneRadiusClearButton = (Button) findViewById(R.id.cone_radius_clear_button);
+        coneRadiusClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coneRadiusHET.setText("");
+                coneRadiusVET.setText("");
+                coneRadiusAnswerTV.setText("");
+            }
+        });
+    }
 
-
+    private void heightResource() {
         //Height
         coneHeightRET = (EditText) findViewById(R.id.cone_height_r_et);
         coneHeightVET = (EditText) findViewById(R.id.cone_height_v_et);
@@ -318,6 +289,20 @@ public class Cone extends AppCompatActivity {
             }
         });
 
+        //Clear button
+        coneHeightClearButton = (Button) findViewById(R.id.cone_height_clear_button);
+        coneHeightClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coneHeightRET.setText("");
+                coneHeightVET.setText("");
+                coneHeightAnswerTV.setText("");
+            }
+        });
+
+    }
+
+    private void slantHeighResource() {
         //Slant height
         coneSlantHeightRET = (EditText) findViewById(R.id.cone_slant_height_r_et);
         coneSLantHeightHET = (EditText) findViewById(R.id.cone_slant_height_h_et);
@@ -349,7 +334,19 @@ public class Cone extends AppCompatActivity {
             }
         });
 
+        // Clear button
+        coneSlantHeightClearButton = (Button) findViewById(R.id.cone_slant_height_clear_button);
+        coneSlantHeightClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coneSlantHeightRET.setText("");
+                coneSLantHeightHET.setText("");
+                coneSlantHeightAnswerTV.setText("");
+            }
+        });
+    }
 
+    private void surfaceAreaResource() {
         //Surface Area
         coneSurfaceAreatRET = (EditText) findViewById(R.id.cone_surface_area_r_et);
         coneSurfaceAreaHET = (EditText) findViewById(R.id.cone_surface_area_h_et);
@@ -380,8 +377,19 @@ public class Cone extends AppCompatActivity {
                 }
             }
         });
+        // Surface Area Clear button
+        coneSurfaceAreaClearButton = (Button) findViewById(R.id.cone_surface_area_clear_button);
+        coneSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coneSurfaceAreatRET.setText("");
+                coneSurfaceAreaHET.setText("");
+                coneSurfaceAreaAnswerTV.setText("");
+            }
+        });
+    }
 
-
+    private void baseAreaResource() {
         //Base Area
         coneBaseAreaRET = (EditText) findViewById(R.id.cone_base_area_r_et);
         coneBaseAreaAnswerTV = (TextView) findViewById(R.id.cone_base_area_calc_answer_tx);
@@ -393,7 +401,6 @@ public class Cone extends AppCompatActivity {
                 if (Model.isEmpty(coneBaseAreaRET)) {
                     coneBaseAreaRET.setError("Enter Radius");
                 } else {
-
                     double radius, answer;
                     radius = Double.parseDouble(coneBaseAreaRET.getText().toString());
                     if (radius <= 0) {
@@ -402,12 +409,21 @@ public class Cone extends AppCompatActivity {
                     answer = Math.PI * (radius * radius);
                     coneBaseAreaAnswerTV.setText(String.format("%.02f", answer));
                 }
-
             }
-
         });
 
+        // Base Area Clear button
+        coneBaseClearButton = (Button) findViewById(R.id.cone_base_area_clear_button);
+        coneBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coneBaseAreaRET.setText("");
+                coneBaseAreaAnswerTV.setText("");
+            }
+        });
+    }
 
+    private void lateralSurfaceResource() {
         //Lateral Surface
         coneLateralSurfaceRET = (EditText) findViewById(R.id.cone_lateral_surface_r_et);
         coneLateralSurfaceHET = (EditText) findViewById(R.id.cone_lateral_surface_h_et);
@@ -437,17 +453,26 @@ public class Cone extends AppCompatActivity {
                         coneLateralSurfaceAnswerTV.setText(String.format("%.02f", answer));
                     }
                 }
-
             }
         });
 
+        //Clear button
+        coneLateralSurfaceClearButton = (Button) findViewById(R.id.cone_lateral_surface_clear_button);
+        coneLateralSurfaceClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coneLateralSurfaceRET.setText("");
+                coneLateralSurfaceHET.setText("");
+                coneLateralSurfaceAnswerTV.setText("");
+            }
+        });
+    }
 
-
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+    private void fontResource() {
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.cone_volume_text);
+        assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
         myTextView = (TextView) findViewById(R.id.cone_volume_r_text);
         assert myTextView != null;
@@ -477,76 +502,53 @@ public class Cone extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
         myTextView = (TextView) findViewById(R.id.cone_height_v_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
         myTextView = (TextView) findViewById(R.id.cone_slant_height_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
         myTextView = (TextView) findViewById(R.id.cone_slant_height_r_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
         myTextView = (TextView) findViewById(R.id.cone_slant_height_h_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
-
         myTextView = (TextView) findViewById(R.id.cone_surface_area_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
 
         myTextView = (TextView) findViewById(R.id.cone_surface_area_r_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
-
         myTextView = (TextView) findViewById(R.id.cone_surface_area_h_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
-
 
         myTextView = (TextView) findViewById(R.id.cone_base_area_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
         myTextView = (TextView) findViewById(R.id.cone_base_area_r_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
         myTextView = (TextView) findViewById(R.id.cone_lateral_surface_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
-
         myTextView = (TextView) findViewById(R.id.cone_lateral_surface_r_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
-
         myTextView = (TextView) findViewById(R.id.cone_lateral_surface_h_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
         coneVolumeRET.setTypeface(myTypeFace);
         coneVolumeHET.setTypeface(myTypeFace);
@@ -572,7 +574,6 @@ public class Cone extends AppCompatActivity {
         coneSlantHeightClearButton.setTypeface(myTypeFace);
         coneSlantHeightAnswerTV.setTypeface(myTypeFace);
 
-
         coneSurfaceAreaHET.setTypeface(myTypeFace);
         coneSurfaceAreatRET.setTypeface(myTypeFace);
         coneSurfaceAreaCalcButton.setTypeface(myTypeFace);
@@ -584,66 +585,12 @@ public class Cone extends AppCompatActivity {
         coneBaseAreaAnswerTV.setTypeface(myTypeFace);
         coneBaseClearButton.setTypeface(myTypeFace);
 
-
         coneLateralSurfaceRET.setTypeface(myTypeFace);
         coneLateralSurfaceHET.setTypeface(myTypeFace);
         coneLateralSurfaceCalcButton.setTypeface(myTypeFace);
         coneLateralSurfaceAnswerTV.setTypeface(myTypeFace);
         coneLateralSurfaceClearButton.setTypeface(myTypeFace);
-
-
-    }
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
     }
 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 }

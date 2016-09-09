@@ -61,52 +61,84 @@ public class Eclipse extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //   Area Clear button
-        ellipseAreaClearButton = (Button) findViewById(R.id.ellipse_area_clear_button);
-        ellipseAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ellipseAreaAET.setText("");
-                ellipseAreaBET.setText("");
-                ellipseAreaAnswerTV.setText("");
+        areaResource();
+        circumResource();
+        aXisResource();
+        bXisResource();
 
-            }
-        });
 
-        //   Circum Clear button
-        ellipseCircumClearButton = (Button) findViewById(R.id.ellipse_circum_clear_button);
-        ellipseCircumClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ellipseCircumAET.setText("");
-                ellipseCircumBET.setText("");
-                ellipseCircumAnswerTV.setText("");
+    }
 
-            }
-        });
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-        //   A xis Clear button
-        ellipseAXisClearButton = (Button) findViewById(R.id.ellipse_a_xis_clear_button);
-        ellipseAXisClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ellipseAXisAET.setText("");
-                ellipseAXisBET.setText("");
-                ellipseAXisAnswerTV.setText("");
-            }
-        });
+        outState.putString("area_et1", ellipseAreaAET.getText().toString());
+        outState.putString("area_et2", ellipseAreaBET.getText().toString());
+        outState.putString("area_tv", ellipseAreaAnswerTV.getText().toString());
+        outState.putString("circum_et1", ellipseCircumAET.getText().toString());
+        outState.putString("circum_et2", ellipseCircumBET.getText().toString());
+        outState.putString("circum_tv", ellipseCircumAnswerTV.getText().toString());
+        outState.putString("axis_et1", ellipseAXisAET.getText().toString());
+        outState.putString("axis_et2", ellipseAXisBET.getText().toString());
+        outState.putString("axis_tv", ellipseAXisAnswerTV.getText().toString());
+        outState.putString("bxis_et1", ellipseBXisAET.getText().toString());
+        outState.putString("bxis_et2", ellipseBXisBET.getText().toString());
+        outState.putString("bxis_tv", ellipseBXisAnswerTV.getText().toString());
 
-        //   B-xis Clear button
-        ellipseBXisClearButton = (Button) findViewById(R.id.ellipse_b_xis_clear_button);
-        ellipseBXisClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ellipseBXisAET.setText("");
-                ellipseBXisBET.setText("");
-                ellipseBXisAnswerTV.setText("");
-            }
-        });
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        ellipseAreaAET.setText(savedInstanceState.getString("area_et1"));
+        ellipseAreaBET.setText(savedInstanceState.getString("area_et2"));
+        ellipseAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        ellipseCircumAET.setText(savedInstanceState.getString("circum_et1"));
+        ellipseCircumBET.setText(savedInstanceState.getString("circum_et2"));
+        ellipseCircumAnswerTV.setText(savedInstanceState.getString("circum_tv"));
+        ellipseAXisAET.setText(savedInstanceState.getString("axis_et1"));
+        ellipseAXisBET.setText(savedInstanceState.getString("axis_et2"));
+        ellipseAXisAnswerTV.setText(savedInstanceState.getString("axis_tv"));
+        ellipseBXisAET.setText(savedInstanceState.getString("bxis_et1"));
+        ellipseBXisBET.setText(savedInstanceState.getString("bxis_et2"));
+        ellipseBXisAnswerTV.setText(savedInstanceState.getString("bxis_tv"));
+
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    private void areaResource() {
         //Area
         ellipseAreaAET = (EditText) findViewById(R.id.ellipse_area_a_et);
         ellipseAreaBET = (EditText) findViewById(R.id.ellipse_area_b_et);
@@ -138,6 +170,22 @@ public class Eclipse extends AppCompatActivity {
         });
 
 
+        //   Area Clear button
+        ellipseAreaClearButton = (Button) findViewById(R.id.ellipse_area_clear_button);
+        ellipseAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseAreaAET.setText("");
+                ellipseAreaBET.setText("");
+                ellipseAreaAnswerTV.setText("");
+
+            }
+        });
+
+
+    }
+
+    private void circumResource() {
         //Circumferenece
         ellipseCircumAET = (EditText) findViewById(R.id.ellipse_circum_a_et);
         ellipseCircumBET = (EditText) findViewById(R.id.ellipse_circum_b_et);
@@ -169,7 +217,22 @@ public class Eclipse extends AppCompatActivity {
             }
         });
 
+        //   Circum Clear button
+        ellipseCircumClearButton = (Button) findViewById(R.id.ellipse_circum_clear_button);
+        ellipseCircumClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseCircumAET.setText("");
+                ellipseCircumBET.setText("");
+                ellipseCircumAnswerTV.setText("");
 
+            }
+        });
+
+    }
+
+
+    private void aXisResource() {
         //A-xis
         ellipseAXisAET = (EditText) findViewById(R.id.ellipse_a_xis_b_et);
         ellipseAXisBET = (EditText) findViewById(R.id.ellipse_a_xis_area_et);
@@ -201,7 +264,21 @@ public class Eclipse extends AppCompatActivity {
             }
         });
 
+        //   A xis Clear button
+        ellipseAXisClearButton = (Button) findViewById(R.id.ellipse_a_xis_clear_button);
+        ellipseAXisClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseAXisAET.setText("");
+                ellipseAXisBET.setText("");
+                ellipseAXisAnswerTV.setText("");
+            }
+        });
 
+
+    }
+
+    private void bXisResource() {
         //B-xis
         ellipseBXisAET = (EditText) findViewById(R.id.ellipse_b_xis_a_et);
         ellipseBXisBET = (EditText) findViewById(R.id.ellipse_b_xis_area_et);
@@ -232,62 +309,16 @@ public class Eclipse extends AppCompatActivity {
             }
         });
 
-
-    }
-
-
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
+        //   B-xis Clear button
+        ellipseBXisClearButton = (Button) findViewById(R.id.ellipse_b_xis_clear_button);
+        ellipseBXisClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ellipseBXisAET.setText("");
+                ellipseBXisBET.setText("");
+                ellipseBXisAnswerTV.setText("");
+            }
+        });
     }
 
 }

@@ -50,50 +50,49 @@ public class Square extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        perimeterResource();
+        areaResource();
+        sideResource();
+        diagonalResource();
+        fontResource();
 
-        
-        
 
-        // Perimeter Clear button
-        squarePerimClearButton = (Button) findViewById(R.id.square_perimeter_clear_button);
-        squarePerimClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                squarePerimeterET.setText("");
-                squarePerimeterAnswerTV.setText("");
-            }
-        });
+    }
 
-        // Area Clear button
-        squareAreaClearButton = (Button) findViewById(R.id.square_area_clear_button);
-        squareAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                squareAreaET.setText("");
-                squareAreaTV.setText("");
-            }
-        });
 
-        // Sides Clear button
-        squareSidesClearButton = (Button) findViewById(R.id.square_side_clear_button);
-        squareSidesClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                squareSideET.setText("");
-                squareSideTV.setText("");
-            }
-        });
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-        // Diagonal Clear button
-        squareDiagonalClearButton = (Button) findViewById(R.id.square_diagonal_clear_button);
-        squareDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                squareDiagonalET.setText("");
-                squareDiagonalTV.setText("");
-            }
-        });
+        outState.putString("perimeter_et", squarePerimeterET.getText().toString());
+        outState.putString("perimeter_tv", squarePerimeterAnswerTV.getText().toString());
+        outState.putString("area_et", squareAreaET.getText().toString());
+        outState.putString("area_tv", squareAreaTV.getText().toString());
+        outState.putString("side_et", squareSideET.getText().toString());
+        outState.putString("side_tv", squareSideTV.getText().toString());
+        outState.putString("diagonal_et1", squareDiagonalET.getText().toString());
+        outState.putString("diagonal_tv", squareDiagonalTV.getText().toString());
 
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        squarePerimeterET.setText(savedInstanceState.getString("perimeter_et"));
+        squarePerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+        squareAreaET.setText(savedInstanceState.getString("area_et"));
+        squareAreaTV.setText(savedInstanceState.getString("area_tv"));
+        squareSideET.setText(savedInstanceState.getString("side_et"));
+        squareSideTV.setText(savedInstanceState.getString("side_tv"));
+        squareDiagonalET.setText(savedInstanceState.getString("diagonal_et"));
+        squareDiagonalTV.setText(savedInstanceState.getString("diagonal_tv"));
+
+    }
+
+
+    private void perimeterResource() {
         //Perimeter
         squarePerimeterET = (EditText) findViewById(R.id.square_perimeter_a_et);
         squarePerimeterAnswerTV = (TextView) findViewById(R.id.square_perimeter_calc_answer_tx);
@@ -118,6 +117,21 @@ public class Square extends AppCompatActivity {
             }
         });
 
+
+        // Perimeter Clear button
+        squarePerimClearButton = (Button) findViewById(R.id.square_perimeter_clear_button);
+        squarePerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squarePerimeterET.setText("");
+                squarePerimeterAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void areaResource() {
         //Area
         squareAreaET = (EditText) findViewById(R.id.square_area_a_et);
         squareAreaTV = (TextView) findViewById(R.id.square_calc_area_answer_tx);
@@ -142,6 +156,20 @@ public class Square extends AppCompatActivity {
             }
         });
 
+        // Area Clear button
+        squareAreaClearButton = (Button) findViewById(R.id.square_area_clear_button);
+        squareAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squareAreaET.setText("");
+                squareAreaTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void sideResource() {
         //Sides
         squareSideET = (EditText) findViewById(R.id.square_side_a_et);
         squareSideTV = (TextView) findViewById(R.id.square_calc_side_answer_tx);
@@ -166,6 +194,20 @@ public class Square extends AppCompatActivity {
             }
         });
 
+        // Sides Clear button
+        squareSidesClearButton = (Button) findViewById(R.id.square_side_clear_button);
+        squareSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squareSideET.setText("");
+                squareSideTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void diagonalResource() {
         //diagonal
         squareDiagonalET = (EditText) findViewById(R.id.square_diagonal_d_et);
         squareDiagonalTV = (TextView) findViewById(R.id.square_calc_diagonal_answer_tx);
@@ -191,7 +233,20 @@ public class Square extends AppCompatActivity {
         });
 
 
+        // Diagonal Clear button
+        squareDiagonalClearButton = (Button) findViewById(R.id.square_diagonal_clear_button);
+        squareDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                squareDiagonalET.setText("");
+                squareDiagonalTV.setText("");
+            }
+        });
 
+
+    }
+
+    private void fontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.square_perimeter_text);
@@ -227,7 +282,6 @@ public class Square extends AppCompatActivity {
         myTextView.setTypeface(myTypeFace);
 
 
-
         squarePerimeterET.setTypeface(myTypeFace);
         squarePerimeterAnswerTV.setTypeface(myTypeFace);
         squarePerimeterCalculateButton.setTypeface(myTypeFace);
@@ -248,11 +302,11 @@ public class Square extends AppCompatActivity {
         squareDiagonalCalculateButton.setTypeface(myTypeFace);
         squareDiagonalClearButton.setTypeface(myTypeFace);
 
+
     }
 
-
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
     }
 
@@ -262,46 +316,24 @@ public class Square extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
     }
 
     @Override
-    public void onStop(){
+    public void onStop() {
         super.onStop();
     }
 
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
     }
 
     @Override
-    protected void onRestart(){
+    protected void onRestart() {
         super.onRestart();
     }
 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 }

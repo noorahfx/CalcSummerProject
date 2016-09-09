@@ -43,39 +43,76 @@ public class Pentagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pentagon);
 
-        
-        // Perimeter Clear button
-        penPerimeterClearButton = (Button) findViewById(R.id.pen_perimeter_clear_button);
-        penPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                penPerimeterSideAET.setText("");
-                penPerimeterAnswerTV.setText("");
-            }
-        });
+
+        perimeterResource();
+        areaResource();
+        sideResource();
+        fontResource();
 
 
-        // Area Clear button
-        penAreaClearButton = (Button) findViewById(R.id.pen_area_clear_button);
-        penAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                penAreaSideAET.setText("");
-                penAreaAnswerTV.setText("");
-            }
-        });
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
 
-        // Side A Clear button
-        penSideAClearButton = (Button) findViewById(R.id.pen_side_clear_button);
-        penSideAClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                penSideAET.setText("");
-                penSideAAnswerTV.setText("");
-            }
-        });
+        outState.putString("perimeter_et", penPerimeterSideAET.getText().toString());
+        outState.putString("perimeter_tv", penPerimeterAnswerTV.getText().toString());
+        outState.putString("area_et", penAreaSideAET.getText().toString());
+        outState.putString("area_tv", penAreaAnswerTV.getText().toString());
+        outState.putString("side_et", penSideAET.getText().toString());
+        outState.putString("side_tv", penSideAAnswerTV.getText().toString());
 
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        penPerimeterSideAET.setText(savedInstanceState.getString("perimeter_et"));
+        penPerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+        penAreaSideAET.setText(savedInstanceState.getString("area_et"));
+        penAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        penSideAET.setText(savedInstanceState.getString("side_et"));
+        penSideAAnswerTV.setText(savedInstanceState.getString("side_tv"));
+
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+    private void perimeterResource() {
 
         penPerimeterSideAET = (EditText) findViewById(R.id.pen_perimeter_side_a_et);
         penPerimeterAnswerTV = (TextView) findViewById(R.id.pen_perimeter_calc_answer_tx);
@@ -97,7 +134,24 @@ public class Pentagon extends AppCompatActivity {
                 }
             }
         });
-//Area
+
+
+        // Perimeter Clear button
+        penPerimeterClearButton = (Button) findViewById(R.id.pen_perimeter_clear_button);
+        penPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                penPerimeterSideAET.setText("");
+                penPerimeterAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void areaResource() {
+
+        //Area
         penAreaSideAET = (EditText) findViewById(R.id.pen_area_side_a_et);
         penAreaAnswerTV = (TextView) findViewById(R.id.pen_area_calc_answer_tx);
         penAreaCalcButton = (Button) findViewById(R.id.pen_area_calc_button);
@@ -114,12 +168,26 @@ public class Pentagon extends AppCompatActivity {
                     if (aSide <= 0) {
                         penAreaAnswerTV.setText("The variable a should be positive");
                     }
-                    pentagonArea = (.25) * Math.sqrt(5*(5+2*Math.sqrt(5)))*Math.pow(aSide,2);
+                    pentagonArea = (.25) * Math.sqrt(5 * (5 + 2 * Math.sqrt(5))) * Math.pow(aSide, 2);
                     penAreaAnswerTV.setText(String.format("%.02f", pentagonArea));
                 }
             }
         });
 
+
+        // Area Clear button
+        penAreaClearButton = (Button) findViewById(R.id.pen_area_clear_button);
+        penAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                penAreaSideAET.setText("");
+                penAreaAnswerTV.setText("");
+            }
+        });
+
+    }
+
+    private void sideResource() {
         penSideAET = (EditText) findViewById(R.id.pen_side_et);
         penSideAAnswerTV = (TextView) findViewById(R.id.pen_side_calc_answer_tx);
         penSideACalcButton = (Button) findViewById(R.id.pen_side_calc_button);
@@ -142,9 +210,21 @@ public class Pentagon extends AppCompatActivity {
             }
         });
 
+        // Side A Clear button
+        penSideAClearButton = (Button) findViewById(R.id.pen_side_clear_button);
+        penSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                penSideAET.setText("");
+                penSideAAnswerTV.setText("");
+            }
+        });
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+    }
+
+    private void fontResource() {
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.pen_perimeter_text);
         assert myTextView != null;
@@ -187,57 +267,5 @@ public class Pentagon extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 }

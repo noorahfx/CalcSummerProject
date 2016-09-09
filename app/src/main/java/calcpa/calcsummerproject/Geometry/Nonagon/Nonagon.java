@@ -44,39 +44,42 @@ public class Nonagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nonagon);
 
+        perimeterResource();
+        areaResource();
+        sideResource();
+        fontResource();
+    }
 
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-        // Perimeter Clear button
-        nonPerimeterClearButton = (Button) findViewById(R.id.non_perimeter_clear_button);
-        nonPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nonPerimeterSideAET.setText("");
-                nonPerimeterAnswerTV.setText("");
-            }
-        });
 
-        // Area Clear button
-        nonAreaClearButton = (Button) findViewById(R.id.non_area_clear_button);
-        nonAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nonAreaSideAET.setText("");
-                nonAreaAnswerTV.setText("");
-            }
-        });
+        outState.putString("perimeter_et", nonPerimeterSideAET.getText().toString());
+        outState.putString("perimeter_tv", nonPerimeterAnswerTV.getText().toString());
+        outState.putString("area_et", nonAreaSideAET.getText().toString());
+        outState.putString("area_tv", nonAreaAnswerTV.getText().toString());
+        outState.putString("side_et", nonSideAET.getText().toString());
+        outState.putString("side_tv", nonSideAAnswerTV.getText().toString());
 
-        // Area Clear button
-        nonSideAClearButton = (Button) findViewById(R.id.non_side_clear_button);
-        nonSideAClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nonSideAET.setText("");
-                nonSideAAnswerTV.setText("");
-            }
-        });
 
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        nonPerimeterSideAET.setText(savedInstanceState.getString("perimeter_et"));
+        nonPerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+        nonAreaSideAET.setText(savedInstanceState.getString("area_et"));
+        nonAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        nonSideAET.setText(savedInstanceState.getString("side_et"));
+        nonSideAAnswerTV.setText(savedInstanceState.getString("side_tv"));
+
+    }
+
+    private void perimeterResource() {
         nonPerimeterSideAET = (EditText) findViewById(R.id.non_perimeter_side_a_et);
         nonPerimeterAnswerTV = (TextView) findViewById(R.id.non_perimeter_calc_answer_tx);
         nonPerimeterCalcButton = (Button) findViewById(R.id.non_perimeter_calc_button);
@@ -97,7 +100,23 @@ public class Nonagon extends AppCompatActivity {
                 }
             }
         });
-//Area
+
+
+        // Perimeter Clear button
+        nonPerimeterClearButton = (Button) findViewById(R.id.non_perimeter_clear_button);
+        nonPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nonPerimeterSideAET.setText("");
+                nonPerimeterAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void areaResource() {
+        //Area
         nonAreaSideAET = (EditText) findViewById(R.id.non_area_side_a_et);
         nonAreaAnswerTV = (TextView) findViewById(R.id.non_area_calc_answer_tx);
         nonAreaCalcButton = (Button) findViewById(R.id.non_area_calc_button);
@@ -121,6 +140,20 @@ public class Nonagon extends AppCompatActivity {
             }
         });
 
+        // Area Clear button
+        nonAreaClearButton = (Button) findViewById(R.id.non_area_clear_button);
+        nonAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nonAreaSideAET.setText("");
+                nonAreaAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void sideResource() {
         nonSideAET = (EditText) findViewById(R.id.non_side_et);
         nonSideAAnswerTV = (TextView) findViewById(R.id.non_side_calc_answer_tx);
         nonSideACalcButton = (Button) findViewById(R.id.non_side_calc_button);
@@ -143,10 +176,21 @@ public class Nonagon extends AppCompatActivity {
             }
         });
 
+        // Clear button
+        nonSideAClearButton = (Button) findViewById(R.id.non_side_clear_button);
+        nonSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                nonSideAET.setText("");
+                nonSideAAnswerTV.setText("");
+            }
+        });
 
+    }
 
+    private void fontResource() {
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.non_perimeter_text);
         assert myTextView != null;
@@ -187,11 +231,12 @@ public class Nonagon extends AppCompatActivity {
         nonSideACalcButton.setTypeface(myTypeFace);
         nonSideAClearButton.setTypeface(myTypeFace);
 
+
     }
 
 
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
     }
 
@@ -201,47 +246,25 @@ public class Nonagon extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
     }
 
     @Override
-    public void onStop(){
+    public void onStop() {
         super.onStop();
     }
 
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
     }
 
     @Override
-    protected void onRestart(){
+    protected void onRestart() {
         super.onRestart();
     }
 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 }
 

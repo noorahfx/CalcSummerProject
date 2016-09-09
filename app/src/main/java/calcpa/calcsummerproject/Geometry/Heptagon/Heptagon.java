@@ -44,37 +44,76 @@ public class Heptagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heptagon);
 
-        // Perimeter Clear button
-        hepPerimeterClearButton = (Button) findViewById(R.id.hep_perimeter_clear_button);
-        hepPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                hepPerimeterSideAET.setText("");
-                hepPerimeterAnswerTV.setText("");
-            }
-        });
+        perimeterResource();
+        areaResource();
+        sideResource();
+        fontResource();
 
-        // Area Clear button
-        hepAreaClearButton = (Button) findViewById(R.id.hep_area_clear_button);
-        hepAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                hepAreaSideAET.setText("");
-                hepAreaAnswerTV.setText("");
-            }
-        });
 
-        // Side A button
-        hepSideAClearButton = (Button) findViewById(R.id.hep_side_clear_button);
-        hepSideAClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                hepSideAET.setText("");
-                hepSideAAnswerTV.setText("");
+    }
 
-            }
-        });
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+
+        outState.putString("perimeter_et", hepPerimeterSideAET.getText().toString());
+        outState.putString("perimeter_tv", hepPerimeterAnswerTV.getText().toString());
+        outState.putString("area_et", hepAreaSideAET.getText().toString());
+        outState.putString("area_tv", hepAreaAnswerTV.getText().toString());
+        outState.putString("side_et", hepSideAET.getText().toString());
+        outState.putString("side_tv", hepSideAAnswerTV.getText().toString());
+
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        hepPerimeterSideAET.setText(savedInstanceState.getString("perimeter_et"));
+        hepPerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+        hepAreaSideAET.setText(savedInstanceState.getString("area_et"));
+        hepAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        hepSideAET.setText(savedInstanceState.getString("side_et"));
+        hepSideAAnswerTV.setText(savedInstanceState.getString("side_tv"));
+
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+    private void perimeterResource() {
 
         hepPerimeterSideAET = (EditText) findViewById(R.id.hep_perimeter_side_a_et);
         hepPerimeterAnswerTV = (TextView) findViewById(R.id.hep_perimeter_calc_answer_tx);
@@ -96,7 +135,20 @@ public class Heptagon extends AppCompatActivity {
                 }
             }
         });
-//Area
+        // Perimeter Clear button
+        hepPerimeterClearButton = (Button) findViewById(R.id.hep_perimeter_clear_button);
+        hepPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hepPerimeterSideAET.setText("");
+                hepPerimeterAnswerTV.setText("");
+            }
+        });
+
+    }
+
+    private void areaResource() {
+        //Area
         hepAreaSideAET = (EditText) findViewById(R.id.hep_area_side_a_et);
         hepAreaAnswerTV = (TextView) findViewById(R.id.hep_area_calc_answer_tx);
         hepAreaCalcButton = (Button) findViewById(R.id.hep_area_calc_button);
@@ -119,6 +171,20 @@ public class Heptagon extends AppCompatActivity {
             }
         });
 
+        // Area Clear button
+        hepAreaClearButton = (Button) findViewById(R.id.hep_area_clear_button);
+        hepAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hepAreaSideAET.setText("");
+                hepAreaAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void sideResource() {
         hepSideAET = (EditText) findViewById(R.id.hep_side_et);
         hepSideAAnswerTV = (TextView) findViewById(R.id.hep_side_calc_answer_tx);
         hepSideACalcButton = (Button) findViewById(R.id.hep_side_calc_button);
@@ -142,7 +208,22 @@ public class Heptagon extends AppCompatActivity {
         });
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        // Side A button
+        hepSideAClearButton = (Button) findViewById(R.id.hep_side_clear_button);
+        hepSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hepSideAET.setText("");
+                hepSideAAnswerTV.setText("");
+
+            }
+        });
+
+
+    }
+
+    private void fontResource() {
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.hep_perimeter_text);
         assert myTextView != null;
@@ -183,61 +264,9 @@ public class Heptagon extends AppCompatActivity {
         hepSideACalcButton.setTypeface(myTypeFace);
         hepSideAClearButton.setTypeface(myTypeFace);
 
-
     }
 
 
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
 
 
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 }

@@ -46,32 +46,71 @@ public class Cuboid extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        volumeResource();
+        areaResource();
+        fontResource();
+    }
 
-        // Volume Clear button
-        cuboidVolumeClearButton = (Button) findViewById(R.id.cuboid_volume_clear_button);
-        cuboidVolumeClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cuboidVolumeLET.setText("");
-                cuboidVolumeWET.setText("");
-                cuboidVolumeHET.setText("");
-                cuboidVolumeAnswerTV.setText("");
-            }
-        });
-        // Area Clear button
-        CuboidAreaCalcButton = (Button) findViewById(R.id.cuboid_area_clear_button);
-        CuboidAreaCalcButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cuboidAreaLET.setText("");
-                cuboidAreaWET.setText("");
-                cuboidAreaHET.setText("");
-                cuboidAreaAnswerTV.setText("");
-            }
-        });
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+        outState.putString("volume_et1", cuboidVolumeLET.getText().toString());
+        outState.putString("volume_et2", cuboidVolumeWET.getText().toString());
+        outState.putString("volume_et3", cuboidVolumeHET.getText().toString());
+        outState.putString("volume_tv", cuboidVolumeAnswerTV.getText().toString());
+        outState.putString("area_et1", cuboidAreaLET.getText().toString());
+        outState.putString("area_et2", cuboidAreaWET.getText().toString());
+        outState.putString("area_et3", cuboidAreaHET.getText().toString());
+        outState.putString("area_tv", cuboidAreaAnswerTV.getText().toString());
 
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        cuboidVolumeLET.setText(savedInstanceState.getString("volume_et1"));
+        cuboidVolumeWET.setText(savedInstanceState.getString("volume_et2"));
+        cuboidVolumeHET.setText(savedInstanceState.getString("volume_et3"));
+        cuboidVolumeAnswerTV.setText(savedInstanceState.getString("volume_tv"));
+        cuboidAreaLET.setText(savedInstanceState.getString("area_et1"));
+        cuboidAreaWET.setText(savedInstanceState.getString("area_et2"));
+        cuboidAreaHET.setText(savedInstanceState.getString("area_et3"));
+        cuboidAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+    }
+
+    @Override
+    public void onStart(){
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+    }
+
+    private void volumeResource(){
         //Volume
         cuboidVolumeLET = (EditText) findViewById(R.id.cuboid_volume_l_et);
         cuboidVolumeWET = (EditText) findViewById(R.id.cuboid_volume_w_et);
@@ -108,6 +147,20 @@ public class Cuboid extends AppCompatActivity {
             }
         });
 
+        // Volume Clear button
+        cuboidVolumeClearButton = (Button) findViewById(R.id.cuboid_volume_clear_button);
+        cuboidVolumeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cuboidVolumeLET.setText("");
+                cuboidVolumeWET.setText("");
+                cuboidVolumeHET.setText("");
+                cuboidVolumeAnswerTV.setText("");
+            }
+        });
+    }
+
+    private void areaResource(){
         //Area
 
         cuboidAreaLET = (EditText) findViewById(R.id.cuboid_area_l_et);
@@ -144,15 +197,27 @@ public class Cuboid extends AppCompatActivity {
             }
         });
 
+        // Area Clear button
+        CuboidAreaCalcButton = (Button) findViewById(R.id.cuboid_area_clear_button);
+        CuboidAreaCalcButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cuboidAreaLET.setText("");
+                cuboidAreaWET.setText("");
+                cuboidAreaHET.setText("");
+                cuboidAreaAnswerTV.setText("");
+            }
+        });
 
 
+    }
 
+    private void fontResource(){
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.cuboid_volume_text);
+        assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
         myTextView = (TextView) findViewById(R.id.cuboid_volume_l_text);
         assert myTextView != null;
@@ -182,7 +247,6 @@ public class Cuboid extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
         cuboidVolumeLET.setTypeface(myTypeFace);
         cuboidVolumeWET.setTypeface(myTypeFace);
         cuboidVolumeHET.setTypeface(myTypeFace);
@@ -196,62 +260,6 @@ public class Cuboid extends AppCompatActivity {
         cuboidAreaAnswerTV.setTypeface(myTypeFace);
         cuboidAreaCalcButton.setTypeface(myTypeFace);
         CuboidAreaCalcButton.setTypeface(myTypeFace);
-
-
-    }
-
-
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
 
     }
 

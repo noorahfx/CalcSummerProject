@@ -55,37 +55,75 @@ public class Hexagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hexagon);
 
+        perimeterResource();
+        areaResource();
+        sideResource();
 
-        // Perimeter Clear button
-        hexPerimeterClearButton = (Button) findViewById(R.id.hex_perimeter_clear_button);
-        hexPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                hexPerimeterSideAET.setText("");
-                hexPerimeterAnswerTV.setText("");
-            }
-        });
+    }
 
-        // Area Clear button
-        hexAreaClearButton = (Button) findViewById(R.id.hex_area_clear_button);
-        hexAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                hexAreaSideAET.setText("");
-                hexAreaAnswerTV.setText("");
-            }
-        });
 
-        // Side A Clear button
-        hexSideAClearButton = (Button) findViewById(R.id.hex_side_clear_button);
-        hexSideAClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                hexSideAET.setText("");
-                hexSideAAnswerTV.setText("");
-            }
-        });
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+
+        outState.putString("perimeter_et", hexPerimeterSideAET.getText().toString());
+        outState.putString("perimeter_tv", hexPerimeterAnswerTV.getText().toString());
+        outState.putString("area_et", hexAreaSideAET.getText().toString());
+        outState.putString("area_tv", hexAreaAnswerTV.getText().toString());
+        outState.putString("side_et", hexSideAET.getText().toString());
+        outState.putString("side_tv", hexSideAAnswerTV.getText().toString());
+
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        hexPerimeterSideAET.setText(savedInstanceState.getString("perimeter_et"));
+        hexPerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+        hexAreaSideAET.setText(savedInstanceState.getString("area_et"));
+        hexAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        hexSideAET.setText(savedInstanceState.getString("side_et"));
+        hexSideAAnswerTV.setText(savedInstanceState.getString("side_tv"));
+
+    }
+
+
+
+    @Override
+    public void onStart(){
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+    }
+
+    @Override
+    public void onStop(){
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+    }
+
+
+    private void perimeterResource(){
 
 
         hexPerimeterSideAET =(EditText)findViewById(R.id.hex_perimeter_side_a_et);
@@ -109,6 +147,25 @@ public class Hexagon extends AppCompatActivity {
 
             }
         });
+
+
+        // Perimeter Clear button
+        hexPerimeterClearButton = (Button) findViewById(R.id.hex_perimeter_clear_button);
+        hexPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hexPerimeterSideAET.setText("");
+                hexPerimeterAnswerTV.setText("");
+            }
+        });
+
+
+
+
+
+    }
+
+    private void areaResource(){
 
         hexAreaSideAET =(EditText)findViewById(R.id.hex_area_side_a_et);
         hexAreaAnswerTV =(TextView)findViewById(R.id.hex_area_calc_answer_tx);
@@ -134,6 +191,22 @@ public class Hexagon extends AppCompatActivity {
         });
 
 
+        // Area Clear button
+        hexAreaClearButton = (Button) findViewById(R.id.hex_area_clear_button);
+        hexAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hexAreaSideAET.setText("");
+                hexAreaAnswerTV.setText("");
+            }
+        });
+
+
+
+
+    }
+
+    private void sideResource(){
         hexSideAET =(EditText)findViewById(R.id.hex_side_et);
         hexSideAAnswerTV =(TextView)findViewById(R.id.hex_side_calc_answer_tx);
         hexSideACalcButton=(Button)findViewById(R.id.hex_side_calc_button);
@@ -157,7 +230,22 @@ public class Hexagon extends AppCompatActivity {
             }
         });
 
+        // Side A Clear button
+        hexSideAClearButton = (Button) findViewById(R.id.hex_side_clear_button);
+        hexSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hexSideAET.setText("");
+                hexSideAAnswerTV.setText("");
+            }
+        });
 
+
+
+
+    }
+
+    private void fontResource(){
 
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
@@ -202,63 +290,11 @@ public class Hexagon extends AppCompatActivity {
         hexSideAClearButton.setTypeface(myTypeFace);
 
 
-
     }
 
 
 
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
+    
 
 }
 

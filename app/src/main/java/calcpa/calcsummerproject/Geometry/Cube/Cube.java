@@ -26,22 +26,17 @@ public class Cube extends AppCompatActivity {
     Button cubeVolumeCalcButton;
     Button cubeVolumeClearButton;
 
-
     //Edge
     EditText cubeEdgeET;
     TextView cubeEdgeTV;
     Button cubeEdgeCalcButton;
     Button cubeEdgeClearButton;
 
-
-
     //Special Diagonal
-
     EditText cubeSpecialDiagonalET;
     TextView cubeSpecialDiagonalTV;
     Button cubeSpecialDiagonalCalcButton;
     Button cubeSpecialDiagonalClearButton;
-
 
     //Surface Area
     EditText cubeSurfaceAreaET;
@@ -57,51 +52,74 @@ public class Cube extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-        // Volume Clear button
-        cubeVolumeClearButton = (Button) findViewById(R.id.cube_volume_clear_button);
-        cubeVolumeClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cubeVolumeET.setText("");
-                cubeVolumeTV.setText("");
-            }
-        });
-
-        // Edge Clear button
-        cubeEdgeClearButton = (Button) findViewById(R.id.cube_edge_clear_button);
-        cubeEdgeClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cubeEdgeET.setText("");
-                cubeEdgeTV.setText("");
-            }
-        });
+        volumeResource();
+        edgeResource();
+        specialDiagonalResource();
+        surfaceAreaResource();
+        fontResource();
 
 
-        // Special Diagonal Clear button
-        cubeSpecialDiagonalClearButton = (Button)
-                findViewById(R.id.cube_special_diagonal_clear_button);
-        cubeSpecialDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cubeSpecialDiagonalET.setText("");
-                cubeSpecialDiagonalTV.setText("");
-            }
-        });
+    }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-        // Surface Area button
-        cubeSurfaceAreaClearButton = (Button) findViewById(R.id.cube_surface_area_clear_button);
-        cubeSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cubeSurfaceAreaET.setText("");
-                cubeSurfaceAreaTV.setText("");
-            }
-        });
+        outState.putString("volume_et", cubeVolumeET.getText().toString());
+        outState.putString("volume_tv", cubeVolumeTV.getText().toString());
+        outState.putString("edge_et", cubeEdgeET.getText().toString());
+        outState.putString("edge_tv", cubeEdgeTV.getText().toString());
+        outState.putString("special_dg_et", cubeSpecialDiagonalET.getText().toString());
+        outState.putString("special_dg_tv", cubeSpecialDiagonalTV.getText().toString());
+        outState.putString("surface_ar_et", cubeSurfaceAreaET.getText().toString());
+        outState.putString("surface_ar_tv", cubeSurfaceAreaTV.getText().toString());
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
 
+        cubeVolumeET.setText(savedInstanceState.getString("volume_et"));
+        cubeVolumeTV.setText(savedInstanceState.getString("volume_tv"));
+        cubeEdgeET.setText(savedInstanceState.getString("edge_et"));
+        cubeEdgeTV.setText(savedInstanceState.getString("edge_tv"));
+        cubeSpecialDiagonalET.setText(savedInstanceState.getString("special_dg_et"));
+        cubeSpecialDiagonalTV.setText(savedInstanceState.getString("special_dg_tv"));
+        cubeSurfaceAreaET.setText(savedInstanceState.getString("surface_ar_et"));
+        cubeSurfaceAreaTV.setText(savedInstanceState.getString("surface_ar_tv"));
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    private void volumeResource() {
         //Volume
         cubeVolumeET = (EditText) findViewById(R.id.cube_volume_a_et);
         cubeVolumeTV = (TextView) findViewById(R.id.cube_volume_calc_answer_tx);
@@ -125,6 +143,18 @@ public class Cube extends AppCompatActivity {
             }
         });
 
+        //Clear button
+        cubeVolumeClearButton = (Button) findViewById(R.id.cube_volume_clear_button);
+        cubeVolumeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeVolumeET.setText("");
+                cubeVolumeTV.setText("");
+            }
+        });
+    }
+
+    private void edgeResource() {
 
         //Edge
         cubeEdgeET = (EditText) findViewById(R.id.cube_edge_v_et);
@@ -148,8 +178,23 @@ public class Cube extends AppCompatActivity {
             }
         });
 
-        //Special Diagonal
 
+        // Edge Clear button
+        cubeEdgeClearButton = (Button) findViewById(R.id.cube_edge_clear_button);
+        cubeEdgeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeEdgeET.setText("");
+                cubeEdgeTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void specialDiagonalResource() {
+
+        //Special Diagonal
         cubeSpecialDiagonalET = (EditText) findViewById(R.id.cube_special_diagonal_a_et);
         cubeSpecialDiagonalTV = (TextView) findViewById(R.id.cube_special_diagonal_calc_answer_tx);
         cubeSpecialDiagonalCalcButton = (Button) findViewById(R.id.cube_special_diagonal_calc_button);
@@ -168,10 +213,22 @@ public class Cube extends AppCompatActivity {
                     specialDiagonal = Math.sqrt(3) * edge;
                     cubeSpecialDiagonalTV.setText(String.format("%.02f", specialDiagonal));
                 }
-
             }
         });
 
+        //Clear button
+        cubeSpecialDiagonalClearButton = (Button)
+                findViewById(R.id.cube_special_diagonal_clear_button);
+        cubeSpecialDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeSpecialDiagonalET.setText("");
+                cubeSpecialDiagonalTV.setText("");
+            }
+        });
+    }
+
+    private void surfaceAreaResource() {
         //Surface Area
         cubeSurfaceAreaET = (EditText) findViewById(R.id.cube_surface_area_a_et);
         cubeSurfaceAreaTV = (TextView) findViewById(R.id.cube_surface_area_calc_answer_tx);
@@ -192,17 +249,26 @@ public class Cube extends AppCompatActivity {
                     surfaceArea = 6 * Math.pow(edge, 2);
                     cubeSurfaceAreaTV.setText(String.format("%.02f", surfaceArea));
                 }
-
             }
         });
 
+        //clear Button
+        cubeSurfaceAreaClearButton = (Button) findViewById(R.id.cube_surface_area_clear_button);
+        cubeSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cubeSurfaceAreaET.setText("");
+                cubeSurfaceAreaTV.setText("");
+            }
+        });
+    }
 
+    private void fontResource() {
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.cube_volume_text);
+        assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
         myTextView = (TextView) findViewById(R.id.cube_volume_a_text);
         assert myTextView != null;
@@ -232,8 +298,6 @@ public class Cube extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
-
-
         cubeVolumeET.setTypeface(myTypeFace);
         cubeVolumeCalcButton.setTypeface(myTypeFace);
         cubeVolumeClearButton.setTypeface(myTypeFace);
@@ -253,60 +317,5 @@ public class Cube extends AppCompatActivity {
         cubeSurfaceAreaTV.setTypeface(myTypeFace);
         cubeSurfaceAreaCalcButton.setTypeface(myTypeFace);
         cubeSurfaceAreaClearButton.setTypeface(myTypeFace);
-
     }
-
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
-
 }

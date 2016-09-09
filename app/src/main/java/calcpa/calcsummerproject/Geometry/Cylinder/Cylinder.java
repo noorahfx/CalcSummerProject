@@ -74,83 +74,96 @@ public class Cylinder extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        volumeResource();
+        radiusResource();
+        heightResource();
+        surfaceAreaResource();
+        baseAreaResource();
+        lateralSurfaceResource();
+        fontResource();
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("volume_et1", cylinderVolumeRET.getText().toString());
+        outState.putString("volume_et2", cylinderVolumeHET.getText().toString());
+        outState.putString("volume_tv", cylinderVolumeAnswerTV.getText().toString());
+        outState.putString("radius_et1", cylinderRadiusHET.getText().toString());
+        outState.putString("radius_et2", cylinderRadiusVET.getText().toString());
+        outState.putString("radius_tv", cylinderRadiusAnswerTV.getText().toString());
+        outState.putString("height_et1", cylinderHeightRET.getText().toString());
+        outState.putString("height_et2", cylinderHeightVET.getText().toString());
+        outState.putString("height_tv", cylinderHeightAnswerTV.getText().toString());
+        outState.putString("surface_ar_et1", cylinderSurfaceAreatRET.getText().toString());
+        outState.putString("surface_ar_et2", cylinderSurfaceAreaHET.getText().toString());
+        outState.putString("surface_ar_tv", cylinderSurfaceAreaAnswerTV.getText().toString());
+        outState.putString("base_ar_et1", cylinderBaseAreaRET.getText().toString());
+        outState.putString("base_ar_tv", cylinderBaseAreaAnswerTV.getText().toString());
+        outState.putString("lateral_sf_et1", cylinderLateralSurfaceRET.getText().toString());
+        outState.putString("lateral_sf_et2", cylinderLateralSurfaceHET.getText().toString());
+        outState.putString("lateral_sf_tv", cylinderLateralSurfaceAnswerTV.getText().toString());
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        cylinderVolumeRET.setText(savedInstanceState.getString("volume_et1"));
+        cylinderVolumeHET.setText(savedInstanceState.getString("volume_et2"));
+        cylinderVolumeAnswerTV.setText(savedInstanceState.getString("volume_tv"));
+        cylinderRadiusHET.setText(savedInstanceState.getString("radius_et1"));
+        cylinderRadiusVET.setText(savedInstanceState.getString("radius_et2"));
+        cylinderRadiusAnswerTV.setText(savedInstanceState.getString("radius_tv"));
+        cylinderHeightRET.setText(savedInstanceState.getString("height_et1"));
+        cylinderHeightVET.setText(savedInstanceState.getString("height_et2"));
+        cylinderHeightAnswerTV.setText(savedInstanceState.getString("height_tv"));
+        cylinderSurfaceAreatRET.setText(savedInstanceState.getString("surface_ar_et1"));
+        cylinderSurfaceAreaHET.setText(savedInstanceState.getString("surface_ar_et2"));
+        cylinderSurfaceAreaAnswerTV.setText(savedInstanceState.getString("surface_ar_tv"));
+        cylinderBaseAreaRET.setText(savedInstanceState.getString("base_ar_et1"));
+        cylinderBaseAreaAnswerTV.setText(savedInstanceState.getString("base_ar_tv"));
+        cylinderLateralSurfaceRET.setText(savedInstanceState.getString("lateral_sf_et1"));
+        cylinderLateralSurfaceHET.setText(savedInstanceState.getString("lateral_sf_et2"));
+        cylinderLateralSurfaceAnswerTV.setText(savedInstanceState.getString("lateral_sf_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
 
 
-
-        // Volume Clear button
-        cylinderVolumeClearButton = (Button) findViewById(R.id.cylinder_volume_clear_button);
-        cylinderVolumeClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cylinderVolumeRET.setText("");
-                cylinderVolumeHET.setText("");
-                cylinderVolumeAnswerTV.setText("");
-
-            }
-        });
-
-        // Radius clear button
-        cylinderRadiusClearButton = (Button) findViewById(R.id.cylinder_radius_clear_button);
-        cylinderRadiusClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cylinderRadiusHET.setText("");
-                cylinderRadiusVET.setText("");
-                cylinderRadiusAnswerTV.setText("");
-
-            }
-        });
-
-        // Height Clear button
-        cylinderHeightClearButton = (Button)
-                findViewById(R.id.cylinder_height_clear_button);
-        cylinderHeightClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cylinderHeightRET.setText("");
-                cylinderHeightVET.setText("");
-                cylinderHeightAnswerTV.setText("");
-
-            }
-        });
-
-        // Surface Area Clear button
-        cylinderSurfaceAreaClearButton = (Button)
-                findViewById(R.id.cylinder_surface_area_clear_button);
-        cylinderSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cylinderSurfaceAreatRET.setText("");
-                cylinderSurfaceAreaHET.setText("");
-                cylinderSurfaceAreaAnswerTV.setText("");
-
-            }
-        });
-
-        // Base Clear button
-        cylinderBaseClearButton = (Button) findViewById(R.id.cylinder_base_area_clear_button);
-        cylinderBaseClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cylinderBaseAreaRET.setText("");
-                cylinderBaseAreaAnswerTV.setText("");
-
-            }
-        });
-        // Lateral Surface Clear button
-        cylinderLateralSurfaceClearButton = (Button)
-                findViewById(R.id.cylinder_lateral_surface_clear_button);
-        cylinderLateralSurfaceClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cylinderLateralSurfaceRET.setText("");
-                cylinderLateralSurfaceHET.setText("");
-                cylinderLateralSurfaceAnswerTV.setText("");
-
-            }
-        });
-
-
+    private void volumeResource() {
         //Volume
         cylinderVolumeRET = (EditText) findViewById(R.id.cylinder_volume_r_et);
         cylinderVolumeHET = (EditText) findViewById(R.id.cylinder_volume_h_et);
@@ -180,6 +193,22 @@ public class Cylinder extends AppCompatActivity {
             }
         });
 
+        // Volume Clear button
+        cylinderVolumeClearButton = (Button) findViewById(R.id.cylinder_volume_clear_button);
+        cylinderVolumeClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderVolumeRET.setText("");
+                cylinderVolumeHET.setText("");
+                cylinderVolumeAnswerTV.setText("");
+
+            }
+        });
+
+
+    }
+
+    private void radiusResource() {
         //Radius
         cylinderRadiusHET = (EditText) findViewById(R.id.cylinder_radius_h_et);
         cylinderRadiusVET = (EditText) findViewById(R.id.cylinder_radius_v_et);
@@ -210,6 +239,22 @@ public class Cylinder extends AppCompatActivity {
             }
         });
 
+        // Radius clear button
+        cylinderRadiusClearButton = (Button) findViewById(R.id.cylinder_radius_clear_button);
+        cylinderRadiusClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderRadiusHET.setText("");
+                cylinderRadiusVET.setText("");
+                cylinderRadiusAnswerTV.setText("");
+
+            }
+        });
+
+
+    }
+
+    private void heightResource() {
 
         //Height
         cylinderHeightRET = (EditText) findViewById(R.id.cylinder_height_r_et);
@@ -241,7 +286,23 @@ public class Cylinder extends AppCompatActivity {
             }
         });
 
+        // Height Clear button
+        cylinderHeightClearButton = (Button)
+                findViewById(R.id.cylinder_height_clear_button);
+        cylinderHeightClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderHeightRET.setText("");
+                cylinderHeightVET.setText("");
+                cylinderHeightAnswerTV.setText("");
 
+            }
+        });
+
+
+    }
+
+    private void surfaceAreaResource() {
         //Surface Area
         cylinderSurfaceAreatRET = (EditText) findViewById(R.id.cylinder_surface_area_r_et);
         cylinderSurfaceAreaHET = (EditText) findViewById(R.id.cylinder_surface_area_h_et);
@@ -273,7 +334,23 @@ public class Cylinder extends AppCompatActivity {
                 }
             }
         });
+        // Surface Area Clear button
+        cylinderSurfaceAreaClearButton = (Button)
+                findViewById(R.id.cylinder_surface_area_clear_button);
+        cylinderSurfaceAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderSurfaceAreatRET.setText("");
+                cylinderSurfaceAreaHET.setText("");
+                cylinderSurfaceAreaAnswerTV.setText("");
 
+            }
+        });
+
+
+    }
+
+    private void baseAreaResource() {
 
         //Base Area
         cylinderBaseAreaRET = (EditText) findViewById(R.id.cylinder_base_area_r_et);
@@ -298,7 +375,21 @@ public class Cylinder extends AppCompatActivity {
             }
         });
 
+        // Base Clear button
+        cylinderBaseClearButton = (Button) findViewById(R.id.cylinder_base_area_clear_button);
+        cylinderBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderBaseAreaRET.setText("");
+                cylinderBaseAreaAnswerTV.setText("");
 
+            }
+        });
+
+
+    }
+
+    private void lateralSurfaceResource() {
         //Lateral Surface
         cylinderLateralSurfaceRET = (EditText) findViewById(R.id.cylinder_lateral_surface_r_et);
         cylinderLateralSurfaceHET = (EditText) findViewById(R.id.cylinder_lateral_surface_h_et);
@@ -332,9 +423,26 @@ public class Cylinder extends AppCompatActivity {
             }
         });
 
+        // Lateral Surface Clear button
+        cylinderLateralSurfaceClearButton = (Button)
+                findViewById(R.id.cylinder_lateral_surface_clear_button);
+        cylinderLateralSurfaceClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cylinderLateralSurfaceRET.setText("");
+                cylinderLateralSurfaceHET.setText("");
+                cylinderLateralSurfaceAnswerTV.setText("");
+
+            }
+        });
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+    }
+
+    private void fontResource() {
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.cylinder_volume_text);
         assert myTextView != null;
@@ -371,7 +479,6 @@ public class Cylinder extends AppCompatActivity {
         myTextView = (TextView) findViewById(R.id.cylinder_height_v_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
 
 
         myTextView = (TextView) findViewById(R.id.cylinder_surface_area_text);
@@ -441,62 +548,6 @@ public class Cylinder extends AppCompatActivity {
         cylinderLateralSurfaceCalcButton.setTypeface(myTypeFace);
         cylinderLateralSurfaceClearButton.setTypeface(myTypeFace);
 
-
-
-    }
-
-
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
 
     }
 

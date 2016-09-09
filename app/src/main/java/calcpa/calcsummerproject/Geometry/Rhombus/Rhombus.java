@@ -58,61 +58,88 @@ public class Rhombus extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-        // Perimeter Clear button
-        rhombusPerimeterClearButton = (Button) findViewById(R.id.rhombus_perimeter_clear_button);
-        rhombusPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rhombusPerimeterAET.setText("");
-                rhombusPerimeterAnswerTV.setText("");
-            }
-        });
-
-        // Area Clear button
-        rhombusAreaClearButton = (Button) findViewById(R.id.rhombus_area_clear_button);
-        rhombusAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rhombusAreaPET.setText("");
-                rhombusAreaQET.setText("");
-                rhombusAreaAnswerTV.setText("");
-            }
-        });
-
-        // Sides Clear button
-        rhombusSidesClearButton = (Button) findViewById(R.id.rhombus_sides_clear_button);
-        rhombusSidesClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rhombusSidesPET.setText("");
-                rhombusSidesAnswerTV.setText("");
-            }
-        });
-
-        // P Diagonal Clear button
-        rhombusPDiaognalClearButton = (Button) findViewById(R.id.rhombus_p_diagonal_clear_button);
-        rhombusPDiaognalClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rhombusPDiaognalQET.setText("");
-                rhombusPDiaognalAreaET.setText("");
-                rhombusPDiaognalAnswerTV.setText("");
-            }
-        });
+        perimeterResource();
+        areaResource();
+        sideResource();
+        diagonalPResource();
+        diaognalQResource();
+        fontResource();
 
 
-        // Q Diagonal Clear button
-        rhombusQDiagonalClearButton = (Button) findViewById(R.id.rhombus_q_diagonal_clear_button);
-        rhombusQDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rhombusQDiagonalPET.setText("");
-                rhombusQDiagonalAreaET.setText("");
-                rhombusQDiagonalAnswerTV.setText("");
-            }
-        });
+    }
 
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("perimeter_et", rhombusPerimeterAET.getText().toString());
+        outState.putString("perimeter_tv", rhombusPerimeterAnswerTV.getText().toString());
+        outState.putString("area_et1", rhombusAreaPET.getText().toString());
+        outState.putString("area_et2", rhombusAreaQET.getText().toString());
+        outState.putString("area_tv", rhombusAreaAnswerTV.getText().toString());
+        outState.putString("side_et", rhombusSidesPET.getText().toString());
+        outState.putString("side_tv", rhombusSidesAnswerTV.getText().toString());
+        outState.putString("pdiagonal_et1", rhombusPDiaognalQET.getText().toString());
+        outState.putString("pdiagonal_et2", rhombusPDiaognalAreaET.getText().toString());
+        outState.putString("pdiagonal_tv", rhombusPDiaognalAnswerTV.getText().toString());
+        outState.putString("qdiagonal_et1", rhombusQDiagonalPET.getText().toString());
+        outState.putString("qdiagonal_et2", rhombusQDiagonalAreaET.getText().toString());
+        outState.putString("qdiagonal_tv", rhombusQDiagonalAnswerTV.getText().toString());
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        rhombusPerimeterAET.setText(savedInstanceState.getString("perimeter_et"));
+        rhombusPerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+        rhombusAreaPET.setText(savedInstanceState.getString("area_et1"));
+        rhombusAreaQET.setText(savedInstanceState.getString("area_et2"));
+        rhombusAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        rhombusSidesPET.setText(savedInstanceState.getString("side_et"));
+        rhombusSidesAnswerTV.setText(savedInstanceState.getString("side_tv"));
+        rhombusPDiaognalQET.setText(savedInstanceState.getString("pdiagonal_et1"));
+        rhombusPDiaognalAreaET.setText(savedInstanceState.getString("pdiagonal_et2"));
+        rhombusPDiaognalAnswerTV.setText(savedInstanceState.getString("pdiagonal_tv"));
+        rhombusQDiagonalPET.setText(savedInstanceState.getString("qdiagonal_et1"));
+        rhombusQDiagonalAreaET.setText(savedInstanceState.getString("qdiagonal_et2"));
+        rhombusQDiagonalAnswerTV.setText(savedInstanceState.getString("qdiagonal_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    private void perimeterResource() {
         //Perimeter
         rhombusPerimeterAET = (EditText) findViewById(R.id.rhombus_perimeter_a_et);
         rhombusPerimeterAnswerTV = (TextView) findViewById(R.id.rhombus_perimeter_calc_answer_tx);
@@ -137,6 +164,19 @@ public class Rhombus extends AppCompatActivity {
             }
         });
 
+        // Perimeter Clear button
+        rhombusPerimeterClearButton = (Button) findViewById(R.id.rhombus_perimeter_clear_button);
+        rhombusPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusPerimeterAET.setText("");
+                rhombusPerimeterAnswerTV.setText("");
+            }
+        });
+
+    }
+
+    private void areaResource() {
         //Area
         rhombusAreaPET = (EditText) findViewById(R.id.rhombus_area_p_et);
         rhombusAreaQET = (EditText) findViewById(R.id.rhombus_area_q_et);
@@ -168,6 +208,22 @@ public class Rhombus extends AppCompatActivity {
         });
 
 
+        // Area Clear button
+        rhombusAreaClearButton = (Button) findViewById(R.id.rhombus_area_clear_button);
+        rhombusAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusAreaPET.setText("");
+                rhombusAreaQET.setText("");
+                rhombusAreaAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void sideResource() {
+
         //Sides
         rhombusSidesPET = (EditText) findViewById(R.id.rhombus_sides_perimeter_et);
         rhombusSidesAnswerTV = (TextView) findViewById(R.id.rhombus_sides_calc_answer_tx);
@@ -192,6 +248,21 @@ public class Rhombus extends AppCompatActivity {
             }
         });
 
+
+        // Sides Clear button
+        rhombusSidesClearButton = (Button) findViewById(R.id.rhombus_sides_clear_button);
+        rhombusSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusSidesPET.setText("");
+                rhombusSidesAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void diagonalPResource() {
         //Diagonal P
         rhombusPDiaognalQET = (EditText) findViewById(R.id.rhombus_p_diagonal_q_et);
         rhombusPDiaognalAreaET = (EditText) findViewById(R.id.rhombus_p_diagonal_area_et);
@@ -220,8 +291,21 @@ public class Rhombus extends AppCompatActivity {
                 }
             }
         });
+        // P Diagonal Clear button
+        rhombusPDiaognalClearButton = (Button) findViewById(R.id.rhombus_p_diagonal_clear_button);
+        rhombusPDiaognalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusPDiaognalQET.setText("");
+                rhombusPDiaognalAreaET.setText("");
+                rhombusPDiaognalAnswerTV.setText("");
+            }
+        });
 
 
+    }
+
+    private void diaognalQResource() {
         //Diagonal Q
         rhombusQDiagonalPET = (EditText) findViewById(R.id.rhombus_q_diagonal_p_et);
         rhombusQDiagonalAreaET = (EditText) findViewById(R.id.rhombus_q_diagonal_area_et);
@@ -251,6 +335,22 @@ public class Rhombus extends AppCompatActivity {
                 }
             }
         });
+
+        // Q Diagonal Clear button
+        rhombusQDiagonalClearButton = (Button) findViewById(R.id.rhombus_q_diagonal_clear_button);
+        rhombusQDiagonalClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rhombusQDiagonalPET.setText("");
+                rhombusQDiagonalAreaET.setText("");
+                rhombusQDiagonalAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    private void fontResource() {
 
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
@@ -340,61 +440,10 @@ public class Rhombus extends AppCompatActivity {
         rhombusQDiagonalCalcButton.setTypeface(myTypeFace);
         rhombusQDiagonalClearButton.setTypeface(myTypeFace);
 
-    }
-
-
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
 
     }
 
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
 
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 
 }

@@ -21,13 +21,11 @@ import io.github.kexanie.library.MathView;
 
 public class Decagon extends AppCompatActivity {
 
-
     //area
     EditText decagonareaET;
     TextView decagonareaTV;
     Button decagonareaCalcButton;
     Button decagonAreaClearButton;
-
 
     //perimeter
     EditText decagonPerimeterET;
@@ -36,7 +34,6 @@ public class Decagon extends AppCompatActivity {
     Button decagonPerimeterClearButton;
 
     //Sides
-
     EditText decagonSideET;
     TextView decagonSideTV;
     Button decagonSideCalcButton;
@@ -47,39 +44,73 @@ public class Decagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_decagon);
 
-        // Area Clear button
-        decagonAreaClearButton = (Button) findViewById(R.id.decagon_area_clear_button);
-        decagonAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                decagonareaET.setText("");
-                decagonareaET.setText("");
+        areaResource();
+        perimeterResource();
+        sideResource();
+        fontResource();
 
-            }
-        });
 
-        // Perimeter Clear button
-        decagonPerimeterClearButton = (Button) findViewById(R.id.decagon_perimeter_clear_button);
-        decagonPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                decagonPerimeterET.setText("");
-                decagonPerimeterTV.setText("");
+    }
 
-            }
-        });
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
-        // Sides Clear button
-        decagonSidesClearButton = (Button) findViewById(R.id.decagon_sides_clear_button);
-        decagonSidesClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                decagonSideET.setText("");
-                decagonSideTV.setText("");
 
-            }
-        });
+        outState.putString("area_et", decagonareaET.getText().toString());
+        outState.putString("area_tv", decagonareaTV.getText().toString());
+        outState.putString("perimeter_et", decagonPerimeterET.getText().toString());
+        outState.putString("perimeter_tv", decagonPerimeterTV.getText().toString());
+        outState.putString("side_et", decagonSideET.getText().toString());
+        outState.putString("side_tv", decagonSideTV.getText().toString());
 
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        decagonareaET.setText(savedInstanceState.getString("area_et"));
+        decagonareaTV.setText(savedInstanceState.getString("area_tv"));
+        decagonPerimeterET.setText(savedInstanceState.getString("perimeter_et"));
+        decagonPerimeterTV.setText(savedInstanceState.getString("perimeter_tv"));
+        decagonSideET.setText(savedInstanceState.getString("side_et"));
+        decagonSideTV.setText(savedInstanceState.getString("side_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+    private void areaResource() {
         decagonareaET = (EditText) findViewById(R.id.decagon_area_a_et);
         decagonareaTV = (TextView) findViewById(R.id.decagon_area_calc_answer_tx);
         decagonareaCalcButton = (Button) findViewById(R.id.decagon_area_calc_button);
@@ -102,6 +133,21 @@ public class Decagon extends AppCompatActivity {
             }
         });
 
+        // Area Clear button
+        decagonAreaClearButton = (Button) findViewById(R.id.decagon_area_clear_button);
+        decagonAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decagonareaET.setText("");
+                decagonareaET.setText("");
+
+            }
+        });
+
+
+    }
+
+    private void perimeterResource() {
 
         //perimeter
         decagonPerimeterET = (EditText) findViewById(R.id.decagon_perimeter_v_et);
@@ -126,7 +172,21 @@ public class Decagon extends AppCompatActivity {
             }
         });
 
+        // Perimeter Clear button
+        decagonPerimeterClearButton = (Button) findViewById(R.id.decagon_perimeter_clear_button);
+        decagonPerimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decagonPerimeterET.setText("");
+                decagonPerimeterTV.setText("");
 
+            }
+        });
+
+
+    }
+
+    private void sideResource() {
         //sides
 
         decagonSideET = (EditText) findViewById(R.id.decagon_sides_a_et);
@@ -155,9 +215,24 @@ public class Decagon extends AppCompatActivity {
             }
         });
 
+        // Sides Clear button
+        decagonSidesClearButton = (Button) findViewById(R.id.decagon_sides_clear_button);
+        decagonSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                decagonSideET.setText("");
+                decagonSideTV.setText("");
+
+            }
+        });
 
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+    }
+
+    private void fontResource() {
+
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.decagon_area_text);
         assert myTextView != null;
@@ -202,58 +277,6 @@ public class Decagon extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 
 }

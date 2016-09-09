@@ -1,31 +1,21 @@
 package calcpa.calcsummerproject.Geometry.Circle;
 
-import android.content.res.Configuration;
-import android.graphics.Color;
+
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.Html;
-import android.text.TextUtils;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
-import io.github.kexanie.library.MathView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
 public class Circle extends AppCompatActivity {
-
 
     //area
     EditText circleAreaET;
@@ -42,7 +32,6 @@ public class Circle extends AppCompatActivity {
     EditText circleDiameterET;
     TextView circleDiameterTV;
     Button circleDiameterCalculateButton;
-
 
     //circumference
     EditText circleCircumET;
@@ -69,7 +58,6 @@ public class Circle extends AppCompatActivity {
 
     }
 
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -82,7 +70,7 @@ public class Circle extends AppCompatActivity {
         outState.putString("circum_tv", circleCircumTV.getText().toString());
         outState.putString("radius_et", circleRadiusAreaET.getText().toString());
         outState.putString("radius_tv", circleRadiusTV.getText().toString());
-     }
+    }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
@@ -127,7 +115,6 @@ public class Circle extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
     }
-
 
     private void areaResource() {
 
@@ -269,7 +256,7 @@ public class Circle extends AppCompatActivity {
         });
     }
 
-    private void fontResource(){
+    private void fontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.circle_area_text);
         myTextView.setTypeface(myTypeFace);

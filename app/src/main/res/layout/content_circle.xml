@@ -310,7 +310,7 @@
             android:ems="6"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:hint="@string/letter_r"
+            android:hint="@string/radius"
             android:inputType="numberDecimal"
             android:maxLines="1"
             android:textColor="@color/white"

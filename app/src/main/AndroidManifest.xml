@@ -30,35 +30,29 @@
         </activity>
         <activity
             android:name=".TipCalculator.TipCalculator"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_tip_calculator"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BasicCalculator.BasicCalc"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_basic_calc"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Geometry.Geometry"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_geometry"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Triangle.Triangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_triangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Square.Square"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_square"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Rectangle.Rectangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_rectangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
@@ -69,37 +63,31 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Parallelogram.Parallelogram"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_parallelogram"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Trapezoid.Trapezoid"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_trapezoid"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Kite.Kite"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_kite"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Hexagon.Hexagon"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_hexagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Pentagon.Pentagon"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_pentagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Octagon.Octagon"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_octagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
@@ -110,7 +98,6 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Nonagon.Nonagon"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_nonagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
@@ -121,77 +108,65 @@
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Circle.Circle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_circle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Eclipse.Eclipse"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_eclipse"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
-         <activity
+        <activity
             android:name=".Geometry.Cube.Cube"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_cube"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Cuboid.Cuboid"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_cuboid"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
-         <activity
+        <activity
             android:name=".Geometry.Cylinder.Cylinder"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_cylinder"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Cone.Cone"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_cone"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
-          <activity
+        <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.AcuteTriangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_acute_triangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.RightTriangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_right_triangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.ObtuseTriangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_obtuse_triangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.EquilateralTriangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_equilateral_triangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.IsoscelesTriangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_isosceles_triangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".Geometry.Triangle.TypesOfTriangle.ScaleneTriangle"
-            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_scalene_triangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
 
-     </application>
+    </application>
 
 </manifest>

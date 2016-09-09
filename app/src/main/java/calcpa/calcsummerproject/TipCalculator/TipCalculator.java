@@ -1,5 +1,6 @@
 package calcpa.calcsummerproject.TipCalculator;
 
+import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -131,7 +132,7 @@ public class TipCalculator extends AppCompatActivity {
 
     }
 
-    // Called when a device changes in some way.
+    // Called when a device changes its state
     protected void onSaveInstanceState(Bundle outState){
 
         super.onSaveInstanceState(outState);

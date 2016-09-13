@@ -1,5 +1,6 @@
 package calcpa.calcsummerproject.BasicCalculator;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -66,9 +67,94 @@ public class BasicCalc extends AppCompatActivity {
         // Find and set OnClickListener to operator buttons, equal button and decimal point button
         setOperatorOnClickListener();
 
+        fontResource();
+
+
 
     }
 
+    private void fontResource(){
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "CaviarDreams.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.text_view);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnPowerTwo);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnClear);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnSeven);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnEight);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnNine);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnDivision);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnFour);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnFive);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnSix);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnMultiplication);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnOne);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnTwo);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnThree);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnMinus);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnZero);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnPoint);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.btnEqual);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.btnPlus);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+    }
 
     //  Find and set OnClickListener to numeric buttons.
 

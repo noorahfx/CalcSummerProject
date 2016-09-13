@@ -1,14 +1,16 @@
 package calcpa.calcsummerproject.HomePage;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
-import calcpa.calcsummerproject.BasicCalculator.BasicCalc;
+ import calcpa.calcsummerproject.BasicCalculator.BasicCalc;
 import calcpa.calcsummerproject.Geometry.Geometry;
 import calcpa.calcsummerproject.R;
 import calcpa.calcsummerproject.TipCalculator.TipCalculator;
@@ -16,46 +18,45 @@ import calcpa.calcsummerproject.TipCalculator.TipCalculator;
 public class CalcHomePage extends AppCompatActivity {
 
 
-
-
-
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
-         Button algebraIButton;
+        /**  Button algebraIButton;
          Button algebraIIButton;
          Button statButton;
-         Button calculusButton;
-         Button tipCalculatorButton;
+         Button calculusButton; */
+        Button workPlzButton;
+        Button tipCalculatorButton;
 
-         Button geometryButton;
+        Button geometryButton;
 
-         Button workPlzButton;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_home_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        algebraIButton = (Button)findViewById(R.id.algebraI);
-        algebraIIButton = (Button)findViewById(R.id.algebraII);
-        statButton = (Button)findViewById(R.id.statistic);
-        calculusButton= (Button)findViewById(R.id.calcI);
-        tipCalculatorButton = (Button)findViewById(R.id.tipCalculator);
-        geometryButton =(Button)findViewById(R.id.geomtery);
+        /**   algebraIButton = (Button)findViewById(R.id.algebraI);
+         algebraIIButton = (Button)findViewById(R.id.algebraII);
+         statButton = (Button)findViewById(R.id.statistic);
+         calculusButton= (Button)findViewById(R.id.calcI); */
+        tipCalculatorButton = (Button) findViewById(R.id.tipCalculator);
+        geometryButton = (Button) findViewById(R.id.geomtery);
 
-        workPlzButton =(Button)findViewById(R.id.basicCalcBtn);
+        workPlzButton = (Button) findViewById(R.id.basicCalcBtn);
 
-        workPlzButton.setOnClickListener(new View.OnClickListener(){
+        assert workPlzButton != null;
+        workPlzButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //do something
-                Intent intent  = new Intent(CalcHomePage.this, BasicCalc.class);
+//do something
+                Intent intent = new Intent(CalcHomePage.this, BasicCalc.class);
                 startActivity(intent);
             }
         });
 
 
+        assert tipCalculatorButton != null;
         tipCalculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,6 +65,7 @@ public class CalcHomePage extends AppCompatActivity {
             }
         });
 
+        assert geometryButton != null;
         geometryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,39 +76,43 @@ public class CalcHomePage extends AppCompatActivity {
         });
 
 
-        algebraIButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                //do something
-            }
-        });
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.home_page_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
 
-        algebraIIButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                //do something
-            }
-        });
+        workPlzButton.setTypeface(myTypeFace);
+        tipCalculatorButton.setTypeface(myTypeFace);
+        geometryButton.setTypeface(myTypeFace);
+/**
+ algebraIButton.setOnClickListener(new View.OnClickListener(){
+@Override public void onClick(View view) {
+//do something
+}
+});
 
-        statButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                //do something
-            }
-        });
+ algebraIIButton.setOnClickListener(new View.OnClickListener(){
+@Override public void onClick(View view){
+//do something
+}
+});
 
-        calculusButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                //do something
-            }
-        });
+ statButton.setOnClickListener(new View.OnClickListener(){
+@Override public void onClick(View view) {
+//do something
+}
+});
 
+ calculusButton.setOnClickListener(new View.OnClickListener(){
+@Override public void onClick(View view) {
+//do something
+}
+});
 
+ */
 
 
     }
-
 
 
     @Override
@@ -125,22 +131,22 @@ public class CalcHomePage extends AppCompatActivity {
     }
 
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
     }
 
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
     }
 
     @Override
-    public void onStop(){
+    public void onStop() {
         super.onStop();
     }
 
     @Override
-    public void onDestroy(){
+    public void onDestroy() {
         super.onDestroy();
     }
 }

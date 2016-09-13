@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#cfcfc4"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HomePage.CalcHomePage"
@@ -14,45 +15,69 @@
         android:id="@+id/home_page_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/home_page"/>
-    <Button
-        android:id="@+id/basicCalcBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculator"
-        />
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="CalcKalla"
+        android:textColor="@color/Black"
+        android:textSize="30sp" />
+
+     <Button
+         android:id="@+id/basicCalcBtn"
+         android:layout_width="140dp"
+         android:layout_height="wrap_content"
+         android:text="Calculator"
+         android:background="@drawable/red_button"
+         android:textColor="@color/white"
+         android:textSize="13sp"
+         android:layout_gravity="center"
+         android:layout_marginTop="50dp"
+
+
+         />
 
     <Button
         android:id="@+id/tipCalculator"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="Tip Calculator"/>
+        android:background="@drawable/red_button"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Tip Calculator" />
+
+
 
     <Button
         android:id="@+id/geomtery"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="Geometry"/>
-    <Button
-        android:id="@+id/algebraI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/algebra_I"/>
-    <Button
-        android:id="@+id/algebraII"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/algebra_II"/>
-    <Button
-        android:id="@+id/statistic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/statistic"/>
-    <Button
-        android:id="@+id/calcI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calc_I"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Geometry"
+        android:background="@drawable/red_button"
+        android:textColor="@color/white"
+        android:textSize="13sp"/>
+    <!--  <Button
+          android:id="@+id/algebraI"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/algebra_I"/>
+      <Button
+          android:id="@+id/algebraII"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/algebra_II"/>
+      <Button
+          android:id="@+id/statistic"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/statistic"/>
+      <Button
+          android:id="@+id/calcI"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/calc_I"/>
 
-
+  -->
 </LinearLayout>

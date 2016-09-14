@@ -216,14 +216,16 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_1"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/trapezoid_perimeter_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
+
+
 
 
         <TextView
@@ -392,14 +394,15 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_2"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/trapezoid_area_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
+
 
         <TextView
             android:id="@+id/trapezoid_height_text"
@@ -567,14 +570,16 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_3"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/trapezoid_height_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
+
+
 
         <TextView
             android:id="@+id/trapezoid_baseA_text"
@@ -778,14 +783,15 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_4"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/trapezoid_baseA_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
+
 
 
         <TextView
@@ -985,13 +991,15 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-        <TextView
+
+        <View
             android:id="@+id/hline_5"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/trapezoid_baseB_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
 
         <TextView
             android:id="@+id/trapezoid_sideC_text"
@@ -1193,14 +1201,15 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_6"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/trapezoid_sideC_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp"/>
+
+
 
         <TextView
             android:id="@+id/trapezoid_sideD_text"
@@ -1398,14 +1407,14 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_7"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/trapezoid_sideD_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
 
     </RelativeLayout>
 </ScrollView>

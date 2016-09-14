@@ -118,14 +118,16 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_1"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/non_perimeter_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp" />
+
+
+
 
         <TextView
             android:id="@+id/non_area_text"
@@ -227,14 +229,16 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_2"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/non_area_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp" />
+
+
+
 
 
         <TextView
@@ -340,13 +344,13 @@
             android:textSize="13sp" />
 
 
-        <TextView
+         <View
             android:id="@+id/hline_3"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/non_side_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp" />
 
 
     </RelativeLayout>

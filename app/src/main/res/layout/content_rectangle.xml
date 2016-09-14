@@ -153,14 +153,16 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_1"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_perimeter_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
+
+
 
         <TextView
             android:id="@+id/rectangle_area_text"
@@ -297,14 +299,15 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_2"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_area_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
+
 
 
         <TextView
@@ -441,14 +444,15 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_3"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_length_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
+
 
         <TextView
             android:id="@+id/rectangle_width_text"
@@ -586,14 +590,16 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-        <TextView
+        <View
             android:id="@+id/hline_4"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_width_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp"/>
+
+
+
 
         <TextView
             android:id="@+id/rectangle_diagonal_text"
@@ -733,13 +739,15 @@
             android:textSize="13sp" />
 
 
-        <TextView
+
+        <View
             android:id="@+id/hline_5"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_diagonal_clear_button"
-            android:layout_marginTop="5dp"  />
+            android:layout_marginTop="35dp"/>
+
 
 
     </RelativeLayout>

@@ -11,7 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Heptagon.Heptagon"
-    tools:showIn="@layout/activity_heptagon">
+    tools:showIn="@layout/activity_heptagon"
+    android:scrollbarThumbVertical="@drawable/scrollbar">
 
 
     <RelativeLayout

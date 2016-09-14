@@ -33,8 +33,7 @@ public class CalcHomePage extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_home_page);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         /**   algebraIButton = (Button)findViewById(R.id.algebraI);
          algebraIIButton = (Button)findViewById(R.id.algebraII);

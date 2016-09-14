@@ -11,7 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Cuboid.Cuboid"
-    tools:showIn="@layout/activity_cuboid">
+    tools:showIn="@layout/activity_cuboid"
+    android:scrollbarThumbVertical="@drawable/scrollbar">
 
 
 
@@ -186,14 +187,14 @@
                 android:textSize="13sp" />
 
 
-            <TextView
-                android:id="@+id/hline_1"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/cuboid_volume_clear_button"
-                android:layout_marginTop="5dp" />
 
+            <View
+                android:id="@+id/hline_1"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
+                android:layout_below="@id/cuboid_volume_clear_button"
+                android:layout_marginTop="35dp" />
 
 
             <TextView
@@ -365,13 +366,13 @@
 
 
 
-            <TextView
+             <View
                 android:id="@+id/hline_2"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
                 android:layout_below="@id/cuboid_area_clear_button"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="35dp" />
 
 
 

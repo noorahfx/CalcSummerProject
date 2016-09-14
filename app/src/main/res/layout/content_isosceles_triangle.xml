@@ -12,7 +12,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.IsoscelesTriangle"
-    tools:showIn="@layout/activity_isosceles_triangle">
+    tools:showIn="@layout/activity_isosceles_triangle"
+    android:scrollbarThumbVertical="@drawable/scrollbar">
     <!--
         <ScrollView
             android:layout_width="match_parent"

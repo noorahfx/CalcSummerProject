@@ -11,23 +11,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Circle.Circle"
-    tools:showIn="@layout/activity_circle">
+    tools:showIn="@layout/activity_circle"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    >
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginRight="-15dp"
+
+
+             />
 
         <TextView
             android:id="@+id/circle_area_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="45dp"
             android:gravity="center"
             android:text="@string/area"
             android:textColor="@color/Black"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_below="@+id/toolbar"/>
 
         <ImageView
             android:id="@+id/circle_area_img"
@@ -133,7 +149,14 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
+        <View
+            android:id="@+id/hline_1"
+             android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
+            android:layout_below="@id/circle_area_clear_button"
+            android:layout_marginTop="35dp" />
+  <!--
         <TextView
             android:id="@+id/hline_1"
             style="?android:listSeparatorTextViewStyle"
@@ -142,7 +165,7 @@
             android:layout_below="@id/circle_area_clear_button"
             android:layout_marginTop="5dp" />
 
-
+-->
         <TextView
             android:id="@+id/circle_diameter_text"
             android:layout_width="match_parent"
@@ -241,13 +264,14 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-        <TextView
+
+        <View
             android:id="@+id/hline_2"
-            style="?android:listSeparatorTextViewStyle"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/circle_diameter_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp" />
 
 
         <TextView
@@ -350,13 +374,15 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-        <TextView
+        <View
             android:id="@+id/hline_3"
-            style="?android:listSeparatorTextViewStyle"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/circle_circum_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp" />
+
+
 
         <TextView
             android:id="@+id/circle_radius_text"
@@ -457,15 +483,16 @@
             android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
-        <TextView
+        <View
             android:id="@+id/hline_4"
-            style="?android:listSeparatorTextViewStyle"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="5dp"
+            android:background="@drawable/list_divider"
             android:layout_below="@id/circle_radius_clear_button"
-            android:layout_marginTop="5dp" />
-    </RelativeLayout>
+            android:layout_marginTop="35dp" />
+
+
+     </RelativeLayout>
 </ScrollView>
 
 

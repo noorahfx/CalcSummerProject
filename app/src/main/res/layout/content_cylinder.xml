@@ -11,7 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Cylinder.Cylinder"
-    tools:showIn="@layout/activity_cylinder">
+    tools:showIn="@layout/activity_cylinder"
+    android:scrollbarThumbVertical="@drawable/scrollbar">
 
 
         <RelativeLayout
@@ -153,16 +154,13 @@
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
-
-
-             <TextView
+            <View
                 android:id="@+id/hline_1"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
                 android:layout_below="@id/cylinder_volume_clear_button"
-                android:layout_marginTop="5dp" />
-
+                android:layout_marginTop="35dp" />
 
 
             <TextView
@@ -304,14 +302,14 @@
                 android:textSize="13sp" />
 
 
-            <TextView
-                android:id="@+id/hline_2"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/cylinder_radius_clear_button"
-                android:layout_marginTop="5dp" />
 
+            <View
+                android:id="@+id/hline_2"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
+                android:layout_below="@id/cylinder_radius_clear_button"
+                android:layout_marginTop="35dp" />
 
 
             <TextView
@@ -450,14 +448,14 @@
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
-
-             <TextView
+            <View
                 android:id="@+id/hline_3"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
                 android:layout_below="@id/cylinder_height_clear_button"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="35dp" />
+
 
 
 
@@ -598,14 +596,14 @@
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
-
-             <TextView
+            <View
                 android:id="@+id/hline_4"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
                 android:layout_below="@id/cylinder_surface_area_clear_button"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="35dp" />
+
 
 
 
@@ -715,14 +713,14 @@
                 android:textSize="13sp" />
 
 
-
-            <TextView
+            <View
                 android:id="@+id/hline_5"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
                 android:layout_below="@id/cylinder_base_area_clear_button"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="35dp" />
+
 
 
 
@@ -864,13 +862,14 @@
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
-            <TextView
+             <View
                 android:id="@+id/hline_6"
-                style="?android:listSeparatorTextViewStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/list_divider"
                 android:layout_below="@id/cylinder_lateral_surface_clear_button"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="35dp" />
+
 
         </RelativeLayout>
     </ScrollView>

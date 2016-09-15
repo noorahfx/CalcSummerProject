@@ -18,6 +18,8 @@ import calcpa.calcsummerproject.R;
 
 public class BasicCalc extends AppCompatActivity {
 
+    TextView display_box;
+
     //Number buttons IDs
     private int[] numButtons = {
             R.id.btnZero,
@@ -66,11 +68,12 @@ public class BasicCalc extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        display_box =(TextView)findViewById(R.id.text_view);
 
 
 
         // Find the TextView
-        this.output = (TextView) findViewById(R.id.text_view);
+        this.output = display_box;
 
         // Find and set OnClickListener to numeric buttons
         setNumericOnClickListener();
@@ -270,5 +273,20 @@ public class BasicCalc extends AppCompatActivity {
                 lastNume = false;
             }
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("display_output", display_box.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        display_box.setText(savedInstanceState.getString("display_output"));
+
     }
 }

@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:background="@drawable/list_selector"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     android:padding="10dp">
 
     <!--list row left side pic image-->

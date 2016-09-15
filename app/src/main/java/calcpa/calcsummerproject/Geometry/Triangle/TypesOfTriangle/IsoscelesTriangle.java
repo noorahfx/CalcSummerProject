@@ -23,20 +23,6 @@ import io.github.kexanie.library.MathView;
 public class IsoscelesTriangle extends AppCompatActivity {
 
 
-    /**
-     * MathView isosceles_triangle_paramter;
-     * String i_t_paramter = "$$P =2a+b$$";
-     * <p/>
-     * MathView isosceles_triangle_area;
-     * String i_t_area = "$$A =\\frac{bh_{b}}{2}$$";
-     * <p/>
-     * MathView isosceles_triangle_side_a;
-     * String i_t_side_a = "$$a =\\frac{p}{2}-\\frac{b}{2}$$";
-     * <p/>
-     * MathView isosceles_triangle_height;
-     * String i_t_height = "$$h_{b} = \\sqrt{a^{2}-\\frac{b_{2}}{4}}$$";
-     */
-
     //perimeter
     EditText isoTriPerimeterSideET;
     EditText isoTriPerimeterBaseET;
@@ -88,128 +74,16 @@ public class IsoscelesTriangle extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        perimeterResource();
+        areaResource();
+        baseResource();
+        heightResource();
+        sideReesource();
+        fontResource();
+    }
 
+    public void perimeterResource(){
 
-
-        // Perimeter Clear button
-        isoTriPerimClearButton = (Button) findViewById(R.id.iso_tri_perimeter_clear_button);
-        isoTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isoTriPerimeterSideET.setText("");
-                isoTriPerimeterBaseET.setText("");
-                isoTriPerimeterAnswerTV.setText("");
-            }
-        });
-
-
-
-        // Area Clear button
-        isoTriAreaClearButton = (Button) findViewById(R.id.iso_triangle_area_clear_button);
-        isoTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isoTriAreaBaseET.setText("");
-                isoTriAreaHeightET.setText("");
-                isoTriAreaAnswerTV.setText("");
-            }
-        });
-
-
-        // Side Clear button
-        isoTriSideClearButton = (Button) findViewById(R.id.iso_triangle_side_clear_button);
-        isoTriSideClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isoTriSideBaseET.setText("");
-                isoTriSidePerimeterET.setText("");
-                isoTriSideAnswerTV.setText("");
-            }
-        });
-
-
-        // Base Clear button
-        isoTriBaseClearButton = (Button) findViewById(R.id.iso_triangle_base_clear_button);
-        isoTriBaseClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isoTriBaseSideET.setText("");
-                isoTriBasePerimeterET.setText("");
-                isoTriBaseAnswerTV.setText("");
-            }
-        });
-
-        // Height Clear button
-        isoTriHeightClearButton = (Button) findViewById(R.id.iso_triangle_height_clear_button);
-        isoTriHeightClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isoTriHeightBaseET.setText("");
-                isoTriHeightPerimeterET.setText("");
-                isoTriHeightAnswerTV.setText("");
-            }
-        });
-
-
-        /**  Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-         TextView myTextView = (TextView)findViewById(R.id.isosceles_triangle_title);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-         myTextView = (TextView)findViewById(R.id.isosceles_triangle_define_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-         myTextView=(TextView)findViewById(R.id.isosceles_tr_def_str_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-
-
-         myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-         myTextView=(TextView)findViewById(R.id.isosceles_tri_formula_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace = Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-         myTextView = (TextView)findViewById(R.id.isosceles_tr_prop_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-         myTextView = (TextView)findViewById(R.id.isosceles_tr_prop_1_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         isosceles_triangle_paramter =(MathView)findViewById(R.id.isosceles_triangle_paramter);
-         assert isosceles_triangle_paramter != null;
-         isosceles_triangle_paramter.setText(i_t_paramter);
-
-         isosceles_triangle_area = (MathView)findViewById(R.id.isosceles_triangle_area);
-         assert isosceles_triangle_area != null;
-         isosceles_triangle_area.setText(i_t_area);
-
-         isosceles_triangle_side_a =(MathView)findViewById(R.id.isosceles_triangle_side_a);
-         assert isosceles_triangle_side_a != null;
-         isosceles_triangle_side_a.setText(i_t_side_a);
-
-         isosceles_triangle_height =(MathView)findViewById(R.id.isosceles_triangle_height);
-         assert isosceles_triangle_height != null;
-         isosceles_triangle_height.setText(i_t_height);
-
-
-
-         }
-
-         }
-
-         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-         TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-         */
         //initialize the EditText
         //perimeter
         isoTriPerimeterSideET = (EditText) findViewById(R.id.iso_triangle_perimeter_sideA_et);
@@ -224,18 +98,18 @@ public class IsoscelesTriangle extends AppCompatActivity {
                     isoTriPerimeterSideET.setError("Enter Value");
                 } else if (Model.isEmpty(isoTriPerimeterBaseET)) {
                     isoTriPerimeterBaseET.setError("Enter Value");
-               } else {
+                } else {
                     double sideA, baseB,isoTriPerimeter;
                     sideA = Double.parseDouble(isoTriPerimeterSideET.getText().toString());
                     baseB = Double.parseDouble(isoTriPerimeterBaseET.getText().toString());
-                      if (sideA <= 0) {
+                    if (sideA <= 0) {
                         isoTriPerimeterAnswerTV.setText("The variable a should be positive");
                     } else if (baseB <= 0) {
                         isoTriPerimeterAnswerTV.setText("The variable b should be positive");
                     } else if (baseB >=(2 * sideA)) {
                         isoTriPerimeterAnswerTV.setText("Invalid input: make sure b<2*a");
-                  } else {
-                          isoTriPerimeter = 2 * sideA + baseB;
+                    } else {
+                        isoTriPerimeter = 2 * sideA + baseB;
                         isoTriPerimeterAnswerTV.setText(String.format("%.02f", isoTriPerimeter));
                     }
                 }
@@ -243,6 +117,21 @@ public class IsoscelesTriangle extends AppCompatActivity {
         });
 
 
+        // Perimeter Clear button
+        isoTriPerimClearButton = (Button) findViewById(R.id.iso_tri_perimeter_clear_button);
+        isoTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isoTriPerimeterSideET.setText("");
+                isoTriPerimeterBaseET.setText("");
+                isoTriPerimeterAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    public void areaResource(){
         //Area
         isoTriAreaBaseET = (EditText)findViewById(R.id.iso_triangle_area_base_et);
         isoTriAreaHeightET = (EditText)findViewById(R.id.iso_triangle_area_height_et);
@@ -273,6 +162,24 @@ public class IsoscelesTriangle extends AppCompatActivity {
         });
 
 
+
+
+        // Area Clear button
+        isoTriAreaClearButton = (Button) findViewById(R.id.iso_triangle_area_clear_button);
+        isoTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isoTriAreaBaseET.setText("");
+                isoTriAreaHeightET.setText("");
+                isoTriAreaAnswerTV.setText("");
+            }
+        });
+
+
+
+    }
+
+    public void sideReesource(){
         //Side
         isoTriSideBaseET = (EditText)findViewById(R.id.iso_triangle_side_base_et);
         isoTriSidePerimeterET = (EditText)findViewById(R.id.iso_triangle_side_perimeter_et);
@@ -305,6 +212,23 @@ public class IsoscelesTriangle extends AppCompatActivity {
         });
 
 
+
+        // Side Clear button
+        isoTriSideClearButton = (Button) findViewById(R.id.iso_triangle_side_clear_button);
+        isoTriSideClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isoTriSideBaseET.setText("");
+                isoTriSidePerimeterET.setText("");
+                isoTriSideAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+
+    public void baseResource(){
         //Base
         isoTriBaseSideET =(EditText)findViewById(R.id.iso_triangle_base_side_et);
         isoTriBasePerimeterET =(EditText)findViewById(R.id.iso_triangle_base_perimeter_et);
@@ -337,6 +261,22 @@ public class IsoscelesTriangle extends AppCompatActivity {
         });
 
 
+
+        // Base Clear button
+        isoTriBaseClearButton = (Button) findViewById(R.id.iso_triangle_base_clear_button);
+        isoTriBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isoTriBaseSideET.setText("");
+                isoTriBasePerimeterET.setText("");
+                isoTriBaseAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    public void heightResource(){
         //Height
         isoTriHeightBaseET =(EditText)findViewById(R.id.iso_triangle_height_base_et);
         isoTriHeightPerimeterET =(EditText)findViewById(R.id.iso_triangle_height_area_et);
@@ -366,6 +306,19 @@ public class IsoscelesTriangle extends AppCompatActivity {
             }
         });
 
+        // Height Clear button
+        isoTriHeightClearButton = (Button) findViewById(R.id.iso_triangle_height_clear_button);
+        isoTriHeightClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isoTriHeightBaseET.setText("");
+                isoTriHeightPerimeterET.setText("");
+                isoTriHeightAnswerTV.setText("");
+            }
+        });
+    }
+
+    public void fontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.iso_triangle_perimeter_text);
@@ -457,28 +410,6 @@ public class IsoscelesTriangle extends AppCompatActivity {
         isoTriHeightAnswerTV.setTypeface(myTypeFace);
         isoTriHeightCalcButton.setTypeface(myTypeFace);
         isoTriHeightClearButton.setTypeface(myTypeFace);
-
-    }
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
 
     }
 }

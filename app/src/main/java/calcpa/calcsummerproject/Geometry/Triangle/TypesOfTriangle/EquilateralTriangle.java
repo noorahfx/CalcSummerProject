@@ -19,19 +19,6 @@ import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
 public class EquilateralTriangle extends AppCompatActivity {
-    /**
-     * MathView equilateral_triangle_paramter;
-     * String e_t_paramter = "$$P=3a$$";
-     * <p/>
-     * MathView equilateral_triangle_area;
-     * String e_t_area = "$$A=\\frac{\\sqrt{3}}{4}{a^{2}}$$";
-     * <p/>
-     * MathView equilateral_triangle_side_a;
-     * String e_t_side_a = "$$a=\\frac{P}{3}$$";
-     * 
-     * 
-     * 
-     */
 
 
 
@@ -72,91 +59,15 @@ public class EquilateralTriangle extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
+        perimeterResource();
+        areaResource();
+        sideAResource();
+        fontResource();
 
+    }
 
-        // Perimeter Clear button
-        calculateClearButton = (Button) findViewById(R.id.equi_triangle_perimeter_clear_button);
-        calculateClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sideAEditText.setText("");
-                answerEditText.setText("");
-            }
-        });
+    public void perimeterResource(){
 
-        // Area Clear button
-        calculateAreaClearButton = (Button) findViewById(R.id.equi_tri_area_clear_button);
-        calculateAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                areaSideAET.setText("");
-                areaAnswerTV.setText("");
-            }
-        });
-
-
-        // Side A Clear button
-        calculateSideClearButton = (Button) findViewById(R.id.equi_tri_hyp_clear_button);
-        calculateSideClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sideAAreaET.setText("");
-                sideAAnswerTV.setText("");
-            }
-        });
-
-
-
-        /**    Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-         TextView myTextView = (TextView)findViewById(R.id.equilateral_triangle_title);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-         myTextView = (TextView)findViewById(R.id.equilateral_triangle_define_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-         myTextView=(TextView)findViewById(R.id.equilateral_tr_def_str_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-
-
-         myTypeFace=Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-         myTextView=(TextView)findViewById(R.id.equilateral_tri_formula_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace = Typeface.createFromAsset(getAssets(),"[TOP_SECRET].ttf");
-         myTextView = (TextView)findViewById(R.id.equilateral_tr_prop_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         myTypeFace = Typeface.createFromAsset(getAssets(),"CaviarDreams.ttf");
-         myTextView = (TextView)findViewById(R.id.equilateral_tr_prop_1_id);
-         assert myTextView != null;
-         myTextView.setTypeface(myTypeFace);
-
-         equilateral_triangle_paramter =(MathView)findViewById(R.id.equilateral_triangle_paramter);
-         assert equilateral_triangle_paramter != null;
-         equilateral_triangle_paramter.setText(e_t_paramter);
-
-         equilateral_triangle_area = (MathView)findViewById(R.id.equilateral_triangle_area);
-         assert equilateral_triangle_area != null;
-         equilateral_triangle_area.setText(e_t_area);
-
-         equilateral_triangle_side_a =(MathView)findViewById(R.id.equilateral_triangle_side_a);
-         assert equilateral_triangle_side_a != null;
-         equilateral_triangle_side_a.setText(e_t_side_a);  */
-
-
-  /*      Typeface myTypeFace = Typeface.createFromAsset(getAssets(),"Take cover.ttf");
-        TextView myTextView = (TextView)findViewById(R.id.perimeter_text);
-        assert myTextView != null;
-        myTextView.setTypeface(myTypeFace);
-*/
         //initialize the EditText
         sideAEditText = (EditText) findViewById(R.id.equi_triangle_perimeter_sideA_et);
         answerEditText = (TextView) findViewById(R.id.equi_triangle_perimeter_ans_tv);
@@ -180,6 +91,22 @@ public class EquilateralTriangle extends AppCompatActivity {
                 }
             }
         });
+
+
+        // Perimeter Clear button
+        calculateClearButton = (Button) findViewById(R.id.equi_triangle_perimeter_clear_button);
+        calculateClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sideAEditText.setText("");
+                answerEditText.setText("");
+            }
+        });
+
+
+    }
+
+    public void areaResource(){
 
 
         areaSideAET = (EditText) findViewById(R.id.equi_triangle_area_sideA_et);
@@ -206,6 +133,19 @@ public class EquilateralTriangle extends AppCompatActivity {
         });
 
 
+        // Area Clear button
+        calculateAreaClearButton = (Button) findViewById(R.id.equi_tri_area_clear_button);
+        calculateAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                areaSideAET.setText("");
+                areaAnswerTV.setText("");
+            }
+        });
+
+    }
+
+    public void sideAResource(){
         sideAAreaET = (EditText) findViewById(R.id.equi_triangle_side_perimeter_et);
         sideAAnswerTV = (TextView) findViewById(R.id.equi_triangle_side_ans_tv);
         calculateSideAButton = (Button) findViewById(R.id.equi_triangle_side_calc_button);
@@ -228,6 +168,22 @@ public class EquilateralTriangle extends AppCompatActivity {
                 }
             }
         });
+
+        // Side A Clear button
+        calculateSideClearButton = (Button) findViewById(R.id.equi_tri_hyp_clear_button);
+        calculateSideClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sideAAreaET.setText("");
+                sideAAnswerTV.setText("");
+            }
+        });
+
+
+
+    }
+
+    public void fontResource(){
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 

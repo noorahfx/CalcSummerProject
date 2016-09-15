@@ -10,186 +10,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.ObtuseTriangle"
-    tools:showIn="@layout/activity_obtuse_triangle"
-    android:scrollbarThumbVertical="@drawable/scrollbar">
-    <!--
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clickable="false"
-                android:orientation="vertical">
-
-
-                <TextView
-                    android:id="@+id/obtuse_triangle_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"
-                    android:text="Obtuse Triangle"
-                    android:textColor="@color/white"
-                    android:textSize="30sp" />
-
-                <ImageView
-
-                    android:id="@+id/obtuse_triangle_img_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingTop="22dp"
-                    android:src="@drawable/image1" />
-
-                <TextView
-                    android:id="@+id/obtuse_tr_def_str_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    android:paddingBottom="2dp"
-                    android:paddingTop="7dp"
-                    android:text="@string/def_str"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/obtuse_triangle_define_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:paddingBottom="7dp"
-                    android:text="@string/obtuse_triangle_def"
-                    android:textColor="@color/DarkRed"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/obtuse_tr_attr_str"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    android:paddingBottom="7dp"
-                    android:paddingTop="7dp"
-                    android:text="@string/attr_str"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                   <TextView
-                       android:id="@+id/obtuse_tr_hyp_id"
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:padding="2dp"
-                       android:paddingTop="7dp"
-                       android:paddingBottom="7dp"
-                       android:textSize="20sp"
-                       android:textColor="@color/Black"
-                       android:text="@string/hypotenuse" />
-
-                <TextView
-                    android:id="@+id/obtuse_tr_att_1_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:paddingBottom="7dp"
-                    android:paddingTop="7dp"
-                    android:text="@string/obtuse_triangle_attr_1"
-                    android:textColor="@color/DarkRed"
-                    android:textSize="16sp" />
-
-
-
-                <TextView
-                    android:id="@+id/obtuse_tr_prop_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    android:padding="2dp"
-                    android:paddingBottom="7dp"
-                    android:paddingTop="12dp"
-                    android:text="@string/properties_str"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/obtuse_tr_prop_1_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:paddingBottom="7dp"
-                    android:paddingTop="7dp"
-                    android:text="@string/obtuse_triangle_property_1"
-                    android:textColor="@color/DarkRed"
-                    android:textSize="16sp" />
-
-
-                <TextView
-                    android:id="@+id/obtuse_tri_formula_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    android:padding="2dp"
-                    android:paddingBottom="12dp"
-                    android:paddingTop="12dp"
-                    android:text="@string/formula_str"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/obtuse_triangle_paramter"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    auto:engine="KaTeX">
-
-                </io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/obtuse_triangle_area"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX">
-
-                </io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/obtuse_triangle_side_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX">
-
-                </io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/obtuse_triangle_side_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX">
-
-                </io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/obtuse_triangle_side_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX">
-
-                </io.github.kexanie.library.MathView>
-            </LinearLayout>
-        </ScrollView>
-
-    </RelativeLayout>
-     -->
+    tools:showIn="@layout/activity_obtuse_triangle">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
 
         <TextView
@@ -283,8 +112,6 @@
             android:textColorHint="@color/LightGrey" />
 
 
-
-
         <TextView
             android:id="@+id/obtuse_tri_perimeter_sideC_tv"
             android:layout_width="40dp"
@@ -316,8 +143,6 @@
             android:textColorHint="@color/LightGrey" />
 
 
-
-
         <Button
             android:id="@+id/obtuse_tri_perimeter_calc_button"
             android:layout_width="match_parent"
@@ -339,7 +164,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:textColor="@color/red"
+            android:textColor="@color/white"
             android:textSize="21sp" />
 
 
@@ -358,14 +183,9 @@
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/obtuse_tri_perimeter_clear_button"
-            android:layout_marginTop="35dp" />
-
-
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
 
         <TextView
@@ -399,10 +219,6 @@
             android:src="@drawable/obtuse_triangle_area_xxxhdpi" />
 
 
-
-
-
-
         <TextView
             android:id="@+id/obtuse_tri_area_base_tv"
             android:layout_width="40dp"
@@ -433,13 +249,12 @@
             android:textColorHint="@color/LightGrey" />
 
 
-
         <TextView
             android:id="@+id/obtuse_tri_area_height_tv"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_below="@id/obtuse_tri_area_base_tv"
-            android:layout_marginTop="11dp"
+            android:layout_marginTop="7dp"
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
@@ -465,7 +280,6 @@
             android:textColorHint="@color/LightGrey" />
 
 
-
         <Button
             android:id="@+id/obtuse_tri_area_calc_button"
             android:layout_width="match_parent"
@@ -477,7 +291,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
 
         <TextView
@@ -508,10 +321,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/obtuse_tri_area_clear_button"
-            android:layout_marginTop="35dp" />
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
 
         <TextView
@@ -543,7 +355,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_side_a_xxxhdpi" />
-
 
 
         <TextView
@@ -584,7 +395,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="letter_c"
+            android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -603,7 +414,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
 
         <TextView
@@ -634,8 +444,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
-
 
 
         <Button
@@ -677,10 +485,9 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/obtuse_tri_sideA_clear_button"
-            android:layout_marginTop="35dp" />
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
 
         <TextView
@@ -714,8 +521,6 @@
             android:src="@drawable/acute_triangle_base_xxxhdpi" />
 
 
-
-
         <TextView
             android:id="@+id/obtuse_tri_base_sideA_tv"
             android:layout_width="40dp"
@@ -746,7 +551,6 @@
             android:textColorHint="@color/LightGrey" />
 
 
-
         <TextView
             android:id="@+id/obtuse_tri_base_sideC_tx"
             android:layout_width="40dp"
@@ -756,7 +560,7 @@
             android:background="@drawable/red_button"
             android:gravity="center"
             android:maxLines="1"
-            android:text="letter_c"
+            android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -776,7 +580,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
 
         <TextView
@@ -807,8 +610,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
-
 
 
         <Button
@@ -848,14 +649,13 @@
             android:textSize="13sp" />
 
 
-
         <View
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/obtuse_tri_base_clear_button"
-            android:layout_marginTop="35dp" />
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
 
     </RelativeLayout>

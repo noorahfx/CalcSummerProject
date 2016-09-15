@@ -4,12 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:scrollbarThumbVertical="@drawable/scrollbar">
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@color/red"
         android:dividerHeight="2dp"
-        android:listSelector="@drawable/list_selector"/>
+        android:listSelector="@drawable/list_selector"
+        android:scrollbarThumbVertical="@drawable/scrollbar"/>
 </LinearLayout>

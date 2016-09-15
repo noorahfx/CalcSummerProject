@@ -69,75 +69,97 @@ public class Parallelogram extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
+        perimeterResource();
+        areaResource();
+        baseResource();
+        sidesResource();
+        heightResource();
+        fontResource();
 
 
-        // Perimeter Clear button
-        parallPreimeterClearButton = (Button) findViewById(R.id.parallelogram_perimeter_clear_button);
-        parallPreimeterClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                parallelogramPerimeterBaseET.setText("");
-                parallelogramPerimeterAreaET.setText("");
-                parallelogramPerimeterAnswerTV.setText("");
-            }
-        });
+    }
 
-        // Area Clear button
-        parallAreaClearButton = (Button) findViewById(R.id.parallelogram_area_clear_button);
-        parallAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                parallelogramAreaBaseET.setText("");
-                parallelogramAreaHeightET.setText("");
-                parallelogramAreaAnswerTV.setText("");
-            }
-        });
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+        outState.putString("perimeter_et1", parallelogramPerimeterBaseET.getText().toString());
+        outState.putString("perimeter_et2", parallelogramPerimeterAreaET.getText().toString());
+        outState.putString("perimeter_tv", parallelogramPerimeterAnswerTV.getText().toString());
+        outState.putString("area_et1", parallelogramAreaBaseET.getText().toString());
+        outState.putString("area_et2", parallelogramAreaHeightET.getText().toString());
+        outState.putString("area_tv", parallelogramAreaAnswerTV.getText().toString());
+        outState.putString("base_et1", parallelogramBaseSideET.getText().toString());
+        outState.putString("base_et2", parallelogramBasePerimeterET.getText().toString());
+        outState.putString("base_tv", parallelogramBaseAnswerTV.getText().toString());
+        outState.putString("height_et1", parallelogramHeightBaseET.getText().toString());
+        outState.putString("height_et2", parallelogramHeightAreaET.getText().toString());
+        outState.putString("height_tv", parallelogramHeightAnswerTV.getText().toString());
+        outState.putString("side_et1", parallelogramSideBaseET.getText().toString());
+        outState.putString("side_et2", parallelogramSidePerimeterET.getText().toString());
+        outState.putString("side_tv", parallelogramSideAnswerTV.getText().toString());
 
-        // Base Clear button
-        parallBaseClearButton = (Button) findViewById(R.id.parallelogram_base_clear_button);
-        parallBaseClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                parallelogramBaseSideET.setText("");
-                parallelogramBasePerimeterET.setText("");
-                parallelogramBaseAnswerTV.setText("");
-            }
-        });
+    }
 
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
 
-
-        //  height Clear button
-        parallHeightrClearButton = (Button) findViewById(R.id.parallelogram_height_clear_button);
-        parallHeightrClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                parallelogramHeightBaseET.setText("");
-                parallelogramHeightAreaET.setText("");
-                parallelogramHeightAnswerTV.setText("");
-
-            }
-        });
-
-        // Sides Clear button
-        parallSidesClearButton = (Button) findViewById(R.id.parallelogram_side_clear_button);
-        parallSidesClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                parallelogramSideBaseET.setText("");
-                parallelogramSidePerimeterET.setText("");
-                parallelogramSideAnswerTV.setText("");
-
-            }
-        });
+        parallelogramPerimeterBaseET.setText(savedInstanceState.getString("perimeter_et1"));
+        parallelogramPerimeterAreaET.setText(savedInstanceState.getString("perimeter_et2"));
+        parallelogramPerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+        parallelogramAreaBaseET.setText(savedInstanceState.getString("area_et1"));
+        parallelogramAreaHeightET.setText(savedInstanceState.getString("area_et2"));
+        parallelogramAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        parallelogramBaseSideET.setText(savedInstanceState.getString("base_et1"));
+        parallelogramBasePerimeterET.setText(savedInstanceState.getString("base_et2"));
+        parallelogramBaseAnswerTV.setText(savedInstanceState.getString("base_tv"));
+        parallelogramHeightBaseET.setText(savedInstanceState.getString("height_et1"));
+        parallelogramHeightAreaET.setText(savedInstanceState.getString("height_et2"));
+        parallelogramHeightAnswerTV.setText(savedInstanceState.getString("height_tv"));
+        parallelogramSideBaseET.setText(savedInstanceState.getString("side_et1"));
+        parallelogramSidePerimeterET.setText(savedInstanceState.getString("side_et2"));
+        parallelogramSideAnswerTV.setText(savedInstanceState.getString("side_tv"));
+    }
 
 
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+    public void perimeterResource() {
         //Perimeter
-        parallelogramPerimeterBaseET = (EditText)findViewById(R.id.parallelogram_perimeter_base_et);
-        parallelogramPerimeterAreaET = (EditText)findViewById(R.id.parallelogram_perimeter_area_et);
-        parallelogramPerimeterAnswerTV=(TextView)findViewById(R.id.parallelogram_perimeter_calc_answer_tx);
-        parallelogramPerimeterCalcButton =(Button)findViewById(R.id.parallelogram_perimeter_calc_button);
+        parallelogramPerimeterBaseET = (EditText) findViewById(R.id.parallelogram_perimeter_base_et);
+        parallelogramPerimeterAreaET = (EditText) findViewById(R.id.parallelogram_perimeter_area_et);
+        parallelogramPerimeterAnswerTV = (TextView) findViewById(R.id.parallelogram_perimeter_calc_answer_tx);
+        parallelogramPerimeterCalcButton = (Button) findViewById(R.id.parallelogram_perimeter_calc_button);
         parallelogramPerimeterCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -151,12 +173,12 @@ public class Parallelogram extends AppCompatActivity {
                     base = Double.parseDouble(parallelogramPerimeterBaseET.getText().toString());
                     aSide = Double.parseDouble(parallelogramPerimeterAreaET.getText().toString());
                     if (base <= 0) {
-                        parallelogramPerimeterAreaET.setText("The variable b should be positive");
+                        parallelogramPerimeterAnswerTV.setText("The variable b should be positive");
                     } else if (aSide <= 0) {
-                        parallelogramPerimeterAreaET.setText("The variable A should be positive");
+                        parallelogramPerimeterAnswerTV.setText("The variable A should be positive");
                     } else {
                         paralPerim = 2 * (aSide + base);
-                        parallelogramPerimeterAreaET.setText(String.format("%.02f", paralPerim));
+                        parallelogramPerimeterAnswerTV.setText(String.format("%.02f", paralPerim));
                     }
 
                 }
@@ -164,11 +186,24 @@ public class Parallelogram extends AppCompatActivity {
         });
 
 
+        // Perimeter Clear button
+        parallPreimeterClearButton = (Button) findViewById(R.id.parallelogram_perimeter_clear_button);
+        parallPreimeterClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramPerimeterBaseET.setText("");
+                parallelogramPerimeterAreaET.setText("");
+                parallelogramPerimeterAnswerTV.setText("");
+            }
+        });
+    }
+
+    public void areaResource() {
         //Area
-        parallelogramAreaBaseET = (EditText)findViewById(R.id.parallelogram_area_base_et);
-        parallelogramAreaHeightET = (EditText)findViewById(R.id.parallelogram_area_height_et);
-        parallelogramAreaAnswerTV= (TextView)findViewById(R.id.parallelogram_area_calc_answer_tx);
-        parallelogramAreaCalcButton=(Button)findViewById(R.id.parallelogram_area_calc_button);
+        parallelogramAreaBaseET = (EditText) findViewById(R.id.parallelogram_area_base_et);
+        parallelogramAreaHeightET = (EditText) findViewById(R.id.parallelogram_area_height_et);
+        parallelogramAreaAnswerTV = (TextView) findViewById(R.id.parallelogram_area_calc_answer_tx);
+        parallelogramAreaCalcButton = (Button) findViewById(R.id.parallelogram_area_calc_button);
         parallelogramAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -177,7 +212,7 @@ public class Parallelogram extends AppCompatActivity {
                     parallelogramAreaBaseET.setError("Enter Value");
                 } else if (Model.isEmpty(parallelogramAreaHeightET)) {
                     parallelogramAreaHeightET.setError("Enter Value");
-                }else {
+                } else {
                     double base, height, paralArea;
                     base = Double.parseDouble(parallelogramAreaBaseET.getText().toString());
                     height = Double.parseDouble(parallelogramAreaHeightET.getText().toString());
@@ -195,11 +230,27 @@ public class Parallelogram extends AppCompatActivity {
         });
 
 
+        // Area Clear button
+        parallAreaClearButton = (Button) findViewById(R.id.parallelogram_area_clear_button);
+        parallAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramAreaBaseET.setText("");
+                parallelogramAreaHeightET.setText("");
+                parallelogramAreaAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    public void baseResource() {
+
         //Base
-        parallelogramBaseSideET = (EditText)findViewById(R.id.parallelogram_base_side_a_et);
-        parallelogramBasePerimeterET = (EditText)findViewById(R.id.parallelogram_base_perimeter_et);
-        parallelogramBaseAnswerTV= (TextView)findViewById(R.id.parallelogram_base_calc_answer_tx);
-        parallelogramBaseCalcButton=(Button)findViewById(R.id.parallelogram_base_calc_button);
+        parallelogramBaseSideET = (EditText) findViewById(R.id.parallelogram_base_side_a_et);
+        parallelogramBasePerimeterET = (EditText) findViewById(R.id.parallelogram_base_perimeter_et);
+        parallelogramBaseAnswerTV = (TextView) findViewById(R.id.parallelogram_base_calc_answer_tx);
+        parallelogramBaseCalcButton = (Button) findViewById(R.id.parallelogram_base_calc_button);
         parallelogramBaseCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -208,7 +259,7 @@ public class Parallelogram extends AppCompatActivity {
                     parallelogramBaseSideET.setError("Enter Value");
                 } else if (Model.isEmpty(parallelogramBasePerimeterET)) {
                     parallelogramBasePerimeterET.setError("Enter Value");
-                }else {
+                } else {
                     double area, height, paralBase;
                     height = Double.parseDouble(parallelogramBaseSideET.getText().toString());
                     area = Double.parseDouble(parallelogramBasePerimeterET.getText().toString());
@@ -226,11 +277,27 @@ public class Parallelogram extends AppCompatActivity {
             }
         });
 
+        // Base Clear button
+        parallBaseClearButton = (Button) findViewById(R.id.parallelogram_base_clear_button);
+        parallBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramBaseSideET.setText("");
+                parallelogramBasePerimeterET.setText("");
+                parallelogramBaseAnswerTV.setText("");
+            }
+        });
+
+
+    }
+
+    public void heightResource() {
+
         //height
-        parallelogramHeightBaseET = (EditText)findViewById(R.id.parallelogram_height_base_et);
-        parallelogramHeightAreaET = (EditText)findViewById(R.id.parallelogram_height_area_et);
-        parallelogramHeightAnswerTV= (TextView)findViewById(R.id.parallelogram_height_calc_answer_tx);
-        parallelogramHeightCalcButton=(Button)findViewById(R.id.parallelogram_height_calc_button);
+        parallelogramHeightBaseET = (EditText) findViewById(R.id.parallelogram_height_base_et);
+        parallelogramHeightAreaET = (EditText) findViewById(R.id.parallelogram_height_area_et);
+        parallelogramHeightAnswerTV = (TextView) findViewById(R.id.parallelogram_height_calc_answer_tx);
+        parallelogramHeightCalcButton = (Button) findViewById(R.id.parallelogram_height_calc_button);
         parallelogramHeightCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -239,7 +306,7 @@ public class Parallelogram extends AppCompatActivity {
                     parallelogramHeightBaseET.setError("Enter Value");
                 } else if (Model.isEmpty(parallelogramHeightAreaET)) {
                     parallelogramHeightAreaET.setError("Enter Value");
-                }else {
+                } else {
                     double area, base, paralHeight;
                     base = Double.parseDouble(parallelogramHeightBaseET.getText().toString());
                     area = Double.parseDouble(parallelogramHeightAreaET.getText().toString());
@@ -256,11 +323,27 @@ public class Parallelogram extends AppCompatActivity {
             }
         });
 
+
+        //  height Clear button
+        parallHeightrClearButton = (Button) findViewById(R.id.parallelogram_height_clear_button);
+        parallHeightrClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramHeightBaseET.setText("");
+                parallelogramHeightAreaET.setText("");
+                parallelogramHeightAnswerTV.setText("");
+
+            }
+        });
+
+    }
+
+    public void sidesResource() {
         //Sides
-        parallelogramSideBaseET = (EditText)findViewById(R.id.parallelogram_side_base_et);
-        parallelogramSidePerimeterET = (EditText)findViewById(R.id.parallelogram_side_perimeter_et);
-        parallelogramSideAnswerTV= (TextView)findViewById(R.id.parallelogram_side_calc_answer_tx);
-        parallelogramSideCalcButton=(Button)findViewById(R.id.parallelogram_side_calc_button);
+        parallelogramSideBaseET = (EditText) findViewById(R.id.parallelogram_side_base_et);
+        parallelogramSidePerimeterET = (EditText) findViewById(R.id.parallelogram_side_perimeter_et);
+        parallelogramSideAnswerTV = (TextView) findViewById(R.id.parallelogram_side_calc_answer_tx);
+        parallelogramSideCalcButton = (Button) findViewById(R.id.parallelogram_side_calc_button);
         parallelogramSideCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -270,7 +353,7 @@ public class Parallelogram extends AppCompatActivity {
                     parallelogramSideBaseET.setError("Enter Value");
                 } else if (Model.isEmpty(parallelogramSidePerimeterET)) {
                     parallelogramSidePerimeterET.setError("Enter Value");
-                }else {
+                } else {
                     double base, perimeter, paralSides;
                     base = Double.parseDouble(parallelogramSideBaseET.getText().toString());
                     perimeter = Double.parseDouble(parallelogramSidePerimeterET.getText().toString());
@@ -289,13 +372,26 @@ public class Parallelogram extends AppCompatActivity {
             }
         });
 
+        // Sides Clear button
+        parallSidesClearButton = (Button) findViewById(R.id.parallelogram_side_clear_button);
+        parallSidesClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                parallelogramSideBaseET.setText("");
+                parallelogramSidePerimeterET.setText("");
+                parallelogramSideAnswerTV.setText("");
+
+            }
+        });
 
 
+    }
 
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
+    public void fontResource() {
+
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.parallelogram_perimeter_text);
         myTextView.setTypeface(myTypeFace);
-
 
 
         myTextView = (TextView) findViewById(R.id.parallelogram_perimeter_base_text);
@@ -332,7 +428,6 @@ public class Parallelogram extends AppCompatActivity {
         myTextView.setTypeface(myTypeFace);
 
 
-
         myTextView = (TextView) findViewById(R.id.parallelogram_height_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
@@ -343,11 +438,9 @@ public class Parallelogram extends AppCompatActivity {
         myTextView.setTypeface(myTypeFace);
 
 
-
         myTextView = (TextView) findViewById(R.id.parallelogram_height_area_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
 
 
         myTextView = (TextView) findViewById(R.id.parallelogram_side_text);
@@ -360,12 +453,9 @@ public class Parallelogram extends AppCompatActivity {
         myTextView.setTypeface(myTypeFace);
 
 
-
         myTextView = (TextView) findViewById(R.id.parallelogram_side_perimeter_text);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
-
-
 
 
         parallelogramPerimeterBaseET.setTypeface(myTypeFace);
@@ -389,7 +479,6 @@ public class Parallelogram extends AppCompatActivity {
         parallBaseClearButton.setTypeface(myTypeFace);
 
 
-
         parallelogramHeightBaseET.setTypeface(myTypeFace);
         parallelogramHeightAreaET.setTypeface(myTypeFace);
         parallelogramHeightAnswerTV.setTypeface(myTypeFace);
@@ -402,62 +491,7 @@ public class Parallelogram extends AppCompatActivity {
         parallelogramSideCalcButton.setTypeface(myTypeFace);
         parallSidesClearButton.setTypeface(myTypeFace);
 
-
-
     }
 
-
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
-
-    }
 
 }

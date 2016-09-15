@@ -68,56 +68,16 @@ public class ObtuseTriangle extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        perimeterResource();
+        areaResource();
+        baseResource();
+        sideAResource();
+        fontResource();
 
 
-       // Perimeter Clear button
-        obtuseTriPerimClearButton = (Button) findViewById(R.id.obtuse_tri_perimeter_clear_button);
-        obtuseTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                obtuseTriPerimeterSideAET.setText("");
-                obtuseTriPerimeterBaseET.setText("");
-                obtuseTriPerimeterSideCET.setText("");
-                obtuseTriPerimeterAnsTV.setText("");
-            }
-        });
+    }
 
-        // Area Clear button
-        obtuseTriAreaClearButton = (Button) findViewById(R.id.obtuse_tri_area_clear_button);
-        obtuseTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                obtuseTriAreaBaseET.setText("");
-                obtuseTriAreaHeightET.setText("");
-                obtuseTriAreaAnsTV.setText("");
-            }
-        });
-
-        // Side A Clear button
-        obtuseTriSideAClearButton = (Button) findViewById(R.id.obtuse_tri_sideA_clear_button);
-        obtuseTriSideAClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                obtuseTriSideABaseET.setText("");
-                obtuseTriSideASideCET.setText("");
-                obtuseTriSideAPerimeterET.setText("");
-                obtuseTriSideAAnsTV.setText("");
-            }
-        });
-
-        // Side B Clear button
-        obtuseTriBaseClearButton = (Button) findViewById(R.id.obtuse_tri_base_clear_button);
-        obtuseTriBaseClearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                obtuseTriBaseSideAET.setText("");
-                obtuseTriBaseSideCET.setText("");
-                obtuseTriBasePerimeterET.setText("");
-                obtuseTriBaseAnsTV.setText("");
-            }
-        });
-
-
+    public void perimeterResource() {
         //initialize the EditText
         obtuseTriPerimeterSideAET = (EditText) findViewById(R.id.obtuse_tri_perimeter_sideA_et);
         obtuseTriPerimeterBaseET = (EditText) findViewById(R.id.obtuse_tri_perimeter_sideB_et);
@@ -155,7 +115,22 @@ public class ObtuseTriangle extends AppCompatActivity {
             }
         });
 
+        // Perimeter Clear button
+        obtuseTriPerimClearButton = (Button) findViewById(R.id.obtuse_tri_perimeter_clear_button);
+        obtuseTriPerimClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriPerimeterSideAET.setText("");
+                obtuseTriPerimeterBaseET.setText("");
+                obtuseTriPerimeterSideCET.setText("");
+                obtuseTriPerimeterAnsTV.setText("");
+            }
+        });
 
+
+    }
+
+    public void areaResource() {
         //acute triangle area
 
         obtuseTriAreaBaseET = (EditText) findViewById(R.id.obtuse_tri_area_base_et);
@@ -186,7 +161,21 @@ public class ObtuseTriangle extends AppCompatActivity {
             }
         });
 
+        // Area Clear button
+        obtuseTriAreaClearButton = (Button) findViewById(R.id.obtuse_tri_area_clear_button);
+        obtuseTriAreaClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriAreaBaseET.setText("");
+                obtuseTriAreaHeightET.setText("");
+                obtuseTriAreaAnsTV.setText("");
+            }
+        });
 
+
+    }
+
+    public void sideAResource() {
         //acute triangle side A calculatro
 
         obtuseTriSideABaseET = (EditText) findViewById(R.id.obtuse_tri_sideA_base_et);
@@ -225,6 +214,23 @@ public class ObtuseTriangle extends AppCompatActivity {
             }
         });
 
+        // Side A Clear button
+        obtuseTriSideAClearButton = (Button) findViewById(R.id.obtuse_tri_sideA_clear_button);
+        obtuseTriSideAClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriSideABaseET.setText("");
+                obtuseTriSideASideCET.setText("");
+                obtuseTriSideAPerimeterET.setText("");
+                obtuseTriSideAAnsTV.setText("");
+            }
+        });
+
+
+    }
+
+    public void baseResource() {
+
         //acute triangle side B calculator
 
         obtuseTriBaseSideAET = (EditText) findViewById(R.id.obtuse_tri_base_sideA_et);
@@ -262,8 +268,22 @@ public class ObtuseTriangle extends AppCompatActivity {
                 }
             }
         });
+        // Side B Clear button
+        obtuseTriBaseClearButton = (Button) findViewById(R.id.obtuse_tri_base_clear_button);
+        obtuseTriBaseClearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtuseTriBaseSideAET.setText("");
+                obtuseTriBaseSideCET.setText("");
+                obtuseTriBasePerimeterET.setText("");
+                obtuseTriBaseAnsTV.setText("");
+            }
+        });
 
 
+    }
+
+    public void fontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.obtuse_tri_perimeter_text);
@@ -352,29 +372,6 @@ public class ObtuseTriangle extends AppCompatActivity {
         obtuseTriBaseAnsTV.setTypeface(myTypeFace);
         obtuseTriBaseCalcButton.setTypeface(myTypeFace);
         obtuseTriBaseClearButton.setTypeface(myTypeFace);
-
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-
-        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-
-        }
 
     }
 

@@ -15,134 +15,6 @@
     tools:showIn="@layout/activity_equilateral_triangle"
     android:scrollbarThumbVertical="@drawable/scrollbar">
 
-    <!--
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:clickable="false"
-                android:orientation="vertical">
-
-
-                <TextView
-                    android:id="@+id/equilateral_triangle_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:gravity="center_horizontal"
-                    android:text="equilateral Triangle"
-                    android:textColor="@color/white"
-                    android:textSize="30sp" />
-
-                <ImageView
-
-                    android:id="@+id/equilateral_triangle_img_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingTop="22dp"
-                    android:src="@drawable/equilateral_triangle_xxxhdpi" />
-
-                <TextView
-                    android:id="@+id/equilateral_tr_def_str_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    android:paddingBottom="2dp"
-                    android:paddingTop="8dp"
-                    android:text="@string/def_str"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/equilateral_triangle_define_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:paddingBottom="8dp"
-                    android:text="@string/equilateral_triangle_def"
-                    android:textColor="@color/DarkRed"
-                    android:textSize="16sp" />
-
-
-
-
-                <TextView
-                    android:id="@+id/equilateral_tr_prop_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    android:padding="2dp"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="12dp"
-                    android:text="@string/properties_str"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/equilateral_tr_prop_1_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="@string/equilateral_triangle_property_1"
-                    android:textColor="@color/DarkRed"
-                    android:textSize="16sp" />
-
-
-
-                <TextView
-                    android:id="@+id/equilateral_tri_formula_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    android:padding="2dp"
-                    android:paddingBottom="12dp"
-                    android:paddingTop="12dp"
-                    android:text="@string/formula_str"
-                    android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/equilateral_triangle_paramter"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="fill_horizontal"
-                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/equilateral_triangle_area"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/equilateral_triangle_side_c"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/equilateral_triangle_side_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
-
-                <io.github.kexanie.library.MathView
-                    android:id="@+id/equilateral_triangle_side_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    auto:engine="KaTeX"></io.github.kexanie.library.MathView>
-            </LinearLayout>
-        </ScrollView>
-
-    </RelativeLayout> -->
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -231,7 +103,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/black_button"
             android:gravity="center"
-            android:textColor="@color/red"
+            android:textColor="@color/white"
             android:textSize="21sp" />
 
 

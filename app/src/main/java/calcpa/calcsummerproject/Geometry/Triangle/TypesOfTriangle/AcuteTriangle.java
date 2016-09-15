@@ -83,10 +83,13 @@ public class AcuteTriangle extends AppCompatActivity {
         sideAResource();
         sideBResource();
         hypotenousResource();
+        fontResource();
 
 
 
     }
+
+
 
     private void perimeterResource(){
 
@@ -460,7 +463,6 @@ public class AcuteTriangle extends AppCompatActivity {
         acuteTriBaseAnsTV.setTypeface(myTypeFace);
         acuteTriBaseCalcButton.setTypeface(myTypeFace);
         acuteTriBasesClearButton.setTypeface(myTypeFace);
-
 
     }
 }

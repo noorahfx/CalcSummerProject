@@ -48,12 +48,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_acute_triangle">AcuteTriangle</string>
-    <string name="title_activity_right_triangle">RightTriangle</string>
+    <string name="title_activity_acute_triangle">Acute Triangle</string>
+    <string name="title_activity_right_triangle">Right Triangle</string>
     <string name="title_activity_obtuse_triangle">ObtuseTriangle</string>
-    <string name="title_activity_equilateral_triangle">EquilateralTriangle</string>
-    <string name="title_activity_isosceles_triangle">IsoscelesTriangle</string>
-    <string name="title_activity_scalene_triangle">ScaleneTriangle</string>
+    <string name="title_activity_equilateral_triangle">Equilateral Triangle</string>
+    <string name="title_activity_isosceles_triangle">Isosceles Triangle</string>
+    <string name="title_activity_scalene_triangle">Scalene Triangle</string>
     <string name="title_activity_regular_hexagon">RegularHexagon</string>
     <string name="title_activity_irregular_hexagon">IrregularHexagon</string>
     <string name="title_activity_concave_hexagon">ConcaveHexagon</string>
@@ -280,6 +280,9 @@
 
     <string name="superscript"><html><i>a</i><sup>2</sup>+<i>y</i><sup>2</sup></html></string>
     <string name="subscript"><html>f(x)<sub>1+x</sub></html></string>
+    <string name="leg">Leg</string>
+    <string name="leg_b">Leg B</string>
+    <string name="leg_a">Leg A</string>
 
 
 </resources>

@@ -173,7 +173,7 @@ public class Cube extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(cubeEdgeET)) {
-                    cubeEdgeET.setError("Enter value");
+                    cubeEdgeET.setError("Enter Value");
                 } else {
                     double exp, edge;
                     exp = Double.parseDouble(cubeEdgeET.getText().toString());
@@ -211,7 +211,7 @@ public class Cube extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(cubeSpecialDiagonalET)) {
-                    cubeSpecialDiagonalET.setError("Enter Volume");
+                    cubeSpecialDiagonalET.setError("Enter Value");
                 } else {
                     double edge, specialDiagonal;
                     edge = Double.parseDouble(cubeSpecialDiagonalET.getText().toString());

@@ -38,7 +38,7 @@ public class Geometry extends AppCompatActivity {
     String[] shapeText = {
 
             "Circle", "Cone", "Cube", "Cuboid",
-            "Cylinder", "Decagon", "Eclipse",
+            "Cylinder", "Decagon", "Ellipse",
             "Heptagon", "Hexagon", "Kite", "Nonagon",
             "Octagon", "Parallelogram", "Pentagon",
             "Rectangle", "Rhombus", "Square", "Trapezoid", "Triangle"};

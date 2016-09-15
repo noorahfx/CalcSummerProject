@@ -172,7 +172,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/black_button"
                 android:gravity="center"
-                android:textColor="@color/red"
+                android:textColor="@color/white"
                 android:textSize="21sp" />
 
             <Button

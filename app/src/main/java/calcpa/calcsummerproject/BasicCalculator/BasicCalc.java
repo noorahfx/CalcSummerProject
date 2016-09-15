@@ -56,8 +56,18 @@ public class BasicCalc extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basic_calc);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.calculator);
+       // getSupportActionBar().setIcon(R.drawable.back_button_tb);
+        //enable button in toolbar
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+
 
         // Find the TextView
         this.output = (TextView) findViewById(R.id.text_view);
@@ -87,6 +97,7 @@ public class BasicCalc extends AppCompatActivity {
         myTextView = (TextView) findViewById(R.id.btnClear);
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
+
 
         myTextView = (TextView) findViewById(R.id.btnSeven);
         assert myTextView != null;

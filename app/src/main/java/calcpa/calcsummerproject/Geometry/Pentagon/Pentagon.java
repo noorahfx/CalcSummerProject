@@ -44,6 +44,15 @@ public class Pentagon extends AppCompatActivity {
         setContentView(R.layout.activity_pentagon);
 
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.title_activity_pentagon);
+        // getSupportActionBar().setIcon(R.drawable.back_button_tb);
+        //enable button in toolbar
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         perimeterResource();
         areaResource();
         sideResource();

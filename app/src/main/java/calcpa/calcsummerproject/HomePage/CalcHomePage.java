@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
- import calcpa.calcsummerproject.BasicCalculator.BasicCalc;
+import calcpa.calcsummerproject.BasicCalculator.BasicCalc;
 import calcpa.calcsummerproject.Geometry.Geometry;
 import calcpa.calcsummerproject.R;
 import calcpa.calcsummerproject.TipCalculator.TipCalculator;
@@ -19,8 +19,15 @@ public class CalcHomePage extends AppCompatActivity {
 
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
+        // getSupportActionBar().setIcon(R.drawable.back_button_tb);
+        //enable button in toolbar
+        //  getSupportActionBar().setHomeButtonEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         /**  Button algebraIButton;
          Button algebraIIButton;
          Button statButton;
@@ -34,6 +41,9 @@ public class CalcHomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_home_page);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.home_page);
 
         /**   algebraIButton = (Button)findViewById(R.id.algebraI);
          algebraIIButton = (Button)findViewById(R.id.algebraII);

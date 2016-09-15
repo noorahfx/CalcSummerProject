@@ -45,6 +45,15 @@ public class Octagon extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_octagon);
 
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.title_activity_octagon);
+        // getSupportActionBar().setIcon(R.drawable.back_button_tb);
+        //enable button in toolbar
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         perimeterResource();
         areaResource();
         sideResource();

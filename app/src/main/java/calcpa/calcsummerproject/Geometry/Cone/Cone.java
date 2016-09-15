@@ -72,8 +72,16 @@ public class Cone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cone);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.title_activity_cone);
+        // getSupportActionBar().setIcon(R.drawable.back_button_tb);
+        //enable button in toolbar
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
 
         volumeResource();
         radiusResource();
@@ -83,6 +91,8 @@ public class Cone extends AppCompatActivity {
         baseAreaResource();
         lateralSurfaceResource();
         fontResource();
+
+
 
     }
 

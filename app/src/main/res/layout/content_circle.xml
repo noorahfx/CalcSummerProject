@@ -13,8 +13,7 @@
     tools:context="calcpa.calcsummerproject.Geometry.Circle.Circle"
     tools:showIn="@layout/activity_circle"
     android:scrollbarThumbVertical="@drawable/scrollbar"
-    android:clipToPadding="false"
-    android:clipChildren="false"
+
     >
 
 
@@ -22,28 +21,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-15dp"
-            android:layout_marginTop="-15dp"
-            android:layout_marginRight="-15dp"
 
-
-             />
 
         <TextView
             android:id="@+id/circle_area_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp"
-            android:layout_below="@+id/toolbar"/>
+             />
 
         <ImageView
             android:id="@+id/circle_area_img"

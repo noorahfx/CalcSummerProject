@@ -63,8 +63,6 @@ public class BasicCalc extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.calculator);
-       // getSupportActionBar().setIcon(R.drawable.back_button_tb);
-        //enable button in toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

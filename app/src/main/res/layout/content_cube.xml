@@ -30,7 +30,9 @@
                 android:gravity="center"
                 android:text="@string/volume"
                 android:textSize="30sp"
-                 />
+                android:textColor="@color/Black"
+
+                />
 
             <ImageView
                 android:id="@+id/cube_volume_img"

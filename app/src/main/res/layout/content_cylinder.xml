@@ -26,7 +26,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="@string/volume"
+                 android:textColor="@color/Black"
+                 android:text="@string/volume"
                 android:textSize="30sp" />
 
 

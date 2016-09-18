@@ -106,11 +106,12 @@ public class Trapezoid extends AppCompatActivity {
         areaResource();
         baseAResource();
         baseBResource();
-        fontResource();
-        heightResource();
-        perimeterResource();
+         heightResource();
         sideCResource();
         sideDResource();
+        perimeterResource();
+        fontResource();
+
 
 
     }

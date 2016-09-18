@@ -82,7 +82,92 @@ public class IsoscelesTriangle extends AppCompatActivity {
         fontResource();
     }
 
-    public void perimeterResource(){
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("perimeter_et1", isoTriPerimeterSideET.getText().toString());
+        outState.putString("perimeter_et2", isoTriPerimeterBaseET.getText().toString());
+        outState.putString("perimeter_tv", isoTriPerimeterAnswerTV.getText().toString());
+
+        outState.putString("area_et1", isoTriAreaBaseET.getText().toString());
+        outState.putString("area_et2", isoTriAreaHeightET.getText().toString());
+        outState.putString("area_tv", isoTriAreaAnswerTV.getText().toString());
+
+        outState.putString("base_et1", isoTriBaseSideET.getText().toString());
+        outState.putString("base_et2", isoTriBasePerimeterET.getText().toString());
+        outState.putString("base_tv", isoTriBaseAnswerTV.getText().toString());
+
+        outState.putString("sidea_et1", isoTriSideBaseET.getText().toString());
+        outState.putString("sidea_et2", isoTriSidePerimeterET.getText().toString());
+        outState.putString("sidea_tv", isoTriSideAnswerTV.getText().toString());
+
+        outState.putString("height_et1", isoTriHeightBaseET.getText().toString());
+        outState.putString("height_et2", isoTriHeightPerimeterET.getText().toString());
+        outState.putString("height_tv", isoTriHeightAnswerTV.getText().toString());
+
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+
+        isoTriPerimeterSideET.setText(savedInstanceState.getString("perimeter_et1"));
+        isoTriPerimeterBaseET.setText(savedInstanceState.getString("perimeter_et2"));
+        isoTriPerimeterAnswerTV.setText(savedInstanceState.getString("perimeter_tv"));
+
+        isoTriAreaBaseET.setText(savedInstanceState.getString("area_et1"));
+        isoTriAreaHeightET.setText(savedInstanceState.getString("area_et2"));
+        isoTriAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+
+
+        isoTriBaseSideET.setText(savedInstanceState.getString("base_et1"));
+        isoTriBasePerimeterET.setText(savedInstanceState.getString("base_et2"));
+        isoTriBaseAnswerTV.setText(savedInstanceState.getString("base_tv"));
+
+        isoTriSideBaseET.setText(savedInstanceState.getString("sidea_et1"));
+        isoTriSidePerimeterET.setText(savedInstanceState.getString("sidea_et2"));
+        isoTriSideAnswerTV.setText(savedInstanceState.getString("sidea_tv"));
+        isoTriHeightBaseET.setText(savedInstanceState.getString("height_et1"));
+        isoTriHeightPerimeterET.setText(savedInstanceState.getString("height_et2"));
+        isoTriHeightAnswerTV.setText(savedInstanceState.getString("height_tv"));
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+    public void perimeterResource() {
 
         //initialize the EditText
         //perimeter
@@ -99,14 +184,14 @@ public class IsoscelesTriangle extends AppCompatActivity {
                 } else if (Model.isEmpty(isoTriPerimeterBaseET)) {
                     isoTriPerimeterBaseET.setError("Enter Value");
                 } else {
-                    double sideA, baseB,isoTriPerimeter;
+                    double sideA, baseB, isoTriPerimeter;
                     sideA = Double.parseDouble(isoTriPerimeterSideET.getText().toString());
                     baseB = Double.parseDouble(isoTriPerimeterBaseET.getText().toString());
                     if (sideA <= 0) {
                         isoTriPerimeterAnswerTV.setText("The variable a should be positive");
                     } else if (baseB <= 0) {
                         isoTriPerimeterAnswerTV.setText("The variable b should be positive");
-                    } else if (baseB >=(2 * sideA)) {
+                    } else if (baseB >= (2 * sideA)) {
                         isoTriPerimeterAnswerTV.setText("Invalid input: make sure b<2*a");
                     } else {
                         isoTriPerimeter = 2 * sideA + baseB;
@@ -131,12 +216,12 @@ public class IsoscelesTriangle extends AppCompatActivity {
 
     }
 
-    public void areaResource(){
+    public void areaResource() {
         //Area
-        isoTriAreaBaseET = (EditText)findViewById(R.id.iso_triangle_area_base_et);
-        isoTriAreaHeightET = (EditText)findViewById(R.id.iso_triangle_area_height_et);
-        isoTriAreaAnswerTV = (TextView)findViewById(R.id.iso_triangle_area_ans_tv);
-        isoTriAreaCalcButton = (Button)findViewById(R.id.iso_triangle_area_calc_button);
+        isoTriAreaBaseET = (EditText) findViewById(R.id.iso_triangle_area_base_et);
+        isoTriAreaHeightET = (EditText) findViewById(R.id.iso_triangle_area_height_et);
+        isoTriAreaAnswerTV = (TextView) findViewById(R.id.iso_triangle_area_ans_tv);
+        isoTriAreaCalcButton = (Button) findViewById(R.id.iso_triangle_area_calc_button);
         isoTriAreaCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -146,7 +231,7 @@ public class IsoscelesTriangle extends AppCompatActivity {
                 } else if (Model.isEmpty(isoTriAreaHeightET)) {
                     isoTriAreaHeightET.setError("Enter Value");
                 } else {
-                    double baseB, height,isoTriArea;
+                    double baseB, height, isoTriArea;
                     baseB = Double.parseDouble(isoTriAreaBaseET.getText().toString());
                     height = Double.parseDouble(isoTriAreaHeightET.getText().toString());
                     if (baseB <= 0) {
@@ -154,14 +239,12 @@ public class IsoscelesTriangle extends AppCompatActivity {
                     } else if (height <= 0) {
                         isoTriAreaAnswerTV.setText("The variable h should be positive");
                     } else {
-                        isoTriArea = (baseB * height)/2;
+                        isoTriArea = (baseB * height) / 2;
                         isoTriAreaAnswerTV.setText(String.format("%.02f", isoTriArea));
                     }
                 }
             }
         });
-
-
 
 
         // Area Clear button
@@ -176,15 +259,14 @@ public class IsoscelesTriangle extends AppCompatActivity {
         });
 
 
-
     }
 
-    public void sideReesource(){
+    public void sideReesource() {
         //Side
-        isoTriSideBaseET = (EditText)findViewById(R.id.iso_triangle_side_base_et);
-        isoTriSidePerimeterET = (EditText)findViewById(R.id.iso_triangle_side_perimeter_et);
-        isoTriSideAnswerTV = (TextView)findViewById(R.id.iso_triangle_side_ans_tv);
-        isoTriSideCalcButton = (Button)findViewById(R.id.iso_triangle_side_calc_button);
+        isoTriSideBaseET = (EditText) findViewById(R.id.iso_triangle_side_base_et);
+        isoTriSidePerimeterET = (EditText) findViewById(R.id.iso_triangle_side_perimeter_et);
+        isoTriSideAnswerTV = (TextView) findViewById(R.id.iso_triangle_side_ans_tv);
+        isoTriSideCalcButton = (Button) findViewById(R.id.iso_triangle_side_calc_button);
         isoTriSideCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -194,23 +276,22 @@ public class IsoscelesTriangle extends AppCompatActivity {
                 } else if (Model.isEmpty(isoTriSidePerimeterET)) {
                     isoTriSidePerimeterET.setError("Enter Value");
                 } else {
-                    double baseB, perimeter,isoTriSide;
+                    double baseB, perimeter, isoTriSide;
                     baseB = Double.parseDouble(isoTriSideBaseET.getText().toString());
                     perimeter = Double.parseDouble(isoTriSidePerimeterET.getText().toString());
                     if (baseB <= 0) {
                         isoTriSideAnswerTV.setText("The variable a should be positive");
                     } else if (perimeter <= 0) {
                         isoTriSideAnswerTV.setText("The variable b should be positive");
-                    } else if (perimeter <=(2 * baseB)) {
+                    } else if (perimeter <= (2 * baseB)) {
                         isoTriSideAnswerTV.setText("Invalid input: make sure P<2*a");
-                    }else {
-                        isoTriSide = (perimeter/2)-(baseB/2);
+                    } else {
+                        isoTriSide = (perimeter / 2) - (baseB / 2);
                         isoTriSideAnswerTV.setText(String.format("%.02f", isoTriSide));
                     }
                 }
             }
         });
-
 
 
         // Side Clear button
@@ -228,12 +309,12 @@ public class IsoscelesTriangle extends AppCompatActivity {
     }
 
 
-    public void baseResource(){
+    public void baseResource() {
         //Base
-        isoTriBaseSideET =(EditText)findViewById(R.id.iso_triangle_base_side_et);
-        isoTriBasePerimeterET =(EditText)findViewById(R.id.iso_triangle_base_perimeter_et);
-        isoTriBaseAnswerTV = (TextView)findViewById(R.id.iso_triangle_base_ans_tv);
-        isoTriBaseCalcButton =(Button)findViewById(R.id.iso_triangle_base_calc_button);
+        isoTriBaseSideET = (EditText) findViewById(R.id.iso_triangle_base_side_et);
+        isoTriBasePerimeterET = (EditText) findViewById(R.id.iso_triangle_base_perimeter_et);
+        isoTriBaseAnswerTV = (TextView) findViewById(R.id.iso_triangle_base_ans_tv);
+        isoTriBaseCalcButton = (Button) findViewById(R.id.iso_triangle_base_calc_button);
         isoTriBaseCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -253,13 +334,12 @@ public class IsoscelesTriangle extends AppCompatActivity {
                     } else if (perimeter <= (2 * sideA)) {
                         isoTriBaseAnswerTV.setText("Invalid input: make sure P<2*a");
                     } else {
-                        isoTriBase = perimeter - 2*sideA;
+                        isoTriBase = perimeter - 2 * sideA;
                         isoTriBaseAnswerTV.setText(String.format("%.02f", isoTriBase));
                     }
                 }
             }
         });
-
 
 
         // Base Clear button
@@ -276,12 +356,12 @@ public class IsoscelesTriangle extends AppCompatActivity {
 
     }
 
-    public void heightResource(){
+    public void heightResource() {
         //Height
-        isoTriHeightBaseET =(EditText)findViewById(R.id.iso_triangle_height_base_et);
-        isoTriHeightPerimeterET =(EditText)findViewById(R.id.iso_triangle_height_area_et);
-        isoTriHeightAnswerTV = (TextView)findViewById(R.id.iso_triangle_height_ans_tv);
-        isoTriHeightCalcButton =(Button)findViewById(R.id.iso_triangle_height_calc_button);
+        isoTriHeightBaseET = (EditText) findViewById(R.id.iso_triangle_height_base_et);
+        isoTriHeightPerimeterET = (EditText) findViewById(R.id.iso_triangle_height_area_et);
+        isoTriHeightAnswerTV = (TextView) findViewById(R.id.iso_triangle_height_ans_tv);
+        isoTriHeightCalcButton = (Button) findViewById(R.id.iso_triangle_height_calc_button);
         isoTriHeightCalcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -299,7 +379,7 @@ public class IsoscelesTriangle extends AppCompatActivity {
                     } else if (area <= 0) {
                         isoTriHeightAnswerTV.setText("The variable b should be positive");
                     } else {
-                        isoTriHeight = 2*(area/base);
+                        isoTriHeight = 2 * (area / base);
                         isoTriHeightAnswerTV.setText(String.format("%.02f", isoTriHeight));
                     }
                 }

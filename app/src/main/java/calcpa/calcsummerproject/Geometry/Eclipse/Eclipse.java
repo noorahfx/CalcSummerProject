@@ -1,6 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Eclipse;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -73,6 +74,8 @@ public class Eclipse extends AppCompatActivity {
         circumResource();
         aXisResource();
         bXisResource();
+        fontResource();
+
 
 
     }
@@ -327,6 +330,81 @@ public class Eclipse extends AppCompatActivity {
                 ellipseBXisAnswerTV.setText("");
             }
         });
+    }
+
+    private void fontResource() {
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
+        TextView myTextView = (TextView) findViewById(R.id.ellipse_area_text);
+        myTextView.setTypeface(myTypeFace);
+
+
+        myTextView = (TextView) findViewById(R.id.ellipse_area_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_area_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_a_xis_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_a_xis_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_a_xis_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_b_xis_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_b_xis_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_b_xis_area_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_circum_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_circum_a_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+        myTextView = (TextView) findViewById(R.id.ellipse_circum_b_text);
+        assert myTextView != null;
+        myTextView.setTypeface(myTypeFace);
+
+
+
+        ellipseAreaAET.setTypeface(myTypeFace);
+        ellipseAreaBET.setTypeface(myTypeFace);
+        ellipseAreaAnswerTV.setTypeface(myTypeFace);
+        ellipseAreaCalcButton.setTypeface(myTypeFace);
+        ellipseAreaClearButton.setTypeface(myTypeFace);
+        ellipseCircumAET.setTypeface(myTypeFace);
+        ellipseCircumBET.setTypeface(myTypeFace);
+        ellipseCircumAnswerTV.setTypeface(myTypeFace);
+        ellipseCircumCalcButton.setTypeface(myTypeFace);
+        ellipseCircumClearButton.setTypeface(myTypeFace);
+        ellipseAXisAET.setTypeface(myTypeFace);
+        ellipseAXisBET.setTypeface(myTypeFace);
+        ellipseAXisAnswerTV.setTypeface(myTypeFace);
+        ellipseAXisCalcButton.setTypeface(myTypeFace);
+        ellipseAXisClearButton.setTypeface(myTypeFace);
+        ellipseBXisAET.setTypeface(myTypeFace);
+        ellipseBXisBET.setTypeface(myTypeFace);
+        ellipseBXisAnswerTV.setTypeface(myTypeFace);
+        ellipseBXisCalcButton.setTypeface(myTypeFace);
+        ellipseBXisClearButton.setTypeface(myTypeFace);
+
     }
 
 }

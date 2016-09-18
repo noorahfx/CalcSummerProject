@@ -77,6 +77,87 @@ public class ObtuseTriangle extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("perimeter_et1", obtuseTriPerimeterSideAET.getText().toString());
+        outState.putString("perimeter_et2", obtuseTriPerimeterBaseET.getText().toString());
+        outState.putString("perimeter_et3", obtuseTriPerimeterSideCET.getText().toString());
+        outState.putString("perimeter_tv", obtuseTriPerimeterAnsTV.getText().toString());
+
+        outState.putString("area_et1", obtuseTriAreaBaseET.getText().toString());
+        outState.putString("area_et2", obtuseTriAreaHeightET.getText().toString());
+        outState.putString("area_tv", obtuseTriAreaAnsTV.getText().toString());
+
+        outState.putString("sidea_et1", obtuseTriSideABaseET.getText().toString());
+        outState.putString("sidea_et2", obtuseTriSideASideCET.getText().toString());
+        outState.putString("sidea_et3", obtuseTriSideAPerimeterET.getText().toString());
+        outState.putString("sidea_tv", obtuseTriSideAAnsTV.getText().toString());
+
+        outState.putString("sideb_et1", obtuseTriBaseSideAET.getText().toString());
+        outState.putString("sideb_et2", obtuseTriBaseSideCET.getText().toString());
+        outState.putString("sideb_et3", obtuseTriBasePerimeterET.getText().toString());
+        outState.putString("sideb_tv", obtuseTriBaseAnsTV.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        obtuseTriPerimeterSideAET.setText(savedInstanceState.getString("perimeter_et1"));
+        obtuseTriPerimeterBaseET.setText(savedInstanceState.getString("perimeter_et2"));
+        obtuseTriPerimeterSideCET.setText(savedInstanceState.getString("perimeter_et3"));
+        obtuseTriPerimeterAnsTV.setText(savedInstanceState.getString("perimeter_tv"));
+
+        obtuseTriAreaBaseET.setText(savedInstanceState.getString("area_et1"));
+        obtuseTriAreaHeightET.setText(savedInstanceState.getString("area_et2"));
+        obtuseTriAreaAnsTV.setText(savedInstanceState.getString("area_tv"));
+
+        obtuseTriSideABaseET.setText(savedInstanceState.getString("sidea_et1"));
+        obtuseTriSideASideCET.setText(savedInstanceState.getString("sidea_et2"));
+        obtuseTriSideAPerimeterET.setText(savedInstanceState.getString("sidea_et3"));
+        obtuseTriSideAAnsTV.setText(savedInstanceState.getString("sidea_tv"));
+
+        obtuseTriBaseSideAET.setText(savedInstanceState.getString("sideb_et1"));
+        obtuseTriBaseSideCET.setText(savedInstanceState.getString("sideb_et2"));
+        obtuseTriBasePerimeterET.setText(savedInstanceState.getString("sideb_et3"));
+        obtuseTriBaseAnsTV.setText(savedInstanceState.getString("sideb_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+
     public void perimeterResource() {
         //initialize the EditText
         obtuseTriPerimeterSideAET = (EditText) findViewById(R.id.obtuse_tri_perimeter_sideA_et);

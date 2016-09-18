@@ -78,6 +78,88 @@ public class ScaleneTriangle extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("perimeter_et1", scaleneTriPerimeterSideAET.getText().toString());
+        outState.putString("perimeter_et2", scaleneTriPerimeterBaseET.getText().toString());
+        outState.putString("perimeter_et3", scaleneTriPerimeterSideCET.getText().toString());
+        outState.putString("perimeter_tv", scaleneTriPerimeterAnsTV.getText().toString());
+
+        outState.putString("area_et1", scaleneTriAreaBaseET.getText().toString());
+        outState.putString("area_et2", scaleneTriAreaHeightET.getText().toString());
+        outState.putString("area_tv", scaleneTriAreaAnsTV.getText().toString());
+
+        outState.putString("sidea_et1", scaleneTriSideABaseET.getText().toString());
+        outState.putString("sidea_et2", scaleneTriSideASideCET.getText().toString());
+        outState.putString("sidea_et3", scaleneTriSideAPerimeterET.getText().toString());
+        outState.putString("sidea_tv", scaleneTriSideAAnsTV.getText().toString());
+
+        outState.putString("sideb_et1", scaleneTriBaseSideAET.getText().toString());
+        outState.putString("sideb_et2", scaleneTriBaseSideCET.getText().toString());
+        outState.putString("sideb_et3", scaleneTriBasePerimeterET.getText().toString());
+        outState.putString("sideb_tv", scaleneTriBaseAnsTV.getText().toString());
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        scaleneTriPerimeterSideAET.setText(savedInstanceState.getString("perimeter_et1"));
+        scaleneTriPerimeterBaseET.setText(savedInstanceState.getString("perimeter_et2"));
+        scaleneTriPerimeterSideCET.setText(savedInstanceState.getString("perimeter_et3"));
+        scaleneTriPerimeterAnsTV.setText(savedInstanceState.getString("perimeter_tv"));
+
+        scaleneTriAreaBaseET.setText(savedInstanceState.getString("area_et1"));
+        scaleneTriAreaHeightET.setText(savedInstanceState.getString("area_et2"));
+        scaleneTriAreaAnsTV.setText(savedInstanceState.getString("area_tv"));
+
+        scaleneTriSideABaseET.setText(savedInstanceState.getString("sidea_et1"));
+        scaleneTriSideASideCET.setText(savedInstanceState.getString("sidea_et2"));
+        scaleneTriSideAPerimeterET.setText(savedInstanceState.getString("sidea_et3"));
+        scaleneTriSideAAnsTV.setText(savedInstanceState.getString("sidea_tv"));
+
+        scaleneTriBaseSideAET.setText(savedInstanceState.getString("sideb_et1"));
+        scaleneTriBaseSideCET.setText(savedInstanceState.getString("sideb_et2"));
+        scaleneTriBasePerimeterET.setText(savedInstanceState.getString("sideb_et3"));
+        scaleneTriBaseAnsTV.setText(savedInstanceState.getString("sideb_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
+
     public void perimeterResource() {
 
         //initialize the EditText

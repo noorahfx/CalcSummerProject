@@ -82,6 +82,89 @@ public class RightTriangle extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("perimeter_et1", sideAEditText.getText().toString());
+        outState.putString("perimeter_et2", sideBEditText.getText().toString());
+        outState.putString("perimeter_tv", answerEditText.getText().toString());
+
+        outState.putString("area_et1", areaSideAET.getText().toString());
+        outState.putString("area_et2", areaSideBET.getText().toString());
+        outState.putString("area_tv", areaAnswerTV.getText().toString());
+
+        outState.putString("hyp_et1", hypSideAET.getText().toString());
+        outState.putString("hyp_et2", hypSideBET.getText().toString());
+        outState.putString("hyp_tv", hypAnswerTV.getText().toString());
+
+        outState.putString("sidea_et1", sideAAreaET.getText().toString());
+        outState.putString("sidea_et2", sideALegBET.getText().toString());
+        outState.putString("sidea_tv", sideAAnswerTV.getText().toString());
+
+        outState.putString("sideb_et1", sideBAreaET.getText().toString());
+        outState.putString("sideb_et2", sideBLegAET.getText().toString());
+        outState.putString("sideb_tv", sideBAnswerTV.getText().toString());
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        sideAEditText.setText(savedInstanceState.getString("perimeter_et1"));
+        sideBEditText.setText(savedInstanceState.getString("perimeter_et2"));
+        answerEditText.setText(savedInstanceState.getString("perimeter_tv"));
+
+        areaSideAET.setText(savedInstanceState.getString("area_et1"));
+        areaSideBET.setText(savedInstanceState.getString("area_et2"));
+        areaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+
+        hypSideAET.setText(savedInstanceState.getString("hyp_et1"));
+        hypSideBET.setText(savedInstanceState.getString("hyp_et2"));
+        hypAnswerTV.setText(savedInstanceState.getString("hyp_tv"));
+
+        sideAAreaET.setText(savedInstanceState.getString("sidea_et1"));
+        sideALegBET.setText(savedInstanceState.getString("sidea_et2"));
+        sideAAnswerTV.setText(savedInstanceState.getString("sidea_tv"));
+
+        sideBAreaET.setText(savedInstanceState.getString("sideb_et1"));
+        sideBLegAET.setText(savedInstanceState.getString("sideb_et2"));
+        sideBAnswerTV.setText(savedInstanceState.getString("sideb_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
     public void perimeterResource() {
 
         //initialize the EditText

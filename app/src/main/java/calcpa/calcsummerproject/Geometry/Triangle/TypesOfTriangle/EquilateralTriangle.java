@@ -66,6 +66,64 @@ public class EquilateralTriangle extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("perimeter_et", sideAEditText.getText().toString());
+        outState.putString("perimeter_tv", answerEditText.getText().toString());
+        outState.putString("area_et", areaSideAET.getText().toString());
+        outState.putString("area_tv", areaAnswerTV.getText().toString());
+        outState.putString("side_et", sideAAreaET.getText().toString());
+        outState.putString("side_tv", sideAAnswerTV.getText().toString());
+
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        sideAEditText.setText(savedInstanceState.getString("perimeter_et"));
+        answerEditText.setText(savedInstanceState.getString("perimeter_tv"));
+        areaSideAET.setText(savedInstanceState.getString("area_et"));
+        areaAnswerTV.setText(savedInstanceState.getString("area_tv"));
+        sideAAreaET.setText(savedInstanceState.getString("side_et"));
+        sideAAnswerTV.setText(savedInstanceState.getString("side_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+
     public void perimeterResource(){
 
         //initialize the EditText

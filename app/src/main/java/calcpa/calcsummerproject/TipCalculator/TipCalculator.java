@@ -87,6 +87,12 @@ public class TipCalculator extends AppCompatActivity {
         assert myTextView != null;
         myTextView.setTypeface(myTypeFace);
 
+        billWilthoutTipET.setTypeface(myTypeFace);
+        totalTipET.setTypeface(myTypeFace);
+        finalBillET.setTypeface(myTypeFace);
+
+
+
     }
 
     // Called when the bill before tip amount is changed

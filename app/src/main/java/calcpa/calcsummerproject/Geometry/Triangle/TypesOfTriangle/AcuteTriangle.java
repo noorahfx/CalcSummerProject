@@ -88,6 +88,85 @@ public class AcuteTriangle extends AppCompatActivity {
 
 
     }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("perimeter_et1", acuteTriPerimeterSideAET.getText().toString());
+        outState.putString("perimeter_et2", acuteTriPerimeterBaseET.getText().toString());
+        outState.putString("perimeter_et3", acuteTriPerimeterSideCET.getText().toString());
+        outState.putString("perimeter_tv", acuteTriPerimeterAnsTV.getText().toString());
+        outState.putString("area_et1", acuteTriAreaBaseET.getText().toString());
+        outState.putString("area_et2", acuteTriAreaHeightET.getText().toString());
+        outState.putString("area_tv", acuteTriAreaAnsTV.getText().toString());
+        outState.putString("hyp_et1", acuteTriHypSideAET.getText().toString());
+        outState.putString("hyp_et2", acuteTriHypBaseET.getText().toString());
+        outState.putString("hyp_tv", acuteTriHypAnsTV.getText().toString());
+        outState.putString("sidea_et1", acuteTriSideABaseET.getText().toString());
+        outState.putString("sidea_et2", acuteTriSideASideCET.getText().toString());
+        outState.putString("sidea_et3", acuteTriSideAPerimeterET.getText().toString());
+        outState.putString("sidea_tv", acuteTriSideAAnsTV.getText().toString());
+        outState.putString("sideb_et1", acuteTriBaseSideAET.getText().toString());
+        outState.putString("sideb_et2", acuteTriBaseSideCET.getText().toString());
+        outState.putString("sideb_et3", acuteTriBasePerimeterET.getText().toString());
+        outState.putString("sideb_tv", acuteTriBaseAnsTV.getText().toString());
+
+       }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        acuteTriPerimeterSideAET.setText(savedInstanceState.getString("perimeter_et1"));
+        acuteTriPerimeterBaseET.setText(savedInstanceState.getString("perimeter_et2"));
+        acuteTriPerimeterSideCET.setText(savedInstanceState.getString("perimeter_et3"));
+        acuteTriPerimeterAnsTV.setText(savedInstanceState.getString("perimeter_tv"));
+        acuteTriAreaBaseET.setText(savedInstanceState.getString("area_et1"));
+        acuteTriAreaHeightET.setText(savedInstanceState.getString("area_et2"));
+        acuteTriAreaAnsTV.setText(savedInstanceState.getString("area_tv"));
+        acuteTriHypSideAET.setText(savedInstanceState.getString("hyp_et1"));
+        acuteTriHypBaseET.setText(savedInstanceState.getString("hyp_et2"));
+        acuteTriHypAnsTV.setText(savedInstanceState.getString("hyp_tv"));
+        acuteTriSideABaseET.setText(savedInstanceState.getString("sidea_et1"));
+        acuteTriSideASideCET.setText(savedInstanceState.getString("sidea_et2"));
+        acuteTriSideAPerimeterET.setText(savedInstanceState.getString("sidea_et3"));
+        acuteTriSideAAnsTV.setText(savedInstanceState.getString("sidea_tv"));
+        acuteTriBaseSideAET.setText(savedInstanceState.getString("sideb_et1"));
+        acuteTriBaseSideCET.setText(savedInstanceState.getString("sideb_et2"));
+        acuteTriBasePerimeterET.setText(savedInstanceState.getString("sideb_et3"));
+        acuteTriBaseAnsTV.setText(savedInstanceState.getString("sideb_tv"));
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
 
 
 

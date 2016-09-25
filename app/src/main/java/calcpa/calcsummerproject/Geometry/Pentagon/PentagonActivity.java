@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -95,7 +96,7 @@ public class PentagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(penPerimeterSideAET)) {
-                    penPerimeterSideAET.setError("Enter Value");
+                    penPerimeterSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, pentagonPerimeter;
                     aSide = Double.parseDouble(penPerimeterSideAET.getText().toString());
@@ -133,7 +134,7 @@ public class PentagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(penAreaSideAET)) {
-                    penAreaSideAET.setError("Enter Value");
+                    penAreaSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
 
                 } else {
                     double aSide, pentagonArea;
@@ -169,7 +170,7 @@ public class PentagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(penSideAET)) {
-                    penSideAET.setError("Enter Value");
+                    penSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
 
                 } else {
                     double perimeter, penSideA;

@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 
 import android.widget.Button;
@@ -48,11 +49,11 @@ public class HexagonActivity extends AppCompatActivity {
         // getSupportActionBar().setIcon(R.drawable.back_button_tb);
         //enable button in toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled (true);
 
-        setPerimeterResource();
-        setAreaResource();
-        setSideResource();
+        setPerimeterResource ();
+        setAreaResource ();
+        setSideResource ();
         setFontResource();
 
     }
@@ -101,7 +102,7 @@ public class HexagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(hexPerimeterSideAET)) {
-                    hexPerimeterSideAET.setError("Enter Value");
+                    hexPerimeterSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, hexASide;
                     aSide = Double.parseDouble(hexPerimeterSideAET.getText().toString());
@@ -142,7 +143,7 @@ public class HexagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(hexAreaSideAET)) {
-                    hexAreaSideAET.setError("Enter Value");
+                    hexAreaSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, hexArea;
                     aSide = Double.parseDouble(hexAreaSideAET.getText().toString());
@@ -182,7 +183,7 @@ public class HexagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(hexSideAET)) {
-                    hexSideAET.setError("Enter Value");
+                    hexSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, hexASide;
                     aSide = Double.parseDouble(hexSideAET.getText().toString());

@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -146,9 +147,9 @@ public class CylinderActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(cylinderVolumeRET)) {
-                    cylinderVolumeRET.setError("Enter Radius");
+                    cylinderVolumeRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cylinderVolumeHET)) {
-                    cylinderVolumeHET.setError("Enter Height");
+                    cylinderVolumeHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius, height, cylinderVolume;
                     radius = Double.parseDouble(cylinderVolumeRET.getText().toString());
@@ -192,9 +193,9 @@ public class CylinderActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cylinderRadiusHET)) {
-                    cylinderRadiusHET.setError("Enter Height");
+                    cylinderRadiusHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cylinderRadiusVET)) {
-                    cylinderRadiusVET.setError("Enter Volume");
+                    cylinderRadiusVET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double height, volume, cylinderRadius;
                     height = Double.parseDouble(cylinderRadiusHET.getText().toString());
@@ -239,9 +240,9 @@ public class CylinderActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cylinderHeightRET)) {
-                    cylinderHeightRET.setError("Enter Radius");
+                    cylinderHeightRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cylinderHeightVET)) {
-                    cylinderHeightVET.setError("Enter Volume");
+                    cylinderHeightVET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius, volume, cylinderHeight;
                     radius = Double.parseDouble(cylinderHeightRET.getText().toString());
@@ -286,9 +287,9 @@ public class CylinderActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cylinderSurfaceAreatRET)) {
-                    cylinderSurfaceAreatRET.setError("Enter Radius");
+                    cylinderSurfaceAreatRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cylinderSurfaceAreaHET)) {
-                    cylinderSurfaceAreaHET.setError("Enter Height");
+                    cylinderSurfaceAreaHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius, height, cylinderSurfaceArea;
                     radius = Double.parseDouble(cylinderSurfaceAreatRET.getText().toString());
@@ -334,7 +335,7 @@ public class CylinderActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cylinderBaseAreaRET)) {
-                    cylinderBaseAreaRET.setError("Enter Radius");
+                    cylinderBaseAreaRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius, cylinderBaseArea;
                     radius = Double.parseDouble(cylinderBaseAreaRET.getText().toString());
@@ -375,9 +376,9 @@ public class CylinderActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cylinderLateralSurfaceRET)) {
-                    cylinderLateralSurfaceRET.setError("Enter Radius");
+                    cylinderLateralSurfaceRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cylinderLateralSurfaceHET)) {
-                    cylinderLateralSurfaceHET.setError("Enter Height");
+                    cylinderLateralSurfaceHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius, height, cylinderLateralSurfaceArea;
                     radius = Double.parseDouble(cylinderLateralSurfaceRET.getText().toString());

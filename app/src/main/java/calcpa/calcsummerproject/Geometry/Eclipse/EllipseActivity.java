@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -124,9 +125,9 @@ public class EllipseActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(ellipseAreaAET)) {
-                    ellipseAreaAET.setError("Enter Value");
+                    ellipseAreaAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(ellipseAreaBET)) {
-                    ellipseAreaBET.setError("Enter Value");
+                    ellipseAreaBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aXis, bXis, ellipseArea;
                     aXis = Double.parseDouble(ellipseAreaAET.getText().toString());
@@ -172,9 +173,9 @@ public class EllipseActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(ellipseCircumAET)) {
-                    ellipseCircumAET.setError("Enter Value");
+                    ellipseCircumAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(ellipseCircumBET)) {
-                    ellipseCircumBET.setError("Enter Value");
+                    ellipseCircumBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aXis, bXis, ellipseCircumference;
                     aXis = Double.parseDouble(ellipseCircumAET.getText().toString());
@@ -219,9 +220,9 @@ public class EllipseActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(ellipseAXisAET)) {
-                    ellipseAXisAET.setError("Enter Value");
+                    ellipseAXisAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(ellipseAXisBET)) {
-                    ellipseAXisBET.setError("Enter Value");
+                    ellipseAXisBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double bXis, area, ellipseAXis;
                     bXis = Double.parseDouble(ellipseAXisAET.getText().toString());
@@ -264,9 +265,9 @@ public class EllipseActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(ellipseBXisAET)) {
-                    ellipseBXisAET.setError("Enter Value");
+                    ellipseBXisAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(ellipseBXisBET)) {
-                    ellipseBXisBET.setError("Enter Value");
+                    ellipseBXisBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aXis, area, ellipseBXis;
                     aXis = Double.parseDouble(ellipseBXisAET.getText().toString());

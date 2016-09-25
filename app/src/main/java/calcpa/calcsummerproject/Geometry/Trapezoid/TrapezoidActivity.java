@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -216,13 +217,13 @@ public class TrapezoidActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(trapezoidPerimeterAET)) {
-                    trapezoidPerimeterAET.setError("Enter Value");
+                    trapezoidPerimeterAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidPerimeterBET)) {
-                    trapezoidPerimeterBET.setError("Enter Value");
+                    trapezoidPerimeterBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidPerimeterCET)) {
-                    trapezoidPerimeterCET.setError("Enter Value");
+                    trapezoidPerimeterCET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidPerimeterDET)) {
-                    trapezoidPerimeterDET.setError("Enter Value");
+                    trapezoidPerimeterDET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double baseA, baseB, sideC, sideD, trapezoidPerimeter;
                     baseA = Double.parseDouble(trapezoidPerimeterAET.getText().toString());
@@ -275,11 +276,11 @@ public class TrapezoidActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(trapezoidAreaAET)) {
-                    trapezoidAreaAET.setError("Enter Value");
+                    trapezoidAreaAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidAreaBET)) {
-                    trapezoidAreaBET.setError("Enter Value");
+                    trapezoidAreaBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidAreahET)) {
-                    trapezoidAreahET.setError("Enter Value");
+                    trapezoidAreahET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double baseA, baseB, height, trapezoidArea;
                     baseA = Double.parseDouble(trapezoidAreaAET.getText().toString());
@@ -327,11 +328,11 @@ public class TrapezoidActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(trapezoidHeightAET)) {
-                    trapezoidHeightAET.setError("Enter Value");
+                    trapezoidHeightAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidHeightBET)) {
-                    trapezoidHeightBET.setError("Enter Value");
+                    trapezoidHeightBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidHeightAreaET)) {
-                    trapezoidHeightAreaET.setError("Enter Value");
+                    trapezoidHeightAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double baseA, baseB, area, trapezoidHeight;
                     baseA = Double.parseDouble(trapezoidHeightAET.getText().toString());
@@ -382,13 +383,13 @@ public class TrapezoidActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(trapezoidABaseBET)) {
-                    trapezoidABaseBET.setError("Enter Value");
+                    trapezoidABaseBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidABaseCET)) {
-                    trapezoidABaseCET.setError("Enter Value");
+                    trapezoidABaseCET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidABaseDET)) {
-                    trapezoidABaseDET.setError("Enter Value");
+                    trapezoidABaseDET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidABasePerimeterET)) {
-                    trapezoidABasePerimeterET.setError("Enter Value");
+                    trapezoidABasePerimeterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double baseB, sideC, sideD, perimeter, trapezoidABase;
                     baseB = Double.parseDouble(trapezoidABaseBET.getText().toString());
@@ -453,13 +454,13 @@ public class TrapezoidActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {//check to make sure field is not empty
                 if (Model.isEmpty(trapezoidBBaseAET)) {
-                    trapezoidBBaseAET.setError("Enter Value");
+                    trapezoidBBaseAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidBBaseCET)) {
-                    trapezoidBBaseCET.setError("Enter Value");
+                    trapezoidBBaseCET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidBBaseDET)) {
-                    trapezoidBBaseDET.setError("Enter Value");
+                    trapezoidBBaseDET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidBBasePerimeterET)) {
-                    trapezoidBBasePerimeterET.setError("Enter Value");
+                    trapezoidBBasePerimeterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double baseA, sideC, sideD, perimeter, trapezoidBBase;
                     baseA = Double.parseDouble(trapezoidBBaseAET.getText().toString());
@@ -524,13 +525,13 @@ public class TrapezoidActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(trapezoidCSideAET)) {
-                    trapezoidCSideAET.setError("Enter Value");
+                    trapezoidCSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidCSideBET)) {
-                    trapezoidCSideBET.setError("Enter Value");
+                    trapezoidCSideBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidCSideDET)) {
-                    trapezoidCSideDET.setError("Enter Value");
+                    trapezoidCSideDET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidCSidePET)) {
-                    trapezoidCSidePET.setError("Enter Value");
+                    trapezoidCSidePET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double baseA, baseB, sideD, perimeter, trapezoidSideC;
                     baseA = Double.parseDouble(trapezoidCSideAET.getText().toString());
@@ -603,13 +604,13 @@ public class TrapezoidActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(trapezoidDSideAET)) {
-                    trapezoidDSideAET.setError("Enter Value");
+                    trapezoidDSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidDSideBET)) {
-                    trapezoidDSideBET.setError("Enter Value");
+                    trapezoidDSideBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidDSideCET)) {
-                    trapezoidDSideCET.setError("Enter Value");
+                    trapezoidDSideCET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(trapezoidDSidePET)) {
-                    trapezoidDSidePET.setError("Enter Value");
+                    trapezoidDSidePET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double baseA, baseB, sideC, perimeter, trapezoidSideD;
                     baseA = Double.parseDouble(trapezoidDSideAET.getText().toString());

@@ -1,9 +1,7 @@
 package calcpa.calcsummerproject.Geometry.Circle;
 
-
 import android.graphics.Typeface;
 import android.os.Bundle;
-
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
@@ -11,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
@@ -139,7 +136,8 @@ public class CircleActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty (circleDiameterET)) {
-                    circleDiameterET.setError ("Enter Value");
+                    circleDiameterET.setError
+                            (Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius;
                     radius = Double.parseDouble (circleDiameterET.getText ().toString ());
@@ -152,7 +150,6 @@ public class CircleActivity extends AppCompatActivity {
             }
         });
 
-        //Clear button
         circleDiameterClearButton = (Button) findViewById (R.id.circle_diameter_clear_button);
         circleDiameterClearButton.setOnClickListener (new View.OnClickListener () {
             @Override
@@ -161,13 +158,10 @@ public class CircleActivity extends AppCompatActivity {
                 circleDiameterTV.setText ("");
             }
         });
-
-
     }
 
     private void setCircumResource () {
 
-        //circumference
         circleCircumET = (EditText) findViewById (R.id.circle_circum_c_et);
         circleCircumTV = (TextView) findViewById (R.id.circle_circum_calc_answer_tx);
         circlCircumCalculateButton = (Button) findViewById (R.id.circle_circum_calc_button);
@@ -176,7 +170,8 @@ public class CircleActivity extends AppCompatActivity {
             public void onClick (View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty (circleCircumET)) {
-                    circleCircumET.setError ("Enter Value");
+                    circleCircumET.setError
+                            (Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius;
                     radius = Double.parseDouble (circleCircumET.getText ().toString ());
@@ -188,6 +183,7 @@ public class CircleActivity extends AppCompatActivity {
                 }
             }
         });
+
         //Clear button
         circleCircumCLeranButton = (Button) findViewById (R.id.circle_circum_clear_button);
         circleCircumCLeranButton.setOnClickListener (new View.OnClickListener () {
@@ -201,7 +197,6 @@ public class CircleActivity extends AppCompatActivity {
 
     private void setRadiusResource () {
 
-        //radius
         circleRadiusAreaET = (EditText) findViewById (R.id.circle_radius_c_et);
         circleRadiusTV = (TextView) findViewById (R.id.circle_radius_calc_answer_tx);
         circlRadiusCalculateButton = (Button) findViewById (R.id.circle_radius_calc_button);
@@ -210,7 +205,8 @@ public class CircleActivity extends AppCompatActivity {
             public void onClick (View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty (circleRadiusAreaET)) {
-                    circleRadiusAreaET.setError ("Enter Value");
+                    circleRadiusAreaET.setError
+                            (Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double area;
                     area = Double.parseDouble (circleRadiusAreaET.getText ().toString ());
@@ -222,6 +218,7 @@ public class CircleActivity extends AppCompatActivity {
                 }
             }
         });
+
         //Clear button
         circleRadiusClearButton = (Button) findViewById (R.id.circle_radius_clear_button);
         circleRadiusClearButton.setOnClickListener (new View.OnClickListener () {
@@ -235,36 +232,45 @@ public class CircleActivity extends AppCompatActivity {
 
     private void setFontResource () {
         Typeface myTypeFace = Typeface.createFromAsset (getAssets (), "OptimusPrinceps.ttf");
+
         TextView myTextView = (TextView) findViewById (R.id.circle_area_text);
-        myTextView.setTypeface (myTypeFace);
+        if (myTextView != null) {
+            myTextView.setTypeface (myTypeFace);
+        }
 
         myTextView = (TextView) findViewById (R.id.circle_diameter_text);
-        assert myTextView != null;
-        myTextView.setTypeface (myTypeFace);
+        if (myTextView != null) {
+            myTextView.setTypeface (myTypeFace);
+        }
 
         myTextView = (TextView) findViewById (R.id.circle_circum_text);
-        assert myTextView != null;
-        myTextView.setTypeface (myTypeFace);
+        if (myTextView != null) {
+            myTextView.setTypeface (myTypeFace);
+        }
 
         myTextView = (TextView) findViewById (R.id.circle_radius_text);
-        assert myTextView != null;
-        myTextView.setTypeface (myTypeFace);
+        if (myTextView != null) {
+            myTextView.setTypeface (myTypeFace);
+        }
 
         myTextView = (TextView) findViewById (R.id.circle_area_a_text);
         assert myTextView != null;
         myTextView.setTypeface (myTypeFace);
 
         myTextView = (TextView) findViewById (R.id.circle_diameter_d_text);
-        assert myTextView != null;
-        myTextView.setTypeface (myTypeFace);
+        if (myTextView != null) {
+            myTextView.setTypeface (myTypeFace);
+        }
 
         myTextView = (TextView) findViewById (R.id.circle_circum_c_text);
-        assert myTextView != null;
-        myTextView.setTypeface (myTypeFace);
+        if (myTextView != null) {
+            myTextView.setTypeface (myTypeFace);
+        }
 
         myTextView = (TextView) findViewById (R.id.circle_radius_c_text);
-        assert myTextView != null;
-        myTextView.setTypeface (myTypeFace);
+        if (myTextView != null) {
+            myTextView.setTypeface (myTypeFace);
+        }
 
         circleAreaET.setTypeface (myTypeFace);
         circleAnswerTV.setTypeface (myTypeFace);
@@ -283,6 +289,4 @@ public class CircleActivity extends AppCompatActivity {
         circleCircumCLeranButton.setTypeface (myTypeFace);
         circleRadiusClearButton.setTypeface (myTypeFace);
     }
-
-
 }

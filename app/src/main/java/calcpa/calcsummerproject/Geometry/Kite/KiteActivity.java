@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -147,9 +148,9 @@ public class KiteActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(kitePerimeterAET)) {
-                    kitePerimeterAET.setError("Enter Value");
+                    kitePerimeterAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(kitePerimeterBET)) {
-                    kitePerimeterBET.setError("Enter Value");
+                    kitePerimeterBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, bSide, kitePerimeter;
                     aSide = Double.parseDouble(kitePerimeterAET.getText().toString());
@@ -192,9 +193,9 @@ public class KiteActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(kiteAreaPET)) {
-                    kiteAreaPET.setError("Enter Value");
+                    kiteAreaPET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(kiteAreaQET)) {
-                    kiteAreaQET.setError("Enter Value");
+                    kiteAreaQET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double pDiagonal, qDiagonal, kiteArea;
                     pDiagonal = Double.parseDouble(kiteAreaPET.getText().toString());
@@ -239,9 +240,9 @@ public class KiteActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(kiteASideBET)) {
-                    kiteASideBET.setError("Enter Value");
+                    kiteASideBET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(kiteASidePerimterET)) {
-                    kiteASidePerimterET.setError("Enter Value");
+                    kiteASidePerimterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double bSide, perimeter, kiteSideA;
                     bSide = Double.parseDouble(kiteASideBET.getText().toString());
@@ -289,9 +290,9 @@ public class KiteActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(kiteBSideAET)) {
-                    kiteBSideAET.setError("Enter Value");
+                    kiteBSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(kiteBSidePerimeterET)) {
-                    kiteBSidePerimeterET.setError("Enter Value");
+                    kiteBSidePerimeterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, perimeter, kiteSideB;
                     aSide = Double.parseDouble(kiteBSideAET.getText().toString());
@@ -338,9 +339,9 @@ public class KiteActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(kitePDiagonalQET)) {
-                    kitePDiagonalQET.setError("Enter Value");
+                    kitePDiagonalQET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(kitePDiagonalAreaET)) {
-                    kitePDiagonalAreaET.setError("Enter Value");
+                    kitePDiagonalAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double qDiagonal, area, kiteDiaognalP;
                     qDiagonal = Double.parseDouble(kitePDiagonalQET.getText().toString());
@@ -386,9 +387,9 @@ public class KiteActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(kiteQDiagonalAreaET)) {
-                    kiteQDiagonalAreaET.setError("Enter Value");
+                    kiteQDiagonalAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(kiteQDiagonalPET)) {
-                    kiteQDiagonalPET.setError("Enter Value");
+                    kiteQDiagonalPET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double pDiagonal, area, kiteDiaognalQ;
                     pDiagonal = Double.parseDouble(kiteQDiagonalAreaET.getText().toString());

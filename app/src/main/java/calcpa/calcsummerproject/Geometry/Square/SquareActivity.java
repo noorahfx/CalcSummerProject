@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -108,7 +109,7 @@ public class SquareActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(squarePerimeterET)) {
-                    squarePerimeterET.setError("Enter Value");
+                    squarePerimeterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, squarePerimeter;
                     aSide = Double.parseDouble(squarePerimeterET.getText().toString());
@@ -147,7 +148,7 @@ public class SquareActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(squareAreaET)) {
-                    squareAreaET.setError("Enter Value");
+                    squareAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, squareArea;
                     aSide = Double.parseDouble(squareAreaET.getText().toString());
@@ -185,7 +186,7 @@ public class SquareActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(squareSideET)) {
-                    squareSideET.setError("Enter Value");
+                    squareSideET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double perimeter, squareASide;
                     perimeter = Double.parseDouble(squareSideET.getText().toString());
@@ -223,7 +224,7 @@ public class SquareActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(squareDiagonalET)) {
-                    squareDiagonalET.setError("Enter Value");
+                    squareDiagonalET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, squareDiagonal;
                     aSide = Double.parseDouble(squareDiagonalET.getText().toString());

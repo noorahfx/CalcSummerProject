@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -133,9 +134,9 @@ public class ParallelogramActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(parallelogramPerimeterBaseET)) {
-                    parallelogramPerimeterBaseET.setError("Enter Value");
+                    parallelogramPerimeterBaseET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(parallelogramPerimeterAreaET)) {
-                    parallelogramPerimeterAreaET.setError("Enter Value");
+                    parallelogramPerimeterAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double base, aSide, paralPerim;
                     base = Double.parseDouble(parallelogramPerimeterBaseET.getText().toString());
@@ -177,9 +178,9 @@ public class ParallelogramActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(parallelogramAreaBaseET)) {
-                    parallelogramAreaBaseET.setError("Enter Value");
+                    parallelogramAreaBaseET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(parallelogramAreaHeightET)) {
-                    parallelogramAreaHeightET.setError("Enter Value");
+                    parallelogramAreaHeightET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double base, height, paralArea;
                     base = Double.parseDouble(parallelogramAreaBaseET.getText().toString());
@@ -224,9 +225,9 @@ public class ParallelogramActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(parallelogramBaseSideET)) {
-                    parallelogramBaseSideET.setError("Enter Value");
+                    parallelogramBaseSideET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(parallelogramBasePerimeterET)) {
-                    parallelogramBasePerimeterET.setError("Enter Value");
+                    parallelogramBasePerimeterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double area, height, paralBase;
                     height = Double.parseDouble(parallelogramBaseSideET.getText().toString());
@@ -271,9 +272,9 @@ public class ParallelogramActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(parallelogramHeightBaseET)) {
-                    parallelogramHeightBaseET.setError("Enter Value");
+                    parallelogramHeightBaseET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(parallelogramHeightAreaET)) {
-                    parallelogramHeightAreaET.setError("Enter Value");
+                    parallelogramHeightAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double area, base, paralHeight;
                     base = Double.parseDouble(parallelogramHeightBaseET.getText().toString());
@@ -318,9 +319,9 @@ public class ParallelogramActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(parallelogramSideBaseET)) {
-                    parallelogramSideBaseET.setError("Enter Value");
+                    parallelogramSideBaseET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(parallelogramSidePerimeterET)) {
-                    parallelogramSidePerimeterET.setError("Enter Value");
+                    parallelogramSidePerimeterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double base, perimeter, paralSides;
                     base = Double.parseDouble(parallelogramSideBaseET.getText().toString());

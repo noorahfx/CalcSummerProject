@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -93,7 +94,7 @@ public class HeptagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(hepPerimeterSideAET)) {
-                    hepPerimeterSideAET.setError("Enter Value");
+                    hepPerimeterSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, heptagonPerimeter;
                     aSide = Double.parseDouble(hepPerimeterSideAET.getText().toString());
@@ -127,7 +128,7 @@ public class HeptagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(hepAreaSideAET)) {
-                    hepAreaSideAET.setError("Enter Value");
+                    hepAreaSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
 
                 } else {
                     double aSide, heptagonArea;
@@ -163,7 +164,7 @@ public class HeptagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(hepSideAET)) {
-                    hepSideAET.setError("Enter Value");
+                    hepSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
 
                 } else {
                     double perimeter, hepSideA;

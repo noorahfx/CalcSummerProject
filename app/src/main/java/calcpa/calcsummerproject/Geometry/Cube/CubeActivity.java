@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -103,7 +104,7 @@ public class CubeActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cubeVolumeET)) {
-                    cubeVolumeET.setError("Enter value");
+                    cubeVolumeET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double edge, volume;
                     edge = Double.parseDouble(cubeVolumeET.getText().toString());
@@ -138,7 +139,7 @@ public class CubeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(cubeEdgeET)) {
-                    cubeEdgeET.setError("Enter Value");
+                    cubeEdgeET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double exp, edge;
                     exp = Double.parseDouble(cubeEdgeET.getText().toString());
@@ -176,7 +177,7 @@ public class CubeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(cubeSpecialDiagonalET)) {
-                    cubeSpecialDiagonalET.setError("Enter Value");
+                    cubeSpecialDiagonalET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double edge, specialDiagonal;
                     edge = Double.parseDouble(cubeSpecialDiagonalET.getText().toString());
@@ -212,7 +213,7 @@ public class CubeActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cubeSurfaceAreaET)) {
-                    cubeSurfaceAreaET.setError("Enter Value");
+                    cubeSurfaceAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double edge, surfaceArea;
                     edge = Double.parseDouble(cubeSurfaceAreaET.getText().toString());

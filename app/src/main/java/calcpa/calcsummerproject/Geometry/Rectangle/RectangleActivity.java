@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -142,9 +143,9 @@ public class RectangleActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rectanglePerimeterLET)) {
-                    rectanglePerimeterLET.setError("Enter Value");
+                    rectanglePerimeterLET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rectanglePerimeterWET)) {
-                    rectanglePerimeterWET.setError("Enter Value");
+                    rectanglePerimeterWET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double length, width, rectanglePerimeter;
                     length = Double.parseDouble(rectanglePerimeterLET.getText().toString());
@@ -189,9 +190,9 @@ public class RectangleActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rectangleAreaLET)) {
-                    rectangleAreaLET.setError("Enter Value");
+                    rectangleAreaLET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rectangleAreaWET)) {
-                    rectangleAreaWET.setError("Enter Value");
+                    rectangleAreaWET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double length, width, rectangleArea;
                     length = Double.parseDouble(rectangleAreaLET.getText().toString());
@@ -236,9 +237,9 @@ public class RectangleActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rectangleLengthWET)) {
-                    rectangleLengthWET.setError("Enter Value");
+                    rectangleLengthWET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rectangleLengthPET)) {
-                    rectangleLengthPET.setError("Enter Value");
+                    rectangleLengthPET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double width, perimeter, rectangleLength;
                     width = Double.parseDouble(rectangleLengthWET.getText().toString());
@@ -284,9 +285,9 @@ public class RectangleActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rectangleWidthLET)) {
-                    rectangleWidthLET.setError("Enter Value");
+                    rectangleWidthLET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rectangleWidthPET)) {
-                    rectangleWidthPET.setError("Enter Value");
+                    rectangleWidthPET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double length, perimeter, rectangleWidth;
                     length = Double.parseDouble(rectangleWidthLET.getText().toString());
@@ -333,9 +334,9 @@ public class RectangleActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rectanglePDiagonalLET)) {
-                    rectanglePDiagonalLET.setError("Enter Value");
+                    rectanglePDiagonalLET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rectanglePDiagonalWET)) {
-                    rectanglePDiagonalWET.setError("Enter Value");
+                    rectanglePDiagonalWET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double length, width, rectangleDiaognal;
                     length = Double.parseDouble(rectanglePDiagonalLET.getText().toString());

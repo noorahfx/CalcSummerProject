@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -97,7 +98,7 @@ public class OctagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(octPerimeterSideAET)) {
-                    octPerimeterSideAET.setError("Enter Value");
+                    octPerimeterSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, octtagonPerimeter;
                     aSide = Double.parseDouble(octPerimeterSideAET.getText().toString());
@@ -134,7 +135,7 @@ public class OctagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(octAreaSideAET)) {
-                    octAreaSideAET.setError("Enter Value");
+                    octAreaSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
 
                 } else {
                     double aSide, octtagonArea;
@@ -169,7 +170,8 @@ public class OctagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(octSideAET)) {
-                    octSideAET.setError("Enter Value");
+                    octSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
+
 
                 } else {
                     double perimeter, octSideA;

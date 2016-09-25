@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -95,11 +96,11 @@ public class CuboidActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(cuboidVolumeLET)) {
-                    cuboidVolumeLET.setError("Enter Length");
+                    cuboidVolumeLET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cuboidVolumeWET)) {
-                    cuboidVolumeWET.setError("Enter Width");
+                    cuboidVolumeWET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cuboidVolumeHET)) {
-                    cuboidVolumeHET.setError("Enter Height");
+                    cuboidVolumeHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double length, width, height, cuboidVolume;
                     length = Double.parseDouble(cuboidVolumeLET.getText().toString());
@@ -145,11 +146,11 @@ public class CuboidActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(cuboidAreaLET)) {
-                    cuboidAreaLET.setError("Enter Radius");
+                    cuboidAreaLET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cuboidAreaWET)) {
-                    cuboidAreaWET.setError("Enter Height");
+                    cuboidAreaWET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(cuboidAreaHET)) {
-                    cuboidAreaHET.setError("Enter Radius");
+                    cuboidAreaHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double length, width, height, cuboidArea;
                     length = Double.parseDouble(cuboidAreaLET.getText().toString());

@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -162,9 +163,9 @@ public class ConeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneVolumeRET)) {
-                    coneVolumeRET.setError("Enter Radius");
+                    coneVolumeRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(coneVolumeHET)) {
-                    coneVolumeHET.setError("Enter Height");
+                    coneVolumeHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius, height, answer;
                     radius = Double.parseDouble(coneVolumeRET.getText().toString());
@@ -206,9 +207,9 @@ public class ConeActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneRadiusHET)) {
-                    coneRadiusHET.setError("Enter Height");
+                    coneRadiusHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(coneRadiusVET)) {
-                    coneRadiusVET.setError("Enter Volume");
+                    coneRadiusVET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
 
                     double height, volume, answer;
@@ -249,9 +250,9 @@ public class ConeActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneHeightRET)) {
-                    coneHeightRET.setError("Enter Radius");
+                    coneHeightRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(coneHeightVET)) {
-                    coneHeightVET.setError("Enter Volume");
+                    coneHeightVET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
 
                     double radius, volume, answer;
@@ -294,9 +295,9 @@ public class ConeActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneSlantHeightRET)) {
-                    coneSlantHeightRET.setError("Enter Radius");
+                    coneSlantHeightRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(coneSLantHeightHET)) {
-                    coneSLantHeightHET.setError("Enter Height");
+                    coneSLantHeightHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
 
                     double radius, height, answer;
@@ -337,9 +338,9 @@ public class ConeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneSurfaceAreatRET)) {
-                    coneSurfaceAreatRET.setError("Enter Radius");
+                    coneSurfaceAreatRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(coneSurfaceAreaHET)) {
-                    coneSurfaceAreaHET.setError("Enter Height");
+                    coneSurfaceAreaHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
 
                     double radius, height, answer;
@@ -379,7 +380,7 @@ public class ConeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneBaseAreaRET)) {
-                    coneBaseAreaRET.setError("Enter Radius");
+                    coneBaseAreaRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double radius, answer;
                     radius = Double.parseDouble(coneBaseAreaRET.getText().toString());
@@ -414,9 +415,9 @@ public class ConeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(coneLateralSurfaceRET)) {
-                    coneLateralSurfaceRET.setError("Enter Radius");
+                    coneLateralSurfaceRET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(coneLateralSurfaceHET)) {
-                    coneLateralSurfaceHET.setError("Enter Height");
+                    coneLateralSurfaceHET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
 
                     double radius, height, answer;

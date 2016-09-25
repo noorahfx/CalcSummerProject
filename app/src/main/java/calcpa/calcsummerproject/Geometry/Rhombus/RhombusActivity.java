@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -126,7 +127,7 @@ public class RhombusActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rhombusPerimeterAET)) {
-                    rhombusPerimeterAET.setError("Enter Value");
+                    rhombusPerimeterAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, rhombusPerimeter;
                     aSide = Double.parseDouble(rhombusPerimeterAET.getText().toString());
@@ -164,9 +165,9 @@ public class RhombusActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rhombusAreaPET)) {
-                    rhombusAreaPET.setError("Enter Value");
+                    rhombusAreaPET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rhombusAreaQET)) {
-                    rhombusAreaQET.setError("Enter Value");
+                    rhombusAreaQET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double pDiaognal, qDiaognal, rhombusArea;
                     pDiaognal = Double.parseDouble(rhombusAreaPET.getText().toString());
@@ -210,7 +211,7 @@ public class RhombusActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rhombusSidesPET)) {
-                    rhombusSidesPET.setError("Enter Value");
+                    rhombusSidesPET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double perimeter, rhombusSide;
                     perimeter = Double.parseDouble(rhombusSidesPET.getText().toString());
@@ -249,9 +250,9 @@ public class RhombusActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(rhombusPDiaognalQET)) {
-                    rhombusPDiaognalQET.setError("Enter Value");
+                    rhombusPDiaognalQET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rhombusPDiaognalAreaET)) {
-                    rhombusPDiaognalAreaET.setError("Enter Value");
+                    rhombusPDiaognalAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double qDiaognal, area, rhombusPDiagonal;
                     qDiaognal = Double.parseDouble(rhombusPDiaognalQET.getText().toString());
@@ -293,9 +294,9 @@ public class RhombusActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(rhombusQDiagonalPET)) {
-                    rhombusQDiagonalPET.setError("Enter Value");
+                    rhombusQDiagonalPET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else if (Model.isEmpty(rhombusQDiagonalAreaET)) {
-                    rhombusQDiagonalAreaET.setError("Enter Value");
+                    rhombusQDiagonalAreaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double pDiaognal, area, rhombusQDiagonal;
                     pDiaognal = Double.parseDouble(rhombusQDiagonalPET.getText().toString());

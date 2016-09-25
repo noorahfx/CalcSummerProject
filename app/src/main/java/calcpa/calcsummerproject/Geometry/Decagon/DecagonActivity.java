@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -92,7 +93,7 @@ public class DecagonActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(decagonareaET)) {
-                    decagonareaET.setError("Enter Value");
+                    decagonareaET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double sideA, decagonArea;
                     sideA = Double.parseDouble(decagonareaET.getText().toString());
@@ -131,7 +132,7 @@ public class DecagonActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(decagonPerimeterET)) {
-                    decagonPerimeterET.setError("Enter Value");
+                    decagonPerimeterET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double sideA, decagonPerimeter;
                     sideA = Double.parseDouble(decagonPerimeterET.getText().toString());
@@ -171,7 +172,7 @@ public class DecagonActivity extends AppCompatActivity {
 
                 //check to make sure field is not empty
                 if (Model.isEmpty(decagonSideET)) {
-                    decagonSideET.setError("Enter Value");
+                    decagonSideET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double perimeter, decagonPerimeter;
                     perimeter = Double.parseDouble(decagonSideET.getText().toString());

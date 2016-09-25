@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -91,7 +92,7 @@ public class NonagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(nonPerimeterSideAET)) {
-                    nonPerimeterSideAET.setError("Enter Value");
+                    nonPerimeterSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
                 } else {
                     double aSide, nontagonPerimeter;
                     aSide = Double.parseDouble(nonPerimeterSideAET.getText().toString());
@@ -128,7 +129,7 @@ public class NonagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(nonAreaSideAET)) {
-                    nonAreaSideAET.setError("Enter Value");
+                    nonAreaSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
 
                 } else {
                     double aSide, nontagonArea;
@@ -165,7 +166,7 @@ public class NonagonActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //check to make sure field is not empty
                 if (Model.isEmpty(nonSideAET)) {
-                    nonSideAET.setError("Enter Value");
+                    nonSideAET.setError(Html.fromHtml ("<font color='red'>Enter value</font>"));
 
                 } else {
                     double perimeter, nonSideA;

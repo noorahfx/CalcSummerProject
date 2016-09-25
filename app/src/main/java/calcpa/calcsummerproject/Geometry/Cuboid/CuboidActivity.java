@@ -1,22 +1,16 @@
 package calcpa.calcsummerproject.Geometry.Cuboid;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class CuboidActivity extends AppCompatActivity {
 
@@ -53,9 +47,9 @@ public class CuboidActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        volumeResource();
-        areaResource();
-        fontResource();
+        setVolumeResource();
+        setAreaResource();
+        setFontResource();
     }
 
     @Override
@@ -87,37 +81,8 @@ public class CuboidActivity extends AppCompatActivity {
         cuboidAreaAnswerTV.setText(savedInstanceState.getString("area_tv"));
     }
 
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
-
-    private void volumeResource(){
+    private void setVolumeResource(){
         //Volume
         cuboidVolumeLET = (EditText) findViewById(R.id.cuboid_volume_l_et);
         cuboidVolumeWET = (EditText) findViewById(R.id.cuboid_volume_w_et);
@@ -167,7 +132,7 @@ public class CuboidActivity extends AppCompatActivity {
         });
     }
 
-    private void areaResource(){
+    private void setAreaResource(){
         //Area
 
         cuboidAreaLET = (EditText) findViewById(R.id.cuboid_area_l_et);
@@ -219,7 +184,7 @@ public class CuboidActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource(){
+    private void setFontResource(){
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.cuboid_volume_text);

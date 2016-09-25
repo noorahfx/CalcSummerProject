@@ -1,32 +1,17 @@
 package calcpa.calcsummerproject.Geometry.Hexagon;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ExpandableListView;
-import android.widget.ExpandableListView.OnChildClickListener;
-import android.widget.ExpandableListView.OnGroupClickListener;
-import android.widget.ExpandableListView.OnGroupCollapseListener;
-import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 
 public class HexagonActivity extends AppCompatActivity {
@@ -65,9 +50,10 @@ public class HexagonActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        perimeterResource();
-        areaResource();
-        sideResource();
+        setPerimeterResource();
+        setAreaResource();
+        setSideResource();
+        setFontResource();
 
     }
 
@@ -102,38 +88,9 @@ public class HexagonActivity extends AppCompatActivity {
 
 
 
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
 
 
-    private void perimeterResource(){
+    private void setPerimeterResource(){
 
 
         hexPerimeterSideAET =(EditText)findViewById(R.id.hex_perimeter_side_a_et);
@@ -175,7 +132,7 @@ public class HexagonActivity extends AppCompatActivity {
 
     }
 
-    private void areaResource(){
+    private void setAreaResource(){
 
         hexAreaSideAET =(EditText)findViewById(R.id.hex_area_side_a_et);
         hexAreaAnswerTV =(TextView)findViewById(R.id.hex_area_calc_answer_tx);
@@ -216,7 +173,7 @@ public class HexagonActivity extends AppCompatActivity {
 
     }
 
-    private void sideResource(){
+    private void setSideResource(){
         hexSideAET =(EditText)findViewById(R.id.hex_side_et);
         hexSideAAnswerTV =(TextView)findViewById(R.id.hex_side_calc_answer_tx);
         hexSideACalcButton=(Button)findViewById(R.id.hex_side_calc_button);
@@ -255,7 +212,7 @@ public class HexagonActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource(){
+    private void setFontResource(){
 
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),  "OptimusPrinceps.ttf");

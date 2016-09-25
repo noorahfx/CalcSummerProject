@@ -1,24 +1,16 @@
 package calcpa.calcsummerproject.Geometry.Eclipse;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class EllipseActivity extends AppCompatActivity {
 
@@ -70,11 +62,11 @@ public class EllipseActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        areaResource();
-        circumResource();
-        aXisResource();
-        bXisResource();
-        fontResource();
+        setAreaResource();
+        setCircumResource();
+        setAXisResource();
+        setBXisResource();
+        setFontResource();
 
 
 
@@ -119,37 +111,9 @@ public class EllipseActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-    private void areaResource() {
+    private void setAreaResource() {
         //Area
         ellipseAreaAET = (EditText) findViewById(R.id.ellipse_area_a_et);
         ellipseAreaBET = (EditText) findViewById(R.id.ellipse_area_b_et);
@@ -196,7 +160,7 @@ public class EllipseActivity extends AppCompatActivity {
 
     }
 
-    private void circumResource() {
+    private void setCircumResource() {
         //Circumferenece
         ellipseCircumAET = (EditText) findViewById(R.id.ellipse_circum_a_et);
         ellipseCircumBET = (EditText) findViewById(R.id.ellipse_circum_b_et);
@@ -243,7 +207,7 @@ public class EllipseActivity extends AppCompatActivity {
     }
 
 
-    private void aXisResource() {
+    private void setAXisResource() {
         //A-xis
         ellipseAXisAET = (EditText) findViewById(R.id.ellipse_a_xis_b_et);
         ellipseAXisBET = (EditText) findViewById(R.id.ellipse_a_xis_area_et);
@@ -289,7 +253,7 @@ public class EllipseActivity extends AppCompatActivity {
 
     }
 
-    private void bXisResource() {
+    private void setBXisResource() {
         //B-xis
         ellipseBXisAET = (EditText) findViewById(R.id.ellipse_b_xis_a_et);
         ellipseBXisBET = (EditText) findViewById(R.id.ellipse_b_xis_area_et);
@@ -332,7 +296,7 @@ public class EllipseActivity extends AppCompatActivity {
         });
     }
 
-    private void fontResource() {
+    private void setFontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.ellipse_area_text);
         myTextView.setTypeface(myTypeFace);

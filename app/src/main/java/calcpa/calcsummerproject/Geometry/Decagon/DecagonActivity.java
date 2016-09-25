@@ -1,23 +1,17 @@
 package calcpa.calcsummerproject.Geometry.Decagon;
 
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class DecagonActivity extends AppCompatActivity {
 
@@ -53,10 +47,10 @@ public class DecagonActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        areaResource();
-        perimeterResource();
-        sideResource();
-        fontResource();
+        setAreaResource();
+        setPerimeterResource();
+        setSideResource();
+        setFontResource();
 
 
     }
@@ -88,38 +82,7 @@ public class DecagonActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-
-    private void areaResource() {
+    private void setAreaResource() {
         decagonareaET = (EditText) findViewById(R.id.decagon_area_a_et);
         decagonareaTV = (TextView) findViewById(R.id.decagon_area_calc_answer_tx);
         decagonareaCalcButton = (Button) findViewById(R.id.decagon_area_calc_button);
@@ -156,7 +119,7 @@ public class DecagonActivity extends AppCompatActivity {
 
     }
 
-    private void perimeterResource() {
+    private void setPerimeterResource() {
 
         //perimeter
         decagonPerimeterET = (EditText) findViewById(R.id.decagon_perimeter_v_et);
@@ -195,7 +158,7 @@ public class DecagonActivity extends AppCompatActivity {
 
     }
 
-    private void sideResource() {
+    private void setSideResource() {
         //sides
 
         decagonSideET = (EditText) findViewById(R.id.decagon_sides_a_et);
@@ -238,7 +201,7 @@ public class DecagonActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource() {
+    private void setFontResource() {
 
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");

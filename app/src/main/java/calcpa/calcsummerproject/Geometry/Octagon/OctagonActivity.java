@@ -1,22 +1,16 @@
 package calcpa.calcsummerproject.Geometry.Octagon;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class OctagonActivity extends AppCompatActivity {
 
@@ -54,10 +48,10 @@ public class OctagonActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        perimeterResource();
-        areaResource();
-        sideResource();
-        fontResource();
+        setPerimeterResource();
+        setAreaResource();
+        setSideResource();
+        setFontResource();
 
 
     }
@@ -90,37 +84,9 @@ public class OctagonActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-    private void perimeterResource() {
+    private void setPerimeterResource() {
 
 
         octPerimeterSideAET = (EditText) findViewById(R.id.oct_perimeter_side_a_et);
@@ -158,7 +124,7 @@ public class OctagonActivity extends AppCompatActivity {
 
     }
 
-    private void areaResource() {
+    private void setAreaResource() {
         //Area
         octAreaSideAET = (EditText) findViewById(R.id.oct_area_side_a_et);
         octAreaAnswerTV = (TextView) findViewById(R.id.oct_area_calc_answer_tx);
@@ -194,7 +160,7 @@ public class OctagonActivity extends AppCompatActivity {
 
     }
 
-    private void sideResource() {
+    private void setSideResource() {
         octSideAET = (EditText) findViewById(R.id.oct_side_et);
         octSideAAnswerTV = (TextView) findViewById(R.id.oct_side_calc_answer_tx);
         octSideACalcButton = (Button) findViewById(R.id.oct_side_calc_button);
@@ -230,7 +196,7 @@ public class OctagonActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource() {
+    private void setFontResource() {
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 

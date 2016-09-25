@@ -1,6 +1,5 @@
 package calcpa.calcsummerproject.Geometry.Kite;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class KiteActivity extends AppCompatActivity {
 
@@ -74,13 +72,13 @@ public class KiteActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        perimeterResource();
-        areaResource();
-        sideAResource();
-        sideBResource();
-        diagonalPResource();
-        diagonalQResource();
-        fontResource();
+        setPerimeterResource();
+        setAreaResource();
+        setSideAResource();
+        setSideBResource();
+        sedDiagonalPResource();
+        setDiagonalQResource();
+        setFontResource();
 
 
     }
@@ -136,38 +134,8 @@ public class KiteActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-
-    private void perimeterResource() {
+    private void setPerimeterResource() {
         //Perimeter
         kitePerimeterAET = (EditText) findViewById(R.id.kite_perimeter_side_a_et);
         kitePerimeterBET = (EditText) findViewById(R.id.kite_perimeter_side_b_et);
@@ -212,7 +180,7 @@ public class KiteActivity extends AppCompatActivity {
 
     }
 
-    private void areaResource() {
+    private void setAreaResource() {
         //Area
         kiteAreaPET = (EditText) findViewById(R.id.kite_area_diagonal_p_et);
         kiteAreaQET = (EditText) findViewById(R.id.kite_area_diagonal_q_et);
@@ -258,7 +226,7 @@ public class KiteActivity extends AppCompatActivity {
 
     }
 
-    private void sideAResource() {
+    private void setSideAResource() {
         //Side A
         kiteASideBET = (EditText) findViewById(R.id.kite_side_a_bside_et);
         kiteASidePerimterET = (EditText) findViewById(R.id.kite_side_a_perimeter_et);
@@ -307,7 +275,7 @@ public class KiteActivity extends AppCompatActivity {
 
     }
 
-    private void sideBResource() {
+    private void setSideBResource() {
 
 
         //Side B
@@ -358,7 +326,7 @@ public class KiteActivity extends AppCompatActivity {
 
     }
 
-    private void diagonalPResource() {
+    private void sedDiagonalPResource() {
         //Diagonal P
         kitePDiagonalQET = (EditText) findViewById(R.id.kite_p_diaognal_q_et);
         kitePDiagonalAreaET = (EditText) findViewById(R.id.kite_p_diaognal_area_et);
@@ -405,7 +373,7 @@ public class KiteActivity extends AppCompatActivity {
 
     }
 
-    private void diagonalQResource() {
+    private void setDiagonalQResource() {
         //Diagonal Q
         kiteQDiagonalAreaET = (EditText) findViewById(R.id.kite_q_diaognal_p_et);
         kiteQDiagonalPET = (EditText) findViewById(R.id.kite_q_diaognal_perimeter_et);
@@ -453,7 +421,7 @@ public class KiteActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource() {
+    private void setFontResource() {
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 

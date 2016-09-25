@@ -1,22 +1,16 @@
 package calcpa.calcsummerproject.Geometry.Cube;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class CubeActivity extends AppCompatActivity {
 
@@ -60,11 +54,11 @@ public class CubeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        volumeResource();
-        edgeResource();
-        specialDiagonalResource();
-        surfaceAreaResource();
-        fontResource();
+        setVolumeResource();
+        setEdgeResource();
+        setSpecialDiagonalResource();
+        setSurfaceAreaResource();
+        setFontResource();
 
 
     }
@@ -97,37 +91,8 @@ public class CubeActivity extends AppCompatActivity {
         cubeSurfaceAreaTV.setText(savedInstanceState.getString("surface_ar_tv"));
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-    private void volumeResource() {
+    private void setVolumeResource() {
         //Volume
         cubeVolumeET = (EditText) findViewById(R.id.cube_volume_a_et);
         cubeVolumeTV = (TextView) findViewById(R.id.cube_volume_calc_answer_tx);
@@ -162,7 +127,7 @@ public class CubeActivity extends AppCompatActivity {
         });
     }
 
-    private void edgeResource() {
+    private void setEdgeResource() {
 
         //Edge
         cubeEdgeET = (EditText) findViewById(R.id.cube_edge_v_et);
@@ -200,7 +165,7 @@ public class CubeActivity extends AppCompatActivity {
 
     }
 
-    private void specialDiagonalResource() {
+    private void setSpecialDiagonalResource() {
 
         //Special Diagonal
         cubeSpecialDiagonalET = (EditText) findViewById(R.id.cube_special_diagonal_a_et);
@@ -236,7 +201,7 @@ public class CubeActivity extends AppCompatActivity {
         });
     }
 
-    private void surfaceAreaResource() {
+    private void setSurfaceAreaResource() {
         //Surface Area
         cubeSurfaceAreaET = (EditText) findViewById(R.id.cube_surface_area_a_et);
         cubeSurfaceAreaTV = (TextView) findViewById(R.id.cube_surface_area_calc_answer_tx);
@@ -271,7 +236,7 @@ public class CubeActivity extends AppCompatActivity {
         });
     }
 
-    private void fontResource() {
+    private void setFontResource() {
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.cube_volume_text);

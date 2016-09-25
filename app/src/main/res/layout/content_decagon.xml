@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -9,11 +9,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Geometry.Decagon.DecagonActivity"
-    tools:showIn="@layout/activity_decagon"
-    android:scrollbarThumbVertical="@drawable/scrollbar">
-
+    tools:showIn="@layout/activity_decagon">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,8 +35,8 @@
             android:layout_below="@+id/decagon_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/decagon_xxxhdpi"
-            android:contentDescription="@string/decagon_image"/>
+            android:contentDescription="@string/decagon_image"
+            android:src="@drawable/decagon_xxxhdpi" />
 
         <ImageView
             android:id="@+id/decagon_area_formula"
@@ -46,10 +45,8 @@
             android:layout_below="@id/decagon_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/decagon_area_xxxhdpi"
-            android:contentDescription="@string/decagon_area_formula"/>
-
-
+            android:contentDescription="@string/decagon_area_formula"
+            android:src="@drawable/decagon_area_xxxhdpi" />
 
         <TextView
             android:id="@+id/decagon_area_a_text"
@@ -72,8 +69,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/decagon_area_a_text"
             android:layout_toEndOf="@+id/decagon_area_a_text"
+            android:layout_toRightOf="@+id/decagon_area_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/area"
@@ -81,7 +78,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/decagon_area_calc_button"
@@ -107,7 +103,6 @@
             android:textColor="@color/white"
             android:textSize="21sp" />
 
-
         <Button
             android:id="@+id/decagon_area_clear_button"
             android:layout_width="match_parent"
@@ -123,13 +118,9 @@
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/decagon_area_clear_button"
-            android:layout_marginTop="35dp" />
-
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/decagon_perimeter_text"
@@ -142,7 +133,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/decagon_perimeter_img"
             android:layout_width="wrap_content"
@@ -150,8 +140,8 @@
             android:layout_below="@+id/decagon_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/decagon_xxxhdpi"
-            android:contentDescription="@string/decagon_image"/>
+            android:contentDescription="@string/decagon_image"
+            android:src="@drawable/decagon_xxxhdpi" />
 
         <ImageView
             android:id="@+id/decagon_perimeter_formula"
@@ -160,10 +150,8 @@
             android:layout_below="@id/decagon_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/decagon_perimeter_xxxhdpi"
-            android:contentDescription="@string/decagon_perimeter_formula"/>
-
-
+            android:contentDescription="@string/decagon_perimeter_formula"
+            android:src="@drawable/decagon_perimeter_xxxhdpi" />
 
         <TextView
             android:id="@+id/decagon_perimeter_v_text"
@@ -186,8 +174,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10sp"
-            android:layout_toRightOf="@+id/decagon_perimeter_v_text"
             android:layout_toEndOf="@+id/decagon_perimeter_v_text"
+            android:layout_toRightOf="@+id/decagon_perimeter_v_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -195,7 +183,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/decagon_perimeter_calc_button"
@@ -207,7 +194,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/decagon_perimeter_calc_answer_tx"
@@ -235,11 +221,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/decagon_perimeter_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/decagon_sides_text"
@@ -252,7 +236,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/decagon_sides_img"
             android:layout_width="wrap_content"
@@ -260,8 +243,8 @@
             android:layout_below="@+id/decagon_sides_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/decagon_xxxhdpi"
-            android:contentDescription="@string/decagon_image"/>
+            android:contentDescription="@string/decagon_image"
+            android:src="@drawable/decagon_xxxhdpi" />
 
         <ImageView
             android:id="@+id/decagon_sides_formula"
@@ -270,10 +253,8 @@
             android:layout_below="@+id/decagon_sides_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/decagon_sides_xxxhdpi"
-            android:contentDescription="@string/decagon_side_formula"/>
-
-
+            android:contentDescription="@string/decagon_side_formula"
+            android:src="@drawable/decagon_sides_xxxhdpi" />
 
         <TextView
             android:id="@+id/decagon_sides_a_text"
@@ -296,8 +277,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/decagon_sides_a_text"
             android:layout_toEndOf="@+id/decagon_sides_a_text"
+            android:layout_toRightOf="@+id/decagon_sides_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:focusable="true"
@@ -307,7 +288,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/decagon_sides_calc_button"
@@ -320,7 +300,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/decagon_sides_calc_answer_tx"
             android:layout_width="match_parent"
@@ -331,7 +310,6 @@
             android:gravity="center"
             android:textColor="@color/White"
             android:textSize="21sp" />
-
 
         <Button
             android:id="@+id/decagon_sides_clear_button"
@@ -348,13 +326,12 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/decagon_sides_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
     </RelativeLayout>
+
 </ScrollView>
 
 

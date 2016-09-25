@@ -1,6 +1,5 @@
 package calcpa.calcsummerproject.Geometry.Rectangle;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class RectangleActivity extends AppCompatActivity {
 
@@ -72,12 +70,13 @@ public class RectangleActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-    perimeterResource();
-        areaResource();
-        widthResource();
-        lengthResource();
-        fontResource();
-        diagonalPResource();
+    setPerimeterResource();
+        setAreaResource();
+        setWidthResource();
+        setLengthResource();
+         setDiagonalPResource();
+        setFontResource();
+
 
 
 
@@ -130,7 +129,7 @@ public class RectangleActivity extends AppCompatActivity {
 
     }
 
-    private void perimeterResource(){
+    private void setPerimeterResource(){
 
         //Perimeter
         rectanglePerimeterLET = (EditText) findViewById(R.id.rectangle_perimeter_length_et);
@@ -178,7 +177,7 @@ public class RectangleActivity extends AppCompatActivity {
 
     }
 
-    private void areaResource(){
+    private void setAreaResource(){
         //Area
         rectangleAreaLET= (EditText) findViewById(R.id.rectangle_area_length_et);
         rectangleAreaWET  = (EditText) findViewById(R.id.rectangle_area_width_et);
@@ -225,7 +224,7 @@ public class RectangleActivity extends AppCompatActivity {
 
     }
 
-    private void lengthResource(){
+    private void setLengthResource(){
         //Length
         rectangleLengthWET  = (EditText) findViewById(R.id.rectangle_length_width_et);
         rectangleLengthPET= (EditText) findViewById(R.id.rectangle_length_perimeter_et);
@@ -273,7 +272,7 @@ public class RectangleActivity extends AppCompatActivity {
 
     }
 
-    private void widthResource(){
+    private void setWidthResource(){
         //Width
         rectangleWidthLET = (EditText) findViewById(R.id.rectangle_width_length_et);
         rectangleWidthPET = (EditText) findViewById(R.id.rectangle_width_perimeter_et);
@@ -322,7 +321,7 @@ public class RectangleActivity extends AppCompatActivity {
 
     }
 
-    private void diagonalPResource(){
+    private void setDiagonalPResource(){
         //Diagonal P
         rectanglePDiagonalLET = (EditText) findViewById(R.id.rectangle_diagonal_length_et);
         rectanglePDiagonalWET  = (EditText) findViewById(R.id.rectangle_diagonal_width_et);
@@ -368,7 +367,7 @@ public class RectangleActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource(){
+    private void setFontResource(){
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
@@ -465,36 +464,6 @@ public class RectangleActivity extends AppCompatActivity {
 
     }
 
-
-    @Override
-    public void onStart(){
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onStop(){
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart(){
-        super.onRestart();
-    }
 
 
 

@@ -1,6 +1,5 @@
 package calcpa.calcsummerproject.Geometry.Cone;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -83,14 +82,14 @@ public class ConeActivity extends AppCompatActivity {
 
 
 
-        volumeResource();
-        radiusResource();
-        heightResource();
-        slantHeighResource();
-        surfaceAreaResource();
-        baseAreaResource();
-        lateralSurfaceResource();
-        fontResource();
+        setVolumeResource();
+        setRadiusResource();
+        setHeightResource();
+        setSlantHeighResource();
+        setSurfaceAreaResource();
+        setBaseAreaResource();
+        setLateralSurfaceResource();
+        setFontResource();
 
 
 
@@ -151,37 +150,8 @@ public class ConeActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-    private void volumeResource() {
+    private void setVolumeResource() {
         //Volume
         coneVolumeRET = (EditText) findViewById(R.id.cone_volume_r_et);
         coneVolumeHET = (EditText) findViewById(R.id.cone_volume_h_et);
@@ -224,7 +194,7 @@ public class ConeActivity extends AppCompatActivity {
         });
     }
 
-    private void radiusResource() {
+    private void setRadiusResource() {
         //Radius
         coneRadiusHET = (EditText) findViewById(R.id.cone_radius_h_et);
         coneRadiusVET = (EditText) findViewById(R.id.cone_radius_v_et);
@@ -267,7 +237,7 @@ public class ConeActivity extends AppCompatActivity {
         });
     }
 
-    private void heightResource() {
+    private void setHeightResource() {
         //Height
         coneHeightRET = (EditText) findViewById(R.id.cone_height_r_et);
         coneHeightVET = (EditText) findViewById(R.id.cone_height_v_et);
@@ -312,7 +282,7 @@ public class ConeActivity extends AppCompatActivity {
 
     }
 
-    private void slantHeighResource() {
+    private void setSlantHeighResource() {
         //Slant height
         coneSlantHeightRET = (EditText) findViewById(R.id.cone_slant_height_r_et);
         coneSLantHeightHET = (EditText) findViewById(R.id.cone_slant_height_h_et);
@@ -356,7 +326,7 @@ public class ConeActivity extends AppCompatActivity {
         });
     }
 
-    private void surfaceAreaResource() {
+    private void setSurfaceAreaResource() {
         //Surface Area
         coneSurfaceAreatRET = (EditText) findViewById(R.id.cone_surface_area_r_et);
         coneSurfaceAreaHET = (EditText) findViewById(R.id.cone_surface_area_h_et);
@@ -399,7 +369,7 @@ public class ConeActivity extends AppCompatActivity {
         });
     }
 
-    private void baseAreaResource() {
+    private void setBaseAreaResource() {
         //Base Area
         coneBaseAreaRET = (EditText) findViewById(R.id.cone_base_area_r_et);
         coneBaseAreaAnswerTV = (TextView) findViewById(R.id.cone_base_area_calc_answer_tx);
@@ -433,7 +403,7 @@ public class ConeActivity extends AppCompatActivity {
         });
     }
 
-    private void lateralSurfaceResource() {
+    private void setLateralSurfaceResource() {
         //Lateral Surface
         coneLateralSurfaceRET = (EditText) findViewById(R.id.cone_lateral_surface_r_et);
         coneLateralSurfaceHET = (EditText) findViewById(R.id.cone_lateral_surface_h_et);
@@ -478,7 +448,7 @@ public class ConeActivity extends AppCompatActivity {
         });
     }
 
-    private void fontResource() {
+    private void setFontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.cone_volume_text);
         assert myTextView != null;

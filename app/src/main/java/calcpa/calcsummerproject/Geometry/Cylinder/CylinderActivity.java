@@ -1,22 +1,16 @@
 package calcpa.calcsummerproject.Geometry.Cylinder;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class CylinderActivity extends AppCompatActivity {
 
@@ -81,13 +75,13 @@ public class CylinderActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        volumeResource();
-        radiusResource();
-        heightResource();
-        surfaceAreaResource();
-        baseAreaResource();
-        lateralSurfaceResource();
-        fontResource();
+        setVolumeResource();
+        setRadiusResource();
+        setHeightResource();
+        setSurfaceAreaResource();
+        setBaseAreaResource();
+        setLateralSurfaceResource();
+        setFontResource();
 
     }
 
@@ -139,38 +133,9 @@ public class CylinderActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
 
 
-    private void volumeResource() {
+    private void setVolumeResource() {
         //Volume
         cylinderVolumeRET = (EditText) findViewById(R.id.cylinder_volume_r_et);
         cylinderVolumeHET = (EditText) findViewById(R.id.cylinder_volume_h_et);
@@ -215,7 +180,7 @@ public class CylinderActivity extends AppCompatActivity {
 
     }
 
-    private void radiusResource() {
+    private void setRadiusResource() {
         //Radius
         cylinderRadiusHET = (EditText) findViewById(R.id.cylinder_radius_h_et);
         cylinderRadiusVET = (EditText) findViewById(R.id.cylinder_radius_v_et);
@@ -261,7 +226,7 @@ public class CylinderActivity extends AppCompatActivity {
 
     }
 
-    private void heightResource() {
+    private void setHeightResource() {
 
         //Height
         cylinderHeightRET = (EditText) findViewById(R.id.cylinder_height_r_et);
@@ -309,7 +274,7 @@ public class CylinderActivity extends AppCompatActivity {
 
     }
 
-    private void surfaceAreaResource() {
+    private void setSurfaceAreaResource() {
         //Surface Area
         cylinderSurfaceAreatRET = (EditText) findViewById(R.id.cylinder_surface_area_r_et);
         cylinderSurfaceAreaHET = (EditText) findViewById(R.id.cylinder_surface_area_h_et);
@@ -357,7 +322,7 @@ public class CylinderActivity extends AppCompatActivity {
 
     }
 
-    private void baseAreaResource() {
+    private void setBaseAreaResource() {
 
         //Base Area
         cylinderBaseAreaRET = (EditText) findViewById(R.id.cylinder_base_area_r_et);
@@ -396,7 +361,7 @@ public class CylinderActivity extends AppCompatActivity {
 
     }
 
-    private void lateralSurfaceResource() {
+    private void setLateralSurfaceResource() {
         //Lateral Surface
         cylinderLateralSurfaceRET = (EditText) findViewById(R.id.cylinder_lateral_surface_r_et);
         cylinderLateralSurfaceHET = (EditText) findViewById(R.id.cylinder_lateral_surface_h_et);
@@ -446,7 +411,7 @@ public class CylinderActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource() {
+    private void setFontResource() {
 
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");

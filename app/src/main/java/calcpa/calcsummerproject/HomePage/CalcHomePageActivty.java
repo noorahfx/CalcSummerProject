@@ -21,17 +21,6 @@ public class CalcHomePageActivty extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
-
-        // getSupportActionBar().setIcon(R.drawable.back_button_tb);
-        //enable button in toolbar
-        //  getSupportActionBar().setHomeButtonEnabled(true);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        /**  Button algebraIButton;
-         Button algebraIIButton;
-         Button statButton;
-         Button calculusButton; */
         Button workPlzButton;
         Button tipCalculatorButton;
 
@@ -45,10 +34,6 @@ public class CalcHomePageActivty extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.home_page);
 
-        /**   algebraIButton = (Button)findViewById(R.id.algebraI);
-         algebraIIButton = (Button)findViewById(R.id.algebraII);
-         statButton = (Button)findViewById(R.id.statistic);
-         calculusButton= (Button)findViewById(R.id.calcI); */
         tipCalculatorButton = (Button) findViewById(R.id.tipCalculator);
         geometryButton = (Button) findViewById(R.id.geomtery);
 
@@ -58,7 +43,6 @@ public class CalcHomePageActivty extends AppCompatActivity {
         workPlzButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//do something
                 Intent intent = new Intent(CalcHomePageActivty.this, BasicCalcActivity.class);
                 startActivity(intent);
             }
@@ -93,32 +77,6 @@ public class CalcHomePageActivty extends AppCompatActivity {
         workPlzButton.setTypeface(myTypeFace);
         tipCalculatorButton.setTypeface(myTypeFace);
         geometryButton.setTypeface(myTypeFace);
-/**
- algebraIButton.setOnClickListener(new View.OnClickListener(){
-@Override public void onClick(View view) {
-//do something
-}
-});
-
- algebraIIButton.setOnClickListener(new View.OnClickListener(){
-@Override public void onClick(View view){
-//do something
-}
-});
-
- statButton.setOnClickListener(new View.OnClickListener(){
-@Override public void onClick(View view) {
-//do something
-}
-});
-
- calculusButton.setOnClickListener(new View.OnClickListener(){
-@Override public void onClick(View view) {
-//do something
-}
-});
-
- */
 
 
     }
@@ -139,23 +97,4 @@ public class CalcHomePageActivty extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-    }
 }

@@ -15,11 +15,9 @@
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.ObtuseTriangle"
     tools:showIn="@layout/activity_obtuse_triangle">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <TextView
             android:id="@+id/obtuse_tri_perimeter_text"
@@ -31,7 +29,6 @@
             android:text="@string/perimeter"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/obtuse_tri_perimeter_img"
@@ -50,7 +47,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/obtuse_triangle_perimeter_xxxhdpi" />
-
 
         <TextView
             android:id="@+id/obtuse_tri_perimeter_sideA_tv"
@@ -94,7 +90,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/obtuse_tri_perimeter_sideB_et"
             android:layout_width="match_parent"
@@ -111,7 +106,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <TextView
             android:id="@+id/obtuse_tri_perimeter_sideC_tv"
             android:layout_width="40dp"
@@ -124,7 +118,6 @@
             android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/obtuse_tri_perimeter_sideC_et"
@@ -142,7 +135,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
             android:id="@+id/obtuse_tri_perimeter_calc_button"
             android:layout_width="match_parent"
@@ -155,7 +147,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/obtuse_tri_perimeter_ans_tv"
             android:layout_width="match_parent"
@@ -166,7 +157,6 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="21sp" />
-
 
         <Button
             android:id="@+id/obtuse_tri_perimeter_clear_button"
@@ -187,7 +177,6 @@
             android:layout_marginTop="35dp"
             android:background="@drawable/list_divider" />
 
-
         <TextView
             android:id="@+id/obtuse_tri_area_text"
             android:layout_width="match_parent"
@@ -198,7 +187,6 @@
             android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/obtuse_tri_area_img"
@@ -217,7 +205,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/obtuse_triangle_area_xxxhdpi" />
-
 
         <TextView
             android:id="@+id/obtuse_tri_area_base_tv"
@@ -248,7 +235,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <TextView
             android:id="@+id/obtuse_tri_area_height_tv"
             android:layout_width="40dp"
@@ -261,7 +247,6 @@
             android:text="@string/letter_h"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/obtuse_tri_area_height_et"
@@ -279,7 +264,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
             android:id="@+id/obtuse_tri_area_calc_button"
             android:layout_width="match_parent"
@@ -291,7 +275,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/obtuse_tri_area_ans_tv"
@@ -316,7 +299,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <View
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
@@ -324,7 +306,6 @@
             android:layout_below="@id/obtuse_tri_area_clear_button"
             android:layout_marginTop="35dp"
             android:background="@drawable/list_divider" />
-
 
         <TextView
             android:id="@+id/obtuse_tri_sideA_tx"
@@ -336,7 +317,6 @@
             android:text="@string/side_a"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/obtuse_tri_sideA_img"
@@ -355,7 +335,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_side_a_xxxhdpi" />
-
 
         <TextView
             android:id="@+id/obtuse_tri_sideA_base_tv"
@@ -415,7 +394,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <TextView
             android:id="@+id/obtuse_tri_sideA_perimeter_tx"
             android:layout_width="40dp"
@@ -444,7 +422,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/obtuse_tri_sideA_calc_button"
@@ -489,7 +466,6 @@
             android:layout_marginTop="35dp"
             android:background="@drawable/list_divider" />
 
-
         <TextView
             android:id="@+id/obtuse_tri_base_tx"
             android:layout_width="match_parent"
@@ -500,7 +476,6 @@
             android:text="@string/base"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/obtuse_tri_base_img"
@@ -519,7 +494,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_base_xxxhdpi" />
-
 
         <TextView
             android:id="@+id/obtuse_tri_base_sideA_tv"
@@ -550,7 +524,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <TextView
             android:id="@+id/obtuse_tri_base_sideC_tx"
             android:layout_width="40dp"
@@ -563,7 +536,6 @@
             android:text="@string/letter_c"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/obtuse_tri_base_sideC_et"
@@ -580,7 +552,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/obtuse_tri_base_perimeter_tx"
@@ -611,7 +582,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
             android:id="@+id/obtuse_tri_base_calc_button"
             android:layout_width="match_parent"
@@ -636,7 +606,6 @@
             android:textColor="@color/white"
             android:textSize="21sp" />
 
-
         <Button
             android:id="@+id/obtuse_tri_base_clear_button"
             android:layout_width="match_parent"
@@ -648,7 +617,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <View
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
@@ -656,7 +624,6 @@
             android:layout_below="@id/obtuse_tri_base_clear_button"
             android:layout_marginTop="35dp"
             android:background="@drawable/list_divider" />
-
 
     </RelativeLayout>
 

@@ -9,21 +9,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Geometry.Cone.ConeActivity"
-    tools:showIn="@layout/activity_cone"
-    android:scrollbarThumbVertical="@drawable/scrollbar"
-
-
-    >
-
+    tools:showIn="@layout/activity_cone">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-
-
 
         <TextView
             android:id="@+id/cone_volume_text"
@@ -34,8 +27,7 @@
             android:gravity="center"
             android:text="@string/volume"
             android:textColor="@color/Black"
-            android:textSize="30sp"
-             />
+            android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/cone_volume_img"
@@ -78,8 +70,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/cone_volume_r_text"
             android:layout_toEndOf="@id/cone_volume_r_text"
+            android:layout_toRightOf="@+id/cone_volume_r_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/radius"
@@ -87,7 +79,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/cone_volume_h_text"
@@ -102,7 +93,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_volume_h_et"
             android:layout_width="match_parent"
@@ -111,8 +101,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/cone_volume_h_text"
             android:layout_toEndOf="@+id/cone_volume_h_text"
+            android:layout_toRightOf="@+id/cone_volume_h_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/height"
@@ -155,17 +145,13 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <View
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/cone_volume_clear_button"
-            android:layout_marginTop="35dp" />
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/cone_radius_text"
@@ -178,7 +164,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/cone_radius_img"
             android:layout_width="wrap_content"
@@ -186,8 +171,8 @@
             android:layout_below="@+id/cone_radius_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_xxxhdpi"
-            android:contentDescription="@string/cone_image"/>
+            android:contentDescription="@string/cone_image"
+            android:src="@drawable/cone_xxxhdpi" />
 
         <ImageView
             android:id="@+id/cone_radius_formula"
@@ -196,9 +181,8 @@
             android:layout_below="@id/cone_radius_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_radius_xxxhdpi"
-            android:contentDescription="@string/cone_radius_formula"/>
-
+            android:contentDescription="@string/cone_radius_formula"
+            android:src="@drawable/cone_radius_xxxhdpi" />
 
         <TextView
             android:id="@+id/cone_radius_h_text"
@@ -221,8 +205,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/cone_radius_h_text"
             android:layout_toEndOf="@+id/cone_radius_h_text"
+            android:layout_toRightOf="@+id/cone_radius_h_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/height"
@@ -252,8 +236,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/cone_radius_v_text"
             android:layout_toEndOf="@+id/cone_radius_v_text"
+            android:layout_toRightOf="@+id/cone_radius_v_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/volume"
@@ -261,7 +245,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/cone_radius_calc_button"
@@ -287,7 +270,6 @@
             android:textColor="@color/white"
             android:textSize="21sp" />
 
-
         <Button
             android:id="@+id/cone_radius_clear_button"
             android:layout_width="match_parent"
@@ -303,10 +285,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/cone_radius_clear_button"
-            android:layout_marginTop="35dp" />
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/cone_height_text"
@@ -326,8 +307,8 @@
             android:layout_below="@+id/cone_height_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_xxxhdpi"
-            android:contentDescription="@string/cone_image"/>
+            android:contentDescription="@string/cone_image"
+            android:src="@drawable/cone_xxxhdpi" />
 
         <ImageView
             android:id="@+id/cone_height_formula"
@@ -336,9 +317,8 @@
             android:layout_below="@id/cone_height_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_height_xxxhdpi"
-            android:contentDescription="@string/cone_height_formula"/>
-
+            android:contentDescription="@string/cone_height_formula"
+            android:src="@drawable/cone_height_xxxhdpi" />
 
         <TextView
             android:id="@+id/cone_height_r_text"
@@ -353,7 +333,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_height_r_et"
             android:layout_width="match_parent"
@@ -362,8 +341,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/cone_height_r_text"
             android:layout_toEndOf="@+id/cone_height_r_text"
+            android:layout_toRightOf="@+id/cone_height_r_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/radius"
@@ -371,7 +350,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/cone_height_v_text"
@@ -386,7 +364,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_height_v_et"
             android:layout_width="match_parent"
@@ -395,8 +372,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/cone_height_v_text"
             android:layout_toEndOf="@+id/cone_height_v_text"
+            android:layout_toRightOf="@+id/cone_height_v_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/volume"
@@ -444,11 +421,9 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/cone_height_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/cone_slant_height_text"
@@ -468,8 +443,8 @@
             android:layout_below="@+id/cone_slant_height_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_xxxhdpi"
-            android:contentDescription="@string/cone_image"/>
+            android:contentDescription="@string/cone_image"
+            android:src="@drawable/cone_xxxhdpi" />
 
         <ImageView
             android:id="@+id/cone_slant_height_formula"
@@ -478,9 +453,8 @@
             android:layout_below="@id/cone_slant_height_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_slant_height_xxxhdpi"
-            android:contentDescription="@string/cone_slant_height_formula"/>
-
+            android:contentDescription="@string/cone_slant_height_formula"
+            android:src="@drawable/cone_slant_height_xxxhdpi" />
 
         <TextView
             android:id="@+id/cone_slant_height_r_text"
@@ -495,7 +469,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_slant_height_r_et"
             android:layout_width="match_parent"
@@ -504,8 +477,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/cone_slant_height_r_text"
             android:layout_toEndOf="@+id/cone_slant_height_r_text"
+            android:layout_toRightOf="@+id/cone_slant_height_r_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/radius"
@@ -513,7 +486,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/cone_slant_height_h_text"
@@ -528,7 +500,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_slant_height_h_et"
             android:layout_width="match_parent"
@@ -537,8 +508,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/cone_slant_height_h_text"
             android:layout_toEndOf="@+id/cone_slant_height_h_text"
+            android:layout_toRightOf="@+id/cone_slant_height_h_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/height"
@@ -586,11 +557,9 @@
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/cone_slant_height_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/cone_surface_area_text"
@@ -609,8 +578,8 @@
             android:layout_below="@+id/cone_surface_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_xxxhdpi"
             android:contentDescription="@string/cone_image"
+            android:src="@drawable/cone_xxxhdpi"
 
             />
 
@@ -621,9 +590,8 @@
             android:layout_below="@id/cone_surface_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_surface_area_xxxhdpi"
-            android:contentDescription="@string/cone_surface_area_formula"/>
-
+            android:contentDescription="@string/cone_surface_area_formula"
+            android:src="@drawable/cone_surface_area_xxxhdpi" />
 
         <TextView
             android:id="@+id/cone_surface_area_r_text"
@@ -638,7 +606,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_surface_area_r_et"
             android:layout_width="match_parent"
@@ -647,8 +614,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/cone_surface_area_r_text"
             android:layout_toEndOf="@+id/cone_surface_area_r_text"
+            android:layout_toRightOf="@+id/cone_surface_area_r_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/radius"
@@ -656,7 +623,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/cone_surface_area_h_text"
@@ -671,7 +637,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_surface_area_h_et"
             android:layout_width="match_parent"
@@ -680,8 +645,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/cone_surface_area_h_text"
             android:layout_toEndOf="@+id/cone_surface_area_h_text"
+            android:layout_toRightOf="@+id/cone_surface_area_h_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/height"
@@ -729,11 +694,9 @@
             android:id="@+id/hline_5"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/cone_surface_area_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/cone_base_area_text"
@@ -753,10 +716,8 @@
             android:layout_below="@+id/cone_base_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_xxxhdpi"
             android:contentDescription="@string/cone_image"
-
-            />
+            android:src="@drawable/cone_xxxhdpi" />
 
         <ImageView
             android:id="@+id/cone_base_area_formula"
@@ -765,9 +726,8 @@
             android:layout_below="@id/cone_base_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_base_area_xxxhdpi"
-            android:contentDescription="@string/cone_base_area_formula" />
-
+            android:contentDescription="@string/cone_base_area_formula"
+            android:src="@drawable/cone_base_area_xxxhdpi" />
 
         <TextView
             android:id="@+id/cone_base_area_r_text"
@@ -782,7 +742,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_base_area_r_et"
             android:layout_width="match_parent"
@@ -791,8 +750,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/cone_base_area_r_text"
             android:layout_toEndOf="@+id/cone_base_area_r_text"
+            android:layout_toRightOf="@+id/cone_base_area_r_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/radius"
@@ -825,7 +784,6 @@
             android:textColor="@color/white"
             android:textSize="21sp" />
 
-
         <Button
             android:id="@+id/cone_base_area_clear_button"
             android:layout_width="match_parent"
@@ -836,16 +794,14 @@
             android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
+
         <View
             android:id="@+id/hline_6"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/cone_base_area_clear_button"
-            android:layout_marginTop="35dp" />
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/cone_lateral_surface_text"
@@ -864,10 +820,8 @@
             android:layout_below="@+id/cone_lateral_surface_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_xxxhdpi"
             android:contentDescription="@string/cone_image"
-
-            />
+            android:src="@drawable/cone_xxxhdpi" />
 
         <ImageView
             android:id="@+id/cone_lateral_surface_formula"
@@ -876,9 +830,8 @@
             android:layout_below="@id/cone_lateral_surface_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/cone_lateral_surface_xxxhdpi"
-            android:contentDescription="@string/cone_lateral_surface_formula"/>
-
+            android:contentDescription="@string/cone_lateral_surface_formula"
+            android:src="@drawable/cone_lateral_surface_xxxhdpi" />
 
         <TextView
             android:id="@+id/cone_lateral_surface_r_text"
@@ -901,8 +854,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/cone_lateral_surface_r_text"
             android:layout_toEndOf="@+id/cone_lateral_surface_r_text"
+            android:layout_toRightOf="@+id/cone_lateral_surface_r_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/radius"
@@ -924,7 +877,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/cone_lateral_surface_h_et"
             android:layout_width="match_parent"
@@ -933,8 +885,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/cone_lateral_surface_h_text"
             android:layout_toEndOf="@+id/cone_lateral_surface_h_text"
+            android:layout_toRightOf="@+id/cone_lateral_surface_h_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/height"
@@ -965,9 +917,7 @@
             android:gravity="center"
             android:maxLines="1"
             android:textColor="@color/white"
-            android:textSize="21sp"
-
-            />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/cone_lateral_surface_clear_button"
@@ -984,11 +934,9 @@
             android:id="@+id/hline_7"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/cone_lateral_surface_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
     </RelativeLayout>
 

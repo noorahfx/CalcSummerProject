@@ -1,6 +1,5 @@
 package calcpa.calcsummerproject.Geometry.Parallelogram;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -69,12 +68,12 @@ public class ParallelogramActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        perimeterResource();
-        areaResource();
-        baseResource();
-        sidesResource();
-        heightResource();
-        fontResource();
+        setPerimeterResource();
+        setAreaResource();
+        setBaseResource();
+        setSidesResource();
+        setHeightResource();
+        setFontResource();
 
 
     }
@@ -123,38 +122,7 @@ public class ParallelogramActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-
-    public void perimeterResource() {
+    public void setPerimeterResource() {
         //Perimeter
         parallelogramPerimeterBaseET = (EditText) findViewById(R.id.parallelogram_perimeter_base_et);
         parallelogramPerimeterAreaET = (EditText) findViewById(R.id.parallelogram_perimeter_area_et);
@@ -198,7 +166,7 @@ public class ParallelogramActivity extends AppCompatActivity {
         });
     }
 
-    public void areaResource() {
+    public void setAreaResource() {
         //Area
         parallelogramAreaBaseET = (EditText) findViewById(R.id.parallelogram_area_base_et);
         parallelogramAreaHeightET = (EditText) findViewById(R.id.parallelogram_area_height_et);
@@ -244,7 +212,7 @@ public class ParallelogramActivity extends AppCompatActivity {
 
     }
 
-    public void baseResource() {
+    public void setBaseResource() {
 
         //Base
         parallelogramBaseSideET = (EditText) findViewById(R.id.parallelogram_base_side_a_et);
@@ -291,7 +259,7 @@ public class ParallelogramActivity extends AppCompatActivity {
 
     }
 
-    public void heightResource() {
+    public void setHeightResource() {
 
         //height
         parallelogramHeightBaseET = (EditText) findViewById(R.id.parallelogram_height_base_et);
@@ -338,7 +306,7 @@ public class ParallelogramActivity extends AppCompatActivity {
 
     }
 
-    public void sidesResource() {
+    public void setSidesResource() {
         //Sides
         parallelogramSideBaseET = (EditText) findViewById(R.id.parallelogram_side_base_et);
         parallelogramSidePerimeterET = (EditText) findViewById(R.id.parallelogram_side_perimeter_et);
@@ -387,7 +355,7 @@ public class ParallelogramActivity extends AppCompatActivity {
 
     }
 
-    public void fontResource() {
+    public void setFontResource() {
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
         TextView myTextView = (TextView) findViewById(R.id.parallelogram_perimeter_text);

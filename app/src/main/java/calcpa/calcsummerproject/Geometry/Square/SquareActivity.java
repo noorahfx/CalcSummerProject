@@ -1,6 +1,5 @@
 package calcpa.calcsummerproject.Geometry.Square;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class SquareActivity extends AppCompatActivity {
 
@@ -57,11 +55,11 @@ public class SquareActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        perimeterResource();
-        areaResource();
-        sideResource();
-        diagonalResource();
-        fontResource();
+        setPerimeterResource();
+        setAreaResource();
+        setSideResource();
+        setDiagonalResource();
+        setFontResource();
 
 
     }
@@ -99,7 +97,7 @@ public class SquareActivity extends AppCompatActivity {
     }
 
 
-    private void perimeterResource() {
+    private void setPerimeterResource() {
         //Perimeter
         squarePerimeterET = (EditText) findViewById(R.id.square_perimeter_a_et);
         squarePerimeterAnswerTV = (TextView) findViewById(R.id.square_perimeter_calc_answer_tx);
@@ -138,7 +136,7 @@ public class SquareActivity extends AppCompatActivity {
 
     }
 
-    private void areaResource() {
+    private void setAreaResource() {
         //Area
         squareAreaET = (EditText) findViewById(R.id.square_area_a_et);
         squareAreaTV = (TextView) findViewById(R.id.square_calc_area_answer_tx);
@@ -176,7 +174,7 @@ public class SquareActivity extends AppCompatActivity {
 
     }
 
-    private void sideResource() {
+    private void setSideResource() {
         //Sides
         squareSideET = (EditText) findViewById(R.id.square_side_a_et);
         squareSideTV = (TextView) findViewById(R.id.square_calc_side_answer_tx);
@@ -214,7 +212,7 @@ public class SquareActivity extends AppCompatActivity {
 
     }
 
-    private void diagonalResource() {
+    private void setDiagonalResource() {
         //diagonal
         squareDiagonalET = (EditText) findViewById(R.id.square_diagonal_d_et);
         squareDiagonalTV = (TextView) findViewById(R.id.square_calc_diagonal_answer_tx);
@@ -253,7 +251,7 @@ public class SquareActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource() {
+    private void setFontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.square_perimeter_text);
@@ -312,35 +310,6 @@ public class SquareActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
 
 
 }

@@ -9,19 +9,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Geometry.Circle.CircleActivity"
-    tools:showIn="@layout/activity_circle"
-    android:scrollbarThumbVertical="@drawable/scrollbar"
-
-    >
-
+    tools:showIn="@layout/activity_circle">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
 
         <TextView
             android:id="@+id/circle_area_text"
@@ -31,8 +26,7 @@
             android:gravity="center"
             android:text="@string/area"
             android:textColor="@color/Black"
-            android:textSize="30sp"
-             />
+            android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/circle_area_img"
@@ -54,19 +48,6 @@
             android:contentDescription="@string/circle_area_formula"
             android:src="@drawable/circle_area_xxxhdpi" />
 
-        <!--
-           <io.github.kexanie.library.MathView
-               android:id="@+id/areaFormula"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_below="@+id/circle_area_img"
-               android:layout_gravity="fill_horizontal"
-               android:layout_marginTop="10dp"
-               auto:engine="KaTeX">
-
-           </io.github.kexanie.library.MathView>
-
-    -->
         <TextView
             android:id="@+id/circle_area_a_text"
             android:layout_width="40dp"
@@ -79,7 +60,6 @@
             android:text="@string/letter_r"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/circle_area_a_et"
@@ -99,9 +79,7 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
-
             android:id="@+id/circle_area_calc_button"
             android:layout_width="match_parent"
             android:layout_height="42dp"
@@ -112,7 +90,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/circle_calc_answer_tx"
@@ -127,7 +104,6 @@
             android:textSize="21sp" />
 
         <Button
-
             android:id="@+id/circle_area_clear_button"
             android:layout_width="match_parent"
             android:layout_height="42dp"
@@ -140,21 +116,12 @@
 
         <View
             android:id="@+id/hline_1"
-             android:layout_width="fill_parent"
+            android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/circle_area_clear_button"
-            android:layout_marginTop="35dp" />
-  <!--
-        <TextView
-            android:id="@+id/hline_1"
-            style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/circle_area_clear_button"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
--->
         <TextView
             android:id="@+id/circle_diameter_text"
             android:layout_width="match_parent"
@@ -186,7 +153,6 @@
             android:contentDescription="@string/circle_diameter_formula"
             android:src="@drawable/circle_diameter_xxxhdpi" />
 
-
         <TextView
             android:id="@+id/circle_diameter_d_text"
             android:layout_width="40dp"
@@ -199,7 +165,6 @@
             android:text="@string/letter_r"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/circle_diameter_d_et"
@@ -230,7 +195,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/circle_calc_diamter_answer_tx"
             android:layout_width="match_parent"
@@ -253,15 +217,13 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <View
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/circle_diameter_clear_button"
-            android:layout_marginTop="35dp" />
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/circle_circum_text"
@@ -294,7 +256,6 @@
             android:contentDescription="@string/circle_circum_formula"
             android:src="@drawable/circle_circum_xxxhdpi" />
 
-
         <TextView
             android:id="@+id/circle_circum_c_text"
             android:layout_width="40dp"
@@ -307,7 +268,6 @@
             android:text="@string/letter_r"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/circle_circum_c_et"
@@ -340,7 +300,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/circle_circum_calc_answer_tx"
             android:layout_width="match_parent"
@@ -367,11 +326,9 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/circle_circum_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/circle_radius_text"
@@ -404,7 +361,6 @@
             android:contentDescription="@string/circle_radius_formula"
             android:src="@drawable/circle_radius_xxxhdpi" />
 
-
         <TextView
             android:id="@+id/circle_radius_c_text"
             android:layout_width="40dp"
@@ -417,7 +373,6 @@
             android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/circle_radius_c_et"
@@ -451,7 +406,6 @@
             android:textSize="13sp" />
 
         <TextView
-
             android:id="@+id/circle_radius_calc_answer_tx"
             android:layout_width="match_parent"
             android:layout_height="42dp"
@@ -472,16 +426,17 @@
             android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
+
         <View
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/circle_radius_clear_button"
-            android:layout_marginTop="35dp" />
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
+    </RelativeLayout>
 
-     </RelativeLayout>
 </ScrollView>
 
 

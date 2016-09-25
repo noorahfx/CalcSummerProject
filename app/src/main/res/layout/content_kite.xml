@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -9,11 +9,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Geometry.Kite.KiteActivity"
-    tools:showIn="@layout/activity_kite"
-    android:scrollbarThumbVertical="@drawable/scrollbar">
-
+    tools:showIn="@layout/activity_kite">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -37,8 +36,8 @@
             android:layout_below="@+id/kite_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_xxxhdpi"
-            android:contentDescription="@string/kite_image"/>
+            android:contentDescription="@string/kite_image"
+            android:src="@drawable/kite_xxxhdpi" />
 
         <ImageView
             android:id="@+id/kite_perimeter_formula"
@@ -47,10 +46,8 @@
             android:layout_below="@+id/kite_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_perimeter_xxxhdpi"
-            android:contentDescription="@string/kite_perimeter_formula"/>
-
-
+            android:contentDescription="@string/kite_perimeter_formula"
+            android:src="@drawable/kite_perimeter_xxxhdpi" />
 
         <TextView
             android:id="@+id/kite_perimeter_side_a_text"
@@ -73,8 +70,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/kite_perimeter_side_a_text"
             android:layout_toEndOf="@+id/kite_perimeter_side_a_text"
+            android:layout_toRightOf="@+id/kite_perimeter_side_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -82,7 +79,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/kite_perimeter_side_b_text"
@@ -97,7 +93,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/kite_perimeter_side_b_et"
             android:layout_width="match_parent"
@@ -106,8 +101,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/kite_perimeter_side_b_text"
             android:layout_toEndOf="@+id/kite_perimeter_side_b_text"
+            android:layout_toRightOf="@+id/kite_perimeter_side_b_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -115,7 +110,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/kite_perimeter_calc_button"
@@ -129,7 +123,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/kite_perimeter_calc_answer_tx"
             android:layout_width="match_parent"
@@ -140,7 +133,6 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="21sp" />
-
 
         <Button
             android:id="@+id/kite_perimeter_clear_button"
@@ -157,12 +149,9 @@
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/kite_perimeter_clear_button"
-            android:layout_marginTop="35dp" />
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/kite_area_text"
@@ -182,8 +171,8 @@
             android:layout_below="@+id/kite_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_xxxhdpi"
-            android:contentDescription="@string/kite_image"/>
+            android:contentDescription="@string/kite_image"
+            android:src="@drawable/kite_xxxhdpi" />
 
         <ImageView
             android:id="@+id/kite_area_formula"
@@ -192,10 +181,8 @@
             android:layout_below="@+id/kite_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_area_xxxhdpi"
-            android:contentDescription="@string/kite_area_formula"/>
-
-
+            android:contentDescription="@string/kite_area_formula"
+            android:src="@drawable/kite_area_xxxhdpi" />
 
         <TextView
             android:id="@+id/kite_area_diagonal_p_text"
@@ -210,7 +197,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/kite_area_diagonal_p_et"
             android:layout_width="match_parent"
@@ -219,8 +205,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/kite_area_diagonal_p_text"
             android:layout_toEndOf="@+id/kite_area_diagonal_p_text"
+            android:layout_toRightOf="@+id/kite_area_diagonal_p_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -228,7 +214,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/kite_area_diagonal_q_text"
@@ -243,7 +228,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/kite_area_diagonal_q_et"
             android:layout_width="match_parent"
@@ -252,8 +236,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/kite_area_diagonal_q_text"
             android:layout_toEndOf="@+id/kite_area_diagonal_q_text"
+            android:layout_toRightOf="@+id/kite_area_diagonal_q_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -261,7 +245,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/kite_area_calc_button"
@@ -275,7 +258,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/kite_area_calc_answer_tx"
             android:layout_width="match_parent"
@@ -287,7 +269,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textSize="21sp" />
-
 
         <Button
             android:id="@+id/kite_area_clear_button"
@@ -304,11 +285,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/kite_area_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/kite_side_a_text"
@@ -321,7 +300,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/kite_side_a_img"
             android:layout_width="wrap_content"
@@ -329,8 +307,8 @@
             android:layout_below="@+id/kite_side_a_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_xxxhdpi"
-            android:contentDescription="@string/kite_image"/>
+            android:contentDescription="@string/kite_image"
+            android:src="@drawable/kite_xxxhdpi" />
 
         <ImageView
             android:id="@+id/kite_side_a_formula"
@@ -339,10 +317,8 @@
             android:layout_below="@+id/kite_side_a_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_side_a_xxxhdpi"
-            android:contentDescription="@string/kite_side_a_formula"/>
-
-
+            android:contentDescription="@string/kite_side_a_formula"
+            android:src="@drawable/kite_side_a_xxxhdpi" />
 
         <TextView
             android:id="@+id/kite_side_a_bside_text"
@@ -365,8 +341,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/kite_side_a_bside_text"
             android:layout_toEndOf="@+id/kite_side_a_bside_text"
+            android:layout_toRightOf="@+id/kite_side_a_bside_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -374,7 +350,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/kite_side_a_perimeter_text"
@@ -397,8 +372,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/kite_side_a_perimeter_text"
             android:layout_toEndOf="@+id/kite_side_a_perimeter_text"
+            android:layout_toRightOf="@+id/kite_side_a_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/perimeter"
@@ -406,7 +381,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/kite_side_a_calc_button"
@@ -420,7 +394,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/kite_side_a_calc_answer_tx"
             android:layout_width="match_parent"
@@ -432,7 +405,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textSize="21sp" />
-
 
         <Button
             android:id="@+id/kite_side_a_clear_button"
@@ -449,11 +421,9 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/kite_side_a_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/kite_side_b_text"
@@ -466,7 +436,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/kite_side_b_img"
             android:layout_width="wrap_content"
@@ -474,8 +443,8 @@
             android:layout_below="@+id/kite_side_b_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_xxxhdpi"
-            android:contentDescription="@string/kite_image"/>
+            android:contentDescription="@string/kite_image"
+            android:src="@drawable/kite_xxxhdpi" />
 
         <ImageView
             android:id="@+id/kite_side_b_formula"
@@ -484,10 +453,8 @@
             android:layout_below="@+id/kite_side_b_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_side_b_xxxhdpi"
-            android:contentDescription="@string/kite_side_b_formula"/>
-
-
+            android:contentDescription="@string/kite_side_b_formula"
+            android:src="@drawable/kite_side_b_xxxhdpi" />
 
         <TextView
             android:id="@+id/kite_side_b_aside_text"
@@ -510,8 +477,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/kite_side_b_aside_text"
             android:layout_toEndOf="@+id/kite_side_b_aside_text"
+            android:layout_toRightOf="@+id/kite_side_b_aside_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -519,7 +486,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/kite_side_b_perimeter_text"
@@ -542,8 +508,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/kite_side_b_perimeter_text"
             android:layout_toEndOf="@+id/kite_side_b_perimeter_text"
+            android:layout_toRightOf="@+id/kite_side_b_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/perimeter"
@@ -551,7 +517,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/kite_side_b_calc_button"
@@ -564,7 +529,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/kite_side_b_calc_answer_tx"
@@ -593,11 +557,9 @@
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/kite_side_b_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/kite_p_diaognal_text"
@@ -610,7 +572,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/kite_p_diaognal_img"
             android:layout_width="wrap_content"
@@ -618,8 +579,8 @@
             android:layout_below="@+id/kite_p_diaognal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_xxxhdpi"
-            android:contentDescription="@string/kite_image"/>
+            android:contentDescription="@string/kite_image"
+            android:src="@drawable/kite_xxxhdpi" />
 
         <ImageView
             android:id="@+id/kite_p_diagonal_formula"
@@ -628,11 +589,8 @@
             android:layout_below="@+id/kite_p_diaognal_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_diagonal_p_xxhdpi"
-            android:contentDescription="@string/kite_diagonal_p_formula"/>
-
-
-
+            android:contentDescription="@string/kite_diagonal_p_formula"
+            android:src="@drawable/kite_diagonal_p_xxhdpi" />
 
         <TextView
             android:id="@+id/kite_p_diaognal_q_text"
@@ -655,8 +613,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/kite_p_diaognal_q_text"
             android:layout_toEndOf="@+id/kite_p_diaognal_q_text"
+            android:layout_toRightOf="@+id/kite_p_diaognal_q_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -664,7 +622,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/kite_p_diaognal_area_text"
@@ -687,8 +644,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/kite_p_diaognal_area_text"
             android:layout_toEndOf="@+id/kite_p_diaognal_area_text"
+            android:layout_toRightOf="@+id/kite_p_diaognal_area_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/area"
@@ -696,7 +653,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/kite_p_diaognal_calc_button"
@@ -710,7 +666,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/kite_p_diaognal_calc_answer_tx"
             android:layout_width="match_parent"
@@ -722,7 +677,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textSize="21sp" />
-
 
         <Button
             android:id="@+id/kite_p_diaognal_clear_button"
@@ -739,12 +693,9 @@
             android:id="@+id/hline_5"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/kite_p_diaognal_clear_button"
-            android:layout_marginTop="35dp" />
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/kite_q_diaognal_text"
@@ -757,7 +708,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/kite_q_diaognal_img"
             android:layout_width="wrap_content"
@@ -765,8 +715,8 @@
             android:layout_below="@+id/kite_q_diaognal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_xxxhdpi"
-            android:contentDescription="@string/kite_image"/>
+            android:contentDescription="@string/kite_image"
+            android:src="@drawable/kite_xxxhdpi" />
 
         <ImageView
             android:id="@+id/kite_q_diagonal_formula"
@@ -775,11 +725,8 @@
             android:layout_below="@+id/kite_q_diaognal_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/kite_diagonal_q_xxxhdpi"
-            android:contentDescription="@string/kite_diagonal_q_formula"/>
-
-
-
+            android:contentDescription="@string/kite_diagonal_q_formula"
+            android:src="@drawable/kite_diagonal_q_xxxhdpi" />
 
         <TextView
             android:id="@+id/kite_q_diaognal_p_text"
@@ -802,8 +749,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/kite_q_diaognal_p_text"
             android:layout_toEndOf="@+id/kite_q_diaognal_p_text"
+            android:layout_toRightOf="@+id/kite_q_diaognal_p_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/diagonal"
@@ -811,7 +758,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/kite_q_diaognal_perimeter_text"
@@ -826,7 +772,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/kite_q_diaognal_perimeter_et"
             android:layout_width="match_parent"
@@ -835,8 +780,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/kite_q_diaognal_perimeter_text"
             android:layout_toEndOf="@+id/kite_q_diaognal_perimeter_text"
+            android:layout_toRightOf="@+id/kite_q_diaognal_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/area"
@@ -844,7 +789,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/kite_q_diaognal_calc_button"
@@ -885,14 +829,12 @@
             android:id="@+id/hline_6"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/kite_q_diaognal_clear_button"
-            android:layout_marginTop="35dp" />
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
     </RelativeLayout>
+
 </ScrollView>
 
 

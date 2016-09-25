@@ -1,22 +1,16 @@
 package calcpa.calcsummerproject.Geometry.Heptagon;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class HeptagonActivity extends AppCompatActivity {
 
@@ -51,10 +45,10 @@ public class HeptagonActivity extends AppCompatActivity {
         //enable button in toolbar
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        perimeterResource();
-        areaResource();
-        sideResource();
-        fontResource();
+        setPerimeterResource();
+        setAreaResource();
+        setSideResource();
+        setFontResource();
 
 
     }
@@ -89,38 +83,7 @@ public class HeptagonActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
-
-
-    private void perimeterResource() {
+    private void setPerimeterResource() {
 
         hepPerimeterSideAET = (EditText) findViewById(R.id.hep_perimeter_side_a_et);
         hepPerimeterAnswerTV = (TextView) findViewById(R.id.hep_perimeter_calc_answer_tx);
@@ -154,7 +117,7 @@ public class HeptagonActivity extends AppCompatActivity {
 
     }
 
-    private void areaResource() {
+    private void setAreaResource() {
         //Area
         hepAreaSideAET = (EditText) findViewById(R.id.hep_area_side_a_et);
         hepAreaAnswerTV = (TextView) findViewById(R.id.hep_area_calc_answer_tx);
@@ -191,7 +154,7 @@ public class HeptagonActivity extends AppCompatActivity {
 
     }
 
-    private void sideResource() {
+    private void setSideResource() {
         hepSideAET = (EditText) findViewById(R.id.hep_side_et);
         hepSideAAnswerTV = (TextView) findViewById(R.id.hep_side_calc_answer_tx);
         hepSideACalcButton = (Button) findViewById(R.id.hep_side_calc_button);
@@ -229,7 +192,7 @@ public class HeptagonActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource() {
+    private void setFontResource() {
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
         TextView myTextView = (TextView) findViewById(R.id.hep_perimeter_text);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -9,16 +9,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Geometry.Hexagon.HexagonActivity"
-    tools:showIn="@layout/activity_hexagon"
-    android:scrollbarThumbVertical="@drawable/scrollbar">
-
+    tools:showIn="@layout/activity_hexagon">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <TextView
             android:id="@+id/hex_perimeter_text"
@@ -37,8 +35,8 @@
             android:layout_below="@+id/hex_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/hexagon_xxxhdpi"
-            android:contentDescription="@string/hexagon_image"/>
+            android:contentDescription="@string/hexagon_image"
+            android:src="@drawable/hexagon_xxxhdpi" />
 
         <ImageView
             android:id="@+id/hex_perimeter_formula"
@@ -47,11 +45,8 @@
             android:layout_below="@+id/hex_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/hexagon_perimeter_xxxhdpi"
-            android:contentDescription="@string/hexagon_perimeter_formula"/>
-
-
-
+            android:contentDescription="@string/hexagon_perimeter_formula"
+            android:src="@drawable/hexagon_perimeter_xxxhdpi" />
 
         <TextView
             android:id="@+id/hex_perimeter_side_a_text"
@@ -74,8 +69,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/hex_perimeter_side_a_text"
             android:layout_toEndOf="@+id/hex_perimeter_side_a_text"
+            android:layout_toRightOf="@+id/hex_perimeter_side_a_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -108,7 +103,6 @@
             android:textColor="@color/white"
             android:textSize="21sp" />
 
-
         <Button
             android:id="@+id/hex_perimeter_clear_button"
             android:layout_width="match_parent"
@@ -124,10 +118,9 @@
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/hex_perimeter_clear_button"
-            android:layout_marginTop="35dp" />
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/hex_area_text"
@@ -140,7 +133,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/hex_area_img"
             android:layout_width="wrap_content"
@@ -148,8 +140,8 @@
             android:layout_below="@+id/hex_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/hexagon_xxxhdpi"
-            android:contentDescription="@string/hexagon_image"/>
+            android:contentDescription="@string/hexagon_image"
+            android:src="@drawable/hexagon_xxxhdpi" />
 
         <ImageView
             android:id="@+id/hex_area_formula"
@@ -158,11 +150,8 @@
             android:layout_below="@+id/hex_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/hexagon_area_xxxhdpi"
-            android:contentDescription="@string/hexagon_area_formula"/>
-
-
-
+            android:contentDescription="@string/hexagon_area_formula"
+            android:src="@drawable/hexagon_area_xxxhdpi" />
 
         <TextView
             android:id="@+id/hex_area_side_a_tx"
@@ -185,8 +174,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10sp"
-            android:layout_toRightOf="@+id/hex_area_side_a_tx"
             android:layout_toEndOf="@+id/hex_area_side_a_tx"
+            android:layout_toRightOf="@+id/hex_area_side_a_tx"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -205,7 +194,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/hex_area_calc_answer_tx"
@@ -233,11 +221,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/hex_area_clear_button"
-            android:layout_marginTop="35dp" />
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/hex_side_text"
@@ -250,7 +236,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/hex_side_img"
             android:layout_width="wrap_content"
@@ -258,8 +243,8 @@
             android:layout_below="@+id/hex_side_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/hexagon_xxxhdpi"
-            android:contentDescription="@string/hexagon_image"/>
+            android:contentDescription="@string/hexagon_image"
+            android:src="@drawable/hexagon_xxxhdpi" />
 
         <ImageView
             android:id="@+id/hex_side_formula"
@@ -268,10 +253,8 @@
             android:layout_below="@+id/hex_side_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/hexagon_sides_xxxhdpi"
-            android:contentDescription="@string/hexagon_side_a_formula"/>
-
-
+            android:contentDescription="@string/hexagon_side_a_formula"
+            android:src="@drawable/hexagon_sides_xxxhdpi" />
 
         <TextView
             android:id="@+id/hex_side_tx"
@@ -286,7 +269,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/hex_side_et"
             android:layout_width="match_parent"
@@ -295,8 +277,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/hex_side_tx"
             android:layout_toEndOf="@+id/hex_side_tx"
+            android:layout_toRightOf="@+id/hex_side_tx"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/side"
@@ -304,7 +286,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/hex_side_calc_button"
@@ -317,7 +298,6 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
         <TextView
             android:id="@+id/hex_side_calc_answer_tx"
             android:layout_width="match_parent"
@@ -328,7 +308,6 @@
             android:gravity="center"
             android:textColor="@color/White"
             android:textSize="21sp" />
-
 
         <Button
             android:id="@+id/hex_side_clear_button"
@@ -345,13 +324,11 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/hex_side_clear_button"
-            android:layout_marginTop="35dp" />
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
     </RelativeLayout>
-
 
 </ScrollView>
 

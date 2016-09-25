@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:auto="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,11 +13,9 @@
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.AcuteTriangle"
     tools:showIn="@layout/activity_acute_triangle">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <TextView
             android:id="@+id/acute_tri_perimeter_text"
@@ -31,7 +28,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/acute_tri_perimeter_img"
             android:layout_width="wrap_content"
@@ -41,7 +37,6 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_xxxhdpi" />
 
-
         <ImageView
             android:id="@+id/acute_tri_perimeter_formula"
             android:layout_width="wrap_content"
@@ -50,8 +45,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_perimeter_xxxhdpi" />
-
-
 
         <TextView
             android:id="@+id/acute_tri_perimeter_sideA_tv"
@@ -184,9 +177,9 @@
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/acute_tri_perimeter_clear_button"
-            android:layout_marginTop="35dp"/>
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/acute_tri_area_text"
@@ -217,9 +210,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_area_xxxhdpi" />
-
-
-
 
 
         <TextView
@@ -323,9 +313,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/acute_tri_area_clear_button"
-            android:layout_marginTop="35dp"/>
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/acute_tri_hyp_tx"
@@ -356,7 +346,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_hyp_xxhdpi" />
-
 
 
         <TextView
@@ -460,9 +449,9 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/acute_tri_hyp_clear_button"
-            android:layout_marginTop="35dp"/>
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
 
         <TextView
@@ -494,7 +483,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_side_a_xxxhdpi" />
-
 
 
         <TextView
@@ -625,10 +613,9 @@
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/acute_tri_sideA_clear_button"
-            android:layout_marginTop="35dp"/>
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
 
         <TextView
@@ -660,8 +647,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/acute_triangle_base_xxxhdpi" />
-
-
 
 
         <TextView
@@ -796,10 +781,9 @@
             android:id="@+id/hline_5"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/acute_tri_base_clear_button"
-            android:layout_marginTop="35dp"/>
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
 
     </RelativeLayout>

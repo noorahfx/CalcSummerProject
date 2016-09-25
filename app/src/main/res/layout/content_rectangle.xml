@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#cfcfc4"
@@ -9,16 +9,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Geometry.Rectangle.RectangleActivity"
-    tools:showIn="@layout/activity_rectangle"
-    android:scrollbarThumbVertical="@drawable/scrollbar">
-
+    tools:showIn="@layout/activity_rectangle">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <TextView
             android:id="@+id/rectangle_perimeter_text"
@@ -31,7 +29,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/rectangle_perimeter_img"
             android:layout_width="wrap_content"
@@ -39,8 +36,8 @@
             android:layout_below="@+id/rectangle_perimeter_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi"
-            android:contentDescription="@string/rectangle_image"/>
+            android:contentDescription="@string/rectangle_image"
+            android:src="@drawable/rectangle_xxxhdpi" />
 
         <ImageView
             android:id="@+id/rectangle_perimeter_formula"
@@ -49,10 +46,8 @@
             android:layout_below="@+id/rectangle_perimeter_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_perimeter_xxxhdpi"
-            android:contentDescription="@string/rectangle_perimeter_formula"/>
-
-
+            android:contentDescription="@string/rectangle_perimeter_formula"
+            android:src="@drawable/rectangle_perimeter_xxxhdpi" />
 
         <TextView
             android:id="@+id/rectangle_perimeter_length_text"
@@ -75,8 +70,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/rectangle_perimeter_length_text"
             android:layout_toEndOf="@+id/rectangle_perimeter_length_text"
+            android:layout_toRightOf="@+id/rectangle_perimeter_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -98,7 +93,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/rectangle_perimeter_width_et"
             android:layout_width="match_parent"
@@ -107,8 +101,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/rectangle_perimeter_width_text"
             android:layout_toEndOf="@+id/rectangle_perimeter_width_text"
+            android:layout_toRightOf="@+id/rectangle_perimeter_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"
@@ -116,9 +110,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
-
-
 
         <Button
             android:id="@+id/rectangle_perimeter_calc_button"
@@ -142,6 +133,7 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="21sp" />
+
         <Button
             android:id="@+id/rectangle_perimeter_clear_button"
             android:layout_width="match_parent"
@@ -157,12 +149,9 @@
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_perimeter_clear_button"
-            android:layout_marginTop="35dp"/>
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/rectangle_area_text"
@@ -175,7 +164,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/rectangle_area_img"
             android:layout_width="wrap_content"
@@ -183,8 +171,8 @@
             android:layout_below="@+id/rectangle_area_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi"
-            android:contentDescription="@string/rectangle_image"/>
+            android:contentDescription="@string/rectangle_image"
+            android:src="@drawable/rectangle_xxxhdpi" />
 
         <ImageView
             android:id="@+id/rectangle_area_formula"
@@ -193,10 +181,8 @@
             android:layout_below="@+id/rectangle_area_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_area_xxxhdpi"
-            android:contentDescription="@string/rectangle_area_formula"/>
-
-
+            android:contentDescription="@string/rectangle_area_formula"
+            android:src="@drawable/rectangle_area_xxxhdpi" />
 
         <TextView
             android:id="@+id/rectangle_area_length_text"
@@ -219,8 +205,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/rectangle_area_length_text"
             android:layout_toEndOf="@+id/rectangle_area_length_text"
+            android:layout_toRightOf="@+id/rectangle_area_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -242,7 +228,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/rectangle_area_width_et"
             android:layout_width="match_parent"
@@ -251,8 +236,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/rectangle_area_width_text"
             android:layout_toEndOf="@+id/rectangle_area_width_text"
+            android:layout_toRightOf="@+id/rectangle_area_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"
@@ -260,8 +245,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
-
 
         <Button
             android:id="@+id/rectangle_area_calc_button"
@@ -274,7 +257,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/rectangle_area_calc_answer_tx"
@@ -303,12 +285,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_area_clear_button"
-            android:layout_marginTop="35dp"/>
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/rectangle_length_text"
@@ -321,7 +300,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/rectangle_length_img"
             android:layout_width="wrap_content"
@@ -329,8 +307,8 @@
             android:layout_below="@+id/rectangle_length_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi"
-            android:contentDescription="@string/rectangle_image"/>
+            android:contentDescription="@string/rectangle_image"
+            android:src="@drawable/rectangle_xxxhdpi" />
 
         <ImageView
             android:id="@+id/rectangle_length_formula"
@@ -339,10 +317,8 @@
             android:layout_below="@+id/rectangle_length_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_length_xxxhdpi"
-            android:contentDescription="@string/rectangle_length_formula"/>
-
-
+            android:contentDescription="@string/rectangle_length_formula"
+            android:src="@drawable/rectangle_length_xxxhdpi" />
 
         <TextView
             android:id="@+id/rectangle_length_width_text"
@@ -365,8 +341,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/rectangle_length_width_text"
             android:layout_toEndOf="@+id/rectangle_length_width_text"
+            android:layout_toRightOf="@+id/rectangle_length_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"
@@ -388,7 +364,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/rectangle_length_perimeter_et"
             android:layout_width="match_parent"
@@ -397,8 +372,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/rectangle_length_perimeter_text"
             android:layout_toEndOf="@+id/rectangle_length_perimeter_text"
+            android:layout_toRightOf="@+id/rectangle_length_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/perimeter"
@@ -406,8 +381,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
-
 
         <Button
             android:id="@+id/rectangle_length_calc_button"
@@ -448,11 +421,9 @@
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_length_clear_button"
-            android:layout_marginTop="35dp"/>
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/rectangle_width_text"
@@ -465,7 +436,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/rectangle_width_img"
             android:layout_width="wrap_content"
@@ -473,8 +443,8 @@
             android:layout_below="@+id/rectangle_width_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi"
-            android:contentDescription="@string/rectangle_image"/>
+            android:contentDescription="@string/rectangle_image"
+            android:src="@drawable/rectangle_xxxhdpi" />
 
         <ImageView
             android:id="@+id/rectangle_width_formula"
@@ -483,10 +453,8 @@
             android:layout_below="@+id/rectangle_width_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_width_xxxhdpi"
-            android:contentDescription="@string/rectangle_width_formula"/>
-
-
+            android:contentDescription="@string/rectangle_width_formula"
+            android:src="@drawable/rectangle_width_xxxhdpi" />
 
         <TextView
             android:id="@+id/rectangle_width_length_text"
@@ -501,8 +469,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
-
         <EditText
             android:id="@+id/rectangle_width_length_et"
             android:layout_width="match_parent"
@@ -511,8 +477,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/rectangle_width_length_text"
             android:layout_toEndOf="@+id/rectangle_width_length_text"
+            android:layout_toRightOf="@+id/rectangle_width_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -542,8 +508,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/rectangle_width_perimeter_text"
             android:layout_toEndOf="@+id/rectangle_width_perimeter_text"
+            android:layout_toRightOf="@+id/rectangle_width_perimeter_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/perimeter"
@@ -551,8 +517,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
-
 
         <Button
             android:id="@+id/rectangle_width_calc_button"
@@ -565,7 +529,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/rectangle_width_calc_answer_tx"
@@ -594,12 +557,9 @@
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_width_clear_button"
-            android:layout_marginTop="35dp"/>
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/rectangle_diagonal_text"
@@ -612,7 +572,6 @@
             android:textColor="@color/Black"
             android:textSize="30sp" />
 
-
         <ImageView
             android:id="@+id/rectangle_diagonal_img"
             android:layout_width="wrap_content"
@@ -620,9 +579,8 @@
             android:layout_below="@+id/rectangle_diagonal_text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_xxxhdpi"
-            android:contentDescription="@string/rectangle_image"/>
-
+            android:contentDescription="@string/rectangle_image"
+            android:src="@drawable/rectangle_xxxhdpi" />
 
         <ImageView
             android:id="@+id/rectangle_diagonal_formula"
@@ -631,11 +589,8 @@
             android:layout_below="@+id/rectangle_diagonal_img"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:src="@drawable/rectangle_diagonal_xxxhdpi"
-            android:contentDescription="@string/rectangle_diagonal_formula"/>
-
-
-
+            android:contentDescription="@string/rectangle_diagonal_formula"
+            android:src="@drawable/rectangle_diagonal_xxxhdpi" />
 
         <TextView
             android:id="@+id/rectangle_diagonal_length_text"
@@ -650,8 +605,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
-
         <EditText
             android:id="@+id/rectangle_diagonal_length_et"
             android:layout_width="match_parent"
@@ -660,8 +613,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/rectangle_diagonal_length_text"
             android:layout_toEndOf="@+id/rectangle_diagonal_length_text"
+            android:layout_toRightOf="@+id/rectangle_diagonal_length_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/length"
@@ -691,8 +644,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@+id/rectangle_diagonal_width_text"
             android:layout_toEndOf="@+id/rectangle_diagonal_width_text"
+            android:layout_toRightOf="@+id/rectangle_diagonal_width_text"
             android:background="@drawable/black_button"
             android:ems="6"
             android:hint="@string/width"
@@ -700,8 +653,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
-
 
         <Button
             android:id="@+id/rectangle_diagonal_calc_button"
@@ -738,19 +689,16 @@
             android:textColor="@color/white"
             android:textSize="13sp" />
 
-
-
         <View
             android:id="@+id/hline_5"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/rectangle_diagonal_clear_button"
-            android:layout_marginTop="35dp"/>
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
     </RelativeLayout>
+
 </ScrollView>
 
 

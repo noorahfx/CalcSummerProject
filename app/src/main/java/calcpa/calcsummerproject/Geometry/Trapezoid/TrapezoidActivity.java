@@ -1,22 +1,16 @@
 package calcpa.calcsummerproject.Geometry.Trapezoid;
 
-import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
-import io.github.kexanie.library.MathView;
 
 public class TrapezoidActivity extends AppCompatActivity {
 
@@ -103,14 +97,14 @@ public class TrapezoidActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        areaResource();
-        baseAResource();
-        baseBResource();
-         heightResource();
-        sideCResource();
-        sideDResource();
-        perimeterResource();
-        fontResource();
+        setAreaResource();
+        setBaseAResource();
+        setBaseBResource();
+         setHeightResource();
+        setSideCResource();
+        setSideDResource();
+        setPerimeterResource();
+        setFontResource();
 
 
 
@@ -209,7 +203,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void perimeterResource() {
+    private void setPerimeterResource() {
         //Perimeter
         trapezoidPerimeterAET = (EditText) findViewById(R.id.trapezoid_perimeter_a_et);
         trapezoidPerimeterBET = (EditText) findViewById(R.id.trapezoid_perimeter_b_et);
@@ -267,7 +261,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void areaResource() {
+    private void setAreaResource() {
 
         //Area
         trapezoidAreaAET = (EditText) findViewById(R.id.trapezoid_area_a_et);
@@ -321,7 +315,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void heightResource() {
+    private void setHeightResource() {
         //Height
         trapezoidHeightAET = (EditText) findViewById(R.id.trapezoid_height_a_et);
         trapezoidHeightBET = (EditText) findViewById(R.id.trapezoid_height_b_et);
@@ -372,7 +366,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void baseAResource() {
+    private void setBaseAResource() {
 
 
         //Base A
@@ -446,7 +440,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void baseBResource() {
+    private void setBaseBResource() {
 
         //Base B
         trapezoidBBaseAET = (EditText) findViewById(R.id.trapezoid_baseB_a_et);
@@ -515,7 +509,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void sideCResource() {
+    private void setSideCResource() {
 
         //Side C
         trapezoidCSideAET = (EditText) findViewById(R.id.trapezoid_sideC_a_et);
@@ -591,7 +585,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void sideDResource() {
+    private void setSideDResource() {
 
         //Side D
         trapezoidDSideAET = (EditText) findViewById(R.id.trapezoid_sideD_a_et);
@@ -669,7 +663,7 @@ public class TrapezoidActivity extends AppCompatActivity {
 
     }
 
-    private void fontResource() {
+    private void setFontResource() {
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf");
 
@@ -855,35 +849,7 @@ public class TrapezoidActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
-    }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-    }
 
 
 }

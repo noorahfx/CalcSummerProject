@@ -10,11 +10,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="calcpa.calcsummerproject.Geometry.Triangle.TypesOfTriangle.RightTriangle"
-    tools:showIn="@layout/activity_right_triangle"
-    android:scrollbarThumbVertical="@drawable/scrollbar">
-
+    tools:showIn="@layout/activity_right_triangle">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,7 +29,6 @@
             android:text="@string/perimeter"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/rightTriangleImgID"
@@ -49,9 +47,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_perimeter_xxxhdpi" />
-
-
-
 
         <TextView
             android:id="@+id/sidAText"
@@ -95,7 +90,6 @@
             android:textColor="@color/white"
             android:textSize="15sp" />
 
-
         <EditText
             android:id="@+id/sidBEditText"
             android:layout_width="match_parent"
@@ -112,7 +106,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
             android:id="@+id/calculateButtonID"
             android:layout_width="match_parent"
@@ -124,7 +117,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/answerEditText"
@@ -152,10 +144,9 @@
             android:id="@+id/hline_1"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/right_tri_perimeter_clear_button"
-            android:layout_marginTop="35dp"/>
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/area_text"
@@ -167,7 +158,6 @@
             android:text="@string/area"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/rig_triangle_area_img"
@@ -187,8 +177,6 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_area_xxxhdpi" />
 
-
-
         <TextView
             android:id="@+id/area_side_a_text"
             android:layout_width="40dp"
@@ -201,7 +189,6 @@
             android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/area_base_et"
@@ -218,7 +205,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/area_side_b_text"
@@ -248,7 +234,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <Button
             android:id="@+id/area_click_botton"
@@ -289,10 +274,9 @@
             android:id="@+id/hline_2"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/right_triangle_area_clear_button"
-            android:layout_marginTop="35dp"/>
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/side_c_text"
@@ -304,7 +288,6 @@
             android:text="@string/hyp"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/side_c_img"
@@ -324,9 +307,6 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_hyp_xxxhdpi" />
 
-
-
-
         <TextView
             android:id="@+id/hyp_side_a_tv"
             android:layout_width="40dp"
@@ -339,7 +319,6 @@
             android:text="@string/letter_a"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/hyp_side_a_et"
@@ -386,7 +365,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
             android:id="@+id/hyp_calculate_button"
             android:layout_width="match_parent"
@@ -421,16 +399,14 @@
             android:text="@string/clear"
             android:textColor="@color/white"
             android:textSize="13sp" />
+
         <View
             android:id="@+id/hline_3"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/right_triangle_hyp_clear_button"
-            android:layout_marginTop="35dp"/>
-
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/right_triangle_a_tx"
@@ -442,7 +418,6 @@
             android:text="@string/leg_a"
             android:textColor="@color/Black"
             android:textSize="30sp" />
-
 
         <ImageView
             android:id="@+id/right_triangle_side_a_img"
@@ -462,9 +437,6 @@
             android:layout_marginTop="5dp"
             android:src="@drawable/right_triangle_side_a_xxxhdpi" />
 
-
-
-
         <TextView
             android:id="@+id/right_triangle_side_b_tv"
             android:layout_width="40dp"
@@ -477,7 +449,6 @@
             android:text="@string/letter_b"
             android:textColor="@color/white"
             android:textSize="15sp" />
-
 
         <EditText
             android:id="@+id/right_triangle_side_b_et"
@@ -494,7 +465,6 @@
             android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
-
 
         <TextView
             android:id="@+id/right_triangle_area_tv"
@@ -525,7 +495,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
             android:id="@+id/right_triangle_calc_button"
             android:layout_width="match_parent"
@@ -537,7 +506,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/right_triangle_answer_tv"
@@ -566,10 +534,9 @@
             android:id="@+id/hline_4"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/right_triangle_sideA_clear_button"
-            android:layout_marginTop="35dp"/>
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
         <TextView
             android:id="@+id/right_triangle_b_tx"
@@ -629,7 +596,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <TextView
             android:id="@+id/right_triangle_sid_b_area_tv"
             android:layout_width="40dp"
@@ -659,7 +625,6 @@
             android:textColor="@color/white"
             android:textColorHint="@color/LightGrey" />
 
-
         <Button
             android:id="@+id/right_triangle_sid_b_calc_button"
             android:layout_width="match_parent"
@@ -671,7 +636,6 @@
             android:text="@string/calculate"
             android:textColor="@color/white"
             android:textSize="13sp" />
-
 
         <TextView
             android:id="@+id/right_triangle_side_b_answer_tv"
@@ -700,11 +664,9 @@
             android:id="@+id/hline_5"
             android:layout_width="fill_parent"
             android:layout_height="5dp"
-            android:background="@drawable/list_divider"
             android:layout_below="@id/right_triangle_sideB_clear_button"
-            android:layout_marginTop="35dp"/>
-
-
+            android:layout_marginTop="35dp"
+            android:background="@drawable/list_divider" />
 
     </RelativeLayout>
 

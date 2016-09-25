@@ -13,7 +13,7 @@ import android.widget.TextView;
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
-public class Cone extends AppCompatActivity {
+public class ConeActivity extends AppCompatActivity {
 
     //Volume
     EditText coneVolumeRET;

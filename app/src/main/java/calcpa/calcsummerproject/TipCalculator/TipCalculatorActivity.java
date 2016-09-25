@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import calcpa.calcsummerproject.R;
 
-public class TipCalculator extends AppCompatActivity {
+public class TipCalculatorActivity extends AppCompatActivity {
 
     // Constants used when saving and restoring
 

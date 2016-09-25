@@ -16,7 +16,7 @@ import net.objecthunter.exp4j.ExpressionBuilder;
 import calcpa.calcsummerproject.R;
 
 
-public class BasicCalc extends AppCompatActivity {
+public class BasicCalcActivity extends AppCompatActivity {
 
     TextView display_box;
 

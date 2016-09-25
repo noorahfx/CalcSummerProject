@@ -18,7 +18,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Heptagon extends AppCompatActivity {
+public class HeptagonActivity extends AppCompatActivity {
 
     //perimeter
     EditText hepPerimeterSideAET;

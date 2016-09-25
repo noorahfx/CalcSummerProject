@@ -18,7 +18,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Pentagon extends AppCompatActivity {
+public class PentagonActivity extends AppCompatActivity {
 
     //perimeter
     EditText penPerimeterSideAET;

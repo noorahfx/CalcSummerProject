@@ -14,7 +14,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Square extends AppCompatActivity {
+public class SquareActivity extends AppCompatActivity {
 
 
     //Perimeter

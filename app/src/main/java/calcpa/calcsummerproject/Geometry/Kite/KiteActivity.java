@@ -14,7 +14,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Kite extends AppCompatActivity {
+public class KiteActivity extends AppCompatActivity {
 
     //Perimeter
     EditText kitePerimeterAET;

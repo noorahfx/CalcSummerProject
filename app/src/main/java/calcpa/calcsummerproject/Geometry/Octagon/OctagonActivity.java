@@ -18,7 +18,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Octagon extends AppCompatActivity {
+public class OctagonActivity extends AppCompatActivity {
 
 
     //perimeter

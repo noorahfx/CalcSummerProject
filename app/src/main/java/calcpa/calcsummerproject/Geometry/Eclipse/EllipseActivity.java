@@ -20,7 +20,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Eclipse extends AppCompatActivity {
+public class EllipseActivity extends AppCompatActivity {
 
 
     //Area

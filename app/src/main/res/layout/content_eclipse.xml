@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="calcpa.calcsummerproject.Geometry.Eclipse.Eclipse"
+    tools:context=".Geometry.Eclipse.EllipseActivity"
     tools:showIn="@layout/activity_eclipse"
     android:scrollbarThumbVertical="@drawable/scrollbar">
 

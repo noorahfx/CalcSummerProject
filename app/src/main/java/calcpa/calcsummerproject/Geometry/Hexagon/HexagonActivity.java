@@ -29,7 +29,7 @@ import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
 
-public class Hexagon extends AppCompatActivity {
+public class HexagonActivity extends AppCompatActivity {
 
     //perimeter
     EditText hexPerimeterSideAET;

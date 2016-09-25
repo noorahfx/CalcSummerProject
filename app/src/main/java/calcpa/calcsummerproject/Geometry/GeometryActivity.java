@@ -1,7 +1,6 @@
 package calcpa.calcsummerproject.Geometry;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -9,31 +8,30 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import calcpa.calcsummerproject.Geometry.Circle.Circle;
-import calcpa.calcsummerproject.Geometry.Cone.Cone;
-import calcpa.calcsummerproject.Geometry.Cube.Cube;
-import calcpa.calcsummerproject.Geometry.Cuboid.Cuboid;
-import calcpa.calcsummerproject.Geometry.Cylinder.Cylinder;
-import calcpa.calcsummerproject.Geometry.Decagon.Decagon;
-import calcpa.calcsummerproject.Geometry.Eclipse.Eclipse;
-import calcpa.calcsummerproject.Geometry.Heptagon.Heptagon;
-import calcpa.calcsummerproject.Geometry.Hexagon.Hexagon;
-import calcpa.calcsummerproject.Geometry.Kite.Kite;
-import calcpa.calcsummerproject.Geometry.Nonagon.Nonagon;
-import calcpa.calcsummerproject.Geometry.Octagon.Octagon;
-import calcpa.calcsummerproject.Geometry.Parallelogram.Parallelogram;
-import calcpa.calcsummerproject.Geometry.Pentagon.Pentagon;
-import calcpa.calcsummerproject.Geometry.Rectangle.Rectangle;
-import calcpa.calcsummerproject.Geometry.Rhombus.Rhombus;
-import calcpa.calcsummerproject.Geometry.Square.Square;
-import calcpa.calcsummerproject.Geometry.Trapezoid.Trapezoid;
+import calcpa.calcsummerproject.Geometry.Circle.CircleActivity;
+import calcpa.calcsummerproject.Geometry.Cone.ConeActivity;
+import calcpa.calcsummerproject.Geometry.Cube.CubeActivity;
+import calcpa.calcsummerproject.Geometry.Cuboid.CuboidActivity;
+import calcpa.calcsummerproject.Geometry.Cylinder.CylinderActivity;
+import calcpa.calcsummerproject.Geometry.Decagon.DecagonActivity;
+import calcpa.calcsummerproject.Geometry.Eclipse.EllipseActivity;
+import calcpa.calcsummerproject.Geometry.Heptagon.HeptagonActivity;
+import calcpa.calcsummerproject.Geometry.Hexagon.HexagonActivity;
+import calcpa.calcsummerproject.Geometry.Kite.KiteActivity;
+import calcpa.calcsummerproject.Geometry.Nonagon.NonagonActivity;
+import calcpa.calcsummerproject.Geometry.Octagon.OctagonActivity;
+import calcpa.calcsummerproject.Geometry.Parallelogram.ParallelogramActivity;
+import calcpa.calcsummerproject.Geometry.Pentagon.PentagonActivity;
+import calcpa.calcsummerproject.Geometry.Rectangle.RectangleActivity;
+import calcpa.calcsummerproject.Geometry.Rhombus.RhombusActivity;
+import calcpa.calcsummerproject.Geometry.Square.SquareActivity;
+import calcpa.calcsummerproject.Geometry.Trapezoid.TrapezoidActivity;
 import calcpa.calcsummerproject.Geometry.Triangle.Triangle;
 import calcpa.calcsummerproject.R;
 
 
-public class Geometry extends AppCompatActivity {
+public class GeometryActivity extends AppCompatActivity {
     ListView list;
     String[] shapeText = {
 
@@ -79,7 +77,7 @@ public class Geometry extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        CustomList adapter = new CustomList(Geometry.this, shapeText, imageId);
+        CustomList adapter = new CustomList(GeometryActivity.this, shapeText, imageId);
         list = (ListView) findViewById(R.id.list);
         assert list != null;
         list.setAdapter(adapter);
@@ -98,82 +96,82 @@ public class Geometry extends AppCompatActivity {
                 //Open new activity when clicked using (switch statement);
                 switch (position) {
                     case 0:
-                        Intent intent = new Intent(Geometry.this, Circle.class);
+                        Intent intent = new Intent(GeometryActivity.this, CircleActivity.class);
                         startActivity(intent);
                         break;
 
 
                     case 1:
-                        intent = new Intent(Geometry.this, Cone.class);
+                        intent = new Intent(GeometryActivity.this, ConeActivity.class);
                         startActivity(intent);
                         break;
                     case 2:
-                        intent = new Intent(Geometry.this, Cube.class);
+                        intent = new Intent(GeometryActivity.this, CubeActivity.class);
                         startActivity(intent);
                         break;
                     case 3:
-                        intent = new Intent(Geometry.this, Cuboid.class);
+                        intent = new Intent(GeometryActivity.this, CuboidActivity.class);
                         startActivity(intent);
                         break;
                     case 4:
-                        intent = new Intent(Geometry.this, Cylinder.class);
+                        intent = new Intent(GeometryActivity.this, CylinderActivity.class);
                         startActivity(intent);
                         break;
                     case 5:
-                        intent = new Intent(Geometry.this, Decagon.class);
+                        intent = new Intent(GeometryActivity.this, DecagonActivity.class);
                         startActivity(intent);
                         break;
                     case 6:
-                        intent = new Intent(Geometry.this, Eclipse.class);
+                        intent = new Intent(GeometryActivity.this, EllipseActivity.class);
                         startActivity(intent);
                         break;
                     case 7:
-                        intent = new Intent(Geometry.this, Heptagon.class);
+                        intent = new Intent(GeometryActivity.this, HeptagonActivity.class);
                         startActivity(intent);
                         break;
                     case 8:
-                        intent = new Intent(Geometry.this, Hexagon.class);
+                        intent = new Intent(GeometryActivity.this, HexagonActivity.class);
                         startActivity(intent);
                         break;
                     case 9:
-                        intent = new Intent(Geometry.this, Kite.class);
+                        intent = new Intent(GeometryActivity.this, KiteActivity.class);
                         startActivity(intent);
                         break;
                     case 10:
-                        intent = new Intent(Geometry.this, Nonagon.class);
+                        intent = new Intent(GeometryActivity.this, NonagonActivity.class);
                         startActivity(intent);
                         break;
                     case 11:
-                        intent = new Intent(Geometry.this, Octagon.class);
+                        intent = new Intent(GeometryActivity.this, OctagonActivity.class);
                         startActivity(intent);
                         break;
                     case 12:
-                        intent = new Intent(Geometry.this, Parallelogram.class);
+                        intent = new Intent(GeometryActivity.this, ParallelogramActivity.class);
                         startActivity(intent);
                         break;
                     case 13:
-                        intent = new Intent(Geometry.this, Pentagon.class);
+                        intent = new Intent(GeometryActivity.this, PentagonActivity.class);
                         startActivity(intent);
                         break;
 
                     case 14:
-                        intent = new Intent(Geometry.this, Rectangle.class);
+                        intent = new Intent(GeometryActivity.this, RectangleActivity.class);
                         startActivity(intent);
                         break;
                     case 15:
-                        intent = new Intent(Geometry.this, Rhombus.class);
+                        intent = new Intent(GeometryActivity.this, RhombusActivity.class);
                         startActivity(intent);
                         break;
                     case 16:
-                        intent = new Intent(Geometry.this, Square.class);
+                        intent = new Intent(GeometryActivity.this, SquareActivity.class);
                         startActivity(intent);
                         break;
                     case 17:
-                        intent = new Intent(Geometry.this, Trapezoid.class);
+                        intent = new Intent(GeometryActivity.this, TrapezoidActivity.class);
                         startActivity(intent);
                         break;
                     case 18:
-                        intent = new Intent(Geometry.this, Triangle.class);
+                        intent = new Intent(GeometryActivity.this, Triangle.class);
                         startActivity(intent);
                         break;
 

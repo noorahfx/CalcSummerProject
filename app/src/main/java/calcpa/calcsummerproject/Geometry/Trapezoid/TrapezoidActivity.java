@@ -18,7 +18,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Trapezoid extends AppCompatActivity {
+public class TrapezoidActivity extends AppCompatActivity {
 
 
     //Perimeter

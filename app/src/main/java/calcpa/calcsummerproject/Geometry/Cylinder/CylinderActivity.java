@@ -18,7 +18,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Cylinder extends AppCompatActivity {
+public class CylinderActivity extends AppCompatActivity {
 
     //Volume
     EditText cylinderVolumeRET;

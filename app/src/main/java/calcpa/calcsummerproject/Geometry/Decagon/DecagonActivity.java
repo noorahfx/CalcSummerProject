@@ -19,7 +19,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Decagon extends AppCompatActivity {
+public class DecagonActivity extends AppCompatActivity {
 
     //area
     EditText decagonareaET;

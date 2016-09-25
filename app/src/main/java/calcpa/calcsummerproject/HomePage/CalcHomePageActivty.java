@@ -10,12 +10,12 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
-import calcpa.calcsummerproject.BasicCalculator.BasicCalc;
-import calcpa.calcsummerproject.Geometry.Geometry;
+import calcpa.calcsummerproject.BasicCalculator.BasicCalcActivity;
+import calcpa.calcsummerproject.Geometry.GeometryActivity;
 import calcpa.calcsummerproject.R;
-import calcpa.calcsummerproject.TipCalculator.TipCalculator;
+import calcpa.calcsummerproject.TipCalculator.TipCalculatorActivity;
 
-public class CalcHomePage extends AppCompatActivity {
+public class CalcHomePageActivty extends AppCompatActivity {
 
 
     @Override
@@ -59,7 +59,7 @@ public class CalcHomePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //do something
-                Intent intent = new Intent(CalcHomePage.this, BasicCalc.class);
+                Intent intent = new Intent(CalcHomePageActivty.this, BasicCalcActivity.class);
                 startActivity(intent);
             }
         });
@@ -69,7 +69,7 @@ public class CalcHomePage extends AppCompatActivity {
         tipCalculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CalcHomePage.this, TipCalculator.class);
+                Intent intent = new Intent(CalcHomePageActivty.this, TipCalculatorActivity.class);
                 startActivity(intent);
             }
         });
@@ -78,7 +78,7 @@ public class CalcHomePage extends AppCompatActivity {
         geometryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CalcHomePage.this, Geometry.class);
+                Intent intent = new Intent(CalcHomePageActivty.this, GeometryActivity.class);
                 startActivity(intent);
 
             }

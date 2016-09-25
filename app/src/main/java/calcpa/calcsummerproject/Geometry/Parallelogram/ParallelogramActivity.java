@@ -13,7 +13,7 @@ import android.widget.TextView;
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
-public class Parallelogram extends AppCompatActivity {
+public class ParallelogramActivity extends AppCompatActivity {
 
     //Perimeter
     EditText parallelogramPerimeterBaseET;

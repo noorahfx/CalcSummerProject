@@ -14,7 +14,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Rhombus extends AppCompatActivity {
+public class RhombusActivity extends AppCompatActivity {
 
 
     //Perimeter

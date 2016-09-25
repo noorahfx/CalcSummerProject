@@ -16,7 +16,7 @@ import android.widget.TextView;
 import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 
-public class Circle extends AppCompatActivity {
+public class CircleActivity extends AppCompatActivity {
 
     //area
     EditText circleAreaET;

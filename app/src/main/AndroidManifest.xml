@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         >
         <activity
-            android:name=".HomePage.CalcHomePage"
+            android:name=".HomePage.CalcHomePageActivty"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             >
@@ -23,33 +23,33 @@
         </activity>
 
         <activity
-            android:name=".TipCalculator.TipCalculator"
+            android:name=".TipCalculator.TipCalculatorActivity"
             android:label="@string/tip_calc"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomePage.CalcHomePage"/>
+                android:value=".HomePage.CalcHomePageActivty"/>
         </activity>
 
         <activity
-            android:name=".BasicCalculator.BasicCalc"
+            android:name=".BasicCalculator.BasicCalcActivity"
             android:label="@string/title_activity_basic_calc"
             android:theme="@style/AppTheme.NoActionBar">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomePage.CalcHomePage" />
+                android:value=".HomePage.CalcHomePageActivty" />
         </activity>
 
         <activity
-            android:name=".Geometry.Geometry"
+            android:name=".Geometry.GeometryActivity"
             android:label="@string/title_activity_geometry"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomePage.CalcHomePage"/>
+                android:value=".HomePage.CalcHomePageActivty"/>
         </activity>
 
         <activity
@@ -60,205 +60,205 @@
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Square.Square"
+            android:name=".Geometry.Square.SquareActivity"
             android:label="@string/title_activity_square"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Rectangle.Rectangle"
+            android:name=".Geometry.Rectangle.RectangleActivity"
             android:label="@string/title_activity_rectangle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Rhombus.Rhombus"
+            android:name=".Geometry.Rhombus.RhombusActivity"
             android:label="@string/title_activity_rhombus"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Parallelogram.Parallelogram"
+            android:name=".Geometry.Parallelogram.ParallelogramActivity"
             android:label="@string/title_activity_parallelogram"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Trapezoid.Trapezoid"
+            android:name=".Geometry.Trapezoid.TrapezoidActivity"
             android:label="@string/title_activity_trapezoid"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Kite.Kite"
+            android:name=".Geometry.Kite.KiteActivity"
             android:label="@string/title_activity_kite"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Hexagon.Hexagon"
+            android:name=".Geometry.Hexagon.HexagonActivity"
             android:label="@string/title_activity_hexagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Pentagon.Pentagon"
+            android:name=".Geometry.Pentagon.PentagonActivity"
             android:label="@string/title_activity_pentagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Octagon.Octagon"
+            android:name=".Geometry.Octagon.OctagonActivity"
             android:label="@string/title_activity_octagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Heptagon.Heptagon"
+            android:name=".Geometry.Heptagon.HeptagonActivity"
             android:label="@string/title_activity_heptagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Nonagon.Nonagon"
+            android:name=".Geometry.Nonagon.NonagonActivity"
             android:label="@string/title_activity_nonagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Decagon.Decagon"
+            android:name=".Geometry.Decagon.DecagonActivity"
             android:label="@string/title_activity_decagon"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Circle.Circle"
+            android:name=".Geometry.Circle.CircleActivity"
             android:label="@string/title_activity_circle"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Eclipse.Eclipse"
+            android:name=".Geometry.Eclipse.EllipseActivity"
             android:label="@string/title_activity_eclipse"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Cube.Cube"
+            android:name=".Geometry.Cube.CubeActivity"
             android:label="@string/title_activity_cube"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Cuboid.Cuboid"
+            android:name=".Geometry.Cuboid.CuboidActivity"
             android:label="@string/title_activity_cuboid"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Cylinder.Cylinder"
+            android:name=".Geometry.Cylinder.CylinderActivity"
             android:label="@string/title_activity_cylinder"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" >
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity
-            android:name=".Geometry.Cone.Cone"
+            android:name=".Geometry.Cone.ConeActivity"
             android:label="@string/title_activity_cone"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden">
 
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Geometry.Geometry"/>
+                android:value=".Geometry.GeometryActivity"/>
         </activity>
 
         <activity

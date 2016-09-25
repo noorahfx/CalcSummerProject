@@ -14,7 +14,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Rectangle extends AppCompatActivity {
+public class RectangleActivity extends AppCompatActivity {
 
     //Perimeter
     EditText rectanglePerimeterLET;

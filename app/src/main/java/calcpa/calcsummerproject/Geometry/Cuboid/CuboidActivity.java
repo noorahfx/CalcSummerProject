@@ -18,7 +18,7 @@ import calcpa.calcsummerproject.Model;
 import calcpa.calcsummerproject.R;
 import io.github.kexanie.library.MathView;
 
-public class Cuboid extends AppCompatActivity {
+public class CuboidActivity extends AppCompatActivity {
 
     //Volume
     EditText cuboidVolumeLET;
